@@ -61,29 +61,13 @@ RewriteRule ^solutions/(.*)_(.*)$ /solutions/$1-$2 [L,R=301]
 RewriteRule ^solutions/(.*)&(.*)$ /solutions/$1-and-$2 [L,R=301]
 
 ############################################################
-# 4. Transparently serve the site from /src
-#    All site files live in /src but this .htaccess sits at
-#    the document root. These rules map root requests to
-#    /src internally so the URL bar never shows /src.
+# 4. Clean URLs: if <uri>.html exists, serve it
+#    Handles /about -> about.html, /solutions/foo -> solutions/foo.html, etc.
 ############################################################
-
-# 4a. Root URL serves src/index.html
-RewriteCond %{REQUEST_URI} ^/$
-RewriteRule ^$ src/index.html [L]
-
-# 4b. Clean URLs: if src/<uri>.html exists, serve it
-#     Handles /about -> src/about.html, /solutions/foo -> src/solutions/foo.html, etc.
-RewriteCond %{REQUEST_URI} !^/src/
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{DOCUMENT_ROOT}/src%{REQUEST_URI}.html -f
-RewriteRule ^(.*)$ src/$1.html [L]
-
-# 4c. Exact file or directory match in src/
-RewriteCond %{REQUEST_URI} !^/src/
-RewriteCond %{DOCUMENT_ROOT}/src%{REQUEST_URI} -f [OR]
-RewriteCond %{DOCUMENT_ROOT}/src%{REQUEST_URI} -d
-RewriteRule ^(.*)$ src/$1 [L]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
+RewriteRule ^(.*)$ $1.html [L]
 
 ############################################################
 # 5. Redirect multiple slashes / trailing slash cleanup

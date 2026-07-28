@@ -10,7 +10,7 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Load environment variables test uvs
+// Load environment variables
 dotenv.config();
 
 // ─── Google Sheets Configuration ────────────────────────────────────────────
