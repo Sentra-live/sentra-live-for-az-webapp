@@ -1,0 +1,10 @@
+node_modules
+.venv
+.wrangler
+.netlify
+admin_wrangler
+php
+sentra-cpanel-deploy.zip
+*.zip
+.git
+.claude
