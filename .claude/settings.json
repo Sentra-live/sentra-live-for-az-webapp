@@ -31,7 +31,8 @@
       "Read(//c/Users/admin-it/Downloads/Sentra-V1.2/**)",
       "Bash(powershell -Command ' *)",
       "Bash(curl -s -o - -w \"\\\\nHTTP_STATUS:%{http_code}\" -X POST \"https://veronica-sentra.subharam-v.workers.dev/api/user-profile\" -H \"Content-Type: application/json\" -d \"{\\\\\"name\\\\\":\\\\\"DiagnosticTest\\\\\",\\\\\"email\\\\\":\\\\\"diag@diagtest.com\\\\\"}\")",
-      "Bash(npx wrangler *)"
+      "Bash(npx wrangler *)",
+      "Bash(pkill -f \"http.server 8000\")"
     ]
   }
 }

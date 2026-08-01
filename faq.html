@@ -39,28 +39,56 @@
 
     <style>
         .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0, 0, 0, 0); border: 0; }
-        /* ══ SIMPLE STATIC BANNER ══ */
-        .faq-banner {
-            padding: 4rem 0 3rem;
-            text-align: center;
+        /* ══ HERO (badge-style, matches Document Center / Videos / Feed) ══ */
+        .faq-hero {
             position: relative;
+            overflow: hidden;
+            margin: 28px 28px 0;
+            border-radius: 28px;
+            padding: 70px 40px;
+            text-align: center;
+            background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(244,129,32,0.16) 0%, transparent 65%);
         }
-        .faq-banner h1 {
-            font-size: clamp(30px, 4vw, 52px);
-            font-weight: 900;
-            margin: 0 0 0.5rem;
+        body.dark-mode .faq-hero { background-color: #0a0a0e; }
+        body.lightmode .faq-hero { background-color: #ffffff; border: 1px solid rgba(0,0,0,0.06); }
+
+        .faq-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 18px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            background: rgba(244,129,32,0.1);
+            border: 1px solid rgba(244,129,32,0.2);
+            color: #f48120;
+            margin-bottom: 18px;
+        }
+
+        .faq-hero-title {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 800;
             line-height: 1.1;
-            background: linear-gradient(135deg, var(--accent-color) 0%, #ff9a4a 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            margin: 0 0 14px;
         }
-        .faq-banner p {
-            font-size: 1rem;
-            opacity: 0.55;
-            max-width: 560px;
+        body.dark-mode .faq-hero-title { color: #fff; }
+        body.lightmode .faq-hero-title { color: #1a1a1a; }
+        .faq-hero-title .accent { color: #f48120; }
+
+        .faq-hero-sub {
+            font-size: clamp(14px, 2vw, 17px);
+            max-width: 600px;
             margin: 0 auto;
             line-height: 1.6;
+        }
+        body.dark-mode .faq-hero-sub { color: rgba(255,255,255,0.5); }
+        body.lightmode .faq-hero-sub { color: rgba(0,0,0,0.5); }
+
+        @media (max-width: 768px) {
+            .faq-hero { margin: 16px 12px 0; border-radius: 18px; padding: 44px 22px; }
         }
 
         /* ══ FAQ SECTION STYLES ══ */
@@ -232,7 +260,7 @@
             .faq-filter-grid { grid-template-columns: repeat(2, 1fr); }
         }
         @media (max-width: 640px) {
-            .faq-banner { padding: 2.5rem 0 2rem; }
+            .faq-hero { padding: 80px 20px 40px; }
             .faq-section { padding: 1rem 0 3.5rem; }
             .faq-accordion-btn { padding: 11px 13px; font-size: 0.82rem; }
             .faq-accordion-body-inner { padding: 0 13px 12px; font-size: 0.78rem; }
@@ -692,7 +720,7 @@
       "name": "What laser scanners does Sentra offer, and who makes them?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sentra is the official India reseller for XGRIDS, a global leader in handheld SLAM LiDAR scanners and spatial cameras. The range includes: Lixel K2 — handheld SLAM LiDAR scanner with onboard RTK, 200,000 pts/s, and native 3D Gaussian Splatting; PortalCam — the first true spatial camera, fusing ToF LiDAR and a 4-camera array for real-time photorealistic capture; Lixel L2 Pro — precision long-range scanner, up to 640,000 pts/s and 300m range; LixelKity K1 — sub-1kg wearable scanner for rapid, tripod-free capture in confined spaces. All four scanners share the same LixelStudio / LixelGo processing pipeline."
+        "text": "Sentra is the official India reseller for XGRIDS, a global leader in handheld SLAM LiDAR scanners and spatial cameras. The range includes: Lixel K2 — handheld SLAM LiDAR scanner with onboard RTK, 200,000 pts/s, and native 3D Gaussian Splatting; PortalCam — the first true spatial camera, fusing ToF LiDAR and a 4-camera array for real-time photorealistic capture; Lixel L2 Pro — precision long-range scanner, up to 640,000 pts/s and 300m range. All three scanners share the same LixelStudio / LixelGo processing pipeline."
       }
     },
     {
@@ -716,7 +744,7 @@
       "name": "Which XGRIDS scanner should I choose for my project?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The right scanner depends on your site and range requirements: Lixel K2 for general survey and AEC (1.2kg, up to 100m range, onboard RTK); PortalCam for real estate and indoor walkthroughs (870g, real-time 3D Gaussian Splatting); Lixel L2 Pro for large-scale infrastructure and corridor mapping (up to 300m range, 640,000 pts/s); LixelKity K1 for rapid indoor or confined-space capture (sub-1kg wearable design)."
+        "text": "The right scanner depends on your site and range requirements: Lixel K2 for general survey and AEC (1.2kg, up to 100m range, onboard RTK); PortalCam for real estate and indoor walkthroughs (870g, real-time 3D Gaussian Splatting); Lixel L2 Pro for large-scale infrastructure and corridor mapping (up to 300m range, 640,000 pts/s)."
       }
     },
     {
@@ -770,12 +798,10 @@
     </aside>
 
     <main>
-        <!-- ══ SIMPLE STATIC BANNER (no animated hero) ══ -->
-        <div class="faq-banner">
-            <div class="hero-container">
-                <h1>Got Questions? We've Got Answers.</h1>
-                <p>From sensor specs and solution capabilities to digital twin integration and deployment timelines.</p>
-            </div>
+        <div class="faq-hero">
+            <span class="faq-hero-badge"><i class="fa-solid fa-circle-question"></i> Support</span>
+            <h1 class="faq-hero-title">Frequently Asked <span class="accent">Questions</span></h1>
+            <p class="faq-hero-sub">Got questions? From sensor specs and solution capabilities to digital twin integration and deployment timelines — we've got answers.</p>
         </div>
 
         <!-- ══ FAQ SECTION ══ -->
@@ -1996,9 +2022,8 @@
                                             <li><strong>Lixel K2</strong> — Handheld SLAM LiDAR scanner with onboard RTK, 200,000 pts/s, and native 3D Gaussian Splatting</li>
                                             <li><strong>PortalCam</strong> — The first true spatial camera, fusing ToF LiDAR and a 4-camera array for real-time photorealistic capture</li>
                                             <li><strong>Lixel L2 Pro</strong> — Precision long-range scanner, up to 640,000 pts/s and 300m range for large-scale infrastructure</li>
-                                            <li><strong>LixelKity K1</strong> — Sub-1kg wearable scanner for rapid, tripod-free capture in confined spaces</li>
                                         </ul>
-                                        <p>All four scanners share the same LixelStudio / LixelGo processing pipeline. <a href="./products/laser-scanners.html">Explore the full range →</a></p>
+                                        <p>All three scanners share the same LixelStudio / LixelGo processing pipeline. <a href="./products/laser-scanners.html">Explore the full range →</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -2049,7 +2074,6 @@
                                             <li><strong>General survey &amp; AEC</strong> — <a href="./products/lixel-k2.html">Lixel K2</a> (1.2kg, up to 100m range, onboard RTK)</li>
                                             <li><strong>Real estate &amp; indoor walkthroughs</strong> — <a href="./products/portalcam.html">PortalCam</a> (870g, real-time 3D Gaussian Splatting)</li>
                                             <li><strong>Large-scale infrastructure &amp; corridor mapping</strong> — <a href="./products/lixel-l2-pro.html">Lixel L2 Pro</a> (up to 300m range, 640,000 pts/s)</li>
-                                            <li><strong>Rapid indoor / confined-space capture</strong> — <a href="./products/lixelkity-k1.html">LixelKity K1</a> (sub-1kg wearable design)</li>
                                         </ul>
                                         <p>See the full side-by-side spec comparison on our <a href="./products/laser-scanners.html">Laser Scanners</a> page, or <a href="./contact.html?enquiry=1&amp;product=Laser%20Scanners">talk to our team</a> for a recommendation.</p>
                                     </div>

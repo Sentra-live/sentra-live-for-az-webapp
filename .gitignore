@@ -3,6 +3,9 @@ node_modules/
 .env.*
 .dev.vars
 
+# Archived / retired content (kept on disk, not in git)
+archive/
+
 # Local Netlify folder
 .netlify
 .opencode

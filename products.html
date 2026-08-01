@@ -90,13 +90,10 @@
             scroll-margin-top: 100px;
         }
 
-        /* Product section alternating backgrounds use base sol-bg-dark/sol-bg-darker */
-
-        /* ── Hero Split Layout ── */
+        /* ── Hero — Precision Infrastructure ── */
         .detail-hero {
             position: relative;
-            padding-top: 2rem;
-            padding-bottom: 4rem;
+            padding: 5rem 0 4rem;
             overflow: hidden;
             border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         }
@@ -108,7 +105,7 @@
         .detail-hero .hero-bg-dots {
             position: absolute;
             inset: 0;
-            opacity: 0.06;
+            opacity: 0.04;
             pointer-events: none;
             background-image: radial-gradient(currentColor 1px, transparent 1px);
             background-size: 20px 20px;
@@ -116,21 +113,30 @@
 
         .detail-hero .hero-glow {
             position: absolute;
-            top: 0;
-            left: 25%;
-            width: 500px;
-            height: 400px;
+            top: -10%;
+            left: 20%;
+            width: 600px;
+            height: 500px;
             border-radius: 50%;
             pointer-events: none;
-            filter: blur(120px);
+            filter: blur(140px);
+            opacity: 0.7;
         }
 
         .detail-hero .hero-glow.orange-glow {
-            background: rgba(244, 129, 32, 0.08);
+            background: rgba(244, 129, 32, 0.10);
         }
 
         body.lightmode .detail-hero .hero-glow.orange-glow {
             background: rgba(244, 129, 32, 0.06);
+        }
+
+        .detail-hero .hero-glow.blue-glow {
+            background: rgba(30, 100, 200, 0.06);
+            left: 60%;
+            top: 20%;
+            width: 400px;
+            height: 400px;
         }
 
         .detail-hero .hero-top-line {
@@ -140,6 +146,16 @@
             right: 0;
             height: 1px;
             background: linear-gradient(90deg, transparent, rgba(244, 129, 32, 0.3), transparent);
+        }
+
+        .detail-hero .hero-bottom-line {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(244, 129, 32, 0.15), transparent);
         }
 
         .hero-container-inner {
@@ -160,20 +176,17 @@
             display: grid;
             grid-template-columns: 1fr;
             gap: 2rem;
-            align-items: start;
+            align-items: center;
             width: 100%;
         }
 
-        /* Tablet: show text + image side-by-side */
         @media (min-width:768px) and (max-width:1023px) {
             .hero-grid {
                 grid-template-columns: 1fr 1fr;
                 gap: 1.5rem;
-                align-items: center;
             }
         }
 
-        /* Desktop: flexible image column so text col isn't crushed at 1024-1280px */
         @media (min-width:1024px) {
             .hero-grid {
                 grid-template-columns: minmax(0, 1fr) minmax(min(460px, 44vw), 540px);
@@ -181,255 +194,106 @@
             }
         }
 
-        /* Prevent grid cells from overflowing on any viewport */
         .hero-text-col {
-            margin-top: 4rem;
             min-width: 0;
         }
 
         .hero-image-col {
-            margin-top: 4rem;
             min-width: 0;
         }
 
-        @media (min-width:768px) and (max-width:1023px) {
-            .hero-text-col {
-                margin-top: 2.5rem;
-            }
-
-            .hero-image-col {
-                margin-top: 2.5rem;
-            }
-        }
-
-        .hero-title {
-            font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+        /* ── Badge ── */
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 10px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: -0.02em;
-            line-height: 1.05;
-            margin-bottom: 1.5rem;
+            letter-spacing: 0.12em;
+            padding: 5px 12px;
+            border-radius: 999px;
+            background: rgba(244, 129, 32, 0.12);
+            color: #f48120;
+            border: 1px solid rgba(244, 129, 32, 0.25);
+            margin-bottom: 1.25rem;
+            animation: heroFadeUp 0.7s ease-out forwards;
         }
+
+        .hero-badge i {
+            font-size: 8px;
+        }
+
+        /* ── Title ── */
+        .hero-title {
+            font-size: clamp(1.75rem, 3.5vw, 2.75rem);
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            margin-bottom: 1.25rem;
+            color: #fff;
+            animation: heroFadeUp 0.7s ease-out forwards;
+            animation-delay: 0.1s;
+            opacity: 0;
+        }
+
+        .hero-title .highlight {
+            color: #f48120;
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Underline removed — clean highlight only */
 
         body.lightmode .hero-title {
             color: #111;
         }
 
+        /* ── Subtitle ── */
         .hero-intro {
-            max-width: 600px;
+            max-width: 580px;
+            animation: heroFadeUp 0.7s ease-out forwards;
+            animation-delay: 0.2s;
+            opacity: 0;
         }
 
         .hero-intro p {
-            font-size: 0.875rem;
+            font-size: 0.9rem;
             line-height: 1.7;
-            margin-bottom: 1rem;
-            color: rgba(255, 255, 255, 0.6);
+            color: rgba(255, 255, 255, 0.55);
+            margin: 0;
         }
 
         body.lightmode .hero-intro p {
             color: rgba(0, 0, 0, 0.5);
         }
 
-        .hero-badge {
-            display: inline-flex;
-            font-size: 9px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            padding: 0.25rem 0.65rem;
-            border-radius: 999px;
-            font-family: 'Courier New', monospace;
-            margin-bottom: 1rem;
-        }
-
-        .hero-badge.orange {
-            background: #f48120;
-            color: #fff;
-            border: 1px solid #f48120;
-        }
-
-        /* ── Image Carousel inside Hero ── */
-        .hero-image-wrap {
-            position: relative;
-            border-radius: 1rem;
-            overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        }
-
-        body.lightmode .hero-image-wrap {
-            border-color: rgba(0, 0, 0, 0.06);
-        }
-
-        .product-image-swiper {
-            width: 100%;
-        }
-
-        .product-image-swiper .swiper-slide img {
-            width: 100%;
-            height: 280px;
-            object-fit: cover;
-            display: block;
-        }
-
-        /* Tablet side-by-side: match height to text col */
-        @media (min-width:768px) and (max-width:1023px) {
-            .product-image-swiper .swiper-slide img {
-                height: 360px;
-            }
-        }
-
-        @media (min-width:1024px) {
-            .product-image-swiper .swiper-slide img {
-                height: 420px;
-            }
-        }
-
-        .hero-swiper-pagination {
-            position: relative !important;
-            bottom: auto !important;
-            margin-top: 16px;
-            z-index: 10;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 6px;
-        }
-
-        .hero-swiper-pagination .swiper-pagination-bullet {
-            width: 8px;
-            height: 8px;
-            background: rgba(255, 255, 255, 0.5);
-            opacity: 1;
-            margin: 0 !important;
-            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-            border-radius: 50%;
-            cursor: pointer;
-        }
-
-        .hero-swiper-pagination .swiper-pagination-bullet-active {
-            width: 28px;
-            border-radius: 4px;
-            background: #f48120;
-            transform: scaleY(1.15);
-        }
-
-        body.lightmode .hero-swiper-pagination .swiper-pagination-bullet {
-            background: rgba(0, 0, 0, 0.25);
-        }
-
-        body.lightmode .hero-swiper-pagination .swiper-pagination-bullet-active {
-            background: #f48120;
-        }
-
-        .hero-image-overlay {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 50%;
-            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
-            pointer-events: none;
-            z-index: 2;
-        }
-
-        /* ── Hero Slide CTA Badges ── */
-        .hero-slide-cta {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            z-index: 10;
-        }
-
-        .hero-slide-cta-btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 16px 8px 14px;
-            border-radius: 50px;
-            background: rgba(0, 0, 0, 0.55);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.18);
-            color: #fff;
-            font-size: 12px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
-        }
-
-        .hero-slide-cta-btn:hover {
-            background: #f48120;
-            border-color: #f48120;
-            color: #fff;
-            transform: translateY(-2px) scale(1.04);
-            box-shadow: 0 8px 28px rgba(244, 129, 32, 0.35);
-        }
-
-        .hero-slide-cta-icon {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 28px;
-            height: 28px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.12);
-            transition: all 0.3s ease;
-            flex-shrink: 0;
-        }
-
-        .hero-slide-cta-icon .material-symbols-rounded {
-            font-size: 14px !important;
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
-        }
-
-        .hero-slide-cta-btn:hover .hero-slide-cta-icon {
-            background: rgba(255, 255, 255, 0.25);
-        }
-
-        body.lightmode .hero-slide-cta-btn {
-            background: rgba(255, 255, 255, 0.8);
-            border-color: rgba(0, 0, 0, 0.1);
-            color: #1a1a1a;
-        }
-
-        body.lightmode .hero-slide-cta-btn:hover {
-            background: #f48120;
-            border-color: #f48120;
-            color: #fff;
-        }
-
-        body.lightmode .hero-slide-cta-icon {
-            background: rgba(0, 0, 0, 0.06);
-        }
-
-        body.lightmode .hero-slide-cta-btn:hover .hero-slide-cta-icon {
-            background: rgba(255, 255, 255, 0.25);
-        }
-
-        /* ── Hero Nav CTAs (below text) ── */
+        /* ── Hero Product Nav Pills ── */
         .hero-nav-ctas {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
+            gap: 8px;
             margin-top: 28px;
+            animation: heroFadeUp 0.7s ease-out forwards;
+            animation-delay: 0.3s;
+            opacity: 0;
         }
 
         .hero-nav-btn {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
-            padding: 10px 18px 10px 14px;
+            gap: 7px;
+            padding: 9px 16px 9px 12px;
             border-radius: 50px;
-            background: rgba(244, 129, 32, 0.08);
-            border: 1px solid rgba(244, 129, 32, 0.2);
-            color: #f48120;
-            font-size: 13px;
+            background: rgba(244, 129, 32, 0.06);
+            border: 1px solid rgba(244, 129, 32, 0.15);
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 12px;
             font-weight: 600;
             text-decoration: none;
             transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
             line-height: 1;
+            backdrop-filter: blur(4px);
         }
 
         .hero-nav-btn:hover {
@@ -441,20 +305,22 @@
         }
 
         .hero-nav-btn i {
-            font-size: 11px;
+            font-size: 10px;
             transition: transform 0.25s ease;
+            opacity: 0.5;
         }
 
         .hero-nav-btn:hover i {
             transform: translateX(3px);
+            opacity: 1;
         }
 
         .hero-nav-icon {
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            width: 28px;
-            height: 28px;
+            width: 26px;
+            height: 26px;
             border-radius: 50%;
             background: rgba(244, 129, 32, 0.12);
             flex-shrink: 0;
@@ -462,6 +328,7 @@
         }
 
         .hero-nav-icon .material-symbols-rounded {
+            font-size: 14px !important;
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
         }
 
@@ -470,9 +337,7 @@
         }
 
         body.lightmode .hero-nav-btn {
-            background: rgba(244, 129, 32, 0.06);
-            border-color: rgba(244, 129, 32, 0.2);
-            color: #f48120;
+            color: #444;
         }
 
         body.lightmode .hero-nav-btn:hover {
@@ -484,30 +349,240 @@
             background: rgba(255, 255, 255, 0.2);
         }
 
-        @media (max-width: 575px) {
-            .hero-nav-ctas {
-                flex-direction: column;
-            }
+        /* ── Hero Stats Bar ── */
+        .hero-stats-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0;
+            margin-top: 32px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+            animation: heroFadeUp 0.7s ease-out forwards;
+            animation-delay: 0.4s;
+            opacity: 0;
+        }
 
-            .hero-nav-btn {
-                width: 100%;
-                justify-content: space-between;
+        body.lightmode .hero-stats-bar {
+            border-top-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .hero-stat-item {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            padding: 0 24px 0 0;
+        }
+
+        .hero-stat-item:not(:last-child) {
+            padding-right: 24px;
+            margin-right: 24px;
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        body.lightmode .hero-stat-item:not(:last-child) {
+            border-right-color: rgba(0, 0, 0, 0.08);
+        }
+
+        .hero-stat-number {
+            font-size: 1.3rem;
+            font-weight: 800;
+            color: #f48120;
+            letter-spacing: -0.02em;
+            line-height: 1;
+        }
+
+        .hero-stat-label {
+            font-size: 0.68rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: rgba(255, 255, 255, 0.35);
+            white-space: nowrap;
+        }
+
+        body.lightmode .hero-stat-label {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        /* ── Image Carousel ── */
+        .hero-image-wrap {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(244, 129, 32, 0.05);
+            animation: heroFadeRight 0.8s ease-out forwards;
+            animation-delay: 0.15s;
+            opacity: 0;
+        }
+
+        body.lightmode .hero-image-wrap {
+            border-color: rgba(0, 0, 0, 0.06);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.03);
+        }
+
+        .product-image-swiper {
+            width: 100%;
+        }
+
+        .product-image-swiper .swiper-slide img {
+            width: 100%;
+            height: 330px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .product-image-swiper .swiper-slide:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (min-width:768px) and (max-width:1023px) {
+            .product-image-swiper .swiper-slide img {
+                height: 396px;
             }
         }
 
-        /* Below 768px: single column — tighten margins */
+        @media (min-width:1024px) {
+            .product-image-swiper .swiper-slide img {
+                height: 484px;
+            }
+        }
+
+        .hero-swiper-pagination {
+            position: relative !important;
+            bottom: auto !important;
+            margin-top: 14px;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        .hero-swiper-pagination .swiper-pagination-bullet {
+            width: 6px;
+            height: 6px;
+            background: rgba(255, 255, 255, 0.35);
+            opacity: 1;
+            margin: 0 !important;
+            transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .hero-swiper-pagination .swiper-pagination-bullet-active {
+            width: 24px;
+            border-radius: 3px;
+            background: #f48120;
+        }
+
+        body.lightmode .hero-swiper-pagination .swiper-pagination-bullet {
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        body.lightmode .hero-swiper-pagination .swiper-pagination-bullet-active {
+            background: #f48120;
+        }
+
+        .hero-image-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40%;
+            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
+            pointer-events: none;
+            z-index: 2;
+        }
+
+        /* ── Slide CTA Badges ── */
+        .hero-slide-cta {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            z-index: 10;
+        }
+
+        .hero-slide-cta-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            padding: 7px 14px 7px 11px;
+            border-radius: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .hero-slide-cta-btn:hover {
+            background: #f48120;
+            border-color: #f48120;
+            color: #fff;
+            transform: translateY(-2px) scale(1.04);
+            box-shadow: 0 8px 24px rgba(244, 129, 32, 0.3);
+        }
+
+        .hero-slide-cta-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .hero-slide-cta-icon .material-symbols-rounded {
+            font-size: 12px !important;
+        }
+
+        .hero-slide-cta-btn:hover .hero-slide-cta-icon {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        body.lightmode .hero-slide-cta-btn {
+            background: rgba(255, 255, 255, 0.75);
+            border-color: rgba(0, 0, 0, 0.08);
+            color: #1a1a1a;
+        }
+
+        body.lightmode .hero-slide-cta-btn:hover {
+            background: #f48120;
+            color: #fff;
+        }
+
+        body.lightmode .hero-slide-cta-icon {
+            background: rgba(0, 0, 0, 0.06);
+        }
+
+        body.lightmode .hero-slide-cta-btn:hover .hero-slide-cta-icon {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* ── Animations ── */
+        @keyframes heroFadeUp {
+            0% { opacity: 0; transform: translateY(24px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes heroFadeRight {
+            0% { opacity: 0; transform: translateX(20px); }
+            100% { opacity: 1; transform: translateX(0); }
+        }
+
+        /* ── Responsive ── */
         @media (max-width: 767px) {
             .detail-hero {
-                padding-top: 0.75rem;
-                padding-bottom: 1.5rem;
-            }
-
-            .hero-text-col {
-                margin-top: 1.5rem;
-            }
-
-            .hero-image-col {
-                margin-top: 1rem;
+                padding: 2.5rem 0 2rem;
             }
 
             .hero-grid {
@@ -515,35 +590,164 @@
             }
 
             .hero-title {
-                font-size: clamp(1.2rem, 4.5vw, 1.5rem);
+                font-size: clamp(1.35rem, 5vw, 1.75rem);
                 margin-bottom: 0.75rem;
             }
 
+            /* Mobile: underline removed */
+
             .hero-intro p {
-                font-size: 0.8rem;
+                font-size: 0.82rem;
             }
 
             .hero-nav-ctas {
-                gap: 8px;
-                margin-top: 16px;
+                gap: 6px;
+                margin-top: 20px;
             }
 
             .hero-nav-btn {
-                padding: 9px 14px 9px 10px;
-                font-size: 12px;
+                padding: 7px 12px 7px 10px;
+                font-size: 11px;
             }
 
             .hero-nav-icon {
-                width: 26px;
-                height: 26px;
+                width: 22px;
+                height: 22px;
             }
 
             .hero-nav-icon .material-symbols-rounded {
+                font-size: 12px !important;
+            }
+
+            .hero-stats-bar {
+                margin-top: 24px;
+                padding-top: 20px;
+                gap: 16px;
+            }
+
+            .hero-stat-item:not(:last-child) {
+                padding-right: 16px;
+                margin-right: 16px;
+            }
+
+            .hero-stat-number {
+                font-size: 1.1rem;
+            }
+
+            .hero-stat-label {
+                font-size: 0.6rem;
+            }
+
+            .product-image-swiper .swiper-slide img {
+                height: 264px;
+            }
+
+            .hero-slide-cta {
+                bottom: 12px;
+                left: 12px;
+            }
+
+            .hero-badge {
+                font-size: 9px;
+                padding: 4px 10px;
+                margin-bottom: 0.75rem;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .detail-hero {
+                padding: 1.75rem 0 1.5rem;
+            }
+
+            .hero-grid {
+                gap: 1rem;
+            }
+
+            .hero-title {
+                font-size: clamp(1.2rem, 6vw, 1.4rem);
+            }
+
+            .hero-intro p {
+                font-size: 0.78rem;
+                line-height: 1.6;
+            }
+
+            .hero-nav-ctas {
+                gap: 6px;
+            }
+
+            .hero-nav-btn {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .hero-stats-bar {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .hero-stat-item:not(:last-child) {
+                padding-right: 0;
+                margin-right: 0;
+                border-right: none;
+                padding-bottom: 12px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            }
+
+            body.lightmode .hero-stat-item:not(:last-child) {
+                border-bottom-color: rgba(0, 0, 0, 0.06);
+            }
+
+            .product-image-swiper .swiper-slide img {
+                height: 220px;
+            }
+
+            .hero-slide-cta-btn {
+                padding: 5px 10px 5px 8px;
+                font-size: 10px;
+            }
+
+            .hero-slide-cta-icon {
+                width: 20px;
+                height: 20px;
+            }
+
+            .hero-slide-cta-icon .material-symbols-rounded {
+                font-size: 10px !important;
+            }
+
+            .hero-badge {
+                font-size: 8px;
+                padding: 3px 8px;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .detail-hero {
+                padding: 1.25rem 0 1rem;
+            }
+
+            .hero-title {
+                font-size: 1.05rem;
+            }
+
+            .product-image-swiper .swiper-slide img {
+                height: 187px;
+            }
+
+            .hero-stat-number {
+                font-size: 0.95rem;
+            }
+
+            .hero-stat-label {
+                font-size: 0.55rem;
+            }
+        }            .hero-nav-icon .material-symbols-rounded {
                 font-size: 15px !important;
             }
 
             .product-image-swiper .swiper-slide img {
-                height: 240px;
+                height: 264px;
             }
 
             .hero-slide-cta {
@@ -609,7 +813,7 @@
             }
 
             .product-image-swiper .swiper-slide img {
-                height: 210px;
+                height: 231px;
             }
 
             .hero-slide-cta {
@@ -694,7 +898,7 @@
             }
 
             .product-image-swiper .swiper-slide img {
-                height: 170px;
+                height: 187px;
             }
 
             .hero-slide-cta-btn {
@@ -986,52 +1190,63 @@
     </aside>
 
     <main>
-        <!-- ══ 1. HERO SPLIT (image carousel) ══ -->
+        <!-- ══ 1. HERO — Products ══ -->
         <section class="detail-hero sol-bg-dark">
             <div class="hero-bg-dots"></div>
             <div class="hero-glow orange-glow"></div>
+            <div class="hero-glow blue-glow"></div>
             <div class="hero-top-line"></div>
+            <div class="hero-bottom-line"></div>
             <div class="hero-container-inner">
                 <div class="hero-grid">
                     <div class="hero-text-col">
-                        <span class="hero-badge orange">Products</span>
-                        <h1 class="hero-title">Explore Our Products</h1>
+                        <span class="hero-badge"><i class="fa-solid fa-circle"></i> Products</span>
+                        <h1 class="hero-title">IoT-Enabled <span class="highlight">Monitoring</span><br>Solutions</h1>
                         <div class="hero-intro">
-                            <p>Discover Sentra's comprehensive range of IoT-enabled monitoring solutions — from wireless
-                                sensors and data loggers to core communication gateways — engineered for the most
-                                demanding applications.</p>
+                            <p>Discover Sentra's comprehensive range of wireless sensors, data loggers, communication
+                                gateways, and laser scanners — engineered for the most demanding infrastructure
+                                monitoring applications worldwide.</p>
                         </div>
                         <div class="hero-nav-ctas">
                             <a href="#wireless-sensors" class="hero-nav-btn">
-                                <span class="hero-nav-icon"><span class="material-symbols-rounded"
-                                        style="font-size:16px;">sensors</span></span>
+                                <span class="hero-nav-icon"><span class="material-symbols-rounded">sensors</span></span>
                                 <span>Wireless Sensors</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                             <a href="#communications" class="hero-nav-btn">
-                                <span class="hero-nav-icon"><span class="material-symbols-rounded"
-                                        style="font-size:16px;">router</span></span>
+                                <span class="hero-nav-icon"><span class="material-symbols-rounded">router</span></span>
                                 <span>Core Communications</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                             <a href="#data-loggers" class="hero-nav-btn">
-                                <span class="hero-nav-icon"><span class="material-symbols-rounded"
-                                        style="font-size:16px;">database</span></span>
+                                <span class="hero-nav-icon"><span class="material-symbols-rounded">database</span></span>
                                 <span>Data Loggers</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                             <a href="#wired-sensors" class="hero-nav-btn">
-                                <span class="hero-nav-icon"><span class="material-symbols-rounded"
-                                        style="font-size:16px;">cable</span></span>
+                                <span class="hero-nav-icon"><span class="material-symbols-rounded">cable</span></span>
                                 <span>Wired Sensors</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                             <a href="#laser-scanners" class="hero-nav-btn">
-                                <span class="hero-nav-icon"><span class="material-symbols-rounded"
-                                        style="font-size:16px;">document_scanner</span></span>
+                                <span class="hero-nav-icon"><span class="material-symbols-rounded">document_scanner</span></span>
                                 <span>Laser Scanners</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
+                        </div>
+                        <div class="hero-stats-bar">
+                            <div class="hero-stat-item">
+                                <span class="hero-stat-number">20+</span>
+                                <span class="hero-stat-label">Products Engineered</span>
+                            </div>
+                            <div class="hero-stat-item">
+                                <span class="hero-stat-number">500+</span>
+                                <span class="hero-stat-label">Sensors Deployed</span>
+                            </div>
+                            <div class="hero-stat-item">
+                                <span class="hero-stat-number">4+</span>
+                                <span class="hero-stat-label">Partners</span>
+                            </div>
                         </div>
                     </div>
                     <div class="hero-image-col">
@@ -1039,53 +1254,62 @@
                             <div class="swiper product-image-swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="./image/products/tiltmeter-2.webp" alt="Wireless Sensors">
+                                        <img src="./image/products/tiltmeter-2.webp" alt="Wireless Sensors" loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#wireless-sensors" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded"
-                                                        style="font-size:14px;">sensors</span></span>
+                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">sensors</span></span>
                                                 <span class="hero-slide-cta-label">Wireless Sensors</span>
-                                                <i class="fa-solid fa-arrow-right"
-                                                    style="font-size:11px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./image/products/4g-rugged-gateway-1cloud.webp"
-                                            alt="Core Communications">
+                                        <img src="./image/products/4g-rugged-gateway-1cloud.webp" alt="Core Communications" loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#communications" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded"
-                                                        style="font-size:14px;">router</span></span>
+                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">router</span></span>
                                                 <span class="hero-slide-cta-label">Core Communications</span>
-                                                <i class="fa-solid fa-arrow-right"
-                                                    style="font-size:11px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./image/products/digital-data-logger-1.webp"
-                                            alt="Data Loggers &amp; Wired Sensors">
+                                        <img src="./image/products/digital-data-logger-1.webp" alt="Data Loggers" loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#data-loggers" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded"
-                                                        style="font-size:14px;">database</span></span>
+                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">database</span></span>
                                                 <span class="hero-slide-cta-label">Data Loggers</span>
-                                                <i class="fa-solid fa-arrow-right"
-                                                    style="font-size:11px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./image/products/scanners/lixel-k2-hero-banner.png"
-                                            alt="Laser Scanners">
+                                        <img src="./image/products/scanners/lixel-k2-hero.webp" alt="Laser Scanners" loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#laser-scanners" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded"
-                                                        style="font-size:14px;">document_scanner</span></span>
+                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">document_scanner</span></span>
                                                 <span class="hero-slide-cta-label">Laser Scanners</span>
-                                                <i class="fa-solid fa-arrow-right"
-                                                    style="font-size:11px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./image/products/scanners/KV%20Horizontal.jpg" alt="KV Horizontal Laser Scanner" loading="lazy">
+                                        <div class="hero-slide-cta">
+                                            <a href="#laser-scanners" class="hero-slide-cta-btn">
+                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">document_scanner</span></span>
+                                                <span class="hero-slide-cta-label">Laser Scanners</span>
+                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./image/products/scanners/lixel-l2-pro.jpg" alt="Lixel L2 Pro" loading="lazy">
+                                        <div class="hero-slide-cta">
+                                            <a href="#laser-scanners" class="hero-slide-cta-btn">
+                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">document_scanner</span></span>
+                                                <span class="hero-slide-cta-label">Laser Scanners</span>
+                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -1629,25 +1853,6 @@
                                             <a href="./contact.html" class="sol-btn-primary">Quote <i
                                                     class="fa-solid fa-arrow-right"></i></a>
                                             <a href="./products/lixel-l2-pro.html" class="sol-btn-secondary">View <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="sol-product-card">
-                                    <div class="sol-product-image"><img
-                                            src="./image/products/scanners/lixelkity-k1-hero.webp" alt="LixelKity K1"
-                                            loading="lazy"></div>
-                                    <div class="sol-product-body">
-                                        <span class="sol-product-category">Laser Scanners</span>
-                                        <h4>LixelKity K1</h4>
-                                        <p>Compact yet powerful — sub-1kg wearable SLAM scanner with 360° LiDAR and dual
-                                            panoramic vision for tripod-free rapid capture.</p>
-                                        <div class="sol-product-actions">
-                                            <a href="./contact.html" class="sol-btn-primary">Quote <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                            <a href="./products/lixelkity-k1.html" class="sol-btn-secondary">View <i
                                                     class="fa-solid fa-arrow-right"></i></a>
                                         </div>
                                     </div>

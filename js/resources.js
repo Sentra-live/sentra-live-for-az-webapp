@@ -185,7 +185,7 @@
         {
             id: 'art-xgrids-reseller',
             title: 'Clove Technologies Becomes Authorized XGRIDS Reseller in India',
-            excerpt: 'Clove Technologies is now an authorized reseller of XGRIDS products in India, offering Lixel K2, PortalCam, Lixel L2 Pro, and LixelKity K1 for advanced 3D reality capture, LiDAR, and Digital Twin solutions.',
+            excerpt: 'Clove Technologies is now an authorized reseller of XGRIDS products in India, offering Lixel K2, PortalCam and Lixel L2 Pro for advanced 3D reality capture, LiDAR, and Digital Twin solutions.',
             category: 'Company News',
             color: 'orange',
             type: 'articles',

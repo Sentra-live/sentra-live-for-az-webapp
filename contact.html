@@ -1255,7 +1255,6 @@
                                                 <label class="checkbox-row"><input type="checkbox" name="laser-scanner-interest" value="Lixel K2"><span class="cb-liquid"></span><span class="cb-indicator"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"></polyline></svg></span><span class="cb-text">Lixel K2</span></label>
                                                 <label class="checkbox-row"><input type="checkbox" name="laser-scanner-interest" value="PortalCam"><span class="cb-liquid"></span><span class="cb-indicator"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"></polyline></svg></span><span class="cb-text">PortalCam</span></label>
                                                 <label class="checkbox-row"><input type="checkbox" name="laser-scanner-interest" value="Lixel L2 Pro"><span class="cb-liquid"></span><span class="cb-indicator"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"></polyline></svg></span><span class="cb-text">Lixel L2 Pro</span></label>
-                                                <label class="checkbox-row"><input type="checkbox" name="laser-scanner-interest" value="LixelKity K1"><span class="cb-liquid"></span><span class="cb-indicator"><svg viewBox="0 0 24 24"><polyline points="4 12 10 18 20 6"></polyline></svg></span><span class="cb-text">LixelKity K1</span></label>
                                             </div>
                                         </div>
                                         <div class="form-field-group conditional-field" id="solutionInterestGroup" style="display:none;">
@@ -1525,7 +1524,7 @@
             if (params.get('enquiry') === '1') {
                 showEnquiryForm();
                 var product = params.get('product');
-                var scannerNames = ['Lixel K2', 'PortalCam', 'Lixel L2 Pro', 'LixelKity K1'];
+                var scannerNames = ['Lixel K2', 'PortalCam', 'Lixel L2 Pro'];
 
                 if (product) {
                     var leadCb = document.querySelector('input[name="lead-type"][value="Products"]');

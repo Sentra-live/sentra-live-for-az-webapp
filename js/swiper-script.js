@@ -61,36 +61,41 @@ $(function () {
      * products carousel). Navigation arrows remain the primary way to page
      * through slides beyond the visible window.
      *
-     * Swiper's own renderBullet/event hooks proved unreliable for this
-     * carousel's combination of loop + breakpoints + observer, so this reacts
-     * to the actual DOM instead: a MutationObserver watches for Swiper moving
-     * its "active" class between bullets (the bullet elements themselves are
-     * long-lived, not recreated per transition) and re-applies the window
-     * whenever that happens, regardless of which internal path caused it.
+     * Track the observer so it can be disconnected before re-init to avoid
+     * MutationObserver storms when filtering products.
      */
     var MAX_VISIBLE_DOTS = 5;
+    var _paginationObservers = [];
+
     function watchPaginationDots(paginationEl) {
-        if (!paginationEl) return;
+        if (!paginationEl) return null;
 
+        var ticking = false;
         function apply() {
-            var bullets = paginationEl.querySelectorAll('.swiper-pagination-bullet');
-            var total = bullets.length;
-            if (!total) return;
+            if (ticking) return;
+            ticking = true;
+            // Use requestAnimationFrame to coalesce rapid mutations
+            requestAnimationFrame(function () {
+                ticking = false;
+                var bullets = paginationEl.querySelectorAll('.swiper-pagination-bullet');
+                var total = bullets.length;
+                if (!total) return;
 
-            if (total <= MAX_VISIBLE_DOTS) {
-                bullets.forEach(function (b) { b.classList.remove('dot-hidden'); });
-                return;
-            }
+                if (total <= MAX_VISIBLE_DOTS) {
+                    bullets.forEach(function (b) { b.classList.remove('dot-hidden'); });
+                    return;
+                }
 
-            var active = 0;
-            bullets.forEach(function (b, i) {
-                if (b.classList.contains('swiper-pagination-bullet-active')) active = i;
-            });
+                var active = 0;
+                bullets.forEach(function (b, i) {
+                    if (b.classList.contains('swiper-pagination-bullet-active')) active = i;
+                });
 
-            var half = Math.floor(MAX_VISIBLE_DOTS / 2);
-            var start = Math.min(Math.max(active - half, 0), total - MAX_VISIBLE_DOTS);
-            bullets.forEach(function (b, i) {
-                b.classList.toggle('dot-hidden', i < start || i >= start + MAX_VISIBLE_DOTS);
+                var half = Math.floor(MAX_VISIBLE_DOTS / 2);
+                var start = Math.min(Math.max(active - half, 0), total - MAX_VISIBLE_DOTS);
+                bullets.forEach(function (b, i) {
+                    b.classList.toggle('dot-hidden', i < start || i >= start + MAX_VISIBLE_DOTS);
+                });
             });
         }
 
@@ -102,7 +107,16 @@ $(function () {
             subtree: true,
             childList: true,
         });
+        _paginationObservers.push(observer);
         return observer;
+    }
+
+    /** Disconnect all pagination observers so they don't accumulate on re-init. */
+    function disconnectPaginationObservers() {
+        _paginationObservers.forEach(function (obs) {
+            if (obs && obs.disconnect) obs.disconnect();
+        });
+        _paginationObservers = [];
     }
 
     /**
@@ -164,9 +178,16 @@ $(function () {
         if (slideCount < 6) {
             config.loop = false;
         }
-        var swiper = new Swiper(el, config);
-        watchPaginationDots(config.pagination.el);
-        return swiper;
+        try {
+            var swiper = new Swiper(el, config);
+            // Disconnect old observers first to prevent MutationObserver storms
+            disconnectPaginationObservers();
+            watchPaginationDots(config.pagination.el);
+            return swiper;
+        } catch (e) {
+            console.warn('Swiper init failed:', e);
+            return null;
+        }
     }
 
     /**
@@ -196,10 +217,6 @@ $(function () {
             var $btn = $(this);
             if ($btn.hasClass('active')) return;
 
-            // Update active button
-            $filterBar.find('.product-filter-btn').removeClass('active');
-            $btn.addClass('active');
-
             var filter = $btn.data('filter');
 
             // Determine which original slides match the filter
@@ -215,17 +232,27 @@ $(function () {
                 }
             });
 
-            // Guard: if no slides match, do nothing
+            // Guard: if no slides match, do nothing and DON'T mark button active
             if (!matchingHTML.length) return;
+
+            // Only now mark this button active (prevents getting locked on empty results)
+            $filterBar.find('.product-filter-btn').removeClass('active');
+            $btn.addClass('active');
 
             // Rebuild each Swiper instance with matching slides
             swiperInstances.forEach(function (item) {
                 var $container = item.container;
                 var oldSwiper = item.swiper;
 
-                // Destroy old Swiper
+                // Disconnect old pagination observers before destroying Swiper
+                disconnectPaginationObservers();
+
                 if (oldSwiper && oldSwiper.destroy) {
-                    oldSwiper.destroy(true, true);
+                    try {
+                        oldSwiper.destroy(true, true);
+                    } catch (e) {
+                        // Swallow destroy errors
+                    }
                 }
 
                 // Clear the wrapper and re-add matching slides
