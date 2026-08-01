@@ -422,11 +422,16 @@ html {
     font-size: 16px;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-color: var(--secondary);
     font-family: var(--global-font);
     color: var(--primary);
     transition: background_color 0.5s ease;
+    overflow-x: hidden;
 }
 
 body.lightmode .keep-dark {
@@ -3995,7 +4000,7 @@ header.scrolled .navbar {
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     border-radius: 0;
     border: none;
     background: var(--scrolled-bg);
@@ -9051,6 +9056,22 @@ body.lightmode .link-wrapper:hover i {
 
 .chooseus-image-container img {
     border-radius: 0 !important;
+}
+
+/* Match image height to the accordion list height in the side-by-side layout */
+@media (min-width: 1200px) {
+    .chooseus-content-container>.d-flex.flex-column.gspace-5 {
+        height: 100%;
+    }
+
+    .chooseus-image-container {
+        height: 100%;
+    }
+
+    .chooseus-img {
+        height: 100%;
+        aspect-ratio: auto;
+    }
 }
 
 /* ================== 46. Image Container Components ================== */

@@ -696,12 +696,20 @@ body.lightmode .ed-products-list { border-right-color: rgba(0,0,0,0.07); }
 body.lightmode .ed-pl-item { border-bottom-color: rgba(0,0,0,0.05); }
 body.lightmode .ed-pl-item.ed-pl-active,
 body.lightmode .ed-pl-item:hover { background: rgba(244,129,32,0.07); }
-body.lightmode .ed-related-preview { background: rgba(0,0,0,0.02); }
+body.lightmode .ed-related-preview { background: rgba(0,0,0,0.02); }        body.lightmode .ed-rp-cta { background: #111; color: #fff; }
+        body.lightmode .ed-rp-cta:hover { background: #333; color: #fff; }
 
-body.lightmode .ed-rp-cta { background: #111; color: #fff; }
-body.lightmode .ed-rp-cta:hover { background: #333; color: #fff; }
+        /* ══ AVATAR OVERLAP (5 partner logos) ══ */
+        .testimonial-section-compact .testimonial-reviewer .avatar-container .avatar:nth-child(4) {
+            z-index: 4;
+            margin-left: -10px !important;
+        }
+        .testimonial-section-compact .testimonial-reviewer .avatar-container .avatar:nth-child(5) {
+            z-index: 5;
+            margin-left: -10px !important;
+        }
 
-/* ══ SIDEBAR PANEL ══ */
+        /* ══ SIDEBAR PANEL ══ */
 .ed-sidebar-panel {
     border-radius: 14px;
     border: 1px solid rgba(255,255,255,0.07);
@@ -1389,9 +1397,11 @@ body.lightmode .dark-accent { color: #2d2e2f !important; }
                                     <div class="d-flex flex-column flex-md-row flex-xl-column justify-content-between gspace-3">
                                         <div class="testimonial-reviewer">
                                             <div class="avatar-container">
-                                                <img src="../image/testimonials/reviews1.webp" alt="Client review avatar" class="avatar">
-                                                <img src="../image/testimonials/reviews2.webp" alt="Client review avatar" class="avatar">
-                                                <img src="../image/testimonials/reviews3.webp" alt="Client review avatar" class="avatar">
+                                                <img src="../image/about/partner_1.webp" alt="Amaravathi CRDA" class="avatar" width="150" height="150">
+                                                <img src="../image/about/partner_3.webp" alt="Indian Railways" class="avatar" width="150" height="150">
+                                                <img src="../image/about/partner_8.webp" alt="HappyNest" class="avatar" width="150" height="150">
+                                                <img src="../image/about/partner_2.webp" alt="Northern Railway" class="avatar" width="150" height="150">
+                                                <img src="../image/about/partner_4.webp" alt="Southern Railway" class="avatar" width="150" height="150">
                                             </div>
                                             <div class="detail">
                                                 <h6>200+</h6>
@@ -1461,16 +1471,16 @@ body.lightmode .dark-accent { color: #2d2e2f !important; }
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="../image/testimonials/reviews1.webp" alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="../image/about/partner_3.webp" alt="Indian Railways" class="img-fluid" style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">Emma Richard</span>
-                                                        <p class="profile-info">CEO Nexa</p>
+                                                        <span class="profile-name">Indian Railways</span>
+                                                        <p class="profile-info">Bridge Monitoring Division</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
-                                            <p class="testimonial-description">"Sentra completely transformed our way of Success! Their BIM Deployment strategies helped us get a new face for us and hold it up with pride."</p>
+                                            <p class="testimonial-description">"Sentra's SHM, fatigue life assessment, and BridgePulse AI have given us unprecedented visibility into our critical rail bridges. The predictive analytics alone helped us prevent multiple potential failures."</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -1483,16 +1493,16 @@ body.lightmode .dark-accent { color: #2d2e2f !important; }
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="../image/testimonials/reviews2.webp" alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="../image/about/partner_1.webp" alt="Amaravathi CRDA" class="img-fluid" style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">David Mont</span>
-                                                        <p class="profile-info">Marketing Director</p>
+                                                        <span class="profile-name">Amaravathi CRDA</span>
+                                                        <p class="profile-info">Capital City Development</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
-                                            <p class="testimonial-description">"Now that we are a part of Sentra Family. We can turn every inch of our ideology to our Strength."</p>
+                                            <p class="testimonial-description">"Sentra delivered a comprehensive digital twin for our entire capital city. This has revolutionised how we plan, monitor, and manage urban infrastructure at scale."</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -1505,16 +1515,16 @@ body.lightmode .dark-accent { color: #2d2e2f !important; }
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="../image/testimonials/reviews3.webp" alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="../image/about/partner_7.webp" alt="APTIDCO" class="img-fluid" style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">Sophia Lewis</span>
-                                                        <p class="profile-info">Founder</p>
+                                                        <span class="profile-name">APTIDCO</span>
+                                                        <p class="profile-info">Technology Infrastructure</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
-                                            <p class="testimonial-description">"Sentra's monitoring solutions gave us real-time insights we never had before. Absolutely game-changing for our infrastructure projects."</p>
+                                            <p class="testimonial-description">"The digital twin and facility management solution from Sentra has revolutionised how we manage our technology infrastructure. Real-time insights have dramatically improved our operational efficiency."</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -1527,16 +1537,16 @@ body.lightmode .dark-accent { color: #2d2e2f !important; }
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="../image/testimonials/reviews4.webp" alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="../image/about/partner_8.webp" alt="HappyNest" class="img-fluid" style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">James Peterson</span>
-                                                        <p class="profile-info">COO, BrightWave</p>
+                                                        <span class="profile-name">HappyNest</span>
+                                                        <p class="profile-info">Digital Operations</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
-                                            <p class="testimonial-description">"Highly professional and results-oriented. Sentra's expertise in IoT made us take a huge step into Innovation that we will never deny."</p>
+                                            <p class="testimonial-description">"Sentra's website management and maintenance services have been exceptional. Our online presence has never been more robust and user-friendly."</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -1549,16 +1559,16 @@ body.lightmode .dark-accent { color: #2d2e2f !important; }
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="../image/testimonials/reviews1.webp" alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="../image/about/partner_2.webp" alt="Northern Railway" class="img-fluid" style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">Emma Richard</span>
-                                                        <p class="profile-info">CEO Nexa</p>
+                                                        <span class="profile-name">Northern Railway</span>
+                                                        <p class="profile-info">Infrastructure Division</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
-                                            <p class="testimonial-description">"Sentra revolutionized our success journey. Their BIM deployment strategies redefined our operations and helped us present our organization with renewed confidence."</p>
+                                            <p class="testimonial-description">"The BIM digital twin combined with Sentra's structural health monitoring has given us complete visibility into our railway infrastructure. We can now predict issues before they occur."</p>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
@@ -1571,60 +1581,16 @@ body.lightmode .dark-accent { color: #2d2e2f !important; }
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="../image/testimonials/reviews4.webp" alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="../image/about/partner_4.webp" alt="Southern Railway" class="img-fluid" style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">Michael Torres</span>
-                                                        <p class="profile-info">VP Engineering, InfraCorp</p>
+                                                        <span class="profile-name">Southern Railway</span>
+                                                        <p class="profile-info">Bridge &amp; Structures Division</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
-                                            <p class="testimonial-description">"Sentra's real-time monitoring platform gave us complete visibility into our bridge assets. The predictive alerts alone saved us from a potential shutdown."</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div class="stars">
-                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="d-flex flex-row align-items-center justify-content-between">
-                                                <div class="d-flex flex-row gspace-2">
-                                                    <div class="testimonial-image">
-                                                        <img src="../image/testimonials/reviews1.webp" alt="Testimonial - client photo" class="img-fluid">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="profile-name">Aisha Patel</span>
-                                                        <p class="profile-info">Head of Infrastructure, Metro Rail</p>
-                                                    </div>
-                                                </div>
-                                                <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
-                                            </div>
-                                            <p class="testimonial-description">"The sensor deployment and data analytics from Sentra gave us 24/7 visibility across our entire rail network. We detected anomalies weeks before they could become safety issues."</p>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div class="stars">
-                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="d-flex flex-row align-items-center justify-content-between">
-                                                <div class="d-flex flex-row gspace-2">
-                                                    <div class="testimonial-image">
-                                                        <img src="../image/testimonials/reviews4.webp" alt="Testimonial - client photo" class="img-fluid">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="profile-name">James Peterson</span>
-                                                        <p class="profile-info">COO, BrightWave</p>
-                                                    </div>
-                                                </div>
-                                                <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
-                                            </div>
-                                            <p class="testimonial-description">"Sentra's IoT expertise pushed us to embrace innovation like never before. Their professionalism and focus on results made all the difference."</p>
+                                            <p class="testimonial-description">"Sentra's SHM, fatigue life assessment, and BridgePulse AI have given us unprecedented visibility into our critical rail bridges. This partnership has elevated our safety standards."</p>
                                         </div>
                                     </div>
                                 </div>

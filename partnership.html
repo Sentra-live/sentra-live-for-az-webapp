@@ -59,10 +59,6 @@
         }
 
         /* ══ PARTNERSHIP HERO ══ */
-        .section-banner {
-            padding: 0 !important;
-        }
-
         @keyframes partnershipFadeUp {
             0% { opacity: 0; transform: translateY(20px); }
             100% { opacity: 1; transform: translateY(0); }
@@ -76,6 +72,13 @@
             overflow: hidden;
             text-align: center;
             padding: 110px 24px 60px;
+        }
+        .partnership-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 80% 60% at 50% 100%, rgba(244,129,32,0.07) 0%, transparent 70%);
+            pointer-events: none;
         }
         .partnership-hero-bottom-line {
             position: absolute;
@@ -128,24 +131,6 @@
             max-width: 620px;
             margin: 0 auto 2.5rem;
         }
-        .partnership-intro .sub-heading {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 11px;
-            font-weight: 700;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: rgba(244,129,32,0.7);
-            margin-bottom: 12px;
-        }
-        .partnership-intro .sub-heading i { font-size: 0.65rem; }
-        .partnership-intro h2 {
-            font-size: clamp(26px, 3.5vw, 38px);
-            font-weight: 800;
-            line-height: 1.15;
-            margin: 0 0 0.75rem;
-        }
         .partnership-intro p {
             font-size: 0.92rem;
             opacity: 0.55;
@@ -176,6 +161,19 @@
             font-weight: 500;
         }
 
+        .partnership-group + .partnership-group {
+            margin-top: 3rem;
+        }
+        .partnership-group-title {
+            text-align: center;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            opacity: 0.5;
+            margin: 0 0 1.25rem;
+        }
+
         .partnership-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -203,13 +201,12 @@
             height: calc(100% - 4px);
             object-fit: contain;
             border-radius: 12px;
-            opacity: 0.55;
-            filter: grayscale(0.4);
-            transition: opacity 0.3s ease, filter 0.3s ease;
+            opacity: 1;
+            filter: grayscale(0);
+            transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
         }
         .partnership-card:hover img {
-            opacity: 0.85;
-            filter: grayscale(0);
+            transform: scale(1.04);
         }
 
         body.lightmode .partnership-card {
@@ -222,11 +219,7 @@
             box-shadow: 0 8px 30px rgba(0,0,0,0.06);
         }
         body.lightmode .partnership-card img {
-            opacity: 0.5;
-            filter: grayscale(0.4);
-        }
-        body.lightmode .partnership-card:hover img {
-            opacity: 0.8;
+            opacity: 1;
             filter: grayscale(0);
         }
 
@@ -293,11 +286,6 @@
         <div class="partnership-section">
             <div class="hero-container">
                 <div class="partnership-intro">
-                    <div class="sub-heading">
-                        <i class="fa-regular fa-circle-dot"></i>
-                        <span>Trusted Partners</span>
-                    </div>
-                    <h2>Strong Partnerships, Proven Success</h2>
                     <p>Sentra collaborates with leading engineering firms, technology providers, and research institutions to deliver comprehensive structural health monitoring solutions across the globe.</p>
                 </div>
 
@@ -320,46 +308,75 @@
                     </div>
                 </div>
 
-                <div class="partnership-grid">
-                    <div class="partnership-card">
-                        <a href="https://crda.ap.gov.in/apcrdav2/views/home.aspx" target="_blank" rel="noopener">
-                            <img src="./image/about/partner_1.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
-                        </a>
+                <div class="partnership-group">
+                    <h3 class="partnership-group-title">Our Esteemed Clients</h3>
+                    <div class="partnership-grid">
+                        <div class="partnership-card">
+                            <a href="https://crda.ap.gov.in/apcrdav2/views/home.aspx" target="_blank" rel="noopener">
+                                <img src="./image/about/partner_1.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="https://nr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
+                                <img src="./image/about/partner_2.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="https://www.indianrail.gov.in/" target="_blank" rel="noopener">
+                                <img src="./image/about/partner_3.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="https://sr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
+                                <img src="./image/about/partner_4.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="https://www.sail.co.in/en" target="_blank" rel="noopener">
+                                <img src="./image/about/partner_5.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="https://bwssb.karnataka.gov.in/en" target="_blank" rel="noopener">
+                                <img src="./image/about/partner_6.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="https://aptidco.ap.gov.in/" target="_blank" rel="noopener">
+                                <img src="./image/about/partner_7.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="https://www.happynest.live/" target="_blank" rel="noopener">
+                                <img src="./image/about/partner_8.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
+                            </a>
+                        </div>
                     </div>
-                    <div class="partnership-card">
-                        <a href="https://nr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
-                            <img src="./image/about/partner_2.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
-                        </a>
-                    </div>
-                    <div class="partnership-card">
-                        <a href="https://www.indianrail.gov.in/" target="_blank" rel="noopener">
-                            <img src="./image/about/partner_3.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
-                        </a>
-                    </div>
-                    <div class="partnership-card">
-                        <a href="https://sr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
-                            <img src="./image/about/partner_4.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
-                        </a>
-                    </div>
-                    <div class="partnership-card">
-                        <a href="https://www.sail.co.in/en" target="_blank" rel="noopener">
-                            <img src="./image/about/partner_5.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
-                        </a>
-                    </div>
-                    <div class="partnership-card">
-                        <a href="https://bwssb.karnataka.gov.in/en" target="_blank" rel="noopener">
-                            <img src="./image/about/partner_6.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
-                        </a>
-                    </div>
-                    <div class="partnership-card">
-                        <a href="https://aptidco.ap.gov.in/" target="_blank" rel="noopener">
-                            <img src="./image/about/partner_7.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
-                        </a>
-                    </div>
-                    <div class="partnership-card">
-                        <a href="https://www.happynest.live/" target="_blank" rel="noopener">
-                            <img src="./image/about/partner_8.webp" alt="Partner Company Logo" class="partner-logo img-fluid">
-                        </a>
+                </div>
+
+                <div class="partnership-group">
+                    <h3 class="partnership-group-title">Our Product &amp; Technology Partners</h3>
+                    <div class="partnership-grid">
+                        <div class="partnership-card">
+                            <a href="./article/worldsensing-official-reseller-india.html">
+                                <img src="./image/reseller_logo/worldsensing.png" alt="Worldsensing" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="https://www.geokon.com/" target="_blank" rel="noopener">
+                                <img src="./image/reseller_logo/GEOKON-Logos-H.png" alt="GEOKON" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="https://www.rockfieldglobal.com/" target="_blank" rel="noopener">
+                                <img src="./image/reseller_logo/rockfiled.png" alt="Rockfield" class="partner-logo img-fluid">
+                            </a>
+                        </div>
+                        <div class="partnership-card">
+                            <a href="./article/xgrids-authorized-reseller-india.html">
+                                <img src="./image/reseller_logo/xgrids.avif" alt="XGRIDS" class="partner-logo img-fluid">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

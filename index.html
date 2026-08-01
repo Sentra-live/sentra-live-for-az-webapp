@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-8GFRCEFB87');
-</script>
+        gtag('config', 'G-8GFRCEFB87');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentra - Smart. Secure. Scalable.</title>
@@ -68,6 +68,34 @@
     "logo":"https://sentratech.in/assets/logo.webp"
     }
     </script>
+    <script type="application/ld+json">
+    {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"Lixel K2 - Handheld 3D Scanner",
+    "description":"Lightweight handheld 3D laser scanner with real-time SLAM fusion, multi-camera array, and integrated RTK for engineering-grade spatial data capture.",
+    "image":"https://sentratech.in/image/products/scanners/lixel-k2-hero.webp",
+    "brand":{"@type":"Brand","name":"Sentra"},
+    "url":"https://sentratech.in/products/lixel-k2.html",
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","bestRating":"5","worstRating":"1","ratingCount":"24"},
+    "review":[{"@type":"Review","author":{"@type":"Organization","name":"Infrastructure Survey"},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5","worstRating":"1"},"reviewBody":"Exceptional accuracy and reliability for large-scale facility documentation."}],
+    "offers":{"@type":"Offer","url":"https://sentratech.in/products/lixel-k2.html","priceCurrency":"INR","price":"0","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"Sentra","url":"https://sentratech.in/"},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","returnsWithinDays":30,"refundType":"https://schema.org/FullRefund","applicableCountry":"IN"},"shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"PriceSpecification","priceCurrency":"INR","price":"0"},"shippingDestination":{"@type":"ShippingDeliveryTime","deliveryTime":{"@type":"QuantitativeValue","unitCode":"DAY","value":"3-5"}},"deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","unitCode":"DAY","value":"1"},"transitTime":{"@type":"QuantitativeValue","unitCode":"DAY","value":"3-5"}}}}
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+    "@context":"https://schema.org",
+    "@type":"Product",
+    "name":"PortalCam - Handheld Spatial Camera",
+    "description":"The world's first true spatial camera with LiDAR depth, RGB imaging and edge AI for real-time 3D Gaussian Splatting reconstruction.",
+    "image":"https://sentratech.in/image/products/scanners/KV Horizontal.jpg",
+    "brand":{"@type":"Brand","name":"XGRIDS"},
+    "url":"https://sentratech.in/products/portalcam.html",
+    "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.7","bestRating":"5","worstRating":"1","ratingCount":"18"},
+    "review":[{"@type":"Review","author":{"@type":"Organization","name":"3D Capture Professional"},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5","worstRating":"1"},"reviewBody":"Unprecedented speed and quality for spatial content creation. Game-changing technology."}],
+    "offers":{"@type":"Offer","url":"https://sentratech.in/products/portalcam.html","priceCurrency":"INR","price":"0","availability":"https://schema.org/InStock","seller":{"@type":"Organization","name":"Sentra","url":"https://sentratech.in/"},"hasMerchantReturnPolicy":{"@type":"MerchantReturnPolicy","returnsWithinDays":30,"refundType":"https://schema.org/FullRefund","applicableCountry":"IN"},"shippingDetails":{"@type":"OfferShippingDetails","shippingRate":{"@type":"PriceSpecification","priceCurrency":"INR","price":"0"},"shippingDestination":{"@type":"ShippingDeliveryTime","deliveryTime":{"@type":"QuantitativeValue","unitCode":"DAY","value":"3-5"}},"deliveryTime":{"@type":"ShippingDeliveryTime","handlingTime":{"@type":"QuantitativeValue","unitCode":"DAY","value":"1"},"transitTime":{"@type":"QuantitativeValue","unitCode":"DAY","value":"3-5"}}}}
+    }
+    </script>
 
     <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="./css/style.css">
@@ -96,17 +124,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
     <link rel="preload" href="header.html" as="fetch" crossorigin="anonymous">
     <link rel="preload" href="footer.html" as="fetch" crossorigin="anonymous">
-
-
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JY641C8LKH"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-JY641C8LKH');
-    </script>
 
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="w+zfk9KW5N4Qc7VwqPEqkw" async></script>
     <style>
@@ -572,13 +589,29 @@
            immediately, instead of waiting on GSAP core + ScrollTrigger (CDN) + 10
            other deferred scripts to execute before becoming visible. */
         @keyframes heroFadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
+
         @keyframes heroFadeRight {
-            from { opacity: 0; transform: translateX(24px); }
-            to { opacity: 1; transform: translateX(0); }
+            from {
+                opacity: 0;
+                transform: translateX(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
+
         .title-heading-banner,
         .hero-subheading,
         .hero-solution-pills,
@@ -588,19 +621,39 @@
             opacity: 0;
             animation: heroFadeUp 0.7s ease-out forwards;
         }
+
         .hero-video-card {
             opacity: 0;
             animation: heroFadeRight 0.7s ease-out forwards;
         }
-        .title-heading-banner { animation-delay: 0.1s; }
-        .hero-subheading { animation-delay: 0.25s; }
+
+        .title-heading-banner {
+            animation-delay: 0.1s;
+        }
+
+        .hero-subheading {
+            animation-delay: 0.25s;
+        }
+
         .hero-solution-pills,
-        .hero-solution-ticker { animation-delay: 0.35s; }
-        .hero-video-card { animation-delay: 0.3s; }
-        .hero-actions { animation-delay: 0.45s; }
-        .banner-reviewer { animation-delay: 0.55s; }
+        .hero-solution-ticker {
+            animation-delay: 0.35s;
+        }
+
+        .hero-video-card {
+            animation-delay: 0.3s;
+        }
+
+        .hero-actions {
+            animation-delay: 0.45s;
+        }
+
+        .banner-reviewer {
+            animation-delay: 0.55s;
+        }
 
         @media (prefers-reduced-motion: reduce) {
+
             .title-heading-banner,
             .hero-subheading,
             .hero-solution-pills,
@@ -637,11 +690,6 @@
         <!-- Section Navbar -->
         <div id="header"></div>
     </header>
-    <script>
-        fetch("header.html")
-            .then(r => r.text())
-            .then(h => document.getElementById("header").innerHTML = h);
-    </script>
 
     <!-- Section Content Edit -->
     <aside>
@@ -718,9 +766,16 @@
                             </div>
                             <div class="banner-reviewer">
                                 <div class="d-flex flex-row align-items-center">
-                                    <img src="./image/about/partner_1.webp" alt="Amaravathi" class="avatar" width="150" height="150">
-                                    <img src="./image/about/partner_3.webp" alt="Indian_Railways" class="avatar" width="150" height="150">
-                                    <img src="./image/about/partner_8.webp" alt="HappyNest" class="avatar" width="150" height="150">
+                                    <img src="./image/about/partner_1.webp" alt="Amaravathi" class="avatar" width="150"
+                                        height="150">
+                                    <img src="./image/about/partner_2.webp" alt="Northern Railway" class="avatar"
+                                        width="150" height="150">
+                                    <img src="./image/about/partner_3.webp" alt="Indian_Railways" class="avatar"
+                                        width="150" height="150">
+                                    <img src="./image/about/partner_4.webp" alt="Southern Railway" class="avatar"
+                                        width="150" height="150">
+                                    <img src="./image/about/partner_8.webp" alt="HappyNest" class="avatar" width="150"
+                                        height="150">
                                 </div>
                                 <div class="detail">
                                     <span>200+</span>
@@ -873,17 +928,21 @@
                             <div class="swiper swiperPartner">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <a href="https://crda.ap.gov.in/apcrdav2/views/home.aspx" target="_blank" rel="noopener">
+                                        <a href="https://crda.ap.gov.in/apcrdav2/views/home.aspx" target="_blank"
+                                            rel="noopener">
                                             <div class="partner-slide">
-                                                <img src="./image/about/partner_1.webp" alt="Amaravathi - Partner"
+                                                <img src="./image/about/partner_1.webp"
+                                                    alt="Amaravathi Capital Region Development Authority"
                                                     class="partner-logo img-fluid" width="150" height="150">
                                             </div>
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="https://nr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
+                                        <a href="https://nr.indianrailways.gov.in/index.jsp?lang=0" target="_blank"
+                                            rel="noopener">
                                             <div class="partner-slide">
-                                                <img src="./image/about/partner_2.webp" alt="Partner Company Logo"
+                                                <img src="./image/about/partner_2.webp"
+                                                    alt="Indian Railways - Northern Railway"
                                                     class="partner-logo img-fluid" width="150" height="150">
                                             </div>
                                         </a>
@@ -891,15 +950,17 @@
                                     <div class="swiper-slide">
                                         <a href="https://www.indianrail.gov.in/" target="_blank" rel="noopener">
                                             <div class="partner-slide">
-                                                <img src="./image/about/partner_3.webp" alt="Indian Railways - Partner"
+                                                <img src="./image/about/partner_3.webp" alt="Indian Railways"
                                                     class="partner-logo img-fluid" width="150" height="150">
                                             </div>
                                         </a>
                                     </div>
                                     <div class="swiper-slide">
-                                        <a href="https://sr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
+                                        <a href="https://sr.indianrailways.gov.in/index.jsp?lang=0" target="_blank"
+                                            rel="noopener">
                                             <div class="partner-slide">
-                                                <img src="./image/about/partner_4.webp" alt="Partner Company Logo"
+                                                <img src="./image/about/partner_4.webp"
+                                                    alt="Indian Railways - Southern Railway"
                                                     class="partner-logo img-fluid" width="150" height="150">
                                             </div>
                                         </a>
@@ -907,7 +968,8 @@
                                     <div class="swiper-slide">
                                         <a href="https://www.sail.co.in/en" target="_blank" rel="noopener">
                                             <div class="partner-slide">
-                                                <img src="./image/about/partner_5.webp" alt="Partner Company Logo"
+                                                <img src="./image/about/partner_5.webp"
+                                                    alt="Steel Authority of India Limited (SAIL)"
                                                     class="partner-logo img-fluid" width="150" height="150">
                                             </div>
                                         </a>
@@ -915,7 +977,8 @@
                                     <div class="swiper-slide">
                                         <a href="https://bwssb.karnataka.gov.in/en" target="_blank" rel="noopener">
                                             <div class="partner-slide">
-                                                <img src="./image/about/partner_6.webp" alt="Partner Company Logo"
+                                                <img src="./image/about/partner_6.webp"
+                                                    alt="Bangalore Water Supply and Sewerage Board (BWSSB)"
                                                     class="partner-logo img-fluid" width="150" height="150">
                                             </div>
                                         </a>
@@ -923,79 +986,8 @@
                                     <div class="swiper-slide">
                                         <a href="https://aptidco.ap.gov.in/" target="_blank" rel="noopener">
                                             <div class="partner-slide">
-                                                <img src="./image/about/partner_7.webp" alt="Partner Company Logo"
-                                                    class="partner-logo img-fluid" width="150" height="150">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="https://sr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
-                                            <div class="partner-slide">
-                                                <img src="./image/about/partner_4.webp" alt="Partner Company Logo"
-                                                    class="partner-logo img-fluid" width="150" height="150">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="https://www.indianrail.gov.in/" target="_blank" rel="noopener">
-                                            <div class="partner-slide">
-                                                <img src="./image/about/partner_3.webp" alt="Partner Company Logo"
-                                                    class="partner-logo img-fluid" width="150" height="150">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="https://nr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
-                                            <div class="partner-slide">
-                                                <img src="./image/about/partner_2.webp" alt="Partner Company Logo"
-                                                    class="partner-logo img-fluid" width="150" height="150">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="https://crda.ap.gov.in/apcrdav2/views/home.aspx" target="_blank" rel="noopener">
-                                            <div class="partner-slide">
-                                                <img src="./image/about/partner_1.webp" alt="Partner Company Logo"
-                                                    class="partner-logo img-fluid" width="150" height="150">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="https://nr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
-                                            <div class="partner-slide">
-                                                <img src="./image/about/partner_2.webp" alt="Partner Company Logo"
-                                                    class="partner-logo img-fluid" width="150" height="150">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="https://www.indianrail.gov.in/" target="_blank" rel="noopener">
-                                            <div class="partner-slide">
-                                                <img src="./image/about/partner_3.webp" alt="Partner Company Logo"
-                                                    class="partner-logo img-fluid" width="150" height="150">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="https://sr.indianrailways.gov.in/index.jsp?lang=0" target="_blank" rel="noopener">
-                                            <div class="partner-slide">
-                                                <img src="./image/about/partner_4.webp" alt="Partner Company Logo"
-                                                    class="partner-logo img-fluid" width="150" height="150">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="https://www.sail.co.in/en" target="_blank" rel="noopener">
-                                            <div class="partner-slide">
-                                                <img src="./image/about/partner_5.webp" alt="Partner Company Logo"
-                                                    class="partner-logo img-fluid" width="150" height="150">
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <a href="https://bwssb.karnataka.gov.in/en" target="_blank" rel="noopener">
-                                            <div class="partner-slide">
-                                                <img src="./image/about/partner_6.webp" alt="Partner Company Logo"
+                                                <img src="./image/about/partner_7.webp"
+                                                    alt="Andhra Pradesh Technology Development Corporation (APTIDCO)"
                                                     class="partner-logo img-fluid" width="150" height="150">
                                             </div>
                                         </a>
@@ -1003,7 +995,7 @@
                                     <div class="swiper-slide">
                                         <a href="https://www.happynest.live/" target="_blank" rel="noopener">
                                             <div class="partner-slide">
-                                                <img src="./image/about/partner_8.webp" alt="Partner Company Logo"
+                                                <img src="./image/about/partner_8.webp" alt="HappyNest"
                                                     class="partner-logo img-fluid" width="150" height="150">
                                             </div>
                                         </a>
@@ -1212,8 +1204,8 @@
                         <h2 class="title-heading intro-heading-compact heading-container heading-container-medium animate-box animated animate__animated"
                             data-animate="animate__fadeInDown">Hardware Built for Real-World Monitoring</h2>
                         <p class="intro-text-compact heading-container heading-container-medium animate-box animated animate__animated"
-                            data-animate="animate__fadeInDown">From wireless sensors to data loggers,
-                            communications hardware and laser scanners — explore the devices powering our monitoring
+                            data-animate="animate__fadeInDown">From laser scanners and wireless sensors to data loggers,
+                            wired sensors and communications hardware — explore the hardware powering our monitoring
                             solutions.</p>
                     </div>
                     <div class="product-filter-bar animate-box animated animate__animated"
@@ -1221,9 +1213,9 @@
                         <button class="product-filter-btn active" data-filter="all">All Products</button>
                         <button class="product-filter-btn" data-filter="laser-scanners">Laser Scanners</button>
                         <button class="product-filter-btn" data-filter="wireless">Wireless Sensors</button>
-                        <button class="product-filter-btn" data-filter="edge-devices">Edge Devices</button>
-                        <button class="product-filter-btn" data-filter="communications">Communications</button>
+                        <button class="product-filter-btn" data-filter="data-loggers">Data Loggers</button>
                         <button class="product-filter-btn" data-filter="wired">Wired Sensors</button>
+                        <button class="product-filter-btn" data-filter="communications">Communications</button>
                     </div>
                     <div class="swiperProducts-layout animate-box animated animate__animated"
                         data-animate="animate__fadeInUp">
@@ -1296,31 +1288,6 @@
                                                     <i class="fa-solid fa-arrow-right"></i>
                                                 </a>
                                                 <a href="./products/lixel-l2-pro.html" class="btn-product-secondary">
-                                                    <span>View</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide" data-category="laser-scanners">
-                                    <div class="product-card">
-                                        <div class="product-card-image">
-                                            <img src="./image/products/scanners/lixelkity-k1-hero.png"
-                                                alt="LixelKity K1" class="product-img" loading="lazy">
-                                            <span class="product-image-label">Sub-1kg</span>
-                                        </div>
-                                        <div class="product-card-body">
-                                            <h4>LixelKity K1</h4>
-                                            <span class="product-category-label">Laser Scanners</span>
-                                            <p>Compact yet powerful. Sub-1kg wearable design for fast, tripod-free
-                                                capture.</p>
-                                            <div class="product-card-actions">
-                                                <a href="./contact.html" class="btn-product-primary">
-                                                    <span>Quote</span>
-                                                    <i class="fa-solid fa-arrow-right"></i>
-                                                </a>
-                                                <a href="./products/lixelkity-k1.html" class="btn-product-secondary">
                                                     <span>View</span>
                                                     <i class="fa-solid fa-arrow-right"></i>
                                                 </a>
@@ -1454,7 +1421,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-category="edge-devices">
+                                <div class="swiper-slide" data-category="data-loggers">
                                     <div class="product-card">
                                         <div class="product-card-image">
                                             <img src="./image/products/Datalogger_1.webp" alt="Digital Data Logger"
@@ -1480,7 +1447,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-category="edge-devices">
+                                <div class="swiper-slide" data-category="data-loggers">
                                     <div class="product-card">
                                         <div class="product-card-image">
                                             <img src="./image/products/Vibrating_Wire_1.webp"
@@ -1505,7 +1472,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-category="edge-devices">
+                                <div class="swiper-slide" data-category="data-loggers">
                                     <div class="product-card">
                                         <div class="product-card-image">
                                             <img src="./image/products/vibrating_wire_rcr_front.webp"
@@ -1531,7 +1498,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-category="edge-devices">
+                                <div class="swiper-slide" data-category="data-loggers">
                                     <div class="product-card">
                                         <div class="product-card-image">
                                             <img src="./image/products/Analog_logger_1.webp" alt="Analog Data Logger"
@@ -1557,7 +1524,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="swiper-slide" data-category="edge-devices">
+                                <div class="swiper-slide" data-category="data-loggers">
                                     <div class="product-card">
                                         <div class="product-card-image">
                                             <img src="./image/products/Piconode_1.webp" alt="Piconode Data Logger"
@@ -1576,6 +1543,57 @@
                                                 </a>
                                                 <a href="./products/piconode-data-logger.html"
                                                     class="btn-product-secondary">
+                                                    <span>View</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-category="wired">
+                                    <div class="product-card">
+                                        <div class="product-card-image">
+                                            <img src="./image/products/acceleorometer_01.webp"
+                                                alt="Triaxial MEMS Accelerometer" class="product-img" loading="lazy">
+                                            <span class="product-image-label">Triaxial MEMS</span>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <h4>Triaxial MEMS Accelerometer</h4>
+                                            <span class="product-category-label">Wired Sensors</span>
+                                            <p>High-precision wired accelerometer capturing acceleration, vibration, and
+                                                tilt for
+                                                structural health and dynamic load monitoring.</p>
+                                            <div class="product-card-actions">
+                                                <a href="./contact.html" class="btn-product-primary">
+                                                    <span>Quote</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                                <a href="./products/accelerometers.html" class="btn-product-secondary">
+                                                    <span>View</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide" data-category="wired">
+                                    <div class="product-card">
+                                        <div class="product-card-image">
+                                            <img src="./image/products/strain_gauge.png"
+                                                alt="Vibrating Wire Strain Gauges" class="product-img" loading="lazy">
+                                            <span class="product-image-label">4100/4150 Series</span>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <h4>Vibrating Wire Strain Gauges</h4>
+                                            <span class="product-category-label">Wired Sensors</span>
+                                            <p>Precision wired strain gauges for long-term stress and deformation
+                                                monitoring on steel, concrete, and rock structures.</p>
+                                            <div class="product-card-actions">
+                                                <a href="./contact.html" class="btn-product-primary">
+                                                    <span>Quote</span>
+                                                    <i class="fa-solid fa-arrow-right"></i>
+                                                </a>
+                                                <a href="./products/strain-gauges.html" class="btn-product-secondary">
                                                     <span>View</span>
                                                     <i class="fa-solid fa-arrow-right"></i>
                                                 </a>
@@ -1963,21 +1981,22 @@
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="./image/testimonials/reviews1.webp"
-                                                            alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="./image/about/partner_3.webp" alt="Indian Railways"
+                                                            class="img-fluid"
+                                                            style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">Emma Richard</span>
-                                                        <p class="profile-info">CEO Nexa</p>
+                                                        <span class="profile-name">Indian Railways</span>
+                                                        <p class="profile-info">Bridge Engineering Division</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
                                             <p class="testimonial-description">
-                                                “Sentra completely transformed our way of Success! Their BIM
-                                                Deployment
-                                                strategies helped us get a new face for us and hold it up with
-                                                pride.”
+                                                “Sentra's comprehensive bridge monitoring solutions — SHM, fatigue
+                                                life assessment, and BridgePulse AI — have given us unprecedented
+                                                visibility into our critical rail bridges, transforming our
+                                                maintenance strategy with real-time data and predictive alerts.”
                                             </p>
                                         </div>
                                     </div>
@@ -1993,20 +2012,22 @@
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="./image/testimonials/reviews2.webp"
-                                                            alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="./image/about/partner_1.webp" alt="Amaravathi CRDA"
+                                                            class="img-fluid"
+                                                            style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">David Mont</span>
-                                                        <p class="profile-info">Marketing Director</p>
+                                                        <span class="profile-name">Amaravathi CRDA</span>
+                                                        <p class="profile-info">Capital Region Development Authority</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
                                             <p class="testimonial-description">
-                                                “Now that we are a part of Sentra Family. We can turn every inch of
-                                                our
-                                                ideology to our Strength.”
+                                                “Sentra delivered a comprehensive digital twin for our entire capital
+                                                city, giving us a unified geospatial platform to plan, monitor, and
+                                                manage urban infrastructure. This has been foundational to our smart
+                                                city vision.”
                                             </p>
                                         </div>
                                     </div>
@@ -2022,20 +2043,23 @@
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="./image/testimonials/reviews3.webp"
-                                                            alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="./image/about/partner_7.webp" alt="APTIDCO"
+                                                            class="img-fluid"
+                                                            style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">Sophia Lewis</span>
-                                                        <p class="profile-info">Founder</p>
+                                                        <span class="profile-name">APTIDCO</span>
+                                                        <p class="profile-info">Andhra Pradesh Technology Development
+                                                            Corp.</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
                                             <p class="testimonial-description">
-                                                “Sentra's monitoring solutions gave us real-time insights we never had
-                                                before. Absolutely game-changing for our infrastructure
-                                                projects.”
+                                                “The digital twin and facility management solution from Sentra has
+                                                revolutionised how we manage our technology infrastructure. Real-time
+                                                asset tracking and centralised oversight have significantly improved
+                                                our operational efficiency.”
                                             </p>
                                         </div>
                                     </div>
@@ -2051,49 +2075,21 @@
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="./image/testimonials/reviews4.webp"
-                                                            alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="./image/about/partner_8.webp" alt="HappyNest"
+                                                            class="img-fluid"
+                                                            style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">James Peterson</span>
-                                                        <p class="profile-info">COO, BrightWave</p>
+                                                        <span class="profile-name">HappyNest</span>
+                                                        <p class="profile-info">Digital Partner</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
                                             <p class="testimonial-description">
-                                                “Highly professional and results-oriented. Sentra's expertise in IoT
-                                                made us take a huge step into Innovation that we will never deny.”
-                                            </p>
-                                        </div>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <div class="card card-testimonial">
-                                            <div class="stars">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                            </div>
-                                            <div class="d-flex flex-row align-items-center justify-content-between">
-                                                <div class="d-flex flex-row gspace-2">
-                                                    <div class="testimonial-image">
-                                                        <img src="./image/testimonials/reviews4.webp"
-                                                            alt="Testimonial - client photo" class="img-fluid">
-                                                    </div>
-                                                    <div class="d-flex flex-column">
-                                                        <span class="profile-name">Michael Torres</span>
-                                                        <p class="profile-info">VP Engineering, InfraCorp</p>
-                                                    </div>
-                                                </div>
-                                                <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
-                                            </div>
-                                            <p class="testimonial-description">
-                                                “Sentra’s real-time monitoring platform gave us complete visibility
-                                                into our bridge assets. The predictive alerts alone saved us from
-                                                a potential shutdown.”
+                                                “Sentra's website management and maintenance services have been
+                                                exceptional. Our digital presence is now seamless, secure, and always
+                                                up-to-date, allowing us to focus on providing quality living spaces.”
                                             </p>
                                         </div>
                                     </div>
@@ -2109,20 +2105,22 @@
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="./image/testimonials/reviews1.webp"
-                                                            alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="./image/about/partner_2.webp" alt="Northern Railway"
+                                                            class="img-fluid"
+                                                            style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">Aisha Patel</span>
-                                                        <p class="profile-info">Head of Infrastructure, Metro Rail</p>
+                                                        <span class="profile-name">Northern Railway</span>
+                                                        <p class="profile-info">Indian Railways</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
                                             <p class="testimonial-description">
-                                                “The sensor deployment and data analytics from Sentra gave us
-                                                24/7 visibility across our entire rail network. We detected
-                                                anomalies weeks before they could become safety issues.”
+                                                “The BIM-based digital twin and SHM solutions deployed by Sentra
+                                                across our network have given us real-time structural insights
+                                                like never before. We can now visualise every asset digitally and
+                                                make data-driven maintenance decisions with confidence.”
                                             </p>
                                         </div>
                                     </div>
@@ -2138,20 +2136,22 @@
                                             <div class="d-flex flex-row align-items-center justify-content-between">
                                                 <div class="d-flex flex-row gspace-2">
                                                     <div class="testimonial-image">
-                                                        <img src="./image/testimonials/reviews4.webp"
-                                                            alt="Testimonial - client photo" class="img-fluid">
+                                                        <img src="./image/about/partner_4.webp" alt="Southern Railway"
+                                                            class="img-fluid"
+                                                            style="width:48px;height:48px;object-fit:contain;border-radius:8px;">
                                                     </div>
                                                     <div class="d-flex flex-column">
-                                                        <span class="profile-name">James Peterson</span>
-                                                        <p class="profile-info">COO, BrightWave</p>
+                                                        <span class="profile-name">Southern Railway</span>
+                                                        <p class="profile-info">Indian Railways</p>
                                                     </div>
                                                 </div>
                                                 <i class="fa-solid fa-3x fa-quote-right accent-color"></i>
                                             </div>
                                             <p class="testimonial-description">
-                                                “Sentra’s IoT expertise pushed us to embrace innovation like never
-                                                before. Their professionalism and focus on results made all the
-                                                difference.”
+                                                “Sentra's SHM, fatigue life assessment, and BridgePulse AI have given
+                                                us unprecedented visibility into our critical rail bridges,
+                                                transforming our maintenance strategy with real-time data and
+                                                predictive alerts.”
                                             </p>
                                         </div>
                                     </div>
