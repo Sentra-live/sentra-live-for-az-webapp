@@ -89,52 +89,40 @@ function fixNavLinks() {
 }
 
 function initBannerVideo() {
-    var player;
+    // Plain autoplay/loop iframe instead of the YT.Player IFrame API: native
+    // `loop=1&playlist=<id>` already loops a single video with no JS needed,
+    // so we skip loading youtube.com/iframe_api (player base.js + embed.js,
+    // ~700KB) purely to detect "ended" and call playVideo() again.
+    var $bg = $('#banner-video-background');
+    var videoId = $bg.data('video-id');
+    if (!videoId) return;
 
-    var $tag = $('<script>', { src: "https://www.youtube.com/iframe_api" });
-    $('script').first().before($tag);
+    var params = $.param({
+        autoplay: 1,
+        mute: 1,
+        loop: 1,
+        playlist: videoId,
+        controls: 0,
+        fs: 0,
+        showinfo: 0,
+        rel: 0,
+        disablekb: 1,
+        modestbranding: 1,
+        iv_load_policy: 3,
+        playsinline: 1, // required for reliable autoplay on iOS Safari
+        origin: window.location.origin
+    });
 
-    // Homepage Hero section video
-    window.onYouTubeIframeAPIReady = function () {
-        var videoId = $('#banner-video-background').data('video-id');
-        player = new YT.Player('banner-video-background', {
-            videoId: videoId,
-            playerVars: {
-                'autoplay': 1,
-                'controls': 0,
-                'mute': 1,
-                'loop': 1,
-                'playlist_3': '_YAscQDop3E',
-                'playlist_2': 'iF19lWWG6UM',
-                'playlist_4': 'Jn3-3Gnmg1k',
-                'playlist_1': 'Hgg7M3kSqyE',
-                'playlist': 'U9PcESAe4-4',
-                'showinfo': 0,
-                'rel': 0,
-                'enablejsapi': 1,
-                'disablekb': 1,
-                'modestbranding': 1,
-                'iv_load_policy': 3,
-                'origin': window.location.origin
-            },
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    };
+    var $iframe = $('<iframe>', {
+        src: 'https://www.youtube-nocookie.com/embed/' + videoId + '?' + params,
+        title: 'Background video',
+        frameborder: 0,
+        allow: 'autoplay; encrypted-media'
+    });
 
-    function onPlayerReady(event) {
-        event.target.playVideo();
-        setYoutubeSize();
-        $(window).on('resize', setYoutubeSize);
-    }
-
-    function onPlayerStateChange(event) {
-        if (event.data === YT.PlayerState.ENDED) {
-            player.playVideo();
-        }
-    }
+    $bg.append($iframe);
+    setYoutubeSize();
+    $(window).on('resize', setYoutubeSize);
 
     function setYoutubeSize() {
         var $container = $('.banner-video-container');
@@ -151,23 +139,7 @@ function initBannerVideo() {
             newHeight = containerHeight;
         }
 
-        if (player && player.getIframe) {
-            var $iframe = $(player.getIframe());
-            $iframe.width(newWidth).height(newHeight);
-        }
-    }
-
-    function handleYouTubeErrors() {
-        window.addEventListener('message', function (event) {
-            if (event.origin !== 'https://www.youtube.com') return;
-
-            try {
-                var data = JSON.parse(event.data);
-
-            } catch (e) {
-
-            }
-        });
+        $iframe.width(newWidth).height(newHeight);
     }
 }
 

@@ -97,25 +97,31 @@
     }
     </script>
 
-    <link rel="preload" href="./css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="stylesheet" href="./css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="./css/vendor/brands.css">
+    <link rel="stylesheet" href="./css/vendor/regular.css">
+    <link rel="stylesheet" href="./css/vendor/solid.css">
+    <link rel="stylesheet" href="./css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/vendor/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/solutions-v2.css">
-    <link rel="preload" href="./css/chatbot.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="./css/chatbot.css">
     <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap">
     </noscript>
     <link rel="preload"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
         <link rel="stylesheet"
-            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap">
     </noscript>
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
 
@@ -180,8 +186,16 @@
             font-size: clamp(20px, 3vw, 34px);
         }
 
+        /* Match the "Reimagine What's Possible" guide section: padding on
+           both sides + curved radius */
+        .section-banner {
+            padding: 0px 30px 0px 30px;
+        }
+
         .banner-video-container {
             padding: 70px 20px 60px 20px;
+            border-radius: var(--global-border-radius);
+            border: 1px solid var(--accent-color-3);
         }
 
         .hero-layout {
@@ -1038,7 +1052,7 @@
                                         combine intelligent sensors, predictive analytics, and edge-based insights to
                                         detect structural stress before it becomes a problem.</p>
                                     <div class="link-wrapper">
-                                        <a href="./solutions/structural-health-monitoring.html">Read More</a>
+                                        <a href="./solutions/structural-health-monitoring.html" aria-label="Read More about Structural Health Monitoring">Read More</a>
                                         <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                     </div>
                                 </div>
@@ -1057,7 +1071,7 @@
                                         and underwater ROV inspections deliver fast, safe, accurate assessments,
                                         uncovering hidden defects and enabling confident maintenance decisions.</p>
                                     <div class="link-wrapper">
-                                        <a href="./solutions/bridge-inspection-and-condition-assessment.html">Read
+                                        <a href="./solutions/bridge-inspection-and-condition-assessment.html" aria-label="Read More about Bridge Inspection & Condition Assessment">Read
                                             More</a>
                                         <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                     </div>
@@ -1076,7 +1090,7 @@
                                         vibration monitoring, and predictive diagnostics help extend service life and
                                         prevent unplanned failures.</p>
                                     <div class="link-wrapper">
-                                        <a href="./solutions/fatigue-and-residual-life-assessment.html">Read More</a>
+                                        <a href="./solutions/fatigue-and-residual-life-assessment.html" aria-label="Read More about Fatigue & Residual Life Assessment">Read More</a>
                                         <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                     </div>
                                 </div>
@@ -1094,7 +1108,7 @@
                                         transformers, or industrial machinery. Our smart monitoring systems enable
                                         proactive maintenance and higher uptime.</p>
                                     <div class="link-wrapper">
-                                        <a href="./solutions/asset-monitoring-and-management-solutions.html">Read
+                                        <a href="./solutions/asset-monitoring-and-management-solutions.html" aria-label="Read More about Asset Monitoring & Management Solutions">Read
                                             More</a>
                                         <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                     </div>
@@ -1113,7 +1127,7 @@
                                         behavior, pore pressure, settlement, and seismic response to provide early
                                         warnings for engineers.</p>
                                     <div class="link-wrapper">
-                                        <a href="./solutions/geotechnical-and-foundation-monitoring.html">Read More</a>
+                                        <a href="./solutions/geotechnical-and-foundation-monitoring.html" aria-label="Read More about Geotechnical & Foundation Monitoring">Read More</a>
                                         <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                     </div>
                                 </div>
@@ -1131,7 +1145,7 @@
                                         technologies. We help you uncover hidden flaws and certify structural integrity
                                         — without damaging the asset.</p>
                                     <div class="link-wrapper">
-                                        <a href="./solutions/advanced-non-destructive-testing-ndt.html">Read More</a>
+                                        <a href="./solutions/advanced-non-destructive-testing-ndt.html" aria-label="Read More about Advanced Non-Destructive Testing (NDT)">Read More</a>
                                         <i class="fa-solid fa-arrow-circle-right accent-color"></i>
                                     </div>
                                 </div>
