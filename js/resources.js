@@ -9,6 +9,51 @@
     var RESOURCES = [
         // ---------- Blogs ----------
         {
+            id: 'blog-what-is-strain-gauge',
+            title: 'What Is a Strain Gauge? Types, Working Principle & Applications',
+            excerpt: 'How strain gauges work, the gauge factor formula, the main types (foil, semiconductor, rosette, vibrating wire), and where they fit in structural monitoring.',
+            category: 'Sensor Technology',
+            color: 'blue',
+            type: 'blogs',
+            date: '3 Aug 2026',
+            image: './image/products/strain_gauge.png',
+            link: './blogs/what-is-a-strain-gauge-types-working-principle.html',
+            featured: true
+        },
+        {
+            id: 'blog-what-is-inclinometer',
+            title: 'What Is an Inclinometer? Digital Tiltmeters Explained',
+            excerpt: 'How digital inclinometers and tiltmeters measure tilt and rotation, and where they are used in slope, structural and rail monitoring.',
+            category: 'Sensor Technology',
+            color: 'orange',
+            type: 'blogs',
+            date: '3 Aug 2026',
+            image: './image/products/tiltmeter-2.webp',
+            link: './blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html'
+        },
+        {
+            id: 'blog-what-is-accelerometer',
+            title: 'What Is an Accelerometer Sensor? Working Principle, Types & Applications',
+            excerpt: 'How accelerometer sensors work, piezoelectric vs capacitive MEMS vs tri-axial types, and their role in seismic and machinery monitoring.',
+            category: 'Sensor Technology',
+            color: 'purple',
+            type: 'blogs',
+            date: '3 Aug 2026',
+            image: './image/products/accelerometer_cardnav.png',
+            link: './blogs/what-is-an-accelerometer-sensor-guide.html'
+        },
+        {
+            id: 'blog-what-is-data-logger',
+            title: 'What Is a Data Logger? Types, How They Work & How to Choose One',
+            excerpt: 'What a data logger is, the main types available, and what to look for when choosing one for remote infrastructure monitoring.',
+            category: 'IoT Sensors',
+            color: 'teal',
+            type: 'blogs',
+            date: '3 Aug 2026',
+            image: './image/products/Datalogger_1.webp',
+            link: './blogs/what-is-a-data-logger-types-guide.html'
+        },
+        {
             id: 'blog-digital-twins-mesh-pointcloud-splatting',
             title: 'The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared',
             excerpt: 'Discover how Mesh, Point Clouds, and Gaussian Splatting are transforming Digital Twins, BIM, and laser scanning for the AEC industry.',

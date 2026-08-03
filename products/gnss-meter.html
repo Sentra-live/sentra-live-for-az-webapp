@@ -21,6 +21,14 @@
 
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
+    <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../css/vendor/brands.css">
+    <link rel="stylesheet" href="../css/vendor/regular.css">
+    <link rel="stylesheet" href="../css/vendor/solid.css">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/vendor/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/chatbot.css">
@@ -28,8 +36,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet" />
 
     <meta property="og:title" content="GNSS Meter — High-Precision RTK Positioning & Displacement Monitoring | Sentra" />
     <meta property="og:description" content="High-precision GNSS meter with RTK correction for millimeter-level displacement monitoring of bridges, tunnels, and slopes." />
@@ -86,6 +94,63 @@
     }
     </script>
     
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does the GNSS Meter measure?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It captures precise 3D positioning and displacement of structures, slopes, tunnels, and other critical infrastructure, detecting even millimeter-level movements using RTK-corrected GNSS technology."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How accurate is the GNSS Meter?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "With RTK correction at 40 m baseline: 2 mm horizontal and vertical precision (95th percentile, 24h aggregated). At 4000 m baseline: 4 mm horizontal and 7 mm vertical (24h aggregated)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What constellations are supported?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The GNSS Meter tracks 4 constellations: GPS/QZSS (L1C/A, L2C), GLONASS (L1OF, L2OF), Galileo (E1-B/C, E5b), and BeiDou (B1I, B2I) across 184 channels for reliable positioning in any environment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the battery last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Battery life depends on warmup time and mode. In rover mode with 10s warmup: 3.5 years. With 30s warmup: 2.5 years. Base mode: 3.1 years (10s) to 2.4 years (30s). Powered by 4 × D-size batteries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can it be integrated into existing monitoring systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — data is provided via MQTT, REST API, or FTP, making it easy to integrate into SCADA, asset management, or custom monitoring platforms. Compatible with CMT Edge and CMT Cloud."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where can the GNSS Meter be deployed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ideal for bridges, tunnels, retaining walls, slopes, rail lines, dams, and any infrastructure requiring precise positioning and early detection of movement."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 
 <style>

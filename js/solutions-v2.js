@@ -332,7 +332,7 @@
     document.querySelectorAll('.sol-risk-carousel .swiper').forEach(function (el) {
       /* If already initialized, skip */
       if (el.swiper) return;
-      new Swiper(el, {
+      var config = {
         slidesPerView: 1,
         spaceBetween: 20,
         loop: true,
@@ -354,7 +354,15 @@
           640: { slidesPerView: 2 },
           1024: { slidesPerView: 3 }
         }
-      });
+      };
+      /* Disable loop when there aren't enough slides for clean cloning
+         (need >= slidesPerView * 2). With too few slides, loop mode gets
+         stuck at isEnd and the prev/next arrows stop working. */
+      var slideCount = el.querySelectorAll('.swiper-wrapper .swiper-slide').length;
+      if (slideCount < 6) {
+        config.loop = false;
+      }
+      new Swiper(el, config);
     });
   }
 

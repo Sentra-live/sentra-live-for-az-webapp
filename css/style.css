@@ -100,14 +100,9 @@
 
 /* ================== 01. Import Vendor ================== */
 
-@import url('../css/vendor/font-family-plus-jakarta-sans.css');
-@import url('../css/vendor/bootstrap.min.css');
-@import url('../css/vendor/fontawesome.css');
-@import url('../css/vendor/brands.css');
-@import url('../css/vendor/regular.css');
-@import url('../css/vendor/solid.css');
-@import url('../css/vendor/swiper-bundle.min.css');
-@import url('../css/vendor/animate.min.css');
+/* Vendor CSS is now linked directly from each page's <head> (before this
+   file) instead of @import'd here, so the browser can fetch it in parallel
+   with style.css instead of serially after it. */
 
 /* ================== 02 Root Variables ================== */
 
@@ -220,6 +215,11 @@
     --text-color: #ffffff;
     --text-color-2: var(--secondary);
     --accent-color: #f48120;
+    /* Darker orange used specifically as a background behind white button
+       text: #f48120 only gives ~2.6:1 contrast with white (fails WCAG AA
+       4.5:1); this passes at ~4.6:1 while staying close to the brand hue. */
+    --accent-color-cta: #ba5a09;
+    --accent-color-cta-hover: #b65d11;
     --accent-color-2: #FFFFFF;
     --accent-color-3: #000000;
     --accent-color-4: #0E0E0E;
@@ -422,8 +422,13 @@ html {
     font-size: 16px;
 }
 
+/* overflow-x: clip clips horizontal overflow WITHOUT creating a scroll
+   container (overflow-x: hidden does, which breaks position: sticky on
+   descendants — e.g. the "How It Works" slideshow). Fallback to hidden
+   is kept for older browsers that lack clip support. */
 html {
     overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body {
@@ -432,6 +437,7 @@ body {
     color: var(--primary);
     transition: background_color 0.5s ease;
     overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body.lightmode .keep-dark {
@@ -1244,7 +1250,7 @@ body.lightmode .mega-qb-divider {
     gap: 6px;
     padding: 6px 14px;
     border-radius: 999px;
-    background: #f48120;
+    background: #ba5a09;
     color: #fff !important;
     font-size: 11.5px;
     font-weight: 700;
@@ -1816,7 +1822,7 @@ body.lightmode .mega-res-link:hover i {
     font-size: 11.5px;
     font-weight: 700;
     color: #fff;
-    background: #f48120;
+    background: #ba5a09;
     text-decoration: none;
     padding: 5px 12px;
     border-radius: 50px;
@@ -1955,7 +1961,7 @@ body.lightmode .mega-quick-links-card {
     padding: 8px 10px;
     margin-top: 5px;
     border-radius: 50px;
-    background: #f48120 !important;
+    background: #ba5a09 !important;
     color: #fff !important;
     font-size: 11px;
     font-weight: 700;
@@ -2174,8 +2180,8 @@ body.lightmode .mega-quick-contact.mega-contact-card .mega-quick-email a {
 }
 
 .mega-contact-card .mega-q-social:hover {
-    background: #f48120;
-    border-color: #f48120;
+    background: #ba5a09;
+    border-color: #ba5a09;
     color: #fff;
 }
 
@@ -2459,7 +2465,7 @@ body.lightmode .dropdown-menu.mega-solutions {
 }
 
 .sol-img-card:hover .sol-img-card-icon {
-    background: #f48120;
+    background: #ba5a09;
     color: #fff;
     transform: scale(1.06);
 }
@@ -2502,8 +2508,8 @@ body.lightmode .dropdown-menu.mega-solutions {
 
 .sol-img-card:hover .sol-img-card-arrow {
     color: #fff;
-    background: #f48120;
-    border-color: #f48120;
+    background: #ba5a09;
+    border-color: #ba5a09;
     transform: translateX(3px);
 }
 
@@ -2559,7 +2565,7 @@ body.lightmode .dropdown-menu.mega-solutions {
 
 .sol-fill-card:hover i {
     color: #fff;
-    background: #f48120;
+    background: #ba5a09;
     transform: scale(1.06);
 }
 
@@ -2632,7 +2638,7 @@ body.lightmode .dropdown-menu.mega-solutions {
 
 .sol-fill-card[data-color="dark"]:hover i {
     color: #fff;
-    background: #f48120;
+    background: #ba5a09;
 }
 
 .sol-fill-card[data-color="dark"]:hover .sol-fill-title {
@@ -2792,7 +2798,7 @@ body.lightmode .dropdown-menu.mega-solutions {
 
 .sol-fill-card[data-color="black"]:hover i {
     color: #fff;
-    background: #f48120;
+    background: #ba5a09;
 }
 
 .sol-fill-card[data-color="black"]:hover .sol-fill-title {
@@ -4101,7 +4107,7 @@ body.lightmode .mmenu-panel {
 
 .mmenu-quicklink:hover,
 .mmenu-quicklink.active {
-    background: var(--accent-color);
+    background: var(--accent-color-cta);
     color: #fff;
 }
 
@@ -4112,7 +4118,7 @@ body.lightmode .mmenu-quicklink {
 
 body.lightmode .mmenu-quicklink:hover,
 body.lightmode .mmenu-quicklink.active {
-    background: var(--accent-color);
+    background: var(--accent-color-cta);
     color: #fff;
 }
 
@@ -4233,7 +4239,7 @@ body.lightmode .mmenu-row-arrow {
     letter-spacing: 0.4px;
     text-transform: uppercase;
     color: #fff;
-    background: #f48120;
+    background: #ba5a09;
     padding: 1px 5px;
     border-radius: 999px;
     vertical-align: middle;
@@ -4476,7 +4482,7 @@ body.lightmode .mmenu-follow-label {
 .mmenu-demo-btn {
     padding: 7px 16px;
     border-radius: 999px;
-    background: var(--accent-color);
+    background: var(--accent-color-cta);
     color: #fff;
     font-size: 12px;
     font-weight: 700;
@@ -4515,8 +4521,8 @@ body.lightmode .mmenu-demo-btn:hover {
 }
 
 .mmenu-social:hover {
-    background: var(--accent-color);
-    border-color: var(--accent-color);
+    background: var(--accent-color-cta);
+    border-color: var(--accent-color-cta);
     color: #fff;
 }
 
@@ -4918,15 +4924,21 @@ body.lightmode .themeswitch {
     height: 100%;
 }
 
-/* Pin the injected YouTube iframe to the reserved box regardless of the
-   inline pixel width/height the IFrame API JS assigns after it loads late,
-   so the late, network-dependent video init can never shift the layout. */
+/* Cover-fit the injected YouTube iframe to the reserved hero box. The inline
+   pixel width/height set by setYoutubeSize() in script.js (which sizes the
+   iframe larger than the box, 16:9) is allowed to win so the video fills the
+   whole hero without letterbox bars, while position:absolute keeps the late,
+   network-dependent video init from ever shifting the layout. pointer-events:
+   none keeps YouTube's hover controls/logo from appearing over the hero. */
 #banner-video-background iframe {
-    width: 100% !important;
-    height: 100% !important;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: none;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 
@@ -5344,6 +5356,8 @@ body.lightmode .bg-footer::before {
 
 :root {
     --accent-color: #f48120;
+    --accent-color-cta: #ba5a09;
+    --accent-color-cta-hover: #b65d11;
     --accent-color-2: #ffb347;
     --accent-color-3: #1a1a1a;
     --accent-transparent: rgba(244, 129, 32, 0.1);
@@ -5569,7 +5583,7 @@ body.lightmode .workflow-step-card:hover .workflow-step-icon .material-symbols-o
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: var(--accent-color);
+    background: var(--accent-color-cta);
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -7326,7 +7340,7 @@ body.lightmode .blog-content::before {
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: #fff;
-    background: var(--accent-color);
+    background: var(--accent-color-cta);
     border-radius: 999px;
     padding: 3px 10px;
 }
@@ -7608,7 +7622,7 @@ body.lightmode .share-title {
 }
 
 body.lightmode .blog-tag {
-    background: #f48120;
+    background: #ba5a09;
     color: #fff;
 }
 
@@ -8045,15 +8059,15 @@ body.lightmode .guide-banner::before {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-cta);
     color: #ffffff;
     font-size: 14px;
     transition: transform 0.3s ease;
 }
 
 .guide-cta:hover {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
+    border-color: var(--accent-color-cta);
+    background-color: var(--accent-color-cta);
     color: #ffffff;
 }
 

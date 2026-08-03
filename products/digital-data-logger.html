@@ -25,6 +25,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../css/vendor/brands.css">
+    <link rel="stylesheet" href="../css/vendor/regular.css">
+    <link rel="stylesheet" href="../css/vendor/solid.css">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/vendor/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/chatbot.css">
@@ -35,8 +43,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="Digital Data Logger — RS485 ModBus Wireless Data Acquisition | Sentra" />
@@ -94,6 +102,63 @@
     }
     </script>
     
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Digital Data Logger used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Digital Data Logger is a wireless data acquisition IoT device that collects data from digital sensors using RS485 ModBus RTU communications or proprietary protocols and transmits them using long-range, low-power radio communications — ideal for geotechnical, structural and environmental monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the Digital Data Logger work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The device connects to one or a string of digital sensors via the RS485 port. It transmits data via Worldsensing LoRa networks to a CMT Edge for local-access, single-network deployments. Data can also be transmitted via the internet from the gateway to CMT Cloud for multi-project, multi-network deployment — accessible from anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What sensors can be connected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Digital Data Logger connects to digital sensors using ModBus RTU and other proprietary protocols from leading geotechnical, structural, environmental and process sensor manufacturers — including in-place inclinometers (IPIs), ShapeArrays, multipoint borehole extensometers (MPBX), weather stations, water quality probes, and load cells."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the battery last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Battery life depends on the selected reporting period and sensor configuration. With a 1-hour reporting interval, it achieves up to 7–10 years of battery life. With a 6-hour interval, it exceeds 10 years. The device uses user-replaceable battery cells."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the communication range?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In open sight, the range can reach up to 15 km (9.3 mi). In a city street, up to 4 km (2.5 mi). When placed in a manhole in a city street, the range is up to 2 km (1.2 mi), and in a tunnel it extends up to 4 km (2.5 mi). Range depends on terrain and environment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is data protected during transmission?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Data protection and privacy are achieved through 128 AES (Advanced Encryption Standard) encryption on multiple levels, for all data being sent from the sensors to the application server and back."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 
 <style>
@@ -694,6 +759,7 @@ body.lightmode .p-img-wrap {
                             </div>
                             <p class="intro-text-compact">The Digital Data Logger is a robust, low-power, long-battery life device that connects to a wide catalog of digital sensors, streaming data wirelessly to your information systems. It leverages intelligent edge processing to automatically collect, process, and transmit sensor data — eliminating manual data retrieval even in remote or isolated locations.</p>
                             <p class="intro-text-compact">Compatible with ModBus RTU and other proprietary protocols from leading geotechnical, structural, environmental and process sensor manufacturers. Suitable for connecting chains of sensors such as in-place inclinometers (IPIs) and multipoint borehole extensometers (MPBX).</p>
+                            <p class="intro-text-compact">New to data loggers? Read our guide on <a href="../blogs/what-is-a-data-logger-types-guide.html" style="color:var(--accent-color);">what a data logger is, the main types, and how to choose one</a>.</p>
                             <div class="row row-cols-2 grid-spacer-2" style="margin-top:0.5rem;">
                                 <div class="col">
                                     <div class="d-flex align-items-start gap-2">
