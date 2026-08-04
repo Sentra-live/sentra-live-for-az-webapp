@@ -138,7 +138,7 @@ $(function () {
             observeParents: true,
             breakpoints: {
                 1200: {
-                    slidesPerView: 3,
+                    slidesPerView: 3.9,
                     spaceBetween: 24,
                 },
                 992: {
@@ -150,8 +150,8 @@ $(function () {
                     spaceBetween: 16,
                 },
                 0: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 10,
+                    slidesPerView: 1.3,
+                    spaceBetween: 12,
                 },
             },
             navigation: {

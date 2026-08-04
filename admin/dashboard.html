@@ -972,7 +972,7 @@
                 return '<span style="opacity:0.85;">📋 Sent qualification questionnaire</span>';
             }
             if (typeof m.message === 'string' && m.message.startsWith(IMG_MSG_PREFIX)) {
-                return `<img src="${m.message.slice(IMG_MSG_PREFIX.length)}" style="max-width:220px;border-radius:8px;display:block;margin-top:2px;">`;
+                return `<img src="${m.message.slice(IMG_MSG_PREFIX.length)}" alt="Attached image" style="max-width:220px;border-radius:8px;display:block;margin-top:2px;">`;
             }
             return escapeHtml(m.message);
         }
@@ -1023,7 +1023,7 @@
                     <button type="button" class="quick-action-btn" onclick="sendQuestionnaire()">📋 Send Questionnaire</button>
                 </div>
                 <div class="agent-attach-preview" id="agentAttachPreview">
-                    <img id="agentAttachPreviewImg" src="">
+                    <img id="agentAttachPreviewImg" src="" alt="Attachment preview">
                     <button type="button" onclick="clearAgentAttachment()">✕</button>
                 </div>
                 <div class="emoji-palette" id="emojiPalette"></div>

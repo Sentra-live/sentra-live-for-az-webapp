@@ -29,21 +29,18 @@
     <meta name="twitter:site" content="@sentratech" />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Tiltmeter — 3-Axis Wireless Tilt Sensor",
-      "description": "High-accuracy 3-axis wireless tiltmeter for monitoring angular displacement and long-term tilt trends. ±90° range, IP68, up to 10yr battery.",
-      "brand": { "@type": "Brand", "name": "Sentra" },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
-        "url": "https://sentratech.in/products/tiltmeter.html"
-      }
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Tiltmeter — 3-Axis Wireless Tilt Sensor",
+  "description": "High-accuracy 3-axis wireless tiltmeter for monitoring angular displacement and long-term tilt trends. ±90° range, IP68, up to 10yr battery.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Sentra"
+  },
+  "image": "https://sentratech.in/image/products/worldsensing_tiltmeter_main.webp"
+}
+</script>
 
     <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
     <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
@@ -239,6 +236,62 @@ body.lightmode .p-img-wrap { background: #fff; box-shadow: 0 2px 12px rgba(0,0,0
           "position": 3,
           "name": "Tiltmeter — 3-Axis Wireless Tilt Sensor",
           "item": "https://sentratech.in/products/tiltmeter.html"
+        }
+      ]
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What kinds of movement does a Tiltmeter detect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A Tiltmeter measures small changes in an object's inclination - rotation, settlement, track cant or slow tilt of slopes and structures. It reveals gradual trends and sudden shifts that indicate instability or misalignment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How does the sensor convert motion into data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Precision MEMS accelerometers sense the gravity vector and temperature. Onboard firmware converts those signals into angle values with compensation and filtering, timestamps each sample, and forwards readings to your gateway or cloud for analysis."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How small of a tilt can the device reliably report?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tiltmeters capture very small, repeatable changes - much smaller than what the human eye detects. With ±0.0001° resolution and repeatability as low as <0.0003°, they are suitable for the most demanding engineering applications."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I expect for power and maintenance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The device runs in low-power modes and can operate unattended for up to 10 years at typical reporting intervals. Batteries are user-replaceable without tools. Routine checks of physical mounts and antenna are recommended during scheduled site visits."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can the Tiltmeter integrate with existing monitoring systems?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes - data is transmitted via LoRa/LoRaWAN gateways to cloud endpoints in common data formats and APIs. It integrates with dashboards, alarm systems, asset-management software, and custom webhooks can be configured."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the difference between XHP and IR variants?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The XHP variant features an external antenna for maximum range (up to 15 km in open terrain), ideal for high-precision applications. The IR variant has an internal antenna for a compact, vandal-resistant design - perfect for rail track monitoring and tight installations."
+          }
         }
       ]
     }

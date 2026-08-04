@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-8GFRCEFB87');
-</script>
+        gtag('config', 'G-8GFRCEFB87');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
@@ -29,11 +29,9 @@
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/chatbot.css">
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap"
         rel="stylesheet" />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="Products — Sentra | Structural Health Monitoring &amp; IoT Sensors" />
@@ -578,13 +576,27 @@
 
         /* ── Animations ── */
         @keyframes heroFadeUp {
-            0% { opacity: 0; transform: translateY(24px); }
-            100% { opacity: 1; transform: translateY(0); }
+            0% {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         @keyframes heroFadeRight {
-            0% { opacity: 0; transform: translateX(20px); }
-            100% { opacity: 1; transform: translateX(0); }
+            0% {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
 
         /* ── Responsive ── */
@@ -598,52 +610,56 @@
             }
 
             .hero-title {
-                font-size: clamp(1.35rem, 5vw, 1.75rem);
-                margin-bottom: 0.75rem;
+                font-size: clamp(1.45rem, 6.5vw, 1.85rem);
+                margin-bottom: 1rem;
+                line-height: 1.2;
             }
 
-            /* Mobile: underline removed */
-
             .hero-intro p {
-                font-size: 0.82rem;
+                font-size: 0.9rem;
+                line-height: 1.65;
             }
 
             .hero-nav-ctas {
-                gap: 6px;
-                margin-top: 20px;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+                margin-top: 22px;
             }
 
             .hero-nav-btn {
-                padding: 7px 12px 7px 10px;
-                font-size: 11px;
+                padding: 8px 14px 8px 11px;
+                font-size: 12px;
             }
 
             .hero-nav-icon {
-                width: 22px;
-                height: 22px;
+                width: 24px;
+                height: 24px;
             }
 
             .hero-nav-icon .material-symbols-rounded {
-                font-size: 12px !important;
+                font-size: 13px !important;
             }
 
             .hero-stats-bar {
-                margin-top: 24px;
-                padding-top: 20px;
-                gap: 16px;
+                margin-top: 28px;
+                padding-top: 24px;
+                gap: 20px;
             }
 
             .hero-stat-item:not(:last-child) {
-                padding-right: 16px;
-                margin-right: 16px;
+                padding-right: 20px;
+                margin-right: 20px;
             }
 
             .hero-stat-number {
-                font-size: 1.1rem;
+                font-size: 1.25rem;
+                font-weight: 800;
             }
 
             .hero-stat-label {
-                font-size: 0.6rem;
+                font-size: 0.65rem;
+                font-weight: 600;
             }
 
             .product-image-swiper .swiper-slide img {
@@ -657,48 +673,62 @@
 
             .hero-badge {
                 font-size: 9px;
-                padding: 4px 10px;
-                margin-bottom: 0.75rem;
+                padding: 5px 12px;
+                margin-bottom: 1rem;
             }
         }
 
         @media (max-width: 575px) {
             .detail-hero {
-                padding: 1.75rem 0 1.5rem;
+                padding: 2rem 0 1.75rem;
             }
 
             .hero-grid {
-                gap: 1rem;
+                gap: 1.25rem;
             }
 
             .hero-title {
-                font-size: clamp(1.2rem, 6vw, 1.4rem);
+                font-size: clamp(1.3rem, 7.5vw, 1.6rem);
+                margin-bottom: 0.85rem;
             }
 
             .hero-intro p {
-                font-size: 0.78rem;
-                line-height: 1.6;
+                font-size: 0.85rem;
+                line-height: 1.65;
             }
 
             .hero-nav-ctas {
-                gap: 6px;
+                gap: 8px;
+                margin-top: 20px;
             }
 
             .hero-nav-btn {
-                flex: 1;
-                min-width: 0;
+                padding: 8px 12px;
+                font-size: 11px;
+                gap: 6px;
+            }
+
+            .hero-nav-btn span:not(.hero-nav-icon) {
+                display: inline;
+                line-height: 1.2;
+            }
+
+            .hero-nav-btn i {
+                display: none;
             }
 
             .hero-stats-bar {
                 flex-direction: column;
-                gap: 12px;
+                gap: 14px;
+                margin-top: 26px;
+                padding-top: 20px;
             }
 
             .hero-stat-item:not(:last-child) {
                 padding-right: 0;
                 margin-right: 0;
                 border-right: none;
-                padding-bottom: 12px;
+                padding-bottom: 14px;
                 border-bottom: 1px solid rgba(255, 255, 255, 0.06);
             }
 
@@ -706,133 +736,21 @@
                 border-bottom-color: rgba(0, 0, 0, 0.06);
             }
 
-            .product-image-swiper .swiper-slide img {
-                height: 220px;
-            }
-
-            .hero-slide-cta-btn {
-                padding: 5px 10px 5px 8px;
-                font-size: 10px;
-            }
-
-            .hero-slide-cta-icon {
-                width: 20px;
-                height: 20px;
-            }
-
-            .hero-slide-cta-icon .material-symbols-rounded {
-                font-size: 10px !important;
-            }
-
-            .hero-badge {
-                font-size: 8px;
-                padding: 3px 8px;
-            }
-        }
-
-        @media (max-width: 420px) {
-            .detail-hero {
-                padding: 1.25rem 0 1rem;
-            }
-
-            .hero-title {
-                font-size: 1.05rem;
-            }
-
-            .product-image-swiper .swiper-slide img {
-                height: 187px;
-            }
-
             .hero-stat-number {
-                font-size: 0.95rem;
+                font-size: 1.15rem;
             }
 
             .hero-stat-label {
-                font-size: 0.55rem;
-            }
-        }            .hero-nav-icon .material-symbols-rounded {
-                font-size: 15px !important;
+                font-size: 0.62rem;
             }
 
             .product-image-swiper .swiper-slide img {
-                height: 264px;
-            }
-
-            .hero-slide-cta {
-                bottom: 12px;
-                left: 12px;
-            }
-
-            .hero-badge {
-                margin-bottom: 0.6rem;
-            }
-        }
-
-        @media (max-width: 575px) {
-            .detail-hero {
-                padding-top: 0.5rem;
-                padding-bottom: 1.25rem;
-            }
-
-            .hero-text-col {
-                margin-top: 1.25rem;
-            }
-
-            .hero-image-col {
-                margin-top: 0.75rem;
-            }
-
-            .hero-grid {
-                gap: 1rem;
-            }
-
-            .hero-title {
-                font-size: clamp(1.1rem, 5vw, 1.25rem);
-                margin-bottom: 0.6rem;
-            }
-
-            .hero-intro p {
-                font-size: 0.78rem;
-                line-height: 1.55;
-            }
-
-            .hero-nav-ctas {
-                gap: 6px;
-                margin-top: 14px;
-            }
-
-            .hero-nav-btn {
-                padding: 8px 12px 8px 8px;
-                font-size: 11px;
-                gap: 6px;
-            }
-
-            .hero-nav-icon {
-                width: 22px;
-                height: 22px;
-            }
-
-            .hero-nav-icon .material-symbols-rounded {
-                font-size: 13px !important;
-            }
-
-            .hero-nav-btn i {
-                font-size: 10px;
-            }
-
-            .product-image-swiper .swiper-slide img {
-                height: 231px;
-            }
-
-            .hero-slide-cta {
-                bottom: 10px;
-                left: 10px;
+                height: 240px;
             }
 
             .hero-slide-cta-btn {
-                padding: 5px 10px 5px 8px;
-                font-size: 10px;
-                gap: 5px;
+                padding: 6px 11px 6px 9px;
+                font-size: 11px;
             }
 
             .hero-slide-cta-icon {
@@ -844,332 +762,319 @@
                 font-size: 11px !important;
             }
 
-            .hero-slide-cta-btn i {
-                font-size: 9px !important;
-            }
-
             .hero-badge {
-                font-size: 7px;
-                padding: 0.15rem 0.4rem;
-                margin-bottom: 0.4rem;
+                font-size: 9px;
+                padding: 4px 10px;
+                margin-bottom: 0.85rem;
             }
         }
 
         @media (max-width: 420px) {
             .detail-hero {
-                padding-top: 0.25rem;
-                padding-bottom: 1rem;
-            }
-
-            .hero-text-col {
-                margin-top: 1rem;
-            }
-
-            .hero-image-col {
-                margin-top: 0.5rem;
-            }
-
-            .hero-grid {
-                gap: 1rem;
+                padding: 1.5rem 0 1.25rem;
             }
 
             .hero-title {
-                font-size: 0.95rem;
-                margin-bottom: 0.4rem;
+                font-size: clamp(1.15rem, 8.5vw, 1.35rem);
+                margin-bottom: 0.75rem;
             }
 
             .hero-intro p {
-                font-size: 0.7rem;
-            }
-
-            .hero-nav-ctas {
-                gap: 4px;
-                margin-top: 10px;
+                font-size: 0.8rem;
             }
 
             .hero-nav-btn {
-                padding: 5px 8px 5px 7px;
-                font-size: 9px;
+                padding: 7px 10px;
+                font-size: 10px;
             }
 
             .hero-nav-icon {
-                width: 18px;
-                height: 18px;
+                width: 20px;
+                height: 20px;
             }
 
             .hero-nav-icon .material-symbols-rounded {
-                font-size: 10px !important;
+                font-size: 11px !important;
             }
 
-            .hero-nav-btn i {
-                display: none;
+            .hero-stats-bar {
+                gap: 12px;
+                margin-top: 22px;
+                padding-top: 16px;
+            }
+
+            .hero-stat-number {
+                font-size: 1.05rem;
+            }
+
+            .hero-stat-label {
+                font-size: 0.6rem;
             }
 
             .product-image-swiper .swiper-slide img {
-                height: 187px;
-            }
-
-            .hero-slide-cta-btn {
-                padding: 4px 8px 4px 6px;
-                font-size: 8px;
-                gap: 3px;
-            }
-
-            .hero-slide-cta-icon {
-                width: 16px;
-                height: 16px;
-            }
-
-            .hero-slide-cta-icon .material-symbols-rounded {
-                font-size: 8px !important;
-            }
-
-            .hero-badge {
-                font-size: 6px;
-                padding: 0.12rem 0.3rem;
+                height: 210px;
             }
         }
 
         /* Light mode stat cards */
-        body.lightmode .sol-stat-card-number {
-            color: #f48120;
-        }
+            body.lightmode .sol-stat-card-number {
+                color: #f48120;
+            }
 
-        body.lightmode .sol-stat-card-content>div:last-child {
-            color: #888 !important;
-        }
+            body.lightmode .sol-stat-card-content>div:last-child {
+                color: #888 !important;
+            }
 
-        /* Light mode product card buttons */
-        body.lightmode .sol-product-actions .sol-btn-secondary {
-            color: #333;
-            border: 1px solid rgba(0, 0, 0, 0.2);
-        }
+            /* Light mode product card buttons */
+            body.lightmode .sol-product-actions .sol-btn-secondary {
+                color: #333;
+                border: 1px solid rgba(0, 0, 0, 0.2);
+            }
 
-        body.lightmode .sol-product-actions .sol-btn-secondary:hover {
-            color: #f48120;
-            border-color: #f48120;
-            background: transparent;
-        }
+            body.lightmode .sol-product-actions .sol-btn-secondary:hover {
+                color: #f48120;
+                border-color: #f48120;
+                background: transparent;
+            }
 
-        /* Product carousel image background — white only on this page */
-        .sol-product-image {
-            background: #ffffff !important;
-        }
+            /* Product carousel image background — white only on this page */
+            .sol-product-image {
+                background: #ffffff !important;
+            }
 
-        /* "New" badge on product category tag */
-        .sol-product-badge-new {
-            display: inline-block;
-            font-size: 8px;
-            font-weight: 800;
-            letter-spacing: 0.4px;
-            text-transform: uppercase;
-            color: #fff;
-            background: #f48120;
-            padding: 1px 6px;
-            border-radius: 999px;
-            margin-left: 5px;
-            vertical-align: middle;
-        }
+            /* "New" badge on product category tag */
+            .sol-product-badge-new {
+                display: inline-block;
+                font-size: 8px;
+                font-weight: 800;
+                letter-spacing: 0.4px;
+                text-transform: uppercase;
+                color: #fff;
+                background: #f48120;
+                padding: 1px 6px;
+                border-radius: 999px;
+                margin-left: 5px;
+                vertical-align: middle;
+            }
 
-        /* ── Product Gallery Grid ── */
-        .product-gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-            gap: 16px;
-        }
-
-        @media (max-width: 575px) {
+            /* ── Product Gallery Grid ── */
             .product-gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 10px;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+                gap: 16px;
             }
-        }
 
-        .product-gallery-item {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-            cursor: pointer;
-            transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
-            aspect-ratio: 4 / 3;
-        }
+            @media (max-width: 575px) {
+                .product-gallery-grid {
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                }
+            }
 
-        body.lightmode .product-gallery-item {
-            background: rgba(0, 0, 0, 0.02);
-            border-color: rgba(0, 0, 0, 0.06);
-        }
+            .product-gallery-item {
+                position: relative;
+                border-radius: 12px;
+                overflow: hidden;
+                background: rgba(255, 255, 255, 0.03);
+                border: 1px solid rgba(255, 255, 255, 0.06);
+                cursor: pointer;
+                transition: all 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+                aspect-ratio: 4 / 3;
+            }
 
-        .product-gallery-item:hover {
-            transform: scale(1.03);
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
-            border-color: rgba(244, 129, 32, 0.3);
-        }
+            body.lightmode .product-gallery-item {
+                background: rgba(0, 0, 0, 0.02);
+                border-color: rgba(0, 0, 0, 0.06);
+            }
 
-        body.lightmode .product-gallery-item:hover {
-            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
-        }
+            .product-gallery-item:hover {
+                transform: scale(1.03);
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+                border-color: rgba(244, 129, 32, 0.3);
+            }
 
-        .product-gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
+            body.lightmode .product-gallery-item:hover {
+                box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+            }
 
-        .product-gallery-item:hover img {
-            transform: scale(1.08);
-        }
+            .product-gallery-item img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+                transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+            }
 
-        .product-gallery-item-caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            padding: 40px 14px 14px;
-            background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
-            color: #fff;
-            font-size: 13px;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-            line-height: 1.3;
-            pointer-events: none;
-            transition: padding 0.3s ease;
-        }
+            .product-gallery-item:hover img {
+                transform: scale(1.08);
+            }
 
-        .product-gallery-item:hover .product-gallery-item-caption {
-            padding: 40px 14px 18px;
-        }
+            .product-gallery-item-caption {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                padding: 40px 14px 14px;
+                background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+                color: #fff;
+                font-size: 13px;
+                font-weight: 600;
+                letter-spacing: 0.02em;
+                line-height: 1.3;
+                pointer-events: none;
+                transition: padding 0.3s ease;
+            }
 
-        .product-gallery-item-caption small {
-            display: block;
-            font-weight: 400;
-            font-size: 10px;
-            opacity: 0.6;
-            margin-top: 2px;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-        }
+            .product-gallery-item:hover .product-gallery-item-caption {
+                padding: 40px 14px 18px;
+            }
 
-        /* ── Gallery Lightbox Modal ── */
-        .gallery-lightbox {
-            position: fixed;
-            inset: 0;
-            z-index: 99999;
-            background: rgba(0, 0, 0, 0.88);
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.4s ease, visibility 0.4s ease;
-            padding: 20px;
-        }
+            .product-gallery-item-caption small {
+                display: block;
+                font-weight: 400;
+                font-size: 10px;
+                opacity: 0.6;
+                margin-top: 2px;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+            }
 
-        .gallery-lightbox.active {
-            opacity: 1;
-            visibility: visible;
-        }
+            /* ── Gallery Lightbox Modal ── */
+            .gallery-lightbox {
+                position: fixed;
+                inset: 0;
+                z-index: 99999;
+                background: rgba(0, 0, 0, 0.88);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 0.4s ease, visibility 0.4s ease;
+                padding: 20px;
+            }
 
-        .gallery-lightbox-inner {
-            max-width: 900px;
-            max-height: 90vh;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            transform: scale(0.92);
-            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
+            .gallery-lightbox.active {
+                opacity: 1;
+                visibility: visible;
+            }
 
-        .gallery-lightbox.active .gallery-lightbox-inner {
-            transform: scale(1);
-        }
+            .gallery-lightbox-inner {
+                max-width: 900px;
+                max-height: 90vh;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                transform: scale(0.92);
+                transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+            }
 
-        .gallery-lightbox img {
-            max-width: 100%;
-            max-height: 75vh;
-            object-fit: contain;
-            border-radius: 12px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-        }
+            .gallery-lightbox.active .gallery-lightbox-inner {
+                transform: scale(1);
+            }
 
-        .gallery-lightbox-title {
-            color: #fff;
-            font-size: 16px;
-            font-weight: 600;
-            margin-top: 16px;
-            text-align: center;
-            letter-spacing: 0.02em;
-        }
+            .gallery-lightbox img {
+                max-width: 100%;
+                max-height: 75vh;
+                object-fit: contain;
+                border-radius: 12px;
+                box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            }
 
-        .gallery-lightbox-close {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.15);
-            color: #fff;
-            font-size: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 100001;
-        }
+            .gallery-lightbox-title {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 16px;
+                text-align: center;
+                letter-spacing: 0.02em;
+            }
 
-        .gallery-lightbox-close:hover {
-            background: rgba(244, 129, 32, 0.8);
-            border-color: #f48120;
-            transform: rotate(90deg);
-        }
+            .gallery-lightbox-close {
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                width: 44px;
+                height: 44px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.15);
+                color: #fff;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                z-index: 100001;
+            }
 
-        .gallery-lightbox-nav {
-            position: fixed;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.06);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            color: #fff;
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 100001;
-            backdrop-filter: blur(8px);
-        }
+            .gallery-lightbox-close:hover {
+                background: rgba(244, 129, 32, 0.8);
+                border-color: #f48120;
+                transform: rotate(90deg);
+            }
 
-        .gallery-lightbox-nav:hover {
-            background: rgba(244, 129, 32, 0.6);
-            border-color: #f48120;
-        }
-
-        .gallery-lightbox-nav.prev {
-            left: 20px;
-        }
-
-        .gallery-lightbox-nav.next {
-            right: 20px;
-        }
-
-        @media (max-width: 575px) {
             .gallery-lightbox-nav {
-                display: none;
+                position: fixed;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.06);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                color: #fff;
+                font-size: 18px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                z-index: 100001;
+                backdrop-filter: blur(8px);
             }
-        }
+
+            .gallery-lightbox-nav:hover {
+                background: rgba(244, 129, 32, 0.6);
+                border-color: #f48120;
+            }
+
+            .gallery-lightbox-nav.prev {
+                left: 20px;
+            }
+
+            .gallery-lightbox-nav.next {
+                right: 20px;
+            }
+
+            @media (max-width: 575px) {
+                .gallery-lightbox-nav {
+                    display: none;
+                }
+            }
+
+            /* ── Font hierarchy: keep section/CTA headings <= hero H1 (44px max) ── */
+            .sol-section-title {
+                font-size: clamp(24px, 3vw, 40px);
+            }
+
+            .sol-cta-title {
+                font-size: clamp(26px, 3vw, 42px);
+            }
+
+            @media (max-width: 575px) {
+                .sol-section-title {
+                    font-size: clamp(18px, 5.2vw, 21px);
+                }
+
+                .sol-cta-title {
+                    font-size: clamp(18px, 5.2vw, 21px);
+                }
+            }
     </style>
 </head>
 
@@ -1227,7 +1132,8 @@
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                             <a href="#data-loggers" class="hero-nav-btn">
-                                <span class="hero-nav-icon"><span class="material-symbols-rounded">database</span></span>
+                                <span class="hero-nav-icon"><span
+                                        class="material-symbols-rounded">database</span></span>
                                 <span>Data Loggers</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
@@ -1237,7 +1143,8 @@
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
                             <a href="#laser-scanners" class="hero-nav-btn">
-                                <span class="hero-nav-icon"><span class="material-symbols-rounded">document_scanner</span></span>
+                                <span class="hero-nav-icon"><span
+                                        class="material-symbols-rounded">document_scanner</span></span>
                                 <span>Laser Scanners</span>
                                 <i class="fa-solid fa-arrow-right"></i>
                             </a>
@@ -1262,62 +1169,80 @@
                             <div class="swiper product-image-swiper">
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
-                                        <img src="./image/products/tiltmeter-2.webp" alt="Wireless Sensors" loading="lazy">
+                                        <img src="./image/products/tiltmeter-2.webp" alt="Wireless Sensors"
+                                            loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#wireless-sensors" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">sensors</span></span>
+                                                <span class="hero-slide-cta-icon"><span
+                                                        class="material-symbols-rounded">sensors</span></span>
                                                 <span class="hero-slide-cta-label">Wireless Sensors</span>
-                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right"
+                                                    style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./image/products/4g-rugged-gateway-1cloud.webp" alt="Core Communications" loading="lazy">
+                                        <img src="./image/products/4g-rugged-gateway-1cloud.webp"
+                                            alt="Core Communications" loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#communications" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">router</span></span>
+                                                <span class="hero-slide-cta-icon"><span
+                                                        class="material-symbols-rounded">router</span></span>
                                                 <span class="hero-slide-cta-label">Core Communications</span>
-                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right"
+                                                    style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./image/products/digital-data-logger-1.webp" alt="Data Loggers" loading="lazy">
+                                        <img src="./image/products/digital-data-logger-1.webp" alt="Data Loggers"
+                                            loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#data-loggers" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">database</span></span>
+                                                <span class="hero-slide-cta-icon"><span
+                                                        class="material-symbols-rounded">database</span></span>
                                                 <span class="hero-slide-cta-label">Data Loggers</span>
-                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right"
+                                                    style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./image/products/scanners/lixel-k2-hero.webp" alt="Laser Scanners" loading="lazy">
+                                        <img src="./image/products/scanners/lixel-k2-hero.webp" alt="Laser Scanners"
+                                            loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#laser-scanners" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">document_scanner</span></span>
+                                                <span class="hero-slide-cta-icon"><span
+                                                        class="material-symbols-rounded">document_scanner</span></span>
                                                 <span class="hero-slide-cta-label">Laser Scanners</span>
-                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right"
+                                                    style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./image/products/scanners/KV%20Horizontal.jpg" alt="KV Horizontal Laser Scanner" loading="lazy">
+                                        <img src="./image/products/scanners/KV%20Horizontal.jpg"
+                                            alt="KV Horizontal Laser Scanner" loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#laser-scanners" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">document_scanner</span></span>
+                                                <span class="hero-slide-cta-icon"><span
+                                                        class="material-symbols-rounded">document_scanner</span></span>
                                                 <span class="hero-slide-cta-label">Laser Scanners</span>
-                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right"
+                                                    style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
                                     <div class="swiper-slide">
-                                        <img src="./image/products/scanners/lixel-l2-pro.jpg" alt="Lixel L2 Pro" loading="lazy">
+                                        <img src="./image/products/scanners/lixel-l2-pro.jpg" alt="Lixel L2 Pro"
+                                            loading="lazy">
                                         <div class="hero-slide-cta">
                                             <a href="#laser-scanners" class="hero-slide-cta-btn">
-                                                <span class="hero-slide-cta-icon"><span class="material-symbols-rounded">document_scanner</span></span>
+                                                <span class="hero-slide-cta-icon"><span
+                                                        class="material-symbols-rounded">document_scanner</span></span>
                                                 <span class="hero-slide-cta-label">Laser Scanners</span>
-                                                <i class="fa-solid fa-arrow-right" style="font-size:10px;opacity:0.7;"></i>
+                                                <i class="fa-solid fa-arrow-right"
+                                                    style="font-size:10px;opacity:0.7;"></i>
                                             </a>
                                         </div>
                                     </div>
@@ -1344,28 +1269,28 @@
                 <div class="sol-bento-grid">
                     <div class="sol-bento-cell sol-reveal">
                         <div class="sol-bento-icon"><span class="material-symbols-rounded"
-                                style="font-size:22px;">bolt</span></div>
+                                style="font-size:16px;">bolt</span></div>
                         <div class="sol-bento-title">Industrial-Grade Durability</div>
                         <div class="sol-bento-body">Rugged enclosures, wide temperature tolerance, and IP67-rated
                             designs that survive the harshest field environments.</div>
                     </div>
                     <div class="sol-bento-cell sol-reveal">
                         <div class="sol-bento-icon"><span class="material-symbols-rounded"
-                                style="font-size:22px;">sensors</span></div>
+                                style="font-size:16px;">sensors</span></div>
                         <div class="sol-bento-title">Multi-Protocol Connectivity</div>
                         <div class="sol-bento-body">Seamless integration with Modbus, RS485, SDI-12, 4G LTE, LoRa, and
                             NB-IoT — no vendor lock-in.</div>
                     </div>
                     <div class="sol-bento-cell sol-reveal">
                         <div class="sol-bento-icon"><span class="material-symbols-rounded"
-                                style="font-size:22px;">battery_charging_full</span></div>
+                                style="font-size:16px;">battery_charging_full</span></div>
                         <div class="sol-bento-title">Ultra-Low Power Design</div>
                         <div class="sol-bento-body">Years of battery life on a single charge. Solar-ready and
                             energy-harvesting capable for truly remote deployments.</div>
                     </div>
                     <div class="sol-bento-cell sol-reveal">
                         <div class="sol-bento-icon"><span class="material-symbols-rounded"
-                                style="font-size:22px;">cloud_sync</span></div>
+                                style="font-size:16px;">cloud_sync</span></div>
                         <div class="sol-bento-title">Cloud-Native Platform</div>
                         <div class="sol-bento-body">Every product connects directly to Sentra's IoT platform — real-time
                             dashboards, alerts, and analytics out of the box.</div>
@@ -1438,7 +1363,8 @@
                     <h2 class="sol-section-title">Intelligent Edge Devices</h2>
                     <p class="sol-section-subtitle" style="margin:0 auto;">Compact, battery-powered sensors with
                         long-range wireless telemetry for continuous structural monitoring.
-                        <a href="./products/edge-devices.html">View all edge devices</a>.</p>
+                        <a href="./products/edge-devices.html">View all edge devices</a>.
+                    </p>
                 </div>
                 <div class="sol-product-carousel swiperProducts-layout sol-reveal">
                     <div class="swiper swiperProducts">
@@ -1555,7 +1481,8 @@
                     <h2 class="sol-section-title">Reliable Data Acquisition</h2>
                     <p class="sol-section-subtitle" style="margin:0 auto;">Scalable logging solutions for every sensor
                         type — from single-channel pico loggers to multi-sensor networks.
-                        <a href="./products/edge-devices.html">View all data loggers</a>.</p>
+                        <a href="./products/edge-devices.html">View all data loggers</a>.
+                    </p>
                 </div>
                 <div class="sol-product-carousel swiperProducts-layout sol-reveal">
                     <div class="swiper swiperProducts">
@@ -1669,7 +1596,8 @@
                     <h2 class="sol-section-title">Always Connected, Anywhere</h2>
                     <p class="sol-section-subtitle" style="margin:0 auto;">Reliable communication infrastructure that
                         bridges remote sensors to your command centre — from narrowband to broadband.
-                        <a href="./products/core-communications.html">View all core communications products</a>.</p>
+                        <a href="./products/core-communications.html">View all core communications products</a>.
+                    </p>
                 </div>
                 <div class="sol-product-carousel swiperProducts-layout sol-reveal">
                     <div class="swiper swiperProducts">
@@ -1746,7 +1674,8 @@
                     <h2 class="sol-section-title">Precision You Can Trust</h2>
                     <p class="sol-section-subtitle" style="margin:0 auto;">High-fidelity wired sensing solutions for
                         permanent installations requiring maximum accuracy and reliability.
-                        <a href="./products/wired-sensors.html">View all wired sensors</a>.</p>
+                        <a href="./products/wired-sensors.html">View all wired sensors</a>.
+                    </p>
                 </div>
                 <div class="sol-product-carousel swiperProducts-layout sol-reveal">
                     <div class="swiper swiperProducts">
