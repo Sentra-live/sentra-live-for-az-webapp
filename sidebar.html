@@ -15,129 +15,169 @@
 </div>
 
 <div>
-    <div class="sidebar-overlay"></div>
-    <div class="sidebar">
-        <div class="sidebar-header">
-            <div class="logo">
-                <img src="./image/branding/sentra_white_1.svg" class="site-logo img-fluid logo" alt="Logo">
+    <div class="mmenu-overlay"></div>
+    <nav class="mmenu-panel" aria-label="Mobile navigation">
+        <div class="mmenu-scroll">
+
+            <!-- Quick links -->
+            <div class="mmenu-quicklinks">
+                <a href="./index.html" class="mmenu-quicklink">Home</a>
+                <a href="./about.html" class="mmenu-quicklink">About Us</a>
+                <a href="./contact.html" class="mmenu-quicklink">Contact Us</a>
             </div>
-            <button class="close-btn"><span>X</span></button>
+
+            <!-- Products -->
+            <div class="mmenu-section">
+                <span class="mmenu-label">Products</span>
+                <div class="mmenu-list">
+                    <a class="mmenu-row" href="./products/edge-devices.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-microchip"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Edge Devices</span>
+                            <span class="mmenu-row-sub">Wireless tiltmeters, GNSS &amp; vibration sensors</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="./products/core-communications.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-wifi"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Core Communications</span>
+                            <span class="mmenu-row-sub">Gateways, repeaters &amp; mesh networking</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="./products/wired-sensors.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-network-wired"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Wired Sensors</span>
+                            <span class="mmenu-row-sub">Accelerometers &amp; strain gauges</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="./products/laser-scanners.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-camera"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Laser Scanners <span class="mmenu-new-badge">New</span></span>
+                            <span class="mmenu-row-sub">LiDAR &amp; spatial capture devices</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="./products/lcc.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-cubes"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Softwares</span>
+                            <span class="mmenu-row-sub">LixelStudio &amp; Gaussian Splatting tools</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                </div>
+                <a class="mmenu-view-all" href="./products.html">View all products <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Featured Solutions -->
+            <div class="mmenu-card mmenu-card--amber">
+                <span class="mmenu-label mmenu-label--amber">Solutions</span>
+                <div class="mmenu-grid-2">
+                    <a class="mmenu-tile" href="./solutions/structural-health-monitoring.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Structural Health Monitoring</span>
+                        <span class="mmenu-tile-sub">Real-time sensing for critical infrastructure</span>
+                    </a>
+                    <a class="mmenu-tile" href="./solutions/bridge-inspection-and-condition-assessment.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bridge
+                            Inspection</span>
+                        <span class="mmenu-tile-sub">Condition assessment</span>
+                    </a>
+                    <a class="mmenu-tile" href="./solutions/asset-monitoring-and-management-solutions.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i> Asset
+                            Monitoring</span>
+                        <span class="mmenu-tile-sub">Lifecycle management</span>
+                    </a>
+                    <a class="mmenu-tile" href="./solutions/digital-twin.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i> Digital
+                            Twin</span>
+                        <span class="mmenu-tile-sub">Real-time asset simulation</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- More Solutions -->
+            <div class="mmenu-card mmenu-card--slate">
+                <span class="mmenu-label mmenu-label--slate">More Solutions</span>
+                <div class="mmenu-simple-list">
+                    <a class="mmenu-simple-link" href="./solutions/advanced-non-destructive-testing-ndt.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Advanced NDT</a>
+                    <a class="mmenu-simple-link" href="./solutions/geotechnical-and-foundation-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Geotechnical &amp; Foundation</a>
+                    <a class="mmenu-simple-link" href="./solutions/fatigue-and-residual-life-assessment.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Fatigue Assessment</a>
+                    <a class="mmenu-simple-link" href="./solutions/consulting-and-advisory-services.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
+                    <a class="mmenu-simple-link" href="./solutions/digital-engineering-and-documentation.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                </div>
+            </div>
+
+            <!-- Resources / Company -->
+            <div class="mmenu-card mmenu-card--neutral">
+                <div class="mmenu-footer-grid">
+                    <div class="mmenu-footer-col">
+                        <span class="mmenu-label">Resources</span>
+                        <a class="mmenu-footer-link" href="./resources.html#blogs"><i
+                                class="fa-solid fa-blog"></i> Blogs</a>
+                        <a class="mmenu-footer-link" href="./resources.html#case-studies"><i
+                                class="fa-solid fa-file-lines"></i> Case Studies</a>
+                        <a class="mmenu-footer-link" href="./resources.html#articles"><i
+                                class="fa-solid fa-newspaper"></i> Articles</a>
+                        <a class="mmenu-footer-link" href="./videos.html"><i
+                                class="fa-solid fa-video"></i> Videos &amp; Podcasts</a>
+                        <a class="mmenu-footer-link" href="./glossary.html"><i
+                                class="fa-solid fa-book"></i> Glossary</a>
+                        <a class="mmenu-footer-link" href="./faq.html"><i
+                                class="fa-solid fa-circle-question"></i> FAQ</a>
+                        <a class="mmenu-footer-link" href="./document-center.html"><i
+                                class="fa-solid fa-folder-open"></i> Document Center</a>
+                    </div>
+                    <div class="mmenu-footer-col">
+                        <span class="mmenu-label">Company</span>
+                        <a class="mmenu-footer-link" href="./industries.html"><i
+                                class="fa-solid fa-industry"></i> Industries</a>
+                        <a class="mmenu-footer-link" href="./testimonial.html"><i
+                                class="fa-solid fa-comments"></i> Testimonials</a>
+                        <a class="mmenu-footer-link" href="./partnership.html"><i
+                                class="fa-solid fa-handshake"></i> Partnership</a>
+                        <a class="mmenu-footer-link" href="./feed.html"><i
+                                class="fa-solid fa-bullhorn"></i> Social Feed</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <ul class="menu">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li class="sidebar-dropdown">
-                <div class="dropdown-header">
-                    <a href="./solutions.html">Solutions</a>
-                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
-                </div>
-                <ul class="sidebar-dropdown-menu">
-                    <li><a href="./solutions/structural-health-monitoring.html">Structural Health Monitoring (SHM)</a>
-                    </li>
-                    <li><a href="./solutions/advanced-non-destructive-testing-ndt.html">Advanced Non-Destructive
-                            Testing (NDT)</a></li>
-                    <li><a href="./solutions/bridge-inspection-and-condition-assessment.html">Bridge Inspection &
-                            Condition Assessment</a></li>
-                    <li><a href="./solutions/consulting-and-advisory-services.html">Consulting & Advisory Services</a>
-                    </li>
-                    <li><a href="./solutions/geotechnical-and-foundation-monitoring.html">Geotechnical & Foundation
-                            Monitoring</a></li>
-                    <li><a href="./solutions/fatigue-and-residual-life-assessment.html">Fatigue and Residual Life
-                            Assessment</a></li>
-                    <li><a href="./solutions/digital-engineering-and-documentation.html">Digital Engineering &
-                            Documentation</a></li>
-                </ul>
-            </li>
-            <li class="sidebar-dropdown">
-                <div class="dropdown-header">
-                    <a href="./products.html">Products</a>
-                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
-                </div>
-                <ul class="sidebar-dropdown-menu">
 
-
-                    <li class="sidebar-menu-divider"></li>
-
-                    <!-- Edge Devices Category -->
-                    <li class="product-category-item">
-                        <div class="product-category-header" data-category="edge-devices">
-                            <span class="category-name"><i class="fas fa-microchip"></i> Edge Devices</span>
-                            <i class="fas fa-chevron-down category-arrow"></i>
-                        </div>
-                        <ul class="product-category-items hidden" data-category-group="edge-devices">
-                            <li class="product-item"><a href="./products/vibrating-wire.html">Vibrating Wire</a></li>
-                            <li class="product-item"><a href="./products/vibrating-wire-rcr.html">Vibrating Wire RCR</a>
-                            </li>
-                            <li class="product-item"><a href="./products/digital-data-logger.html">Digital Data
-                                    Logger</a></li>
-                            <li class="product-item"><a href="./products/analog-data-logger.html">Analog Data Logger</a>
-                            </li>
-                            <li class="product-item"><a href="./products/piconode-data-logger.html">Piconode Data
-                                    Logger</a></li>
-                            <li class="product-item"><a href="./products/tiltmeter.html">Tiltmeter</a></li>
-                            <li class="product-item"><a href="./products/tiltmeter-event-detection.html">Tiltmeter Event
-                                    Detection</a></li>
-                            <li class="product-item"><a href="./products/vibration-meter.html">Vibration Meter</a></li>
-                            <li class="product-item"><a href="./products/laser-tiltmeter.html">Laser Tiltmeter</a></li>
-                            <li class="product-item"><a href="./products/gnss-meter.html">GNSS Meter</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Core Communications Category -->
-                    <li class="product-category-item">
-                        <div class="product-category-header" data-category="core-communications">
-                            <span class="category-name"><i class="fas fa-wifi"></i> Core Communications</span>
-                            <i class="fas fa-chevron-down category-arrow"></i>
-                        </div>
-                        <ul class="product-category-items hidden" data-category-group="core-communications">
-                            <li class="product-item"><a href="./products/gateway.html">Gateway</a></li>
-                            <li class="product-item"><a href="./products/repeater.html">Repeater</a></li>
-                            <li class="product-item"><a href="./products/thread.html">Thread</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Wired Sensors Category -->
-                    <li class="product-category-item">
-                        <div class="product-category-header" data-category="wired-sensors">
-
-                            <span class="category-name"><i class="fas fa-network-wired"></i> Wired Sensors</span>
-                            <i class="fas fa-chevron-down category-arrow"></i>
-                        </div>
-                        <ul class="product-category-items hidden" data-category-group="wired-sensors">
-                            <li class="product-item"><a href="./products/accelerometers.html">Accelerometers</a></li>
-                            <li class="product-item"><a href="./products/strain-gauges.html">Strain Gauges</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="sidebar-menu-divider"></li>
-
-                </ul>
-            </li>
-            <li class="sidebar-dropdown">
-                <div class="dropdown-header">
-                    <a href="#">Whitepapers</a>
-                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
-                </div>
-                <ul class="sidebar-dropdown-menu">
-                    <li><a href="./resources.html#case-studies">Case Studies</a></li>
-                    <li><a href="./resources.html#blogs">Blog</a></li>
-                    <li><a href="./resources.html#articles">Articles</a></li>
-                    <li><a href="./feed.html">Social Feed</a></li>
-                </ul>
-            </li>
-            <li class="sidebar-dropdown">
-                <div class="dropdown-header">
-                    <a href="#">Archive</a>
-                    <button class="sidebar-dropdown-btn"><i class="fa-solid fa-angle-down"></i></button>
-                </div>
-                <ul class="sidebar-dropdown-menu">
-                    <li><a href="./partnership.html">Partnership</a></li>
-                    <li><a href="./testimonial.html">Testimonial</a></li>
-                    <li><a href="./faq.html">FAQs</a></li>
-                    <li><a href="./404-page.html">404 Page</a></li>
-                </ul>
-            </li>
-            <li class="below-dropdown"><a href="./contact.html">Contact Us</a></li>
-        </ul>
-    </div>
+        <!-- Sticky bottom bar -->
+        <div class="mmenu-bottom">
+            <div class="mmenu-follow-row">
+                <span class="mmenu-follow-label">Follow Us</span>
+                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                    target="_blank" rel="noopener">Book Demo</a>
+            </div>
+            <div class="mmenu-social-row">
+                <a class="mmenu-social" href="https://www.linkedin.com/company/sentra-clovetech/" target="_blank"
+                    rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="mmenu-social" href="https://x.com/clovetech_offl" target="_blank" rel="noopener"
+                    aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a class="mmenu-social" href="https://www.instagram.com/sentra_tech_ofiicial/" target="_blank"
+                    rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="mmenu-social" href="https://www.facebook.com/clovetechnologiesofficial/" target="_blank"
+                    rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
+                    rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="mmenu-contact-row">
+                <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
+                <a href="mailto:sentra@clovetech.com"><i class="fa-solid fa-envelope"></i> sentra@clovetech.com</a>
+            </div>
+        </div>
+    </nav>
 </div>

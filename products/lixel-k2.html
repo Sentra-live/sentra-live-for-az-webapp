@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-8GFRCEFB87');
+    </script>
     <meta charset="UTF-8">
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,22 +32,18 @@
     <meta name="twitter:site" content="@sentratech" />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "Lixel K2 — Handheld SLAM LiDAR Scanner",
-      "description": "Lightweight handheld SLAM LiDAR scanner with onboard RTK, up to 200,000 points/sec and 1cm relative accuracy, distributed in India by Sentra.",
-      "brand": { "@type": "Brand", "name": "XGRIDS" },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
-        "seller": { "@type": "Organization", "name": "Sentra" },
-        "url": "https://sentratech.in/products/lixel-k2.html"
-      }
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Lixel K2 — Handheld SLAM LiDAR Scanner",
+  "description": "Lightweight handheld SLAM LiDAR scanner with onboard RTK, up to 200,000 points/sec and 1cm relative accuracy, distributed in India by Sentra.",
+  "brand": {
+    "@type": "Brand",
+    "name": "XGRIDS"
+  },
+  "image": "https://sentratech.in/image/products/scanners/Lixel-k2-product.png"
+}
+</script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -52,15 +57,23 @@
     }
     </script>
 
+    <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../css/vendor/brands.css">
+    <link rel="stylesheet" href="../css/vendor/regular.css">
+    <link rel="stylesheet" href="../css/vendor/solid.css">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/vendor/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
     <link rel="stylesheet" href="../css/chatbot.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap"
         rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap"
         rel="stylesheet" />
     <link rel="canonical" href="https://sentratech.in/products/lixel-k2.html">
 
@@ -309,27 +322,40 @@
 
         .ps-features-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: minmax(150px, auto);
             gap: 1rem;
         }
 
         .ps-feat-card {
-            border-radius: 14px;
+            position: relative;
+            border-radius: 18px;
             padding: 1.75rem;
             border: 1px solid rgba(255, 255, 255, 0.07);
             background: rgba(255, 255, 255, 0.03);
             display: flex;
             flex-direction: column;
             gap: 1rem;
-            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            overflow: hidden;
+            transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+
+        .ps-feat-card::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(120% 90% at 100% 0%, rgba(244, 129, 32, 0.06) 0%, transparent 55%);
+            pointer-events: none;
         }
 
         .ps-feat-card:hover {
-            transform: translateY(-3px);
-            box-shadow: inset 0 3px 0 0 var(--accent-color), 0 12px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-4px);
+            border-color: rgba(244, 129, 32, 0.35);
+            box-shadow: inset 0 3px 0 0 var(--accent-color), 0 18px 40px rgba(0, 0, 0, 0.28);
         }
 
         .ps-feat-icon {
+            position: relative;
             width: 48px;
             height: 48px;
             border-radius: 12px;
@@ -342,26 +368,18 @@
         }
 
         .ps-feat-card h4 {
-            font-size: 0.95rem;
+            position: relative;
+            font-size: 0.98rem;
             font-weight: 700;
             margin: 0;
         }
 
         .ps-feat-card p {
+            position: relative;
             font-size: 0.8rem;
             margin: 0;
             line-height: 1.6;
             opacity: 0.6;
-        }
-
-        body.lightmode .ps-feat-card {
-            border-color: rgba(0, 0, 0, 0.08);
-            background: #fff;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-
-        body.lightmode .ps-feat-icon {
-            background: rgba(244, 129, 32, 0.08);
         }
 
         .ps-feat-card-photo {
@@ -370,8 +388,9 @@
         }
 
         .ps-feat-thumb {
+            position: relative;
             width: 100%;
-            aspect-ratio: 16 / 10;
+            height: 140px;
             overflow: hidden;
             background: #0d0e12;
         }
@@ -389,21 +408,176 @@
         }
 
         .ps-feat-body {
+            position: relative;
+            z-index: 1;
             padding: 1.25rem 1.5rem 1.5rem;
             display: flex;
             flex-direction: column;
             gap: 0.75rem;
         }
 
+        .ps-feat-card.bento-hero {
+            grid-column: span 2;
+            grid-row: span 2;
+            justify-content: flex-end;
+            padding: 0;
+            min-height: 420px;
+        }
+
+        .ps-feat-card.bento-hero::before {
+            background: none;
+        }
+
+        .ps-feat-card.bento-hero .ps-feat-thumb {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+        }
+
+        .ps-feat-card.bento-hero .ps-feat-thumb::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(0deg, rgba(5, 5, 8, 0.94) 0%, rgba(5, 5, 8, 0.55) 45%, rgba(5, 5, 8, 0.12) 100%);
+        }
+
+        .ps-feat-card.bento-hero .ps-feat-body {
+            margin-top: auto;
+            padding: 2rem;
+            gap: 0.9rem;
+        }
+
+        .ps-feat-card.bento-hero .ps-feat-icon {
+            width: 58px;
+            height: 58px;
+            border-radius: 15px;
+            font-size: 1.45rem;
+            background: rgba(244, 129, 32, 0.22);
+        }
+
+        .ps-feat-card.bento-hero h4 {
+            font-size: 1.3rem;
+            max-width: 78%;
+        }
+
+        .ps-feat-card.bento-hero p {
+            font-size: 0.9rem;
+            max-width: 460px;
+        }
+
+        .ps-feat-card.bento-wide {
+            grid-column: span 2;
+        }
+
+        .ps-feat-card.bento-wide .ps-feat-thumb {
+            height: 185px;
+        }
+
+        .ps-feat-card.bento-small {
+            grid-column: span 1;
+        }
+
+        .ps-feat-chips {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            margin-top: auto;
+        }
+
+        .ps-feat-card.bento-wide .ps-feat-chips,
+        .ps-feat-card.bento-small .ps-feat-chips {
+            margin-top: 0.4rem;
+        }
+
+        .ps-feat-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            padding: 5px 11px;
+            border-radius: 999px;
+            border: 1px solid rgba(244, 129, 32, 0.3);
+            background: rgba(244, 129, 32, 0.08);
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.68rem;
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .ps-feat-chip i {
+            color: var(--accent-color);
+            font-size: 0.62rem;
+        }
+
+        .ps-feat-stat {
+            position: relative;
+            display: inline-flex;
+            align-items: baseline;
+            gap: 0.35rem;
+            margin-top: auto;
+        }
+
+        .ps-feat-stat b {
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: var(--accent-color);
+            letter-spacing: -0.02em;
+            line-height: 1;
+        }
+
+        .ps-feat-stat span {
+            font-size: 0.66rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            opacity: 0.55;
+        }
+
+        body.lightmode .ps-feat-card {
+            border-color: rgba(0, 0, 0, 0.08);
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        body.lightmode .ps-feat-card::before {
+            background: radial-gradient(120% 90% at 100% 0%, rgba(244, 129, 32, 0.04) 0%, transparent 55%);
+        }
+
+        body.lightmode .ps-feat-icon {
+            background: rgba(244, 129, 32, 0.08);
+        }
+
+        body.lightmode .ps-feat-chip {
+            background: rgba(244, 129, 32, 0.06);
+            color: #444;
+        }
+
         @media (max-width: 991px) {
             .ps-features-grid {
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .ps-feat-card.bento-hero {
+                grid-column: span 2;
+                grid-row: span 1;
+                min-height: 360px;
+            }
+
+            .ps-feat-card.bento-wide {
+                grid-column: span 2;
             }
         }
 
         @media (max-width: 575px) {
             .ps-features-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .ps-feat-card.bento-hero,
+            .ps-feat-card.bento-wide,
+            .ps-feat-card.bento-small {
+                grid-column: span 1;
+                grid-row: span 1;
             }
         }
 
@@ -470,6 +644,100 @@
             }
         }
 
+        /* ═══ USE CASES ═══ */
+        .ps-usecases-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+
+        .ps-usecases-sticky {
+            position: sticky;
+            top: 80px;
+            height: fit-content;
+        }
+
+        .ps-usecases-number {
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 900;
+            line-height: 1;
+            color: var(--accent-color);
+            opacity: 0.15;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.03em;
+        }
+
+        .ps-usecases-text {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .ps-usecases-text h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin: 0;
+            line-height: 1.3;
+        }
+
+        .ps-usecases-text ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .ps-usecases-text li {
+            font-size: 0.9rem;
+            line-height: 1.65;
+            padding-left: 1.5rem;
+            position: relative;
+            opacity: 0.75;
+        }
+
+        .ps-usecases-text li::before {
+            content: '●';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-size: 0.6rem;
+            font-weight: 700;
+        }
+
+        .ps-usecases-video-wrap {
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            background: rgba(255, 255, 255, 0.02);
+            aspect-ratio: 16 / 9;
+        }
+
+        .ps-usecases-video-wrap video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        body.lightmode .ps-usecases-video-wrap {
+            border-color: rgba(0, 0, 0, 0.08);
+            background: #f5f5f5;
+        }
+
+        @media (max-width: 991px) {
+            .ps-usecases-container {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .ps-usecases-sticky {
+                position: static;
+            }
+        }
+
         .ps-specs-table-wrap {
             border-radius: 14px;
             border: 1px solid rgba(255, 255, 255, 0.07);
@@ -523,6 +791,45 @@
         body.lightmode .ps-specs-table-wrap th,
         body.lightmode .ps-specs-table-wrap td {
             border-bottom-color: rgba(0, 0, 0, 0.06);
+        }
+
+        .ps-specs-table-wrap.ps-specs-collapsed tbody tr:nth-child(n+7) {
+            display: none;
+        }
+
+        .ps-specs-toggle-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            margin: 1rem auto 0;
+            padding: 0.6rem 1.5rem;
+            border-radius: 999px;
+            border: 1px solid rgba(244, 129, 32, 0.35);
+            background: rgba(244, 129, 32, 0.08);
+            color: var(--accent-color);
+            font-size: 0.82rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .ps-specs-toggle-btn:hover {
+            background: rgba(244, 129, 32, 0.16);
+            border-color: rgba(244, 129, 32, 0.5);
+        }
+
+        .ps-specs-toggle-btn i {
+            font-size: 0.7rem;
+            transition: transform 0.3s ease;
+        }
+
+        .ps-specs-toggle-btn.expanded i {
+            transform: rotate(180deg);
+        }
+
+        body.lightmode .ps-specs-toggle-btn {
+            background: rgba(244, 129, 32, 0.06);
         }
 
         .ps-cta-banner {
@@ -750,8 +1057,8 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
-            min-height: 460px;
-            padding: 2.25rem 2rem;
+            min-height: 360px;
+            padding: 1.75rem 1.75rem;
             background:
                 radial-gradient(120% 90% at 100% 0%, rgba(244, 129, 32, 0.22) 0%, transparent 55%),
                 #0d0e12;
@@ -794,9 +1101,9 @@
         }
 
         .ps-perception-feature h4 {
-            font-size: 1.35rem;
+            font-size: 1.15rem;
             font-weight: 800;
-            margin: 0 0 0.6rem;
+            margin: 0 0 0.45rem;
             color: #fff;
             position: relative;
             z-index: 2;
@@ -804,10 +1111,10 @@
         }
 
         .ps-perception-feature p {
-            font-size: 0.85rem;
-            line-height: 1.65;
+            font-size: 0.78rem;
+            line-height: 1.55;
             color: rgba(255, 255, 255, 0.6);
-            margin: 0 0 1.35rem;
+            margin: 0 0 1rem;
             max-width: 380px;
             position: relative;
             z-index: 2;
@@ -892,14 +1199,14 @@
         }
 
         .ps-perception-card-photo-body {
-            padding: 1.1rem 1.35rem 1.35rem;
+            padding: 0.9rem 1.1rem 1.1rem;
             display: flex;
             flex-direction: column;
-            gap: 0.4rem;
+            gap: 0.3rem;
         }
 
         .ps-perception-card-photo .ps-perception-sub {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             font-weight: 700;
             color: var(--accent-color);
             text-transform: uppercase;
@@ -907,15 +1214,15 @@
         }
 
         .ps-perception-card-photo h4 {
-            font-size: 0.92rem;
+            font-size: 0.85rem;
             font-weight: 700;
             margin: 0;
         }
 
         .ps-perception-card-photo p {
-            font-size: 0.78rem;
+            font-size: 0.73rem;
             margin: 0;
-            line-height: 1.55;
+            line-height: 1.5;
             opacity: 0.6;
         }
 
@@ -927,7 +1234,7 @@
 
             .ps-perception-feature {
                 grid-row: auto;
-                min-height: 340px;
+                min-height: 300px;
             }
         }
 
@@ -999,9 +1306,16 @@
             height: 400vh;
         }
 
+        /* position:sticky can't be used here — body/html set overflow-x:hidden,
+           and per the CSS overflow spec a non-visible overflow-x forces the used
+           value of overflow-y to 'auto' too, which makes body a scroll container
+           whose height simply grows to fit its content (never actually clips).
+           That mismatched containing block breaks sticky's ability to pin against
+           the real (html-level) scrolling viewport. Pinning is done manually via
+           JS instead — see the scroll handler at the bottom of the page, which
+           toggles .is-pinned / .is-pinned-bottom based on the wrapper's position. */
         .ps-quality-section {
-            position: sticky;
-            top: 0;
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1009,6 +1323,21 @@
             padding: 60px 0;
             height: 100vh;
             overflow: hidden;
+        }
+
+        .ps-quality-section.is-pinned {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .ps-quality-section.is-pinned-bottom {
+            position: absolute;
+            top: auto;
+            bottom: 0;
+            left: 0;
+            width: 100%;
         }
 
         .ps-quality-carousel {
@@ -1718,6 +2047,47 @@
         }
     </style>
 
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need ground control points with the Lixel K2?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. The onboard RTK module provides centimetre-level absolute positioning during capture, eliminating the need for ground control targets in most projects."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I get a 3D model as well as a point cloud?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — the Lixel K2 natively generates 3D Gaussian Splat models alongside the classified point cloud, so you get a photoreal 3D asset from the same scan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What formats does the scanner export to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "LAS, LAZ, E57 and PLY point cloud formats, plus 3D Gaussian Splat files compatible with Unreal Engine, Unity and Blender."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is training and support available in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. As the official XGRIDS reseller in India, Sentra provides on-site demos, operator training, calibration support and warranty service."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 
 <body class="product-page">
@@ -1936,31 +2306,41 @@
                     </div>
                     <div class="ps-perception-grid">
                         <div class="ps-perception-card ps-perception-feature">
-                            <div class="ps-perception-feature-media"><img src="../image/products/scanners/Lixel-k2-product.png" alt="Lixel K2 handheld scanner" loading="lazy"></div>
+                            <div class="ps-perception-feature-media"><img
+                                    src="../image/products/scanners/Lixel-k2-product.png"
+                                    alt="Lixel K2 handheld scanner" loading="lazy"></div>
                             <span class="ps-perception-badge"><i class="fa-solid fa-layer-group"></i>Multi-SLAM</span>
                             <h4>Real-Time Spatial Perception System</h4>
-                            <p>Fuses LiDAR, visual and inertial SLAM data in real time for robust tracking and reconstruction — even in featureless or dynamic environments.</p>
+                            <p>Fuses LiDAR, visual and inertial SLAM data in real time for robust tracking and
+                                reconstruction — even in featureless or dynamic environments.</p>
                             <div class="ps-perception-fusion-row">
-                                <span class="ps-perception-fusion-chip"><i class="fa-solid fa-satellite-dish"></i></span>
+                                <span class="ps-perception-fusion-chip"><i
+                                        class="fa-solid fa-satellite-dish"></i></span>
                                 <span class="ps-perception-fusion-chip"><i class="fa-solid fa-eye"></i></span>
                                 <span class="ps-perception-fusion-chip"><i class="fa-solid fa-gauge-high"></i></span>
                                 <span><strong>3-sensor fusion</strong>, one continuous pass</span>
                             </div>
                         </div>
                         <div class="ps-perception-card ps-perception-card-photo">
-                            <div class="ps-perception-thumb"><img src="../image/products/scanners/Lixel-k2-Multi-Camera-Array.png" alt="Lixel K2 multi-camera array" loading="lazy"></div>
+                            <div class="ps-perception-thumb"><img
+                                    src="../image/products/scanners/Lixel-k2-Multi-Camera-Array.png"
+                                    alt="Lixel K2 multi-camera array" loading="lazy"></div>
                             <div class="ps-perception-card-photo-body">
                                 <div class="ps-perception-sub">Multi-Camera Array</div>
                                 <h4>Complete Environmental Detail, Captured</h4>
-                                <p>Three cameras — two fisheye plus one forward-facing at 4000×3000 — deliver full 360° × -7° to +52° coverage alongside the point cloud.</p>
+                                <p>Three cameras — two fisheye plus one forward-facing at 4000×3000 — deliver full 360°
+                                    × -7° to +52° coverage alongside the point cloud.</p>
                             </div>
                         </div>
                         <div class="ps-perception-card ps-perception-card-photo">
-                            <div class="ps-perception-thumb"><img src="../image/products/scanners/Lixel-k2-Integrated-RTK.png" alt="Lixel K2 integrated RTK module" loading="lazy"></div>
+                            <div class="ps-perception-thumb"><img
+                                    src="../image/products/scanners/Lixel-k2-Integrated-RTK.png"
+                                    alt="Lixel K2 integrated RTK module" loading="lazy"></div>
                             <div class="ps-perception-card-photo-body">
                                 <div class="ps-perception-sub">Integrated RTK</div>
                                 <h4>Spatial Coordinates, Precisely Locked</h4>
-                                <p>Built-in UM980 RTK module delivers centimetre-level absolute positioning — RTK and PPK supported, no ground control points required.</p>
+                                <p>Built-in UM980 RTK module delivers centimetre-level absolute positioning — RTK and
+                                    PPK supported, no ground control points required.</p>
                             </div>
                         </div>
                     </div>
@@ -2008,30 +2388,60 @@
                 </div>
                 <div class="ps-quality-carousel">
                     <div class="ps-quality-track" id="k2QualityTrack">
-                        <div class="ps-quality-slide active" data-poster="../image/products/scanners/k2-quality-complex-geometry-poster.webp" data-src="../image/products/scanners/k2-quality-complex-geometry.mp4">
-                            <video muted loop playsinline preload="none" poster="../image/products/scanners/k2-quality-complex-geometry-poster.webp"></video>
+                        <div class="ps-quality-slide active"
+                            data-poster="../image/products/scanners/k2-quality-complex-geometry-poster.webp"
+                            data-src="../image/products/scanners/k2-quality-complex-geometry.mp4">
+                            <video muted loop playsinline preload="none"
+                                poster="../image/products/scanners/k2-quality-complex-geometry-poster.webp"></video>
                             <span class="ps-quality-play-badge"><i class="fa-solid fa-play"></i></span>
-                            <div class="ps-quality-slide-info"><h4><i class="fa-solid fa-cube"></i>Complex Geometry</h4><p>Clearly resolved — intricate structures captured with precision.</p></div>
+                            <div class="ps-quality-slide-info">
+                                <h4><i class="fa-solid fa-cube"></i>Complex Geometry</h4>
+                                <p>Clearly resolved — intricate structures captured with precision.</p>
+                            </div>
                         </div>
-                        <div class="ps-quality-slide" data-poster="../image/products/scanners/k2-quality-uniform-colorization-poster.webp" data-src="../image/products/scanners/k2-quality-uniform-colorization.mp4">
-                            <video muted loop playsinline preload="none" poster="../image/products/scanners/k2-quality-uniform-colorization-poster.webp"></video>
+                        <div class="ps-quality-slide"
+                            data-poster="../image/products/scanners/k2-quality-uniform-colorization-poster.webp"
+                            data-src="../image/products/scanners/k2-quality-uniform-colorization.mp4">
+                            <video muted loop playsinline preload="none"
+                                poster="../image/products/scanners/k2-quality-uniform-colorization-poster.webp"></video>
                             <span class="ps-quality-play-badge"><i class="fa-solid fa-play"></i></span>
-                            <div class="ps-quality-slide-info"><h4><i class="fa-solid fa-palette"></i>Uniform Colorization</h4><p>Every detail, visible — consistent true-colour across the entire scan.</p></div>
+                            <div class="ps-quality-slide-info">
+                                <h4><i class="fa-solid fa-palette"></i>Uniform Colorization</h4>
+                                <p>Every detail, visible — consistent true-colour across the entire scan.</p>
+                            </div>
                         </div>
-                        <div class="ps-quality-slide" data-poster="../image/products/scanners/k2-quality-denser-point-cloud-poster.webp" data-src="../image/products/scanners/k2-quality-denser-point-cloud.mp4">
-                            <video muted loop playsinline preload="none" poster="../image/products/scanners/k2-quality-denser-point-cloud-poster.webp"></video>
+                        <div class="ps-quality-slide"
+                            data-poster="../image/products/scanners/k2-quality-denser-point-cloud-poster.webp"
+                            data-src="../image/products/scanners/k2-quality-denser-point-cloud.mp4">
+                            <video muted loop playsinline preload="none"
+                                poster="../image/products/scanners/k2-quality-denser-point-cloud-poster.webp"></video>
                             <span class="ps-quality-play-badge"><i class="fa-solid fa-play"></i></span>
-                            <div class="ps-quality-slide-info"><h4><i class="fa-solid fa-database"></i>Denser Point Clouds</h4><p>Truer detail — 200,000 pts/sec for high-density capture.</p></div>
+                            <div class="ps-quality-slide-info">
+                                <h4><i class="fa-solid fa-database"></i>Denser Point Clouds</h4>
+                                <p>Truer detail — 200,000 pts/sec for high-density capture.</p>
+                            </div>
                         </div>
-                        <div class="ps-quality-slide" data-poster="../image/products/scanners/k2-quality-low-light-poster.webp" data-src="../image/products/scanners/k2-quality-low-light.mp4">
-                            <video muted loop playsinline preload="none" poster="../image/products/scanners/k2-quality-low-light-poster.webp"></video>
+                        <div class="ps-quality-slide"
+                            data-poster="../image/products/scanners/k2-quality-low-light-poster.webp"
+                            data-src="../image/products/scanners/k2-quality-low-light.mp4">
+                            <video muted loop playsinline preload="none"
+                                poster="../image/products/scanners/k2-quality-low-light-poster.webp"></video>
                             <span class="ps-quality-play-badge"><i class="fa-solid fa-play"></i></span>
-                            <div class="ps-quality-slide-info"><h4><i class="fa-solid fa-moon"></i>Low-Light Performance</h4><p>Still sharp — LiDAR-based capture works in any lighting condition.</p></div>
+                            <div class="ps-quality-slide-info">
+                                <h4><i class="fa-solid fa-moon"></i>Low-Light Performance</h4>
+                                <p>Still sharp — LiDAR-based capture works in any lighting condition.</p>
+                            </div>
                         </div>
-                        <div class="ps-quality-slide" data-poster="../image/products/scanners/k2-quality-engineering-grade-poster.webp" data-src="../image/products/scanners/k2-quality-engineering-grade.mp4">
-                            <video muted loop playsinline preload="none" poster="../image/products/scanners/k2-quality-engineering-grade-poster.webp"></video>
+                        <div class="ps-quality-slide"
+                            data-poster="../image/products/scanners/k2-quality-engineering-grade-poster.webp"
+                            data-src="../image/products/scanners/k2-quality-engineering-grade.mp4">
+                            <video muted loop playsinline preload="none"
+                                poster="../image/products/scanners/k2-quality-engineering-grade-poster.webp"></video>
                             <span class="ps-quality-play-badge"><i class="fa-solid fa-play"></i></span>
-                            <div class="ps-quality-slide-info"><h4><i class="fa-solid fa-check-double"></i>Engineering-Grade</h4><p>Built for precision — survey-grade output you can build on.</p></div>
+                            <div class="ps-quality-slide-info">
+                                <h4><i class="fa-solid fa-check-double"></i>Engineering-Grade</h4>
+                                <p>Built for precision — survey-grade output you can build on.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2129,8 +2539,7 @@
                     </div>
                     <div
                         style="border-radius:14px;overflow:hidden;border:1px solid rgba(255,255,255,0.07);width:87%;margin:0 auto;">
-                        <video autoplay muted loop playsinline preload="metadata"
-                            style="width:100%;display:block;">
+                        <video autoplay muted loop playsinline preload="metadata" style="width:100%;display:block;">
                             <source src="../video player.mp4" type="video/mp4">
                         </video>
                     </div>
@@ -2217,7 +2626,7 @@
                             Lixel K2 Different</h2>
                     </div>
                     <div class="ps-features-grid">
-                        <div class="ps-feat-card ps-feat-card-photo">
+                        <div class="ps-feat-card ps-feat-card-photo bento-hero">
                             <div class="ps-feat-thumb"><img src="../image/products/scanners/Lixel-k2-Integrated-RTK.png"
                                     alt="Lixel K2 onboard RTK module"></div>
                             <div class="ps-feat-body">
@@ -2225,9 +2634,14 @@
                                 <h4>Onboard RTK</h4>
                                 <p>Integrated RTK module delivers 3cm absolute accuracy on both elevation and horizontal
                                     axes — no ground control points needed.</p>
+                                <div class="ps-feat-chips">
+                                    <span class="ps-feat-chip"><i class="fa-solid fa-bullseye"></i> 3cm accuracy</span>
+                                    <span class="ps-feat-chip"><i class="fa-solid fa-arrows-up-down"></i> Dual-axis</span>
+                                    <span class="ps-feat-chip"><i class="fa-solid fa-ban"></i> No GCPs</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="ps-feat-card ps-feat-card-photo">
+                        <div class="ps-feat-card ps-feat-card-photo bento-wide">
                             <div class="ps-feat-thumb"><img
                                     src="../image/products/scanners/Lixel-k2-Multi-Camera-Array.png"
                                     alt="Lixel K2 triple camera array"></div>
@@ -2236,9 +2650,13 @@
                                 <h4>Triple Camera Array</h4>
                                 <p>Two fisheye cameras plus one forward-facing camera at 4000×3000 resolution deliver
                                     full 360° × -7° to +52° coverage.</p>
+                                <div class="ps-feat-chips">
+                                    <span class="ps-feat-chip"><i class="fa-solid fa-camera-retro"></i> 4000 &times; 3000</span>
+                                    <span class="ps-feat-chip"><i class="fa-solid fa-circle-notch"></i> 360&deg; &times; -7&deg; to +52&deg;</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="ps-feat-card ps-feat-card-photo">
+                        <div class="ps-feat-card ps-feat-card-photo bento-small">
                             <div class="ps-feat-thumb"><img src="../image/products/scanners/k2_output_3dgs.png"
                                     alt="Lixel K2 native 3D Gaussian Splatting output"></div>
                             <div class="ps-feat-body">
@@ -2248,7 +2666,7 @@
                                     single walk-through capture.</p>
                             </div>
                         </div>
-                        <div class="ps-feat-card ps-feat-card-photo">
+                        <div class="ps-feat-card ps-feat-card-photo bento-small">
                             <div class="ps-feat-thumb"><img src="../image/products/scanners/lixel-k2-inhand.png"
                                     alt="Lixel K2 lightweight handheld capture"></div>
                             <div class="ps-feat-body">
@@ -2256,9 +2674,12 @@
                                 <h4>1.2kg Lightweight Design</h4>
                                 <p>Compact, one-hand ergonomics for extended field sessions without operator fatigue.
                                 </p>
+                                <div class="ps-feat-stat">
+                                    <b>1.2</b><span>kg</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="ps-feat-card ps-feat-card-photo">
+                        <div class="ps-feat-card ps-feat-card-photo bento-wide">
                             <div class="ps-feat-thumb"><img src="../image/products/scanners/k2_output_realtime.png"
                                     alt="Lixel K2 LixelGo real-time point cloud preview"></div>
                             <div class="ps-feat-body">
@@ -2266,9 +2687,13 @@
                                 <h4>LixelGo One-Click Processing</h4>
                                 <p>On-device app for instant preview and one-click registration in the field — no laptop
                                     required.</p>
+                                <div class="ps-feat-chips">
+                                    <span class="ps-feat-chip"><i class="fa-solid fa-eye"></i> Live preview</span>
+                                    <span class="ps-feat-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> One-click registration</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="ps-feat-card ps-feat-card-photo">
+                        <div class="ps-feat-card ps-feat-card-photo bento-wide">
                             <div class="ps-feat-thumb"><img src="../image/products/scanners/k2_output_mesh.png"
                                     alt="Lixel K2 mesh export output"></div>
                             <div class="ps-feat-body">
@@ -2276,6 +2701,54 @@
                                 <h4>Open Export Formats</h4>
                                 <p>Export to LAS, LAZ, E57, PLY and Gaussian Splat — compatible with CAD, BIM and 3D
                                     engine pipelines.</p>
+                                <div class="ps-feat-chips">
+                                    <span class="ps-feat-chip">LAS</span>
+                                    <span class="ps-feat-chip">LAZ</span>
+                                    <span class="ps-feat-chip">E57</span>
+                                    <span class="ps-feat-chip">PLY</span>
+                                    <span class="ps-feat-chip">3DGS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ══ USE CASES ══ -->
+        <div class="section">
+            <div class="hero-container">
+                <div class="d-flex flex-column gspace-5">
+                    <div class="d-flex flex-column text-center align-items-center gspace-2">
+                        <div class="sub-heading align-self-center"><i class="fa-regular fa-circle-dot"></i><span>Use
+                                Cases</span></div>
+                        <h2 class="title-heading heading-container heading-container-medium"
+                            style="font-size:clamp(22px,3.5vw,36px);">True 3D Content in Action</h2>
+                    </div>
+                    <div class="ps-usecases-container">
+                        <div class="ps-usecases-sticky">
+                            <div class="ps-usecases-number">01 / 04</div>
+                            <div class="ps-usecases-text">
+                                <h3>Real Estate</h3>
+                                <ul>
+                                    <li>Create immersive, walkthrough-ready 3D tours of properties in minutes — no
+                                        photography crew or staging required</li>
+                                    <li>Capture accurate spatial layouts with true-to-scale geometry for remote buyer
+                                        walkthroughs</li>
+                                    <li>Generate shareable links for listings — buyers explore every room interactively
+                                        from their browser</li>
+                                    <li>Reduce time-to-listing from days to hours with a single handheld capture session
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="ps-usecases-video-wrap">
+                                <video controls playsinline preload="metadata">
+                                    <source
+                                        src="https://cdn-bukbb1.xgrids.cloud/ep/dc/officialWebsite/lixelk2/k2_realestate_walkthrough.mp4"
+                                        type="video/mp4">
+                                </video>
                             </div>
                         </div>
                     </div>
@@ -2309,13 +2782,7 @@
                                 <p>Confined-space and facility scanning for retrofit design and asset documentation.</p>
                             </div>
                         </div>
-                        <div class="ps-app-card">
-                            <div class="ps-app-icon"><i class="fa-solid fa-house-chimney"></i></div>
-                            <div>
-                                <h5>Real Estate Digital Twins</h5>
-                                <p>Fast, photoreal walkthroughs for property listings and facility management.</p>
-                            </div>
-                        </div>
+
                         <div class="ps-app-card">
                             <div class="ps-app-icon"><i class="fa-solid fa-landmark"></i></div>
                             <div>
@@ -2338,7 +2805,7 @@
                         <h2 class="title-heading heading-container heading-container-medium"
                             style="font-size:clamp(22px,3.5vw,36px);">Lixel K2 Specifications</h2>
                     </div>
-                    <div class="ps-specs-table-wrap">
+                    <div class="ps-specs-table-wrap ps-specs-collapsed" id="lixelk2SpecsWrap">
                         <table>
                             <tbody>
                                 <tr>
@@ -2428,6 +2895,9 @@
                             </tbody>
                         </table>
                     </div>
+                    <button type="button" class="ps-specs-toggle-btn" id="lixelk2SpecsToggle">
+                        <span>Read More</span> <i class="fa-solid fa-chevron-down"></i>
+                    </button>
                     <div
                         style="border-radius:12px;border:1px solid rgba(244,129,32,0.15);background:rgba(244,129,32,0.04);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;justify-content:center;text-align:center;">
                         <div style="display:flex;align-items:center;gap:0.75rem;">
@@ -2535,16 +3005,19 @@
                     </div>
                     <div class="ps-acc-grid">
                         <div class="ps-acc-card">
-                            <div class="ps-acc-thumb"><img src="../image/products/scanners/k2-acc-phone-mount.webp" alt="Lixel K2 phone mount accessory" loading="lazy"></div>
+                            <div class="ps-acc-thumb"><img src="../image/products/scanners/k2-acc-phone-mount.webp"
+                                    alt="Lixel K2 phone mount accessory" loading="lazy"></div>
                             <div class="ps-acc-body">
                                 <div class="ps-acc-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
                                 <h5>Phone Mount</h5>
-                                <p>Securely attach your smartphone for live LixelGo app monitoring during scan sessions.</p>
+                                <p>Securely attach your smartphone for live LixelGo app monitoring during scan sessions.
+                                </p>
                                 <span class="ps-acc-tag">Included</span>
                             </div>
                         </div>
                         <div class="ps-acc-card">
-                            <div class="ps-acc-thumb"><img src="../image/products/scanners/k2-acc-extension-pole.webp" alt="Lixel K2 extension pole accessory" loading="lazy"></div>
+                            <div class="ps-acc-thumb"><img src="../image/products/scanners/k2-acc-extension-pole.webp"
+                                    alt="Lixel K2 extension pole accessory" loading="lazy"></div>
                             <div class="ps-acc-body">
                                 <div class="ps-acc-icon"><i class="fa-solid fa-arrows-up-down"></i></div>
                                 <h5>Extension Pole</h5>
@@ -2693,7 +3166,8 @@
         (function () {
             var wrapper = document.getElementById('k2QualityWrapper');
             var track = document.getElementById('k2QualityTrack');
-            if (!wrapper || !track) return;
+            var section = wrapper ? wrapper.querySelector('.ps-quality-section') : null;
+            if (!wrapper || !track || !section) return;
             var slides = Array.prototype.slice.call(track.querySelectorAll('.ps-quality-slide'));
             var dotsWrap = document.getElementById('k2QualityDots');
             var activeIndex = 0;
@@ -2750,11 +3224,27 @@
                 slides[0].querySelector('video').play().catch(function () { });
             })();
 
+            // Manual pin/unpin (position:sticky doesn't work here — see CSS comment
+            // above .ps-quality-section — so the fixed/absolute state is driven by
+            // the wrapper's live position relative to the viewport instead).
+            function updatePin(rect, viewportHeight) {
+                if (rect.top > 0) {
+                    section.classList.remove('is-pinned', 'is-pinned-bottom');
+                } else if (rect.bottom <= viewportHeight) {
+                    section.classList.remove('is-pinned');
+                    section.classList.add('is-pinned-bottom');
+                } else {
+                    section.classList.remove('is-pinned-bottom');
+                    section.classList.add('is-pinned');
+                }
+            }
+
             // Scroll-driven: map vertical scroll progress to slide index
             function onScroll() {
                 var rect = wrapper.getBoundingClientRect();
                 var wrapperHeight = wrapper.offsetHeight;
                 var viewportHeight = window.innerHeight;
+                updatePin(rect, viewportHeight);
                 var scrolled = -rect.top;
                 var scrollable = wrapperHeight - viewportHeight;
                 if (scrollable <= 0) return;
@@ -2765,6 +3255,22 @@
 
             window.addEventListener('scroll', onScroll, { passive: true });
             onScroll();
+        })();
+    </script>
+
+    <script>
+        (function () {
+            var wrap = document.getElementById('lixelk2SpecsWrap');
+            var btn = document.getElementById('lixelk2SpecsToggle');
+            if (!wrap || !btn) return;
+            btn.addEventListener('click', function () {
+                var isCollapsed = wrap.classList.toggle('ps-specs-collapsed');
+                btn.classList.toggle('expanded', !isCollapsed);
+                btn.querySelector('span').textContent = isCollapsed ? 'Read More' : 'Show Less';
+                if (isCollapsed) {
+                    wrap.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }
+            });
         })();
     </script>
 </body>

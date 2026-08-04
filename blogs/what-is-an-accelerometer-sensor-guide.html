@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8GFRCEFB87');
+</script>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How accelerometer sensors work, the difference between piezoelectric, capacitive MEMS and tri-axial types, and how they're used for seismic, structural and machinery monitoring." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="What Is an Accelerometer Sensor? Working Principle, Types & Applications" />
+    <meta property="og:description" content="How accelerometer sensors work, the difference between piezoelectric, capacitive MEMS and tri-axial types, and how they're used for seismic, structural and machinery monitoring." />
+    <meta property="og:url" content="https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://sentratech.in/image/products/accelerometer_cardnav.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="What Is an Accelerometer Sensor? Working Principle, Types & Applications" />
+    <meta name="twitter:description" content="How accelerometer sensors work, the difference between piezoelectric, capacitive MEMS and tri-axial types, and how they're used for seismic, structural and machinery monitoring." />
+    <meta name="twitter:image" content="https://sentratech.in/image/products/accelerometer_cardnav.png" />
+    <meta name="twitter:site" content="@sentratech" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+    <title>What Is an Accelerometer Sensor? Working Principle, Types & Applications</title>
+    <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../css/vendor/brands.css">
+    <link rel="stylesheet" href="../css/vendor/regular.css">
+    <link rel="stylesheet" href="../css/vendor/solid.css">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/vendor/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
+    <!-- Apple Touch Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
+    <link rel="stylesheet" href="../css/chatbot.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+
+
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/detail-page.css">
+    <style>
+        .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+        .word { transition: background-color 0.12s ease; padding: 0 1px; border-radius: 2px; }
+        .highlight { background-color: #f48120; transition: background-color 0.15s ease; }
+        body.lightmode .highlight { background-color: #ffe082; }
+        .conclusion-btn-wrapper { margin-bottom: 30px; }
+        .swiperProducts .card-blog { display: flex; flex-direction: column; }
+        @media (min-width: 992px) { .swiperProducts .card-blog { width: 600px !important; } }
+        .swiperProducts .blog-image { aspect-ratio: 836 / 442 !important; }
+        .card-body { display: flex; flex-direction: column; flex-grow: 1; }
+        body.dark-mode .detail-hero .hero-text-col, body.dark-mode .detail-article, body.dark-mode .hero-title { color: #fff; }
+        body.lightmode .hero-title { color: #111; }
+        body.dark-mode .hero-intro p, body.dark-mode .detail-article p, body.dark-mode .detail-article li { color: rgba(255,255,255,0.6); }
+        body.lightmode .hero-intro p, body.lightmode .detail-article p, body.lightmode .detail-article li { color: rgba(0,0,0,0.6); }
+    </style>
+
+    <link rel="canonical" href="https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html">
+
+
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "What Is an Accelerometer Sensor? Working Principle, Types & Applications",
+  "description": "How accelerometer sensors work, the difference between piezoelectric, capacitive MEMS and tri-axial types, and how they're used for seismic, structural and machinery monitoring.",
+  "datePublished": "2026-08-03",
+  "dateModified": "2026-08-03",
+  "author": {
+    "@type": "Organization",
+    "name": "Sentra Technologies"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Sentra",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://sentratech.in/image/branding/sentra.webp"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html"
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://sentratech.in/image/products/accelerometer_cardnav.png"
+  },
+  "inLanguage": "en"
+}
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".detail-article h2, .detail-article h4", ".detail-article p", ".hero-intro"]
+      },
+      "url": "https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is an accelerometer sensor used for?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Accelerometer sensors measure vibration and dynamic movement, used across seismic monitoring of buildings, bridge dynamic response, machinery vibration for predictive maintenance, and construction vibration monitoring near sensitive structures."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is a MEMS accelerometer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A MEMS (micro-electromechanical systems) accelerometer is a microscopic sensor built on a silicon chip, containing a tiny suspended proof mass that deflects under acceleration. That deflection is converted into an electrical signal proportional to the acceleration experienced, making MEMS accelerometers compact, low-power and highly reliable for continuous monitoring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is accelerometer data used for predictive maintenance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rotating machinery develops characteristic vibration signatures as bearings wear or components fall out of balance, well before an audible or visible failure. Continuous accelerometer monitoring captures those signatures early, giving maintenance teams a data-driven trigger to intervene before a breakdown, rather than relying on a fixed inspection schedule."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the difference between a 1-axis and tri-axial accelerometer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A single-axis accelerometer only measures acceleration along one direction, so it can miss vibration or movement occurring in other planes. A tri-axial accelerometer measures all three spatial axes at once, giving a complete picture of real-world movement from a single sensor, which is why it's the standard choice for structural and machinery monitoring."
+      }
+    }
+  ]
+}
+    </script>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo"><img src="../image/branding/sentra_white_1.svg" alt="Sentra"></div>
+            <div class="preloader-logo-sub">Smart Â· Secure Â· Scalable</div>
+            <div class="preloader-counter">
+                <span id="preloader-count">0</span>
+                <span class="preloader-percent">%</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Header -->
+    <header>
+        <!-- Section Navbar -->
+        <div id="header"></div>
+    </header>
+
+    <!-- Section Content Edit -->
+    <aside>
+        <div id="edit-sidebar"></div>
+    </aside>
+
+    <!-- Section Sidebar -->
+    <aside>
+        <div id="sidebar"></div>
+    </aside>
+
+    <!-- Section Main Content -->
+    <main>
+        <section class="detail-hero">
+            <a href="../resources.html#blogs" class="back-btn"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+            <div class="hero-bg-dots"></div>
+            <div class="hero-glow orange-glow"></div>
+            <div class="hero-top-line"></div>
+            <div class="hero-container-inner">
+                <div class="hero-grid">
+                    <div class="hero-text-col">
+                        <div class="hero-meta-row">
+                            <span class="hero-badge purple">Sensor Technology</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> 3 Aug 2026</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h1 class="hero-title">What Is an Accelerometer Sensor? Working Principle, Types &amp; Applications</h1>
+                        <div class="hero-intro">
+                            <p>An accelerometer sensor measures how fast something's velocity is changing, and in infrastructure and machinery monitoring, that measurement is what turns an earthquake, a resonating bridge deck, or a failing bearing into a data point instead of a surprise.</p>
+                        </div>
+                    </div>
+                    <div class="hero-image-col">
+                        <div class="hero-image-wrap">
+                            <img src="../image/products/accelerometer_cardnav.png" alt="Tri-axial accelerometer vibration sensor" loading="eager">
+                            <div class="hero-image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="detail-content-wrapper">
+            <div class="detail-grid">
+                <article class="detail-article">
+                    <div class="tts-bar">
+                        <button id="ttsPlayBtn" class="tts-btn" aria-label="Play article aloud" aria-pressed="false"><i class="fas fa-play"></i></button>
+                        <div class="tts-progress" id="ttsProgressBar">
+                            <div id="progressFill" class="tts-fill"></div>
+                        </div>
+                        <span class="tts-label">Listen</span>
+                    </div>
+                    <div class="detail-meta-bar">
+                        <div class="detail-meta-left">
+                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> 3 Aug 2026</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Sensor Technology</span>
+                        </div>
+                        <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Yuva Subharam <a href="https://www.linkedin.com/in/yuva-subharam-vasamsetti-75a39117a/" target="_blank" rel="noopener" aria-label="Yuva Subharam on LinkedIn"><i class="fa-brands fa-linkedin"></i></a> | Sentra Technologies</span>
+                    </div>
+                    <div id="ttsContent">
+
+<p id="what-is-accel">
+An accelerometer sensor measures <strong>acceleration</strong>, the rate of change of velocity, along one or more axes, usually expressed in units of g (where 1g equals Earth's gravitational acceleration, about 9.81 m/s&sup2;). In practice that makes it a vibration sensor: any shaking, impact, or dynamic movement shows up as a changing acceleration signal that can be captured, logged and analysed.
+</p>
+
+<h2 id="how-accel-works">How Accelerometers Work</h2>
+<p>
+Most modern accelerometers used in monitoring applications are <strong>MEMS (micro-electromechanical systems)</strong> devices: a microscopic proof mass suspended by tiny springs on a silicon chip. When the sensor accelerates, the proof mass lags behind due to inertia, deflecting slightly relative to the chip frame. That deflection changes a capacitance (in capacitive MEMS designs) or generates a charge (in piezoelectric designs), and the resulting signal is proportional to the acceleration experienced.
+</p>
+<p>
+A single-axis accelerometer measures movement along one direction only. A <strong>tri-axial accelerometer</strong> measures acceleration along all three spatial axes simultaneously, which is what's needed to fully characterise real-world vibration and dynamic structural response, since a building, bridge or machine rarely moves in a single clean direction.
+</p>
+
+<h2 id="types-accel">Types of Accelerometers</h2>
+<p><strong>Piezoelectric accelerometers</strong><br>
+Use a piezoelectric crystal that generates a voltage proportional to applied force. Rugged, self-powered in terms of signal generation, and well suited to high-frequency vibration measurement on machinery.</p>
+<p><strong>Capacitive MEMS accelerometers</strong><br>
+Measure the change in capacitance as the proof mass deflects. These are compact, low-power, and can measure down to DC (constant acceleration, including gravity itself), which is what makes them useful for both vibration and static tilt-style measurements.</p>
+<p><strong>Piezoresistive accelerometers</strong><br>
+Use a strain-sensitive resistive element attached to the proof mass. Well suited to shock and impact measurement across a wide dynamic range.</p>
+
+<h2 id="applications-accel">Accelerometers in Structural & Infrastructure Monitoring</h2>
+<ul class="blog-bullets">
+<li><strong>Seismic monitoring:</strong> capturing how buildings and critical infrastructure actually respond during an earthquake, in real time, rather than inferring damage afterward from a visual inspection.</li>
+<li><strong>Bridge dynamics:</strong> detecting resonance, impact damage from vehicle strikes, or fatigue-inducing vibration under traffic loading.</li>
+<li><strong>Machinery &amp; predictive maintenance:</strong> tracking bearing wear, imbalance and misalignment in rotating equipment long before failure, a core input for vibration-based predictive maintenance programmes.</li>
+<li><strong>Construction monitoring:</strong> measuring vibration transmitted to adjacent structures from piling, demolition or blasting works.</li>
+</ul>
+
+<h2 id="specs-accel">Key Specifications to Evaluate</h2>
+<p>
+When comparing accelerometer sensors for a monitoring deployment, four specifications matter most: the <strong>measurement range</strong> (in g, how large a vibration event it can capture without clipping), <strong>sensitivity</strong> (how much output changes per unit of acceleration, which drives resolution), <strong>sampling rate</strong> (how many readings per second, needed to resolve higher-frequency vibration), and <strong>frequency response</strong> (the band of vibration frequencies the sensor can accurately capture). Sentra's <a href="/products/accelerometers.html">accelerometer sensors</a> are tri-axial by default, so a single unit captures the full vibration picture rather than requiring multiple single-axis sensors per monitoring point.
+</p>
+
+                    </div>
+
+                    <div class="detail-cta">
+                        <h2 id="ConclusionSection">Takeaway</h2>
+                        <p>An accelerometer sensor is what turns dynamic movement, an earthquake, a resonating deck, a failing bearing, into a measurable signal. Tri-axial MEMS accelerometers give the most complete picture for structural and machinery monitoring alike.</p>
+                        <a class="cta-btn" href="/products/accelerometers.html">Explore Sentra Accelerometers <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="accordion" id="faqAccelerometer" style="margin-top:2.5rem;">
+                        <h2 style="font-size:1.25rem;font-weight:600;text-transform:uppercase;margin-bottom:1rem;">Frequently Asked Questions</h2>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccelerometer-q1" aria-expanded="true">What is an accelerometer sensor used for?</button></h2>
+                            <div id="faqAccelerometer-q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccelerometer"><div class="accordion-body"><p>Accelerometer sensors measure vibration and dynamic movement, used across seismic monitoring of buildings, bridge dynamic response, machinery vibration for predictive maintenance, and construction vibration monitoring near sensitive structures.</p></div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccelerometer-q2" aria-expanded="false">What is a MEMS accelerometer?</button></h2>
+                            <div id="faqAccelerometer-q2" class="accordion-collapse collapse" data-bs-parent="#faqAccelerometer"><div class="accordion-body"><p>A MEMS (micro-electromechanical systems) accelerometer is a microscopic sensor built on a silicon chip, containing a tiny suspended proof mass that deflects under acceleration. That deflection is converted into an electrical signal proportional to the acceleration experienced, making MEMS accelerometers compact, low-power and highly reliable for continuous monitoring.</p></div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccelerometer-q3" aria-expanded="false">How is accelerometer data used for predictive maintenance?</button></h2>
+                            <div id="faqAccelerometer-q3" class="accordion-collapse collapse" data-bs-parent="#faqAccelerometer"><div class="accordion-body"><p>Rotating machinery develops characteristic vibration signatures as bearings wear or components fall out of balance, well before an audible or visible failure. Continuous accelerometer monitoring captures those signatures early, giving maintenance teams a data-driven trigger to intervene before a breakdown, rather than relying on a fixed inspection schedule.</p></div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccelerometer-q4" aria-expanded="false">What's the difference between a 1-axis and tri-axial accelerometer?</button></h2>
+                            <div id="faqAccelerometer-q4" class="accordion-collapse collapse" data-bs-parent="#faqAccelerometer"><div class="accordion-body"><p>A single-axis accelerometer only measures acceleration along one direction, so it can miss vibration or movement occurring in other planes. A tri-axial accelerometer measures all three spatial axes at once, giving a complete picture of real-world movement from a single sensor, which is why it's the standard choice for structural and machinery monitoring.</p></div></div>
+                        </div>
+                    </div>
+
+                </article>
+
+                <aside class="detail-sidebar">
+                    <div class="sidebar-sticky">
+                        <div class="sidebar-card toc">
+                            <h3><i class="fa-solid fa-list"></i> Table of Contents</h3>
+                            <div id="tocContainer">
+                                <button class="toc-item" data-target="what-is-accel">What Is an Accelerometer Sensor?</button>
+                                <button class="toc-item" data-target="how-accel-works">How Accelerometers Work</button>
+                                <button class="toc-item" data-target="types-accel">Types of Accelerometers</button>
+                                <button class="toc-item" data-target="applications-accel">Accelerometers in Structural & Infrastructure Monitoring</button>
+                                <button class="toc-item" data-target="specs-accel">Key Specifications to Evaluate</button>
+                                <button class="toc-item" data-target="ConclusionSection">Takeaway</button>
+                            </div>
+                        </div>
+                        <div class="sidebar-card">
+                            <h3><i class="fa-regular fa-share-from-square"></i> Share</h3>
+                            <div class="sidebar-share-icons">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html" target="_blank" class="share-icon-link"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html&text=What%20Is%20an%20Accelerometer%20Sensor?%20Working%20Principle,%20Types%20%26%20Applications" target="_blank" class="share-icon-link"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html" target="_blank" class="share-icon-link"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://api.whatsapp.com/send?text=What%20Is%20an%20Accelerometer%20Sensor?%20Working%20Principle,%20Types%20%26%20Applications%20https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html" target="_blank" class="share-icon-link"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                        <a href="../resources.html#blogs" class="back-btn" style="position:static;display:flex;width:100%;justify-content:center;"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- â”€â”€ More Blogs â”€â”€ -->
+        <div class="hero-container" style="max-width:1280px;margin:0 auto;padding:0 1rem 4rem">
+            <div class="trending-section">
+                <div class="cs-section-label">
+                    <span class="trending-dot"></span>
+                    <h2>More Blogs</h2>
+                </div>
+                <div class="trending-grid">
+                    <a href="../blogs/what-is-a-strain-gauge-types-working-principle.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/products/strain_gauge.png" alt="What Is a Strain Gauge? Types, Working Principle &amp; Applications" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>What Is a Strain Gauge? Types, Working Principle &amp; Applications</h4>
+                            <div class="trending-card-meta"><span>Sensor Technology</span><span>&middot;</span><span>Blog</span></div>
+                        </div>
+                    </a>
+                    <a href="../blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp" alt="Seismic Monitoring for Buildings &amp; Critical Infrastructure" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Seismic Monitoring for Buildings &amp; Critical Infrastructure</h4>
+                            <div class="trending-card-meta"><span>Structural Health</span><span>&middot;</span><span>Blog</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Section Footer -->
+    <div id="footer"></div>
+
+    <script>
+        (function () {
+            const synth = window.speechSynthesis;
+            let voices = [];
+            let isPlaying = false;
+            let isPaused = false;
+            let totalWords = 0;
+            let currentWordIndex = 0;
+            let wordSpans = [];
+            let paragraphs = [];
+            let currentParagraphIndex = 0;
+            let activeUtterance = null;
+            let fallbackTimer = null;
+            let boundarySupported = false;
+            let autoScrollEnabled = true;
+            let mouseIdleTimer;
+
+            const ttsContent = document.getElementById('ttsContent');
+            const playBtn = document.getElementById('ttsPlayBtn');
+            const progressFill = document.getElementById('progressFill');
+            const progressBar = document.getElementById('ttsProgressBar');
+
+            function loadVoices() {
+                voices = synth.getVoices() || [];
+            }
+            loadVoices();
+            if (speechSynthesis.onvoiceschanged !== undefined) {
+                speechSynthesis.onvoiceschanged = loadVoices;
+            }
+
+            function pickFemaleVoice() {
+                const femaleCandidates = voices.filter(v => /Deepa|Joanna|Google Translate|female|woman|Google US English|Samantha|Alloy|Amy|Emma|en-US/i.test(v.name + ' ' + v.lang));
+                return femaleCandidates[0] || voices.find(v => /en-?us|en-?gb/i.test(v.lang)) || voices[0];
+            }
+
+            function pickMaleVoice() {
+                const maleCandidates = voices.filter(v => /Sundar|Google Translate|male|man|Google UK English|Daniel|Alex|en-?gb|en-?au/i.test(v.name + ' ' + v.lang));
+                return maleCandidates[0] || voices.find(v => /en-?us|en-?gb/i.test(v.lang)) || voices[0];
+            }
+
+            document.addEventListener('mousemove', () => {
+                autoScrollEnabled = false;
+                clearTimeout(mouseIdleTimer);
+                mouseIdleTimer = setTimeout(() => {
+                    autoScrollEnabled = true;
+                }, 5000);
+            });
+
+            function wrapWords() {
+                const elements = ttsContent.querySelectorAll('p, h2, h4, li');
+                elements.forEach(el => {
+                    if (el.querySelector('.word')) return;
+                    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+                    const textNodes = [];
+                    let node;
+                    while (node = walker.nextNode()) {
+                        if (node.textContent.trim()) textNodes.push(node);
+                    }
+                    textNodes.forEach(textNode => {
+                        const tokens = textNode.textContent.split(/(\s+)/);
+                        const fragment = document.createDocumentFragment();
+                        tokens.forEach(tok => {
+                            if (/\s+/.test(tok)) {
+                                fragment.appendChild(document.createTextNode(tok));
+                            } else if (tok) {
+                                const span = document.createElement('span');
+                                span.className = 'word';
+                                span.textContent = tok;
+                                fragment.appendChild(span);
+                                totalWords++;
+                            }
+                        });
+                        textNode.parentNode.replaceChild(fragment, textNode);
+                    });
+                });
+                wordSpans = Array.from(ttsContent.querySelectorAll('.word'));
+            }
+            wrapWords();
+
+            function getParagraphs() {
+                const elements = ttsContent.querySelectorAll('p, h2, h4, li');
+                paragraphs = Array.from(elements).filter(el => el.textContent.trim() !== '');
+            }
+            getParagraphs();
+
+            function computeWordBoundaries(text) {
+                const words = text.split(/\s+/).filter(Boolean);
+                const boundaries = [];
+                let cursor = 0;
+                for (let i = 0; i < words.length; i++) {
+                    const w = words[i];
+                    const found = text.indexOf(w, cursor);
+                    if (found === -1) {
+                        boundaries.push(cursor);
+                        cursor += w.length;
+                    } else {
+                        boundaries.push(found);
+                        cursor = found + w.length;
+                    }
+                }
+                return boundaries;
+            }
+
+            function clearAllHighlights() {
+                wordSpans.forEach(w => w.classList.remove('highlight'));
+            }
+
+            function scrollIntoCenter(el) {
+                if (!el) return;
+                if (autoScrollEnabled) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+
+            function clearFallbackTimer() {
+                if (fallbackTimer) {
+                    clearInterval(fallbackTimer);
+                    fallbackTimer = null;
+                }
+            }
+
+            function speakFrom(index) {
+                clearFallbackTimer();
+                boundarySupported = false;
+
+                if (index >= paragraphs.length) {
+                    isPlaying = false;
+                    isPaused = false;
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    currentParagraphIndex = 0;
+                    currentWordIndex = 0;
+                    progressFill.style.width = '0%';
+                    return;
+                }
+
+                currentParagraphIndex = index;
+                const p = paragraphs[index];
+                const role = (p.getAttribute('data-voice') || 'female').toLowerCase();
+                const voice = role === 'male' ? pickMaleVoice() : pickFemaleVoice();
+                const utterText = p.textContent.trim();
+                if (!utterText) {
+                    speakFrom(index + 1);
+                    return;
+                }
+
+                const boundaries = computeWordBoundaries(utterText);
+                const wordSpansInP = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim() !== '');
+                wordSpansInP.forEach(w => w.classList.remove('highlight'));
+
+                const u = new SpeechSynthesisUtterance(utterText);
+                activeUtterance = u;
+                u.lang = 'en-US';
+                u.rate = role === 'male' ? 0.9 : 1.3;
+                u.pitch = 1.2;
+                if (voice) u.voice = voice;
+
+                const wordsPerSecondBase = 3.0 * u.rate;
+                const fallbackIntervalMs = Math.max(120, Math.round(1000 / wordsPerSecondBase));
+
+                u.onstart = () => {
+                    isPlaying = true;
+                    isPaused = false;
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+
+                    currentWordIndex = 0;
+                    if (wordSpansInP.length > 0) {
+                        wordSpansInP.forEach(w => w.classList.remove('highlight'));
+                        const first = wordSpansInP[0];
+                        first.classList.add('highlight');
+                        scrollIntoCenter(first);
+                    }
+
+                    fallbackTimer = setInterval(() => {
+                        if (boundarySupported) return;
+                        if (!isPlaying || isPaused) { clearFallbackTimer(); return; }
+
+                        if (currentWordIndex < wordSpansInP.length - 1) {
+                            wordSpansInP[currentWordIndex].classList.remove('highlight');
+                            currentWordIndex++;
+                            wordSpansInP[currentWordIndex].classList.add('highlight');
+                            scrollIntoCenter(wordSpansInP[currentWordIndex]);
+                        }
+                    }, fallbackIntervalMs);
+                };
+
+                u.onboundary = (ev) => {
+                    boundarySupported = true;
+                    clearFallbackTimer();
+
+                    const charIndex = ev.charIndex || 0;
+                    let wi = 0;
+                    for (let i = 0; i < boundaries.length; i++) {
+                        const start = boundaries[i];
+                        const end = (i < boundaries.length - 1) ? boundaries[i + 1] : utterText.length;
+                        if (charIndex >= start && charIndex < end) {
+                            wi = i;
+                            break;
+                        }
+                        if (i === boundaries.length - 1) wi = boundaries.length - 1;
+                    }
+
+                    wi = Math.min(wi, wordSpansInP.length - 1);
+                    if (wi < 0) wi = 0;
+
+                    if (wi !== currentWordIndex) {
+                        if (wordSpansInP[currentWordIndex]) wordSpansInP[currentWordIndex].classList.remove('highlight');
+                        if (wordSpansInP[wi]) {
+                            wordSpansInP[wi].classList.add('highlight');
+                            scrollIntoCenter(wordSpansInP[wi]);
+                        }
+                        currentWordIndex = wi;
+                    }
+                };
+
+                u.onend = () => {
+                    p.querySelectorAll('.word.highlight').forEach(w => w.classList.remove('highlight'));
+                    activeUtterance = null;
+                    clearFallbackTimer();
+
+                    if (isPlaying && !isPaused) {
+                        speakFrom(index + 1);
+                    } else {
+                        isPlaying = false;
+                        isPaused = false;
+                        playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    }
+                };
+
+                u.onerror = (err) => {
+                    console.error('Speech error', err);
+                    activeUtterance = null;
+                    isPlaying = false;
+                    clearFallbackTimer();
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                };
+
+                try {
+                    synth.speak(u);
+                } catch (e) {
+                    console.error('synth.speak error:', e);
+                }
+
+                const progress = ((index + 1) / paragraphs.length) * 100;
+                progressFill.style.width = progress + '%';
+            }
+
+
+            playBtn.addEventListener('click', () => {
+                if (!voices || voices.length === 0) loadVoices();
+
+                if (isPlaying && !isPaused) {
+                    synth.pause();
+                    isPaused = true;
+                    isPlaying = false;
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                } else if (isPaused) {
+                    synth.resume();
+                    isPaused = false;
+                    isPlaying = true;
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                } else {
+                    if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0;
+                    speakFrom(currentParagraphIndex);
+                }
+            });
+
+            progressBar.addEventListener('click', (e) => {
+                const rect = progressBar.getBoundingClientRect();
+                const clickX = e.clientX - rect.left;
+                const percentage = clickX / rect.width;
+                const targetIndex = Math.floor(percentage * paragraphs.length);
+                if (synth.speaking) {
+                    synth.cancel();
+                }
+                clearAllHighlights();
+                clearFallbackTimer();
+                currentParagraphIndex = targetIndex;
+                speakFrom(targetIndex);
+            });
+
+            window.addEventListener('beforeunload', () => {
+                if (synth && synth.speaking) synth.cancel();
+            });
+        })();
+    </script>
+
+
+
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../js/vendor/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/swiper-script.js"></script>
+    <script src="../js/submit-form.js"></script>
+    <script src="../js/video_embedded.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var tocItems = document.querySelectorAll('.toc-item');
+            var sections = [];
+            tocItems.forEach(function(btn) {
+                var target = document.getElementById(btn.getAttribute('data-target'));
+                if (target) sections.push({ btn: btn, target: target });
+                btn.addEventListener('click', function() {
+                    var el = document.getElementById(this.getAttribute('data-target'));
+                    if (el) {
+                        var header = document.querySelector('header');
+                        var h = header ? header.getBoundingClientRect().height : 0;
+                        var y = el.getBoundingClientRect().top + window.scrollY - h - 80;
+                        window.scrollTo({ top: Math.max(y, 0), behavior: 'smooth' });
+                    }
+                });
+            });
+            window.addEventListener('scroll', function() {
+                var scrollY = window.scrollY + 200;
+                var active = null;
+                sections.forEach(function(s) {
+                    if (s.target.offsetTop <= scrollY) active = s;
+                });
+                tocItems.forEach(function(b) { b.classList.remove('active'); });
+                if (active) active.btn.classList.add('active');
+            });
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+  <script src="../js/chatbot-widget.js"></script>
+</body>
+</html>

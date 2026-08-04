@@ -1,4 +1,4 @@
-﻿/* ======================================================================== */
+/* ======================================================================== */
 /* Marko HTML5 Template */
 /* ======================================================================== */
 
@@ -100,14 +100,9 @@
 
 /* ================== 01. Import Vendor ================== */
 
-@import url('../css/vendor/font-family-plus-jakarta-sans.css');
-@import url('../css/vendor/bootstrap.min.css');
-@import url('../css/vendor/fontawesome.css');
-@import url('../css/vendor/brands.css');
-@import url('../css/vendor/regular.css');
-@import url('../css/vendor/solid.css');
-@import url('../css/vendor/swiper-bundle.min.css');
-@import url('../css/vendor/animate.min.css');
+/* Vendor CSS is now linked directly from each page's <head> (before this
+   file) instead of @import'd here, so the browser can fetch it in parallel
+   with style.css instead of serially after it. */
 
 /* ================== 02 Root Variables ================== */
 
@@ -121,14 +116,14 @@
 }
 
 
-/* ✅ Responsive adjustment for laptops smaller than 16" (width < 1440px) */
+/* ? Responsive adjustment for laptops smaller than 16" (width < 1440px) */
 @media (max-width: 1400px) {
     .navbar-icon-wrapper {
         display: none;
     }
 }
 
-/* ✅ Further adjust for common 14"-15" laptops (width < 1366px) */
+/* ? Further adjust for common 14"-15" laptops (width < 1366px) */
 @media (max-width: 1366px) {
     .navbar-nav .nav-item .nav-link {
         padding: 0.5rem 0.7rem;
@@ -189,7 +184,7 @@
 }
 
 
-/* ✅ For tight 13”-14” screens or narrow windows (<1280px) */
+/* ? For tight 13�-14� screens or narrow windows (<1280px) */
 @media (max-width: 1280px) {
 
     .navbar-nav .nav-item .nav-link {
@@ -209,7 +204,7 @@
 
 
 
-/* ✅ Ensure no wrapping or overflow */
+/* ? Ensure no wrapping or overflow */
 .navbar-nav {
     flex-wrap: nowrap;
 }
@@ -220,6 +215,11 @@
     --text-color: #ffffff;
     --text-color-2: var(--secondary);
     --accent-color: #f48120;
+    /* Darker orange used specifically as a background behind white button
+       text: #f48120 only gives ~2.6:1 contrast with white (fails WCAG AA
+       4.5:1); this passes at ~4.6:1 while staying close to the brand hue. */
+    --accent-color-cta: #ba5a09;
+    --accent-color-cta-hover: #b65d11;
     --accent-color-2: #FFFFFF;
     --accent-color-3: #000000;
     --accent-color-4: #0E0E0E;
@@ -422,11 +422,22 @@ html {
     font-size: 16px;
 }
 
+/* overflow-x: clip clips horizontal overflow WITHOUT creating a scroll
+   container (overflow-x: hidden does, which breaks position: sticky on
+   descendants � e.g. the "How It Works" slideshow). Fallback to hidden
+   is kept for older browsers that lack clip support. */
+html {
+    overflow-x: hidden;
+    overflow-x: clip;
+}
+
 body {
     background-color: var(--secondary);
     font-family: var(--global-font);
     color: var(--primary);
     transition: background_color 0.5s ease;
+    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 body.lightmode .keep-dark {
@@ -818,6 +829,12 @@ body.lightmode .form select {
     order: 1;
 }
 
+/* The generic ".lightmode button" rule would otherwise repaint this icon
+   orange-on-orange (invisible) since its bg is always the accent color. */
+body.lightmode .nav-btn {
+    color: var(--accent-color-3);
+}
+
 
 .navbar-nav .nav-link:focus {
     color: var(--primary);
@@ -1097,11 +1114,11 @@ body.lightmode .nav-link.active {
     min-width: 24px;
 }
 
-/* ═══════════════════════════════════════════════════
-   MEGA NAV — Products + Solutions Bento
-═══════════════════════════════════════════════════ */
+/* ---------------------------------------------------
+   MEGA NAV � Products + Solutions Bento
+--------------------------------------------------- */
 
-/* ── PRODUCTS MEGA MENU ─────────────────────────── */
+/* -- PRODUCTS MEGA MENU --------------------------- */
 .dropdown-menu.dropdown-menu-products {
     display: block !important;
     position: fixed !important;
@@ -1233,7 +1250,7 @@ body.lightmode .mega-qb-divider {
     gap: 6px;
     padding: 6px 14px;
     border-radius: 999px;
-    background: #f48120;
+    background: #ba5a09;
     color: #fff !important;
     font-size: 11.5px;
     font-weight: 700;
@@ -1805,7 +1822,7 @@ body.lightmode .mega-res-link:hover i {
     font-size: 11.5px;
     font-weight: 700;
     color: #fff;
-    background: #f48120;
+    background: #ba5a09;
     text-decoration: none;
     padding: 5px 12px;
     border-radius: 50px;
@@ -1944,7 +1961,7 @@ body.lightmode .mega-quick-links-card {
     padding: 8px 10px;
     margin-top: 5px;
     border-radius: 50px;
-    background: #f48120 !important;
+    background: #ba5a09 !important;
     color: #fff !important;
     font-size: 11px;
     font-weight: 700;
@@ -2163,8 +2180,8 @@ body.lightmode .mega-quick-contact.mega-contact-card .mega-quick-email a {
 }
 
 .mega-contact-card .mega-q-social:hover {
-    background: #f48120;
-    border-color: #f48120;
+    background: #ba5a09;
+    border-color: #ba5a09;
     color: #fff;
 }
 
@@ -2245,7 +2262,7 @@ body.lightmode .mega-quick-divider {
     background: rgba(0, 0, 0, 0.06);
 }
 
-/* ── Quick Access accent colors ── */
+/* -- Quick Access accent colors -- */
 .qa-all i {
     color: #f48120;
 }
@@ -2322,7 +2339,7 @@ body.lightmode .qa-wired:hover {
     background: rgba(16, 185, 129, 0.07);
 }
 
-/* ── SOLUTIONS BENTO ────────────────────────────── */
+/* -- SOLUTIONS BENTO ------------------------------ */
 .dropdown-menu.mega-solutions {
     display: block !important;
     position: fixed !important;
@@ -2448,7 +2465,7 @@ body.lightmode .dropdown-menu.mega-solutions {
 }
 
 .sol-img-card:hover .sol-img-card-icon {
-    background: #f48120;
+    background: #ba5a09;
     color: #fff;
     transform: scale(1.06);
 }
@@ -2473,26 +2490,17 @@ body.lightmode .dropdown-menu.mega-solutions {
     position: absolute;
     top: 14px;
     right: 14px;
-    width: 26px;
-    height: 26px;
     padding: 0;
-    box-sizing: border-box;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(3px);
-    border: 1px solid rgba(255, 255, 255, 0.14);
-    font-size: 10px;
+    font-size: 12px;
     color: rgba(255, 255, 255, 0.65);
-    transition: color 0.2s, transform 0.2s, background 0.2s, border-color 0.2s;
+    transition: color 0.2s, transform 0.2s;
 }
 
 .sol-img-card:hover .sol-img-card-arrow {
     color: #fff;
-    background: #f48120;
-    border-color: #f48120;
     transform: translateX(3px);
 }
 
@@ -2548,7 +2556,7 @@ body.lightmode .dropdown-menu.mega-solutions {
 
 .sol-fill-card:hover i {
     color: #fff;
-    background: #f48120;
+    background: #ba5a09;
     transform: scale(1.06);
 }
 
@@ -2560,7 +2568,7 @@ body.lightmode .dropdown-menu.mega-solutions {
     color: rgba(244, 129, 32, 0.48);
 }
 
-/* ── sol-fill-card color variants ── */
+/* -- sol-fill-card color variants -- */
 .sol-fill-card[data-color="orange"] {
     background: #f48120;
     border-color: #f48120;
@@ -2621,7 +2629,7 @@ body.lightmode .dropdown-menu.mega-solutions {
 
 .sol-fill-card[data-color="dark"]:hover i {
     color: #fff;
-    background: #f48120;
+    background: #ba5a09;
 }
 
 .sol-fill-card[data-color="dark"]:hover .sol-fill-title {
@@ -2632,7 +2640,7 @@ body.lightmode .dropdown-menu.mega-solutions {
     color: rgba(255, 255, 255, 0.65);
 }
 
-/* ── Corner illustration accent (Consulting, Fatigue Assessment cards) ── */
+/* -- Corner illustration accent (Consulting, Fatigue Assessment cards) -- */
 .sol-fill-card--corner-img {
     position: relative;
     overflow: hidden;
@@ -2662,7 +2670,7 @@ body.lightmode .dropdown-menu.mega-solutions {
     z-index: 1;
 }
 
-/* ── Crack texture background accent (Advanced NDT card) ── */
+/* -- Crack texture background accent (Advanced NDT card) -- */
 .sol-fill-card--ndt {
     position: relative;
     overflow: hidden;
@@ -2692,7 +2700,7 @@ body.lightmode .dropdown-menu.mega-solutions {
     z-index: 1;
 }
 
-/* ── Contour background accent (Geotechnical card) ── */
+/* -- Contour background accent (Geotechnical card) -- */
 .sol-fill-card--contour {
     position: relative;
     overflow: hidden;
@@ -2781,7 +2789,7 @@ body.lightmode .dropdown-menu.mega-solutions {
 
 .sol-fill-card[data-color="black"]:hover i {
     color: #fff;
-    background: #f48120;
+    background: #ba5a09;
 }
 
 .sol-fill-card[data-color="black"]:hover .sol-fill-title {
@@ -2830,7 +2838,7 @@ body.lightmode .sol-fill-card[data-color="white"]:hover {
     border-color: #bbb;
 }
 
-/* ── BENTO dropdowns (About Us / Resources) ─────── */
+/* -- BENTO dropdowns (About Us / Resources) ------- */
 .dropdown-menu.mega-bento {
     display: block !important;
     position: fixed !important;
@@ -2928,7 +2936,7 @@ body.lightmode .mega-bento-sub {
     color: #666;
 }
 
-/* ── Split bento cell (two stacked half-height links in one grid slot) ── */
+/* -- Split bento cell (two stacked half-height links in one grid slot) -- */
 .mega-bento-split {
     display: flex;
     flex-direction: column;
@@ -2986,7 +2994,7 @@ body.lightmode .mega-bento-split-half:hover {
     color: #f48120;
 }
 
-/* ── Desktop hover/mega-open rules (≥ 1024px) ── */
+/* -- Desktop hover/mega-open rules (= 1024px) -- */
 @media (min-width: 1024px) {
 
     .dropdown-menu.dropdown-menu-products,
@@ -3009,7 +3017,7 @@ body.lightmode .mega-bento-split-half:hover {
     }
 }
 
-/* ── Compact mega menu (1024–1279px): 2-col layout, no quick panel ── */
+/* -- Compact mega menu (1024�1279px): 2-col layout, no quick panel -- */
 @media (min-width: 1024px) and (max-width: 1279px) {
     .dropdown-menu.dropdown-menu-products {
         width: min(96vw, 820px) !important;
@@ -3030,7 +3038,7 @@ body.lightmode .mega-bento-split-half:hover {
     }
 }
 
-/* ── Mobile / collapsed nav (< 1024px) ── */
+/* -- Mobile / collapsed nav (< 1024px) -- */
 @media (max-width: 1023px) {
 
     .nav-item.dropdown.mega-open .dropdown-menu.dropdown-menu-products,
@@ -3305,14 +3313,14 @@ body.lightmode .mega-bento-split-half:hover {
 }
 
 
-/* Default (Dark Mode) – icons in full color */
+/* Default (Dark Mode) � icons in full color */
 .process-icon {
     object-fit: contain;
     filter: none;
     transition: filter 0.4s ease, opacity 0.4s ease;
 }
 
-/* Light Mode – tint icons to orange */
+/* Light Mode � tint icons to orange */
 body.lightmode .process-icon img {
     filter: sepia(1) saturate(4) hue-rotate(295deg);
 
@@ -3331,7 +3339,7 @@ body.lightmode .process-icon {
 */
 
 
-/* Default (Dark Mode) – icons in full color */
+/* Default (Dark Mode) � icons in full color */
 .service-icon img {
     width: 60px;
     height: 60px;
@@ -3340,7 +3348,7 @@ body.lightmode .process-icon {
     transition: filter 0.4s ease, opacity 0.4s ease;
 }
 
-/* Light Mode – convert icons to grayscale and darken slightly */
+/* Light Mode � convert icons to grayscale and darken slightly */
 body.lightmode .service-icon img {
     filter: grayscale(100%) brightness(0.7) contrast(1.5);
 }
@@ -3883,7 +3891,7 @@ body.lightmode th.product-table-cell {
     color: #000000;
 }
 
-/* ====== Responsive Product Dropdown — fully handled in header.html ====== */
+/* ====== Responsive Product Dropdown � fully handled in header.html ====== */
 
 /* Mobile (max 768px) */
 @media screen and (max-width: 768px) {
@@ -3989,7 +3997,7 @@ header.scrolled .navbar {
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     border-radius: 0;
     border: none;
     background: var(--scrolled-bg);
@@ -4004,189 +4012,576 @@ header.scrolled .navbar {
     transition: all 0.3s ease;
 }
 
-/* ================== 09. Sidebar ================== */
+/* ================== 09. Mobile Nav Dropdown (v2) ================== */
 
-.sidebar {
+.mmenu-overlay {
     position: fixed;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    height: 100%;
-    background: var(--secondary);
-    color: var(--primary);
-    transition: transform 0.4s ease-in-out;
-    z-index: 1000;
-    overflow-y: auto;
-    max-height: 100vh;
-    padding: 0px 16px 0px 5px;
+    top: var(--mmenu-top, 72px);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease;
+    z-index: 1001;
 }
 
-/* Mobile view: bring sidebar above header */
-@media (max-width: 1014px) {
-    .sidebar {
-        z-index: 1002;
+.mmenu-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mmenu-panel {
+    position: fixed;
+    top: var(--mmenu-top, 72px);
+    left: 12px;
+    right: 12px;
+    max-height: calc(100vh - var(--mmenu-top, 72px) - 16px);
+    display: flex;
+    flex-direction: column;
+    background: var(--secondary);
+    border-radius: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-14px);
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.25s ease, visibility 0.3s;
+    z-index: 1002;
+}
+
+.mmenu-panel.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+body.lightmode .mmenu-panel {
+    background: #fff;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+}
+
+.mmenu-scroll {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px 16px 4px;
+}
+
+.mmenu-scroll::-webkit-scrollbar {
+    width: 6px;
+}
+
+.mmenu-scroll::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #1a1a1e 0%, #f48120 100%);
+    border-radius: 3px;
+}
+
+.mmenu-quicklinks {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.mmenu-quicklink {
+    flex: 1;
+    text-align: center;
+    padding: 9px 8px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--primary);
+    font-size: 12.5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.mmenu-quicklink:hover,
+.mmenu-quicklink.active {
+    background: var(--accent-color-cta);
+    color: #fff;
+}
+
+body.lightmode .mmenu-quicklink {
+    background: rgba(0, 0, 0, 0.05);
+    color: #1a1a1a;
+}
+
+body.lightmode .mmenu-quicklink:hover,
+body.lightmode .mmenu-quicklink.active {
+    background: var(--accent-color-cta);
+    color: #fff;
+}
+
+.mmenu-section {
+    margin-bottom: 16px;
+}
+
+.mmenu-label {
+    display: block;
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+    margin-bottom: 6px;
+    padding: 0 4px;
+}
+
+body.lightmode .mmenu-label {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.mmenu-label--amber {
+    color: #f48120;
+}
+
+.mmenu-label--slate {
+    color: #7fa0ff;
+}
+
+body.lightmode .mmenu-label--amber {
+    color: #d9670c;
+}
+
+body.lightmode .mmenu-label--slate {
+    color: #4a63c9;
+}
+
+.mmenu-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.mmenu-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 9px 6px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.mmenu-row:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+body.lightmode .mmenu-row:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+.mmenu-row-icon {
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    background: rgba(244, 129, 32, 0.12);
+    color: var(--accent-color);
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+.mmenu-row-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.mmenu-row-title {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+body.lightmode .mmenu-row-title {
+    color: #171717;
+}
+
+.mmenu-row-sub {
+    font-size: 11.5px;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.4;
+}
+
+body.lightmode .mmenu-row-sub {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.mmenu-row-arrow {
+    flex-shrink: 0;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.25);
+    margin-top: 8px;
+}
+
+body.lightmode .mmenu-row-arrow {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.mmenu-new-badge {
+    display: inline-block;
+    font-size: 8px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #ba5a09;
+    padding: 1px 5px;
+    border-radius: 999px;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+
+.mmenu-view-all {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 4px 6px 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.mmenu-view-all i {
+    font-size: 10px;
+}
+
+.mmenu-card {
+    border-radius: 16px;
+    padding: 12px 12px 14px;
+    margin-bottom: 16px;
+}
+
+.mmenu-card--amber {
+    background: rgba(244, 129, 32, 0.1);
+    border: 1px solid rgba(244, 129, 32, 0.18);
+}
+
+.mmenu-card--slate {
+    background: rgba(127, 160, 255, 0.08);
+    border: 1px solid rgba(127, 160, 255, 0.16);
+}
+
+body.lightmode .mmenu-card--amber {
+    background: #fdf1e4;
+    border-color: #f8dfc0;
+}
+
+body.lightmode .mmenu-card--slate {
+    background: #eef1ff;
+    border-color: #dbe1fb;
+}
+
+.mmenu-card--neutral {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 4px;
+}
+
+body.lightmode .mmenu-card--neutral {
+    background: rgba(0, 0, 0, 0.025);
+    border-color: rgba(0, 0, 0, 0.07);
+}
+
+.mmenu-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.mmenu-tile {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background 0.2s ease;
+}
+
+.mmenu-tile:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+body.lightmode .mmenu-tile:hover {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.mmenu-tile-title {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: var(--primary);
+    line-height: 1.3;
+}
+
+body.lightmode .mmenu-tile-title {
+    color: #171717;
+}
+
+.mmenu-tile-title i {
+    font-size: 9px;
+    color: var(--accent-color);
+    margin-right: 3px;
+}
+
+.mmenu-tile-sub {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.3;
+}
+
+body.lightmode .mmenu-tile-sub {
+    color: rgba(0, 0, 0, 0.45);
+}
+
+.mmenu-simple-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.mmenu-simple-link {
+    display: block;
+    padding: 7px 6px;
+    border-radius: 9px;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.mmenu-simple-link i {
+    font-size: 9px;
+    color: var(--accent-color);
+    margin-right: 6px;
+}
+
+.mmenu-simple-link:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--accent-color);
+}
+
+body.lightmode .mmenu-simple-link {
+    color: #262626;
+}
+
+body.lightmode .mmenu-simple-link:hover {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--accent-color);
+}
+
+.mmenu-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 14px;
+    position: relative;
+}
+
+.mmenu-footer-grid::before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    bottom: 2px;
+    left: 50%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+body.lightmode .mmenu-footer-grid::before {
+    background: rgba(0, 0, 0, 0.08);
+}
+
+.mmenu-footer-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.mmenu-footer-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6.5px 6px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary);
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.mmenu-footer-link i {
+    flex-shrink: 0;
+    width: 13px;
+    font-size: 11px;
+    color: var(--accent-color);
+    opacity: 0.8;
+    text-align: center;
+}
+
+.mmenu-footer-link:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: var(--accent-color);
+}
+
+body.lightmode .mmenu-footer-link {
+    color: #262626;
+}
+
+body.lightmode .mmenu-footer-link:hover {
+    background: rgba(0, 0, 0, 0.04);
+    color: var(--accent-color);
+}
+
+.mmenu-bottom {
+    flex-shrink: 0;
+    padding: 14px 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 0 0 20px 20px;
+}
+
+body.lightmode .mmenu-bottom {
+    border-top-color: rgba(0, 0, 0, 0.07);
+    background: rgba(0, 0, 0, 0.02);
+}
+
+.mmenu-follow-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.mmenu-follow-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+body.lightmode .mmenu-follow-label {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.mmenu-demo-btn {
+    padding: 7px 16px;
+    border-radius: 999px;
+    background: var(--accent-color-cta);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mmenu-demo-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(244, 129, 32, 0.35);
+}
+
+body.lightmode .mmenu-demo-btn,
+body.lightmode .mmenu-demo-btn:hover {
+    color: #fff;
+}
+
+.mmenu-social-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.mmenu-social {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: var(--primary);
+    font-size: 13px;
+    text-decoration: none;
+    transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.mmenu-social:hover {
+    background: var(--accent-color-cta);
+    border-color: var(--accent-color-cta);
+    color: #fff;
+}
+
+body.lightmode .mmenu-social {
+    border-color: rgba(0, 0, 0, 0.15);
+    color: #262626;
+}
+
+.mmenu-contact-row {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.mmenu-contact-row a {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
+}
+
+.mmenu-contact-row a i {
+    width: 14px;
+    color: var(--accent-color);
+    margin-right: 6px;
+}
+
+.mmenu-contact-row a:hover {
+    color: var(--accent-color);
+}
+
+body.lightmode .mmenu-contact-row a {
+    color: rgba(0, 0, 0, 0.55);
+}
+
+/* Tablet: extra width goes into two-up columns instead of stretching links out */
+@media (min-width: 560px) {
+    .mmenu-panel {
+        left: auto;
+        right: 12px;
+        width: 460px;
+        max-width: calc(100vw - 24px);
+    }
+
+    .mmenu-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px 10px;
+    }
+
+    .mmenu-simple-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2px 10px;
     }
 }
 
-.sidebar.active {
-    transform: translateX(300px);
-}
+/* Desktop safety net: the trigger button is hidden above this breakpoint anyway */
+@media (min-width: 1025px) {
 
-.sidebar-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px 20px 20px;
-}
-
-.sidebar-header .logo {
-    width: 75%;
-}
-
-.close-btn {
-    display: inline-block;
-    justify-content: center;
-    background-color: var(--accent-color);
-    border: var(--accent-color);
-    border-radius: 8px 8px 8px 8px;
-    color: var(--primary);
-    font-weight: var(--font-weight-bold);
-    position: relative;
-    font-size: var(--font-size-base);
-    cursor: pointer;
-    padding: 8px 18px;
-    transition: all 0.4s;
-}
-
-.close-btn:hover {
-    background-color: var(--accent-transparent);
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color);
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.menu li {
-    margin-bottom: 8px;
-}
-
-.menu a {
-    color: var(--primary);
-    text-decoration: none;
-    padding: 10px 10px 0px 15px;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s;
-    font-size: var(--font-size-base);
-    font-weight: var(--font-weight-medium);
-    text-transform: capitalize;
-}
-
-.menu a:hover,
-.menu a.active,
-.menu a.focus {
-    color: var(--accent-color);
-    background-color: var(--secondary);
-}
-
-.sidebar-dropdown .dropdown-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.sidebar-dropdown-btn {
-    background: none;
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    font-size: var(--font-size-base);
-    cursor: pointer;
-    padding: 0px 18px;
-    border-radius: 24px;
-    transition: transform 0.3s ease;
-
-}
-
-.sidebar-dropdown-btn:hover {
-    color: var(--accent-color);
-    border: 1px solid var(--accent-color)
-}
-
-body.lightmode .sidebar-dropdown-btn {
-    border-color: #000;
-    color: #000;
-}
-
-body.lightmode .sidebar-dropdown-btn:hover {
-    border-color: #000;
-    color: #000;
-}
-
-.sidebar-dropdown-menu {
-    list-style: none;
-    padding-left: 20px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-    padding-top: 0;
-    padding-bottom: 0;
-}
-
-.sidebar-dropdown-menu.active {
-    max-height: 100%;
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.sidebar-dropdown-menu li {
-    padding: 6px 0;
-}
-
-.sidebar-dropdown-menu li a {
-    color: #ffffff;
-    font-size: 14px;
-    text-decoration: none;
-    display: block;
-    padding: 4px 8px;
-    border-radius: 4px;
-    transition: color 0.2s ease, background-color 0.2s ease;
-}
-
-.sidebar-dropdown-menu li a:hover {
-    color: var(--accent-color);
-    background-color: rgba(244, 123, 10, 0.1);
-}
-
-body.lightmode .sidebar-dropdown-menu li a {
-    color: #000;
-}
-
-body.lightmode .sidebar-dropdown-menu li a:hover {
-    color: var(--accent-color);
-    background-color: rgba(244, 123, 10, 0.15);
-}
-
-.below-dropdown {
-    transition: margin-top 0.1s ease-in-out;
-    margin-top: 0px;
-}
-
-.sidebar::-webkit-scrollbar {
-    width: 2px;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-    background: #f48120;
-    border-radius: 2px;
+    .mmenu-overlay,
+    .mmenu-panel {
+        display: none !important;
+    }
 }
 
 ::-webkit-scrollbar {
-    width: 2px;
-    height: 2px;
+    width: 6px;
+    height: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -4194,110 +4589,15 @@ body.lightmode .sidebar-dropdown-menu li a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f48120;
+    background: linear-gradient(180deg, #1a1a1e 0%, #f48120 100%);
     border-radius: 2px;
 }
 
-html {
-    scrollbar-width: thin;
-    scrollbar-color: #f48120 transparent;
-}
-
-/* Product Category Styles */
-.product-category-item {
-    list-style: none;
-}
-
-.product-category-header {
-    padding: 8px 0;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    border-radius: 4px;
-    user-select: none;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.product-category-header:hover {
-    background-color: rgba(244, 123, 10, 0.1);
-    padding-left: 8px;
-}
-
-.category-name {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--text-color);
-    font-size: 14px;
-    font-weight: 500;
-    transition: color 0.2s ease;
-    flex: 1;
-}
-
-.product-category-header:hover .category-name {
-    color: var(--accent-color);
-}
-
-.category-name i {
-    color: var(--accent-color);
-    font-size: 14px;
-}
-
-.category-arrow {
-    color: #f48120;
-    font-size: 12px;
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 16px;
-    height: 16px;
-    margin-right: 20px;
-}
-
-.category-arrow.expanded {
-    transform: rotate(-90deg);
-}
-
-body.lightmode .category-arrow {
-    color: #000;
-}
-
-.product-category-items {
-    list-style: none;
-    padding-left: 20px;
-    overflow: hidden;
-    max-height: 600px;
-    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-    opacity: 1;
-}
-
-.product-category-items.hidden {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-}
-
-.product-item {
-    list-style: none;
-    padding: 2px 0;
-    display: list-item;
-}
-
-.product-item a {
-    color: var(--text-color);
-    text-decoration: none;
-    font-size: 13px;
-    transition: color 0.2s ease;
-    display: block;
-    padding: 3px 8px;
-    border-radius: 4px;
-}
-
-.product-item a:hover {
-    color: var(--accent-color);
-    background-color: rgba(244, 123, 10, 0.08);
+@-moz-document url-prefix() {
+    html {
+        scrollbar-width: thin;
+        scrollbar-color: #f48120 #1a1a1e;
+    }
 }
 
 /* ================== 10. Content Edit Sidebar ================== */
@@ -4615,6 +4915,23 @@ body.lightmode .themeswitch {
     pointer-events: none;
     width: 100%;
     height: 100%;
+}
+
+/* Cover-fit the injected YouTube iframe to the reserved hero box. The inline
+   pixel width/height set by setYoutubeSize() in script.js (which sizes the
+   iframe larger than the box, 16:9) is allowed to win so the video fills the
+   whole hero without letterbox bars, while position:absolute keeps the late,
+   network-dependent video init from ever shifting the layout. pointer-events:
+   none keeps YouTube's hover controls/logo from appearing over the hero. */
+#banner-video-background iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
 }
 
 
@@ -5013,9 +5330,9 @@ body.lightmode .blog-bullets {
 }
 
 /* ================== 15. Footer ================== */
-/* 🌙 Default (dark mode) — your current styles */
+/* ?? Default (dark mode) � your current styles */
 
-/* ☀️ Light mode footer */
+/* ?? Light mode footer */
 body.lightmode .bg-footer-wrapper::before {
     background-image: linear-gradient(180deg, var(--accent-color-light) 0%, var(--accent-transparent-light) 100%);
     opacity: 0.4;
@@ -5032,6 +5349,8 @@ body.lightmode .bg-footer::before {
 
 :root {
     --accent-color: #f48120;
+    --accent-color-cta: #ba5a09;
+    --accent-color-cta-hover: #b65d11;
     --accent-color-2: #ffb347;
     --accent-color-3: #1a1a1a;
     --accent-transparent: rgba(244, 129, 32, 0.1);
@@ -5257,7 +5576,7 @@ body.lightmode .workflow-step-card:hover .workflow-step-icon .material-symbols-o
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    background: var(--accent-color);
+    background: var(--accent-color-cta);
     color: #fff;
     font-size: 11px;
     font-weight: 700;
@@ -5515,23 +5834,6 @@ body.lightmode .navbar-icon-wrapper {
     .logo-container-footer {
         max-width: 240px;
     }
-}
-
-/* ================== 18. Sidebar Overlay ================== */
-
-.sidebar-overlay {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
-    transition: left 0.4s ease-in-out;
-    z-index: 4;
-}
-
-.sidebar-overlay.active {
-    left: 0;
 }
 
 /* ================== 19. Content Sidebar Overlay ================== */
@@ -6593,7 +6895,7 @@ body.lightmode .case-studies-content::before {
     width: 70%;
 }
 
-/* ── New Case Studies Bento Grid ── */
+/* -- New Case Studies Bento Grid -- */
 .cs-new-bento {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -6972,7 +7274,7 @@ body.lightmode .blog-content::before {
 
 /* ================== 32. Blog Components ================== */
 
-/* ── Insights & Trends redesign ── */
+/* -- Insights & Trends redesign -- */
 .insights-grid {
     display: grid;
     grid-template-columns: 1.35fr 1fr;
@@ -7031,7 +7333,7 @@ body.lightmode .blog-content::before {
     letter-spacing: 0.09em;
     text-transform: uppercase;
     color: #fff;
-    background: var(--accent-color);
+    background: var(--accent-color-cta);
     border-radius: 999px;
     padding: 3px 10px;
 }
@@ -7066,7 +7368,7 @@ body.lightmode .blog-content::before {
     text-decoration: none;
 }
 
-/* ── Insights Carousel (right panel) ── */
+/* -- Insights Carousel (right panel) -- */
 .insights-carousel {
     position: relative;
     overflow: hidden;
@@ -7313,7 +7615,7 @@ body.lightmode .share-title {
 }
 
 body.lightmode .blog-tag {
-    background: #f48120;
+    background: #ba5a09;
     color: #fff;
 }
 
@@ -7750,15 +8052,15 @@ body.lightmode .guide-banner::before {
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background-color: var(--accent-color);
+    background-color: var(--accent-color-cta);
     color: #ffffff;
     font-size: 14px;
     transition: transform 0.3s ease;
 }
 
 .guide-cta:hover {
-    border-color: var(--accent-color);
-    background-color: var(--accent-color);
+    border-color: var(--accent-color-cta);
+    background-color: var(--accent-color-cta);
     color: #ffffff;
 }
 
@@ -8215,7 +8517,7 @@ body.lightmode .icon-circle {
     background-color: #000;
     /* change this to any color you prefer */
     color: var(--text-dark);
-    /* optional — adjust text/icon color for visibility */
+    /* optional � adjust text/icon color for visibility */
 }
 
 
@@ -8262,7 +8564,7 @@ body.lightmode .icon-circle {
     border-color: var(--accent-color);
 }
 
-/* ☀️ Light mode (global toggle) */
+/* ?? Light mode (global toggle) */
 body.lightmode .social-item {
     background-color: transparent;
     border-color: rgba(255, 255, 255, 0.3);
@@ -8277,7 +8579,7 @@ body.lightmode .social-item {
     color: #ffffff;
 }
 
-/* ☀️ Light mode (same style as dark) */
+/* ?? Light mode (same style as dark) */
 body.lightmode .social-item i {
     color: hsl(0, 0%, 100%);
 }
@@ -8643,7 +8945,7 @@ body.lightmode .link-wrapper:hover i {
     line-height: 1.6;
 }
 
-/* ✅ Responsive adjustments for tablets and mobiles */
+/* ? Responsive adjustments for tablets and mobiles */
 @media (max-width: 768px) {
     .chooseus-content {
         width: 100%;
@@ -8761,6 +9063,22 @@ body.lightmode .link-wrapper:hover i {
 
 .chooseus-image-container img {
     border-radius: 0 !important;
+}
+
+/* Match image height to the accordion list height in the side-by-side layout */
+@media (min-width: 1200px) {
+    .chooseus-content-container>.d-flex.flex-column.gspace-5 {
+        height: 100%;
+    }
+
+    .chooseus-image-container {
+        height: 100%;
+    }
+
+    .chooseus-img {
+        height: 100%;
+        aspect-ratio: auto;
+    }
 }
 
 /* ================== 46. Image Container Components ================== */
@@ -9214,7 +9532,7 @@ body.lightmode .cta-service-banner::before {
     color: var(--primary);
 }
 
-/* 🌞 Light mode override */
+/* ?? Light mode override */
 body.lightmode .footer-list li,
 body.lightmode .footer-list a {
     color: #ffffff;
@@ -11789,7 +12107,7 @@ body.lightmode .contact-page-list a h5:hover {
     flex-shrink: 0 !important;
 }
 
-/* ══ Mobile: shrink hero & CTA buttons on product pages ══ */
+/* -- Mobile: shrink hero & CTA buttons on product pages -- */
 @media (max-width: 575px) {
 
     [class*="-hero-btns"],
@@ -11819,5 +12137,145 @@ body.lightmode .contact-page-list a h5:hover {
         height: 32px !important;
         min-width: 32px;
         font-size: 10px !important;
+    }
+}
+
+/* Products carousel: bullets outside the visible window (see swiper-script.js) */
+.swiperProducts-pagination .swiper-pagination-bullet.dot-hidden {
+    display: none;
+}
+/* Reserve header height so the async-injected header does not cause CLS */
+#header {
+    min-height: 126px;
+}
+@media (min-width: 992px) and (max-width: 1049px) {
+    #header {
+        min-height: 137px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    #header {
+        min-height: 127px;
+    }
+}
+@media (max-width: 767.98px) {
+    #header {
+        min-height: 117px;
+    }
+}
+
+/* Light mode: Industries We Serve / Expertise text readability */
+body.lightmode .expertise-chip {
+    color: #1a1a1a;
+    border-color: rgba(0, 0, 0, 0.14);
+}
+body.lightmode .expertise-chip:hover {
+    color: #fff;
+    border-color: var(--accent-color-cta);
+}
+body.lightmode .expertise-list h5 {
+    color: #f48120;
+}
+body.lightmode .counter-text h6 {
+    color: #2d2e2f;
+}
+body.lightmode .expertise-list .link-wrapper a {
+    color: #2d2e2f;
+}
+
+
+/* Header mega menus: at short viewports (150% zoom / small windows) the
+   fixed mega-menu cards nearly fill the screen. Products scale ~12%,
+   About/Resources bento ~10%; the Solutions megamenu instead gets its
+   internal card sizes reduced so it fits without any internal scroll. */
+@media (min-width: 1025px) and (max-height: 740px) {
+    .dropdown-menu.dropdown-menu-products {
+        zoom: 0.88;
+    }
+
+    .dropdown-menu.mega-bento {
+        zoom: 0.9;
+    }
+
+    .dropdown-menu.mega-solutions .solutions-bento {
+        gap: 10px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-bento-img-row,
+    .dropdown-menu.mega-solutions .sol-bento-img-row2 {
+        gap: 10px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-img-card {
+        height: 132px;
+        border-radius: 14px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-img-card-body {
+        padding: 12px 16px 13px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-img-card-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-img-card-title {
+        font-size: 15px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-img-card-sub {
+        font-size: 11px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-bento-small-row {
+        gap: 8px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-fill-card {
+        min-height: 72px;
+        padding: 12px 14px;
+        border-radius: 12px;
+        gap: 3px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-fill-card i {
+        width: 24px;
+        height: 24px;
+        font-size: 12px;
+        margin-bottom: 4px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-fill-title {
+        font-size: 12px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-fill-sub {
+        font-size: 9.5px;
+    }
+}
+
+/* Mobile/hamburger solutions dropdown (<1024px): at short viewports let it
+   grow to its full height instead of showing an inner scrollbar, and use
+   reduced card sizes. */
+@media (max-width: 1024px) and (max-height: 680px) {
+    .dropdown-menu.mega-solutions.show {
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .dropdown-menu.mega-solutions .sol-img-card {
+        height: 132px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-img-card-title {
+        font-size: 15px;
+    }
+
+    .dropdown-menu.mega-solutions .sol-fill-card {
+        min-height: 76px;
+        padding: 12px 14px;
     }
 }

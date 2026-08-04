@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8GFRCEFB87');
+</script>
   <meta charset="UTF-8">
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,8 +33,28 @@
   <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Service","name":"Digital Engineering & Documentation","description":"ISO 19650-aligned BIM, scan-to-BIM, digital twin, and asset information management services for infrastructure owners and EPC contractors.","provider":{"@type":"Organization","name":"Sentra","url":"https://sentratech.in/"}}
-  </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "Digital Engineering & Documentation",
+  "description": "ISO 19650-aligned BIM, scan-to-BIM, digital twin, and asset information management services for infrastructure owners and EPC contractors.",
+  "provider": {
+    "@type": "Organization",
+    "name": "Sentra",
+    "url": "https://sentratech.in/"
+  },
+  "url": "https://sentratech.in/solutions/digital-engineering-and-documentation.html",
+  "areaServed": "India"
+}
+</script>
+  <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
+  <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+  <link rel="stylesheet" href="../css/vendor/brands.css">
+  <link rel="stylesheet" href="../css/vendor/regular.css">
+  <link rel="stylesheet" href="../css/vendor/solid.css">
+  <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/vendor/animate.min.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/solutions-v2.css">
@@ -33,10 +62,10 @@
   <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
   <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap"
     rel="stylesheet" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap"
     rel="stylesheet" />
   <link rel="canonical" href="https://sentratech.in/solutions/digital-engineering-and-documentation.html">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -70,6 +99,63 @@
     }
     </script>
 
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is scan-to-BIM and when do I need it?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Scan-to-BIM is the process of creating an accurate BIM model of an existing structure from 3D laser scan data. You need it when working with existing assets where accurate as-built records do not exist or are unreliable — for example, before a renovation, structural assessment, extension, or refurbishment project. It replaces the inaccurate process of manually measuring and modelling from old paper drawings. The resulting model accurately represents what was built, not what was designed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What level of detail (LOD) do you deliver BIM models to?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We deliver BIM models to the LOD specified in the client's BIM requirements or Employer's Information Requirements (EIR). We regularly deliver LOD 200 (massing and approximate geometry) for early design, LOD 300 (accurate geometry and basic attributes) for design coordination, LOD 350 (construction coordination) for buildability review, and LOD 400 (fabrication-ready) for construction and facility management. LOD is agreed at the start of each project in the BIM Execution Plan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What software platforms do you use for BIM?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our primary BIM authoring tools are Autodesk Revit (buildings and structures), Autodesk Civil 3D (civil infrastructure), and Bentley OpenBridge Modeler (bridge structures). For scan processing we use Autodesk ReCap and Faro Scene. For coordination and clash detection we use Autodesk Navisworks and BIM 360. For Common Data Environment we support BIM 360 Docs, Asite, Aconex, and ProjectWise. We can work within the client's existing CDE platform rather than imposing our own."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is ISO 19650 and is it required in India?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "ISO 19650 is the international standard for organising and digitising information about buildings and civil engineering works using BIM. It specifies how project information should be structured, named, stored, and transferred between parties throughout the project lifecycle. While ISO 19650 is not yet uniformly mandated in India, it is increasingly required by international infrastructure clients, multinational EPC contractors, and major government programmes aligned with smart city and national infrastructure initiatives. Delivering to ISO 19650 demonstrates digital maturity and positions you for international procurement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does a digital twin differ from a BIM model?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A BIM model is a static digital representation of an asset — it captures geometry, attributes, and relationships as they were at a point in time. A digital twin is a BIM model connected to live data streams from IoT sensors, maintenance systems, and operational records — creating a continuously updated digital representation that mirrors the current real-world state of the physical asset. The digital twin enables real-time performance monitoring, anomaly detection, and predictive analytics in the spatial context of the physical model."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you digitise our existing paper-based documentation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. We provide document digitisation, classification, and structured filing services that convert paper-based drawing and document archives into searchable, structured digital records. Documents are classified using agreed naming conventions, indexed with metadata (document type, discipline, revision, date), and loaded into a digital document management system. Where original paper drawings need to be validated against current as-built conditions, we combine document digitisation with physical LiDAR scanning to verify accuracy."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 
 <body class="product-page">

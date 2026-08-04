@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8GFRCEFB87');
+</script>
     <meta charset="UTF-8">
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +25,14 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../css/vendor/brands.css">
+    <link rel="stylesheet" href="../css/vendor/regular.css">
+    <link rel="stylesheet" href="../css/vendor/solid.css">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/vendor/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/chatbot.css">
@@ -26,8 +43,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!-- Material Icons -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet" />
 
     <!-- Open Graph -->
     <meta property="og:title" content="G7 Vibrating Wire Data Logger — Wireless Data Acquisition | Sentra" />
@@ -42,21 +59,18 @@
     <meta name="twitter:site" content="@sentratech" />
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Product",
-      "name": "G7 Vibrating Wire Data Logger",
-      "description": "Wirelessly stream data from all leading vibrating wire sensor manufacturers. Up to 15-year battery life, IP68 rating, LoRaWAN & 4G LTE connectivity.",
-      "brand": { "@type": "Brand", "name": "Sentra" },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "INR",
-        "availability": "https://schema.org/InStock",
-        "url": "https://sentratech.in/products/vibrating-wire.html"
-      }
-    }
-    </script>
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "G7 Vibrating Wire Data Logger",
+  "description": "Wirelessly stream data from all leading vibrating wire sensor manufacturers. Up to 15-year battery life, IP68 rating, LoRaWAN & 4G LTE connectivity.",
+  "brand": {
+    "@type": "Brand",
+    "name": "Sentra"
+  },
+  "image": "https://sentratech.in/image/products/worldsensing_vw_g7_6ch.webp"
+}
+</script>
 
     <script type="application/ld+json">
     {
@@ -85,6 +99,63 @@
     }
     </script>
     
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the Vibrating Wire Data Logger?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The G7 Vibrating Wire Data Logger is a wireless data acquisition IoT device that collects data from vibrating wire sensors and transmits them using long-range, low-power radio communications. It automates data collection by connecting instruments such as piezometers, load cells, strain gauges and pressure cells wirelessly to your monitoring systems."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does the Vibrating Wire Data Logger work?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The data logger connects to one or more vibrating wire sensors and transmits data via LoRa networks to a CMT Edge for local-access, single-network deployments. Data can also be transmitted via the internet from the Gateway to CMT Cloud for multi-project, multi-network deployment — accessible from anywhere."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What kind of sensors can be connected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The G7 Vibrating Wire Data Logger can be connected to all vibrating wire sensors on the market. It reads sensors working on the 0 to 7000 Hz frequency range, which covers virtually all geotechnical vibrating wire sensors available globally — from piezometers and strain gauges to pressure cells and load cells."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How long does the battery last?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Battery life depends on the selected reporting period. With a 1-hour reporting interval, the G7 VW Data Logger achieves up to 15.9 years of battery life (6-channel version). With a 6-hour interval, it exceeds 20 years. The device uses a 3.6V D-size LSH20 Li-SOCl2 battery cell that is user-replaceable without tools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the communication range?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In open sight, the range can reach up to 15 km (9.3 mi). In a city street, up to 4 km (2.5 mi). When placed in a manhole in a city street, the range is up to 2 km (1.2 mi), and in a tunnel it extends up to 4 km (2.5 mi). Range depends on terrain and environment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the data logger surge-protected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, the G7 Vibrating Wire Data Logger complies with IEC61000-4-5, Class 2 surge protection standards. If higher class protection is required, external surge protection devices can be installed. The IP68 rating also ensures reliable operation even when installed in manholes or other harsh environments."
+      }
+    }
+  ]
+}
+    </script>
 </head>
 
 <style>

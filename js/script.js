@@ -7,19 +7,50 @@ Promise.all([
     fetch(pathPrefix + "sidebar.html").then(res => res.text())
 ])
     .then(([headerHTML, footerHTML, sidebarHTML]) => {
-        $("#header").html(headerHTML);
-        $("#footer").html(footerHTML);
-        $("#sidebar").html(sidebarHTML);
-        $("#edit-sidebar").html(sidebarHTML);
+        // Strip external <script src> tags from the partials BEFORE jQuery .html()
+        // injects them: jQuery would otherwise re-execute them via _evalUrl, which
+        // hardcodes `async: false` (synchronous XMLHttpRequest on the main thread -
+        // a Chrome deprecation). The extracted scripts are loaded normally (async)
+        // after injection instead. Inline scripts are left in place - jQuery runs
+        // those without any XHR.
+        var partialScripts = [];
+        var stripScripts = function (html) {
+            return html.replace(/<script\b[^>]*\bsrc\s*=\s*["'][^"']*["'][^>]*>\s*<\/script>/gi, function (tag) {
+                partialScripts.push(tag);
+                return '';
+            });
+        };
+
+        $("#header").html(stripScripts(headerHTML));
+        $("#footer").html(stripScripts(footerHTML));
+        $("#sidebar").html(stripScripts(sidebarHTML));
         fixNavLinks();
+
+        // Load the extracted scripts asynchronously (non-blocking, no sync XHR).
+        partialScripts.forEach(function (tag) {
+            var srcMatch = tag.match(/\bsrc\s*=\s*["']([^"']*)["']/i);
+            if (!srcMatch) return;
+            var src = srcMatch[1];
+            var script = document.createElement('script');
+            // Resolve bare-relative paths against the page so subpages work too.
+            script.src = (/^([a-z]+:)?\/\//i.test(src) || src.charAt(0) === '/' || src.indexOf(':') > -1)
+                ? src
+                : pathPrefix + src;
+            document.head.appendChild(script);
+        });
     })
     .then(() => {
-        initBannerVideo();
+        // Deferred off the initial paint/LCP path: the YouTube IFrame API is a
+        // slow external fetch, and initializing it late avoids competing with
+        // hero text render and avoids a layout jump if it were sized eagerly.
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(initBannerVideo, { timeout: 2000 });
+        } else {
+            setTimeout(initBannerVideo, 200);
+        }
         initNavLink();
         initSidebar();
         initEditSidebar();
-        initSidebarDropdown();
-        initSidebarSubDropdown();
         initCounter();
         initThemeSwitch();
         initScrollHeader();
@@ -85,52 +116,40 @@ function fixNavLinks() {
 }
 
 function initBannerVideo() {
-    var player;
+    // Plain autoplay/loop iframe instead of the YT.Player IFrame API: native
+    // `loop=1&playlist=<id>` already loops a single video with no JS needed,
+    // so we skip loading youtube.com/iframe_api (player base.js + embed.js,
+    // ~700KB) purely to detect "ended" and call playVideo() again.
+    var $bg = $('#banner-video-background');
+    var videoId = $bg.data('video-id');
+    if (!videoId) return;
 
-    var $tag = $('<script>', { src: "https://www.youtube.com/iframe_api" });
-    $('script').first().before($tag);
+    var params = $.param({
+        autoplay: 1,
+        mute: 1,
+        loop: 1,
+        playlist: videoId,
+        controls: 0,
+        fs: 0,
+        showinfo: 0,
+        rel: 0,
+        disablekb: 1,
+        modestbranding: 1,
+        iv_load_policy: 3,
+        playsinline: 1, // required for reliable autoplay on iOS Safari
+        origin: window.location.origin
+    });
 
-    // Homepage Hero section video
-    window.onYouTubeIframeAPIReady = function () {
-        var videoId = $('#banner-video-background').data('video-id');
-        player = new YT.Player('banner-video-background', {
-            videoId: videoId,
-            playerVars: {
-                'autoplay': 1,
-                'controls': 0,
-                'mute': 1,
-                'loop': 1,
-                'playlist_3': '_YAscQDop3E',
-                'playlist_2': 'iF19lWWG6UM',
-                'playlist_4': 'Jn3-3Gnmg1k',
-                'playlist_1': 'Hgg7M3kSqyE',
-                'playlist': 'U9PcESAe4-4',
-                'showinfo': 0,
-                'rel': 0,
-                'enablejsapi': 1,
-                'disablekb': 1,
-                'modestbranding': 1,
-                'iv_load_policy': 3,
-                'origin': window.location.origin
-            },
-            events: {
-                'onReady': onPlayerReady,
-                'onStateChange': onPlayerStateChange
-            }
-        });
-    };
+    var $iframe = $('<iframe>', {
+        src: 'https://www.youtube-nocookie.com/embed/' + videoId + '?' + params,
+        title: 'Background video',
+        frameborder: 0,
+        allow: 'autoplay; encrypted-media'
+    });
 
-    function onPlayerReady(event) {
-        event.target.playVideo();
-        setYoutubeSize();
-        $(window).on('resize', setYoutubeSize);
-    }
-
-    function onPlayerStateChange(event) {
-        if (event.data === YT.PlayerState.ENDED) {
-            player.playVideo();
-        }
-    }
+    $bg.append($iframe);
+    setYoutubeSize();
+    $(window).on('resize', setYoutubeSize);
 
     function setYoutubeSize() {
         var $container = $('.banner-video-container');
@@ -147,23 +166,7 @@ function initBannerVideo() {
             newHeight = containerHeight;
         }
 
-        if (player && player.getIframe) {
-            var $iframe = $(player.getIframe());
-            $iframe.width(newWidth).height(newHeight);
-        }
-    }
-
-    function handleYouTubeErrors() {
-        window.addEventListener('message', function (event) {
-            if (event.origin !== 'https://www.youtube.com') return;
-
-            try {
-                var data = JSON.parse(event.data);
-
-            } catch (e) {
-
-            }
-        });
+        $iframe.width(newWidth).height(newHeight);
     }
 }
 
@@ -288,6 +291,10 @@ function initCounter() {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
                 var $counter = $(entry.target);
+                // Markup ships with the real target number so crawlers and no-JS
+                // visitors never see a bare 0; reset to 0 here so JS users still
+                // get the count-up animation.
+                $counter.text(0);
                 updateCount($counter);
                 observer.unobserve(entry.target);
             }
@@ -339,29 +346,55 @@ $(function () {
 
 function initSidebar() {
     const $menuBtn = $('.nav-btn');
-    const $closeBtn = $('.close-btn');
-    const $overlay = $('.sidebar-overlay');
-    const $sidebar = $('.sidebar');
+    const $overlay = $('.mmenu-overlay');
+    const $panel = $('.mmenu-panel');
 
-    $menuBtn.click(function () {
+    function positionPanel() {
+        /* .navbar-wrapper reserves ~36px below the visible bar for the desktop
+           mega-dropdown's hover offset (see --mega-menu-top in header.html).
+           Measure the actual visible bar (.navbar) so the mobile panel hugs it. */
+        const headerEl = document.querySelector('.navbar') || document.querySelector('.navbar-wrapper');
+        if (!headerEl) return;
+        const bottom = headerEl.getBoundingClientRect().bottom;
+        document.documentElement.style.setProperty('--mmenu-top', Math.max(bottom, 0) + 8 + 'px');
+    }
+
+    function isOpen() {
+        return $panel.hasClass('active');
+    }
+
+    function openMenu() {
+        positionPanel();
         $overlay.addClass('active');
-        setTimeout(() => {
-            $sidebar.addClass('active');
-        }, 200);
+        $panel.addClass('active');
+        $menuBtn.addClass('is-open').attr('aria-expanded', 'true');
+        $menuBtn.find('i').removeClass('fa-bars').addClass('fa-xmark');
+    }
+
+    function closeMenu() {
+        $overlay.removeClass('active');
+        $panel.removeClass('active');
+        $menuBtn.removeClass('is-open').attr('aria-expanded', 'false');
+        $menuBtn.find('i').removeClass('fa-xmark').addClass('fa-bars');
+    }
+
+    $menuBtn.on('click', function () {
+        isOpen() ? closeMenu() : openMenu();
     });
 
-    $closeBtn.click(function () {
-        $sidebar.removeClass('active');
-        setTimeout(() => {
-            $overlay.removeClass('active');
-        }, 200);
+    $overlay.on('click', closeMenu);
+
+    $panel.on('click', 'a', closeMenu);
+
+    $(document).on('keydown', function (e) {
+        if (e.key === 'Escape' && isOpen()) closeMenu();
     });
 
-    $overlay.click(function () {
-        $sidebar.removeClass('active');
-        setTimeout(() => {
-            $overlay.removeClass('active');
-        }, 200);
+    /* Keep the panel glued to the navbar's live bottom edge while open, so the
+       header snapping into its sticky/compact state mid-scroll (see .scrolled
+       in initScrollHeader) can never leave a stale gap above the panel. */
+    $(window).on('resize scroll', function () {
+        if (isOpen()) positionPanel();
     });
 }
 
@@ -385,71 +418,6 @@ function initEditSidebar() {
         }, 200);
     });
 }
-
-function initSidebarDropdown() {
-    const $dropdownButtons = $(".sidebar-dropdown-btn");
-
-    $dropdownButtons.each(function () {
-        $(this).on("click", function () {
-            const $dropdownMenu = $(this).parent().next(".sidebar-dropdown-menu");
-            const isOpen = $dropdownMenu.hasClass("active");
-
-            $(".sidebar-dropdown-menu").not($dropdownMenu).removeClass("active");
-
-            $dropdownMenu.toggleClass("active", !isOpen);
-        });
-    });
-}
-
-function initSidebarSubDropdown() {
-    const $categoryFilter = $(".product-category-filter");
-    const $categoryHeaders = $(".product-category-header");
-    const $categoryItems = $(".product-category-items");
-
-    // Handle "All Products" filter
-    $categoryFilter.on("click", function () {
-        const $currentFilter = $(this);
-        const category = $currentFilter.data("category");
-
-        // Update active state on filters
-        $categoryFilter.removeClass("active");
-        $currentFilter.addClass("active");
-
-        // Show/hide category items based on selection
-        if (category === "all") {
-            $categoryItems.addClass("hidden");
-            $categoryHeaders.find(".category-arrow").removeClass("expanded");
-        } else {
-            $categoryItems.each(function () {
-                const $items = $(this);
-                const itemCategory = $items.data("category-group");
-                if (itemCategory === category) {
-                    $items.removeClass("hidden");
-                    $items.closest(".product-category-item").find(".product-category-header").find(".category-arrow").addClass("expanded");
-                } else {
-                    $items.addClass("hidden");
-                    $items.closest(".product-category-item").find(".product-category-header").find(".category-arrow").removeClass("expanded");
-                }
-            });
-        }
-    });
-
-    // Handle category header clicks to expand/collapse
-    $categoryHeaders.on("click", function () {
-        const $currentHeader = $(this);
-        const $categoryGroup = $currentHeader.closest(".product-category-item").find(".product-category-items");
-        const $arrow = $currentHeader.find(".category-arrow");
-
-        // Close all other categories
-        $categoryItems.not($categoryGroup).addClass("hidden");
-        $categoryHeaders.not($currentHeader).find(".category-arrow").removeClass("expanded");
-
-        // Toggle current category
-        $categoryGroup.toggleClass("hidden");
-        $arrow.toggleClass("expanded");
-    });
-}
-
 
 function initSearchBar() {
     const $searchBtn = $(".search-btn");

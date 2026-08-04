@@ -1,7 +1,16 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8GFRCEFB87');
+</script>
     <base href="/">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,13 +34,21 @@
     <meta name="twitter:image:width" content="1200" />
     <meta name="twitter:image:height" content="630" />
     <title>Why Structural Health Monitoring Matters for Ageing Infrastructure</title>
+    <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../css/vendor/brands.css">
+    <link rel="stylesheet" href="../css/vendor/regular.css">
+    <link rel="stylesheet" href="../css/vendor/solid.css">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/vendor/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
     <link rel="stylesheet" href="../css/chatbot.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/detail-page.css">
@@ -159,7 +176,7 @@
             <div class="detail-grid">
                 <article class="detail-article">
                     <div class="tts-bar">
-                        <button id="ttsPlayBtn" class="tts-btn"><i class="fas fa-play"></i></button>
+                        <button id="ttsPlayBtn" class="tts-btn" aria-label="Play article aloud" aria-pressed="false"><i class="fas fa-play"></i></button>
                         <div class="tts-progress" id="ttsProgressBar">
                             <div id="progressFill" class="tts-fill"></div>
                         </div>
@@ -170,7 +187,7 @@
                             <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> Sep 20, 2025</span>
                             <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Structural Health Monitoring</span>
                         </div>
-                        <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Yuva Subharam <a href="https://www.linkedin.com/in/yuva-subharam-vasamsetti-75a39117a/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a> | Sentra Technologies</span>
+                        <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Yuva Subharam <a href="https://www.linkedin.com/in/yuva-subharam-vasamsetti-75a39117a/" target="_blank" rel="noopener" aria-label="Yuva Subharam on LinkedIn"><i class="fa-brands fa-linkedin"></i></a> | Sentra Technologies</span>
                     </div>
                     <div id="ttsContent">
                         <p>Every structure tells a story through its vibrations, strains, and temperatures — but until recently, we had no way to listen in real time. The 2021 collapse of the Champlain Towers South condominium in Surfside, Florida, killed 98 people and exposed a devastating gap: post-collapse investigations revealed that structural deterioration had been documented years earlier, yet no continuous monitoring system existed to track its progression. Across the globe, over 60% of India's 1.65 lakh bridges are older than their design life, and the Morbi bridge collapse in 2022 (135 deaths) underscored that periodic visual inspections are fundamentally insufficient for aging infrastructure.</p>

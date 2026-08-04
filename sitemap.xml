@@ -347,6 +347,31 @@
       </url>
 
       <url>
+            <loc>https://sentratech.in/blogs/what-is-a-strain-gauge-types-working-principle.html</loc>
+            <lastmod>2026-08-03</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+      <url>
+            <loc>https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html</loc>
+            <lastmod>2026-08-03</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+      <url>
+            <loc>https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html</loc>
+            <lastmod>2026-08-03</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+      <url>
+            <loc>https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html</loc>
+            <lastmod>2026-08-03</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+
+      <url>
             <loc>https://sentratech.in/products/core-communications.html</loc>
             <lastmod>2025-11-13</lastmod>
             <changefreq>monthly</changefreq>
@@ -383,14 +408,6 @@
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
-      <url>
-            <loc>https://sentratech.in/products/lixelkity-k1.html</loc>
-            <lastmod>2026-07-23</lastmod>
-            <changefreq>monthly</changefreq>
-            <priority>0.6</priority>
-      </url>
-
-
       <url>
             <loc>https://sentratech.in/products/edge-devices.html</loc>
             <lastmod>2025-11-13</lastmod>
@@ -508,5 +525,34 @@
             <priority>0.6</priority>
       </url>
 
+      <url>
+            <loc>https://sentratech.in/products/lcc.html</loc>
+            <lastmod>2026-07-23</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+
+      <url>
+            <loc>https://sentratech.in/products/lixelstudio.html</loc>
+            <lastmod>2026-07-23</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+
+      <!-- Glossary Page -->
+      <url>
+            <loc>https://sentratech.in/glossary.html</loc>
+            <lastmod>2026-08-03</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.7</priority>
+      </url>
+
+      <!-- Document Center Page -->
+      <url>
+            <loc>https://sentratech.in/document-center.html</loc>
+            <lastmod>2026-08-03</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.5</priority>
+      </url>
 
 </urlset>

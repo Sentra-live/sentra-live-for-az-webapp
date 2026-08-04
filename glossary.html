@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8GFRCEFB87');
+</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glossary - SENTRA - Smart Structural Monitoring</title>
@@ -109,13 +118,21 @@
     }
     </script>
 
+    <link rel="stylesheet" href="./css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="./css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="./css/vendor/brands.css">
+    <link rel="stylesheet" href="./css/vendor/regular.css">
+    <link rel="stylesheet" href="./css/vendor/solid.css">
+    <link rel="stylesheet" href="./css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/vendor/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/solutions-v2.css">
     <link rel="stylesheet" href="./css/detail-page.css">
     <link rel="stylesheet" href="./css/chatbot.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet" />
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
 
@@ -132,49 +149,62 @@
             66% { transform: translateY(6px) rotate(-0.3deg); }
         }
 
-        .section-banner {
-            padding: 0 !important;
+        /* solutions-v2.css (loaded for other page sections) sets
+           header{position:absolute} for full-bleed image heroes. This page
+           uses the plain FAQ-style text hero, so restore normal header flow —
+           otherwise the header floats over the hero and clips the eyebrow text. */
+        header {
+            position: static;
         }
 
+        /* ── Hero (badge-style, matches Document Center / Videos / Feed) ── */
         .glossary-hero {
             position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             overflow: hidden;
+            margin: 28px 28px 0;
+            border-radius: 28px;
+            padding: 70px 40px;
             text-align: center;
-            padding: 110px 24px 60px;
+            background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(244,129,32,0.16) 0%, transparent 65%);
         }
-        .glossary-hero-bottom-line {
-            position: absolute;
-            bottom: 0; left: 50%; transform: translateX(-50%);
-            width: 60%; height: 1px;
-            background: linear-gradient(90deg, transparent, rgba(244,129,32,0.2), transparent);
-        }
-        .glossary-hero-content { position: relative; z-index: 1; max-width: 640px; animation: glossaryFadeUp 0.7s ease-out; }
-        .glossary-hero-eyebrow {
-            display: inline-block;
-            font-size: 11px; font-weight: 700; letter-spacing: 3px;
+        body.dark-mode .glossary-hero { background-color: #0a0a0e; }
+        body.lightmode .glossary-hero { background-color: #ffffff; border: 1px solid rgba(0,0,0,0.06); }
+
+        .glossary-hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 18px;
+            border-radius: 100px;
+            font-size: 12px;
+            font-weight: 700;
             text-transform: uppercase;
-            color: rgba(244,129,32,0.65);
-            margin-bottom: 16px;
+            letter-spacing: 0.5px;
+            background: rgba(244,129,32,0.1);
+            border: 1px solid rgba(244,129,32,0.2);
+            color: #f48120;
+            margin-bottom: 18px;
         }
+
         .glossary-hero-title {
-            font-size: clamp(36px, 6vw, 64px);
+            font-size: clamp(32px, 5vw, 56px);
             font-weight: 800;
-            color: #fff;
-            line-height: 1.08;
-            letter-spacing: -1px;
-            margin-bottom: 12px;
+            line-height: 1.1;
+            margin: 0 0 14px;
         }
-        .glossary-hero-title .highlight { color: #f48120; }
-        .glossary-hero-subtitle {
-            font-size: 16px;
-            color: rgba(255,255,255,0.4);
-            line-height: 1.7;
-            margin: 0 auto 28px;
-            max-width: 480px;
+        body.dark-mode .glossary-hero-title { color: #fff; }
+        body.lightmode .glossary-hero-title { color: #1a1a1a; }
+        .glossary-hero-title .accent { color: #f48120; }
+
+        .glossary-hero-sub {
+            font-size: clamp(14px, 2vw, 17px);
+            max-width: 600px;
+            margin: 0 auto 26px;
+            line-height: 1.6;
         }
+        body.dark-mode .glossary-hero-sub { color: rgba(255,255,255,0.5); }
+        body.lightmode .glossary-hero-sub { color: rgba(0,0,0,0.5); }
+
         .glossary-hero-search {
             max-width: 480px;
             margin: 0 auto;
@@ -182,22 +212,22 @@
         }
         .glossary-hero-search input {
             width: 100%;
-            padding: 14px 48px 14px 48px;
-            border-radius: 12px;
-            border: 1px solid rgba(255,255,255,0.08);
-            background: rgba(255,255,255,0.04);
-            color: #fff;
-            font-size: 0.9rem;
+            padding: 14px 48px 14px 46px;
+            border-radius: 14px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.05);
+            color: inherit;
+            font-size: 0.92rem;
             outline: none;
             transition: border-color 0.25s ease, background 0.25s ease;
             box-sizing: border-box;
         }
         .glossary-hero-search input:focus { border-color: #f48120; background: rgba(244,129,32,0.06); }
-        .glossary-hero-search input::placeholder { opacity: 0.35; color: rgba(255,255,255,0.4); }
+        .glossary-hero-search input::placeholder { opacity: 0.4; }
         .glossary-hero-search-icon {
             position: absolute; left: 16px; top: 50%; transform: translateY(-50%);
             font-size: 1.2rem; pointer-events: none;
-            color: rgba(255,255,255,0.2);
+            opacity: 0.35;
         }
         .glossary-hero-search-clear {
             position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
@@ -210,11 +240,6 @@
         .glossary-hero-search-clear:hover { background: rgba(244,129,32,0.15); color: #f48120; }
         .glossary-hero-search-clear.visible { display: flex; }
 
-        body.lightmode .glossary-hero {
-            background: none;
-        }
-        body.lightmode .glossary-hero-title { color: #1a1a1a; }
-        body.lightmode .glossary-hero-subtitle { color: rgba(0,0,0,0.35); }
         body.lightmode .glossary-hero-search input {
             border-color: rgba(0,0,0,0.08);
             background: rgba(0,0,0,0.03);
@@ -225,6 +250,10 @@
         body.lightmode .glossary-hero-search-icon { color: rgba(0,0,0,0.2); }
         body.lightmode .glossary-hero-search-clear { background: rgba(0,0,0,0.06); color: rgba(0,0,0,0.3); }
         body.lightmode .glossary-hero-search-clear:hover { background: rgba(244,129,32,0.12); color: #f48120; }
+
+        @media (max-width: 768px) {
+            .glossary-hero { margin: 16px 12px 0; border-radius: 18px; padding: 44px 22px; }
+        }
 
         .glossary-section {
             padding: 3rem 0 4rem;
@@ -515,7 +544,6 @@
         .glossary-empty p { font-size: 1rem; opacity: 0.4; margin: 0; }
 
         @media (min-width: 1024px) {
-            .glossary-hero { padding: 130px 24px 70px; }
             .glossary-layout { padding-left: 80px; }
             .glossary-sidebar { left: 24px; width: 40px; }
             .glossary-sidebar-inner { gap: 2px; padding: 6px 4px; border-radius: 14px; }
@@ -552,19 +580,14 @@
     </aside>
 
     <main>
-        <div class="section-banner">
-            <div class="glossary-hero">
-                <div class="glossary-hero-bottom-line"></div>
-                <div class="glossary-hero-content">
-                    <span class="glossary-hero-eyebrow">Reference</span>
-                    <h1 class="glossary-hero-title"><span class="highlight">G</span>lossary</h1>
-                    <p class="glossary-hero-subtitle">Key terms in IoT, structural monitoring &amp; digital twin technology</p>
-                    <div class="glossary-hero-search">
-                        <span class="material-symbols-rounded glossary-hero-search-icon">search</span>
-                        <input type="text" id="glossarySearch" placeholder="Search glossary terms…" />
-                        <button class="glossary-hero-search-clear" id="glossarySearchClear" aria-label="Clear search">&#10005;</button>
-                    </div>
-                </div>
+        <div class="glossary-hero">
+            <span class="glossary-hero-badge"><i class="fa-solid fa-book"></i> Reference</span>
+            <h1 class="glossary-hero-title">Glossary of <span class="accent">Terms</span></h1>
+            <p class="glossary-hero-sub">Key terms in IoT, structural monitoring &amp; digital twin technology</p>
+            <div class="glossary-hero-search">
+                <span class="material-symbols-rounded glossary-hero-search-icon">search</span>
+                <input type="text" id="glossarySearch" placeholder="Search glossary terms…" />
+                <button class="glossary-hero-search-clear" id="glossarySearchClear" aria-label="Clear search">&#10005;</button>
             </div>
         </div>
 

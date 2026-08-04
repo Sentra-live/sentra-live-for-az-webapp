@@ -3,11 +3,16 @@
   AddOutputFilterByType DEFLATE application/javascript application/x-javascript application/xml application/json
 </IfModule>
 
+# MIME types missing from Apache defaults (AVIF images 404 without this)
+<IfModule mod_mime.c>
+  AddType image/avif .avif
+</IfModule>
+
 <IfModule mod_headers.c>
   Header append Vary Accept-Encoding
   
   # Cache control for images
-  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico)$">
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|avif)$">
     Header set Cache-Control "public, max-age=360000, immutable"
   </FilesMatch>
   
