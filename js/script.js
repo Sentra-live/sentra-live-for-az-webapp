@@ -7,10 +7,37 @@ Promise.all([
     fetch(pathPrefix + "sidebar.html").then(res => res.text())
 ])
     .then(([headerHTML, footerHTML, sidebarHTML]) => {
-        $("#header").html(headerHTML);
-        $("#footer").html(footerHTML);
-        $("#sidebar").html(sidebarHTML);
+        // Strip external <script src> tags from the partials BEFORE jQuery .html()
+        // injects them: jQuery would otherwise re-execute them via _evalUrl, which
+        // hardcodes `async: false` (synchronous XMLHttpRequest on the main thread -
+        // a Chrome deprecation). The extracted scripts are loaded normally (async)
+        // after injection instead. Inline scripts are left in place - jQuery runs
+        // those without any XHR.
+        var partialScripts = [];
+        var stripScripts = function (html) {
+            return html.replace(/<script\b[^>]*\bsrc\s*=\s*["'][^"']*["'][^>]*>\s*<\/script>/gi, function (tag) {
+                partialScripts.push(tag);
+                return '';
+            });
+        };
+
+        $("#header").html(stripScripts(headerHTML));
+        $("#footer").html(stripScripts(footerHTML));
+        $("#sidebar").html(stripScripts(sidebarHTML));
         fixNavLinks();
+
+        // Load the extracted scripts asynchronously (non-blocking, no sync XHR).
+        partialScripts.forEach(function (tag) {
+            var srcMatch = tag.match(/\bsrc\s*=\s*["']([^"']*)["']/i);
+            if (!srcMatch) return;
+            var src = srcMatch[1];
+            var script = document.createElement('script');
+            // Resolve bare-relative paths against the page so subpages work too.
+            script.src = (/^([a-z]+:)?\/\//i.test(src) || src.charAt(0) === '/' || src.indexOf(':') > -1)
+                ? src
+                : pathPrefix + src;
+            document.head.appendChild(script);
+        });
     })
     .then(() => {
         // Deferred off the initial paint/LCP path: the YouTube IFrame API is a

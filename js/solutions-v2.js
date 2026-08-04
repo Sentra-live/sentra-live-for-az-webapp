@@ -28,7 +28,13 @@
 
   /* ─── How It Works Slideshow ─── */
   function initSlideshow() {
-    document.querySelectorAll('.sol-slideshow').forEach(function (show) {
+    var SLIDESHOW_MIN_HEIGHT = 680;
+
+    function isScrollMode(scrollTrack) {
+      return !!(scrollTrack && window.innerWidth > 900 && window.innerHeight > SLIDESHOW_MIN_HEIGHT);
+    }
+
+    function setupShow(show) {
       var slides    = show.querySelectorAll('.sol-slide');
       var dots      = show.querySelectorAll('.sol-slide-indicator-dot');
       var prevBtn   = show.querySelector('.sol-slide-prev');
@@ -43,7 +49,9 @@
       var wheelBlock = false;
       var INTERVAL   = 5500;
       var scrollTrack = show.closest('.sol-how-scroll-track');
-      var scrollMode  = !!(scrollTrack && window.innerWidth > 900);
+      var scrollMode  = isScrollMode(scrollTrack);
+
+      if (scrollTrack) scrollTrack.style.height = '';
 
       function updateUI() {
         if (fill)      fill.style.width = ((current + 1) / total * 100) + '%';
@@ -68,68 +76,125 @@
       function toNext() { goTo(current + 1, false); }
       function toPrev() { goTo(current - 1, true); }
 
-      /* ══ SCROLL-DRIVEN (desktop with .sol-how-scroll-track) ══ */
+      var onResize = null, onPageScroll = null, onWheel = null, onTouchStart = null,
+          onTouchEnd = null, onMouseEnter = null, onMouseLeave = null, onClickNext = null,
+          onClickPrev = null, onModeCheck = null, dotListeners = [];
+
+      function dispose() {
+        window.removeEventListener('resize', onModeCheck);
+        if (onResize)     window.removeEventListener('resize', onResize);
+        if (onPageScroll) window.removeEventListener('scroll', onPageScroll);
+        clearInterval(timer);
+        if (nextBtn && onClickNext) nextBtn.removeEventListener('click', onClickNext);
+        if (prevBtn && onClickPrev) prevBtn.removeEventListener('click', onClickPrev);
+        dots.forEach(function (d, i) { if (dotListeners[i]) d.removeEventListener('click', dotListeners[i]); });
+        show.removeEventListener('wheel', onWheel);
+        show.removeEventListener('touchstart', onTouchStart);
+        show.removeEventListener('touchend', onTouchEnd);
+        show.removeEventListener('mouseenter', onMouseEnter);
+        show.removeEventListener('mouseleave', onMouseLeave);
+      }
+      show.__slideshowDispose = dispose;
+
+      /* ══ SCROLL-DRIVEN (wide + tall viewport with .sol-how-scroll-track) ══ */
       if (scrollMode) {
         var vh = window.innerHeight;
         scrollTrack.style.height = (total + 1) * vh + 'px';
 
-        function onPageScroll() {
+        onPageScroll = function () {
           var rect = scrollTrack.getBoundingClientRect();
           var idx  = Math.max(0, Math.min(total - 1, Math.floor(-rect.top / vh)));
           if (idx !== current) goTo(idx, idx < current);
-        }
+        };
         window.addEventListener('scroll', onPageScroll, { passive: true });
         onPageScroll();
 
-        window.addEventListener('resize', function () {
+        onResize = function () {
           vh = window.innerHeight;
           scrollTrack.style.height = (total + 1) * vh + 'px';
           onPageScroll();
-        }, { passive: true });
+        };
+        window.addEventListener('resize', onResize, { passive: true });
 
         function scrollToSlide(n) {
           var safeN    = Math.max(0, Math.min(total - 1, n));
           var trackTop = scrollTrack.getBoundingClientRect().top + window.scrollY;
           window.scrollTo({ top: trackTop + safeN * vh, behavior: 'smooth' });
         }
-        if (nextBtn) nextBtn.addEventListener('click', function () { scrollToSlide(current + 1); });
-        if (prevBtn) prevBtn.addEventListener('click', function () { scrollToSlide(current - 1); });
+        if (nextBtn) {
+          onClickNext = function () { scrollToSlide(current + 1); };
+          nextBtn.addEventListener('click', onClickNext);
+        }
+        if (prevBtn) {
+          onClickPrev = function () { scrollToSlide(current - 1); };
+          prevBtn.addEventListener('click', onClickPrev);
+        }
         dots.forEach(function (dot, i) {
-          dot.addEventListener('click', function () { scrollToSlide(i); });
+          dotListeners[i] = function () { scrollToSlide(i); };
+          dot.addEventListener('click', dotListeners[i]);
         });
 
-      /* ══ AUTO-ADVANCE (mobile / no scroll track) ══ */
+      /* ══ AUTO-ADVANCE (mobile / short viewport / no scroll track) ══ */
       } else {
         function resetTimer() {
           clearInterval(timer);
           timer = setInterval(toNext, INTERVAL);
         }
-        if (nextBtn) nextBtn.addEventListener('click', function () { toNext(); resetTimer(); });
-        if (prevBtn) prevBtn.addEventListener('click', function () { toPrev(); resetTimer(); });
+        if (nextBtn) {
+          onClickNext = function () { toNext(); resetTimer(); };
+          nextBtn.addEventListener('click', onClickNext);
+        }
+        if (prevBtn) {
+          onClickPrev = function () { toPrev(); resetTimer(); };
+          prevBtn.addEventListener('click', onClickPrev);
+        }
         dots.forEach(function (dot, i) {
-          dot.addEventListener('click', function () { goTo(i, i < current); resetTimer(); });
+          dotListeners[i] = function () { goTo(i, i < current); resetTimer(); };
+          dot.addEventListener('click', dotListeners[i]);
         });
-        show.addEventListener('wheel', function (e) {
+
+        onWheel = function (e) {
           if (wheelBlock) return;
           wheelBlock = true;
           setTimeout(function () { wheelBlock = false; }, 900);
           e.deltaY > 0 ? toNext() : toPrev();
           resetTimer();
-        }, { passive: true });
+        };
+        show.addEventListener('wheel', onWheel, { passive: true });
         var touchX = 0;
-        show.addEventListener('touchstart', function (e) {
-          touchX = e.changedTouches[0].clientX;
-        }, { passive: true });
-        show.addEventListener('touchend', function (e) {
+        onTouchStart = function (e) { touchX = e.changedTouches[0].clientX; };
+        onTouchEnd = function (e) {
           var dx = e.changedTouches[0].clientX - touchX;
           if (Math.abs(dx) > 40) { dx < 0 ? toNext() : toPrev(); resetTimer(); }
-        }, { passive: true });
-        show.addEventListener('mouseenter', function () { clearInterval(timer); });
-        show.addEventListener('mouseleave', function () { resetTimer(); });
+        };
+        show.addEventListener('touchstart', onTouchStart, { passive: true });
+        show.addEventListener('touchend', onTouchEnd, { passive: true });
+        onMouseEnter = function () { clearInterval(timer); };
+        onMouseLeave = function () { resetTimer(); };
+        show.addEventListener('mouseenter', onMouseEnter);
+        show.addEventListener('mouseleave', onMouseLeave);
         resetTimer();
       }
 
+      onModeCheck = function () {
+        var newMode = isScrollMode(scrollTrack);
+        if (newMode !== scrollMode) {
+          dispose();
+          show.__slideshowDispose = null;
+          setupShow(show);
+        }
+      };
+      window.addEventListener('resize', onModeCheck, { passive: true });
+
       updateUI();
+    }
+
+    document.querySelectorAll('.sol-slideshow').forEach(function (show) {
+      if (show.__slideshowDispose) {
+        show.__slideshowDispose();
+        show.__slideshowDispose = null;
+      }
+      setupShow(show);
     });
   }
 
