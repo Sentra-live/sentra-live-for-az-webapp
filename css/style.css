@@ -1992,7 +1992,7 @@ body.lightmode .mega-quick-links-card {
     padding: 15px 15px 14px;
     border-radius: 14px;
     background-color: #0b0b0c;
-    background-image: url('../image/branding/contact-card-bg.png');
+    background-image: url('../image/branding/contact-card-bg.webp');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
@@ -2710,7 +2710,7 @@ body.lightmode .dropdown-menu.mega-solutions {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url('../image/svg/contour.png');
+    background-image: url('../image/svg/contour.webp');
     background-size: cover;
     background-position: center;
     opacity: 0.32;

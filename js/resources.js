@@ -16,7 +16,7 @@
             color: 'blue',
             type: 'blogs',
             date: '3 Aug 2026',
-            image: './image/products/strain_gauge.png',
+            image: './image/products/strain_gauge.webp',
             link: './blogs/what-is-a-strain-gauge-types-working-principle.html',
             featured: true
         },
@@ -39,7 +39,7 @@
             color: 'purple',
             type: 'blogs',
             date: '3 Aug 2026',
-            image: './image/products/accelerometer_cardnav.png',
+            image: './image/products/accelerometer_cardnav.webp',
             link: './blogs/what-is-an-accelerometer-sensor-guide.html'
         },
         {
@@ -235,7 +235,7 @@
             color: 'orange',
             type: 'articles',
             date: '23 Jul 2026',
-            image: './image/articles/xgrids-authorized-reseller-india.png',
+            image: './image/articles/xgrids-authorized-reseller-india.webp',
             link: './article/xgrids-authorized-reseller-india.html',
             featured: true
         },
