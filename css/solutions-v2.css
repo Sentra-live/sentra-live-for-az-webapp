@@ -66,6 +66,20 @@ header {
     display: block
 }
 
+.sol-hero-media iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200%;
+    height: 200%;
+    max-width: none;
+    min-width: 100%;
+    min-height: 100%;
+    border: 0;
+    opacity: .55
+}
+
 .sol-hero-container {
     position: relative;
     z-index: 4;

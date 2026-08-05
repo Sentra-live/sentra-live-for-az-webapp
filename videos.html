@@ -740,12 +740,12 @@
     <script>
         (function () {
             var videos = [
-                { id: "SdzX8MXYcis", title: "Predict Failures Before They Happen: Sentra Structural Monitoring for Bridges, Buildings, & Facilities | Sentra", dur: "1:40", cat: "Structural Health Monitoring" },
-                { id: "G91JkA9I2TE", title: "From Cracks to Scour: Detecting Early Bridge Damage with Continuous Monitoring | Sentra", dur: "1:11", cat: "Advanced NDT" }
+                { id: "SdzX8MXYcis", title: "Predict Failures Before They Happen | Structural Health Monitoring by Sentra", dur: "1:40", cat: "Structural Health Monitoring" },
+                { id: "G91JkA9I2TE", title: "10 Early Warning Signs Your Bridge Needs Structural Monitoring | Sentra", dur: "1:11", cat: "Advanced NDT" }
             ];
 
             var shorts = [
-                { id: "rrmYaaQJ8HM", title: "From Sensor to Decision: The Tech Behind Safe Bridges | Sentra" }
+                { id: "2vN1-4tC3q4", title: "Detect Structural Movement Early with Sentra Tiltmeter | Real-Time Tilt Monitoring | Sentra", dur: "0:26" }
             ];
 
             function escapeHtml(s) {
@@ -831,12 +831,29 @@
                     '<img src="https://i.ytimg.com/vi/' + s.id + '/maxresdefault.jpg" alt="' + escapeHtml(s.title) + '" loading="lazy"' + thumbFallback + '>' +
                     '<span class="yv-short-badge">Short</span>' +
                     '<span class="yv-play-badge"><i class="fa-solid fa-play"></i></span>' +
+                    (s.dur ? '<span class="yv-duration">' + s.dur + '</span>' : '') +
                     '</button>' +
                     '<div class="yv-card-body"><h4>' + escapeHtml(s.title) + '</h4></div>' +
                     '</div>' +
                     '</div>';
             }).join('');
             document.getElementById('yvShortsTrack').innerHTML = shortsHtml;
+
+            var videoCountEl = document.querySelector('#videos .yv-section-count');
+            if (videoCountEl) videoCountEl.textContent = videos.length;
+            var shortCountEl = document.querySelector('#shorts .yv-section-count');
+            if (shortCountEl) shortCountEl.textContent = shorts.length;
+
+            var heroStats = document.querySelectorAll('.yv-hero-stat-num');
+            if (heroStats.length >= 2) {
+                heroStats[0].textContent = videos.length;
+                heroStats[1].textContent = shorts.length;
+            }
+
+            var shortsSection = document.getElementById('shorts');
+            if (shortsSection && shorts.length === 0) {
+                shortsSection.style.display = 'none';
+            }
 
             document.querySelectorAll('.yv-video-trigger').forEach(function (btn) {
                 btn.addEventListener('click', function (e) {
