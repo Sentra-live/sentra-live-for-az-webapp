@@ -83,7 +83,9 @@
                                                 <i class="fa-brands fa-facebook"></i>
                                             </a>
                                             <div class="qr-hover-card">
-                                                <img src="./image/svg/Facebook - Sentra.svg" alt="Facebook QR Code" class="qr-code-img">
+                                                <div class="qr-code-render" data-url="https://www.facebook.com/clovetechnologiesofficial/"
+                                                    data-icon="fa-brands fa-facebook" data-icon-color="#1877f2"
+                                                    aria-label="QR Code for Facebook"></div>
                                                 <p class="qr-label qr-label--facebook"><i class="fa-brands fa-facebook"></i> Scan to follow</p>
                                             </div>
                                         </div>
@@ -93,27 +95,33 @@
                                                 <i class="fa-brands fa-youtube"></i>
                                             </a>
                                             <div class="qr-hover-card">
-                                                <img src="./image/svg/Youtube - Clove.svg" alt="YouTube QR Code" class="qr-code-img">
+                                                <div class="qr-code-render" data-url="https://www.youtube.com/@Sentra-tech/"
+                                                    data-icon="fa-brands fa-youtube" data-icon-color="#ff0000"
+                                                    aria-label="QR Code for YouTube"></div>
                                                 <p class="qr-label qr-label--youtube"><i class="fa-brands fa-youtube"></i> Scan to subscribe</p>
                                             </div>
                                         </div>
                                         <div class="social-qr-wrapper">
-                                            <a href="https://www.instagram.com/sentra_tech_ofiicial/" class="social-item"
+                                            <a href="https://www.instagram.com/sentra_tech_official/" class="social-item"
                                                 aria-label="Instagram">
                                                 <i class="fa-brands fa-instagram"></i>
                                             </a>
                                             <div class="qr-hover-card">
-                                                <img src="./image/svg/Instagram.svg" alt="Instagram QR Code" class="qr-code-img">
+                                                <div class="qr-code-render" data-url="https://www.instagram.com/sentra_tech_official/"
+                                                    data-icon="fa-brands fa-instagram" data-icon-color="#e1306c"
+                                                    aria-label="QR Code for Instagram"></div>
                                                 <p class="qr-label qr-label--instagram"><i class="fa-brands fa-instagram"></i> Scan to follow</p>
                                             </div>
                                         </div>
                                         <div class="social-qr-wrapper">
-                                            <a href="https://www.linkedin.com/company/sentra-clovetech/"
+                                            <a href="https://www.linkedin.com/company/sentrabyclove/"
                                                 class="social-item" aria-label="LinkedIn">
                                                 <i class="fa-brands fa-linkedin"></i>
                                             </a>
                                             <div class="qr-hover-card">
-                                                <img src="./image/svg/Linkedin - Sentra.svg" alt="LinkedIn QR Code" class="qr-code-img">
+                                                <div class="qr-code-render" data-url="https://www.linkedin.com/company/sentrabyclove/"
+                                                    data-icon="fa-brands fa-linkedin" data-icon-color="#0a66c2"
+                                                    aria-label="QR Code for LinkedIn"></div>
                                                 <p class="qr-label"><i class="fa-brands fa-linkedin"></i> Scan to connect</p>
                                             </div>
                                         </div>
@@ -123,7 +131,9 @@
                                                 <i class="fa-brands fa-x-twitter"></i>
                                             </a>
                                             <div class="qr-hover-card">
-                                                <img src="./image/svg/Twitter.svg" alt="X (Twitter) QR Code" class="qr-code-img">
+                                                <div class="qr-code-render" data-url="https://x.com/clovetech_offl"
+                                                    data-icon="fa-brands fa-x-twitter" data-icon-color="#0a0a0a"
+                                                    aria-label="QR Code for X (Twitter)"></div>
                                                 <p class="qr-label"><i class="fa-brands fa-x-twitter"></i> Scan to follow</p>
                                             </div>
                                         </div>
@@ -150,3 +160,87 @@
         </div>
     </div>
 </div>
+
+<script src="./js/vendor/qrcode.min.js"></script>
+<script>
+    (function () {
+        var SIZE = 236;          // render at 2x for crispness; CSS displays it at 118px
+
+        function roundedRect(ctx, x, y, w, h, r) {
+            r = Math.max(0, Math.min(r, w / 2, h / 2));
+            ctx.beginPath();
+            ctx.moveTo(x + r, y);
+            ctx.lineTo(x + w - r, y);
+            ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+            ctx.lineTo(x + w, y + h - r);
+            ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+            ctx.lineTo(x + r, y + h);
+            ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+            ctx.lineTo(x, y + r);
+            ctx.quadraticCurveTo(x, y, x + r, y);
+            ctx.closePath();
+            ctx.fill();
+        }
+
+        function inFinder(r, c, count) {
+            return (r < 7 && c < 7) || (r < 7 && c >= count - 7) || (r >= count - 7 && c < 7);
+        }
+
+        function drawEyes(ctx, count, m) {
+            var spots = [[0, 0], [0, count - 7], [count - 7, 0]];
+            spots.forEach(function (spot) {
+                var x = spot[0] * m;
+                var y = spot[1] * m;
+                ctx.fillStyle = '#111111';
+                roundedRect(ctx, x, y, 7 * m, 7 * m, 0.55 * m);
+                ctx.fillStyle = '#ffffff';
+                roundedRect(ctx, x + m, y + m, 5 * m, 5 * m, 0.42 * m);
+                ctx.fillStyle = '#111111';
+                roundedRect(ctx, x + 2 * m, y + 2 * m, 3 * m, 3 * m, 0.28 * m);
+            });
+        }
+
+        function renderSocialQR(el) {
+            var qr = qrcode(0, 'M');
+            qr.addData(el.getAttribute('data-url') || '');
+            qr.make();
+            var count = qr.getModuleCount();
+            var m = SIZE / count;
+            var canvas = document.createElement('canvas');
+            canvas.width = SIZE;
+            canvas.height = SIZE;
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, SIZE, SIZE);
+
+            var gap = m * 0.13;
+            var dot = m - gap * 2;
+            var dotR = m * 0.28;
+
+            ctx.fillStyle = '#111111';
+            for (var r = 0; r < count; r++) {
+                for (var c = 0; c < count; c++) {
+                    if (inFinder(r, c, count)) continue;
+                    if (qr.isDark(r, c)) roundedRect(ctx, c * m + gap, r * m + gap, dot, dot, dotR);
+                }
+            }
+            drawEyes(ctx, count, m);
+
+            el.appendChild(canvas);
+
+            var icon = document.createElement('span');
+            icon.className = 'qr-center-icon';
+            icon.style.color = el.getAttribute('data-icon-color') || '#f48120';
+            icon.innerHTML = '<i class="' + el.getAttribute('data-icon') + '"></i>';
+            el.appendChild(icon);
+        }
+
+        function initQR() {
+            var els = document.querySelectorAll('.qr-code-render');
+            if (!els.length) return;
+            if (typeof qrcode !== 'function') { setTimeout(initQR, 120); return; }
+            els.forEach(renderSocialQR);
+        }
+        initQR();
+    })();
+</script>
