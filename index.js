@@ -29,7 +29,6 @@ const SPREADSHEET_ID = '1zBN7bSYfOl9MqyI34o5TwA02qhATqt5Wz7JhZLOx8qo';
 const SHEET_CONTACTS = 'Contact Leads';
 const SHEET_NEWSLETTER = 'Newsletter Subscribers';
 const SHEET_CHATBOT_LEADS = 'Chatbot Leads';
-const SHEET_CHAT_HISTORY = 'Chat History'; // legacy, one row per message - left as-is, no longer written to
 const SHEET_CHAT_CONVERSATIONS = 'Chat Conversations'; // current - one row per session, messages as JSON
 const SHEET_LEAD_NOTES = 'Lead Notes';
 const SHEET_BROCHURE_DOWNLOADS = 'Brochure Downloads';
@@ -37,7 +36,6 @@ const CONTACT_HEADERS = ['Timestamp', 'First Name', 'Last Name', 'Email', 'Subje
 const NEWSLETTER_HEADERS = ['Timestamp', 'Email'];
 const BROCHURE_DOWNLOADS_HEADERS = ['Timestamp', 'Full Name', 'Email', 'Contact Phone', 'Company / Institute', 'Additional Information', 'Brochure', 'Source Page'];
 const CHATBOT_LEADS_HEADERS = ['Timestamp', 'Name', 'Email'];
-const CHAT_HISTORY_HEADERS = ['Session ID', 'Timestamp', 'Lead Name', 'Lead Email', 'Message', 'Sender', 'Status', 'Agent Name'];
 const CHAT_CONVERSATIONS_HEADERS = ['Session ID', 'Lead Name', 'Lead Email', 'Status', 'Last Updated', 'Messages JSON'];
 const LEAD_NOTES_HEADERS = ['Timestamp', 'Lead Row', 'Lead Email', 'Type', 'Content'];
 

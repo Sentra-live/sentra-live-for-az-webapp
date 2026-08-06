@@ -1,6 +1,6 @@
 $(function () {
 
-    var swiperPartner = new Swiper('.swiper.swiperPartner', {
+    new Swiper('.swiper.swiperPartner', {
         autoplay: {
             delay: 0,
             disableOnInteraction: false,
@@ -28,7 +28,7 @@ $(function () {
 
 
 $(function () {
-    var swiperTestimonial = new Swiper('.swiper.swiperTestimonial', {
+    new Swiper('.swiper.swiperTestimonial', {
         autoplay: {
             delay: 5000,
         },

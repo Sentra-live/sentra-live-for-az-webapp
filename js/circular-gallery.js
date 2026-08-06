@@ -170,7 +170,6 @@ class CircularGallery {
     }
 
     wrapPosition(x, totalWidth, canvasWidth) {
-        const halfTotal = totalWidth / 2;
         const halfCanvas = canvasWidth / 2;
 
         // Wrap around logic
@@ -183,7 +182,7 @@ class CircularGallery {
     }
 
     renderItem(item, x, centerY, index) {
-        const { img, text, link } = item;
+        const { img, text } = item;
 
         // Calculate bend effect
         const bendY = this.calculateBend(x);
