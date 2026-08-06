@@ -13,7 +13,7 @@
             var $lat = $('#mapBox').data('lat');
             var $lon = $('#mapBox').data('lon');
             var $zoom = $('#mapBox').data('zoom');
-            var map = new GMaps({
+            new GMaps({
                 el: '#mapBox',
                 lat: $lat,
                 lng: $lon,

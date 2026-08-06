@@ -740,8 +740,6 @@
                 var html = '<div class="glossary-group" id="gloss-' + l + '">';
                 html += '<div class="glossary-letter-heading">' + l + '</div>';
                 grouped[l].forEach(function (item) {
-                    var safeTerm = item.term.replace(/'/g, '\\x27');
-                    var safeDef = item.def.replace(/'/g, '\\x27');
                     html += '<button class="glossary-term" data-term="' + item.term.toLowerCase() + '" data-def="' + item.def.toLowerCase() + '" data-cat="' + item.cat.toLowerCase() + '" onclick="toggleDef(this)">';
                     html += '<div class="glossary-term-content">';
                     html += '<span class="glossary-term-name">' + item.term + '</span>';

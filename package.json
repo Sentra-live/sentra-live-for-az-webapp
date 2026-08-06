@@ -22,7 +22,7 @@
     },
     "devDependencies": {
         "jest": "^29.7.0",
-        "netlify-cli": "^23.10.0"
+        "netlify-cli": "^27.0.0"
     },
     "engines": {
         "node": ">=14.0.0"

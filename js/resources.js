@@ -295,12 +295,6 @@
         articles: 'Read Article'
     };
 
-    var SECTION_ICON_COLOR = {
-        blogs: 'rh-grad-orange',
-        'case-studies': 'rh-grad-rose',
-        articles: 'rh-grad-blue'
-    };
-
     var state = {
         tab: 'all',
         search: '',

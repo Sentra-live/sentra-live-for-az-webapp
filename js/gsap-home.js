@@ -32,7 +32,6 @@
     function initSolutionCardTilt() {
         var cards = gsap.utils.toArray(".card-solution");
         cards.forEach(function (card) {
-            var media = card.querySelector(".card-solution-media img");
             card.addEventListener("mouseenter", function () {
                 gsap.to(card, { y: -6, duration: 0.3, ease: "power2.out" });
             });

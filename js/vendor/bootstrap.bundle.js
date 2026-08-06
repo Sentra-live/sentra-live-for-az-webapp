@@ -2507,10 +2507,7 @@
           heightProp = 'scrollHeight';
           widthProp = 'scrollWidth';
         }
-      } // $FlowFixMe[incompatible-cast]: force type refinement, we compare offsetParent with window above, but Flow doesn't detect it
-
-
-      offsetParent = offsetParent;
+      }
 
       if (placement === top || (placement === left || placement === right) && variation === end) {
         sideY = bottom;

@@ -540,13 +540,12 @@
             const synth = window.speechSynthesis;
             let voices = [], isPlaying = false, isPaused = false, totalWords = 0;
             let currentWordIndex = 0, wordSpans = [], paragraphs = [], currentParagraphIndex = 0;
-            let activeUtterance = null, fallbackTimer = null, boundarySupported = false;
+            let activeUtterance = null, fallbackTimer = null;
             let autoScrollEnabled = true, mouseIdleTimer;
 
             const ttsContent = document.getElementById('ttsContent');
             const playBtn = document.getElementById('ttsPlayBtn');
             const progressFill = document.getElementById('progressFill');
-            const progressBar = document.getElementById('ttsProgressBar');
 
             function loadVoices() { voices = synth.getVoices() || []; }
             loadVoices();
@@ -585,18 +584,11 @@
             function getParagraphs() { paragraphs = Array.from(ttsContent.querySelectorAll('p, h2, h4, h5, li')).filter(el => el.textContent.trim()); }
             getParagraphs();
 
-            function computeBoundaries(text) {
-                const words = text.split(/\s+/).filter(Boolean), bounds = [];
-                let cursor = 0;
-                words.forEach(w => { const f = text.indexOf(w, cursor); bounds.push(f === -1 ? cursor : f); cursor = (f === -1 ? cursor : f) + w.length; });
-                return bounds;
-            }
-
             function scrollCenter(el) { if (el && autoScrollEnabled) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
             function clearTimer() { if (fallbackTimer) { clearInterval(fallbackTimer); fallbackTimer = null; } }
 
             function speakFrom(index) {
-                clearTimer(); boundarySupported = false;
+                clearTimer();
                 if (index >= paragraphs.length) {
                     isPlaying = isPaused = false;
                     playBtn.innerHTML = '<i class="fas fa-play"></i>';
@@ -607,7 +599,6 @@
                 currentParagraphIndex = index;
                 const p = paragraphs[index], text = p.textContent.trim();
                 if (!text) { speakFrom(index + 1); return; }
-                const bounds = computeBoundaries(text);
                 const spans = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim());
                 spans.forEach(w => w.classList.remove('highlight'));
                 const u = new SpeechSynthesisUtterance(text);
@@ -620,7 +611,7 @@
                     currentWordIndex = 0;
                     if (spans[0]) { spans[0].classList.add('highlight'); scrollCenter(spans[0]); }
                     fallbackTimer = setInterval(() => {
-                        if (boundarySupported || !isPlaying || isPaused) { clearTimer(); return; }
+                        if (!isPlaying || isPaused) { clearTimer(); return; }
                         if (currentWordIndex < spans.length - 1) {
                             spans[currentWordIndex].classList.remove('highlight');
                             spans[++currentWordIndex].classList.add('highlight');

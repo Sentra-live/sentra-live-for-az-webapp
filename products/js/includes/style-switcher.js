@@ -29,7 +29,7 @@ $('<style type="text/css"> ' + styleSwitchCSS + ' </style>').appendTo("body");
 
 
 function setActiveStyleSheet(title) {
-    var i, a, main;
+    var i, a;
     for (i = 0;
         (a = document.getElementsByTagName("link")[i]); i++) {
         if (a.getAttribute("rel").indexOf("style") != -1 && a.getAttribute("title")) {
