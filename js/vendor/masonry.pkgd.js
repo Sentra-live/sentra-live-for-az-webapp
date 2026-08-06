@@ -238,7 +238,7 @@
     var onceListeners = this._onceEvents && this._onceEvents[ eventName ];
   
     for ( var i=0; i < listeners.length; i++ ) {
-      var listener = listeners[i]
+      var listener = listeners[i];
       var isOnce = onceListeners && onceListeners[ listener ];
       if ( isOnce ) {
         // remove listener
@@ -1072,9 +1072,7 @@
     if ( args.from ) {
       this.css( args.from );
       // force redraw. http://blog.alexmaccaw.com/css-transitions
-      var h = this.element.offsetHeight;
-      // hack for JSHint to hush about unused var
-      h = null;
+      this.element.offsetHeight;
     }
     // enable transition
     this.enableTransition( args.to );

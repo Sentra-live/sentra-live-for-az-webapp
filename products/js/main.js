@@ -34,7 +34,7 @@ Surjith S M / @surjithctly
         $('.fadeInOnLoad').delay(700).fadeTo("slow", 1);
 
         /*Iniitate Scroll Animation*/
-        bodyScrollAnimation()
+        bodyScrollAnimation();
     })
 
 

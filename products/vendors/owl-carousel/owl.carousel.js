@@ -564,8 +564,6 @@
 			return false;
 		}
 
-		var start = new Date().getTime();
-
 		this.trigger('refresh');
 
 		this.setup();
@@ -671,8 +669,7 @@
 	 * @protected
 	 */
 	Owl.prototype.internalEvents = function() {
-		var isTouch = isTouchSupport(),
-			isTouchIE = isTouchSupportIE();
+		var isTouchIE = isTouchSupportIE();
 
 		if (this.settings.mouseDrag){
 			this.$stage.on('mousedown', $.proxy(function(event) { this.eventsRouter(event) }, this));
@@ -703,7 +700,7 @@
 	 * @param {Event} event - The event arguments.
 	 */
 	Owl.prototype.onDragStart = function(event) {
-		var ev, isTouchEvent, pageX, pageY, animatedPos;
+		var ev, pageX, pageY, animatedPos;
 
 		ev = event.originalEvent || event || window.event;
 
@@ -770,7 +767,7 @@
 	 * @param {Event} event - The event arguments.
 	 */
 	Owl.prototype.onDragMove = function(event) {
-		var ev, isTouchEvent, pageX, pageY, minValue, maxValue, pull;
+		var ev, pageX, pageY, minValue, maxValue, pull;
 
 		if (!this.state.isTouch) {
 			return;
@@ -1045,7 +1042,7 @@
 	 */
 	Owl.prototype.invalidate = function(part) {
 		this._invalidated[part] = true;
-	}
+	};
 
 	/**
 	 * Resets the absolute position of the current item.
@@ -1111,7 +1108,7 @@
 	 * @returns {Number}
 	 */
 	Owl.prototype.maximum = function(relative) {
-		var maximum, width, i = 0, coordinate,
+		var maximum, width, i = 0, coordinate, revert,
 			settings = this.settings;
 
 		if (relative) {
@@ -1134,7 +1131,7 @@
 				maximum = ++i;
 			}
 		} else {
-			throw 'Can not detect maximum absolute position.'
+			throw 'Can not detect maximum absolute position.';
 		}
 
 		return maximum;
@@ -1656,7 +1653,7 @@
 		$.each(events, $.proxy(function(index, event) {
 			this._supress[event] = true;
 		}, this));
-	}
+	};
 
 	/**
 	 * Releases suppressed events.
@@ -1667,7 +1664,7 @@
 		$.each(events, $.proxy(function(index, event) {
 			delete this._supress[event];
 		}, this));
-	}
+	};
 
 	/**
 	 * Checks the availability of some browser features.
@@ -2122,8 +2119,8 @@
 	 */
 	Video.prototype.fetch = function(target, item) {
 
-		var type = target.attr('data-vimeo-id') ? 'vimeo' : 'youtube',
-			id = target.attr('data-vimeo-id') || target.attr('data-youtube-id'),
+		var type,
+			id,
 			width = target.attr('data-width') || this._core.settings.videoWidth,
 			height = target.attr('data-height') || this._core.settings.videoHeight,
 			url = target.attr('href');
@@ -2844,7 +2841,6 @@
 	Navigation.prototype.draw = function() {
 		var difference, i, html = '',
 			options = this._core.settings,
-			$items = this._core.$stage.children(),
 			index = this._core.relative(this._core.current());
 
 		if (options.nav && !options.loop && !options.navRewind) {
@@ -2921,7 +2917,6 @@
 			position = this._pages[((position % length) + length) % length].start;
 		} else {
 			position = this._core.relative(this._core.current());
-			length = this._core.items().length;
 			successor ? position += options.slideBy : position -= options.slideBy;
 		}
 		return position;

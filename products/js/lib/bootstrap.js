@@ -9,7 +9,7 @@
  * Config saved to config.json and https://gist.github.com/5b401221fdfd4a18ae70
  */
 if (typeof jQuery === 'undefined') {
-  throw new Error('Bootstrap\'s JavaScript requires jQuery')
+  throw new Error('Bootstrap\'s JavaScript requires jQuery');
 }
 +function ($) {
   'use strict';

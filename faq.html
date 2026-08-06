@@ -2295,12 +2295,8 @@
                         if (btnSpan.getAttribute('data-original') === null) {
                             btnSpan.setAttribute('data-original', originalText);
                         }
-                        if (query) {
-                            var regex = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
-                            btnSpan.innerHTML = originalText.replace(regex, '<span class="faq-highlight">$1</span>');
-                        } else {
-                            btnSpan.innerHTML = btnSpan.getAttribute('data-original') || originalText;
-                        }
+                        var regex = new RegExp('(' + query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+                        btnSpan.innerHTML = originalText.replace(regex, '<span class="faq-highlight">$1</span>');
                     } else {
                         var btnSpan = item.querySelector('.faq-accordion-btn span:not(.faq-q-num)');
                         if (btnSpan.getAttribute('data-original') !== null) {
