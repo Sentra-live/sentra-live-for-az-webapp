@@ -11,8 +11,6 @@
         "dev:simple": "python -m http.server 8000",
         "test": "jest"
     },
-    {
-  "scripts": {}
 },
     "type": "module",
     "dependencies": {
