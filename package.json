@@ -10,7 +10,7 @@
         "start": "node server.js",
         "dev:simple": "python -m http.server 8000",
         "test": "jest"
-    },
+    }
 },
     "type": "module",
     "dependencies": {
