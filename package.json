@@ -4,14 +4,14 @@
     "description": "Sentra structural health monitoring website with AI chatbot",
     "main": "index.html",
     "homepage": ".",
-    "scripts": {
+    "scripts": 
+    {
         "build": "echo 'Static site - no build needed'",
         "dev": "node server.js",
         "start": "node server.js",
         "dev:simple": "python -m http.server 8000",
         "test": "jest"
-    }
-},
+    },
     "type": "module",
     "dependencies": {
         "@google/generative-ai": "^0.21.0",
