@@ -4,17 +4,15 @@
     "description": "Sentra structural health monitoring website with AI chatbot",
     "main": "index.html",
     "homepage": ".",
-    "scripts": 
+    "scripts":
     {
         "build": "echo 'Static site - no build needed'",
         "dev": "node server.js",
         "start": "node server.js",
-        "dev:simple": "python -m http.server 8000",
-        "test": "jest"
+        "dev:simple": "python -m http.server 8000"
     },
     "type": "module",
     "dependencies": {
-        "@google/generative-ai": "^0.21.0",
         "cors": "^2.8.5",
         "dotenv": "^17.2.3",
         "express": "^4.18.0",
@@ -22,7 +20,6 @@
         "node-fetch": "^3.3.2"
     },
     "devDependencies": {
-        "jest": "^29.7.0",
         "netlify-cli": "^27.0.0"
     },
     "engines": {
@@ -36,8 +33,5 @@
         "monitoring"
     ],
     "author": "Sentra",
-    "license": "ISC",
-    "directories": {
-        "test": "tests"
-    }
+    "license": "ISC"
 }
