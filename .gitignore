@@ -5,6 +5,9 @@ node_modules/
 
 # Archived / retired content (kept on disk, not in git)
 archive/
+.agents
+.claude
+.vscode
 
 # Local Netlify folder
 .netlify
