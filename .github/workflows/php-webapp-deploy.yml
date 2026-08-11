@@ -37,9 +37,12 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: 'production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    # No `environment:` block here on purpose: setting one changes the OIDC
+    # subject claim GitHub sends to `...:environment:<name>`, but the
+    # federated credential Azure Portal registered for this app expects the
+    # branch-ref subject (`repo:<org>/<repo>:ref:refs/heads/main`) instead -
+    # adding an environment caused AADSTS700213 (no matching federated
+    # identity record).
 
     steps:
       - uses: actions/checkout@v5
