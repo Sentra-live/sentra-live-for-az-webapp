@@ -144,7 +144,8 @@ function initBannerVideo() {
         src: 'https://www.youtube-nocookie.com/embed/' + videoId + '?' + params,
         title: 'Background video',
         frameborder: 0,
-        allow: 'autoplay; encrypted-media'
+        allow: 'autoplay; encrypted-media',
+        referrerpolicy: 'strict-origin-when-cross-origin'
     });
 
     $bg.append($iframe);
