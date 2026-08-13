@@ -685,6 +685,20 @@
                 transform: none;
             }
         }
+
+        /* Applications carousel: image + heading are the click targets */
+        a.product-card-image {
+            display: block;
+        }
+
+        .product-card-body h4 a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .product-card-body h4 a:hover {
+            color: var(--accent-color);
+        }
     </style>
 </head>
 
@@ -855,7 +869,7 @@
                         <div class="expertise-list expertise-list-grid">
                             <h5>What We Do Best</h5>
                             <div class="link-wrapper" style="margin-bottom:0.5rem;">
-                                <a href="./industries.html">Industries We Serve</a>
+                                <a href="./solutions.html">Solutions We Serve</a>
                                 <i class="fa-solid fa-circle-arrow-right"></i>
                             </div>
                             <div class="expertise-chip-grid">
@@ -905,6 +919,189 @@
                 <div class="linkedin-modal">
                     <span class="my-close" id="linkedinModalClose"><i class="fa-solid fa-xmark"></i></span>
                     <iframe id="linkedin-modal-frame" title="Embedded post" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section Applications / Industries -->
+        <div class="section">
+            <div class="hero-container">
+                <div class="d-flex flex-column justify-content-center text-center gspace-5">
+                    <div class="d-flex flex-column justify-content-center text-center gspace-2">
+                        <div class="sub-heading align-self-center animate-box animated animate__animated"
+                            data-animate="animate__fadeInDown">
+                            <i class="fa-regular fa-circle-dot"></i>
+                            <span>Applications</span>
+                        </div>
+                        <h2 class="title-heading intro-heading-compact heading-container heading-container-medium animate-box animated animate__animated"
+                            data-animate="animate__fadeInDown">Tailored for Every Sector</h2>
+                        <p class="intro-text-compact heading-container heading-container-medium animate-box animated animate__animated"
+                            data-animate="animate__fadeInDown">Beyond structures, explore Sentra's IoT monitoring
+                            solutions across the industries that keep critical infrastructure safe.</p>
+                    </div>
+                    <div class="swiperProducts-layout animate-box animated animate__animated"
+                        data-animate="animate__fadeInUp">
+                        <div class="swiper swiperProducts">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="./industries/railway-infrastructure-monitoring.html"
+                                            class="product-card-image">
+                                            <img src="./image/industries/hero/railway-infrastructure.webp"
+                                                alt="Railway Infrastructure" class="product-img" loading="lazy">
+                                            <span class="product-image-label">Railways</span>
+                                        </a>
+                                        <div class="product-card-body">
+                                            <h4><a
+                                                    href="./industries/railway-infrastructure-monitoring.html">Railway
+                                                    Infrastructure</a></h4>
+                                            <span class="product-category-label">Industries</span>
+                                            <p>Real-time vibration, tilt, and dynamic load monitoring for tracks,
+                                                bridges, and rail structures under live traffic.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="./industries/bridges-highways-monitoring.html"
+                                            class="product-card-image">
+                                            <img src="./image/industries/hero/bridge-structure.webp"
+                                                alt="Bridges & Highway Structures" class="product-img" loading="lazy">
+                                            <span class="product-image-label">Bridges</span>
+                                        </a>
+                                        <div class="product-card-body">
+                                            <h4><a href="./industries/bridges-highways-monitoring.html">Bridges &amp;
+                                                    Highway Structures</a></h4>
+                                            <span class="product-category-label">Industries</span>
+                                            <p>Continuous displacement, strain, and inclination monitoring to detect
+                                                structural degradation before it becomes critical.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="./industries/buildings-highrise-monitoring.html"
+                                            class="product-card-image">
+                                            <img src="./image/industries/hero/buildings-skyscrapers.webp"
+                                                alt="Buildings & High-Rise" class="product-img" loading="lazy">
+                                            <span class="product-image-label">Buildings</span>
+                                        </a>
+                                        <div class="product-card-body">
+                                            <h4><a href="./industries/buildings-highrise-monitoring.html">Buildings
+                                                    &amp; High-Rise</a></h4>
+                                            <span class="product-category-label">Industries</span>
+                                            <p>Settlement monitoring, tilt tracking, and seismic response systems for
+                                                residential, commercial, and heritage structures.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="./industries/dams-reservoirs-monitoring.html"
+                                            class="product-card-image">
+                                            <img src="./image/industries/hero/dam-water.webp"
+                                                alt="Dams & Reservoirs" class="product-img" loading="lazy">
+                                            <span class="product-image-label">Dams</span>
+                                        </a>
+                                        <div class="product-card-body">
+                                            <h4><a href="./industries/dams-reservoirs-monitoring.html">Dams &amp;
+                                                    Reservoirs</a></h4>
+                                            <span class="product-category-label">Industries</span>
+                                            <p>GNSS-based displacement, pore pressure, and seepage monitoring for
+                                                earthfill, concrete, and masonry dams.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="./industries/mining-geotechnical-monitoring.html"
+                                            class="product-card-image">
+                                            <img src="./image/industries/hero/mining-excavators.webp"
+                                                alt="Mining & Geotechnical" class="product-img" loading="lazy">
+                                            <span class="product-image-label">Mining</span>
+                                        </a>
+                                        <div class="product-card-body">
+                                            <h4><a href="./industries/mining-geotechnical-monitoring.html">Mining
+                                                    &amp; Geotechnical</a></h4>
+                                            <span class="product-category-label">Industries</span>
+                                            <p>Slope stability, subsidence, and ground deformation monitoring for
+                                                open-pit mines, tunnels, and retaining structures.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="./industries/ports-marine-monitoring.html"
+                                            class="product-card-image">
+                                            <img src="./image/industries/hero/port-containers.webp"
+                                                alt="Ports & Marine" class="product-img" loading="lazy">
+                                            <span class="product-image-label">Ports</span>
+                                        </a>
+                                        <div class="product-card-body">
+                                            <h4><a href="./industries/ports-marine-monitoring.html">Ports &amp;
+                                                    Marine</a></h4>
+                                            <span class="product-category-label">Industries</span>
+                                            <p>Corrosion tracking, jetty tilt, and structural load monitoring for
+                                                quays, wharves, and offshore platforms in harsh marine environments.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="./industries/construction-tunnelling-monitoring.html"
+                                            class="product-card-image">
+                                            <img src="./image/industries/hero/construction-tunnelling.webp"
+                                                alt="Construction & Tunnelling" class="product-img" loading="lazy">
+                                            <span class="product-image-label">Construction</span>
+                                        </a>
+                                        <div class="product-card-body">
+                                            <h4><a
+                                                    href="./industries/construction-tunnelling-monitoring.html">Construction
+                                                    &amp; Tunnelling</a></h4>
+                                            <span class="product-category-label">Industries</span>
+                                            <p>Real-time deformation, convergence, and vibration control during deep
+                                                excavation, tunnelling, and high-rise construction phases.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <a href="./industries/industrial-facilities-monitoring.html"
+                                            class="product-card-image">
+                                            <img src="./image/industries/hero/factory-industrial.webp"
+                                                alt="Industrial Facilities" class="product-img" loading="lazy">
+                                            <span class="product-image-label">Industrial</span>
+                                        </a>
+                                        <div class="product-card-body">
+                                            <h4><a href="./industries/industrial-facilities-monitoring.html">Industrial
+                                                    Facilities</a></h4>
+                                            <span class="product-category-label">Industries</span>
+                                            <p>Asset health, predictive maintenance, and equipment vibration
+                                                monitoring for power plants, refineries, and process industries.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiperProducts-nav">
+                            <div class="swiperProducts-btn swiperProducts-btn-prev">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </div>
+                            <div class="swiperProducts-pagination"></div>
+                            <div class="swiperProducts-btn swiperProducts-btn-next">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cta-row">
+                        <p>Looking for your industry?
+                            <a href="./industries.html" class="btn-product-cta">
+                                <span>View All Industries</span>
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1786,90 +1983,284 @@
                     <div class="card card-case-studies">
                         <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
                             <div class="col">
-                                <div class="d-flex flex-column gspace-2 animate-box animated animate__animated"
-                                    data-animate="animate__fadeInLeft">
+                                <div class="d-flex flex-column gspace-2">
                                     <div class="sub-heading">
                                         <i class="fa-regular fa-circle-dot"></i>
-                                        <span>Case Studies</span>
+                                        <span>Resources</span>
                                     </div>
-                                    <h2 class="title-heading intro-heading-compact">Real-World Impact in Action</h2>
+                                    <h2 class="title-heading intro-heading-compact">Insights and Updates</h2>
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="d-flex flex-column h-100 justify-content-end gspace-2 animate-box animated animate__animated"
-                                    data-animate="animate__fadeInRight">
-                                    <p class="intro-text-compact">Discover how our IoT-powered monitoring solutions help
-                                        infrastructure operators detect structural risks early, reduce maintenance
-                                        costs, and extend asset life across bridges, railways, and critical facilities
-                                        worldwide.</p>
+                                <div class="d-flex flex-column h-100 justify-content-end gspace-2">
+                                    <p class="intro-text-compact">Explore our latest blogs, case studies, and company
+                                        updates covering IoT-powered monitoring, real-world deployments, and
+                                        infrastructure innovation.</p>
                                     <div class="link-wrapper">
-                                        <a href="./resources.html#case-studies">More Case Studies</a>
+                                        <a href="./resources.html">View All Resources</a>
                                         <i class="fa-solid fa-circle-arrow-right"></i>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- Bento grid -->
-                        <div class="cs-new-bento">
-                            <!-- Card 1: BridgePulse — featured (big) -->
-                            <a href="./case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html"
-                                class="cs-new-card cs-new-card--featured animate-box animated animate__animated"
-                                data-animate="animate__fadeInUp">
-                                <div class="cs-new-thumb">
-                                    <img src="./image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp"
-                                        alt="BridgePulse AI Bridge Monitoring" loading="lazy">
+                        <!-- Insights & Updates marquee: two rows, opposite directions, infinite loop -->
+                        <div class="insight-marquee">
+                            <div class="marquee-row marquee-row--ltr">
+                                <div class="marquee-track">
+                                    <!-- Set A -->
+                                    <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/products/scanners/lixel-k2-mesh-comparison.jpg"
+                                                alt="The Future of Digital Twins" loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Digital Twin</span>
+                                            <h4>The Future of Digital Twins: Mesh, Point Clouds, and Gaussian
+                                                Splatting Compared</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp"
+                                                alt="BridgePulse AI Bridge Monitoring" loading="lazy">
+                                            <span class="marquee-card-type type-case-studies">Case Study</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Bridge Safety</span>
+                                            <h4>BridgePulse — AI &amp; Drone Technology for Bridge Health Monitoring
+                                            </h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/worldsensing-official-reseller-india.html" class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/worldsensing-official-reseller-india.png"
+                                                alt="Worldsensing partnership India" loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Company News</span>
+                                            <h4>Celebrating One Year of Partnership: Clove Technologies &amp;
+                                                Worldsensing</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./blogs/seismic-monitoring-buildings-critical-infrastructure.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp"
+                                                alt="Seismic Monitoring for Buildings" loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Structural Health</span>
+                                            <h4>Seismic Monitoring for Buildings and Critical Infrastructure</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp"
+                                                alt="IoT Bridge Monitoring" loading="lazy">
+                                            <span class="marquee-card-type type-case-studies">Case Study</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Railways</span>
+                                            <h4>IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges</h4>
+                                        </div>
+                                    </a>
+                                    <!-- Set B (duplicate for seamless loop) -->
+                                    <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/products/scanners/lixel-k2-mesh-comparison.jpg"
+                                                alt="" loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Digital Twin</span>
+                                            <h4>The Future of Digital Twins: Mesh, Point Clouds, and Gaussian
+                                                Splatting Compared</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp"
+                                                alt="" loading="lazy">
+                                            <span class="marquee-card-type type-case-studies">Case Study</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Bridge Safety</span>
+                                            <h4>BridgePulse — AI &amp; Drone Technology for Bridge Health Monitoring
+                                            </h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/worldsensing-official-reseller-india.html" class="marquee-card"
+                                        aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/worldsensing-official-reseller-india.png"
+                                                alt="" loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Company News</span>
+                                            <h4>Celebrating One Year of Partnership: Clove Technologies &amp;
+                                                Worldsensing</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./blogs/seismic-monitoring-buildings-critical-infrastructure.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp"
+                                                alt="" loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Structural Health</span>
+                                            <h4>Seismic Monitoring for Buildings and Critical Infrastructure</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp"
+                                                alt="" loading="lazy">
+                                            <span class="marquee-card-type type-case-studies">Case Study</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Railways</span>
+                                            <h4>IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges</h4>
+                                        </div>
+                                    </a>
                                 </div>
-                                <div class="cs-new-body">
-                                    <span class="cs-new-badge">AI &amp; Drones</span>
-                                    <h4>BridgePulse — AI and Drone Technology for Bridge Health Monitoring</h4>
-                                    <p>Impact of Implementation of IoT Sensors and Regularized Monitoring Devices.</p>
+                            </div>
+                            <div class="marquee-row marquee-row--rtl">
+                                <div class="marquee-track">
+                                    <!-- Set A -->
+                                    <a href="./blogs/10-early-warning-signs-bridge-continuous-monitoring.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/blogs/banners/blogs_10-early-warning-signs-bridge-continuous-monitoring.webp"
+                                                alt="Early Warning Signs for Bridges" loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Bridge Safety</span>
+                                            <h4>10 Early Warning Signs Your Bridge Needs Continuous Monitoring</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/xgrids-authorized-reseller-india.html" class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/xgrids-authorized-reseller-india.webp"
+                                                alt="XGRIDS authorized reseller India" loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Company News</span>
+                                            <h4>Clove Technologies Becomes Authorized XGRIDS Reseller in India</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./case-studies/structural-health-monitoring-of-highway-bridges.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp"
+                                                alt="Structural Health Monitoring of Highway Bridges" loading="lazy">
+                                            <span class="marquee-card-type type-case-studies">Case Study</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Infrastructure</span>
+                                            <h4>Structural Health Monitoring of Highway Bridges</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./blogs/intelligent-pump-house-monitoring-and-control.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/blogs/banners/blogs_intelligent-pump-house-monitoring-and-control.webp"
+                                                alt="Intelligent Pump House Monitoring" loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Smart Pumping</span>
+                                            <h4>Intelligent Pump House Monitoring &amp; Control</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/building-resilient-smart-cities-with-data-driven-insights.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/article_Building%20Resilient%20Smart%20Cities%20with%20Data-Driven%20Insights.webp"
+                                                alt="Smart city infrastructure monitoring" loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Smart Cities</span>
+                                            <h4>Building Resilient Smart Cities with Data-Driven Insights</h4>
+                                        </div>
+                                    </a>
+                                    <!-- Set B (duplicate for seamless loop) -->
+                                    <a href="./blogs/10-early-warning-signs-bridge-continuous-monitoring.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/blogs/banners/blogs_10-early-warning-signs-bridge-continuous-monitoring.webp"
+                                                alt="" loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Bridge Safety</span>
+                                            <h4>10 Early Warning Signs Your Bridge Needs Continuous Monitoring</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/xgrids-authorized-reseller-india.html" class="marquee-card"
+                                        aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/xgrids-authorized-reseller-india.webp" alt=""
+                                                loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Company News</span>
+                                            <h4>Clove Technologies Becomes Authorized XGRIDS Reseller in India</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./case-studies/structural-health-monitoring-of-highway-bridges.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp"
+                                                alt="" loading="lazy">
+                                            <span class="marquee-card-type type-case-studies">Case Study</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Infrastructure</span>
+                                            <h4>Structural Health Monitoring of Highway Bridges</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./blogs/intelligent-pump-house-monitoring-and-control.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/blogs/banners/blogs_intelligent-pump-house-monitoring-and-control.webp"
+                                                alt="" loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Smart Pumping</span>
+                                            <h4>Intelligent Pump House Monitoring &amp; Control</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/building-resilient-smart-cities-with-data-driven-insights.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/article_Building%20Resilient%20Smart%20Cities%20with%20Data-Driven%20Insights.webp"
+                                                alt="" loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Smart Cities</span>
+                                            <h4>Building Resilient Smart Cities with Data-Driven Insights</h4>
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
-                            <!-- Card 2: IoT Bridge — small -->
-                            <a href="./case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html"
-                                class="cs-new-card animate-box animated animate__animated"
-                                data-animate="animate__fadeInUp">
-                                <div class="cs-new-thumb">
-                                    <img src="./image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp"
-                                        alt="IoT Bridge Monitoring" loading="lazy">
-                                </div>
-                                <div class="cs-new-body">
-                                    <span class="cs-new-badge">IoT &amp; Sensors</span>
-                                    <h4>IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges</h4>
-                                    <p>24×7 monitoring, instant alerts, and data-driven decisions for safer rail
-                                        networks.</p>
-                                </div>
-                            </a>
-                            <!-- Card 3: Real-Time Monitoring — small -->
-                            <a href="./blogs/real-time-monitoring-solutions-transforming-infrastructure-safety-performance.html"
-                                class="cs-new-card animate-box animated animate__animated"
-                                data-animate="animate__fadeInUp">
-                                <div class="cs-new-thumb">
-                                    <img src="./image/blogs/banners/blogs_real-time-monitoring-solutions-transforming-infrastructure-safety-performance.webp"
-                                        alt="Real-Time Monitoring" loading="lazy">
-                                </div>
-                                <div class="cs-new-body">
-                                    <span class="cs-new-badge">Monitoring</span>
-                                    <h4>Real-Time Monitoring Solutions: Transforming Infrastructure Safety &amp;
-                                        Performance</h4>
-                                    <p>3× increase in Bridge Delivery Projects &amp; 2× Sensor Implementation.</p>
-                                </div>
-                            </a>
-                            <!-- Card 4: Asset Monitoring — featured (big) -->
-                            <a href="./blogs/asset-monitoring-facility-management.html"
-                                class="cs-new-card cs-new-card--featured animate-box animated animate__animated"
-                                data-animate="animate__fadeInUp">
-                                <div class="cs-new-thumb">
-                                    <img src="./image/blogs/banners/blogs_asset-monitoring-facility-management.webp"
-                                        alt="Asset Monitoring" loading="lazy">
-                                </div>
-                                <div class="cs-new-body">
-                                    <span class="cs-new-badge">Asset Management</span>
-                                    <h4>Asset Monitoring &amp; Facility Management</h4>
-                                    <p>Comprehensive IoT implementation with smart sensors for real-time monitoring and
-                                        management.</p>
-                                </div>
-                            </a>
+                            </div>
                         </div>
                     </div>
                     <div class="spacer"></div>
@@ -2350,164 +2741,76 @@
                         </div>
                     </div>
 
-                    <!-- Editorial grid -->
-                    <div class="insights-grid animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                        <!-- Featured article -->
-                        <a href="./article/track-to-the-future-remote-monitoring-rail-infrastructure.html"
-                            class="insights-featured">
-                            <img src="./image/home/homepage_article_track-to-the-future-remote-monitoring-rail-infrastructure.webp"
-                                alt="Remote monitoring for rail infrastructure" class="insights-featured-img"
-                                loading="lazy">
-                            <div class="insights-featured-overlay">
-                                <div class="insights-featured-meta">
-                                    <span class="insights-badge">Rail Infrastructure</span>
-                                    <span class="insights-date"><i class="fa-regular fa-calendar"
-                                            style="margin-right:4px;"></i>Jun 24, 2026</span>
+                    <!-- Glimpses-style article carousel -->
+                    <div class="glimpse-carousel animate-box animated animate__animated"
+                        data-animate="animate__fadeInUp">
+                        <button class="glimpse-arrow glimpse-arrow-prev" id="glimpsePrev" aria-label="Previous
+                            article">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <div class="glimpse-track" id="glimpseTrack">
+                            <a href="./article/track-to-the-future-remote-monitoring-rail-infrastructure.html"
+                                class="glimpse-card">
+                                <img src="./image/home/homepage_article_track-to-the-future-remote-monitoring-rail-infrastructure.webp"
+                                    alt="Remote monitoring for rail infrastructure" loading="lazy">
+                                <span class="glimpse-tag">Rail Infrastructure</span>
+                                <div class="glimpse-label">
+                                    <h4>Track to the Future: Remote Monitoring for Rail Infrastructure</h4>
+                                    <span>Rail Infrastructure &middot; Jun 24, 2026</span>
                                 </div>
-                                <h3>Track to the Future: How Remote Monitoring Helps Safeguard Rail and Civil
-                                    Infrastructure</h3>
-                                <p>IoT sensors, wireless monitoring, and Digital Twin technology are reshaping the
-                                    safety and longevity of rail and civil infrastructure.</p>
-                                <span class="insights-read-link">Read Article <i class="fa-solid fa-arrow-right"
-                                        style="font-size:0.7rem;"></i></span>
-                            </div>
-                        </a>
-
-                        <!-- Carousel -->
-                        <div class="insights-carousel" id="insightsCarousel">
-                            <div class="insights-car-track" id="insightsTrack">
-                                <!-- Slide 1 -->
-                                <div class="insights-car-slide">
-                                    <a href="./article/building-resilient-smart-cities-with-data-driven-insights.html"
-                                        class="insights-car-card">
-                                        <div class="insights-car-thumb">
-                                            <img src="./image/articles/article_Building%20Resilient%20Smart%20Cities%20with%20Data-Driven%20Insights.webp"
-                                                alt="Smart city infrastructure monitoring" loading="lazy">
-                                        </div>
-                                        <div class="insights-car-body">
-                                            <div class="insights-car-meta">
-                                                <span class="insights-badge">Smart Cities</span>
-                                                <span class="insights-date"><i class="fa-regular fa-calendar"
-                                                        style="margin-right:3px;"></i>Nov 3, 2025</span>
-                                            </div>
-                                            <h4>Building Resilient Smart Cities with Data-Driven Insights</h4>
-                                            <p>Learn how connected IoT systems are shaping the future of urban planning
-                                                and sustainable infrastructure.</p>
-                                            <span class="insights-car-read">Read Article <i
-                                                    class="fa-solid fa-arrow-right"
-                                                    style="font-size:0.65rem;"></i></span>
-                                        </div>
-                                    </a>
+                            </a>
+                            <a href="./article/building-resilient-smart-cities-with-data-driven-insights.html"
+                                class="glimpse-card">
+                                <img src="./image/articles/article_Building%20Resilient%20Smart%20Cities%20with%20Data-Driven%20Insights.webp"
+                                    alt="Smart city infrastructure monitoring" loading="lazy">
+                                <span class="glimpse-tag">Smart Cities</span>
+                                <div class="glimpse-label">
+                                    <h4>Building Resilient Smart Cities with Data-Driven Insights</h4>
+                                    <span>Smart Cities &middot; Nov 3, 2025</span>
                                 </div>
-                                <!-- Slide 2 -->
-                                <div class="insights-car-slide">
-                                    <a href="./article/intelligent-pump-house-monitoring-and-control.html"
-                                        class="insights-car-card">
-                                        <div class="insights-car-thumb">
-                                            <img src="./image/articles/article_Intelligent%20Pump%20House%20Monitoring%20%26%20Control.webp"
-                                                alt="Intelligent Pump House Monitoring" loading="lazy">
-                                        </div>
-                                        <div class="insights-car-body">
-                                            <div class="insights-car-meta">
-                                                <span class="insights-badge">Smart Pumping</span>
-                                                <span class="insights-date"><i class="fa-regular fa-calendar"
-                                                        style="margin-right:3px;"></i>Feb 26, 2026</span>
-                                            </div>
-                                            <h4>Intelligent Pump House Monitoring &amp; Control</h4>
-                                            <p>Explore how IoT-driven pump house systems reduce downtime and enable
-                                                predictive maintenance at scale.</p>
-                                            <span class="insights-car-read">Read Article <i
-                                                    class="fa-solid fa-arrow-right"
-                                                    style="font-size:0.65rem;"></i></span>
-                                        </div>
-                                    </a>
+                            </a>
+                            <a href="./article/intelligent-pump-house-monitoring-and-control.html"
+                                class="glimpse-card">
+                                <img src="./image/articles/article_Intelligent%20Pump%20House%20Monitoring%20%26%20Control.webp"
+                                    alt="Intelligent Pump House Monitoring" loading="lazy">
+                                <span class="glimpse-tag">Smart Pumping</span>
+                                <div class="glimpse-label">
+                                    <h4>Intelligent Pump House Monitoring &amp; Control</h4>
+                                    <span>Smart Pumping &middot; Feb 26, 2026</span>
                                 </div>
-                                <!-- Slide 3 -->
-                                <div class="insights-car-slide">
-                                    <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html"
-                                        class="insights-car-card">
-                                        <div class="insights-car-thumb">
-                                            <img src="./image/products/scanners/lixel-k2-mesh-comparison.jpg"
-                                                alt="Mesh, Point Cloud, and Gaussian Splatting comparison"
-                                                loading="lazy">
-                                        </div>
-                                        <div class="insights-car-body">
-                                            <div class="insights-car-meta">
-                                                <span class="insights-badge">Digital Twin</span>
-                                                <span class="insights-date"><i class="fa-regular fa-calendar"
-                                                        style="margin-right:3px;"></i>Jul 24, 2026</span>
-                                            </div>
-                                            <h4>The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting
-                                                Compared</h4>
-                                            <p>Discover how Mesh, Point Clouds, and Gaussian Splatting are transforming
-                                                Digital Twins, BIM, and laser scanning for the AEC industry.</p>
-                                            <span class="insights-car-read">Read Article <i
-                                                    class="fa-solid fa-arrow-right"
-                                                    style="font-size:0.65rem;"></i></span>
-                                        </div>
-                                    </a>
+                            </a>
+                            <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html"
+                                class="glimpse-card">
+                                <img src="./image/products/scanners/lixel-k2-mesh-comparison.jpg"
+                                    alt="Mesh, Point Cloud, and Gaussian Splatting comparison" loading="lazy">
+                                <span class="glimpse-tag">Digital Twin</span>
+                                <div class="glimpse-label">
+                                    <h4>The Future of Digital Twins: Mesh, Point Clouds &amp; Gaussian Splatting</h4>
+                                    <span>Digital Twin &middot; Jul 24, 2026</span>
                                 </div>
-                                <!-- Slide 4 -->
-                                <div class="insights-car-slide">
-                                    <a href="./article/xgrids-authorized-reseller-india.html" class="insights-car-card">
-                                        <div class="insights-car-thumb">
-                                            <img src="./image/articles/xgrids-authorized-reseller-india.webp"
-                                                alt="XGRIDS authorized reseller India" loading="lazy">
-                                        </div>
-                                        <div class="insights-car-body">
-                                            <div class="insights-car-meta">
-                                                <span class="insights-badge">Company News</span>
-                                                <span class="insights-date"><i class="fa-regular fa-calendar"
-                                                        style="margin-right:3px;"></i>Jul 23, 2026</span>
-                                            </div>
-                                            <h4>Clove Technologies Becomes Authorized XGRIDS Reseller in India</h4>
-                                            <p>Clove Technologies is now an authorized reseller of XGRIDS products in
-                                                India, offering advanced 3D reality capture and LiDAR solutions.</p>
-                                            <span class="insights-car-read">Read Article <i
-                                                    class="fa-solid fa-arrow-right"
-                                                    style="font-size:0.65rem;"></i></span>
-                                        </div>
-                                    </a>
+                            </a>
+                            <a href="./article/xgrids-authorized-reseller-india.html" class="glimpse-card">
+                                <img src="./image/articles/xgrids-authorized-reseller-india.webp"
+                                    alt="XGRIDS authorized reseller India" loading="lazy">
+                                <span class="glimpse-tag">Company News</span>
+                                <div class="glimpse-label">
+                                    <h4>Clove Technologies Becomes Authorized XGRIDS Reseller in India</h4>
+                                    <span>Company News &middot; Jul 23, 2026</span>
                                 </div>
-                                <!-- Slide 5 -->
-                                <div class="insights-car-slide">
-                                    <a href="./article/worldsensing-official-reseller-india.html"
-                                        class="insights-car-card">
-                                        <div class="insights-car-thumb">
-                                            <img src="./image/articles/worldsensing-official-reseller-india.png"
-                                                alt="Worldsensing partnership India" loading="lazy">
-                                        </div>
-                                        <div class="insights-car-body">
-                                            <div class="insights-car-meta">
-                                                <span class="insights-badge">Company News</span>
-                                                <span class="insights-date"><i class="fa-regular fa-calendar"
-                                                        style="margin-right:3px;"></i>Jul 23, 2026</span>
-                                            </div>
-                                            <h4>Celebrating One Year of Partnership: Clove Technologies &amp;
-                                                Worldsensing</h4>
-                                            <p>Clove Technologies and Worldsensing celebrate one year of partnership in
-                                                India, delivering wireless IoT monitoring solutions.</p>
-                                            <span class="insights-car-read">Read Article <i
-                                                    class="fa-solid fa-arrow-right"
-                                                    style="font-size:0.65rem;"></i></span>
-                                        </div>
-                                    </a>
+                            </a>
+                            <a href="./article/worldsensing-official-reseller-india.html" class="glimpse-card">
+                                <img src="./image/articles/worldsensing-official-reseller-india.png"
+                                    alt="Worldsensing partnership India" loading="lazy">
+                                <span class="glimpse-tag">Company News</span>
+                                <div class="glimpse-label">
+                                    <h4>Celebrating One Year of Partnership with Worldsensing</h4>
+                                    <span>Company News &middot; Jul 23, 2026</span>
                                 </div>
-                            </div>
-                            <!-- Dot navigation -->
-                            <div class="insights-car-dots" id="insightsDots">
-                                <button class="insights-car-dot active" data-idx="0"
-                                    aria-label="Go to insight slide 1"></button>
-                                <button class="insights-car-dot" data-idx="1"
-                                    aria-label="Go to insight slide 2"></button>
-                                <button class="insights-car-dot" data-idx="2"
-                                    aria-label="Go to insight slide 3"></button>
-                                <button class="insights-car-dot" data-idx="3"
-                                    aria-label="Go to insight slide 4"></button>
-                                <button class="insights-car-dot" data-idx="4"
-                                    aria-label="Go to insight slide 5"></button>
-                            </div>
+                            </a>
                         </div>
+                        <button class="glimpse-arrow glimpse-arrow-next" id="glimpseNext" aria-label="Next article">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -2601,48 +2904,66 @@
         })();
     </script>
 
-    <!-- Insights carousel -->
+    <!-- Glimpses article carousel -->
     <script>
         (function () {
-            function initInsightsCarousel() {
-                var track = document.getElementById('insightsTrack');
-                var dots = document.querySelectorAll('#insightsDots .insights-car-dot');
-                if (!track || !dots.length || typeof gsap === 'undefined') return;
+            function initGlimpseCarousel() {
+                var track = document.getElementById('glimpseTrack');
+                var prevBtn = document.getElementById('glimpsePrev');
+                var nextBtn = document.getElementById('glimpseNext');
+                if (!track || !prevBtn || !nextBtn) return;
 
-                var current = 0;
-                var total = dots.length;
-                var DOT_W = 8;
-                var DOT_AW = 24;
-                var timer;
-
-                function goTo(idx) {
-                    gsap.to(track, { x: -(idx * 100) + '%', duration: 0.55, ease: 'power2.inOut' });
-                    dots.forEach(function (d, i) {
-                        gsap.to(d, { width: i === idx ? DOT_AW : DOT_W, duration: 0.35, ease: 'power2.out' });
-                        d.classList.toggle('active', i === idx);
-                    });
-                    current = idx;
+                function cardStep() {
+                    var card = track.querySelector('.glimpse-card');
+                    return card ? card.getBoundingClientRect().width + 20 : track.clientWidth * 0.6;
                 }
 
-                dots.forEach(function (d) {
-                    d.addEventListener('click', function () {
-                        clearInterval(timer);
-                        goTo(parseInt(this.dataset.idx));
-                        timer = setInterval(advance, 4000);
-                    });
+                function atEnd() {
+                    return track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+                }
+
+                function scrollByCard(dir) {
+                    if (dir > 0 && atEnd()) {
+                        track.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        track.scrollBy({ left: dir * cardStep(), behavior: 'smooth' });
+                    }
+                }
+
+                prevBtn.addEventListener('click', function () {
+                    stopAutoplay();
+                    scrollByCard(-1);
+                    startAutoplay();
+                });
+                nextBtn.addEventListener('click', function () {
+                    stopAutoplay();
+                    scrollByCard(1);
+                    startAutoplay();
                 });
 
-                function advance() { goTo((current + 1) % total); }
-                timer = setInterval(advance, 4000);
+                var autoplayTimer = null;
+                function startAutoplay() {
+                    stopAutoplay();
+                    autoplayTimer = setInterval(function () { scrollByCard(1); }, 3500);
+                }
+                function stopAutoplay() {
+                    if (autoplayTimer) clearInterval(autoplayTimer);
+                    autoplayTimer = null;
+                }
+
+                track.addEventListener('mouseenter', stopAutoplay);
+                track.addEventListener('mouseleave', startAutoplay);
+                track.addEventListener('touchstart', stopAutoplay, { passive: true });
+                track.addEventListener('touchend', startAutoplay, { passive: true });
+
+                startAutoplay();
             }
 
             if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initInsightsCarousel);
+                document.addEventListener('DOMContentLoaded', initGlimpseCarousel);
             } else {
-                initInsightsCarousel();
+                initGlimpseCarousel();
             }
-            // Fallback: wait for GSAP to load if deferred
-            window.addEventListener('load', initInsightsCarousel);
         })();
     </script>
 

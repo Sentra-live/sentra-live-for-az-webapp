@@ -6786,7 +6786,7 @@ body.lightmode .card-case-studies {
     background-image: radial-gradient(at bottom center, var(--accent-color) 0%, var(--accent-transparent) 50%);
     width: 100%;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.05;
     top: 0;
     left: 0;
     z-index: -1;
@@ -7275,265 +7275,360 @@ body.lightmode .blog-content::before {
 /* ================== 32. Blog Components ================== */
 
 /* -- Insights & Trends redesign -- */
-.insights-grid {
-    display: grid;
-    grid-template-columns: 1.35fr 1fr;
-    gap: 1rem;
+/* -- Glimpses Carousel (Encardio-style article filmstrip) -- */
+.glimpse-carousel {
+    position: relative;
     margin-top: 2rem;
 }
 
-.insights-featured {
-    position: relative;
-    border-radius: 12px;
-    overflow: hidden;
-    min-height: 520px;
+.glimpse-track {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    gap: 1.25rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 4px 4px 10px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.glimpse-track::-webkit-scrollbar {
+    display: none;
+}
+
+.glimpse-card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 436px;
+    aspect-ratio: 16 / 9;
+    border-radius: 14px;
+    overflow: hidden;
+    scroll-snap-align: start;
     text-decoration: none;
     color: inherit;
-    transition: transform 0.3s ease;
+    display: block;
+    background: rgba(255, 255, 255, 0.04);
 }
 
-.insights-featured:hover {
-    transform: translateY(-4px);
-}
-
-.insights-featured-img {
+.glimpse-tag {
     position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.45s ease;
-}
-
-.insights-featured:hover .insights-featured-img {
-    transform: scale(1.04);
-}
-
-.insights-featured-overlay {
-    position: relative;
-    z-index: 1;
-    padding: 2rem;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.88) 0%, rgba(0, 0, 0, 0.4) 55%, transparent 100%);
-}
-
-.insights-featured-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 0.75rem;
-}
-
-.insights-badge {
+    top: 14px;
+    left: 14px;
+    z-index: 2;
     display: inline-block;
-    font-size: 0.6rem;
+    font-size: 0.62rem;
     font-weight: 700;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #fff;
     background: var(--accent-color-cta);
     border-radius: 999px;
-    padding: 3px 10px;
+    padding: 4px 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
-.insights-date {
-    font-size: 0.72rem;
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.insights-featured h3 {
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: #fff;
-    line-height: 1.35;
-    margin: 0 0 0.5rem;
-}
-
-.insights-featured p {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.7);
-    margin: 0 0 1.25rem;
-    line-height: 1.55;
-}
-
-.insights-read-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--accent-color);
-    text-decoration: none;
-}
-
-/* -- Insights Carousel (right panel) -- */
-.insights-carousel {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    height: 100%;
-    min-height: 520px;
-}
-
-.insights-car-track {
-    display: flex;
-    height: 100%;
-    will-change: transform;
-}
-
-.insights-car-slide {
-    min-width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.insights-car-card {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    background: rgba(255, 255, 255, 0.03);
-    text-decoration: none;
-    color: inherit;
-    transition: box-shadow 0.25s ease;
-}
-
-.insights-car-card:hover {
-    box-shadow: inset 0 3px 0 0 var(--accent-color);
-}
-
-.insights-car-thumb {
-    width: 100%;
-    height: 62%;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.insights-car-thumb img {
+.glimpse-card img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.45s ease;
+    display: block;
+    transition: transform 0.5s ease;
 }
 
-.insights-car-card:hover .insights-car-thumb img {
-    transform: scale(1.04);
+.glimpse-card:hover img,
+.glimpse-card:focus-visible img {
+    transform: scale(1.06);
 }
 
-.insights-car-body {
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    flex: 1;
-    justify-content: center;
-}
-
-.insights-car-meta {
-    display: flex;
-    align-items: center;
-    gap: 0.6rem;
-}
-
-.insights-car-meta .insights-badge {
-    font-size: 0.58rem;
-}
-
-.insights-car-meta .insights-date {
-    font-size: 0.68rem;
-    color: rgba(255, 255, 255, 0.45);
-}
-
-.insights-car-card h4 {
-    font-size: 1rem;
-    font-weight: 700;
-    line-height: 1.4;
-    margin: 0;
-}
-
-.insights-car-card p {
-    font-size: 0.8rem;
-    margin: 0;
-    line-height: 1.55;
-    opacity: 0.55;
-}
-
-.insights-car-read {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.35rem;
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--accent-color);
-    margin-top: 0.25rem;
-}
-
-.insights-car-dots {
+.glimpse-label {
     position: absolute;
-    bottom: 1.1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    z-index: 10;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 14px 18px 16px;
+    background: var(--accent-color-cta);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.insights-car-dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-    border: none;
-    padding: 0;
-    flex-shrink: 0;
-}
-
-.insights-car-dot.active {
-    background: var(--accent-color);
-    width: 24px;
-}
-
-body.lightmode .insights-car-card {
-    border-color: rgba(0, 0, 0, 0.08);
-    background: #fff;
-}
-
-body.lightmode .insights-car-card h4 {
-    color: #111;
-}
-
-body.lightmode .insights-car-card p {
-    color: rgba(0, 0, 0, 0.55);
+.glimpse-card:hover .glimpse-label,
+.glimpse-card:focus-visible .glimpse-label {
+    transform: translateY(0);
     opacity: 1;
 }
 
-body.lightmode .insights-car-meta .insights-date {
-    color: rgba(0, 0, 0, 0.4);
+.glimpse-label h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 4px;
+    line-height: 1.35;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-@media (max-width: 991px) {
-    .insights-grid {
-        grid-template-columns: 1fr;
+.glimpse-label span {
+    display: block;
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.85);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.glimpse-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    border-radius: 50%;
+    border: 1px solid rgba(244, 129, 32, 0.2);
+    background: var(--secondary);
+    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 5;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.glimpse-arrow:hover {
+    background: var(--accent-color-cta);
+    border-color: var(--accent-color-cta);
+    color: #fff;
+    transform: translateY(-50%) scale(1.08);
+}
+
+.glimpse-arrow-prev {
+    left: -21px;
+}
+
+.glimpse-arrow-next {
+    right: -21px;
+}
+
+body.lightmode .glimpse-arrow {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.12);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 767px) {
+    .glimpse-card {
+        width: 319px;
     }
 
-    .insights-featured {
-        min-height: 380px;
+    .glimpse-arrow {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+        font-size: 0.8rem;
     }
 
-    .insights-carousel {
-        min-height: 420px;
+    .glimpse-arrow-prev {
+        left: -10px;
+    }
+
+    .glimpse-arrow-next {
+        right: -10px;
     }
 }
 
-@media (max-width: 575px) {
-    .insights-carousel {
-        min-height: 380px;
+/* -- Insights & Updates marquee (two rows, opposite directions, infinite loop) -- */
+.insight-marquee {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+
+/* Edge fade blended to the actual container background (not a transparency
+   mask) so it reads as a soft fade instead of a mismatched shadow, in both
+   themes. */
+.insight-marquee::before,
+.insight-marquee::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.insight-marquee::before {
+    left: 0;
+    background: linear-gradient(90deg, var(--secondary) 0%, transparent 100%);
+}
+
+.insight-marquee::after {
+    right: 0;
+    background: linear-gradient(270deg, var(--secondary) 0%, transparent 100%);
+}
+
+/* Inside the homepage's .card-case-studies wrapper the container background
+   is overridden to --accent-color-4 in light mode, so the edge fade needs to
+   match that instead of the plain body background used everywhere else the
+   marquee appears (e.g. resources.html sits directly on body). */
+body.lightmode .card-case-studies .insight-marquee::before {
+    background: linear-gradient(90deg, var(--accent-color-4) 0%, transparent 100%);
+}
+
+body.lightmode .card-case-studies .insight-marquee::after {
+    background: linear-gradient(270deg, var(--accent-color-4) 0%, transparent 100%);
+}
+
+.marquee-row {
+    overflow: hidden;
+}
+
+.marquee-track {
+    display: flex;
+    width: max-content;
+    gap: 1.25rem;
+    will-change: transform;
+    animation: marquee-scroll 42s linear infinite;
+}
+
+.marquee-row--rtl .marquee-track {
+    animation-direction: reverse;
+}
+
+.insight-marquee:hover .marquee-track {
+    animation-play-state: paused;
+}
+
+@keyframes marquee-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+.marquee-card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 300px;
+    border-radius: 14px;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.marquee-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(244, 129, 32, 0.3);
+}
+
+.marquee-card-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.marquee-card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.marquee-card:hover .marquee-card-img img {
+    transform: scale(1.06);
+}
+
+.marquee-card-type {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 999px;
+    padding: 3px 11px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.marquee-card-type.type-blogs {
+    background: linear-gradient(135deg, #f48120, #ff6b35);
+}
+
+.marquee-card-type.type-case-studies {
+    background: linear-gradient(135deg, #e11d48, #db2777);
+}
+
+.marquee-card-type.type-articles {
+    background: linear-gradient(135deg, #2563eb, #6366f1);
+}
+
+.marquee-card-body {
+    padding: 14px 16px 16px;
+}
+
+.marquee-card-cat {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 6px;
+}
+
+.marquee-card-body h4 {
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0;
+    color: #fff;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+body.lightmode .marquee-card {
+    background: #fff;
+    border-color: rgba(0, 0, 0, 0.08);
+}
+
+body.lightmode .marquee-card-body h4 {
+    color: #1a1a1a;
+}
+
+@media (max-width: 767px) {
+    .marquee-card {
+        width: 240px;
+    }
+
+    .marquee-track {
+        animation-duration: 30s;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+        animation-play-state: paused;
     }
 }
 

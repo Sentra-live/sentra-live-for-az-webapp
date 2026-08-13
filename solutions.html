@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-8GFRCEFB87');
-</script>
+        gtag('config', 'G-8GFRCEFB87');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solutions — Infrastructure Monitoring | Sentra</title>
@@ -67,11 +67,9 @@
     <link rel="stylesheet" href="./css/solutions-v2.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/chatbot.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap"
         rel="stylesheet" />
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
@@ -504,8 +502,8 @@
                                         class="material-symbols-rounded">precision_manufacturing</span></div>
                                 <span class="sol-stat-card-label">Sensors Deployed</span>
                             </div>
-                            <div class="sol-stat-card-number"><span class="sol-stat-number"
-                                    data-target="10000">0</span>+</div>
+                            <div class="sol-stat-card-number"><span class="sol-stat-number" data-target="1000">0</span>+
+                            </div>
                             <div style="font-size:14px;color:rgba(255,255,255,0.5);">Monitoring critical infrastructure
                                 daily</div>
                         </div>
@@ -648,7 +646,7 @@
                 </div>
                 <div class="sol-reveal" style="text-align:center;margin-top:48px;">
                     <div class="sol-cta-inline">
-                        <p style="font-size:17px;color:rgba(255,255,255,0.8);margin-bottom:20px;">Your infrastructure
+                        <p style="font-size:17px;margin-bottom:20px;">Your infrastructure
                             deserves more than generic solutions. Partner with Sentra and discover data-driven
                             reliability.</p>
                         <a href="./contact.html" class="sol-btn-primary" style="display:inline-flex;">Speak with an
@@ -667,149 +665,517 @@
                     <p class="sol-section-subtitle" style="margin:0 auto;">From wireless sensors to data loggers and
                         communications hardware — explore the devices powering our monitoring solutions.</p>
                 </div>
+                <div class="product-filter-bar sol-reveal">
+                    <button class="product-filter-btn active" data-filter="all">All Products</button>
+                    <button class="product-filter-btn" data-filter="laser-scanners">Laser Scanners</button>
+                    <button class="product-filter-btn" data-filter="wireless">Wireless Sensors</button>
+                    <button class="product-filter-btn" data-filter="data-loggers">Data Loggers</button>
+                    <button class="product-filter-btn" data-filter="wired">Wired Sensors</button>
+                    <button class="product-filter-btn" data-filter="communications">Communications</button>
+                </div>
                 <div class="sol-product-carousel swiperProducts-layout sol-reveal">
                     <div class="swiper swiperProducts">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="sol-product-card">
-                                    <div class="sol-product-image"><img src="./image/products/tiltmeter_1.webp"
-                                            alt="Tilt90 Tiltmeter" loading="lazy"></div>
-                                    <div class="sol-product-body">
-                                        <span class="sol-product-category">Wireless Sensors</span>
+                            <div class="swiper-slide" data-category="laser-scanners">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/scanners/lixel-k2-hero.webp" alt="Lixel K2"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">New</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Lixel K2</h4>
+                                        <span class="product-category-label">Laser Scanners</span>
+                                        <p>Lightweight SLAM LiDAR scanner with onboard RTK, 200,000 pts/s, 1.2kg.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/lixel-k2.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="laser-scanners">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/scanners/KV Horizontal.jpg" alt="PortalCam"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">Spatial Camera</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>PortalCam</h4>
+                                        <span class="product-category-label">Laser Scanners</span>
+                                        <p>Spatial camera with 856K pts/s LiDAR, onboard AI 3DGS, 870g handheld.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/portalcam.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="laser-scanners">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/scanners/lixel-l2-pro.jpg" alt="Lixel L2 Pro"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">640K pts/s</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Lixel L2 Pro</h4>
+                                        <span class="product-category-label">Laser Scanners</span>
+                                        <p>Precision redefined. Up to 640,000 pts/s and 300m range for large-scale
+                                            survey.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/lixel-l2-pro.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="wireless">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/tiltmeter_1.webp" alt="Tilt90 Tiltmeter"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">LS-G6-TIL90</span>
+                                    </div>
+                                    <div class="product-card-body">
                                         <h4>Tilt90 Tiltmeter</h4>
-                                        <p>Three-axis tilt sensor offering rugged stability, low noise, and long-range
-                                            wireless telemetry for continuous monitoring.</p>
-                                        <div class="sol-product-actions">
-                                            <a href="./contact.html" class="sol-btn-primary">Quote <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                            <a href="./products/tiltmeter.html" class="sol-btn-secondary">View <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        <span class="product-category-label">Wireless Sensors</span>
+                                        <p>Three-axis tilt sensor offering rugged stability, low noise, and
+                                            long-range wireless telemetry for continuous monitoring.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/tiltmeter.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="sol-product-card">
-                                    <div class="sol-product-image"><img src="./image/products/tiltmeter_event_1.webp"
-                                            alt="Tiltmeter Event Detection" loading="lazy"></div>
-                                    <div class="sol-product-body">
-                                        <span class="sol-product-category">Wireless Sensors</span>
+                            <div class="swiper-slide" data-category="wireless">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/tiltmeter_event_1.webp"
+                                            alt="Tiltmeter Event Detection" class="product-img" loading="lazy">
+                                        <span class="product-image-label">LS-G6-TIL90-XE</span>
+                                    </div>
+                                    <div class="product-card-body">
                                         <h4>Tiltmeter Event Detection</h4>
-                                        <p>Smart tilt sensing with event-based alerts to capture sudden movements or
-                                            critical structural shifts instantly.</p>
-                                        <div class="sol-product-actions">
-                                            <a href="./contact.html" class="sol-btn-primary">Quote <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        <span class="product-category-label">Wireless Sensors</span>
+                                        <p>Event-detection tiltmeter that triggers immediate alerts on sudden
+                                            movement for landslide and structural safety monitoring.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
                                             <a href="./products/tiltmeter-event-detection.html"
-                                                class="sol-btn-secondary">View <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
+                                                class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="sol-product-card">
-                                    <div class="sol-product-image"><img src="./image/products/vibration_meter_1.webp"
-                                            alt="Vibration Meter" loading="lazy"></div>
-                                    <div class="sol-product-body">
-                                        <span class="sol-product-category">Wireless Sensors</span>
+                            <div class="swiper-slide" data-category="wireless">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/vibration_meter_1.webp" alt="Vibration Meter"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">LSG7ACL-BILH-VIB</span>
+                                    </div>
+                                    <div class="product-card-body">
                                         <h4>Vibration Meter</h4>
-                                        <p>Advanced three-axis vibration sensing with internal calculation of PPV and
-                                            dominant frequency.</p>
-                                        <div class="sol-product-actions">
-                                            <a href="./contact.html" class="sol-btn-primary">Quote <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                            <a href="./products/vibration-meter.html" class="sol-btn-secondary">View <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        <span class="product-category-label">Wireless Sensors</span>
+                                        <p>Advanced three-axis vibration sensing with internal calculation of PPV
+                                            and dominant frequency.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/vibration-meter.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="sol-product-card">
-                                    <div class="sol-product-image"><img src="./image/products/GNSSMeter_1.webp"
-                                            alt="GNSS Meter" loading="lazy"></div>
-                                    <div class="sol-product-body">
-                                        <span class="sol-product-category">Wireless Sensors</span>
+                            <div class="swiper-slide" data-category="wireless">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/laser_tilitmeter_1.webp" alt="Laser Tiltmeter"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">LS-G6-LAS-TIL90</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Laser Tiltmeter</h4>
+                                        <span class="product-category-label">Wireless Sensors</span>
+                                        <p>Ultra-precise laser tiltmeter delivering sub-microradian accuracy for
+                                            highly sensitive structural and geodetic measurements.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/laser-tiltmeter.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="wireless">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/GNSSMeter_1.webp" alt="GNSS Meter"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">LSG7GNS-SXLH</span>
+                                    </div>
+                                    <div class="product-card-body">
                                         <h4>GNSS Meter</h4>
+                                        <span class="product-category-label">Wireless Sensors</span>
                                         <p>Satellite-based displacement monitoring providing precise three-axis
                                             geospatial positioning data.</p>
-                                        <div class="sol-product-actions">
-                                            <a href="./contact.html" class="sol-btn-primary">Quote <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                            <a href="./products/gnss-meter.html" class="sol-btn-secondary">View <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/gnss-meter.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="sol-product-card">
-                                    <div class="sol-product-image"><img src="./image/products/Datalogger_1.webp"
-                                            alt="Digital Data Logger" loading="lazy"></div>
-                                    <div class="sol-product-body">
-                                        <span class="sol-product-category">Data Loggers</span>
+                            <div class="swiper-slide" data-category="data-loggers">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/Datalogger_1.webp" alt="Digital Data Logger"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">LS-G6-DIG-2</span>
+                                    </div>
+                                    <div class="product-card-body">
                                         <h4>Digital Data Logger</h4>
-                                        <p>Scalable digital logging solution for RS485 and SDI-12 sensor networks.</p>
-                                        <div class="sol-product-actions">
-                                            <a href="./contact.html" class="sol-btn-primary">Quote <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                            <a href="./products/digital-data-logger.html" class="sol-btn-secondary">View
-                                                <i class="fa-solid fa-arrow-right"></i></a>
+                                        <span class="product-category-label">Data Loggers</span>
+                                        <p>Scalable digital logging solution for RS485 and SDI-12 sensor networks.
+                                        </p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/digital-data-logger.html"
+                                                class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="sol-product-card">
-                                    <div class="sol-product-image"><img src="./image/home/gateway_01.webp" alt="Gateway"
-                                            loading="lazy"></div>
-                                    <div class="sol-product-body">
-                                        <span class="sol-product-category">Communications</span>
+                            <div class="swiper-slide" data-category="data-loggers">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/Vibrating_Wire_1.webp"
+                                            alt="Vibrating Wire Logger" class="product-img" loading="lazy">
+                                        <span class="product-image-label">LS-G6-VW</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Vibrating Wire Logger</h4>
+                                        <span class="product-category-label">Data Loggers</span>
+                                        <p>Robust logging for vibrating wire sensors, ensuring accurate frequency
+                                            readings in geotechnical applications.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/vibrating-wire.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="data-loggers">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/vibrating_wire_rcr_front.webp"
+                                            alt="Vibrating Wire RCR" class="product-img" loading="lazy">
+                                        <span class="product-image-label">LS-G6-VW-RCR</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Vibrating Wire RCR</h4>
+                                        <span class="product-category-label">Data Loggers</span>
+                                        <p>Ultra-robust 5-channel data logger designed to be embedded in precast
+                                            concrete for real-time stress and strain monitoring.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/vibrating-wire-rcr.html"
+                                                class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="data-loggers">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/Analog_logger_1.webp" alt="Analog Data Logger"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">LS-G6-ANALOG-4</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Analog Data Logger</h4>
+                                        <span class="product-category-label">Data Loggers</span>
+                                        <p>Multi-channel analog data logger supporting voltage, current, and bridge
+                                            inputs for legacy and hybrid sensor systems.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/analog-data-logger.html"
+                                                class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="data-loggers">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/Piconode_1.webp" alt="Piconode Data Logger"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">LS-G6-PICO</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Piconode Data Logger</h4>
+                                        <span class="product-category-label">Data Loggers</span>
+                                        <p>Compact wireless data logger for ultra-low-power analog sensor networks —
+                                            ideal for distributed, long-deployment monitoring.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/piconode-data-logger.html"
+                                                class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="wired">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/acceleorometer_01.webp"
+                                            alt="Triaxial MEMS Accelerometer" class="product-img" loading="lazy">
+                                        <span class="product-image-label">Triaxial MEMS</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Triaxial MEMS Accelerometer</h4>
+                                        <span class="product-category-label">Wired Sensors</span>
+                                        <p>High-precision wired accelerometer capturing acceleration, vibration, and
+                                            tilt for
+                                            structural health and dynamic load monitoring.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/accelerometers.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="wired">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/strain_gauge.webp"
+                                            alt="Vibrating Wire Strain Gauges" class="product-img" loading="lazy">
+                                        <span class="product-image-label">4100/4150 Series</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Vibrating Wire Strain Gauges</h4>
+                                        <span class="product-category-label">Wired Sensors</span>
+                                        <p>Precision wired strain gauges for long-term stress and deformation
+                                            monitoring on steel, concrete, and rock structures.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/strain-gauges.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="communications">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/home/gateway_01.webp" alt="Gateway" class="product-img"
+                                            loading="lazy">
+                                        <span class="product-image-label">LS-M6-KIO-GW</span>
+                                    </div>
+                                    <div class="product-card-body">
                                         <h4>Gateway</h4>
-                                        <p>Reliable 4G LTE gateway that securely forwards data from remote sensors in
-                                            harsh outdoor environments.</p>
-                                        <div class="sol-product-actions">
-                                            <a href="./contact.html" class="sol-btn-primary">Quote <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                            <a href="./products/gateway.html" class="sol-btn-secondary">View <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        <span class="product-category-label">Narrowband Communications</span>
+                                        <p>Reliable 4G LTE gateway that securely forwards data from remote sensors,
+                                            ensuring real-time monitoring even in harsh outdoor environments.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/gateway.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="sol-product-card">
-                                    <div class="sol-product-image"><img src="./image/home/staingauge_01.webp"
-                                            alt="Strain Gauge" loading="lazy"></div>
-                                    <div class="sol-product-body">
-                                        <span class="sol-product-category">Wired Sensors</span>
+                            <div class="swiper-slide" data-category="communications">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/home/repeater_01.webp" alt="Repeater" class="product-img"
+                                            loading="lazy">
+                                        <span class="product-image-label">RPK20E</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Repeater</h4>
+                                        <span class="product-category-label">Narrowband Communications</span>
+                                        <p>Wireless repeater to extend network coverage and improve connectivity
+                                            stability across distributed sensor networks.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/repeater.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="communications">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/thread_01.webp" alt="Thread" class="product-img"
+                                            loading="lazy">
+                                        <span class="product-image-label">ThreadX3</span>
+                                    </div>
+                                    <div class="product-card-body">
+                                        <h4>Thread</h4>
+                                        <span class="product-category-label">Broadband Communications</span>
+                                        <p>High-performance broadband node that delivers fast, reliable 4G/LTE data
+                                            communication for multi-sensor networks, even in remote or harsh
+                                            environments.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/thread.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide" data-category="wired">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/home/staingauge_01.webp" alt="Strain Gauge"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">Model 4100</span>
+                                    </div>
+                                    <div class="product-card-body">
                                         <h4>Strain Gauge</h4>
-                                        <p>Compact wired strain gauge for accurate strain and load measurement in
-                                            structural health monitoring applications.</p>
-                                        <div class="sol-product-actions">
-                                            <a href="./contact.html" class="sol-btn-primary">Quote <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                            <a href="./products/strain-gauges.html" class="sol-btn-secondary">View <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        <span class="product-category-label">Wired Sensors</span>
+                                        <p>Compact wired strain gauge for accurate strain and load measurement.</p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/strain-gauges.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
-                                <div class="sol-product-card">
-                                    <div class="sol-product-image"><img src="./image/products/acceleorometer_01.webp"
-                                            alt="Accelerometer" loading="lazy"></div>
-                                    <div class="sol-product-body">
-                                        <span class="sol-product-category">Wired Sensors</span>
+                            <div class="swiper-slide" data-category="wired">
+                                <div class="product-card">
+                                    <div class="product-card-image">
+                                        <img src="./image/products/acceleorometer_01.webp" alt="Accelerometer"
+                                            class="product-img" loading="lazy">
+                                        <span class="product-image-label">LS-G6-VW</span>
+                                    </div>
+                                    <div class="product-card-body">
                                         <h4>Accelerometer</h4>
-                                        <p>High-fidelity acceleration monitoring for rotating machinery and bridge
-                                            vibration analysis.</p>
-                                        <div class="sol-product-actions">
-                                            <a href="./contact.html" class="sol-btn-primary">Quote <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
-                                            <a href="./products/accelerometers.html" class="sol-btn-secondary">View <i
-                                                    class="fa-solid fa-arrow-right"></i></a>
+                                        <span class="product-category-label">Wired Sensors</span>
+                                        <p>High-fidelity acceleration monitoring for rotating machinery and bridges.
+                                        </p>
+                                        <div class="product-card-actions">
+                                            <a href="./contact.html" class="btn-product-primary">
+                                                <span>Quote</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                            <a href="./products/accelerometers.html" class="btn-product-secondary">
+                                                <span>View</span>
+                                                <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -913,71 +1279,278 @@
             </div>
         </section>
 
-        <!-- ══ 6. CASE STUDIES ══ -->
+        <!-- ══ 6. RESOURCES ══ -->
         <section class="sol-section sol-bg-darker">
             <div class="sol-section-inner">
                 <div class="sol-reveal" style="text-align:center;margin-bottom:48px;">
-                    <div class="sol-eyebrow">Case Studies</div>
-                    <h2 class="sol-section-title">Real-World Impact in Action</h2>
-                    <p class="sol-section-subtitle" style="margin:0 auto;">Discover how our IoT-powered monitoring
-                        solutions help infrastructure operators detect structural risks early, reduce maintenance costs,
-                        and extend asset life.</p>
+                    <div class="sol-eyebrow">Resources</div>
+                    <h2 class="sol-section-title">Insights and Updates</h2>
+                    <p class="sol-section-subtitle" style="margin:0 auto;">Explore our latest blogs, case studies, and
+                        company updates covering IoT-powered monitoring, real-world deployments, and infrastructure
+                        innovation.</p>
                 </div>
-                <div class="cs-new-bento sol-reveal">
-                    <a href="./case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html"
-                        class="cs-new-card cs-new-card--featured">
-                        <div class="cs-new-thumb">
-                            <img src="./image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp"
-                                alt="BridgePulse AI Bridge Monitoring" loading="lazy">
+                <!-- Insights & Updates marquee: two rows, opposite directions, infinite loop -->
+                <div class="insight-marquee sol-reveal">
+                    <div class="marquee-row marquee-row--ltr">
+                        <div class="marquee-track">
+                            <!-- Set A -->
+                            <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html"
+                                class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/products/scanners/lixel-k2-mesh-comparison.jpg"
+                                        alt="The Future of Digital Twins" loading="lazy">
+                                    <span class="marquee-card-type type-blogs">Blog</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Digital Twin</span>
+                                    <h4>The Future of Digital Twins: Mesh, Point Clouds, and Gaussian
+                                        Splatting Compared</h4>
+                                </div>
+                            </a>
+                            <a href="./case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html"
+                                class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp"
+                                        alt="BridgePulse AI Bridge Monitoring" loading="lazy">
+                                    <span class="marquee-card-type type-case-studies">Case Study</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Bridge Safety</span>
+                                    <h4>BridgePulse — AI &amp; Drone Technology for Bridge Health Monitoring
+                                    </h4>
+                                </div>
+                            </a>
+                            <a href="./article/worldsensing-official-reseller-india.html" class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/articles/worldsensing-official-reseller-india.png"
+                                        alt="Worldsensing partnership India" loading="lazy">
+                                    <span class="marquee-card-type type-articles">Article</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Company News</span>
+                                    <h4>Celebrating One Year of Partnership: Clove Technologies &amp;
+                                        Worldsensing</h4>
+                                </div>
+                            </a>
+                            <a href="./blogs/seismic-monitoring-buildings-critical-infrastructure.html"
+                                class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp"
+                                        alt="Seismic Monitoring for Buildings" loading="lazy">
+                                    <span class="marquee-card-type type-blogs">Blog</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Structural Health</span>
+                                    <h4>Seismic Monitoring for Buildings and Critical Infrastructure</h4>
+                                </div>
+                            </a>
+                            <a href="./case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html"
+                                class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp"
+                                        alt="IoT Bridge Monitoring" loading="lazy">
+                                    <span class="marquee-card-type type-case-studies">Case Study</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Railways</span>
+                                    <h4>IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges</h4>
+                                </div>
+                            </a>
+                            <!-- Set B (duplicate for seamless loop) -->
+                            <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html"
+                                class="marquee-card" aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/products/scanners/lixel-k2-mesh-comparison.jpg"
+                                        alt="" loading="lazy">
+                                    <span class="marquee-card-type type-blogs">Blog</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Digital Twin</span>
+                                    <h4>The Future of Digital Twins: Mesh, Point Clouds, and Gaussian
+                                        Splatting Compared</h4>
+                                </div>
+                            </a>
+                            <a href="./case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html"
+                                class="marquee-card" aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp"
+                                        alt="" loading="lazy">
+                                    <span class="marquee-card-type type-case-studies">Case Study</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Bridge Safety</span>
+                                    <h4>BridgePulse — AI &amp; Drone Technology for Bridge Health Monitoring
+                                    </h4>
+                                </div>
+                            </a>
+                            <a href="./article/worldsensing-official-reseller-india.html" class="marquee-card"
+                                aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/articles/worldsensing-official-reseller-india.png"
+                                        alt="" loading="lazy">
+                                    <span class="marquee-card-type type-articles">Article</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Company News</span>
+                                    <h4>Celebrating One Year of Partnership: Clove Technologies &amp;
+                                        Worldsensing</h4>
+                                </div>
+                            </a>
+                            <a href="./blogs/seismic-monitoring-buildings-critical-infrastructure.html"
+                                class="marquee-card" aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp"
+                                        alt="" loading="lazy">
+                                    <span class="marquee-card-type type-blogs">Blog</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Structural Health</span>
+                                    <h4>Seismic Monitoring for Buildings and Critical Infrastructure</h4>
+                                </div>
+                            </a>
+                            <a href="./case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html"
+                                class="marquee-card" aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp"
+                                        alt="" loading="lazy">
+                                    <span class="marquee-card-type type-case-studies">Case Study</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Railways</span>
+                                    <h4>IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges</h4>
+                                </div>
+                            </a>
                         </div>
-                        <div class="cs-new-body">
-                            <span class="cs-new-badge">AI &amp; Drones</span>
-                            <h4>BridgePulse — AI and Drone Technology for Bridge Health Monitoring</h4>
-                            <p>Impact of Implementation of IoT Sensors and Regularized Monitoring Devices.</p>
+                    </div>
+                    <div class="marquee-row marquee-row--rtl">
+                        <div class="marquee-track">
+                            <!-- Set A -->
+                            <a href="./blogs/10-early-warning-signs-bridge-continuous-monitoring.html"
+                                class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/blogs/banners/blogs_10-early-warning-signs-bridge-continuous-monitoring.webp"
+                                        alt="Early Warning Signs for Bridges" loading="lazy">
+                                    <span class="marquee-card-type type-blogs">Blog</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Bridge Safety</span>
+                                    <h4>10 Early Warning Signs Your Bridge Needs Continuous Monitoring</h4>
+                                </div>
+                            </a>
+                            <a href="./article/xgrids-authorized-reseller-india.html" class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/articles/xgrids-authorized-reseller-india.webp"
+                                        alt="XGRIDS authorized reseller India" loading="lazy">
+                                    <span class="marquee-card-type type-articles">Article</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Company News</span>
+                                    <h4>Clove Technologies Becomes Authorized XGRIDS Reseller in India</h4>
+                                </div>
+                            </a>
+                            <a href="./case-studies/structural-health-monitoring-of-highway-bridges.html"
+                                class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp"
+                                        alt="Structural Health Monitoring of Highway Bridges" loading="lazy">
+                                    <span class="marquee-card-type type-case-studies">Case Study</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Infrastructure</span>
+                                    <h4>Structural Health Monitoring of Highway Bridges</h4>
+                                </div>
+                            </a>
+                            <a href="./blogs/intelligent-pump-house-monitoring-and-control.html"
+                                class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/blogs/banners/blogs_intelligent-pump-house-monitoring-and-control.webp"
+                                        alt="Intelligent Pump House Monitoring" loading="lazy">
+                                    <span class="marquee-card-type type-blogs">Blog</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Smart Pumping</span>
+                                    <h4>Intelligent Pump House Monitoring &amp; Control</h4>
+                                </div>
+                            </a>
+                            <a href="./article/building-resilient-smart-cities-with-data-driven-insights.html"
+                                class="marquee-card">
+                                <div class="marquee-card-img">
+                                    <img src="./image/articles/article_Building%20Resilient%20Smart%20Cities%20with%20Data-Driven%20Insights.webp"
+                                        alt="Smart city infrastructure monitoring" loading="lazy">
+                                    <span class="marquee-card-type type-articles">Article</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Smart Cities</span>
+                                    <h4>Building Resilient Smart Cities with Data-Driven Insights</h4>
+                                </div>
+                            </a>
+                            <!-- Set B (duplicate for seamless loop) -->
+                            <a href="./blogs/10-early-warning-signs-bridge-continuous-monitoring.html"
+                                class="marquee-card" aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/blogs/banners/blogs_10-early-warning-signs-bridge-continuous-monitoring.webp"
+                                        alt="" loading="lazy">
+                                    <span class="marquee-card-type type-blogs">Blog</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Bridge Safety</span>
+                                    <h4>10 Early Warning Signs Your Bridge Needs Continuous Monitoring</h4>
+                                </div>
+                            </a>
+                            <a href="./article/xgrids-authorized-reseller-india.html" class="marquee-card"
+                                aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/articles/xgrids-authorized-reseller-india.webp" alt=""
+                                        loading="lazy">
+                                    <span class="marquee-card-type type-articles">Article</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Company News</span>
+                                    <h4>Clove Technologies Becomes Authorized XGRIDS Reseller in India</h4>
+                                </div>
+                            </a>
+                            <a href="./case-studies/structural-health-monitoring-of-highway-bridges.html"
+                                class="marquee-card" aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp"
+                                        alt="" loading="lazy">
+                                    <span class="marquee-card-type type-case-studies">Case Study</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Infrastructure</span>
+                                    <h4>Structural Health Monitoring of Highway Bridges</h4>
+                                </div>
+                            </a>
+                            <a href="./blogs/intelligent-pump-house-monitoring-and-control.html"
+                                class="marquee-card" aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/blogs/banners/blogs_intelligent-pump-house-monitoring-and-control.webp"
+                                        alt="" loading="lazy">
+                                    <span class="marquee-card-type type-blogs">Blog</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Smart Pumping</span>
+                                    <h4>Intelligent Pump House Monitoring &amp; Control</h4>
+                                </div>
+                            </a>
+                            <a href="./article/building-resilient-smart-cities-with-data-driven-insights.html"
+                                class="marquee-card" aria-hidden="true" tabindex="-1">
+                                <div class="marquee-card-img">
+                                    <img src="./image/articles/article_Building%20Resilient%20Smart%20Cities%20with%20Data-Driven%20Insights.webp"
+                                        alt="" loading="lazy">
+                                    <span class="marquee-card-type type-articles">Article</span>
+                                </div>
+                                <div class="marquee-card-body">
+                                    <span class="marquee-card-cat">Smart Cities</span>
+                                    <h4>Building Resilient Smart Cities with Data-Driven Insights</h4>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                    <a href="./case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html"
-                        class="cs-new-card">
-                        <div class="cs-new-thumb">
-                            <img src="./image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp"
-                                alt="IoT Bridge Monitoring" loading="lazy">
-                        </div>
-                        <div class="cs-new-body">
-                            <span class="cs-new-badge">IoT &amp; Sensors</span>
-                            <h4>IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges</h4>
-                            <p>24×7 monitoring, instant alerts, and data-driven decisions for safer rail networks.</p>
-                        </div>
-                    </a>
-                    <a href="./blogs/real-time-monitoring-solutions-transforming-infrastructure-safety-performance.html"
-                        class="cs-new-card">
-                        <div class="cs-new-thumb">
-                            <img src="./image/blogs/banners/blogs_real-time-monitoring-solutions-transforming-infrastructure-safety-performance.webp"
-                                alt="Real-Time Monitoring" loading="lazy">
-                        </div>
-                        <div class="cs-new-body">
-                            <span class="cs-new-badge">Monitoring</span>
-                            <h4>Real-Time Monitoring Solutions: Transforming Infrastructure Safety &amp; Performance
-                            </h4>
-                            <p>3× increase in Bridge Delivery Projects &amp; 2× Sensor Implementation.</p>
-                        </div>
-                    </a>
-                    <a href="./blogs/asset-monitoring-facility-management.html"
-                        class="cs-new-card cs-new-card--featured">
-                        <div class="cs-new-thumb">
-                            <img src="./image/blogs/banners/blogs_asset-monitoring-facility-management.webp"
-                                alt="Asset Monitoring" loading="lazy">
-                        </div>
-                        <div class="cs-new-body">
-                            <span class="cs-new-badge">Asset Management</span>
-                            <h4>Asset Monitoring &amp; Facility Management</h4>
-                            <p>Comprehensive IoT implementation with smart sensors for real-time monitoring and
-                                management.</p>
-                        </div>
-                    </a>
+                    </div>
                 </div>
                 <div class="sol-case-view-all sol-reveal">
-                    <a href="./resources.html#case-studies" class="sol-btn-case-all">
-                        View All Case Studies <i class="fa-solid fa-arrow-right"></i>
+                    <a href="./resources.html" class="sol-btn-case-all">
+                        View All Resources <i class="fa-solid fa-arrow-right"></i>
                     </a>
                 </div>
             </div>

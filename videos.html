@@ -79,7 +79,7 @@
             overflow: hidden;
             margin: 28px 28px 0;
             border-radius: 28px;
-            padding: 70px 40px;
+            padding: 60px 40px 48px;
             text-align: center;
             background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(244, 129, 32, 0.16) 0%, transparent 65%);
         }
@@ -143,6 +143,156 @@
             color: rgba(0, 0, 0, 0.5);
         }
 
+        .yv-search-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            max-width: 560px;
+            margin: 0 auto 20px;
+        }
+
+        .yv-search {
+            width: 100%;
+            max-width: 480px;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 16px;
+            padding: 13px 18px;
+            transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .yv-search-count {
+            flex-shrink: 0;
+            font-size: 12px;
+            font-weight: 700;
+            white-space: nowrap;
+            padding: 9px 16px;
+            border-radius: 100px;
+        }
+
+        body.dark-mode .yv-search-count {
+            background: rgba(244, 129, 32, 0.12);
+            color: #f48120;
+        }
+
+        body.lightmode .yv-search-count {
+            background: rgba(244, 129, 32, 0.1);
+            color: #f48120;
+        }
+
+        @media (max-width: 560px) {
+            .yv-search-row {
+                flex-wrap: wrap;
+            }
+
+            .yv-search-count {
+                margin: 0 auto;
+            }
+        }
+
+        body.dark-mode .yv-search {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        body.lightmode .yv-search {
+            background: rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        .yv-search:focus-within {
+            border-color: rgba(244, 129, 32, 0.4);
+            box-shadow: 0 0 0 3px rgba(244, 129, 32, 0.12);
+        }
+
+        .yv-search i.fa-magnifying-glass {
+            font-size: 14px;
+        }
+
+        body.dark-mode .yv-search i.fa-magnifying-glass {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        body.lightmode .yv-search i.fa-magnifying-glass {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        .yv-search input {
+            flex: 1;
+            min-width: 0;
+            background: none;
+            border: 0;
+            outline: 0;
+            font-size: 14px;
+            font-family: inherit;
+        }
+
+        body.dark-mode .yv-search input {
+            color: #fff;
+        }
+
+        body.lightmode .yv-search input {
+            color: #1a1a1a;
+        }
+
+        .yv-search input::placeholder {
+            opacity: 0.5;
+        }
+
+        .yv-search-clear {
+            background: none;
+            border: 0;
+            cursor: pointer;
+            font-size: 13px;
+            display: none;
+            flex-shrink: 0;
+        }
+
+        body.dark-mode .yv-search-clear {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        body.lightmode .yv-search-clear {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        .yv-search-clear:hover {
+            color: #f48120;
+        }
+
+        .yv-empty {
+            text-align: center;
+            padding: 60px 20px;
+            display: none;
+        }
+
+        .yv-empty i {
+            font-size: 26px;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        body.dark-mode .yv-empty {
+            color: rgba(255, 255, 255, 0.4);
+        }
+
+        body.lightmode .yv-empty {
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        .yv-empty button {
+            margin-top: 10px;
+            background: none;
+            border: 0;
+            color: #f48120;
+            font-weight: 700;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
         .yv-hero-actions {
             display: flex;
             align-items: center;
@@ -202,52 +352,15 @@
             transform: translateY(-2px);
         }
 
-        .yv-hero-stats {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            margin-top: 34px;
-            flex-wrap: wrap;
-        }
-
-        .yv-hero-stat-num {
-            font-size: 26px;
-            font-weight: 800;
-        }
-
-        body.dark-mode .yv-hero-stat-num {
-            color: #fff;
-        }
-
-        body.lightmode .yv-hero-stat-num {
-            color: #1a1a1a;
-        }
-
-        .yv-hero-stat-label {
-            font-size: 11px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 3px;
-        }
-
-        body.dark-mode .yv-hero-stat-label {
-            color: rgba(255, 255, 255, 0.35);
-        }
-
-        body.lightmode .yv-hero-stat-label {
-            color: rgba(0, 0, 0, 0.35);
-        }
-
         /* ── Layout ── */
         .yv-wrap {
             max-width: 1240px;
             margin: 0 auto;
-            padding: 48px 28px 60px;
+            padding: 28px 28px 48px;
         }
 
         .yv-section {
-            margin-bottom: 56px;
+            margin-bottom: 36px;
         }
 
         .yv-section-head {
@@ -304,7 +417,7 @@
             flex-wrap: wrap;
             gap: 10px;
             justify-content: center;
-            margin: 32px auto 48px;
+            margin: 0 auto 28px;
             max-width: 1080px;
             padding: 0 8px;
         }
@@ -659,6 +772,14 @@
             <h1 class="yv-hero-title">Videos &amp; <span class="accent">Shorts</span></h1>
             <p class="yv-hero-sub">Product demos and project walkthroughs from the Sentra team — structural health
                 monitoring and IoT-driven infrastructure insights in action.</p>
+            <div class="yv-search-row">
+                <div class="yv-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input id="yvSearchInput" type="text" placeholder="Search videos & shorts…" aria-label="Search videos and shorts">
+                    <button id="yvSearchClear" class="yv-search-clear" type="button" aria-label="Clear search">✕</button>
+                </div>
+                <span class="yv-search-count" id="yvSearchCount">4 Videos</span>
+            </div>
             <div class="yv-hero-actions">
                 <a href="https://www.youtube.com/@Sentra-tech/" target="_blank" rel="noopener"
                     class="yv-hero-btn yv-hero-btn-primary">
@@ -668,28 +789,24 @@
                     <i class="fa-solid fa-newspaper"></i> Explore Resources
                 </a>
             </div>
-            <div class="yv-hero-stats">
-                <div>
-                    <div class="yv-hero-stat-num">2</div>
-                    <div class="yv-hero-stat-label">Videos</div>
-                </div>
-                <div>
-                    <div class="yv-hero-stat-num">1</div>
-                    <div class="yv-hero-stat-label">Shorts</div>
-                </div>
-            </div>
         </div>
 
         <div class="yv-wrap">
             <div class="yv-filter-bar" id="yvFilterBar" aria-label="Video category filters"></div>
 
+            <!-- No results -->
+            <div class="yv-empty" id="yvEmpty">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <p>No videos or shorts found.</p>
+                <button id="yvEmptyClear" type="button">Clear search</button>
+            </div>
 
             <!-- ══ VIDEOS ══ -->
             <div class="yv-section" id="videos">
                 <div class="yv-section-head">
                     <span class="yv-section-icon"><i class="fa-solid fa-video"></i></span>
                     <h2 class="yv-section-title">Videos</h2>
-                    <span class="yv-section-count">2</span>
+                    <span class="yv-section-count">4</span>
                 </div>
                 <p class="yv-section-desc">Product demos, project spotlights, and technology explainers from the Clove
                     Technologies &amp; Sentra channel.</p>
@@ -703,7 +820,7 @@
                 <div class="yv-section-head">
                     <span class="yv-section-icon"><i class="fa-solid fa-mobile-screen-button"></i></span>
                     <h2 class="yv-section-title">Shorts</h2>
-                    <span class="yv-section-count">1</span>
+                    <span class="yv-section-count">0</span>
                 </div>
                 <p class="yv-section-desc">Quick-hit tips and highlights, straight from the field.</p>
                 <div class="yv-shorts-track" id="yvShortsTrack">
@@ -740,13 +857,13 @@
     <script>
         (function () {
             var videos = [
+                { id: "aq0LzTTa-4A", title: "Monitor Today. Protect Tomorrow. | Sentra's Structural Health Monitoring | Buildings", dur: "0:41", cat: "Structural Health Monitoring" },
                 { id: "SdzX8MXYcis", title: "Predict Failures Before They Happen | Structural Health Monitoring by Sentra", dur: "1:40", cat: "Structural Health Monitoring" },
-                { id: "G91JkA9I2TE", title: "10 Early Warning Signs Your Bridge Needs Structural Monitoring | Sentra", dur: "1:11", cat: "Advanced NDT" }
+                { id: "G91JkA9I2TE", title: "10 Early Warning Signs Your Bridge Needs Structural Monitoring | Sentra", dur: "1:11", cat: "Structural Health Monitoring" },
+                { id: "2vN1-4tC3q4", title: "Detect Structural Movement Early with Sentra Tiltmeter | Real-Time Tilt Monitoring | Sentra", dur: "0:26", cat: "SENTRA Products" }
             ];
 
-            var shorts = [
-                { id: "2vN1-4tC3q4", title: "Detect Structural Movement Early with Sentra Tiltmeter | Real-Time Tilt Monitoring | Sentra", dur: "0:26" }
-            ];
+            var shorts = [];
 
             function escapeHtml(s) {
                 return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -781,12 +898,54 @@
                 return categories;
             }, []);
 
-            function filterVideos(category) {
-                var cards = document.querySelectorAll('#yvVideoGrid .yv-card');
-                cards.forEach(function (card) {
+            var state = { category: 'all', search: '' };
+
+            function matchesSearch(text) {
+                return !state.search || text.toLowerCase().indexOf(state.search) !== -1;
+            }
+
+            function applyFilters() {
+                var videosVisible = 0;
+                var shortsVisible = 0;
+
+                var videoCards = document.querySelectorAll('#yvVideoGrid .yv-card');
+                videoCards.forEach(function (card) {
                     var cardCategory = card.getAttribute('data-category');
-                    card.style.display = category === 'all' || cardCategory === category ? '' : 'none';
+                    var title = card.querySelector('h4').textContent;
+                    var matches = (state.category === 'all' || cardCategory === state.category) && matchesSearch(title);
+                    card.style.display = matches ? '' : 'none';
+                    if (matches) videosVisible++;
                 });
+                var videosSection = document.getElementById('videos');
+                if (videosSection) videosSection.style.display = videosVisible ? '' : 'none';
+                var videoCountEl = document.querySelector('#videos .yv-section-count');
+                if (videoCountEl) videoCountEl.textContent = videosVisible;
+
+                var shortCards = document.querySelectorAll('#yvShortsTrack .yv-short-card');
+                shortCards.forEach(function (card) {
+                    var title = card.querySelector('h4').textContent;
+                    var matches = matchesSearch(title);
+                    card.style.display = matches ? '' : 'none';
+                    if (matches) shortsVisible++;
+                });
+                var shortsSection = document.getElementById('shorts');
+                if (shortsSection) shortsSection.style.display = (shortCards.length && shortsVisible) ? '' : 'none';
+                var shortCountEl = document.querySelector('#shorts .yv-section-count');
+                if (shortCountEl) shortCountEl.textContent = shortsVisible;
+
+                var visibleCount = videosVisible + shortsVisible;
+
+                var countEl = document.getElementById('yvSearchCount');
+                if (countEl) {
+                    if (shorts.length === 0) {
+                        countEl.textContent = videosVisible + (videosVisible === 1 ? ' Video' : ' Videos');
+                    } else {
+                        countEl.textContent = visibleCount + (visibleCount === 1 ? ' Result' : ' Results');
+                    }
+                }
+
+                var emptyEl = document.getElementById('yvEmpty');
+                if (emptyEl) emptyEl.style.display = visibleCount === 0 ? 'block' : 'none';
             }
 
             function setActiveFilter(button) {
@@ -804,7 +963,8 @@
                 allButton.textContent = 'All';
                 allButton.dataset.category = 'all';
                 allButton.addEventListener('click', function () {
-                    filterVideos('all');
+                    state.category = 'all';
+                    applyFilters();
                     setActiveFilter(allButton);
                 });
                 filterBar.appendChild(allButton);
@@ -816,10 +976,39 @@
                     button.textContent = category;
                     button.dataset.category = category;
                     button.addEventListener('click', function () {
-                        filterVideos(category);
+                        state.category = category;
+                        applyFilters();
                         setActiveFilter(button);
                     });
                     filterBar.appendChild(button);
+                });
+            }
+
+            var searchInput = document.getElementById('yvSearchInput');
+            var searchClear = document.getElementById('yvSearchClear');
+
+            function updateSearch(value) {
+                state.search = value.trim().toLowerCase();
+                if (searchClear) searchClear.style.display = state.search ? 'block' : 'none';
+                applyFilters();
+            }
+
+            if (searchInput) {
+                searchInput.addEventListener('input', function () { updateSearch(searchInput.value); });
+            }
+            if (searchClear) {
+                searchClear.addEventListener('click', function () {
+                    searchInput.value = '';
+                    updateSearch('');
+                    searchInput.focus();
+                });
+            }
+            var emptyClearBtn = document.getElementById('yvEmptyClear');
+            if (emptyClearBtn) {
+                emptyClearBtn.addEventListener('click', function () {
+                    if (searchInput) searchInput.value = '';
+                    updateSearch('');
+                    if (searchInput) searchInput.focus();
                 });
             }
 
@@ -839,21 +1028,7 @@
             }).join('');
             document.getElementById('yvShortsTrack').innerHTML = shortsHtml;
 
-            var videoCountEl = document.querySelector('#videos .yv-section-count');
-            if (videoCountEl) videoCountEl.textContent = videos.length;
-            var shortCountEl = document.querySelector('#shorts .yv-section-count');
-            if (shortCountEl) shortCountEl.textContent = shorts.length;
-
-            var heroStats = document.querySelectorAll('.yv-hero-stat-num');
-            if (heroStats.length >= 2) {
-                heroStats[0].textContent = videos.length;
-                heroStats[1].textContent = shorts.length;
-            }
-
-            var shortsSection = document.getElementById('shorts');
-            if (shortsSection && shorts.length === 0) {
-                shortsSection.style.display = 'none';
-            }
+            applyFilters();
 
             document.querySelectorAll('.yv-video-trigger').forEach(function (btn) {
                 btn.addEventListener('click', function (e) {

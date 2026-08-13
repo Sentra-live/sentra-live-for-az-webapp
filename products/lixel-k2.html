@@ -12,7 +12,6 @@
         gtag('config', 'G-8GFRCEFB87');
     </script>
     <meta charset="UTF-8">
-    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lixel K2 — Handheld SLAM LiDAR Scanner with RTK | Sentra × XGRIDS</title>
     <meta name="description"
@@ -583,24 +582,54 @@
 
         .ps-app-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.25rem;
         }
 
         .ps-app-card {
             border-radius: 14px;
-            padding: 1.5rem;
+            padding: 0;
+            overflow: hidden;
             border: 1px solid rgba(255, 255, 255, 0.07);
             background: rgba(255, 255, 255, 0.02);
             display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-            transition: border-color 0.25s ease, background 0.25s ease;
+            flex-direction: column;
+            transition: border-color 0.25s ease, background 0.25s ease, transform 0.25s ease;
         }
 
         .ps-app-card:hover {
             border-color: rgba(244, 129, 32, 0.35);
             background: rgba(244, 129, 32, 0.04);
+            transform: translateY(-3px);
+        }
+
+        .ps-app-thumb {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            background: #0d0e12;
+        }
+
+        .ps-app-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .ps-app-card:hover .ps-app-thumb img {
+            transform: scale(1.05);
+        }
+
+        .ps-app-body {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 1.5rem;
+            flex: 1;
         }
 
         .ps-app-icon {
@@ -617,15 +646,15 @@
         }
 
         .ps-app-card h5 {
-            font-size: 0.9rem;
+            font-size: 0.92rem;
             font-weight: 700;
-            margin: 0 0 0.3rem;
+            margin: 0;
         }
 
         .ps-app-card p {
-            font-size: 0.77rem;
+            font-size: 0.8rem;
             margin: 0;
-            line-height: 1.55;
+            line-height: 1.6;
             opacity: 0.55;
         }
 
@@ -638,9 +667,19 @@
             background: rgba(244, 129, 32, 0.08);
         }
 
+        @media (max-width: 991px) {
+            .ps-app-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
         @media (max-width: 767px) {
             .ps-app-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .ps-app-thumb {
+                aspect-ratio: 16 / 9;
             }
         }
 
@@ -1841,32 +1880,64 @@
             background: #eee;
         }
 
+        .ps-section-tight-bottom {
+            padding-bottom: 40px;
+        }
+
+        .ps-section-tight-top {
+            padding-top: 40px;
+        }
+
         .ps-studio-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 1.5rem;
-            align-items: start;
+            align-items: stretch;
+        }
+
+        .ps-studio-grid .ps-feat-card {
+            height: 100%;
+        }
+
+        .ps-studio-grid .ps-feat-thumb {
+            height: 190px;
+        }
+
+        .ps-studio-subtitle {
+            font-size: 0.78rem;
+            font-weight: 600;
+            margin: -0.4rem 0 0;
+            color: var(--accent-color);
+            opacity: 0.9;
         }
 
         .ps-studio-features {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
+            gap: 0.9rem;
         }
 
         .ps-studio-feat {
             display: flex;
             align-items: flex-start;
-            gap: 0.65rem;
+            gap: 0.75rem;
             font-size: 0.85rem;
             line-height: 1.6;
-            opacity: 0.7;
+            opacity: 0.75;
         }
 
         .ps-studio-feat i {
+            width: 22px;
+            height: 22px;
+            min-width: 22px;
+            border-radius: 7px;
+            background: rgba(244, 129, 32, 0.1);
             color: var(--accent-color);
-            font-size: 0.75rem;
-            margin-top: 5px;
+            font-size: 0.65rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1px;
             flex-shrink: 0;
         }
 
@@ -1881,30 +1952,39 @@
         }
 
         .ps-lcc-banner {
-            border-radius: 16px;
-            padding: 2.5rem;
+            border-radius: 18px;
             border: 1px solid rgba(244, 129, 32, 0.2);
             background: linear-gradient(135deg, rgba(244, 129, 32, 0.1) 0%, rgba(244, 129, 32, 0.03) 100%);
+            display: grid;
+            grid-template-columns: 1.15fr 1fr;
+            align-items: stretch;
+            overflow: hidden;
+        }
+
+        .ps-lcc-content {
+            padding: 2.5rem;
             display: flex;
-            align-items: center;
-            gap: 2rem;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-self: center;
         }
 
         .ps-lcc-icon {
-            width: 64px;
-            height: 64px;
-            min-width: 64px;
-            border-radius: 16px;
+            width: 56px;
+            height: 56px;
+            min-width: 56px;
+            border-radius: 15px;
             background: rgba(244, 129, 32, 0.12);
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--accent-color);
-            font-size: 1.5rem;
+            font-size: 1.35rem;
+            margin-bottom: 0.75rem;
         }
 
         .ps-lcc-banner h4 {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             font-weight: 700;
             margin: 0 0 0.5rem;
         }
@@ -1920,14 +2000,14 @@
             display: flex;
             gap: 0.5rem;
             flex-wrap: wrap;
-            margin-top: 0.75rem;
+            margin-top: 1rem;
         }
 
         .ps-lcc-tag {
             display: inline-flex;
             align-items: center;
-            gap: 0.3rem;
-            padding: 4px 10px;
+            gap: 0.35rem;
+            padding: 5px 11px;
             border-radius: 6px;
             background: rgba(244, 129, 32, 0.08);
             border: 1px solid rgba(244, 129, 32, 0.2);
@@ -1936,14 +2016,46 @@
             color: var(--accent-color);
         }
 
+        .ps-lcc-visual {
+            position: relative;
+            min-height: 260px;
+        }
+
+        .ps-lcc-visual img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .ps-lcc-visual::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(15, 12, 10, 0.5) 0%, transparent 30%);
+        }
+
         body.lightmode .ps-lcc-banner {
             background: linear-gradient(135deg, rgba(244, 129, 32, 0.06) 0%, #fff 100%);
         }
 
         @media (max-width: 767px) {
             .ps-lcc-banner {
-                flex-direction: column;
+                grid-template-columns: 1fr;
+            }
+
+            .ps-lcc-visual {
+                order: -1;
+                min-height: 180px;
+            }
+
+            .ps-lcc-content {
                 text-align: center;
+                align-items: center;
+            }
+
+            .ps-lcc-tags {
+                justify-content: center;
             }
         }
 
@@ -2715,47 +2827,6 @@
             </div>
         </div>
 
-        <!-- ══ USE CASES ══ -->
-        <div class="section">
-            <div class="hero-container">
-                <div class="d-flex flex-column gspace-5">
-                    <div class="d-flex flex-column text-center align-items-center gspace-2">
-                        <div class="sub-heading align-self-center"><i class="fa-regular fa-circle-dot"></i><span>Use
-                                Cases</span></div>
-                        <h2 class="title-heading heading-container heading-container-medium"
-                            style="font-size:clamp(22px,3.5vw,36px);">True 3D Content in Action</h2>
-                    </div>
-                    <div class="ps-usecases-container">
-                        <div class="ps-usecases-sticky">
-                            <div class="ps-usecases-number">01 / 04</div>
-                            <div class="ps-usecases-text">
-                                <h3>Real Estate</h3>
-                                <ul>
-                                    <li>Create immersive, walkthrough-ready 3D tours of properties in minutes — no
-                                        photography crew or staging required</li>
-                                    <li>Capture accurate spatial layouts with true-to-scale geometry for remote buyer
-                                        walkthroughs</li>
-                                    <li>Generate shareable links for listings — buyers explore every room interactively
-                                        from their browser</li>
-                                    <li>Reduce time-to-listing from days to hours with a single handheld capture session
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="ps-usecases-video-wrap">
-                                <video controls playsinline preload="metadata">
-                                    <source
-                                        src="https://cdn-bukbb1.xgrids.cloud/ep/dc/officialWebsite/lixelk2/k2_realestate_walkthrough.mp4"
-                                        type="video/mp4">
-                                </video>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- ══ APPLICATIONS ══ -->
         <div class="section">
             <div class="hero-container">
@@ -2768,26 +2839,42 @@
                     </div>
                     <div class="ps-app-grid">
                         <div class="ps-app-card">
-                            <div class="ps-app-icon"><i class="fa-solid fa-building"></i></div>
-                            <div>
-                                <h5>AEC &amp; As-Built Documentation</h5>
-                                <p>Rapid as-built capture for renovation, BIM coordination and construction
-                                    verification.</p>
+                            <div class="ps-app-thumb"><img
+                                    src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80"
+                                    alt="Construction site as-built documentation" loading="lazy"></div>
+                            <div class="ps-app-body">
+                                <div class="ps-app-icon"><i class="fa-solid fa-building"></i></div>
+                                <div>
+                                    <h5>AEC &amp; As-Built Documentation</h5>
+                                    <p>Rapid as-built capture for renovation, BIM coordination and construction
+                                        verification.</p>
+                                </div>
                             </div>
                         </div>
                         <div class="ps-app-card">
-                            <div class="ps-app-icon"><i class="fa-solid fa-industry"></i></div>
-                            <div>
-                                <h5>Industrial &amp; Plant Scanning</h5>
-                                <p>Confined-space and facility scanning for retrofit design and asset documentation.</p>
+                            <div class="ps-app-thumb"><img
+                                    src="https://images.unsplash.com/photo-1567789884554-0b844b597180?w=700&q=80"
+                                    alt="Industrial plant and facility scanning" loading="lazy"></div>
+                            <div class="ps-app-body">
+                                <div class="ps-app-icon"><i class="fa-solid fa-industry"></i></div>
+                                <div>
+                                    <h5>Industrial &amp; Plant Scanning</h5>
+                                    <p>Confined-space and facility scanning for retrofit design and asset
+                                        documentation.</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="ps-app-card">
-                            <div class="ps-app-icon"><i class="fa-solid fa-landmark"></i></div>
-                            <div>
-                                <h5>Heritage Documentation</h5>
-                                <p>Non-invasive, high-fidelity capture of heritage structures and monuments.</p>
+                            <div class="ps-app-thumb"><img
+                                    src="https://images.unsplash.com/photo-1548013146-72479768bada?w=700&q=80"
+                                    alt="Heritage monument documentation" loading="lazy"></div>
+                            <div class="ps-app-body">
+                                <div class="ps-app-icon"><i class="fa-solid fa-landmark"></i></div>
+                                <div>
+                                    <h5>Heritage Documentation</h5>
+                                    <p>Non-invasive, high-fidelity capture of heritage structures and monuments.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2924,7 +3011,7 @@
         </div>
 
         <!-- ══ LIXELSTUDIO ══ -->
-        <div class="section">
+        <div class="section ps-section-tight-bottom">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-5">
                     <div class="d-flex flex-column text-center align-items-center gspace-2">
@@ -2934,35 +3021,29 @@
                             style="font-size:clamp(22px,3.5vw,36px);">One Software Ecosystem. Full Pipeline.</h2>
                     </div>
                     <div class="ps-studio-grid">
-                        <div
-                            style="border-radius:14px;border:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.03);padding:2rem;">
-                            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1rem;">
-                                <div
-                                    style="width:48px;height:48px;border-radius:12px;background:rgba(244,129,32,0.1);display:flex;align-items:center;justify-content:center;color:var(--accent-color);font-size:1.2rem;flex-shrink:0;">
-                                    <i class="fa-solid fa-desktop"></i>
-                                </div>
-                                <div>
-                                    <h4 style="font-size:1.1rem;font-weight:700;margin:0;">LixelStudio</h4>
-                                    <p style="font-size:0.78rem;margin:0;opacity:0.5;">Point Cloud Processing
-                                        Workstation</p>
-                                </div>
+                        <div class="ps-feat-card ps-feat-card-photo">
+                            <div class="ps-feat-thumb"><img
+                                    src="../image/products/scanners/k2-quality-low-light-poster.webp"
+                                    alt="LixelStudio point cloud output in a low-light parking garage"></div>
+                            <div class="ps-feat-body">
+                                <div class="ps-feat-icon"><i class="fa-solid fa-desktop"></i></div>
+                                <h4>LixelStudio</h4>
+                                <p class="ps-studio-subtitle">Point Cloud Processing Workstation</p>
+                                <p>Upgraded for higher-quality data output — the desktop companion for full
+                                    registration, classification and export of Lixel K2 captures.</p>
                             </div>
-                            <p style="font-size:0.85rem;line-height:1.65;opacity:0.65;margin:0;">Upgraded for
-                                higher-quality data output — the desktop companion for full registration, classification
-                                and export of Lixel K2 captures.</p>
                         </div>
-                        <div>
-                            <h4 style="font-size:1rem;font-weight:700;margin:0 0 1rem;">Upgraded for Higher-Quality
-                                Output</h4>
+                        <div class="ps-feat-card">
+                            <div class="ps-feat-icon"><i class="fa-solid fa-sliders"></i></div>
+                            <h4>Upgraded for Higher-Quality Output</h4>
                             <div class="ps-studio-features">
-                                <div class="ps-studio-feat"><i
-                                        class="fa-solid fa-circle-check"></i><span>Photo-realistic color, clear even in
-                                        low light</span></div>
-                                <div class="ps-studio-feat"><i class="fa-solid fa-circle-check"></i><span>Improved
+                                <div class="ps-studio-feat"><i class="fa-solid fa-check"></i><span>Photo-realistic
+                                        color, clear even in low light</span></div>
+                                <div class="ps-studio-feat"><i class="fa-solid fa-check"></i><span>Improved
                                         leveling — horizontals and verticals, precisely aligned</span></div>
-                                <div class="ps-studio-feat"><i class="fa-solid fa-circle-check"></i><span>Cleaner
+                                <div class="ps-studio-feat"><i class="fa-solid fa-check"></i><span>Cleaner
                                         filtering, sharper edges</span></div>
-                                <div class="ps-studio-feat"><i class="fa-solid fa-circle-check"></i><span>More complete
+                                <div class="ps-studio-feat"><i class="fa-solid fa-check"></i><span>More complete
                                         mesh with fuller structural detail</span></div>
                             </div>
                         </div>
@@ -2972,12 +3053,12 @@
         </div>
 
         <!-- ══ LCC 2 FORMAT ══ -->
-        <div class="section">
+        <div class="section ps-section-tight-top">
             <div class="hero-container">
                 <div class="d-flex flex-column gspace-4">
                     <div class="ps-lcc-banner">
-                        <div class="ps-lcc-icon"><i class="fa-solid fa-cube"></i></div>
-                        <div>
+                        <div class="ps-lcc-content">
+                            <div class="ps-lcc-icon"><i class="fa-solid fa-cube"></i></div>
                             <h4>The New LCC 2 3D Gaussian Splatting Format</h4>
                             <p>Faster loading. Smoother navigation. Lighter file sizes. Spatial reality, reconstructed
                                 at higher fidelity and greater efficiency.</p>
@@ -2988,6 +3069,9 @@
                                 <span class="ps-lcc-tag"><i class="fa-solid fa-feather"></i> Lighter File Sizes</span>
                             </div>
                         </div>
+                        <div class="ps-lcc-visual"><img
+                                src="../image/products/scanners/k2-output-3dgs-poster.webp"
+                                alt="LCC 2 3D Gaussian Splat reconstruction of dense foliage"></div>
                     </div>
                 </div>
             </div>

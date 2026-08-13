@@ -12,7 +12,6 @@
         gtag('config', 'G-8GFRCEFB87');
     </script>
     <meta charset="UTF-8">
-    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lixel L2 Pro — Handheld SLAM LiDAR Scanner | Sentra × XGRIDS</title>
     <meta name="description"
@@ -1378,6 +1377,14 @@
             position: absolute;
             inset: 0;
             background: linear-gradient(0deg, rgba(5, 5, 8, 0.92) 0%, rgba(5, 5, 8, 0.55) 45%, rgba(5, 5, 8, 0.08) 100%);
+        }
+
+        .ps-acc-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.1);
+            pointer-events: none;
         }
 
         .ps-acc-body {

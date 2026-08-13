@@ -104,6 +104,8 @@
         .faq-header { text-align: center; max-width: 680px; margin: 0 auto 3rem; }
         .faq-header h2 { font-size: clamp(28px, 3.5vw, 42px); font-weight: 800; margin: 0 0 0.75rem; line-height: 1.15; }
         .faq-header p { font-size: 0.98rem; opacity: 0.6; line-height: 1.65; margin: 0; }
+        body.dark-mode .faq-header h2 { color: #fff; }
+        body.lightmode .faq-header h2 { color: #1a1a1a; }
 
         /* Search */
         .faq-search-wrap { max-width: 520px; margin: 0 auto 2.5rem; position: relative; }
@@ -116,6 +118,8 @@
         }
         .faq-search-wrap input:focus { border-color: var(--accent-color); background: rgba(244,129,32,0.06); }
         .faq-search-wrap input::placeholder { opacity: 0.4; }
+        body.dark-mode .faq-search-wrap input { color: #fff; }
+        body.lightmode .faq-search-wrap input { color: #1a1a1a; }
         .faq-search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); opacity: 0.35; font-size: 1.1rem; pointer-events: none; }
         .faq-search-clear {
             position: absolute; right: 12px; top: 50%; transform: translateY(-50%);
@@ -177,6 +181,8 @@
             opacity: 0.4;
             font-weight: 500;
         }
+        body.dark-mode .faq-filter-card span { color: #fff; }
+        body.lightmode .faq-filter-card span { color: #1a1a1a; }
         body.lightmode .faq-filter-card {
             border-color: rgba(0,0,0,0.07);
             background: #fff;
@@ -206,7 +212,8 @@
         }
         .faq-category-title i { color: var(--accent-color); font-size: 1.1rem; }
         .faq-category-count { font-size: 0.78rem; font-weight: 600; opacity: 0.4; margin-left: auto; }
-        body.lightmode .faq-category-title { border-bottom-color: rgba(0,0,0,0.06); }
+        body.dark-mode .faq-category-title { color: #fff; }
+        body.lightmode .faq-category-title { color: #1a1a1a; border-bottom-color: rgba(0,0,0,0.06); }
 
         /* Accordion Item */
         .faq-accordion { display: flex; flex-direction: column; gap: 0.4rem; }
@@ -224,6 +231,8 @@
             font-size: 0.92rem; font-weight: 600; text-align: left;
             cursor: pointer; transition: background 0.2s ease;
         }
+        body.dark-mode .faq-accordion-btn { color: #fff; }
+        body.lightmode .faq-accordion-btn { color: #1a1a1a; }
         .faq-accordion-btn:hover { background: rgba(244,129,32,0.03); }
         .faq-accordion-btn .faq-q-num { color: var(--accent-color); font-size: 0.75rem; flex-shrink: 0; }
         .faq-accordion-btn .faq-chevron {

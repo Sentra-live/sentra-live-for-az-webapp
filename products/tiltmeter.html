@@ -12,7 +12,6 @@
   gtag('config', 'G-8GFRCEFB87');
 </script>
     <meta charset="UTF-8">
-    <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiltmeter — 3-Axis Wireless Tilt Sensor | Sentra</title>
     <meta name="description" content="High-accuracy wireless tiltmeter for angular displacement and tilt trends in structures, slopes, and rail tracks. ±90° range, IP68, up to 10yr battery." />
@@ -160,15 +159,56 @@ body.lightmode .tl-battery-table th, body.lightmode .tl-battery-table td { borde
 .tl-battery-toggle[aria-expanded="true"] i { transform: rotate(180deg); }
 body.lightmode .tl-battery-toggle { border-color: rgba(244,129,32,0.3); background: rgba(244,129,32,0.06); color: var(--accent-color); }
 
-/* ══ MOUNTING CARDS ══ */
-.tl-mount-card { border-radius: 14px; border: 1px solid rgba(255,255,255,0.07); background: rgba(255,255,255,0.02); padding: 2rem 1.5rem; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; transition: all 0.3s ease; height: 100%; }
+/* ══ MOUNTING CARDS (compact grid) ══ */
+.tl-mount-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.85rem; }
+.tl-mount-card { border-radius: 12px; border: 1px solid rgba(255,255,255,0.07); background: rgba(255,255,255,0.02); padding: 0.85rem 0.85rem 1rem; display: flex; flex-direction: column; text-align: left; gap: 0.55rem; transition: all 0.3s ease; height: 100%; }
 .tl-mount-card:hover { border-color: rgba(244,129,32,0.35); background: rgba(244,129,32,0.04); transform: translateY(-3px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
-.tl-mount-icon { width: 52px; height: 52px; border-radius: 13px; background: rgba(244,129,32,0.1); display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.3rem; flex-shrink: 0; }
-.tl-mount-card h4 { font-weight: 700; margin: 0; font-size: 1.05rem; }
-.tl-mount-card p { font-size: 0.82rem; opacity: 0.6; margin: 0; line-height: 1.55; }
+.tl-mount-img { width: 100%; aspect-ratio: 4 / 3; border-radius: 8px; background: #ffffff; overflow: hidden; display: flex; align-items: center; justify-content: center; padding: 0.5rem; box-sizing: border-box; }
+.tl-mount-img img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94); }
+.tl-mount-card:hover .tl-mount-img img { transform: scale(1.06); }
+.tl-mount-card h4 { font-weight: 700; margin: 0; font-size: 0.82rem; line-height: 1.3; }
+.tl-mount-card p { font-size: 0.72rem; opacity: 0.6; margin: 0; line-height: 1.45; }
+.tl-mount-code { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.03em; color: var(--accent-color); text-transform: uppercase; }
 body.lightmode .tl-mount-card { border-color: rgba(0,0,0,0.07); background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.04); }
 body.lightmode .tl-mount-card:hover { border-color: rgba(244,129,32,0.3); background: rgba(244,129,32,0.03); }
-body.lightmode .tl-mount-icon { background: rgba(244,129,32,0.08); }
+body.lightmode .tl-mount-img { box-shadow: 0 2px 10px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.06); }
+@media (max-width: 991px) { .tl-mount-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 575px) { .tl-mount-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* ══ MOUNTING SLIDER ══ */
+.tl-mount-slider { position: relative; }
+.tl-mount-track { position: relative; }
+.tl-mount-swiper { overflow: hidden; padding: 0.25rem 3rem 0.5rem; }
+.tl-mount-swiper .swiper-slide { height: auto; display: flex; }
+.tl-mount-swiper .swiper-slide .tl-mount-card { margin: 0; width: 100%; }
+.tl-mount-text { display: flex; flex-direction: column; gap: 0.35rem; flex: 1; }
+.tl-mount-btn { position: absolute; top: 50%; transform: translateY(-50%); z-index: 11; width: 44px; height: 44px; border-radius: 50%; border: 1px solid rgba(244,129,32,0.35); background: rgba(244,129,32,0.1); color: var(--accent-color); font-size: 0.85rem; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; transition: all 0.25s ease; padding: 0; box-shadow: 0 4px 14px rgba(0,0,0,0.2); }
+.tl-mount-btn-prev { left: 0; }
+.tl-mount-btn-next { right: 0; }
+.tl-mount-btn:hover { background: var(--accent-color); color: #fff; border-color: var(--accent-color); }
+.tl-mount-btn.swiper-button-disabled { opacity: 0.35; pointer-events: none; }
+body.lightmode .tl-mount-btn { border-color: rgba(244,129,32,0.35); background: rgba(244,129,32,0.08); box-shadow: 0 4px 14px rgba(0,0,0,0.08); }
+.tl-mount-pagination { position: static; display: flex; align-items: center; justify-content: center; gap: 6px; margin-top: 1.1rem; }
+.tl-mount-pagination .swiper-pagination-bullet { width: 8px; height: 8px; border-radius: 999px; background: rgba(255,255,255,0.25); opacity: 1; transition: all 0.25s ease; margin: 0 !important; }
+.tl-mount-pagination .swiper-pagination-bullet-active { width: 22px; background: var(--accent-color); }
+body.lightmode .tl-mount-pagination .swiper-pagination-bullet { background: rgba(0,0,0,0.2); }
+@media (max-width: 575px) {
+    .tl-mount-swiper { padding: 0.25rem 2.25rem 0.5rem; }
+    .tl-mount-btn { width: 36px; height: 36px; font-size: 0.75rem; }
+}
+
+/* ══ OPERATIONAL MODES (rich, alternating image/text) ══ */
+.tl-opmode { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: center; padding: 2rem 0; }
+.tl-opmode:not(:last-child) { border-bottom: 1px solid rgba(255,255,255,0.07); }
+.tl-opmode-media { border-radius: 14px; overflow: hidden; background: #ffffff; border: 1px solid rgba(255,255,255,0.08); aspect-ratio: 16 / 9; }
+.tl-opmode-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tl-opmode-badge { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent-color); background: rgba(244,129,32,0.1); border: 1px solid rgba(244,129,32,0.25); padding: 4px 12px; border-radius: 999px; margin-bottom: 0.85rem; }
+.tl-opmode-text h3 { font-size: 1.2rem; font-weight: 800; margin: 0 0 0.85rem; }
+.tl-opmode-text p { font-size: 0.85rem; line-height: 1.7; opacity: 0.65; margin: 0 0 0.85rem; }
+.tl-opmode-text p:last-child { margin-bottom: 0; }
+body.lightmode .tl-opmode { border-bottom-color: rgba(0,0,0,0.07); }
+body.lightmode .tl-opmode-media { border-color: rgba(0,0,0,0.06); box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+@media (max-width: 900px) { .tl-opmode { grid-template-columns: 1fr; gap: 1.25rem; } .tl-opmode-media { order: -1; } }
 
 /* ══ CTA BANNER ══ */
 .tl-cta-banner { border-radius: 20px; padding: 4rem 3rem; background: linear-gradient(135deg, rgba(244,129,32,0.15) 0%, rgba(244,129,32,0.05) 50%, rgba(0,0,0,0) 100%); border: 1px solid rgba(244,129,32,0.2); display: flex; align-items: center; justify-content: space-between; gap: 2rem; position: relative; overflow: hidden; }
@@ -440,6 +480,38 @@ body.lightmode .p-img-wrap { background: #fff; box-shadow: 0 2px 12px rgba(0,0,0
             </div>
         </div>
 
+        <!-- ══ OPERATIONAL MODES ══ -->
+        <div class="section">
+            <div class="hero-container">
+                <div class="d-flex flex-column gspace-4">
+                    <div class="d-flex flex-column text-center align-items-center gspace-2">
+                        <div class="sub-heading align-self-center animate-box animated animate__animated" data-animate="animate__fadeInDown"><i class="fa-regular fa-circle-dot"></i><span>Operational Modes</span></div>
+                        <h2 class="title-heading heading-container heading-container-medium animate-box animated animate__animated" data-animate="animate__fadeInDown" style="font-size:clamp(22px,3.5vw,36px);">Tiltmeter Operational Modes</h2>
+                        <p style="max-width:680px;margin:0 auto;opacity:0.6;font-size:0.9rem;line-height:1.65;">The Tiltmeter lets you choose between operational modes in addition to periodic readings so you can tailor data collection to your project needs. These modes optimize workflows, extend battery life, and reduce the number of devices required in the field.</p>
+                    </div>
+                    <div class="tl-opmode animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                        <div class="tl-opmode-media"><img src="../image/products/tiltmeter-modes/tiltmeter-mode-detection.webp" alt="Triggered Measurements mode" loading="lazy"></div>
+                        <div class="tl-opmode-text">
+                            <span class="tl-opmode-badge"><i class="fa-solid fa-bolt"></i> Triggered Measurements Mode</span>
+                            <h3>Capture Measurements Exactly When Movement Matters</h3>
+                            <p>The Tiltmeter's motion detection sensor actively monitors changes in angle, angular velocity, and acceleration. When a significant movement is detected, it triggers the primary sensor to capture detailed measurements, exactly when you need them.</p>
+                            <p>You can customize when and how many measurements are taken (on event, after event, both, or across multiple events) and set delays and cooldown periods to match your monitoring needs.</p>
+                            <p>This intelligent mode reduces unnecessary data transmission, keeps battery consumption low, and focuses on the movements that matter most, giving you actionable insights without overloading your system.</p>
+                        </div>
+                    </div>
+                    <div class="tl-opmode animate-box animated animate__animated" data-animate="animate__fadeInUp">
+                        <div class="tl-opmode-text">
+                            <span class="tl-opmode-badge"><i class="fa-solid fa-bell"></i> Event Detection Mode</span>
+                            <h3>Instant Alerts When Thresholds Are Exceeded</h3>
+                            <p>The Tiltmeter continuously monitors tilt at 3.9 Hz, instantly checking measurements against configurable thresholds.</p>
+                            <p>If a threshold is exceeded, the system sends an alert in under 2 seconds and automatically increases reporting frequency to capture detailed data during the event. Once the movement stabilizes, monitoring returns to its standard reporting interval, ensuring efficient, focused, and timely insights.</p>
+                        </div>
+                        <div class="tl-opmode-media"><img src="../image/products/tiltmeter-modes/tiltmeter-mode-detection.webp" alt="Event Detection mode" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- ══ APPLICATIONS ══ -->
         <div class="section">
             <div class="hero-container">
@@ -552,10 +624,75 @@ body.lightmode .p-img-wrap { background: #fff; box-shadow: 0 2px 12px rgba(0,0,0
                         <h2 class="title-heading heading-container heading-container-medium" style="font-size:clamp(22px,3.5vw,36px);">Flexible Mounting for Any Environment</h2>
                         <p style="max-width:600px;margin:0 auto;opacity:0.6;font-size:0.9rem;line-height:1.65;">Choose the mounting configuration that best fits your deployment site.</p>
                     </div>
-                    <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 grid-spacer-3">
-                        <div class="col"><div class="tl-mount-card"><div class="tl-mount-icon"><i class="fa-solid fa-arrow-up"></i></div><h4>Pole Mounting</h4><p>Using L-shaped mount <strong>WS-ACC-TIL-LM8</strong> with u-bolts for secure attachment to poles, posts and vertical structures.</p></div></div>
-                        <div class="col"><div class="tl-mount-card"><div class="tl-mount-icon"><i class="fa-solid fa-square"></i></div><h4>Surface Mounting</h4><p>Using versatile mounting plates for horizontal, vertical and rail track applications. Magnetic mounting also available for metallic surfaces.</p></div></div>
-                        <div class="col"><div class="tl-mount-card"><div class="tl-mount-icon"><i class="fa-solid fa-layer-group"></i></div><h4>Tilt Beam Mounting</h4><p>Attachment to tilt beams using WS-ACC-TIL-TB mounting assembly for precise beam inclination monitoring in geotechnical applications.</p></div></div>
+                    <div class="tl-mount-slider">
+                        <div class="tl-mount-track">
+                            <button type="button" class="tl-mount-btn tl-mount-btn-prev" aria-label="Previous mounting options"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button type="button" class="tl-mount-btn tl-mount-btn-next" aria-label="Next mounting options"><i class="fa-solid fa-arrow-right"></i></button>
+                            <div class="swiper tl-mount-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="tl-mount-card">
+                                        <div class="tl-mount-img"><img src="../image/products/mounting/tiltmeter-mount-surface-recommended.webp" alt="Recommended surface mounting plate for the wireless tiltmeter" loading="lazy"></div>
+                                        <div class="tl-mount-text">
+                                            <span class="tl-mount-code">LS-ACC-IN15-HP</span>
+                                            <h4>Recommended Surface Mounting</h4>
+                                            <p>Plate for horizontal and vertical mounting. Secures with anchor rods or glue and features a threaded hole for a monitoring prism or leveling screw.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tl-mount-card">
+                                        <div class="tl-mount-img"><img src="../image/products/mounting/tiltmeter-mount-rail-track.webp" alt="Horizontal surface mounting plate for rail track monitoring" loading="lazy"></div>
+                                        <div class="tl-mount-text">
+                                            <span class="tl-mount-code">LS-ACC-IN-HPTM</span>
+                                            <h4>Rail Track Mounting</h4>
+                                            <p>Horizontal surface mounting plate designed for track monitoring — glued to the surface for fast, robust fixing.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tl-mount-card">
+                                        <div class="tl-mount-img"><img src="../image/products/mounting/tiltmeter-mount-double-plate.webp" alt="Horizontal surface mounting with double plate" loading="lazy"></div>
+                                        <div class="tl-mount-text">
+                                            <span class="tl-mount-code">LS-ACC-IN15DP</span>
+                                            <h4>Double Plate Mounting</h4>
+                                            <p>Versatile double plate for horizontal mounting without opening the device. Attaches with glue and features a threaded hole for a prism or leveling screw.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tl-mount-card">
+                                        <div class="tl-mount-img"><img src="../image/products/mounting/tiltmeter-mount-magnetic.webp" alt="Vertical mounting using magnets on metallic surfaces" loading="lazy"></div>
+                                        <div class="tl-mount-text">
+                                            <span class="tl-mount-code">LS-ACC-MRHP + LS-ACC-MAG</span>
+                                            <h4>Magnetic Mounting</h4>
+                                            <p>Mounting plate with a magnet kit attached to the back to mount on metallic surfaces — a versatile, tool-free tiltmeter mounting option.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tl-mount-card">
+                                        <div class="tl-mount-img"><img src="../image/products/mounting/tiltmeter-mount-tilt-beam.webp" alt="Mounting on a tilt beam using the beam fixation kit" loading="lazy"></div>
+                                        <div class="tl-mount-text">
+                                            <span class="tl-mount-code">WS-ACC-BEAMFIX</span>
+                                            <h4>Tilt Beam Mounting</h4>
+                                            <p>Fixation kit for beam accessory mounting — attachment to tilt beams for precise beam inclination monitoring in geotechnical applications.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="tl-mount-card">
+                                        <div class="tl-mount-img"><img src="../image/products/mounting/tiltmeter-mount-pole.webp" alt="Pole mounting with L-shaped mount and u-bolts" loading="lazy"></div>
+                                        <div class="tl-mount-text">
+                                            <span class="tl-mount-code">LS-ACC-LVP + WS-ACC-U50</span>
+                                            <h4>Pole Mounting</h4>
+                                            <p>L-shaped mount attached to a 50 mm pole with u-bolts for secure attachment to poles, posts and vertical structures.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination tl-mount-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -625,6 +762,29 @@ body.lightmode .p-img-wrap { background: #fff; box-shadow: 0 2px 12px rgba(0,0,0
     <script src="../js/vendor/swiper-bundle.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/swiper-script.js"></script>
+    <script>
+        (function () {
+            var mountSlider = new Swiper('.tl-mount-swiper', {
+                speed: 600,
+                slidesPerView: 1,
+                spaceBetween: 14,
+                grabCursor: true,
+                loop: true,
+                navigation: {
+                    nextEl: '.tl-mount-btn-next',
+                    prevEl: '.tl-mount-btn-prev',
+                },
+                pagination: {
+                    el: '.tl-mount-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    992: { slidesPerView: 3, spaceBetween: 24 },
+                    600: { slidesPerView: 2, spaceBetween: 20 },
+                },
+            });
+        })();
+    </script>
     <script src="../js/submit-form.js"></script>
     <script src="../js/video_embedded.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>

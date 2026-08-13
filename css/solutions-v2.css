@@ -447,6 +447,10 @@ body.lightmode .sol-acc-chevron {
     margin-bottom: 60px
 }
 
+.sol-cta-inline p {
+    color: rgba(255, 255, 255, .8);
+}
+
 .sol-bento-grid {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -1166,6 +1170,10 @@ body.lightmode .sol-section-title {
 
 body.lightmode .sol-section-subtitle {
     color: #555
+}
+
+body.lightmode .sol-cta-inline p {
+    color: #333
 }
 
 body.lightmode .sol-bento-cell {
@@ -2742,7 +2750,14 @@ body.lightmode .sol-how-sticky .sol-sticky-slide {
     border: 1px solid rgba(244, 129, 32, .2);
     display: inline-block;
     margin-bottom: 8px;
-    width: fit-content
+    width: fit-content;
+    transition: background .25s ease, border-color .25s ease, color .25s ease
+}
+
+.sol-product-card:hover .sol-product-category {
+    background: #f48120;
+    border-color: #f48120;
+    color: #fff
 }
 
 .sol-product-body h4 {

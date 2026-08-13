@@ -420,6 +420,22 @@
         });
     }
 
+    function marqueeCardMarkup(r) {
+        var typeLabel = r.type === 'blogs' ? 'Blog' : (r.type === 'case-studies' ? 'Case Study' : 'Article');
+        return (
+            '<a href="' + r.link + '" class="marquee-card">' +
+            '<div class="marquee-card-img">' +
+            (r.image ? '<img src="' + r.image + '" alt="' + escapeHtml(r.title) + '" loading="lazy">' : '') +
+            '<span class="marquee-card-type type-' + r.type + '">' + typeLabel + '</span>' +
+            '</div>' +
+            '<div class="marquee-card-body">' +
+            '<span class="marquee-card-cat">' + escapeHtml(r.category) + '</span>' +
+            '<h4>' + escapeHtml(r.title) + '</h4>' +
+            '</div>' +
+            '</a>'
+        );
+    }
+
     function renderRecent(filtered) {
         var $section = $('#rh-recent');
         var pool = filtered.length ? filtered : RESOURCES;
@@ -431,81 +447,18 @@
         }
         $section.show();
 
-        var featured = ordered[0];
-        var rest = ordered.slice(1, 6); // max 5 slides
+        var cardsHtml = ordered.map(marqueeCardMarkup).join('');
+        // Duplicate the set so the CSS marquee animation (translateX to -50%) loops seamlessly.
+        var trackHtml = ordered.length > 1 ? cardsHtml + cardsHtml : cardsHtml;
 
-        var html = '<div class="rh-featured-layout">';
-        html += '<div class="rh-featured-col">' + cardMarkup(featured, 'featured') + '</div>';
-
-        html += '<div class="rh-compact-carousel">';
-        html += '<div class="rh-compact-track">';
-        rest.forEach(function (r) {
-            html += '<div class="rh-compact-slide">' + cardMarkup(r, 'compact') + '</div>';
-        });
-        html += '</div>';
-        if (rest.length > 1) {
-            html += '<div class="rh-compact-dots">';
-            rest.forEach(function (_, i) {
-                html += '<button class="rh-compact-dot" data-idx="' + i + '" aria-label="Slide ' + (i + 1) + '"></button>';
-            });
-            html += '</div>';
-        }
-        html += '</div>';
-        html += '</div>';
+        var html = '<div class="insight-marquee insight-marquee--single">' +
+            '<div class="marquee-row">' +
+            '<div class="marquee-track">' + trackHtml + '</div>' +
+            '</div>' +
+            '</div>';
 
         $('#rh-recent-grid').html(html);
         $('#rh-recent-heading').text(state.search ? 'Search Results for "' + state.search + '"' : 'Recently Published');
-
-        // Init compact carousel with GSAP
-        (function () {
-            var $carousel = $('#rh-recent-grid .rh-compact-carousel');
-            if (!$carousel.length) return;
-            var track = $carousel.find('.rh-compact-track')[0];
-            var dots = $carousel.find('.rh-compact-dot').toArray();
-            var total = $carousel.find('.rh-compact-slide').length;
-            var current = 0;
-            var timer;
-            var DOT_W = 8;   // inactive dot width (px)
-            var DOT_AW = 24; // active dot width (px)
-
-            function goTo(idx) {
-                current = (idx + total) % total;
-
-                // Slide track via GSAP
-                gsap.to(track, {
-                    x: -(current * 100) + '%',
-                    duration: 0.55,
-                    ease: 'power2.inOut'
-                });
-
-                // Animate each dot
-                dots.forEach(function (dot, i) {
-                    if (i === current) {
-                        gsap.to(dot, { width: DOT_AW, duration: 0.35, ease: 'power2.out' });
-                        dot.classList.add('active');
-                    } else {
-                        gsap.to(dot, { width: DOT_W, duration: 0.35, ease: 'power2.out' });
-                        dot.classList.remove('active');
-                    }
-                });
-            }
-
-            dots.forEach(function (dot) {
-                dot.addEventListener('click', function () {
-                    clearInterval(timer);
-                    goTo(parseInt(dot.dataset.idx));
-                    startAuto();
-                });
-            });
-
-            function startAuto() {
-                timer = setInterval(function () { goTo(current + 1); }, 3500);
-            }
-
-            // Set initial dot states instantly
-            goTo(0);
-            startAuto();
-        }());
     }
 
     function renderCarousel(type, filtered) {

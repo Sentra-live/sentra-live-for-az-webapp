@@ -30,7 +30,9 @@ $(function () {
 $(function () {
     new Swiper('.swiper.swiperTestimonial', {
         autoplay: {
-            delay: 5000,
+            delay: 3500,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
         },
         speed: 2000,
         slidesPerView: 4,

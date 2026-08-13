@@ -313,26 +313,31 @@
 
         .dc-card-top {
             display: flex;
-            align-items: flex-start;
-            gap: 1rem;
+            flex-direction: column;
+            gap: 0.9rem;
         }
 
         .dc-card-icon {
-            width: 94px;
-            height: 94px;
-            min-width: 94px;
-            border-radius: 18px;
-            background: rgba(255, 255, 255, 0.08);
+            width: 100%;
+            aspect-ratio: 16 / 10;
+            border-radius: 12px;
+            background: #ffffff;
             display: flex;
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            border: 1px solid rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 14px;
+            box-sizing: border-box;
         }
 
         body.dark-mode .dc-card-icon {
             background: #ffffff;
-            border-color: rgba(255, 255, 255, 0.18);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        body.lightmode .dc-card-icon {
+            border-color: rgba(0, 0, 0, 0.06);
         }
 
         .dc-card-icon img {
@@ -408,14 +413,18 @@
             align-items: center;
             justify-content: center;
             gap: 0.5rem;
-            padding: 0.55rem 1rem;
-            border-radius: 8px;
+            padding: 0.7rem 1.3rem;
+            border-radius: 100px;
             font-size: 0.78rem;
             font-weight: 700;
             text-decoration: none;
             transition: all 0.2s ease;
             border: 1px solid transparent;
             white-space: nowrap;
+        }
+
+        .dc-btn:hover {
+            transform: translateY(-1px);
         }
 
         .dc-btn-download {
