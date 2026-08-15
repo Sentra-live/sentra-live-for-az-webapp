@@ -255,8 +255,8 @@
         }
 
         body.dark-mode .yv-search {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.4);
         }
 
         body.lightmode .yv-search {
@@ -266,7 +266,7 @@
 
         body.lightmode .yv-hero .yv-search {
             background: rgba(255, 255, 255, 0.08);
-            border: 1px solid rgba(255, 255, 255, 0.16);
+            border: 1px solid rgba(255, 255, 255, 0.4);
         }
 
         .yv-search:focus-within {
@@ -847,12 +847,12 @@
         <!-- Hero -->
         <div class="yv-hero">
             <div class="yv-hero-video-bg" aria-hidden="true">
-                <iframe id="yvHeroVideoFrame" src="https://www.youtube.com/embed/3N4SRohMoEg?autoplay=1&mute=0&loop=1&playlist=3N4SRohMoEg&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&start=7&enablejsapi=1"
+                <iframe id="yvHeroVideoFrame" src="https://www.youtube.com/embed/3N4SRohMoEg?autoplay=1&mute=1&loop=1&playlist=3N4SRohMoEg&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&start=7&enablejsapi=1"
                     title="" frameborder="0" allow="autoplay; encrypted-media" tabindex="-1"></iframe>
             </div>
             <div class="yv-hero-overlay" aria-hidden="true"></div>
-            <button id="yvHeroMuteToggle" class="yv-hero-mute-toggle" type="button" aria-pressed="true" aria-label="Mute background video">
-                <i class="fa-solid fa-volume-high"></i>
+            <button id="yvHeroMuteToggle" class="yv-hero-mute-toggle" type="button" aria-pressed="false" aria-label="Unmute background video">
+                <i class="fa-solid fa-volume-xmark"></i>
             </button>
             <span class="yv-hero-badge"><i class="fa-brands fa-youtube"></i> Watch & Listen</span>
             <h1 class="yv-hero-title">Videos &amp; <span class="accent">Shorts</span></h1>
@@ -1143,7 +1143,7 @@
             var heroFrame = document.getElementById('yvHeroVideoFrame');
             var muteToggle = document.getElementById('yvHeroMuteToggle');
             if (heroFrame && muteToggle) {
-                var heroMuted = false;
+                var heroMuted = true;
 
                 function postToPlayer(func) {
                     heroFrame.contentWindow.postMessage(JSON.stringify({ event: 'command', func: func, args: [] }), '*');
