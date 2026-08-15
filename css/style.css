@@ -9655,7 +9655,16 @@ body.lightmode .cta-service-banner::before {
 
 /* ================== 54. Animate Components ================== */
 
+/* Scroll-reveal targets. These ship with `animate__animated` but no animate.css
+   effect class (e.g. animate__fadeInUp), so a bare `opacity: 0` here left every
+   .animate-box permanently invisible. Default is now visible; js/script.js hides
+   only the below-the-fold ones (.animate-box-hidden) and reveals them on scroll,
+   so content still renders if JS or IntersectionObserver is unavailable. */
 .animate-box {
+    opacity: 1;
+}
+
+.animate-box.animate-box-hidden {
     opacity: 0;
 }
 

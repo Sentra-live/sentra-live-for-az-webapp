@@ -722,3 +722,57 @@ function initLoadMoreStories() {
         }, 500);
     });
 }
+
+/* ================== Scroll reveal for .animate-box ==================
+   The markup carries `animate__animated` but never an animate.css effect class,
+   and nothing added one at runtime - so `.animate-box { opacity: 0 }` hid those
+   blocks forever (whole sections of the homepage rendered blank).
+
+   Elements already in (or above) the viewport when this runs are left alone, so
+   nothing that has painted flashes out. Everything below the fold is hidden and
+   faded in as it scrolls into view. */
+(function () {
+    var boxes = Array.prototype.slice.call(document.querySelectorAll('.animate-box'));
+    if (!boxes.length) return;
+
+    var EFFECT = 'animate__fadeInUp';
+    var HIDDEN = 'animate-box-hidden';
+
+    function reveal(el) {
+        el.classList.remove(HIDDEN);
+        el.classList.add(EFFECT);
+    }
+
+    var reduceMotion = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (reduceMotion || typeof IntersectionObserver === 'undefined') {
+        // Nothing to do: CSS already leaves .animate-box visible.
+        return;
+    }
+
+    var viewportBottom = window.innerHeight || document.documentElement.clientHeight;
+    var pending = boxes.filter(function (el) {
+        return el.getBoundingClientRect().top > viewportBottom;
+    });
+    if (!pending.length) return;
+
+    pending.forEach(function (el) { el.classList.add(HIDDEN); });
+
+    var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            reveal(entry.target);
+            observer.unobserve(entry.target);
+        });
+    }, { rootMargin: '0px 0px -12% 0px' });
+
+    pending.forEach(function (el) { observer.observe(el); });
+
+    // Safety net: never leave content hidden if the observer somehow never fires.
+    setTimeout(function () {
+        pending.forEach(function (el) {
+            if (el.classList.contains(HIDDEN)) reveal(el);
+        });
+    }, 5000);
+})();
