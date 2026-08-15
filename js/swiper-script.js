@@ -1,28 +1,31 @@
 $(function () {
 
-    new Swiper('.swiper.swiperPartner', {
-        autoplay: {
-            delay: 0,
-            disableOnInteraction: false,
-        },
-        speed: 5000,
-        slidesPerView: 6,
-        spaceBetween: 20,
-        loop: true,
-        freeMode: true,
-        grabCursor: true,
-        breakpoints: {
-            1025: {
-                slidesPerView: 6
+    var $partnerEl = $('.swiper.swiperPartner');
+    if ($partnerEl.length) {
+        new Swiper($partnerEl[0], {
+            autoplay: {
+                delay: 0,
+                disableOnInteraction: false,
             },
-            767: {
-                slidesPerView: 4
+            speed: 5000,
+            slidesPerView: 6,
+            spaceBetween: 20,
+            loop: true,
+            freeMode: true,
+            grabCursor: true,
+            breakpoints: {
+                1025: {
+                    slidesPerView: 6
+                },
+                767: {
+                    slidesPerView: 4
+                },
+                230: {
+                    slidesPerView: 3
+                }
             },
-            230: {
-                slidesPerView: 3
-            }
-        },
-    });
+        });
+    }
 
 });
 
