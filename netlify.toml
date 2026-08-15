@@ -1,6 +1,23 @@
 [build]
-  command = "npm install"
+  command = "npm install && node scripts/inline-partials.mjs"
   publish = "."
+
+# ─── Collapse the www → apex redirect to a single hop ───
+# Without this, Netlify's automatic domain-alias handling does it in two
+# hops (http://www -> https://www -> https://apex), which Ahrefs flags as
+# a redirect chain.
+[[redirects]]
+  from = "http://www.sentratech.in/*"
+  to = "https://sentratech.in/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.sentratech.in/*"
+  to = "https://sentratech.in/:splat"
+  status = 301
+  force = true
+# ───────────────────────────────────────────────────────────────────────────
 
 # ─── 301 Redirects for renamed folders (uppercase → lowercase) ───
 [[redirects]]
