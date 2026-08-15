@@ -1,78 +1,94 @@
 ﻿// Dynamically determine correct path prefix based on current location
 const _pathLower = window.location.pathname.toLowerCase();
-const pathPrefix = (_pathLower.includes('/solutions/') || _pathLower.includes('/products/') || _pathLower.includes('/case-studies/') || _pathLower.includes('/article/') || _pathLower.includes('/blogs/')) ? '../' : './';
-Promise.all([
-    fetch(pathPrefix + "header.html").then(res => res.text()),
-    fetch(pathPrefix + "footer.html").then(res => res.text()),
-    fetch(pathPrefix + "sidebar.html").then(res => res.text())
-])
-    .then(([headerHTML, footerHTML, sidebarHTML]) => {
-        // Strip external <script src> tags from the partials BEFORE jQuery .html()
-        // injects them: jQuery would otherwise re-execute them via _evalUrl, which
-        // hardcodes `async: false` (synchronous XMLHttpRequest on the main thread -
-        // a Chrome deprecation). The extracted scripts are loaded normally (async)
-        // after injection instead. Inline scripts are left in place - jQuery runs
-        // those without any XHR.
-        var partialScripts = [];
-        var stripScripts = function (html) {
-            return html.replace(/<script\b[^>]*\bsrc\s*=\s*["'][^"']*["'][^>]*>\s*<\/script>/gi, function (tag) {
-                partialScripts.push(tag);
-                return '';
+const pathPrefix = (_pathLower.includes('/solutions/') || _pathLower.includes('/products/') || _pathLower.includes('/case-studies/') || _pathLower.includes('/article/') || _pathLower.includes('/blogs/') || _pathLower.includes('/industries/')) ? '../' : './';
+
+function finishNavInit() {
+    // Deferred off the initial paint/LCP path: the YouTube IFrame API is a
+    // slow external fetch, and initializing it late avoids competing with
+    // hero text render and avoids a layout jump if it were sized eagerly.
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(initBannerVideo, { timeout: 2000 });
+    } else {
+        setTimeout(initBannerVideo, 200);
+    }
+    initNavLink();
+    initSidebar();
+    initEditSidebar();
+    initCounter();
+    initThemeSwitch();
+    initScrollHeader();
+    initSearchBar();
+    initSubmitContact();
+    initSubmitNewsletter();
+    initAnimateData();
+    initLoadMoreStories();
+    // Initialize dropdown handler after header is loaded
+    if (typeof initDropdownHandler === 'function') {
+        initDropdownHandler();
+    }
+
+    // Hide preloader after everything is loaded
+    if (typeof window._hidePreloader === 'function') {
+        // Small delay for layout settling
+        setTimeout(window._hidePreloader, 500);
+    }
+}
+
+var $headerEl = $("#header");
+if ($headerEl.length && $headerEl.children().length) {
+    // header/footer/sidebar are baked directly into the page HTML at deploy
+    // time (see scripts/inline-partials.mjs) so crawlers see real <a> markup
+    // instead of empty placeholder divs. Their own <script src> tags are
+    // already real HTML at this point and loaded natively - just wire up
+    // the interactive behavior.
+    fixNavLinks();
+    finishNavInit();
+} else {
+    // Fallback for pages that still ship the old empty placeholders (e.g.
+    // local dev without running the inline-partials build step).
+    Promise.all([
+        fetch(pathPrefix + "header.html").then(res => res.text()),
+        fetch(pathPrefix + "footer.html").then(res => res.text()),
+        fetch(pathPrefix + "sidebar.html").then(res => res.text())
+    ])
+        .then(([headerHTML, footerHTML, sidebarHTML]) => {
+            // Strip external <script src> tags from the partials BEFORE jQuery .html()
+            // injects them: jQuery would otherwise re-execute them via _evalUrl, which
+            // hardcodes `async: false` (synchronous XMLHttpRequest on the main thread -
+            // a Chrome deprecation). The extracted scripts are loaded normally (async)
+            // after injection instead. Inline scripts are left in place - jQuery runs
+            // those without any XHR.
+            var partialScripts = [];
+            var stripScripts = function (html) {
+                return html.replace(/<script\b[^>]*\bsrc\s*=\s*["'][^"']*["'][^>]*>\s*<\/script>/gi, function (tag) {
+                    partialScripts.push(tag);
+                    return '';
+                });
+            };
+
+            $("#header").html(stripScripts(headerHTML));
+            $("#footer").html(stripScripts(footerHTML));
+            $("#sidebar").html(stripScripts(sidebarHTML));
+            fixNavLinks();
+
+            // Load the extracted scripts asynchronously (non-blocking, no sync XHR).
+            partialScripts.forEach(function (tag) {
+                var srcMatch = tag.match(/\bsrc\s*=\s*["']([^"']*)["']/i);
+                if (!srcMatch) return;
+                var src = srcMatch[1];
+                var script = document.createElement('script');
+                // Resolve bare-relative paths against the page so subpages work too.
+                script.src = (/^([a-z]+:)?\/\//i.test(src) || src.charAt(0) === '/' || src.indexOf(':') > -1)
+                    ? src
+                    : pathPrefix + src;
+                document.head.appendChild(script);
             });
-        };
-
-        $("#header").html(stripScripts(headerHTML));
-        $("#footer").html(stripScripts(footerHTML));
-        $("#sidebar").html(stripScripts(sidebarHTML));
-        fixNavLinks();
-
-        // Load the extracted scripts asynchronously (non-blocking, no sync XHR).
-        partialScripts.forEach(function (tag) {
-            var srcMatch = tag.match(/\bsrc\s*=\s*["']([^"']*)["']/i);
-            if (!srcMatch) return;
-            var src = srcMatch[1];
-            var script = document.createElement('script');
-            // Resolve bare-relative paths against the page so subpages work too.
-            script.src = (/^([a-z]+:)?\/\//i.test(src) || src.charAt(0) === '/' || src.indexOf(':') > -1)
-                ? src
-                : pathPrefix + src;
-            document.head.appendChild(script);
-        });
-    })
-    .then(() => {
-        // Deferred off the initial paint/LCP path: the YouTube IFrame API is a
-        // slow external fetch, and initializing it late avoids competing with
-        // hero text render and avoids a layout jump if it were sized eagerly.
-        if ('requestIdleCallback' in window) {
-            requestIdleCallback(initBannerVideo, { timeout: 2000 });
-        } else {
-            setTimeout(initBannerVideo, 200);
-        }
-        initNavLink();
-        initSidebar();
-        initEditSidebar();
-        initCounter();
-        initThemeSwitch();
-        initScrollHeader();
-        initSearchBar();
-        initSubmitContact();
-        initSubmitNewsletter();
-        initAnimateData();
-        initLoadMoreStories();
-        // Initialize dropdown handler after header is loaded
-        if (typeof initDropdownHandler === 'function') {
-            initDropdownHandler();
-        }
-        
-        // Hide preloader after everything is loaded
-        if (typeof window._hidePreloader === 'function') {
-            // Small delay for layout settling
-            setTimeout(window._hidePreloader, 500);
-        }
-    });
+        })
+        .then(finishNavInit);
+}
 
 function fixNavLinks() {
-    const isInSubfolder = window.location.pathname.includes('/solutions/') || window.location.pathname.includes('/products/') || window.location.pathname.includes('/case-studies/') || window.location.pathname.includes('/article/') || window.location.pathname.includes('/blogs/');
+    const isInSubfolder = window.location.pathname.includes('/solutions/') || window.location.pathname.includes('/products/') || window.location.pathname.includes('/case-studies/') || window.location.pathname.includes('/article/') || window.location.pathname.includes('/blogs/') || window.location.pathname.includes('/industries/');
 
     if (isInSubfolder) {
         $("#header a[href], #footer a[href], #sidebar a[href]").each(function () {
