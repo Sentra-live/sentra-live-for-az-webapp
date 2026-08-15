@@ -216,6 +216,29 @@
 
         // ---------- Articles ----------
         {
+            id: 'art-digital-twin-predictive-maintenance',
+            title: 'Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation',
+            excerpt: 'How a Digital Twin enables predictive maintenance: architecture, a 7-stage workflow, a maturity model, real infrastructure examples, benefits and rollout steps.',
+            category: 'Digital Twin',
+            color: 'purple',
+            type: 'articles',
+            date: '15 Aug 2026',
+            image: './image/articles/article_digital-twin-predictive-maintenance-sentra.webp',
+            link: './article/digital-twin-predictive-maintenance-sentra.html',
+            featured: true
+        },
+        {
+            id: 'art-revolutionizing-iot',
+            title: 'Revolutionizing Infrastructure Monitoring with IoT',
+            excerpt: 'Discover how IoT is transforming infrastructure monitoring with real-time data analytics, enabling proactive maintenance and optimized operations.',
+            category: 'IoT Innovation',
+            color: 'blue',
+            type: 'articles',
+            date: '10 Sep 2025',
+            image: './image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp',
+            link: './article/revolutionizing-infrastructure-monitoring-with-iot.html'
+        },
+        {
             id: 'art-worldsensing-partnership',
             title: 'Celebrating One Year of Partnership: Clove Technologies & Worldsensing',
             excerpt: 'Clove Technologies and Worldsensing celebrate one year of partnership in India, advancing smarter, safer, and connected infrastructure monitoring through wireless IoT solutions.',
