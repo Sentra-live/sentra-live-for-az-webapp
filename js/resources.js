@@ -15,8 +15,8 @@
             category: 'Sensor Technology',
             color: 'blue',
             type: 'blogs',
-            date: '3 Aug 2026',
-            image: './image/products/strain_gauge.webp',
+            date: '10 Aug 2026',
+            image: './image/blogs/banners/blogs_what-is-a-strain-gauge-types-working-principle.webp',
             link: './blogs/what-is-a-strain-gauge-types-working-principle.html',
             featured: true
         },
@@ -28,7 +28,7 @@
             color: 'orange',
             type: 'blogs',
             date: '3 Aug 2026',
-            image: './image/products/tiltmeter-2.webp',
+            image: './image/blogs/banners/blogs_what-is-an-inclinometer-digital-tiltmeter-guide.webp',
             link: './blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html'
         },
         {
@@ -38,8 +38,8 @@
             category: 'Sensor Technology',
             color: 'purple',
             type: 'blogs',
-            date: '3 Aug 2026',
-            image: './image/products/accelerometer_cardnav.webp',
+            date: '20 Jul 2026',
+            image: './image/blogs/banners/blogs_what-is-an-accelerometer-sensor-guide.webp',
             link: './blogs/what-is-an-accelerometer-sensor-guide.html'
         },
         {
@@ -49,8 +49,8 @@
             category: 'IoT Sensors',
             color: 'teal',
             type: 'blogs',
-            date: '3 Aug 2026',
-            image: './image/products/Datalogger_1.webp',
+            date: '27 Jul 2026',
+            image: './image/blogs/banners/blogs_what-is-a-data-logger-types-guide.webp',
             link: './blogs/what-is-a-data-logger-types-guide.html'
         },
         {
@@ -61,7 +61,7 @@
             color: 'purple',
             type: 'blogs',
             date: '24 Jul 2026',
-            image: './image/products/scanners/lixel-k2-mesh-comparison.jpg',
+            image: './image/blogs/banners/blogs_future-digital-twins-mesh-point-cloud-gaussian-splatting.webp',
             link: './blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html',
             featured: true
         },
@@ -215,6 +215,18 @@
         },
 
         // ---------- Articles ----------
+        {
+            id: 'art-ai-infrastructure-monitoring',
+            title: 'AI Is Coming for Infrastructure Monitoring',
+            excerpt: 'How AI transforms infrastructure monitoring: the signal chain, modal features, environmental normalisation, anomaly detection, computer-vision defect tracking and predictive digital twins.',
+            category: 'AI & Monitoring',
+            color: 'teal',
+            type: 'articles',
+            date: '24 Aug 2026',
+            image: './image/articles/articles_ai_for_bridge_monitoring.webp',
+            link: './article/ai-infrastructure-monitoring.html',
+            featured: true
+        },
         {
             id: 'art-digital-twin-predictive-maintenance',
             title: 'Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation',

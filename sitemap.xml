@@ -105,6 +105,12 @@
 
       <!-- Article Pages -->
       <url>
+            <loc>https://sentratech.in/article/ai-infrastructure-monitoring.html</loc>
+            <lastmod>2026-08-24</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+      <url>
             <loc>https://sentratech.in/article/building-resilient-smart-cities-with-data-driven-insights.html</loc>
             <lastmod>2025-11-13</lastmod>
             <changefreq>monthly</changefreq>

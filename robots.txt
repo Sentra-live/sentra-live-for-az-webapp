@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /php/
 Disallow: /api/
-Disallow: /webfonts/
 Disallow: /vendor/
 Disallow: /admin/
 
