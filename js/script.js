@@ -2,30 +2,64 @@
 const _pathLower = window.location.pathname.toLowerCase();
 const pathPrefix = (_pathLower.includes('/solutions/') || _pathLower.includes('/products/') || _pathLower.includes('/case-studies/') || _pathLower.includes('/article/') || _pathLower.includes('/blogs/') || _pathLower.includes('/industries/')) ? '../' : './';
 
+// script.js is only one of several deferred scripts on the page, and the init
+// functions it calls live across submit-form.js, video_embedded.js and
+// dropdown-handler.js. Looking each one up by name at call time - rather than
+// referencing the bare identifier - means a file that failed to load costs one
+// warning instead of a ReferenceError that aborts every init after it.
+function _runInit(name) {
+    var fn = window[name];
+    if (typeof fn !== 'function') {
+        console.warn('[init] skipped, not defined:', name);
+        return;
+    }
+    try {
+        fn();
+    } catch (err) {
+        console.error('[init] failed:', name, err);
+    }
+}
+
+// Every <script defer> on the page executes before DOMContentLoaded fires, so
+// waiting for that event is what guarantees the functions defined in the later
+// deferred files - and in the preloader IIFE lower in this file - actually
+// exist by the time finishNavInit reaches them.
+var _domReady = document.readyState === 'complete';
+document.addEventListener('DOMContentLoaded', function () { _domReady = true; });
+
+function _whenDomReady(fn) {
+    if (_domReady) {
+        fn();
+        return;
+    }
+    document.addEventListener('DOMContentLoaded', fn, { once: true });
+}
+
 function finishNavInit() {
     // Deferred off the initial paint/LCP path: the YouTube IFrame API is a
     // slow external fetch, and initializing it late avoids competing with
     // hero text render and avoids a layout jump if it were sized eagerly.
+    var startBannerVideo = function () { _runInit('initBannerVideo'); };
     if ('requestIdleCallback' in window) {
-        requestIdleCallback(initBannerVideo, { timeout: 2000 });
+        requestIdleCallback(startBannerVideo, { timeout: 2000 });
     } else {
-        setTimeout(initBannerVideo, 200);
+        setTimeout(startBannerVideo, 200);
     }
-    initNavLink();
-    initSidebar();
-    initEditSidebar();
-    initCounter();
-    initThemeSwitch();
-    initScrollHeader();
-    initSearchBar();
-    initSubmitContact();
-    initSubmitNewsletter();
-    initAnimateData();
-    initLoadMoreStories();
-    // Initialize dropdown handler after header is loaded
-    if (typeof initDropdownHandler === 'function') {
-        initDropdownHandler();
-    }
+    [
+        'initNavLink',
+        'initSidebar',
+        'initEditSidebar',
+        'initCounter',
+        'initThemeSwitch',
+        'initScrollHeader',
+        'initSearchBar',
+        'initSubmitContact',
+        'initSubmitNewsletter',
+        'initAnimateData',
+        'initLoadMoreStories',
+        // dropdown handler last: it expects the header to be wired up already
+        'initDropdownHandler'
+    ].forEach(_runInit);
 
     // Hide preloader after everything is loaded
     if (typeof window._hidePreloader === 'function') {
@@ -42,7 +76,7 @@ if ($headerEl.length && $headerEl.children().length) {
     // already real HTML at this point and loaded natively - just wire up
     // the interactive behavior.
     fixNavLinks();
-    finishNavInit();
+    _whenDomReady(finishNavInit);
 } else {
     // Fallback for pages that still ship the old empty placeholders (e.g.
     // local dev without running the inline-partials build step).
@@ -84,7 +118,7 @@ if ($headerEl.length && $headerEl.children().length) {
                 document.head.appendChild(script);
             });
         })
-        .then(finishNavInit);
+        .then(function () { _whenDomReady(finishNavInit); });
 }
 
 function fixNavLinks() {

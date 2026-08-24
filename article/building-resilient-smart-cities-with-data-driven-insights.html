@@ -43,8 +43,8 @@
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
     <link rel="stylesheet" href="../css/chatbot.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=analytics,architecture,biotech,construction,database,insights,monitoring,precision_manufacturing,search,search_insights,sentiment_satisfied,settings_suggest,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/detail-page.css">
     <style>
@@ -127,7 +127,7 @@
 <style>
     /* Self-contained import so the theme-toggle glyph renders even on pages
        whose <head> doesn't already link Material Symbols. */
-    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap');
 
     /* ── Theme Toggle (Material Symbols, animated morph) ── */
     .themeswitch {
@@ -442,7 +442,7 @@
                         <a class="nav-link" href="../index.html">HOME</a>
                     </li>
 
-                    <!-- â•â• SOLUTIONS BENTO â•â• -->
+                    <!-- ══ SOLUTIONS BENTO ══ -->
                     <li class="nav-item dropdown">
                         <a id="solutions-link" class="nav-link dropdown-toggle" href="../solutions.html" role="button"
                             aria-haspopup="true" aria-expanded="false">
@@ -552,7 +552,7 @@
                         </div>
                     </li>
 
-                    <!-- â•â• PRODUCTS â•â• -->
+                    <!-- ══ PRODUCTS ══ -->
                     <li class="nav-item dropdown">
                         <a id="products-link" class="nav-link dropdown-toggle" href="../products.html" role="button"
                             aria-haspopup="true" aria-expanded="false">
@@ -903,7 +903,7 @@
                         </div>
                     </li>
 
-                    <!-- â•â• ABOUT US â•â• -->
+                    <!-- ══ ABOUT US ══ -->
                     <li class="nav-item dropdown">
                         <a id="about-link" class="nav-link dropdown-toggle" href="../about.html" role="button"
                             aria-haspopup="true" aria-expanded="false">
@@ -962,7 +962,7 @@
                         </div>
                     </li>
 
-                    <!-- â•â• RESOURCES â•â• -->
+                    <!-- ══ RESOURCES ══ -->
                     <li class="nav-item dropdown">
                         <a id="resources-link" class="nav-link dropdown-toggle" href="/resources.html" role="button"
                             aria-haspopup="true" aria-expanded="false">
@@ -1038,7 +1038,7 @@
            DOMContentLoaded has already fired — run init directly, no wrapper needed. */
         (function initMegaNav() {
 
-            /* â”€â”€ Active nav highlighting â”€â”€ */
+            /* ── Active nav highlighting ── */
             var pathname = window.location.pathname.toLowerCase();
             var el = {
                 products: document.getElementById('products-link'),
@@ -1056,7 +1056,7 @@
                 el.resources && el.resources.classList.add('active');
             }
 
-            /* â”€â”€ Product image preview hover swap â”€â”€ */
+            /* ── Product image preview hover swap ── */
             var previewImg = document.getElementById('megaPreviewImg');
             var previewName = document.getElementById('megaPreviewName');
             var previewSub = document.getElementById('megaPreviewSub');
@@ -1113,7 +1113,7 @@
                 }
             }
 
-            /* â”€â”€ Hover-hold: keep dropdown open when cursor travels to fixed card â”€â”€ */
+            /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
@@ -1139,7 +1139,7 @@
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
             });
 
-            /* â”€â”€ Set --mega-menu-top so fixed dropdown sits just below navbar â”€â”€ */
+            /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
             requestAnimationFrame(function () {
                 var headerEl = document.querySelector('header');
                 if (headerEl) {

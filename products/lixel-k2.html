@@ -40,7 +40,19 @@
     "@type": "Brand",
     "name": "XGRIDS"
   },
-  "image": "https://sentratech.in/image/products/scanners/Lixel-k2-product.webp"
+  "image": "https://sentratech.in/image/products/scanners/Lixel-k2-product.webp",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://sentratech.in/products/lixel-k2.html",
+    "price": "6500",
+    "priceCurrency": "USD",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "Sentra"
+    }
+  }
 }
 </script>
     <script type="application/ld+json">
@@ -69,10 +81,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
     <link rel="stylesheet" href="../css/chatbot.css">
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=analytics,architecture,biotech,construction,database,insights,monitoring,precision_manufacturing,search,search_insights,sentiment_satisfied,settings_suggest,signpost,speed,terrain,view_in_ar&display=swap"
         rel="stylesheet" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap"
         rel="stylesheet" />
     <link rel="canonical" href="https://sentratech.in/products/lixel-k2.html">
 
@@ -979,6 +991,33 @@
 
         body.lightmode .btn-quote:hover .btn-title span {
             color: #f48120 !important;
+        }
+
+        .ps-price {
+            display: flex;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin: 0 0 1.5rem;
+        }
+
+        .ps-price-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            opacity: 0.65;
+        }
+
+        .ps-price-value {
+            font-size: 1.85rem;
+            font-weight: 700;
+            line-height: 1;
+            color: #f48120;
+        }
+
+        .ps-price-note {
+            font-size: 0.85rem;
+            opacity: 0.65;
         }
 
         .ps-cta-btns .btn.btn-primary {
@@ -2219,7 +2258,7 @@
 <style>
     /* Self-contained import so the theme-toggle glyph renders even on pages
        whose <head> doesn't already link Material Symbols. */
-    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap');
 
     /* ── Theme Toggle (Material Symbols, animated morph) ── */
     .themeswitch {
@@ -2534,7 +2573,7 @@
                         <a class="nav-link" href="../index.html">HOME</a>
                     </li>
 
-                    <!-- â•â• SOLUTIONS BENTO â•â• -->
+                    <!-- ══ SOLUTIONS BENTO ══ -->
                     <li class="nav-item dropdown">
                         <a id="solutions-link" class="nav-link dropdown-toggle" href="../solutions.html" role="button"
                             aria-haspopup="true" aria-expanded="false">
@@ -2644,7 +2683,7 @@
                         </div>
                     </li>
 
-                    <!-- â•â• PRODUCTS â•â• -->
+                    <!-- ══ PRODUCTS ══ -->
                     <li class="nav-item dropdown">
                         <a id="products-link" class="nav-link dropdown-toggle" href="../products.html" role="button"
                             aria-haspopup="true" aria-expanded="false">
@@ -2995,7 +3034,7 @@
                         </div>
                     </li>
 
-                    <!-- â•â• ABOUT US â•â• -->
+                    <!-- ══ ABOUT US ══ -->
                     <li class="nav-item dropdown">
                         <a id="about-link" class="nav-link dropdown-toggle" href="../about.html" role="button"
                             aria-haspopup="true" aria-expanded="false">
@@ -3054,7 +3093,7 @@
                         </div>
                     </li>
 
-                    <!-- â•â• RESOURCES â•â• -->
+                    <!-- ══ RESOURCES ══ -->
                     <li class="nav-item dropdown">
                         <a id="resources-link" class="nav-link dropdown-toggle" href="/resources.html" role="button"
                             aria-haspopup="true" aria-expanded="false">
@@ -3130,7 +3169,7 @@
            DOMContentLoaded has already fired — run init directly, no wrapper needed. */
         (function initMegaNav() {
 
-            /* â”€â”€ Active nav highlighting â”€â”€ */
+            /* ── Active nav highlighting ── */
             var pathname = window.location.pathname.toLowerCase();
             var el = {
                 products: document.getElementById('products-link'),
@@ -3148,7 +3187,7 @@
                 el.resources && el.resources.classList.add('active');
             }
 
-            /* â”€â”€ Product image preview hover swap â”€â”€ */
+            /* ── Product image preview hover swap ── */
             var previewImg = document.getElementById('megaPreviewImg');
             var previewName = document.getElementById('megaPreviewName');
             var previewSub = document.getElementById('megaPreviewSub');
@@ -3205,7 +3244,7 @@
                 }
             }
 
-            /* â”€â”€ Hover-hold: keep dropdown open when cursor travels to fixed card â”€â”€ */
+            /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
@@ -3231,7 +3270,7 @@
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
             });
 
-            /* â”€â”€ Set --mega-menu-top so fixed dropdown sits just below navbar â”€â”€ */
+            /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
             requestAnimationFrame(function () {
                 var headerEl = document.querySelector('header');
                 if (headerEl) {
@@ -3447,6 +3486,11 @@
                     <p>A handheld SLAM LiDAR scanner with onboard RTK, delivering survey-grade point clouds and 3D
                         Gaussian Splat models in a single 1.2kg device. Walk the site, capture everything — no tripods,
                         targets or GCPs required.</p>
+                    <div class="ps-price">
+                        <span class="ps-price-label">List price</span>
+                        <span class="ps-price-value">$6,500</span>
+                        <span class="ps-price-note">USD</span>
+                    </div>
                     <div class="ps-hero-btns">
                         <a href="#ps-gallery" class="btn btn-accent"><span class="btn-title"><span>See the
                                     Scanner</span></span><span class="icon-circle"><i
