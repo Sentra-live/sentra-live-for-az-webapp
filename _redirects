@@ -11,3 +11,15 @@
 /products/thread-x3.html         /products/thread.html      301
 
 /api/* https://veronica-sentra-prod.subharam-v.workers.dev/api/:splat 200
+
+# Section index URLs that Google has indexed but that have no page of their
+# own (there is no blogs.html / article.html / case-studies.html). Send them
+# to the hub that lists that content instead of letting them 404.
+/blogs        /resources.html  301
+/article      /resources.html  301
+/case-studies /resources.html  301
+
+# Custom 404: any path that matches no file falls through to our own
+# error page instead of Netlify's generic 'Page not found'.
+# Must stay LAST - rules are evaluated in order.
+/*  /404-page.html  404

@@ -18,25 +18,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <meta name="description" content="How IoT sensors, edge gateways and digital twins collect and analyse data from bridges, pump houses and rail assets to detect problems before they escalate." />
+    <meta name="description" content="Buildings settle, sway and crack over time. Continuous structural health monitoring with IoT sensors gives owners real-time data to act early." />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins" />
-    <meta property="og:description" content="How IoT sensors, edge gateways and digital twins collect and analyse data from bridges, pump houses and rail assets to detect problems before they escalate." />
-    <meta property="og:url" content="https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html" />
+    <meta property="og:title" content="Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured" />
+    <meta property="og:description"
+        content="Buildings settle, sway and crack over time. Continuous structural health monitoring with IoT sensors gives owners real-time data to act early." />
+    <meta property="og:url" content="https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://sentratech.in/image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp" />
+    <meta property="og:image" content="https://sentratech.in/image/blogs/banners/blog_building_shm_iot.webp" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins" />
-    <meta name="twitter:description" content="How IoT sensors, edge gateways and digital twins collect and analyse data from bridges, pump houses and rail assets to detect problems before they escalate." />
-    <meta name="twitter:image" content="https://sentratech.in/image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp" />
+    <meta name="twitter:title" content="Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured" />
+    <meta name="twitter:description"
+        content="Buildings settle, sway and crack over time. Continuous structural health monitoring with IoT sensors gives owners real-time data to act early." />
+    <meta name="twitter:image" content="https://sentratech.in/image/blogs/banners/blog_building_shm_iot.webp" />
     <meta name="twitter:site" content="@sentratech" />
     <meta name="twitter:image:width" content="1200" />
     <meta name="twitter:image:height" content="630" />
-    <title>IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins</title>
+    <title>Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured</title>
     <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
     <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="../css/vendor/fontawesome.css">
@@ -46,13 +47,12 @@
     <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/vendor/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
     <link rel="stylesheet" href="../css/chatbot.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=analytics,architecture,biotech,construction,database,insights,monitoring,precision_manufacturing,search,search_insights,sentiment_satisfied,settings_suggest,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="../css/detail-page.css">
     <style>
         .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
@@ -64,54 +64,37 @@
         body.lightmode .hero-title { color: #111; }
         body.dark-mode .hero-intro p, body.dark-mode .detail-article p, body.dark-mode .detail-article li { color: rgba(255,255,255,0.6); }
         body.lightmode .hero-intro p, body.lightmode .detail-article p, body.lightmode .detail-article li { color: rgba(0,0,0,0.6); }
-        blockquote.highlight-quote {
-            border-left: 3px solid var(--accent-color);
-            padding: 1rem 1.5rem;
-            margin: 1.5rem 0;
-            background: rgba(244,129,32,0.04);
-            border-radius: 0 12px 12px 0;
-            font-style: italic;
-        }
-        .insight-box {
-            background: rgba(244,129,32,0.05);
-            border: 1px solid rgba(244,129,32,0.12);
-            border-radius: 16px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
-        }
-        .insight-box h5 { color: var(--accent-color); margin-bottom: 0.75rem; font-size: 1rem; }
-        .insight-box p { font-size: 0.9rem; margin: 0; }
-        .stat-highlight { display: inline-block; font-size: 2rem; font-weight: 800; color: var(--accent-color); line-height: 1; }
     </style>
-    <link rel="canonical" href="https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html">
+    <link rel="canonical" href="https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins",
-      "description": "How IoT sensors, edge gateways and digital twins collect and analyse data from bridges, pump houses and rail assets to detect problems before they escalate.",
-      "datePublished": "2025-09-10",
-      "dateModified": "2026-08-15",
+      "@type": "BlogPosting",
+      "headline": "Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured",
+      "description": "Buildings settle, sway and crack over time. Continuous structural health monitoring with IoT sensors gives owners real-time data to act early.",
+      "datePublished": "2026-08-25",
+      "dateModified": "2026-08-25",
       "author": {
-        "@type": "Organization",
-        "name": "Sentra Technologies"
+        "@type": "Person",
+        "name": "Yuva Subharam",
+        "url": "https://www.linkedin.com/in/yuva-subharam-vasamsetti-75a39117a/"
       },
       "publisher": {
         "@type": "Organization",
         "name": "Sentra",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://sentratech.in/image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp"
+          "url": "https://sentratech.in/image/branding/sentra.webp"
         }
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html"
+        "@id": "https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html"
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://sentratech.in/image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp"
+        "url": "https://sentratech.in/image/blogs/banners/blog_building_shm_iot.webp"
       },
       "inLanguage": "en"
     }
@@ -125,10 +108,10 @@
         "@type": "SpeakableSpecification",
         "cssSelector": [".detail-article h2, .detail-article h4", ".detail-article p", ".hero-intro"]
       },
-      "url": "https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html"
+      "url": "https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html"
     }
     </script>
-    
+
 </head>
 
 <body>
@@ -148,6 +131,7 @@
     </div>
 
     <header>
+        <!-- Section Navbar -->
         <div id="header"><!-- Mega nav styles live in css/style.css -->
 <style>
     /* Self-contained import so the theme-toggle glyph renders even on pages
@@ -1258,10 +1242,14 @@
 </div></div>
     </header>
 
+    <!-- Section Content Edit -->
     <aside>
         <div id="edit-sidebar"></div>
     </aside>
 
+
+
+    <!-- Section Sidebar -->
     <aside>
         <div id="sidebar"><div>
     <div class="content-overlay">
@@ -1448,10 +1436,10 @@
 </div></div>
     </aside>
 
+    <!-- Section Main Content -->
     <main>
-        <!-- Hero -->
         <section class="detail-hero">
-            <a href="../resources.html#articles" class="back-btn"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+            <a href="../resources.html#blogs" class="back-btn"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
             <div class="hero-bg-dots"></div>
             <div class="hero-glow orange-glow"></div>
             <div class="hero-top-line"></div>
@@ -1459,18 +1447,18 @@
                 <div class="hero-grid">
                     <div class="hero-text-col">
                         <div class="hero-meta-row">
-                            <span class="hero-badge blue">IoT Innovation</span>
-                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> Sep 10, 2025</span>
-                            <span class="hero-meta-icon"><i class="fa-regular fa-clock"></i> 8 min read</span>
+                            <span class="hero-badge orange">Building Monitoring</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> Aug 25, 2026</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-clock"></i> 7 min read</span>
                         </div>
-                        <h1 class="hero-title">IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins</h1>
+                        <h1 class="hero-title">Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured</h1>
                         <div class="hero-intro">
-                            <p>Infrastructure ecosystems are rapidly becoming sentient, with sensors, gateways, and digital twins creating an always-on awareness of structural integrity. The Internet of Things orchestrates these layers into a single nervous system, allowing engineers to diagnose vulnerabilities before they escalate.</p>
+                            <p>Buildings settle, sway, and crack. Most of that is normal. Continuous monitoring exists to tell you which part of it is not, and to do so early enough that you still have cheap options.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
                         <div class="hero-image-wrap">
-                            <img src="../image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp" alt="Wireless IoT sensors on a highway bridge streaming data to the cloud" loading="eager">
+                            <img src="../image/blogs/banners/blog_building_shm_iot.webp" alt="IoT sensors installed for continuous building monitoring" loading="eager">
                             <div class="hero-image-overlay"></div>
                         </div>
                     </div>
@@ -1478,7 +1466,6 @@
             </div>
         </section>
 
-        <!-- Content -->
         <div class="detail-content-wrapper">
             <div class="detail-grid">
                 <article class="detail-article">
@@ -1489,66 +1476,123 @@
                         </div>
                         <span class="tts-label">Listen</span>
                     </div>
-
                     <div class="detail-meta-bar">
                         <div class="detail-meta-left">
-                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> Sep 10, 2025</span>
-                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> IoT</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> Aug 25, 2026</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Building Monitoring</span>
                         </div>
                         <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Yuva Subharam <a href="https://www.linkedin.com/in/yuva-subharam-vasamsetti-75a39117a/" target="_blank" rel="noopener" aria-label="Yuva Subharam on LinkedIn"><i class="fa-brands fa-linkedin"></i></a> | Sentra Technologies</span>
                     </div>
-
                     <div id="ttsContent">
-                        <p>By merging data intelligence with physical assets, IoT transforms infrastructure from static to responsive. Every bridge, tunnel, pump house, and rail corridor becomes a self-reporting entity, continuously measuring stress, vibration, temperature, and environmental strain. These real-time insights empower decision-makers to act before failures occur, enabling safer, longer-lasting, and more sustainable infrastructure.</p>
+                        <p>
+                            "Continuous structural health monitoring" is a phrase that gets used without much specificity. Owners are told their building will be monitored in real time, and are rarely told what quantity is being measured, at what resolution, or what number would actually prompt somebody to do something.
+                        </p>
+                        <p>
+                            This is a walk through the measurements that make up a building monitoring system, why each one is taken, and what the reading has to beat to be meaningful.
+                        </p>
 
-                        <p>For decades, the standard way to know whether an asset was healthy was to send someone to look at it. Inspections happened on a calendar, not on demand, so the months between visits were effectively a blind spot. IoT closes that blind spot. A wireless sensor doesn't get tired, doesn't need scaffolding to reach a girder, and doesn't wait for a scheduled visit to notice that vibration levels have started drifting. It just reports: continuously, automatically, and the moment something changes.</p>
+                        <h2 id="section1">The problem with periodic inspection</h2>
+                        <p>
+                            A structural inspection is a snapshot. Someone walks the building, records crack widths, notes anything that has changed since last time, and writes it up. For many defects that is entirely adequate.
+                        </p>
+                        <p>
+                            It works less well for movement, because movement is a rate rather than a state. A 2 mm crack tells you very little on its own. A 2 mm crack that was 1.2 mm eighteen months ago, and which opens a further 0.3 mm every summer, tells you something specific. Getting from the first statement to the second requires either a long series of careful manual readings or an instrument that takes them for you.
+                        </p>
+                        <p>
+                            There is a second issue. Buildings move for reasons that have nothing to do with damage. Concrete expands when it warms. Timber and masonry respond to humidity. A tall building leans measurably in the wind and comes back. If you sample twice a year at unrecorded times of day, seasonal and thermal effects are folded invisibly into your trend, and they are often larger than the signal you were looking for.
+                        </p>
 
-                        <h2 id="specsSection">Intelligent Infrastructure at the Edge</h2>
-                        <p>IoT is pushing intelligence closer to the source. Edge gateways process critical data streams locally, reducing latency and ensuring uninterrupted monitoring even in remote or bandwidth-limited locations. This distributed intelligence transforms passive structures into active participants in their own maintenance.</p>
+                        <img src="../image/blogs/blog_building_sensors.webp" alt="Sensor placement for continuous building structural health monitoring">
+
+                        <h2 id="section2">Settlement and differential settlement</h2>
+                        <p>
+                            Nearly every building settles after construction as the soil beneath it consolidates. Uniform settlement is usually tolerable. The structure goes down as a unit and little distress appears.
+                        </p>
+                        <p>
+                            Differential settlement is the damaging case. One part of the foundation moves more than another, the frame is forced to accommodate the difference, and the result appears as diagonal cracking, jammed doors, and out of level floors. Causes include variable soil conditions, changes to the water table, leaking drainage, nearby excavation, and vibration from adjacent construction.
+                        </p>
+                        <p>
+                            Continuous measurement usually relies on:
+                        </p>
                         <ul class="blog-bullets">
-                            <li><strong>Edge analytics nodes</strong> compute sensor data in milliseconds, allowing faster detection of stress anomalies.</li>
-                            <li><strong>Local inference</strong> delivers predictive insights without relying on constant cloud connectivity, so alarms still fire during a network outage.</li>
-                            <li><strong>Autonomous calibration routines</strong> maintain accuracy across thousands of field-deployed devices without a truck roll.</li>
-                            <li><strong>Battery-optimised firmware</strong> lets remote sensor nodes operate for years on a single charge, critical for assets that are hard or dangerous to reach.</li>
+                            <li><strong>Liquid level settlement systems:</strong> Connected vessels around the building share a fluid reservoir, so vertical movement at one point registers as a pressure change. These resolve fractions of a millimetre and are well suited to slow consolidation.</li>
+                            <li><strong>GNSS receivers:</strong> Practical on larger or taller structures where a few millimetres of resolution is enough, and useful because they give absolute position rather than movement relative to another part of the same building.</li>
+                            <li><strong>Borehole extensometers:</strong> Where the concern is the ground itself, these show which soil layer is actually compressing.</li>
                         </ul>
 
-                        <h2 id="stackSection">From Sensors to Decisions: How the IoT Stack Connects</h2>
-                        <p>A single sensor reading is just a number. What makes it useful is the chain that carries it from the field to a decision: sensor → edge gateway → wireless network → cloud data platform → dashboard → alert → action. Each link matters. A vibration sensor on a bridge girder is only as good as the gateway that can reach it in a remote span, the network that can carry the reading without a costly data plan, and the analytics layer that knows what "normal" looks like for that specific girder.</p>
+                        <h2 id="section3">Tilt and inter-story drift</h2>
+                        <p>
+                            Tilt is a sensitive early indicator because rotation shows up before settlement becomes visible. A foundation losing support on one side rotates the column above it, and a <a href="../products/tiltmeter.html" style="color: #f48120;">MEMS tiltmeter</a> resolving a few arc seconds will register that long before anyone notices a sloping floor.
+                        </p>
+                        <p>
+                            Inter-story drift is the related measurement in taller buildings: the horizontal displacement of one floor relative to the one below, divided by the storey height. It is the parameter most closely tied to damage in frames, which is why it appears in seismic assessment criteria. It can be derived from accelerometers at multiple levels or measured more directly with displacement sensors across the storey.
+                        </p>
+                        <p>
+                            Two practical notes. Tiltmeters need rigid mounting to structural elements, since a sensor fixed to a partition measures the partition. And they need temperature compensation, because thermal effects on both the sensor and its mount can exceed the movement being tracked.
+                        </p>
 
-                        <blockquote class="highlight-quote">
-                            The value of IoT infrastructure monitoring isn't the sensor: it's the chain of custody the data travels through, from a raw reading in the field to a decision on someone's desk.
-                        </blockquote>
+                        <h2 id="section4">Crack width and movement</h2>
+                        <p>
+                            Cracks are the most visible symptom and the most commonly misread. What matters is not the width so much as whether the crack is active.
+                        </p>
+                        <p>
+                            A stable crack from settlement that finished years ago needs cosmetic repair. A crack that opens and closes seasonally is responding to thermal or moisture cycling and may need a movement joint. A crack that opens steadily in one direction indicates something ongoing, and that is the one worth investigating.
+                        </p>
+                        <p>
+                            <a href="../products/vibrating-wire.html" style="color: #f48120;">Vibrating wire crackmeters</a> are the common instrument here. They resolve movements well under a tenth of a millimetre, hold calibration over years, and include a thermistor so readings can be corrected for temperature. That correction matters more than people expect. On an exposed facade, the daily thermal cycle can move a crack more than a year of structural change.
+                        </p>
 
-                        <p>This is also why IoT and Digital Twin technology are increasingly discussed together rather than as separate topics. The sensor network supplies the live data; the twin is where that data gets interpreted against the asset's design and history, so an engineer sees not just a number but what that number means for the structure. AI is advancing this further — our article on <a href="../article/ai-infrastructure-monitoring.html">AI infrastructure monitoring</a> covers how machine learning transforms raw sensor streams into predictive insights.</p>
+                        <h2 id="section5">Vibration and dynamic properties</h2>
+                        <p>
+                            Every structure has natural frequencies determined by its mass and stiffness. Mass rarely changes much. Stiffness falls when a structure is damaged. So a downward drift in natural frequency is a global indicator that something has changed, without needing a sensor at the damage location.
+                        </p>
+                        <p>
+                            <a href="../products/accelerometers.html" style="color: #f48120;">Accelerometers</a> placed at a handful of levels capture enough response to track those frequencies over time, using ambient excitation from wind and traffic rather than any deliberate forcing.
+                        </p>
+                        <p>
+                            The method has real limits and it is worth being honest about them. Frequency shifts are sensitive to temperature and occupancy load, often by more than moderate damage would cause, so a raw drop is not proof of anything. Useful systems normalise against temperature using a long baseline before treating a shift as significant. Localising damage from frequency data alone is difficult, and in practice the technique works best as a trigger for inspection rather than a diagnosis.
+                        </p>
+                        <p>
+                            Vibration monitoring also covers a more immediate concern: construction next door. Piling, excavation, and demolition transmit ground vibration that can damage neighbouring structures, and continuous measurement provides both protection and an evidential record. Our note on <a href="../blogs/monitoring-construction-induced-vibrations.html" style="color: #f48120;">construction-induced vibration</a> covers that in more depth.
+                        </p>
 
-                        <h2 id="DescSection">Digital Twins: Virtual Mirrors of Reality</h2>
-                        <p>Digital twins provide engineers with a continuously updated, virtual reflection of the physical world. When combined with IoT data, they enable simulations, scenario testing, and proactive interventions long before real-world issues surface.</p>
-                        <p>3D modeling environments now replicate real-world infrastructure conditions with remarkable precision, continuously updated through live sensor inputs. These digital replicas enable engineers to simulate load, vibration, and environmental changes in real time, revealing potential vulnerabilities before they occur. Integrated lifecycle management dashboards bring all performance data into a unified view, empowering predictive maintenance and long-term asset optimization.</p>
-
-                        <figure style="margin: 1.5rem 0;">
-                            <img src="../image/articles/revolutionizing-iot-digital-twin-dashboard.webp" alt="Digital twin dashboard showing real-time asset alerts, vibration and temperature trends, and recommended maintenance actions" loading="lazy" style="width:100%;border-radius:1rem;">
-                            <figcaption style="font-size:12px;color:var(--text-muted,rgba(255,255,255,0.4));margin-top:0.5rem;">A live digital twin view: sensor alerts mapped onto the asset, with parameter trends and a recommended next action.</figcaption>
-                        </figure>
-
-                        <div class="insight-box">
-                            <h5><i class="fa-solid fa-lightbulb" style="margin-right:8px;"></i>Why the Twin Matters More Than the Chart</h5>
-                            <p>A line chart tells you a value went up. A digital twin tells you which pump, which girder, or which valve that value belongs to, and lets you see it in context, alongside the asset's history, its neighbours, and its design tolerances. That context is what turns an alert into a decision.</p>
-                        </div>
-
-                        <h2 id="impactSection">Real-World Impact: Where This Is Already Working</h2>
-                        <p>This shift is not theoretical. IoT-enabled monitoring is already running on live infrastructure across several asset classes:</p>
+                        <h2 id="section6">Environmental context</h2>
+                        <p>
+                            Environmental sensors are not really about the environment. They are there so the structural data can be interpreted.
+                        </p>
                         <ul class="blog-bullets">
-                            <li><strong>Bridges:</strong> continuous <a href="../solutions/structural-health-monitoring.html" style="color:var(--accent-color);">structural health monitoring</a> combined with AI and drone inspection, as demonstrated in Sentra's <a href="../case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" style="color:var(--accent-color);">BridgePulse</a> deployment, flags deterioration long before it becomes a safety issue.</li>
-                            <li><strong>Railways:</strong> wireless sensor networks installed across <a href="../case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" style="color:var(--accent-color);">railway bridges</a> give a small engineering team live visibility over assets spread across an entire network, without a site visit for every check.</li>
-                            <li><strong>Pump houses and industrial equipment:</strong> vibration and temperature monitoring on rotating equipment turns unplanned breakdowns into scheduled maintenance windows.</li>
-                            <li><strong>Smart cities:</strong> connecting <a href="../solutions/asset-monitoring-and-management-solutions.html" style="color:var(--accent-color);">asset monitoring</a> data across water, transport and public infrastructure gives planners a single, current view of city-scale asset health.</li>
+                            <li><strong>Temperature:</strong> Recorded at the structure rather than from a weather service, because surface temperature on a sunlit facade differs substantially from ambient air. Nearly every other measurement needs this to be corrected properly.</li>
+                            <li><strong>Humidity:</strong> Relevant for timber and masonry, and for corrosion risk in reinforced concrete.</li>
+                            <li><strong>Wind speed and direction:</strong> Explains short-term sway in tall buildings and separates wind response from anything structural.</li>
+                            <li><strong>Groundwater level:</strong> Often the missing link when settlement correlates with the seasons or with pumping nearby.</li>
                         </ul>
-                        <p>The common thread across all four is the same loop: sense, transmit, analyse, act, and feed the outcome back in so the system gets sharper with every cycle.</p>
+                        <p>
+                            A monitoring system without environmental context produces alarms that nobody trusts, because the first few will turn out to be hot afternoons.
+                        </p>
+
+                        <h2 id="section7">Baselines, thresholds, and who gets called</h2>
+                        <p>
+                            Instrumentation only becomes monitoring once someone has decided what the numbers mean.
+                        </p>
+                        <p>
+                            That starts with a baseline. A monitoring system needs a period of normal operation recorded before its readings can be judged, and long enough to capture a full seasonal cycle if thermal effects matter. Systems commissioned in a hurry and alarmed immediately tend to generate false positives through their first winter, after which people stop reading the alerts.
+                        </p>
+                        <p>
+                            Thresholds should come from the structure rather than from a catalogue. Allowable tilt for a heritage masonry building is not the allowable tilt for a modern steel frame. The engineer who understands the structure sets the numbers, informed by the design and its condition.
+                        </p>
+                        <p>
+                            Then the response has to be defined in advance. An alert that arrives with no agreed action is noise. Practical systems distinguish a level that prompts a closer look at the data from a level that brings an engineer to site, and name the person responsible at each stage.
+                        </p>
+                        <p>
+                            For buildings where several of these measurements are combined, a <a href="../solutions/digital-twin.html" style="color: #f48120;">digital twin</a> is a reasonable way to hold sensor data against the structural model so readings are assessed in context. Our overview of <a href="../solutions/structural-health-monitoring.html" style="color: #f48120;">structural health monitoring</a> covers how these systems are specified, and <a href="../industries/buildings-highrise-monitoring.html" style="color: #f48120;">building and high-rise monitoring</a> describes deployments on occupied towers. If earthquake loading is a concern for your site, <a href="../blogs/seismic-monitoring-buildings-critical-infrastructure.html" style="color: #f48120;">seismic monitoring for buildings</a> deals with the post-event assessment side.
+                        </p>
                     </div>
 
                     <div class="detail-cta">
-                        <h2 id="ConclusionSection">Transform Your Infrastructure with IoT</h2>
-                        <p>Ready to move from reactive to predictive maintenance? Connect your infrastructure with real-time IoT monitoring and digital twin capabilities.</p>
+                        <h2 id="ConclusionSection">Work out what your building needs</h2>
+                        <p>
+                            Not every building needs continuous monitoring, and the ones that do rarely need everything described here. Sentra helps owners and engineers decide which measurements are worth taking on a given structure, then designs, installs, and runs the system. Get in touch if you have a building you are unsure about.
+                        </p>
                         <a class="cta-btn" href="/contact.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
@@ -1558,66 +1602,84 @@
                         <div class="sidebar-card toc">
                             <h3><i class="fa-solid fa-list"></i> Table of Contents</h3>
                             <div id="tocContainer">
-                                <button class="toc-item" data-target="specsSection">Intelligent Infrastructure at the Edge</button>
-                                <button class="toc-item" data-target="stackSection">From Sensors to Decisions</button>
-                                <button class="toc-item" data-target="DescSection">Digital Twins: Virtual Mirrors</button>
-                                <button class="toc-item" data-target="impactSection">Real-World Impact</button>
-                                <button class="toc-item" data-target="ConclusionSection">Transform Your Infrastructure</button>
+                                <button class="toc-item" data-target="section1">Why Periodic Inspection Falls Short</button>
+                                <button class="toc-item" data-target="section2">Settlement</button>
+                                <button class="toc-item" data-target="section3">Tilt and Drift</button>
+                                <button class="toc-item" data-target="section4">Crack Movement</button>
+                                <button class="toc-item" data-target="section5">Vibration</button>
+                                <button class="toc-item" data-target="section6">Environmental Context</button>
+                                <button class="toc-item" data-target="section7">Baselines and Thresholds</button>
+                                <button class="toc-item" data-target="ConclusionSection">Get Started</button>
                             </div>
                         </div>
-
                         <div class="sidebar-card">
                             <h3><i class="fa-regular fa-share-from-square"></i> Share</h3>
                             <div class="sidebar-share-icons">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html" target="_blank" class="share-icon-link" aria-label="Share on Facebook" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html&text=IoT%20Infrastructure%20Monitoring%3A%20Sensors%2C%20Edge%20Gateways%20and%20Digital%20Twins" target="_blank" class="share-icon-link" aria-label="Share on Twitter" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html" target="_blank" class="share-icon-link" aria-label="Share on LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://api.whatsapp.com/send?text=IoT%20Infrastructure%20Monitoring%3A%20Sensors%2C%20Edge%20Gateways%20and%20Digital%20Twins%20https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html" target="_blank" class="share-icon-link" aria-label="Share on WhatsApp" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html" target="_blank" class="share-icon-link" aria-label="Share on Facebook" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html&text=Continuous%20Building%20Monitoring%20with%20IoT%20Sensors" target="_blank" class="share-icon-link" aria-label="Share on Twitter" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html" target="_blank" class="share-icon-link" aria-label="Share on LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://api.whatsapp.com/send?text=Continuous%20Building%20Monitoring%20with%20IoT%20Sensors%20https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html" target="_blank" class="share-icon-link" aria-label="Share on WhatsApp" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
                             </div>
                         </div>
-
-                        <div class="sidebar-card">
-                            <h3><i class="fa-regular fa-bookmark"></i> Related Solutions</h3>
-                            <div style="display:flex;flex-direction:column;gap:8px;">
-                                <a href="../solutions/digital-twin.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Digital Twin</a>
-                                <a href="../solutions/asset-monitoring-and-management-solutions.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Asset Monitoring &amp; Management</a>
-                                <a href="../solutions/structural-health-monitoring.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Structural Health Monitoring</a>
-                            </div>
-                        </div>
-
-                        <a href="../resources.html#articles" class="back-btn" style="position:static;display:flex;width:100%;justify-content:center;"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+                        <a href="../resources.html#blogs" class="back-btn" style="position:static;display:flex;width:100%;justify-content:center;"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
                     </div>
                 </aside>
             </div>
         </div>
 
-        <!-- More Articles -->
+        <!-- More Blogs -->
         <div class="hero-container" style="max-width:1280px;margin:0 auto;padding:0 1rem 4rem">
             <div class="trending-section">
-                <div class="trending-header">
+                <div class="cs-section-label">
                     <span class="trending-dot"></span>
-                    <h2>More Articles</h2>
+                    <h2>More Blogs</h2>
                 </div>
                 <div class="trending-grid">
-                    <a href="../article/digital-twin-predictive-maintenance-sentra.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/articles/article_digital-twin-predictive-maintenance-sentra.webp" alt="Digital Twin Predictive Maintenance" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <a href="../blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp" alt="Seismic Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
                         <div class="trending-card-body">
-                            <h4>Digital Twin for Predictive Maintenance</h4>
-                            <div class="trending-card-meta"><span>Digital Twin</span><span>&middot;</span><span>Article</span></div>
+                            <h4>Seismic Monitoring for Buildings and Critical Infrastructure</h4>
+                            <div class="trending-card-meta"><span>Seismic Monitoring</span><span>&middot;</span><span>Blog</span></div>
                         </div>
                     </a>
-                    <a href="../article/building-resilient-smart-cities-with-data-driven-insights.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/articles/article_Building%20Resilient%20Smart%20Cities%20with%20Data-Driven%20Insights.webp" alt="Smart Cities" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <a href="../blogs/monitoring-construction-induced-vibrations.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blogs_monitoring-construction-induced-vibrations.webp" alt="Construction Vibration Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
                         <div class="trending-card-body">
-                            <h4>Building Resilient Smart Cities with Data-Driven Insights</h4>
-                            <div class="trending-card-meta"><span>Smart Cities</span><span>&middot;</span><span>Article</span></div>
+                            <h4>Monitoring Construction-Induced Vibrations</h4>
+                            <div class="trending-card-meta"><span>Monitoring</span><span>&middot;</span><span>Blog</span></div>
                         </div>
                     </a>
-                    <a href="../article/intelligent-pump-house-monitoring-and-control.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/articles/article_Intelligent%20Pump%20House%20Monitoring%20%26%20Control.webp" alt="Pump House Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <a href="../blogs/bridge-scour-monitoring-iot-digital-twins.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blog_bridge_scour_monitoring.webp" alt="Bridge Scour Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
                         <div class="trending-card-body">
-                            <h4>Intelligent Pump House Monitoring &amp; Control</h4>
-                            <div class="trending-card-meta"><span>Smart Pumping</span><span>&middot;</span><span>Article</span></div>
+                            <h4>Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss</h4>
+                            <div class="trending-card-meta"><span>Bridge Safety</span><span>&middot;</span><span>Blog</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- More Case Studies -->
+        <div class="hero-container" style="max-width:1280px;margin:0 auto;padding:0 1rem 4rem">
+            <div class="trending-section">
+                <div class="cs-section-label">
+                    <span class="trending-dot"></span>
+                    <h2>More Case Studies</h2>
+                </div>
+                <div class="trending-grid">
+                    <a href="../case-studies/structural-health-monitoring-of-highway-bridges.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp" alt="Highway Bridge SHM" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Structural Health Monitoring of Highway Bridges</h4>
+                            <div class="trending-card-meta"><span>Highways</span><span>&middot;</span><span>Case Study</span></div>
+                        </div>
+                    </a>
+                    <a href="../case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp" alt="BridgePulse" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>BridgePulse: AI and Drone Technology</h4>
+                            <div class="trending-card-meta"><span>AI &amp; Drones</span><span>&middot;</span><span>Case Study</span></div>
                         </div>
                     </a>
                 </div>
@@ -1625,8 +1687,8 @@
         </div>
     </main>
 
-    <footer>
-        <div id="footer"><div class="section-footer">
+    <!-- Footer -->
+    <div id="footer"><div class="section-footer">
     <div class="bg-footer-wrapper">
         <div class="bg-footer">
             <div class="hero-container position-relative z-2">
@@ -1910,177 +1972,327 @@
         initQR();
     })();
 </script></div>
-    </footer>
 
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/vendor/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/swiper-script.js"></script>
+    <script src="../js/submit-form.js"></script>
+    <script src="../js/video_embedded.js"></script>
+    <script src="../js/resources.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="../js/chatbot-widget.js"></script>
     <script>
         (function () {
             const synth = window.speechSynthesis;
-            let voices = [], isPlaying = false, isPaused = false, totalWords = 0;
-            let currentWordIndex = 0, wordSpans = [], paragraphs = [], currentParagraphIndex = 0;
-            let activeUtterance = null, fallbackTimer = null, boundarySupported = false;
-            let autoScrollEnabled = true, mouseIdleTimer;
+            let voices = [];
+            let isPlaying = false;
+            let isPaused = false;
+            let totalWords = 0;
+            let currentWordIndex = 0;
+            let wordSpans = [];
+            let paragraphs = [];
+            let currentParagraphIndex = 0;
+            let activeUtterance = null;
+            let fallbackTimer = null;
+            let boundarySupported = false;
+            let autoScrollEnabled = true;
+            let mouseIdleTimer;
 
             const ttsContent = document.getElementById('ttsContent');
             const playBtn = document.getElementById('ttsPlayBtn');
             const progressFill = document.getElementById('progressFill');
             const progressBar = document.getElementById('ttsProgressBar');
 
-            function loadVoices() { voices = synth.getVoices() || []; }
+            function loadVoices() {
+                voices = synth.getVoices() || [];
+            }
             loadVoices();
-            if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = loadVoices;
+            if (speechSynthesis.onvoiceschanged !== undefined) {
+                speechSynthesis.onvoiceschanged = loadVoices;
+            }
 
-            function pickVoice() {
-                return voices.find(v => /Google US English|Samantha|en-US/i.test(v.name + ' ' + v.lang)) || voices[0];
+            function pickFemaleVoice() {
+                const femaleCandidates = voices.filter(v => /Deepa|Joanna|Google Translate|female|woman|Google US English|Samantha|Alloy|Amy|Emma|en-US/i.test(v.name + ' ' + v.lang));
+                return femaleCandidates[0] || voices.find(v => /en-?us|en-?gb/i.test(v.lang)) || voices[0];
+            }
+
+            function pickMaleVoice() {
+                const maleCandidates = voices.filter(v => /Sundar|Google Translate|male|man|Google UK English|Daniel|Alex|en-?gb|en-?au/i.test(v.name + ' ' + v.lang));
+                return maleCandidates[0] || voices.find(v => /en-?us|en-?gb/i.test(v.lang)) || voices[0];
             }
 
             document.addEventListener('mousemove', () => {
                 autoScrollEnabled = false;
                 clearTimeout(mouseIdleTimer);
-                mouseIdleTimer = setTimeout(() => { autoScrollEnabled = true; }, 5000);
+                mouseIdleTimer = setTimeout(() => {
+                    autoScrollEnabled = true;
+                }, 5000);
             });
 
             function wrapWords() {
-                ttsContent.querySelectorAll('p, h2, h4, li').forEach(el => {
+                const elements = ttsContent.querySelectorAll('p, h2, h4, li');
+                elements.forEach(el => {
                     if (el.querySelector('.word')) return;
                     const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
-                    const nodes = [];
-                    let n;
-                    while (n = walker.nextNode()) { if (n.textContent.trim()) nodes.push(n); }
-                    nodes.forEach(tn => {
-                        const frag = document.createDocumentFragment();
-                        tn.textContent.split(/(\s+)/).forEach(tok => {
-                            if (/\s+/.test(tok)) { frag.appendChild(document.createTextNode(tok)); }
-                            else if (tok) { const s = document.createElement('span'); s.className = 'word'; s.textContent = tok; frag.appendChild(s); totalWords++; }
+                    const textNodes = [];
+                    let node;
+                    while (node = walker.nextNode()) {
+                        if (node.textContent.trim()) textNodes.push(node);
+                    }
+                    textNodes.forEach(textNode => {
+                        const tokens = textNode.textContent.split(/(\s+)/);
+                        const fragment = document.createDocumentFragment();
+                        tokens.forEach(tok => {
+                            if (/\s+/.test(tok)) {
+                                fragment.appendChild(document.createTextNode(tok));
+                            } else if (tok) {
+                                const span = document.createElement('span');
+                                span.className = 'word';
+                                span.textContent = tok;
+                                fragment.appendChild(span);
+                                totalWords++;
+                            }
                         });
-                        tn.parentNode.replaceChild(frag, tn);
+                        textNode.parentNode.replaceChild(fragment, textNode);
                     });
                 });
                 wordSpans = Array.from(ttsContent.querySelectorAll('.word'));
             }
             wrapWords();
 
-            function getParagraphs() { paragraphs = Array.from(ttsContent.querySelectorAll('p, h2, h4, li')).filter(el => el.textContent.trim()); }
+            function getParagraphs() {
+                const elements = ttsContent.querySelectorAll('p, h2, h4, li');
+                paragraphs = Array.from(elements).filter(el => el.textContent.trim() !== '');
+            }
             getParagraphs();
 
-            function computeBoundaries(text) {
-                const words = text.split(/\s+/).filter(Boolean), bounds = [];
+            function computeWordBoundaries(text) {
+                const words = text.split(/\s+/).filter(Boolean);
+                const boundaries = [];
                 let cursor = 0;
-                words.forEach(w => { const f = text.indexOf(w, cursor); bounds.push(f === -1 ? cursor : f); cursor = (f === -1 ? cursor : f) + w.length; });
-                return bounds;
+                for (let i = 0; i < words.length; i++) {
+                    const w = words[i];
+                    const found = text.indexOf(w, cursor);
+                    if (found === -1) {
+                        boundaries.push(cursor);
+                        cursor += w.length;
+                    } else {
+                        boundaries.push(found);
+                        cursor = found + w.length;
+                    }
+                }
+                return boundaries;
             }
 
-            function scrollCenter(el) { if (el && autoScrollEnabled) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
-            function clearTimer() { if (fallbackTimer) { clearInterval(fallbackTimer); fallbackTimer = null; } }
+            function clearAllHighlights() {
+                wordSpans.forEach(w => w.classList.remove('highlight'));
+            }
+
+            function scrollIntoCenter(el) {
+                if (!el) return;
+                if (autoScrollEnabled) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+
+            function clearFallbackTimer() {
+                if (fallbackTimer) {
+                    clearInterval(fallbackTimer);
+                    fallbackTimer = null;
+                }
+            }
 
             function speakFrom(index) {
-                clearTimer(); boundarySupported = false;
+                clearFallbackTimer();
+                boundarySupported = false;
+
                 if (index >= paragraphs.length) {
-                    isPlaying = isPaused = false;
+                    isPlaying = false;
+                    isPaused = false;
                     playBtn.innerHTML = '<i class="fas fa-play"></i>';
-                    currentParagraphIndex = currentWordIndex = 0;
+                    currentParagraphIndex = 0;
+                    currentWordIndex = 0;
                     progressFill.style.width = '0%';
                     return;
                 }
+
                 currentParagraphIndex = index;
-                const p = paragraphs[index], text = p.textContent.trim();
-                if (!text) { speakFrom(index + 1); return; }
-                const bounds = computeBoundaries(text);
-                const spans = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim());
-                spans.forEach(w => w.classList.remove('highlight'));
-                const u = new SpeechSynthesisUtterance(text);
-                activeUtterance = u; u.lang = 'en-US'; u.rate = 1.1; u.pitch = 1.1;
-                const v = pickVoice(); if (v) u.voice = v;
-                const fps = Math.max(120, Math.round(1000 / (3.0 * u.rate)));
+                const p = paragraphs[index];
+                const role = (p.getAttribute('data-voice') || 'female').toLowerCase();
+                const voice = role === 'male' ? pickMaleVoice() : pickFemaleVoice();
+                const utterText = p.textContent.trim();
+                if (!utterText) {
+                    speakFrom(index + 1);
+                    return;
+                }
+
+                const boundaries = computeWordBoundaries(utterText);
+                const wordSpansInP = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim() !== '');
+                wordSpansInP.forEach(w => w.classList.remove('highlight'));
+
+                const u = new SpeechSynthesisUtterance(utterText);
+                activeUtterance = u;
+                u.lang = 'en-US';
+                u.rate = role === 'male' ? 0.9 : 1.3;
+                u.pitch = 1.2;
+                if (voice) u.voice = voice;
+
+                const wordsPerSecondBase = 3.0 * u.rate;
+                const fallbackIntervalMs = Math.max(120, Math.round(1000 / wordsPerSecondBase));
+
                 u.onstart = () => {
-                    isPlaying = true; isPaused = false;
+                    isPlaying = true;
+                    isPaused = false;
                     playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+
                     currentWordIndex = 0;
-                    if (spans[0]) { spans[0].classList.add('highlight'); scrollCenter(spans[0]); }
-                    fallbackTimer = setInterval(() => {
-                        if (boundarySupported || !isPlaying || isPaused) { clearTimer(); return; }
-                        if (currentWordIndex < spans.length - 1) {
-                            spans[currentWordIndex].classList.remove('highlight');
-                            spans[++currentWordIndex].classList.add('highlight');
-                            scrollCenter(spans[currentWordIndex]);
-                        }
-                    }, fps);
-                };
-                u.onboundary = (ev) => {
-                    boundarySupported = true; clearTimer();
-                    const ci = ev.charIndex || 0;
-                    let wi = 0;
-                    for (let i = 0; i < bounds.length; i++) {
-                        const end = i < bounds.length - 1 ? bounds[i + 1] : text.length;
-                        if (ci >= bounds[i] && ci < end) { wi = i; break; }
-                        if (i === bounds.length - 1) wi = bounds.length - 1;
+                    if (wordSpansInP.length > 0) {
+                        wordSpansInP.forEach(w => w.classList.remove('highlight'));
+                        const first = wordSpansInP[0];
+                        first.classList.add('highlight');
+                        scrollIntoCenter(first);
                     }
-                    wi = Math.min(Math.max(wi, 0), spans.length - 1);
+
+                    fallbackTimer = setInterval(() => {
+                        if (boundarySupported) return;
+                        if (!isPlaying || isPaused) { clearFallbackTimer(); return; }
+
+                        if (currentWordIndex < wordSpansInP.length - 1) {
+                            wordSpansInP[currentWordIndex].classList.remove('highlight');
+                            currentWordIndex++;
+                            wordSpansInP[currentWordIndex].classList.add('highlight');
+                            scrollIntoCenter(wordSpansInP[currentWordIndex]);
+                        }
+                    }, fallbackIntervalMs);
+                };
+
+                u.onboundary = (ev) => {
+                    boundarySupported = true;
+                    clearFallbackTimer();
+
+                    const charIndex = ev.charIndex || 0;
+                    let wi = 0;
+                    for (let i = 0; i < boundaries.length; i++) {
+                        const start = boundaries[i];
+                        const end = (i < boundaries.length - 1) ? boundaries[i + 1] : utterText.length;
+                        if (charIndex >= start && charIndex < end) {
+                            wi = i;
+                            break;
+                        }
+                        if (i === boundaries.length - 1) wi = boundaries.length - 1;
+                    }
+
+                    wi = Math.min(wi, wordSpansInP.length - 1);
+                    if (wi < 0) wi = 0;
+
                     if (wi !== currentWordIndex) {
-                        if (spans[currentWordIndex]) spans[currentWordIndex].classList.remove('highlight');
-                        if (spans[wi]) { spans[wi].classList.add('highlight'); scrollCenter(spans[wi]); }
+                        if (wordSpansInP[currentWordIndex]) wordSpansInP[currentWordIndex].classList.remove('highlight');
+                        if (wordSpansInP[wi]) {
+                            wordSpansInP[wi].classList.add('highlight');
+                            scrollIntoCenter(wordSpansInP[wi]);
+                        }
                         currentWordIndex = wi;
                     }
                 };
+
                 u.onend = () => {
                     p.querySelectorAll('.word.highlight').forEach(w => w.classList.remove('highlight'));
-                    activeUtterance = null; clearTimer();
-                    if (isPlaying && !isPaused) speakFrom(index + 1);
-                    else { isPlaying = isPaused = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
+                    activeUtterance = null;
+                    clearFallbackTimer();
+
+                    if (isPlaying && !isPaused) {
+                        speakFrom(index + 1);
+                    } else {
+                        isPlaying = false;
+                        isPaused = false;
+                        playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    }
                 };
-                u.onerror = () => { activeUtterance = null; isPlaying = false; clearTimer(); playBtn.innerHTML = '<i class="fas fa-play"></i>'; };
-                try { synth.speak(u); } catch(e) {}
-                progressFill.style.width = ((index + 1) / paragraphs.length * 100) + '%';
+
+                u.onerror = (err) => {
+                    console.error('Speech error', err);
+                    activeUtterance = null;
+                    isPlaying = false;
+                    clearFallbackTimer();
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                };
+
+                try {
+                    synth.speak(u);
+                } catch (e) {
+                    console.error('synth.speak error:', e);
+                }
+
+                const progress = ((index + 1) / paragraphs.length) * 100;
+                progressFill.style.width = progress + '%';
             }
 
             playBtn.addEventListener('click', () => {
-                if (!voices.length) loadVoices();
-                if (isPlaying && !isPaused) { synth.pause(); isPaused = true; isPlaying = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
-                else if (isPaused) { synth.resume(); isPaused = false; isPlaying = true; playBtn.innerHTML = '<i class="fas fa-pause"></i>'; }
-                else { if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0; speakFrom(currentParagraphIndex); }
+                if (!voices || voices.length === 0) loadVoices();
+
+                if (isPlaying && !isPaused) {
+                    synth.pause();
+                    isPaused = true;
+                    isPlaying = false;
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                } else if (isPaused) {
+                    synth.resume();
+                    isPaused = false;
+                    isPlaying = true;
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                } else {
+                    if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0;
+                    speakFrom(currentParagraphIndex);
+                }
             });
 
             progressBar.addEventListener('click', (e) => {
-                const pct = (e.clientX - progressBar.getBoundingClientRect().left) / progressBar.clientWidth;
-                if (synth.speaking) synth.cancel();
-                wordSpans.forEach(w => w.classList.remove('highlight'));
-                clearTimer();
-                currentParagraphIndex = Math.floor(pct * paragraphs.length);
-                speakFrom(currentParagraphIndex);
+                const rect = progressBar.getBoundingClientRect();
+                const clickX = e.clientX - rect.left;
+                const percentage = clickX / rect.width;
+                const targetIndex = Math.floor(percentage * paragraphs.length);
+                if (synth.speaking) {
+                    synth.cancel();
+                }
+                clearAllHighlights();
+                clearFallbackTimer();
+                currentParagraphIndex = targetIndex;
+                speakFrom(targetIndex);
             });
 
-            window.addEventListener('beforeunload', () => { if (synth.speaking) synth.cancel(); });
+            window.addEventListener('beforeunload', () => {
+                if (synth && synth.speaking) synth.cancel();
+            });
         })();
     </script>
 
-    <script src="../js/vendor/jquery.min.js"></script>
-    <script src="../js/vendor/bootstrap.bundle.min.js"></script>
-    <script src="../js/vendor/swiper-bundle.min.js"></script>
-    <script src="../js/script.js"></script>
-    <script src="../js/swiper-script.js"></script>
-    <script src="../js/submit-form.js"></script>
-    <script src="../js/video_embedded.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
-    <script src="../js/chatbot-widget.js"></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
+        <script>
+        document.addEventListener("DOMContentLoaded", function() {
             var tocItems = document.querySelectorAll('.toc-item');
             var sections = [];
-            tocItems.forEach(function (btn) {
+            tocItems.forEach(function(btn) {
                 var target = document.getElementById(btn.getAttribute('data-target'));
                 if (target) sections.push({ btn: btn, target: target });
-                btn.addEventListener('click', function () {
+                btn.addEventListener('click', function() {
                     var el = document.getElementById(this.getAttribute('data-target'));
                     if (el) {
-                        var h = (document.querySelector('header') || {getBoundingClientRect:()=>({height:0})}).getBoundingClientRect().height;
-                        window.scrollTo({ top: Math.max(el.getBoundingClientRect().top + window.scrollY - h - 80, 0), behavior: 'smooth' });
+                        var header = document.querySelector('header');
+                        var h = header ? header.getBoundingClientRect().height : 0;
+                        var y = el.getBoundingClientRect().top + window.scrollY - h - 80;
+                        window.scrollTo({ top: Math.max(y, 0), behavior: 'smooth' });
                     }
                 });
             });
-            window.addEventListener('scroll', function () {
-                var scrollY = window.scrollY + 200, active = null;
-                sections.forEach(function (s) { if (s.target.offsetTop <= scrollY) active = s; });
-                tocItems.forEach(function (b) { b.classList.remove('active'); });
+            window.addEventListener('scroll', function() {
+                var scrollY = window.scrollY + 200;
+                var active = null;
+                sections.forEach(function(s) {
+                    if (s.target.offsetTop <= scrollY) active = s;
+                });
+                tocItems.forEach(function(b) { b.classList.remove('active'); });
                 if (active) active.btn.classList.add('active');
             });
         });

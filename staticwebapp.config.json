@@ -6,6 +6,11 @@
     "Referrer-Policy": "strict-origin-when-cross-origin",
     "Permissions-Policy": "geolocation=(), microphone=(), camera=()"
   },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/404-page.html"
+    }
+  },
   "routes": [
     {
       "route": "/image/*",

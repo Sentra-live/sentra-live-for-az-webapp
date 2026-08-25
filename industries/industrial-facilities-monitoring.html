@@ -12,6 +12,12 @@
 </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Resource hints: warm up connections the page opens on every load -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <title>Industrial Facility Monitoring — Asset Health | Sentra</title>
   <meta name="description" content="Asset health, predictive maintenance and equipment vibration monitoring for power plants, refineries and process industries using Sentra's IoT sensors." />
   <meta name="robots" content="index, follow" />
@@ -444,7 +450,7 @@
 
             <div class="logo-container">
                 <a class="navbar-brand" href="../index.html" aria-label="Sentra home">
-                    <img src="../image/branding/sentra_white_1.svg" class="site-logo img-fluid" alt="Sentra logo">
+                    <img src="../image/branding/sentra_white_1.svg" class="site-logo img-fluid" alt="Sentra logo" loading="lazy" decoding="async">
                 </a>
             </div>
 
@@ -545,7 +551,7 @@
                                     <a class="sol-fill-card sol-fill-card--corner-img" data-color="white"
                                         href="../solutions/fatigue-and-residual-life-assessment.html">
                                         <img class="sol-fill-card-corner-img" src="../image/svg/fatigue%20life.svg"
-                                            alt="" aria-hidden="true">
+                                            alt="" aria-hidden="true" loading="lazy" decoding="async">
                                         <i class="fas fa-tachometer-alt"></i>
                                         <span class="sol-fill-title">Fatigue Assessment</span>
                                         <span class="sol-fill-sub">Residual life & load cycles</span>
@@ -553,7 +559,7 @@
                                     <a class="sol-fill-card sol-fill-card--corner-img" data-color="black"
                                         href="../solutions/consulting-and-advisory-services.html">
                                         <img class="sol-fill-card-corner-img" src="../image/svg/consulting.svg" alt=""
-                                            aria-hidden="true">
+                                            aria-hidden="true" loading="lazy" decoding="async">
                                         <i class="fas fa-lightbulb"></i>
                                         <span class="sol-fill-title">Consulting</span>
                                         <span class="sol-fill-sub">Expert advisory services</span>
@@ -688,23 +694,23 @@
                                         <span class="mega-brand-label">Our Partners</span>
                                         <div class="mega-brand-track">
                                             <div class="mega-brand-slide"><img
-                                                    src="../image/reseller_logo/worldsensing.webp" alt="Worldsensing">
+                                                    src="../image/reseller_logo/worldsensing.webp" alt="Worldsensing" loading="lazy" decoding="async">
                                             </div>
                                             <div class="mega-brand-slide"><img
-                                                    src="../image/reseller_logo/GEOKON-Logos-H.webp" alt="Geokon"></div>
+                                                    src="../image/reseller_logo/GEOKON-Logos-H.webp" alt="Geokon" loading="lazy" decoding="async"></div>
                                             <div class="mega-brand-slide brand-dark"><img
-                                                    src="../image/reseller_logo/rockfiled.webp" alt="Rockfield"></div>
+                                                    src="../image/reseller_logo/rockfiled.webp" alt="Rockfield" loading="lazy" decoding="async"></div>
                                             <div class="mega-brand-slide"><img src="../image/reseller_logo/xgrids.avif"
-                                                    alt="XGRIDS"></div>
+                                                    alt="XGRIDS" loading="lazy" decoding="async"></div>
                                             <div class="mega-brand-slide"><img
-                                                    src="../image/reseller_logo/worldsensing.webp" alt="Worldsensing">
+                                                    src="../image/reseller_logo/worldsensing.webp" alt="Worldsensing" loading="lazy" decoding="async">
                                             </div>
                                             <div class="mega-brand-slide"><img
-                                                    src="../image/reseller_logo/GEOKON-Logos-H.webp" alt="Geokon"></div>
+                                                    src="../image/reseller_logo/GEOKON-Logos-H.webp" alt="Geokon" loading="lazy" decoding="async"></div>
                                             <div class="mega-brand-slide brand-dark"><img
-                                                    src="../image/reseller_logo/rockfiled.webp" alt="Rockfield"></div>
+                                                    src="../image/reseller_logo/rockfiled.webp" alt="Rockfield" loading="lazy" decoding="async"></div>
                                             <div class="mega-brand-slide"><img src="../image/reseller_logo/xgrids.avif"
-                                                    alt="XGRIDS"></div>
+                                                    alt="XGRIDS" loading="lazy" decoding="async"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -767,9 +773,9 @@
                                                         data-url="../products/strain-gauges.html">
                                                         <i class="fa-solid fa-arrow-right"></i>Strain Gauge
                                                     </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    </div>
+                                </div>
+                                </div>
 
                                         <!-- Right: Laser Scanners card (top) + Resources card (bottom) -->
                                         <div class="mega-center-right">
@@ -828,8 +834,11 @@
 
                                     <!-- BOTTOM: cinematic image preview -->
                                     <div class="mega-preview-img-box">
+                                        <!-- Lives inside a dropdown that is hidden until hover, so there is no
+                                             reason to spend 400KB+ of the initial load on it. -->
                                         <img id="megaPreviewImg" class="mega-preview-full-img"
-                                            src="../image/products/tiltmeter-1.webp" alt="Product preview">
+                                            src="../image/products/tiltmeter-1.webp" alt="Product preview"
+                                            loading="lazy" decoding="async" width="640" height="360">
                                         <div class="mega-preview-overlay"></div>
                                         <div class="mega-preview-vignette"></div>
                                         <div class="mega-preview-content">
@@ -913,6 +922,14 @@
                                                 rel="noopener" aria-label="YouTube">
                                                 <i class="fab fa-youtube"></i>
                                             </a>
+                                            <a class="mega-q-social" href="https://medium.com/@sentra_8835" target="_blank"
+                                                rel="noopener" aria-label="Medium">
+                                                <i class="fab fa-medium"></i>
+                                            </a>
+                                            <a class="mega-q-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                                                rel="noopener" aria-label="Pinterest">
+                                                <i class="fab fa-pinterest"></i>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -986,7 +1003,7 @@
                             aria-haspopup="true" aria-expanded="false">
                             RESOURCES <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
-                        <div class="dropdown-menu mega-bento" style="width:min(92vw,580px) !important;">
+                        <div class="dropdown-menu mega-bento" style="width:min(92vw,720px) !important;">
                             <div class="mega-bento-grid mega-bento-grid-3col">
                                 <a class="mega-bento-item" href="/resources.html#blogs">
                                     <div class="mega-bento-icon"><i class="fas fa-blog"></i></div>
@@ -1024,6 +1041,73 @@
                                     <div class="mega-bento-title">Document Center</div>
                                     <div class="mega-bento-sub">Product datasheets</div>
                                 </a>
+                            </div>
+                            <div style="border-top:1px solid rgba(255,255,255,0.08);margin:8px 0 6px;"></div>
+                            <div style="padding:2px 12px 4px;font-size:0.78rem;">
+                                <span style="color:var(--accent-color);font-weight:600;display:block;margin-bottom:4px;">Featured</span>
+                                <div class="mega-featured-scroll-wrap" style="position:relative;"><div class="mega-featured-scroll" style="display:grid;grid-template-columns:1fr 1px 1fr 1px 1fr;gap:0;height:110px;overflow:hidden;position:relative;z-index:2;">
+                                    <div class="mega-featured-col mega-featured-col--slow">
+                                        <a href="/blogs/what-is-a-strain-gauge-types-working-principle.html" class="mega-featured-link">Strain Gauge Guide</a>
+                                        <a href="/blogs/what-is-an-accelerometer-sensor-guide.html" class="mega-featured-link">Accelerometer Guide</a>
+                                        <a href="/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html" class="mega-featured-link">Digital Twins Compared</a>
+                                        <a href="/blogs/10-early-warning-signs-bridge-continuous-monitoring.html" class="mega-featured-link">Bridge Warning Signs</a>
+                                        <a href="/blogs/advanced-iot-solutions.html" class="mega-featured-link">Advanced IoT</a>
+                                        <a href="/blogs/fatigue-life-assessment.html" class="mega-featured-link">Fatigue Life Assessment</a>
+                                        <a href="/article/ai-infrastructure-monitoring.html" class="mega-featured-link">AI Infrastructure Monitoring</a>
+                                        <a href="/article/worldsensing-official-reseller-india.html" class="mega-featured-link">Worldsensing Partnership</a>
+                                        <a href="/case-studies/structural-health-monitoring-of-highway-bridges.html" class="mega-featured-link">Highway Bridge SHM</a>
+                                        <a href="/blogs/what-is-a-strain-gauge-types-working-principle.html" class="mega-featured-link">Strain Gauge Guide</a>
+                                        <a href="/blogs/what-is-an-accelerometer-sensor-guide.html" class="mega-featured-link">Accelerometer Guide</a>
+                                        <a href="/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html" class="mega-featured-link">Digital Twins Compared</a>
+                                        <a href="/blogs/10-early-warning-signs-bridge-continuous-monitoring.html" class="mega-featured-link">Bridge Warning Signs</a>
+                                        <a href="/blogs/advanced-iot-solutions.html" class="mega-featured-link">Advanced IoT</a>
+                                        <a href="/blogs/fatigue-life-assessment.html" class="mega-featured-link">Fatigue Life Assessment</a>
+                                        <a href="/article/ai-infrastructure-monitoring.html" class="mega-featured-link">AI Infrastructure Monitoring</a>
+                                        <a href="/article/worldsensing-official-reseller-india.html" class="mega-featured-link">Worldsensing Partnership</a>
+                                        <a href="/case-studies/structural-health-monitoring-of-highway-bridges.html" class="mega-featured-link">Highway Bridge SHM</a>
+                                    </div>
+                                    <div class="mega-featured-divider"></div>
+                                    <div class="mega-featured-col mega-featured-col--medium">
+                                        <a href="/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html" class="mega-featured-link">Inclinometer Guide</a>
+                                        <a href="/blogs/monitoring-construction-induced-vibrations.html" class="mega-featured-link">Construction Vibrations</a>
+                                        <a href="/blogs/asset-monitoring-facility-management.html" class="mega-featured-link">Facility Management</a>
+                                        <a href="/blogs/structural-health-monitoring.html" class="mega-featured-link">Structural Health Monitoring</a>
+                                        <a href="/article/digital-twin-predictive-maintenance-sentra.html" class="mega-featured-link">Digital Twin Predictive Maintenance</a>
+                                        <a href="/article/xgrids-authorized-reseller-india.html" class="mega-featured-link">XGRIDS Reseller</a>
+                                        <a href="/article/building-resilient-smart-cities-with-data-driven-insights.html" class="mega-featured-link">Smart Cities</a>
+                                        <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" class="mega-featured-link">Railway Bridge IoT</a>
+                                        <a href="/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html" class="mega-featured-link">Inclinometer Guide</a>
+                                        <a href="/blogs/monitoring-construction-induced-vibrations.html" class="mega-featured-link">Construction Vibrations</a>
+                                        <a href="/blogs/asset-monitoring-facility-management.html" class="mega-featured-link">Facility Management</a>
+                                        <a href="/blogs/structural-health-monitoring.html" class="mega-featured-link">Structural Health Monitoring</a>
+                                        <a href="/article/digital-twin-predictive-maintenance-sentra.html" class="mega-featured-link">Digital Twin Predictive Maintenance</a>
+                                        <a href="/article/xgrids-authorized-reseller-india.html" class="mega-featured-link">XGRIDS Reseller</a>
+                                        <a href="/article/building-resilient-smart-cities-with-data-driven-insights.html" class="mega-featured-link">Smart Cities</a>
+                                        <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" class="mega-featured-link">Railway Bridge IoT</a>
+                                    </div>
+                                    <div class="mega-featured-divider"></div>
+                                    <div class="mega-featured-col mega-featured-col--fast">
+                                        <a href="/blogs/what-is-a-data-logger-types-guide.html" class="mega-featured-link">Data Logger Guide</a>
+                                        <a href="/blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="mega-featured-link">Seismic Monitoring</a>
+                                        <a href="/blogs/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Monitoring</a>
+                                        <a href="/blogs/real-time-monitoring-solutions-transforming-infrastructure-safety-performance.html" class="mega-featured-link">Real-Time Monitoring</a>
+                                        <a href="/blogs/top-5-hidden-structural-damages-bridge-inspection.html" class="mega-featured-link">Hidden Bridge Damages</a>
+                                        <a href="/article/revolutionizing-infrastructure-monitoring-with-iot.html" class="mega-featured-link">Revolutionizing IoT Monitoring</a>
+                                        <a href="/article/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Article</a>
+                                        <a href="/article/track-to-the-future-remote-monitoring-rail-infrastructure.html" class="mega-featured-link">Rail Monitoring</a>
+                                        <a href="/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="mega-featured-link">BridgePulse AI &amp; Drones</a>
+                                        <a href="/blogs/what-is-a-data-logger-types-guide.html" class="mega-featured-link">Data Logger Guide</a>
+                                        <a href="/blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="mega-featured-link">Seismic Monitoring</a>
+                                        <a href="/blogs/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Monitoring</a>
+                                        <a href="/blogs/real-time-monitoring-solutions-transforming-infrastructure-safety-performance.html" class="mega-featured-link">Real-Time Monitoring</a>
+                                        <a href="/blogs/top-5-hidden-structural-damages-bridge-inspection.html" class="mega-featured-link">Hidden Bridge Damages</a>
+                                        <a href="/article/revolutionizing-infrastructure-monitoring-with-iot.html" class="mega-featured-link">Revolutionizing IoT Monitoring</a>
+                                        <a href="/article/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Article</a>
+                                        <a href="/article/track-to-the-future-remote-monitoring-rail-infrastructure.html" class="mega-featured-link">Rail Monitoring</a>
+                                        <a href="/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="mega-featured-link">BridgePulse AI &amp; Drones</a>
+                                    </div>
+                                </div>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1621,6 +1705,32 @@
                                                     aria-label="QR Code for X (Twitter)"></div>
                                                 <p class="qr-label"><i class="fa-brands fa-x-twitter"></i> Scan to
                                                     follow</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://medium.com/@sentra_8835" target="_blank" rel="noopener"
+                                                class="social-item" aria-label="Medium">
+                                                <i class="fa-brands fa-medium"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render" data-url="https://medium.com/@sentra_8835"
+                                                    data-icon="fa-brands fa-medium" data-icon-color="#12100e"
+                                                    aria-label="QR Code for Medium"></div>
+                                                <p class="qr-label qr-label--medium"><i
+                                                        class="fa-brands fa-medium"></i> Scan to read</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://in.pinterest.com/sentra0070/" target="_blank" rel="noopener"
+                                                class="social-item" aria-label="Pinterest">
+                                                <i class="fa-brands fa-pinterest"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render" data-url="https://in.pinterest.com/sentra0070/"
+                                                    data-icon="fa-brands fa-pinterest" data-icon-color="#e60023"
+                                                    aria-label="QR Code for Pinterest"></div>
+                                                <p class="qr-label qr-label--pinterest"><i
+                                                        class="fa-brands fa-pinterest"></i> Scan to follow</p>
                                             </div>
                                         </div>
                                     </div>
