@@ -177,6 +177,29 @@
             link: './blogs/top-5-hidden-structural-damages-bridge-inspection.html',
             featured: true
         },
+        {
+            id: 'blog-bridge-scour-monitoring',
+            title: 'Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss',
+            excerpt: 'Bridge scour erodes the soil around bridge piers and is the leading cause of bridge collapse. Learn how IoT sensors and digital twins detect it before it becomes a failure.',
+            category: 'Bridge Safety',
+            color: 'rose',
+            type: 'blogs',
+            date: '15 Aug 2026',
+            image: './image/blogs/banners/blog_bridge_scour_monitoring.webp',
+            link: './blogs/bridge-scour-monitoring-iot-digital-twins.html'
+        },
+        {
+            id: 'blog-building-shm-iot',
+            title: 'Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured',
+            excerpt: 'Buildings settle, sway, and crack over time. Continuous structural health monitoring with IoT sensors gives owners real-time data to act before small issues grow.',
+            category: 'Structural Health',
+            color: 'orange',
+            type: 'blogs',
+            date: '25 Aug 2026',
+            image: './image/blogs/banners/blog_building_shm_iot.webp',
+            link: './blogs/continuous-building-shm-iot-sensors.html',
+            featured: true
+        },
 
         // ---------- Case Studies ----------
         {
@@ -241,7 +264,7 @@
         },
         {
             id: 'art-revolutionizing-iot',
-            title: 'Revolutionizing Infrastructure Monitoring with IoT',
+            title: 'IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins',
             excerpt: 'Discover how IoT is transforming infrastructure monitoring with real-time data analytics, enabling proactive maintenance and optimized operations.',
             category: 'IoT Innovation',
             color: 'blue',

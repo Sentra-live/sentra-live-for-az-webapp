@@ -2225,6 +2225,7 @@ body.lightmode .mega-q-social {
 
 .mega-quick-social-row {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
 }
 
@@ -4907,6 +4908,10 @@ body.lightmode .themeswitch {
     z-index: 0;
 }
 
+/* The poster is what the hero actually renders with. The YouTube embed is
+   loaded well after the load event (see initBannerVideo in js/script.js) and
+   fades in on top of this, so the hero never waits on the video and looks
+   correct on connections where the video is skipped entirely. */
 #banner-video-background {
     position: absolute;
     top: 50%;
@@ -4915,6 +4920,15 @@ body.lightmode .themeswitch {
     pointer-events: none;
     width: 100%;
     height: 100%;
+}
+
+#banner-video-background .hero-poster {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 /* Cover-fit the injected YouTube iframe to the reserved hero box. The inline
@@ -4932,6 +4946,14 @@ body.lightmode .themeswitch {
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+/* Set once the iframe has loaded, so the video crossfades over the poster
+   instead of popping in mid-scroll. */
+#banner-video-background iframe.is-ready {
+    opacity: 1;
 }
 
 
@@ -8780,6 +8802,14 @@ body.lightmode .social-item:hover i {
     gap: 1em;
 }
 
+/* Footer social icons: 4 per row so they wrap into two rows */
+.footer-col .social-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: start;
+    gap: 15px;
+}
+
 /* 41.5 Social Footer Container */
 
 .social-footer {
@@ -8904,6 +8934,14 @@ body.lightmode .social-item:hover i {
 
 .qr-label--instagram {
     color: #e1306c;
+}
+
+.qr-label--medium {
+    color: #12100e;
+}
+
+.qr-label--pinterest {
+    color: #e60023;
 }
 
 /* ================== 42. Counter Text ================== */
@@ -9862,6 +9900,10 @@ body.lightmode .footer-list a:hover {
 
     .footer-col .social-container {
         justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        width: 100%;
     }
 }
 
@@ -10110,6 +10152,10 @@ body.lightmode .preloader-bar {
         width: fit-content;
         gap: 15px;
     }
+    .footer-col .social-container {
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
 }
 
 @media (max-width: 1233px) {
@@ -10123,6 +10169,11 @@ body.lightmode .preloader-bar {
 }
 
 /* 57.1 Tablet Responsive */
+@media (max-width: 576px) {
+    .footer-col .social-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 @media screen and (min-width: 1024px) {
 
@@ -12529,4 +12580,89 @@ body.lightmode .expertise-list .link-wrapper a {
         min-height: 76px;
         padding: 12px 14px;
     }
+}
+
+/* ── Featured scroll in Resources mega-menu ────────────────────────── */
+.mega-featured-col {
+    display: flex;
+    flex-direction: column;
+    animation: megaFeaturedScroll 36s linear infinite;
+}
+
+.mega-featured-col--slow  { animation-duration: 36s; }
+.mega-featured-col--medium { animation-duration: 30s; }
+.mega-featured-col--fast   { animation-duration: 24s; }
+
+.mega-featured-col:hover {
+    animation-play-state: paused;
+}
+
+.mega-featured-divider {
+    width: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    align-self: stretch;
+}
+
+body.lightmode .mega-featured-divider {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.mega-featured-link {
+    display: block;
+    padding: 3px 6px;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.92);
+    text-decoration: none;
+    font-size: 0.75rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.85;
+    transition: opacity 0.2s, background 0.2s, color 0.2s;
+    line-height: 1.7;
+}
+
+.mega-featured-link:hover {
+    opacity: 1;
+    background: rgba(244, 129, 32, 0.1);
+    color: var(--accent-color, #f48120);
+}
+
+body.lightmode .mega-featured-link {
+    color: #1a1a1a;
+}
+
+body.lightmode .mega-featured-link:hover {
+    background: rgba(244, 129, 32, 0.08);
+    color: var(--accent-color, #f48120);
+}
+
+/* Soft top/bottom shadow fade so links scroll in and out of view */
+.mega-featured-scroll {
+    -webkit-mask-image: linear-gradient(to bottom,
+            transparent 0,
+            #000 24px,
+            #000 calc(100% - 24px),
+            transparent 100%);
+    mask-image: linear-gradient(to bottom,
+            transparent 0,
+            #000 24px,
+            #000 calc(100% - 24px),
+            transparent 100%);
+}
+
+.mega-featured-scroll-wrap {
+    border-radius: 8px;
+    box-shadow: inset 0 12px 14px -12px rgba(0, 0, 0, 0.75),
+        inset 0 -12px 14px -12px rgba(0, 0, 0, 0.75);
+}
+
+body.lightmode .mega-featured-scroll-wrap {
+    box-shadow: inset 0 12px 14px -12px rgba(0, 0, 0, 0.25),
+        inset 0 -12px 14px -12px rgba(0, 0, 0, 0.25);
+}
+
+@keyframes megaFeaturedScroll {
+    0%   { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
 }

@@ -36,14 +36,25 @@ function _whenDomReady(fn) {
 }
 
 function finishNavInit() {
-    // Deferred off the initial paint/LCP path: the YouTube IFrame API is a
-    // slow external fetch, and initializing it late avoids competing with
-    // hero text render and avoids a layout jump if it were sized eagerly.
+    // Deferred off the initial paint/LCP path. An idle callback alone was not
+    // enough: its timeout fired at ~2s while the hero <h1> was still waiting to
+    // paint, so the 5MB+ video stream and the YouTube player scripts competed
+    // with the LCP element for bandwidth and main thread. Waiting for the load
+    // event first keeps the whole embed out of the critical path; the poster
+    // image behind it (see #banner-video-background in style.css) means the
+    // hero looks finished long before the video arrives.
     var startBannerVideo = function () { _runInit('initBannerVideo'); };
-    if ('requestIdleCallback' in window) {
-        requestIdleCallback(startBannerVideo, { timeout: 2000 });
+    var scheduleBannerVideo = function () {
+        if ('requestIdleCallback' in window) {
+            requestIdleCallback(startBannerVideo, { timeout: 3000 });
+        } else {
+            setTimeout(startBannerVideo, 300);
+        }
+    };
+    if (document.readyState === 'complete') {
+        scheduleBannerVideo();
     } else {
-        setTimeout(startBannerVideo, 200);
+        window.addEventListener('load', scheduleBannerVideo, { once: true });
     }
     [
         'initNavLink',
@@ -174,6 +185,16 @@ function initBannerVideo() {
     var videoId = $bg.data('video-id');
     if (!videoId) return;
 
+    // The video is decoration, and it is expensive: roughly 5MB of stream plus
+    // ~850KB of player script. Skip it where that trade is clearly wrong and
+    // leave the poster image showing instead.
+    var conn = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+    if (conn) {
+        if (conn.saveData) return;
+        if (/(^|-)2g$/.test(conn.effectiveType || '')) return;
+    }
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
     var params = $.param({
         autoplay: 1,
         mute: 1,
@@ -197,6 +218,8 @@ function initBannerVideo() {
         allow: 'autoplay; encrypted-media',
         referrerpolicy: 'strict-origin-when-cross-origin'
     });
+
+    $iframe.on('load', function () { $iframe.addClass('is-ready'); });
 
     $bg.append($iframe);
     setYoutubeSize();

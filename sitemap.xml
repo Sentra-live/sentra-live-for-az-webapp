@@ -275,13 +275,6 @@
             <priority>0.8</priority>
       </url>
 
-      <!-- 404 Page -->
-      <url>
-            <loc>https://sentratech.in/404-page.html</loc>
-            <lastmod>2025-11-13</lastmod>
-            <changefreq>yearly</changefreq>
-            <priority>0.3</priority>
-      </url>
 
 
       <!-- Blogs Pages -->
@@ -373,6 +366,18 @@
       <url>
             <loc>https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html</loc>
             <lastmod>2026-08-03</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+      <url>
+            <loc>https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html</loc>
+            <lastmod>2026-08-15</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+      <url>
+            <loc>https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html</loc>
+            <lastmod>2026-08-25</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
