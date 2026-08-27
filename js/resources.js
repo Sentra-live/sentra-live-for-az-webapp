@@ -185,7 +185,7 @@
             color: 'rose',
             type: 'blogs',
             date: '15 Aug 2026',
-            image: './image/blogs/banners/blog_bridge_scour_monitoring.webp',
+            image: './image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp',
             link: './blogs/bridge-scour-monitoring-iot-digital-twins.html'
         },
         {
@@ -196,7 +196,7 @@
             color: 'orange',
             type: 'blogs',
             date: '25 Aug 2026',
-            image: './image/blogs/banners/blog_building_shm_iot.webp',
+            image: './image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp',
             link: './blogs/continuous-building-shm-iot-sensors.html',
             featured: true
         },
@@ -239,13 +239,37 @@
 
         // ---------- Articles ----------
         {
+            id: 'art-10-construction-technologies',
+            title: '10 Construction Technologies Redefining the Industry',
+            excerpt: 'AI, reality capture, digital twins, IoT, BIM beyond design, connected construction, XR, robotics, 3D printing and predictive monitoring — and how they converge.',
+            category: 'Construction Tech',
+            color: 'teal',
+            type: 'articles',
+            date: '21 Aug 2026',
+            image: './image/articles/articles_10constructiontechnologiesredefiningtheindustry.webp',
+            link: './article/10-construction-technologies-redefining-the-industry.html',
+            featured: true
+        },
+        {
+            id: 'art-flood-monitoring-early-warning-system',
+            title: 'Flood Monitoring & Early Warning System',
+            excerpt: 'How real-time water-level sensing, threshold-based alerting, mobile warnings and downstream sirens turn upstream detection into evacuation time for communities.',
+            category: 'Flood Early Warning',
+            color: 'purple',
+            type: 'articles',
+            date: '27 Aug 2026',
+            image: './image/articles/articles_floodmonitoringandearlywarningsystem.webp',
+            link: './article/flood-monitoring-early-warning-system.html',
+            featured: true
+        },
+        {
             id: 'art-ai-infrastructure-monitoring',
             title: 'AI Is Coming for Infrastructure Monitoring',
             excerpt: 'How AI transforms infrastructure monitoring: the signal chain, modal features, environmental normalisation, anomaly detection, computer-vision defect tracking and predictive digital twins.',
             category: 'AI & Monitoring',
             color: 'teal',
             type: 'articles',
-            date: '24 Aug 2026',
+            date: '15 Aug 2026',
             image: './image/articles/articles_ai_for_bridge_monitoring.webp',
             link: './article/ai-infrastructure-monitoring.html',
             featured: true
@@ -257,7 +281,7 @@
             category: 'Digital Twin',
             color: 'purple',
             type: 'articles',
-            date: '15 Aug 2026',
+            date: '7 Aug 2026',
             image: './image/articles/article_digital-twin-predictive-maintenance-sentra.webp',
             link: './article/digital-twin-predictive-maintenance-sentra.html',
             featured: true

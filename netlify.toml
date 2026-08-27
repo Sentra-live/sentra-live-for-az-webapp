@@ -2,6 +2,20 @@
   command = "npm install && node scripts/inline-partials.mjs"
   publish = "."
 
+# ─── Keep .html on internal links ───
+# Netlify's "Pretty URLs" post-processing rewrites every internal href from
+# ./solutions.html to /solutions. Our canonical tags, og:url and sitemap.xml
+# all use the .html form, so that rewrite left every canonical URL with zero
+# incoming internal links - Ahrefs' "Canonical URL has no incoming internal
+# links" on all 83 pages. The rewrite happens at build time, so it came back
+# on every deploy no matter what the source said. Turning it off makes the
+# deployed HTML match the source (and the canonicals) exactly.
+[build.processing]
+  skip_processing = false
+
+[build.processing.html]
+  pretty_urls = false
+
 # ─── Collapse the www → apex redirect to a single hop ───
 # Without this, Netlify's automatic domain-alias handling does it in two
 # hops (http://www -> https://www -> https://apex), which Ahrefs flags as

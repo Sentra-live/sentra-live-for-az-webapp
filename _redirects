@@ -19,6 +19,13 @@
 /article      /resources.html  301
 /case-studies /resources.html  301
 
+# The homepage canonical is https://sentratech.in/ - send the /index.html
+# duplicate to it so only one URL serves the home page.
+# The '!' (force) is required: without it Netlify serves the existing
+# index.html file and never evaluates this rule. No loop risk - the rule
+# matches the request path '/index.html', and a request for '/' never does.
+/index.html  /  301!
+
 # Custom 404: any path that matches no file falls through to our own
 # error page instead of Netlify's generic 'Page not found'.
 # Must stay LAST - rules are evaluated in order.

@@ -7,7 +7,7 @@
 
       <!-- Homepage -->
       <url>
-            <loc>https://sentratech.in/index.html</loc>
+            <loc>https://sentratech.in/</loc>
             <lastmod>2026-06-29</lastmod>
             <changefreq>daily</changefreq>
             <priority>1.0</priority>
@@ -105,8 +105,20 @@
 
       <!-- Article Pages -->
       <url>
+            <loc>https://sentratech.in/article/10-construction-technologies-redefining-the-industry.html</loc>
+            <lastmod>2026-08-21</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.7</priority>
+      </url>
+      <url>
+            <loc>https://sentratech.in/article/flood-monitoring-early-warning-system.html</loc>
+            <lastmod>2026-08-27</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.7</priority>
+      </url>
+      <url>
             <loc>https://sentratech.in/article/ai-infrastructure-monitoring.html</loc>
-            <lastmod>2026-08-24</lastmod>
+            <lastmod>2026-08-15</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
@@ -564,6 +576,30 @@
             <lastmod>2026-08-03</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.5</priority>
+      </url>
+
+      <!-- Blog Feed Page -->
+      <url>
+            <loc>https://sentratech.in/feed.html</loc>
+            <lastmod>2026-08-25</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.7</priority>
+      </url>
+
+      <!-- Videos & Shorts Page -->
+      <url>
+            <loc>https://sentratech.in/videos.html</loc>
+            <lastmod>2026-08-25</lastmod>
+            <changefreq>weekly</changefreq>
+            <priority>0.6</priority>
+      </url>
+
+      <!-- Article: Digital Twin for Predictive Maintenance -->
+      <url>
+            <loc>https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html</loc>
+            <lastmod>2026-08-07</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
       </url>
 
 </urlset>

@@ -96,63 +96,6 @@
             background-color: #0a0a0e;
         }
 
-        /* ── Hero background video ── */
-        .yv-hero-video-bg {
-            position: absolute;
-            inset: 0;
-            z-index: 0;
-            overflow: hidden;
-            pointer-events: none;
-        }
-
-        .yv-hero-video-bg iframe {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 300%;
-            height: 300%;
-            transform: translate(-50%, -50%);
-            object-fit: cover;
-            pointer-events: none;
-        }
-
-        .yv-hero-overlay {
-            position: absolute;
-            inset: 0;
-            z-index: 1;
-            pointer-events: none;
-            background: linear-gradient(180deg, rgba(6, 6, 10, 0.88) 0%, rgba(6, 6, 10, 0.82) 55%, rgba(6, 6, 10, 0.92) 100%);
-        }
-
-        .yv-hero>*:not(.yv-hero-video-bg):not(.yv-hero-overlay):not(.yv-hero-mute-toggle) {
-            position: relative;
-            z-index: 2;
-        }
-
-        .yv-hero-mute-toggle {
-            position: absolute;
-            top: 18px;
-            right: 18px;
-            z-index: 3;
-            width: 38px;
-            height: 38px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: rgba(0, 0, 0, 0.45);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            color: #fff;
-            font-size: 14px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-        }
-
-        .yv-hero-mute-toggle:hover {
-            background: rgba(244, 129, 32, 0.85);
-            border-color: transparent;
-        }
-
         body.dark-mode .yv-hero-title,
         body.lightmode .yv-hero-title {
             color: #fff;
@@ -1143,7 +1086,7 @@
         <div class="navbar-container">
 
             <div class="logo-container">
-                <a class="navbar-brand" href="./index.html" aria-label="Sentra home">
+                <a class="navbar-brand" href="/" aria-label="Sentra home">
                     <img src="./image/branding/sentra_white_1.svg" class="site-logo img-fluid" alt="Sentra logo" loading="lazy" decoding="async">
                 </a>
             </div>
@@ -1157,7 +1100,7 @@
                 <ul class="navbar-nav mx-auto">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html">HOME</a>
+                        <a class="nav-link" href="/">HOME</a>
                     </li>
 
                     <!-- ══ SOLUTIONS BENTO ══ -->
@@ -1977,7 +1920,7 @@
 
             <!-- Quick links -->
             <div class="mmenu-quicklinks">
-                <a href="./index.html" class="mmenu-quicklink">Home</a>
+                <a href="/" class="mmenu-quicklink">Home</a>
                 <a href="./about.html" class="mmenu-quicklink">About Us</a>
                 <a href="./contact.html" class="mmenu-quicklink">Contact Us</a>
             </div>
@@ -2142,14 +2085,6 @@
     <main>
         <!-- Hero -->
         <div class="yv-hero">
-            <div class="yv-hero-video-bg" aria-hidden="true">
-                <iframe id="yvHeroVideoFrame" src="https://www.youtube.com/embed/3N4SRohMoEg?autoplay=1&mute=1&loop=1&playlist=3N4SRohMoEg&controls=0&showinfo=0&rel=0&modestbranding=1&playsinline=1&disablekb=1&start=7&enablejsapi=1"
-                    title="" frameborder="0" allow="autoplay; encrypted-media" tabindex="-1"></iframe>
-            </div>
-            <div class="yv-hero-overlay" aria-hidden="true"></div>
-            <button id="yvHeroMuteToggle" class="yv-hero-mute-toggle" type="button" aria-pressed="false" aria-label="Unmute background video">
-                <i class="fa-solid fa-volume-xmark"></i>
-            </button>
             <span class="yv-hero-badge"><i class="fa-brands fa-youtube"></i> Watch & Listen</span>
             <h1 class="yv-hero-title">Videos &amp; <span class="accent">Shorts</span></h1>
             <p class="yv-hero-sub">Product demos and project walkthroughs from the Sentra team — structural health
@@ -2522,6 +2457,7 @@
     <script>
         (function () {
             var videos = [
+                { id: "Fh1OWcl19U0", title: "Nepal | A reminder that seeing change sooner matters.", dur: "1:23", cat: "Structural Health Monitoring" },
                 { id: "mQALUyzqst4", title: "The Silent Danger Hiding Beneath Every Railway Track | Meet Sentra - Railway Safety, Reimagined.", dur: "0:46", cat: "Railway Monitoring" },
                 { id: "aq0LzTTa-4A", title: "Monitor Today. Protect Tomorrow. | Sentra's Structural Health Monitoring | Buildings", dur: "0:41", cat: "Structural Health Monitoring" },
                 { id: "SdzX8MXYcis", title: "Predict Failures Before They Happen | Structural Health Monitoring by Sentra", dur: "1:40", cat: "Structural Health Monitoring" },
@@ -2718,25 +2654,6 @@
                     document.getElementById('my-video-frame').src = '';
                 }
             });
-
-            // Hero background video mute/unmute (postMessage to the YouTube embed)
-            var heroFrame = document.getElementById('yvHeroVideoFrame');
-            var muteToggle = document.getElementById('yvHeroMuteToggle');
-            if (heroFrame && muteToggle) {
-                var heroMuted = true;
-
-                function postToPlayer(func) {
-                    heroFrame.contentWindow.postMessage(JSON.stringify({ event: 'command', func: func, args: [] }), '*');
-                }
-
-                muteToggle.addEventListener('click', function () {
-                    heroMuted = !heroMuted;
-                    postToPlayer(heroMuted ? 'mute' : 'unMute');
-                    muteToggle.setAttribute('aria-pressed', String(!heroMuted));
-                    muteToggle.setAttribute('aria-label', heroMuted ? 'Unmute background video' : 'Mute background video');
-                    muteToggle.innerHTML = '<i class="fa-solid ' + (heroMuted ? 'fa-volume-xmark' : 'fa-volume-high') + '"></i>';
-                });
-            }
         })();
     </script>
 </body>
