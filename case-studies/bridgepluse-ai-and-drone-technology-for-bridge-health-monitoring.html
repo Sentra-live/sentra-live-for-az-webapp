@@ -1437,7 +1437,7 @@
                         </div>
                         <h1 class="hero-title">BridgePulse &mdash; AI and Drone Technology for Bridge Health Monitoring</h1>
                         <div class="hero-intro">
-                            <p>An innovative AI and drone-powered application that scans, analyzes, and monitors bridges across Andhra Pradesh.</p>
+                            <p>An AI and drone application built for Indian Railways that scans bridges across Andhra Pradesh and tracks how their defects change between inspections.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
@@ -1481,20 +1481,20 @@
 
                     <h2 id="objectives">Objectives</h2>
                     <ul class="blog-bullets">
-                        <li>Develop a scalable solution for extensive bridge inspection across the state</li>
+                        <li>Cover bridge inspection at state scale rather than one structure at a time</li>
                         <li>Detect early signs of structural deterioration with high precision</li>
-                        <li>Provide actionable data to improve maintenance planning and execution</li>
-                        <li>Enable periodic comparison to monitor degradation over time</li>
+                        <li>Give maintenance planners measurements they can act on</li>
+                        <li>Keep scans comparable so degradation shows up between visits</li>
                     </ul>
 
                     <h2 id="methodology">Methodology and System Design</h2>
                     <p>The approach pairs drone-based scanning with AI and ML models trained specifically to read bridge conditions. A drone flies the structure capturing high-resolution 2D and 3D data, which gets reconstructed into mesh and photogrammetry models. From there, the system picks out:</p>
                     <ul class="blog-bullets">
-                        <li><strong>Cracks:</strong> with depth and width estimation via photogrammetry</li>
-                        <li><strong>Rust and corrosion:</strong> detection in metal components</li>
-                        <li><strong>Deviations:</strong> from original design or previous scan data</li>
-                        <li><strong>Crack and rust detection overlays:</strong> visual mapping on 3D models</li>
-                        <li><strong>Time-series comparison:</strong> tools to monitor degradation over months</li>
+                        <li>Cracks, with depth and width estimated from photogrammetry</li>
+                        <li>Rust and corrosion on metal components</li>
+                        <li>Deviations from the original design or from the previous scan</li>
+                        <li>Overlays that map detected cracks and rust onto the 3D model</li>
+                        <li>Time-series comparison across scans taken months apart</li>
                     </ul>
 
                     <img src="https://clovetech.com/wp-content/uploads/2025/09/bridge-rust.jpg"
@@ -1509,36 +1509,36 @@
                     <p>AI/ML models trained on structural defect datasets perform image segmentation and object detection using Convolutional Neural Networks (CNNs) for crack and rust identification. Depth estimation algorithms classify structural severity, while measurement tools calculate distances, crack dimensions, and elevation data.</p>
 
                     <h4>Analytics and Reporting</h4>
-                    <p>The system provides health risk categorization (Low / Moderate / Critical) and generates exportable inspection reports. Key functionalities include drone-based scanning with photogrammetry, AI-powered crack and rust detection with severity metrics, deviation detection between historical and current scans, and comparison views for structural change monitoring over time.</p>
+                    <p>Every defect gets a health risk category of Low, Moderate, or Critical, and inspection reports export from there. The working feature set is drone scanning with photogrammetry, crack and rust detection with severity metrics attached, deviation detection between the historical and the current scan, and side by side comparison views for tracking change over time.</p>
 
                     <img src="https://clovetech.com/wp-content/uploads/2025/09/cracks-rust.jpg"
                          alt="Combined cracks and rust detection overlay on bridge structure"
                          style="width:100%;height:auto;border-radius:8px;margin:1.5rem 0;" loading="lazy">
 
                     <h2 id="use-case">Use Case Scenario</h2>
-                    <p>A service engineer responsible for bridge maintenance opens the BridgePulse dashboard. On the map, the user clicks on a bridge in the East Godavari district. Instantly, the latest photogrammetry model loads, showing visual overlays of cracks and rust. The user views the rust severity and notes that the crack on the left support column has grown 2 mm deeper compared to the scan from six months ago. The user downloads a PDF report with all measurements and forwards it to the Public Works Department. Thanks to this early detection, preventive maintenance is scheduled immediately.</p>
+                    <p>A maintenance engineer opens the BridgePulse dashboard and clicks a bridge in East Godavari district on the map. The latest photogrammetry model loads with the crack and rust overlays on it. Checking rust severity, they notice the crack on the left support column is 2 mm deeper than it was in the scan six months earlier. They export the PDF report with the measurements and send it to the Public Works Department, and preventive maintenance gets scheduled before the crack becomes a safety problem.</p>
 
                     <h2 id="implementation">Implementation Challenges</h2>
-                    <p>Several challenges were encountered during the development and deployment of BridgePulse:</p>
+                    <p>A few things caused trouble during development and deployment:</p>
                     <ul class="blog-bullets">
-                        <li><strong>False positives:</strong> AI occasionally identified fungus, stains, or shadows as cracks. Mitigated through shadow filtering algorithms and improved training data.</li>
-                        <li><strong>Model training:</strong> Required extensive labeled datasets of bridge defects from diverse environmental conditions across Andhra Pradesh.</li>
-                        <li><strong>Environmental factors:</strong> Poor lighting and drone stability in high-wind conditions can impact scan quality. Addressed with enhanced image processing pipelines.</li>
+                        <li>The model occasionally read fungus, stains, or shadows as cracks. Shadow filtering algorithms and better training data brought that down.</li>
+                        <li>Training needed large labelled datasets of bridge defects, gathered across the range of environmental conditions found in Andhra Pradesh.</li>
+                        <li>Poor light and unstable drone flight in high wind both degrade scan quality. A stronger image processing pipeline handles most of that.</li>
                     </ul>
 
                     <h2 id="future-scope">Future Scope and Enhancements</h2>
                     <ul class="blog-bullets">
-                        <li><strong>Predictive analytics:</strong> Forecast future degradation patterns based on historical scan data using machine learning regression models</li>
-                        <li><strong>Drone autonomy:</strong> Fully automated drone missions with minimal human oversight for routine inspections</li>
-                        <li><strong>Government integration:</strong> Seamless reporting to government dashboards and smart city frameworks</li>
-                        <li><strong>Cross-state expansion:</strong> Scaling scanning and monitoring operations to bridges across multiple Indian states</li>
+                        <li>Machine learning regression over the historical scan data, to forecast how a given defect will progress</li>
+                        <li>Fully automated drone missions for routine inspections, with minimal human oversight</li>
+                        <li>Direct reporting into government dashboards and smart city frameworks</li>
+                        <li>Extending scanning and monitoring to bridges in other Indian states</li>
                     </ul>
 
                     <p>What BridgePulse really changes is timing. Instead of learning about a crack when it's already a safety concern, engineers see it forming and can plan a repair on their own schedule. As Andhra Pradesh's bridge stock keeps aging, that head start is what keeps a maintenance backlog from turning into a closure notice.</p>
 
                     <div class="detail-cta">
-                        <h2>Ready to Transform Your Infrastructure Monitoring?</h2>
-                        <p>Let's discuss how BridgePulse can help you achieve proactive bridge maintenance and safety.</p>
+                        <h2>See BridgePulse on Your Bridges</h2>
+                        <p>If you maintain bridge stock and want to know what a scan would actually show, get in touch and we will walk you through it.</p>
                         <a class="cta-btn" href="/contact.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
 
@@ -1604,6 +1604,20 @@
                         </div>
                     </a>
                     <div class="cs-divider"></div>
+                    <a href="../case-studies/railway-bridge-fatigue-life-assessment-load-testing.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp" alt="Railway bridge fatigue life assessment and load testing" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Railway Bridge Fatigue Life Assessment and Load Testing</h4>
+                            <div class="trending-card-meta"><span>Railways</span><span>&middot;</span><span>Case Study</span></div>
+                        </div>
+                    </a>
+                    <a href="../case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp" alt="Railway bridge digital twin from drone and LiDAR inspection" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Railway Bridge Digital Twin Using Drone and LiDAR Inspection</h4>
+                            <div class="trending-card-meta"><span>Railways</span><span>&middot;</span><span>Case Study</span></div>
+                        </div>
+                    </a>
                     <a href="../case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="trending-card">
                         <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp" alt="BridgePulse" style="width:100%;height:100%;object-fit:cover;"></div>
                         <div class="trending-card-body">
