@@ -203,6 +203,30 @@
 
         // ---------- Case Studies ----------
         {
+            id: 'cs-railway-fatigue-life',
+            title: 'Railway Bridge Fatigue Life Assessment and Load Testing',
+            excerpt: 'Instrumentation, controlled load testing, FE model calibration and residual fatigue life assessment of two steel railway bridges ahead of higher axle loads.',
+            category: 'Railways',
+            color: 'rose',
+            type: 'case-studies',
+            date: '28 Aug 2026',
+            image: './image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp',
+            link: './case-studies/railway-bridge-fatigue-life-assessment-load-testing.html',
+            featured: true
+        },
+        {
+            id: 'cs-railway-digital-twin',
+            title: 'Railway Bridge Digital Twin Using Drone and LiDAR Inspection',
+            excerpt: 'A 40.23 m steel open web girder span in the Vijayawada Division captured by drone and terrestrial LiDAR, then modelled as a digital twin for South Central Railway.',
+            category: 'Railways',
+            color: 'orange',
+            type: 'case-studies',
+            date: '15 Aug 2026',
+            image: './image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp',
+            link: './case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html',
+            featured: true
+        },
+        {
             id: 'cs-highway-shm',
             title: 'Structural Health Monitoring of Highway Bridges',
             excerpt: 'Continuous SHM enabling early deterioration detection and predictive maintenance for aging highway infrastructure through real-time sensor data and engineering analytics.',
