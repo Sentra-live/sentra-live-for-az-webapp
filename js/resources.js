@@ -54,6 +54,18 @@
             link: './blogs/what-is-a-data-logger-types-guide.html'
         },
         {
+            id: 'blog-what-is-ground-penetrating-radar',
+            title: 'What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels',
+            excerpt: 'How GPR maps buried interfaces, utilities, voids, moisture and pavement layers for non-destructive road and tunnel monitoring.',
+            category: 'Advanced NDT',
+            color: 'orange',
+            type: 'blogs',
+            date: '8 Sep 2026',
+            image: './image/blogs/banners/blogs_what-is-ground-penetrating-radar.webp',
+            link: './blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html',
+            featured: true
+        },
+        {
             id: 'blog-digital-twins-mesh-pointcloud-splatting',
             title: 'The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared',
             excerpt: 'Discover how Mesh, Point Clouds, and Gaussian Splatting are transforming Digital Twins, BIM, and laser scanning for the AEC industry.',
