@@ -123,6 +123,9 @@ push('Sentra sells instrumentation and monitoring programmes to infrastructure o
 push('EPC contractors and consultants. Deployments include Indian Railways bridges,');
 push('highway structures, high-rise buildings, dams, ports and mining slopes.');
 push('');
+push('Every page below is also available as Markdown: request it with');
+push('Accept: text/markdown, or just swap the .html for .md.');
+push('');
 push('This site is documentation and marketing content only. There is no public API,');
 push('no agent tool endpoint and no authenticated interface; /api/ is an internal');
 push('backend for the site\'s own chatbot and is disallowed in robots.txt.');

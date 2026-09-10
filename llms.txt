@@ -12,6 +12,9 @@ Sentra sells instrumentation and monitoring programmes to infrastructure owners,
 EPC contractors and consultants. Deployments include Indian Railways bridges,
 highway structures, high-rise buildings, dams, ports and mining slopes.
 
+Every page below is also available as Markdown: request it with
+Accept: text/markdown, or just swap the .html for .md.
+
 This site is documentation and marketing content only. There is no public API,
 no agent tool endpoint and no authenticated interface; /api/ is an internal
 backend for the site's own chatbot and is disallowed in robots.txt.
