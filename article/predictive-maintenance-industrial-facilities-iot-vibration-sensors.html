@@ -1,0 +1,2186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8GFRCEFB87');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Resource hints: warm up connections the page opens on every load -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <meta name="description" content="How industrial predictive maintenance works in practice: what IoT vibration sensors measure, which failure modes they catch early, and how to turn continuous data into higher asset uptime." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure" />
+    <meta property="og:description" content="Equipment vibration monitoring catches bearing wear, misalignment and imbalance weeks before failure. Here is how to build a predictive maintenance program that plant teams actually use." />
+    <meta property="og:url" content="https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://sentratech.in/image/articles/articles_predictive-maintenance-industrial-facilities.webp" />
+    <meta property="og:image:width" content="2248" />
+    <meta property="og:image:height" content="1264" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure" />
+    <meta name="twitter:description" content="Equipment vibration monitoring catches bearing wear, misalignment and imbalance weeks before failure. Here is how to build a predictive maintenance program that plant teams actually use." />
+    <meta name="twitter:image" content="https://sentratech.in/image/articles/articles_predictive-maintenance-industrial-facilities.webp" />
+    <meta name="twitter:site" content="@sentratech" />
+    <meta name="twitter:image:width" content="2248" />
+    <meta name="twitter:image:height" content="1264" />
+    <title>Predictive Maintenance for Industrial Facilities: IoT Vibration Sensors | Sentra</title>
+    <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../css/vendor/brands.css">
+    <link rel="stylesheet" href="../css/vendor/regular.css">
+    <link rel="stylesheet" href="../css/vendor/solid.css">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/vendor/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
+    <link rel="stylesheet" href="../css/chatbot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=analytics,architecture,biotech,construction,database,insights,monitoring,precision_manufacturing,search,search_insights,sentiment_satisfied,settings_suggest,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/detail-page.css">
+    <style>
+        .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+        .word { transition: background-color 0.12s ease; padding: 0 1px; border-radius: 2px; }
+        .highlight { background-color: #f48120; transition: background-color 0.15s ease; }
+        body.lightmode .highlight { background-color: #ffe082; }
+        .conclusion-btn-wrapper { margin-bottom: 30px; }
+        body.dark-mode .detail-hero .hero-text-col, body.dark-mode .detail-article, body.dark-mode .hero-title { color: #fff; }
+        body.lightmode .hero-title { color: #111; }
+        body.dark-mode .hero-intro p, body.dark-mode .detail-article p, body.dark-mode .detail-article li { color: rgba(255,255,255,0.6); }
+        body.lightmode .hero-intro p, body.lightmode .detail-article p, body.lightmode .detail-article li { color: rgba(0,0,0,0.6); }
+        .blog-video-embed { border-radius: 14px; border: 1px solid rgba(255,255,255,0.07); background: rgba(255,255,255,0.02); padding: 1.5rem; margin: 1.75rem 0; }
+        body.lightmode .blog-video-embed { border-color: rgba(0,0,0,0.08); background: #fff; }
+        .blog-video-embed h5 { font-size: 0.95rem; font-weight: 700; margin: 0 0 0.3rem; }
+        .blog-video-embed .bve-sub { font-size: 0.8rem; opacity: 0.6; margin: 0 0 1rem; line-height: 1.6; }
+        .blog-video-embed .bve-frame { position: relative; width: 100%; padding-top: 56.25%; border-radius: 10px; overflow: hidden; }
+        .blog-video-embed .bve-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+        /* The sitewide .accordion-item .accordion-body rule (built for the homepage
+           FAQ, which nests an .accordion-content wrapper for its own left padding)
+           zeroes out padding-left and adds a large vertical pad. This FAQ uses the
+           plain Bootstrap structure, so restore the left padding and close the gap
+           between a question and its answer. */
+        #faqPdm.accordion .accordion-item {
+            gap: 8px;
+        }
+
+        #faqPdm.accordion .accordion-item .accordion-body {
+            display: block;
+            padding: 20px 32px 20px 1.25rem;
+        }
+
+        #faqPdm.accordion .accordion-item .accordion-body p:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+    <link rel="canonical" href="https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure",
+      "description": "How industrial predictive maintenance works in practice: what IoT vibration sensors measure, which failure modes they catch early, and how continuous equipment vibration monitoring protects asset uptime.",
+      "datePublished": "2026-09-07",
+      "dateModified": "2026-09-07",
+      "author": {
+        "@type": "Organization",
+        "name": "Sentra Technologies"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sentra",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sentratech.in/image/branding/sentra.webp"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sentratech.in/image/articles/articles_predictive-maintenance-industrial-facilities.webp"
+      },
+      "keywords": "industrial predictive maintenance, equipment vibration monitoring, IoT industrial facilities, asset uptime",
+      "articleSection": "Industrial",
+      "inLanguage": "en"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sentratech.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://sentratech.in/resources.html" },
+        { "@type": "ListItem", "position": 3, "name": "Predictive Maintenance for Industrial Facilities", "item": "https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html" }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".detail-article h2, .detail-article h4", ".detail-article p", ".hero-intro"]
+      },
+      "url": "https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is industrial predictive maintenance?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Industrial predictive maintenance uses continuous condition data from machinery to estimate when a component will fail, so that repair is scheduled shortly before failure rather than on a fixed calendar or after a breakdown. Vibration is the most widely used signal because most rotating-equipment faults change the vibration signature long before they change temperature, output or noise."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What faults can vibration monitoring detect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Equipment vibration monitoring detects imbalance, shaft misalignment, mechanical looseness, bearing wear at all four defect frequencies, gear tooth damage, rotor bar faults, belt problems, cavitation in pumps and resonance. Each has a characteristic frequency signature, which is what allows the fault to be named rather than only detected."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much warning does vibration monitoring give before failure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the fault and the machine. Rolling-element bearing degradation typically progresses over weeks to months, and high-frequency envelope analysis often flags it long before the overall vibration level rises. Imbalance and looseness can be identified as soon as they appear. Sudden failures caused by foreign objects or lubrication loss give far less notice, which is why continuous monitoring outperforms periodic route-based readings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do wireless IoT vibration sensors replace route-based data collection?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most balance-of-plant equipment, yes. Wireless sensors measure continuously, cost far less per point than wired analysers, and remove the gap between monthly routes in which a fault can develop unseen. Critical, high-speed or safety-related machines usually keep permanently wired systems with higher bandwidth and protection functions alongside the wireless network."
+          }
+        }
+      ]
+    }
+    </script>
+    
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo"><img src="../image/branding/sentra_white_1.svg" alt="Sentra"></div>
+            <div class="preloader-logo-sub">Smart · Secure · Scalable</div>
+            <div class="preloader-counter">
+                <span id="preloader-count">0</span>
+                <span class="preloader-percent">%</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div id="header"><!-- Mega nav styles live in css/style.css -->
+<style>
+    /* Self-contained import so the theme-toggle glyph renders even on pages
+       whose <head> doesn't already link Material Symbols. */
+    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap');
+
+    /* ── Theme Toggle (Material Symbols, animated morph) ── */
+    .themeswitch {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .theme-toggle-icon {
+        font-family: 'Material Symbols Rounded';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 1;
+        display: inline-block;
+        user-select: none;
+        -webkit-font-smoothing: antialiased;
+        font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+        transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1), filter 0.5s ease;
+        transform: rotate(0deg) scale(1);
+    }
+
+    .themeswitch:hover .theme-toggle-icon {
+        transform: rotate(-18deg) scale(1.12);
+    }
+
+    .theme-toggle-icon.rotating {
+        animation: themeIconMorph 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    @keyframes themeIconMorph {
+        0% {
+            transform: rotate(0deg) scale(1);
+            filter: blur(0px);
+        }
+
+        45% {
+            transform: rotate(160deg) scale(0.35);
+            filter: blur(2px);
+        }
+
+        55% {
+            transform: rotate(200deg) scale(0.35);
+            filter: blur(2px);
+        }
+
+        100% {
+            transform: rotate(360deg) scale(1);
+            filter: blur(0px);
+        }
+    }
+
+    /* ── Header Call Pill ── */
+    .navbar-call-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 4px 18px 4px 4px;
+        border-radius: 100px;
+        background: #f48120;
+        text-decoration: none;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+        box-shadow: 0 4px 14px rgba(244, 129, 32, 0.25);
+    }
+
+    .navbar-call-pill:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(244, 129, 32, 0.35);
+        background: #2d2e2f;
+    }
+
+    .navbar-call-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #fff;
+        color: #f48120;
+        font-size: 15px;
+        flex-shrink: 0;
+        transition: color 0.25s ease;
+    }
+
+    .navbar-call-pill:hover .navbar-call-icon {
+        color: #2d2e2f;
+    }
+
+    .navbar-call-text {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+    }
+
+    body.lightmode .navbar-call-pill {
+        background: #2d2e2f;
+        box-shadow: 0 4px 14px rgba(45, 46, 47, 0.2);
+    }
+
+    body.lightmode .navbar-call-pill:hover {
+        background: #f48120;
+        box-shadow: 0 8px 20px rgba(244, 129, 32, 0.3);
+    }
+
+    body.lightmode .navbar-call-icon {
+        color: #2d2e2f;
+    }
+
+    body.lightmode .navbar-call-pill:hover .navbar-call-icon {
+        color: #f48120;
+    }
+
+    @media (max-width: 1282px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    /* ── About Us: Industry Verticals Row ── */
+    .mega-industries-row {
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+        margin-top: 8px;
+        padding-top: 12px;
+    }
+
+    body.lightmode .mega-industries-row {
+        border-top-color: rgba(0, 0, 0, 0.07);
+    }
+
+    .mega-industries-label {
+        display: block;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 10px;
+        padding: 0 4px;
+    }
+
+    body.lightmode .mega-industries-label {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    .mega-industries-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .mega-industry-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s;
+    }
+
+    .mega-industry-link i {
+        font-size: 10px;
+        color: var(--accent-color);
+        opacity: 0.7;
+    }
+
+    .mega-industry-link:hover {
+        background: rgba(244, 129, 32, 0.1);
+        color: #fff;
+    }
+
+    body.lightmode .mega-industry-link {
+        color: rgba(0, 0, 0, 0.55);
+    }
+
+    body.lightmode .mega-industry-link:hover {
+        background: rgba(244, 129, 32, 0.08);
+        color: #111;
+    }
+
+    .mega-new-badge {
+        display: inline-block;
+        font-size: 8px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #f48120;
+        padding: 1px 5px;
+        border-radius: 999px;
+        vertical-align: middle;
+        margin-left: 2px;
+    }
+
+    /* ── Brand Logo Carousel ── */
+    .mega-brand-carousel {
+        margin-top: auto;
+        overflow: hidden;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 16px 0 18px;
+    }
+
+    body.lightmode .mega-brand-carousel {
+        background: rgba(0, 0, 0, 0.03);
+        border-color: rgba(0, 0, 0, 0.07);
+    }
+
+    .mega-brand-label {
+        display: block;
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.3);
+        padding: 0 10px 6px;
+    }
+
+    body.lightmode .mega-brand-label {
+        color: rgba(0, 0, 0, 0.35);
+    }
+
+    .mega-brand-track {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+        animation: megaBrandScroll 12s linear infinite;
+    }
+
+    .mega-brand-track:hover {
+        animation-play-state: paused;
+    }
+
+    .mega-brand-slide {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 114px;
+        height: 89px;
+    }
+
+    .mega-brand-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        opacity: 0.5;
+        transition: opacity 0.25s ease, filter 0.25s ease;
+    }
+
+    .mega-brand-slide img:hover {
+        filter: none;
+        opacity: 0.9;
+    }
+
+    .mega-brand-slide.brand-dark img {
+        filter: grayscale(1) brightness(0.85);
+        opacity: 0.5;
+    }
+
+    .mega-brand-slide.brand-dark img:hover {
+        filter: grayscale(0) brightness(1);
+        opacity: 1;
+    }
+
+    body.lightmode .mega-brand-slide img {
+        filter: none;
+        opacity: 0.6;
+    }
+
+    body.lightmode .mega-brand-slide img:hover {
+        opacity: 1;
+    }
+
+    @keyframes megaBrandScroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+</style>
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-expand-xl">
+        <div class="navbar-container">
+
+            <div class="logo-container">
+                <a class="navbar-brand" href="/" aria-label="Sentra home">
+                    <img src="../image/branding/sentra_white_1.svg" class="site-logo img-fluid" alt="Sentra logo" loading="lazy" decoding="async">
+                </a>
+            </div>
+
+            <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+
+                    <!-- ══ SOLUTIONS BENTO ══ -->
+                    <li class="nav-item dropdown">
+                        <a id="solutions-link" class="nav-link dropdown-toggle" href="../solutions.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
+                        </a>
+                        <div class="dropdown-menu mega-solutions">
+                            <div class="solutions-bento">
+
+                                <!-- Row 1: SHM (wide) + Bridge (narrow) -->
+                                <div class="sol-bento-img-row">
+                                    <a class="sol-img-card" href="../solutions/structural-health-monitoring.html">
+                                        <div class="sol-img-card-bg"
+                                            style="background-image:url('../image/solutions/Homepage/Structural%20Health%20Monitoring.webp');">
+                                        </div>
+                                        <div class="sol-img-card-overlay"></div>
+                                        <i class="fa-solid fa-arrow-right sol-img-card-arrow"></i>
+                                        <div class="sol-img-card-body">
+                                            <div class="sol-img-card-icon"><i class="fas fa-chart-line"></i></div>
+                                            <div class="sol-img-card-title">Structural Health Monitoring</div>
+                                            <div class="sol-img-card-sub">Real-time sensing for critical infrastructure
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sol-img-card"
+                                        href="../solutions/bridge-inspection-and-condition-assessment.html">
+                                        <div class="sol-img-card-bg"
+                                            style="background-image:url('../image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp');">
+                                        </div>
+                                        <div class="sol-img-card-overlay"></div>
+                                        <i class="fa-solid fa-arrow-right sol-img-card-arrow"></i>
+                                        <div class="sol-img-card-body">
+                                            <div class="sol-img-card-icon"><i class="fas fa-bridge"></i></div>
+                                            <div class="sol-img-card-title">Bridge Inspection</div>
+                                            <div class="sol-img-card-sub">Condition assessment</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Row 2: Asset (narrow) + Digital Twin (wide) -->
+                                <div class="sol-bento-img-row2">
+                                    <a class="sol-img-card"
+                                        href="../solutions/asset-monitoring-and-management-solutions.html">
+                                        <div class="sol-img-card-bg"
+                                            style="background-image:url('../image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp');">
+                                        </div>
+                                        <div class="sol-img-card-overlay"></div>
+                                        <i class="fa-solid fa-arrow-right sol-img-card-arrow"></i>
+                                        <div class="sol-img-card-body">
+                                            <div class="sol-img-card-icon"><i class="fas fa-database"></i></div>
+                                            <div class="sol-img-card-title">Asset Monitoring</div>
+                                            <div class="sol-img-card-sub">Lifecycle management</div>
+                                        </div>
+                                    </a>
+                                    <a class="sol-img-card" href="../solutions/digital-twin.html">
+                                        <div class="sol-img-card-bg"
+                                            style="background-image:url('../image/solutions/Homepage/Facility-Management.webp');">
+                                        </div>
+                                        <div class="sol-img-card-overlay"></div>
+                                        <i class="fa-solid fa-arrow-right sol-img-card-arrow"></i>
+                                        <div class="sol-img-card-body">
+                                            <div class="sol-img-card-icon"><i class="fas fa-cubes"></i></div>
+                                            <div class="sol-img-card-title">Digital Twin</div>
+                                            <div class="sol-img-card-sub">Real-time asset simulation</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Row 3: 5 small fill cards (3+2 bento grid) -->
+                                <div class="sol-bento-small-row">
+                                    <a class="sol-fill-card sol-fill-card--ndt" data-color="orange"
+                                        href="../solutions/advanced-non-destructive-testing-ndt.html">
+                                        <i class="fas fa-microscope"></i>
+                                        <span class="sol-fill-title">Advanced NDT</span>
+                                        <span class="sol-fill-sub">Non-destructive evaluation techniques</span>
+                                    </a>
+                                    <a class="sol-fill-card sol-fill-card--contour" data-color="dark"
+                                        href="../solutions/geotechnical-and-foundation-monitoring.html">
+                                        <i class="fas fa-mountain"></i>
+                                        <span class="sol-fill-title">Geotechnical</span>
+                                        <span class="sol-fill-sub">Slope & foundation monitoring</span>
+                                    </a>
+                                    <a class="sol-fill-card sol-fill-card--corner-img" data-color="white"
+                                        href="../solutions/fatigue-and-residual-life-assessment.html">
+                                        <img class="sol-fill-card-corner-img" src="../image/svg/fatigue%20life.svg"
+                                            alt="" aria-hidden="true" loading="lazy" decoding="async">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span class="sol-fill-title">Fatigue Assessment</span>
+                                        <span class="sol-fill-sub">Residual life & load cycles</span>
+                                    </a>
+                                    <a class="sol-fill-card sol-fill-card--corner-img" data-color="black"
+                                        href="../solutions/consulting-and-advisory-services.html">
+                                        <img class="sol-fill-card-corner-img" src="../image/svg/consulting.svg" alt=""
+                                            aria-hidden="true" loading="lazy" decoding="async">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span class="sol-fill-title">Consulting</span>
+                                        <span class="sol-fill-sub">Expert advisory services</span>
+                                    </a>
+                                    <a class="sol-fill-card" data-color="orange"
+                                        href="../solutions/digital-engineering-and-documentation.html">
+                                        <i class="fas fa-file-contract"></i>
+                                        <span class="sol-fill-title">Digital Engineering</span>
+                                        <span class="sol-fill-sub">Documentation & digital workflows</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ══ PRODUCTS ══ -->
+                    <li class="nav-item dropdown">
+                        <a id="products-link" class="nav-link dropdown-toggle" href="../products.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            PRODUCTS <i class="fa-solid fa-angle-down accent-color"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-products">
+                            <div class="dropdown-products-container">
+
+                                <!-- TOP: Quick Access horizontal bar (spans full width) -->
+                                <div class="mega-quickbar">
+                                    <span class="mega-quickbar-label">Quick Access</span>
+                                    <a class="mega-qb-link" href="../products.html">
+                                        <i class="fa-solid fa-border-all"></i> All Products
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/edge-devices.html">
+                                        <i class="fa-solid fa-microchip"></i> Edge Devices
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/core-communications.html">
+                                        <i class="fa-solid fa-wifi"></i> Core Communications
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/wired-sensors.html">
+                                        <i class="fa-solid fa-network-wired"></i> Wired Sensors
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/laser-scanners.html">
+                                        <i class="fa-solid fa-camera"></i> Laser Scanners
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/lcc.html">
+                                        <i class="fa-solid fa-cubes"></i> Softwares
+                                    </a>
+                                </div>
+
+                                <!-- LEFT: Edge Devices -->
+                                <div class="mega-prod-left">
+                                    <a class="mega-cat-section-label" href="../products/edge-devices.html"
+                                        style="margin-top:0">Edge Devices <i class="fa-solid fa-arrow-right"
+                                            style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+
+                                    <div class="mega-edge-card">
+                                        <span class="mega-cat-label" style="margin-top:0"><i
+                                                class="fa-solid fa-satellite-dish"
+                                                style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Wireless
+                                            Sensors</span>
+                                        <a class="mega-prod-link" href="../products/tiltmeter.html"
+                                            data-img="../image/products/tiltmeter-1.webp" data-name="Tiltmeter 90°"
+                                            data-sub="High-resolution wireless tilt sensing"
+                                            data-url="../products/tiltmeter.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Tiltmeter
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/tiltmeter-event-detection.html"
+                                            data-img="../image/products/tiltmeter-2.webp"
+                                            data-name="Tiltmeter Event Detection"
+                                            data-sub="Event-triggered high-speed tilt monitoring"
+                                            data-url="../products/tiltmeter-event-detection.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Tiltmeter Event Detection
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/vibration-meter.html"
+                                            data-img="../image/products/vibration-meter.webp" data-name="Vibration Meter"
+                                            data-sub="Multi-axis vibration & dynamic load sensing"
+                                            data-url="../products/vibration-meter.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Vibration Meter
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/laser-tiltmeter.html"
+                                            data-img="../image/products/laser-tiltmeter-1.webp"
+                                            data-name="Laser Tiltmeter" data-sub="Precision laser-based inclination"
+                                            data-url="../products/laser-tiltmeter.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Laser Tiltmeter
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/gnss-meter.html"
+                                            data-img="../image/products/gnss-meter-1.webp" data-name="GNSS Meter"
+                                            data-sub="Millimetre-precision GNSS displacement"
+                                            data-url="../products/gnss-meter.html">
+                                            <i class="fa-solid fa-arrow-right"></i>GNSS Meter
+                                        </a>
+                                    </div>
+
+                                    <div class="mega-edge-card">
+                                        <span class="mega-cat-label" style="margin-top:0"><i
+                                                class="fa-solid fa-tower-broadcast"
+                                                style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Wireless Data
+                                            Acquisition</span>
+                                        <a class="mega-prod-link" href="../products/vibrating-wire.html"
+                                            data-img="../image/products/vibration-meter.webp" data-name="Vibrating Wire"
+                                            data-sub="Frequency-based geotechnical sensing"
+                                            data-url="../products/vibrating-wire.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Vibrating Wire
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/vibrating-wire-rcr.html"
+                                            data-img="../image/products/vibration-meter.webp"
+                                            data-name="Vibrating Wire RCR" data-sub="Vibrating wire data readout unit"
+                                            data-url="../products/vibrating-wire-rcr.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Vibrating Wire RCR
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/digital-data-logger.html"
+                                            data-img="../image/products/digital-data-logger-1.webp"
+                                            data-name="Digital Data Logger" data-sub="Wireless digital acquisition node"
+                                            data-url="../products/digital-data-logger.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Digital Data Logger
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/analog-data-logger.html"
+                                            data-img="../image/products/analog-data-logger.webp"
+                                            data-name="Analog Data Logger" data-sub="Multi-channel analog acquisition"
+                                            data-url="../products/analog-data-logger.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Analog Data Logger
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/piconode-data-logger.html"
+                                            data-img="../image/products/piconode-data-logger-1.webp"
+                                            data-name="Piconode Data Logger"
+                                            data-sub="Ultra-compact edge acquisition unit"
+                                            data-url="../products/piconode-data-logger.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Piconode Data Logger
+                                        </a>
+                                    </div>
+
+                                    <div class="mega-brand-carousel">
+                                        <span class="mega-brand-label">Our Partners</span>
+                                        <div class="mega-brand-track">
+                                            <div class="mega-brand-slide"><img
+                                                    src="../image/reseller_logo/worldsensing.webp" alt="Worldsensing" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="mega-brand-slide"><img
+                                                    src="../image/reseller_logo/GEOKON-Logos-H.webp" alt="Geokon" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide brand-dark"><img
+                                                    src="../image/reseller_logo/rockfiled.webp" alt="Rockfield" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide"><img src="../image/reseller_logo/xgrids.avif"
+                                                    alt="XGRIDS" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide"><img
+                                                    src="../image/reseller_logo/worldsensing.webp" alt="Worldsensing" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="mega-brand-slide"><img
+                                                    src="../image/reseller_logo/GEOKON-Logos-H.webp" alt="Geokon" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide brand-dark"><img
+                                                    src="../image/reseller_logo/rockfiled.webp" alt="Rockfield" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide"><img src="../image/reseller_logo/xgrids.avif"
+                                                    alt="XGRIDS" loading="lazy" decoding="async"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CENTRE: wired sensors + resources (top), image (bottom) -->
+                                <div class="mega-preview-panel">
+
+                                    <!-- TOP: 2-col grid — (core comms + wired sensors) | (laser scanners + resources) -->
+                                    <div class="mega-center-top">
+
+                                        <!-- Left: Core Communications card (top) + Wired Sensors card (bottom) -->
+                                        <div class="mega-center-left">
+                                            <div class="mega-center-wired">
+                                                <a class="mega-cat-section-label"
+                                                    href="../products/core-communications.html" style="margin-top:0">Core
+                                                    Communications <i class="fa-solid fa-arrow-right"
+                                                        style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+                                                <span class="mega-cat-label" style="margin-top:4px">Narrowband</span>
+                                                <a class="mega-prod-link" href="../products/gateway.html"
+                                                    data-img="../image/products/4g-rugged-gateway-1cloud.webp"
+                                                    data-name="4G Rugged Gateway"
+                                                    data-sub="Cloud-connected field gateway"
+                                                    data-url="../products/gateway.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Gateway
+                                                </a>
+                                                <a class="mega-prod-link" href="../products/repeater.html"
+                                                    data-img="../image/products/k20-edge-repeater-1.webp"
+                                                    data-name="K20 Edge Repeater"
+                                                    data-sub="Long-range mesh repeater node"
+                                                    data-url="../products/repeater.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Repeater
+                                                </a>
+                                                <span class="mega-cat-label" style="margin-top:4px">Broadband</span>
+                                                <a class="mega-prod-link" href="../products/thread.html"
+                                                    data-img="../image/products/thread-x3-1.webp" data-name="Thread X3"
+                                                    data-sub="Broadband mesh communications"
+                                                    data-url="../products/thread.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Thread
+                                                </a>
+                                            </div>
+
+                                            <div class="mega-center-wiredsensors">
+                                                <a class="mega-cat-section-label" href="../products/wired-sensors.html"
+                                                    style="margin-top:0"><i class="fa-solid fa-plug-circle-bolt"
+                                                        style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Wired
+                                                    Sensors <i class="fa-solid fa-arrow-right"
+                                                        style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+                                                <div class="mega-cat-row">
+                                                    <a class="mega-prod-link" href="../products/accelerometers.html"
+                                                        data-img="../image/products/accelerometer_cardnav.webp"
+                                                        data-name="Accelerometer"
+                                                        data-sub="High-precision wired acceleration sensing"
+                                                        data-url="../products/accelerometers.html">
+                                                        <i class="fa-solid fa-arrow-right"></i>Accelerometer
+                                                    </a>
+                                                    <a class="mega-prod-link" href="../products/strain-gauges.html"
+                                                        data-img="../image/products/strain_gauge.webp"
+                                                        data-name="Strain Gauge"
+                                                        data-sub="Structural strain & stress monitoring"
+                                                        data-url="../products/strain-gauges.html">
+                                                        <i class="fa-solid fa-arrow-right"></i>Strain Gauge
+                                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+
+                                        <!-- Right: Laser Scanners card (top) + Resources card (bottom) -->
+                                        <div class="mega-center-right">
+                                            <div class="mega-center-scanners">
+                                                <a class="mega-cat-section-label" href="../products/laser-scanners.html"
+                                                    style="margin-top:0"><i class="fa-solid fa-camera"
+                                                        style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Laser
+                                                    Scanners <span class="mega-new-badge">New</span> <i
+                                                        class="fa-solid fa-arrow-right"
+                                                        style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+                                                <a class="mega-prod-link" href="../products/lixel-k2.html"
+                                                    data-img="../image/products/scanners/lixel-k2-hero.webp"
+                                                    data-name="Lixel K2"
+                                                    data-sub="The gold standard in lightweight scanning"
+                                                    data-url="../products/lixel-k2.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Lixel K2
+                                                </a>
+                                                <a class="mega-prod-link" href="../products/portalcam.html"
+                                                    data-img="../image/products/scanners/KV%20Horizontal.jpg"
+                                                    data-name="PortalCam" data-sub="The first true spatial camera"
+                                                    data-url="../products/portalcam.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>PortalCam
+                                                </a>
+                                                <a class="mega-prod-link" href="../products/lixel-l2-pro.html"
+                                                    data-img="../image/products/scanners/lixel-l2-pro.jpg"
+                                                    data-name="Lixel L2 Pro" data-sub="Precision redefined"
+                                                    data-url="../products/lixel-l2-pro.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Lixel L2 Pro
+                                                </a>
+                                            </div>
+
+                                            <div class="mega-center-softwares" style="margin-top:14px;">
+                                                <a class="mega-cat-section-label" href="../products/lcc.html"
+                                                    style="margin-top:0"><i class="fa-solid fa-cubes"
+                                                        style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Softwares <i
+                                                        class="fa-solid fa-arrow-right"
+                                                        style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+                                                <a class="mega-prod-link" href="../products/lixelstudio.html"
+                                                    data-img="../image/products/software/ls_nav_card_banner.webp"
+                                                    data-name="LixelStudio"
+                                                    data-sub="A revolutionary 3D data processing workstation"
+                                                    data-url="../products/lixelstudio.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>LixelStudio
+                                                </a>
+                                                <a class="mega-prod-link" href="../products/lcc.html"
+                                                    data-img="../image/products/software/lcc_card_nav.webp"
+                                                    data-name="LCC"
+                                                    data-sub="3D content production powered by 3D Gaussian Splatting"
+                                                    data-url="../products/lcc.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>LCC
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- BOTTOM: cinematic image preview -->
+                                    <div class="mega-preview-img-box">
+                                        <!-- Lives inside a dropdown that is hidden until hover, so there is no
+                                             reason to spend 400KB+ of the initial load on it. -->
+                                        <img id="megaPreviewImg" class="mega-preview-full-img"
+                                            src="../image/products/tiltmeter-1.webp" alt="Product preview"
+                                            loading="lazy" decoding="async" width="640" height="360">
+                                        <div class="mega-preview-overlay"></div>
+                                        <div class="mega-preview-vignette"></div>
+                                        <div class="mega-preview-content">
+                                            <span class="mega-preview-badge">Featured</span>
+                                            <p class="mega-preview-name" id="megaPreviewName">Tiltmeter 90°</p>
+                                            <p class="mega-preview-sub" id="megaPreviewSub">High-resolution wireless
+                                                tilt sensing</p>
+                                            <a class="mega-preview-cta" id="megaPreviewCta"
+                                                href="../products/tiltmeter.html">
+                                                View Product <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT: resources/contact links card + contact card -->
+                                <div class="mega-quick">
+                                    <!-- Resources + Book Demo card -->
+                                    <div class="mega-quick-links-card">
+                                        <p class="mega-quick-label">Resources</p>
+                                        <a class="mega-quick-link" href="/resources.html">
+                                            <i class="fas fa-book-open"></i> Insights &amp; Updates
+                                        </a>
+                                        <a class="mega-quick-link" href="/feed.html">
+                                            <i class="fas fa-bullhorn"></i> Social Feed
+                                        </a>
+                                        <a class="mega-quick-link" href="/glossary.html">
+                                            <i class="fas fa-book"></i> Glossary
+                                        </a>
+                                        <a class="mega-quick-link" href="/faq.html">
+                                            <i class="fas fa-question-circle"></i> FAQ
+                                        </a>
+                                        <div class="mega-quick-divider"></div>
+                                        <a class="mega-quick-cta"
+                                            href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                                            target="_blank" rel="noopener">
+                                            <i class="fa-solid fa-calendar-check"></i> Book Demo
+                                        </a>
+                                    </div>
+
+                                    <!-- Contact card: eyebrow + heading + phone/email + social -->
+                                    <div class="mega-quick-contact mega-contact-card">
+                                        <span class="mega-contact-card-eyebrow">Let's Talk</span>
+                                        <p class="mega-contact-card-title">Talk to Our Experts</p>
+                                        <p class="mega-contact-card-sub">Get in touch with our team for product demos,
+                                            solutions &amp; support.</p>
+                                        <div class="mega-contact-card-divider"></div>
+                                        <div class="mega-quick-phone">
+                                            <i class="fa-solid fa-phone"></i>
+                                            <a href="tel:+917893023322">+91 78930 23322</a>
+                                        </div>
+                                        <div class="mega-quick-email">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <a href="mailto:sentra@clovetech.com">sentra@clovetech.com</a>
+                                        </div>
+                                        <div class="mega-contact-card-divider"></div>
+                                        <span class="mega-contact-card-follow">Follow us on</span>
+                                        <div class="mega-quick-social-row">
+                                            <a class="mega-q-social"
+                                                href="https://www.linkedin.com/company/sentrabyclove/"
+                                                target="_blank" rel="noopener" aria-label="LinkedIn">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                            <a class="mega-q-social" href="https://x.com/Sentra970016" target="_blank"
+                                                rel="noopener" aria-label="X (Twitter)">
+                                                <i class="fab fa-x-twitter"></i>
+                                            </a>
+                                            <a class="mega-q-social"
+                                                href="https://www.instagram.com/sentra_tech_official/" target="_blank"
+                                                rel="noopener" aria-label="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a class="mega-q-social"
+                                                href="https://www.facebook.com/profile.php?id=61591761143578"
+                                                target="_blank" rel="noopener" aria-label="Facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a class="mega-q-social"
+                                                href="https://www.youtube.com/@Sentra-tech/" target="_blank"
+                                                rel="noopener" aria-label="YouTube">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                            <a class="mega-q-social" href="https://medium.com/@sentra_8835" target="_blank"
+                                                rel="noopener" aria-label="Medium">
+                                                <i class="fab fa-medium"></i>
+                                            </a>
+                                            <a class="mega-q-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                                                rel="noopener" aria-label="Pinterest">
+                                                <i class="fab fa-pinterest"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ══ ABOUT US ══ -->
+                    <li class="nav-item dropdown">
+                        <a id="about-link" class="nav-link dropdown-toggle" href="../about.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            ABOUT US <i class="fa-solid fa-angle-down accent-color"></i>
+                        </a>
+                        <div class="dropdown-menu mega-bento" style="width:min(92vw,560px) !important;">
+                            <div class="mega-bento-grid mega-bento-grid-2col">
+                                <a class="mega-bento-item" href="../about.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-question-circle"></i></div>
+                                    <div class="mega-bento-title">Why Sentra</div>
+                                    <div class="mega-bento-sub">Our mission, vision & values</div>
+                                </a>
+                                <a class="mega-bento-item" href="../testimonial.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-comments"></i></div>
+                                    <div class="mega-bento-title">Their Voices</div>
+                                    <div class="mega-bento-sub">Client testimonials & stories</div>
+                                </a>
+                                <a class="mega-bento-item" href="../industries.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-industry"></i></div>
+                                    <div class="mega-bento-title">Industries</div>
+                                    <div class="mega-bento-sub">Sectors we serve</div>
+                                </a>
+                                <a class="mega-bento-item" href="../partnership.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-handshake"></i></div>
+                                    <div class="mega-bento-title">Partners</div>
+                                    <div class="mega-bento-sub">Collaborate with us</div>
+                                </a>
+                            </div>
+                            <div class="mega-industries-row">
+                                <span class="mega-industries-label">Industry Verticals</span>
+                                <div class="mega-industries-links">
+                                    <a class="mega-industry-link"
+                                        href="../industries/railway-infrastructure-monitoring.html"><i
+                                            class="fa-solid fa-train"></i> Railway</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/bridges-highways-monitoring.html"><i
+                                            class="fa-solid fa-bridge"></i> Bridges</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/buildings-highrise-monitoring.html"><i
+                                            class="fa-solid fa-building"></i> Buildings</a>
+                                    <a class="mega-industry-link" href="../industries/dams-reservoirs-monitoring.html"><i
+                                            class="fa-solid fa-water"></i> Dams</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/mining-geotechnical-monitoring.html"><i
+                                            class="fa-solid fa-helmet-safety"></i> Mining</a>
+                                    <a class="mega-industry-link" href="../industries/ports-marine-monitoring.html"><i
+                                            class="fa-solid fa-anchor"></i> Ports</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/construction-tunnelling-monitoring.html"><i
+                                            class="fa-solid fa-person-digging"></i> Construction</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/industrial-facilities-monitoring.html"><i
+                                            class="fa-solid fa-industry"></i> Industrial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ══ RESOURCES ══ -->
+                    <li class="nav-item dropdown">
+                        <a id="resources-link" class="nav-link dropdown-toggle" href="/resources.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            RESOURCES <i class="fa-solid fa-angle-down accent-color"></i>
+                        </a>
+                        <div class="dropdown-menu mega-bento" style="width:min(92vw,720px) !important;">
+                            <div class="mega-bento-grid mega-bento-grid-3col">
+                                <a class="mega-bento-item" href="/resources.html#blogs">
+                                    <div class="mega-bento-icon"><i class="fas fa-blog"></i></div>
+                                    <div class="mega-bento-title">Blogs</div>
+                                    <div class="mega-bento-sub">Expert insights & updates</div>
+                                </a>
+                                <a class="mega-bento-item" href="/resources.html#case-studies">
+                                    <div class="mega-bento-icon"><i class="fas fa-file-alt"></i></div>
+                                    <div class="mega-bento-title">Case Studies</div>
+                                    <div class="mega-bento-sub">Real-world deployments</div>
+                                </a>
+                                <div class="mega-bento-split">
+                                    <a class="mega-bento-split-half" href="/resources.html#articles">
+                                        <i class="fas fa-newspaper"></i> Articles
+                                    </a>
+                                    <a class="mega-bento-split-half" href="/feed.html">
+                                        <i class="fas fa-bullhorn"></i> Social Feed
+                                    </a>
+                                </div>
+                                <a class="mega-bento-item" href="/videos.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-video"></i></div>
+                                    <div class="mega-bento-title">Videos &amp; Podcasts</div>
+                                    <div class="mega-bento-sub">Watch &amp; listen</div>
+                                </a>
+                                <div class="mega-bento-split">
+                                    <a class="mega-bento-split-half" href="/glossary.html">
+                                        <i class="fas fa-book"></i> Glossary
+                                    </a>
+                                    <a class="mega-bento-split-half" href="/faq.html">
+                                        <i class="fas fa-question"></i> FAQ
+                                    </a>
+                                </div>
+                                <a class="mega-bento-item" href="/document-center.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-folder-open"></i></div>
+                                    <div class="mega-bento-title">Document Center</div>
+                                    <div class="mega-bento-sub">Product datasheets</div>
+                                </a>
+                            </div>
+                            <div style="border-top:1px solid rgba(255,255,255,0.08);margin:8px 0 6px;"></div>
+                            <div style="padding:2px 12px 4px;font-size:0.78rem;">
+                                <span style="color:var(--accent-color);font-weight:600;display:block;margin-bottom:4px;">Featured</span>
+                                <div class="mega-featured-scroll-wrap" style="position:relative;"><div class="mega-featured-scroll" style="display:grid;grid-template-columns:1fr 1px 1fr 1px 1fr;gap:0;height:110px;overflow:hidden;position:relative;z-index:2;">
+                                    <div class="mega-featured-col mega-featured-col--slow">
+                                        <a href="/blogs/what-is-a-strain-gauge-types-working-principle.html" class="mega-featured-link">Strain Gauge Guide</a>
+                                        <a href="/blogs/what-is-an-accelerometer-sensor-guide.html" class="mega-featured-link">Accelerometer Guide</a>
+                                        <a href="/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html" class="mega-featured-link">Digital Twins Compared</a>
+                                        <a href="/blogs/10-early-warning-signs-bridge-continuous-monitoring.html" class="mega-featured-link">Bridge Warning Signs</a>
+                                        <a href="/blogs/advanced-iot-solutions.html" class="mega-featured-link">Advanced IoT</a>
+                                        <a href="/blogs/fatigue-life-assessment.html" class="mega-featured-link">Fatigue Life Assessment</a>
+                                        <a href="/article/ai-infrastructure-monitoring.html" class="mega-featured-link">AI Infrastructure Monitoring</a>
+                                        <a href="/article/worldsensing-official-reseller-india.html" class="mega-featured-link">Worldsensing Partnership</a>
+                                        <a href="/case-studies/structural-health-monitoring-of-highway-bridges.html" class="mega-featured-link">Highway Bridge SHM</a>
+                                        <a href="/blogs/what-is-a-strain-gauge-types-working-principle.html" class="mega-featured-link">Strain Gauge Guide</a>
+                                        <a href="/blogs/what-is-an-accelerometer-sensor-guide.html" class="mega-featured-link">Accelerometer Guide</a>
+                                        <a href="/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html" class="mega-featured-link">Digital Twins Compared</a>
+                                        <a href="/blogs/10-early-warning-signs-bridge-continuous-monitoring.html" class="mega-featured-link">Bridge Warning Signs</a>
+                                        <a href="/blogs/advanced-iot-solutions.html" class="mega-featured-link">Advanced IoT</a>
+                                        <a href="/blogs/fatigue-life-assessment.html" class="mega-featured-link">Fatigue Life Assessment</a>
+                                        <a href="/article/ai-infrastructure-monitoring.html" class="mega-featured-link">AI Infrastructure Monitoring</a>
+                                        <a href="/article/worldsensing-official-reseller-india.html" class="mega-featured-link">Worldsensing Partnership</a>
+                                        <a href="/case-studies/structural-health-monitoring-of-highway-bridges.html" class="mega-featured-link">Highway Bridge SHM</a>
+                                    </div>
+                                    <div class="mega-featured-divider"></div>
+                                    <div class="mega-featured-col mega-featured-col--medium">
+                                        <a href="/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html" class="mega-featured-link">Inclinometer Guide</a>
+                                        <a href="/blogs/monitoring-construction-induced-vibrations.html" class="mega-featured-link">Construction Vibrations</a>
+                                        <a href="/blogs/asset-monitoring-facility-management.html" class="mega-featured-link">Facility Management</a>
+                                        <a href="/blogs/structural-health-monitoring.html" class="mega-featured-link">Structural Health Monitoring</a>
+                                        <a href="/article/digital-twin-predictive-maintenance-sentra.html" class="mega-featured-link">Digital Twin Predictive Maintenance</a>
+                                        <a href="/article/xgrids-authorized-reseller-india.html" class="mega-featured-link">XGRIDS Reseller</a>
+                                        <a href="/article/building-resilient-smart-cities-with-data-driven-insights.html" class="mega-featured-link">Smart Cities</a>
+                                        <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" class="mega-featured-link">Railway Bridge IoT</a>
+                                        <a href="/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html" class="mega-featured-link">Inclinometer Guide</a>
+                                        <a href="/blogs/monitoring-construction-induced-vibrations.html" class="mega-featured-link">Construction Vibrations</a>
+                                        <a href="/blogs/asset-monitoring-facility-management.html" class="mega-featured-link">Facility Management</a>
+                                        <a href="/blogs/structural-health-monitoring.html" class="mega-featured-link">Structural Health Monitoring</a>
+                                        <a href="/article/digital-twin-predictive-maintenance-sentra.html" class="mega-featured-link">Digital Twin Predictive Maintenance</a>
+                                        <a href="/article/xgrids-authorized-reseller-india.html" class="mega-featured-link">XGRIDS Reseller</a>
+                                        <a href="/article/building-resilient-smart-cities-with-data-driven-insights.html" class="mega-featured-link">Smart Cities</a>
+                                        <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" class="mega-featured-link">Railway Bridge IoT</a>
+                                    </div>
+                                    <div class="mega-featured-divider"></div>
+                                    <div class="mega-featured-col mega-featured-col--fast">
+                                        <a href="/blogs/what-is-a-data-logger-types-guide.html" class="mega-featured-link">Data Logger Guide</a>
+                                        <a href="/blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="mega-featured-link">Seismic Monitoring</a>
+                                        <a href="/blogs/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Monitoring</a>
+                                        <a href="/blogs/real-time-monitoring-solutions-transforming-infrastructure-safety-performance.html" class="mega-featured-link">Real-Time Monitoring</a>
+                                        <a href="/blogs/top-5-hidden-structural-damages-bridge-inspection.html" class="mega-featured-link">Hidden Bridge Damages</a>
+                                        <a href="/article/revolutionizing-infrastructure-monitoring-with-iot.html" class="mega-featured-link">Revolutionizing IoT Monitoring</a>
+                                        <a href="/article/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Article</a>
+                                        <a href="/article/track-to-the-future-remote-monitoring-rail-infrastructure.html" class="mega-featured-link">Rail Monitoring</a>
+                                        <a href="/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="mega-featured-link">BridgePulse AI &amp; Drones</a>
+                                        <a href="/blogs/what-is-a-data-logger-types-guide.html" class="mega-featured-link">Data Logger Guide</a>
+                                        <a href="/blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="mega-featured-link">Seismic Monitoring</a>
+                                        <a href="/blogs/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Monitoring</a>
+                                        <a href="/blogs/real-time-monitoring-solutions-transforming-infrastructure-safety-performance.html" class="mega-featured-link">Real-Time Monitoring</a>
+                                        <a href="/blogs/top-5-hidden-structural-damages-bridge-inspection.html" class="mega-featured-link">Hidden Bridge Damages</a>
+                                        <a href="/article/revolutionizing-infrastructure-monitoring-with-iot.html" class="mega-featured-link">Revolutionizing IoT Monitoring</a>
+                                        <a href="/article/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Article</a>
+                                        <a href="/article/track-to-the-future-remote-monitoring-rail-infrastructure.html" class="mega-featured-link">Rail Monitoring</a>
+                                        <a href="/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="mega-featured-link">BridgePulse AI &amp; Drones</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">CONTACT US</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="navbar-action-container">
+                <div class="navbar-action-button">
+                    <button id="themeSwitch" class="themeswitch" aria-label="Toggle Theme">
+                        <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
+                    </button>
+                </div>
+                <a href="tel:+917893023322" class="navbar-call-pill">
+                    <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
+                    <span class="navbar-call-text">+91 78930 23322</span>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <script src="../js/themeswitch.js"></script>
+    <script>
+        /* Header is fetched & injected via jQuery .html() which runs scripts immediately.
+           DOMContentLoaded has already fired — run init directly, no wrapper needed. */
+        (function initMegaNav() {
+
+            /* ── Active nav highlighting ── */
+            var pathname = window.location.pathname.toLowerCase();
+            var el = {
+                products: document.getElementById('products-link'),
+                solutions: document.getElementById('solutions-link'),
+                about: document.getElementById('about-link'),
+                resources: document.getElementById('resources-link')
+            };
+            if (pathname.endsWith('/products.html') || pathname.includes('/products/')) {
+                el.products && el.products.classList.add('active');
+            } else if (pathname.endsWith('/solutions.html') || pathname.includes('/solutions/')) {
+                el.solutions && el.solutions.classList.add('active');
+            } else if (['/about.html', '/testimonial.html', '/partnership.html', '/industries.html'].some(function (p) { return pathname.endsWith(p); }) || pathname.includes('/industries/')) {
+                el.about && el.about.classList.add('active');
+            } else if (['/resources.html', '/feed.html', '/glossary.html', '/faq.html', '/videos.html', '/document-center.html'].some(function (p) { return pathname.endsWith(p); })) {
+                el.resources && el.resources.classList.add('active');
+            }
+
+            /* ── Product image preview hover swap ── */
+            var previewImg = document.getElementById('megaPreviewImg');
+            var previewName = document.getElementById('megaPreviewName');
+            var previewSub = document.getElementById('megaPreviewSub');
+            var previewCta = document.getElementById('megaPreviewCta');
+
+            if (previewImg) {
+                var prodLinks = document.querySelectorAll('.mega-prod-link[data-img]');
+                var swapTimer = null;
+
+                function swapPreview(link) {
+                    var img = link.getAttribute('data-img');
+                    var name = link.getAttribute('data-name');
+                    var sub = link.getAttribute('data-sub');
+                    var url = link.getAttribute('data-url');
+
+                    /* Skip if already showing this product */
+                    if (previewImg.getAttribute('src').indexOf(img.split('/').pop()) !== -1) {
+                        prodLinks.forEach(function (l) { l.classList.remove('is-active'); });
+                        link.classList.add('is-active');
+                        return;
+                    }
+
+                    previewImg.classList.add('is-fading');
+                    clearTimeout(swapTimer);
+                    swapTimer = setTimeout(function () {
+                        previewImg.src = img;
+                        previewImg.alt = name;
+                        previewName.textContent = name;
+                        previewSub.textContent = sub;
+                        previewCta.href = url;
+                        previewImg.classList.remove('is-fading');
+                    }, 220);
+
+                    prodLinks.forEach(function (l) { l.classList.remove('is-active'); });
+                    link.classList.add('is-active');
+                }
+
+                prodLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { swapPreview(link); });
+                });
+
+                /* Highlight first link on open */
+                var productDropdown = document.querySelector('.dropdown-menu-products');
+                if (productDropdown) {
+                    var parentLi = productDropdown.closest('.nav-item');
+                    if (parentLi && prodLinks.length) {
+                        parentLi.addEventListener('mouseenter', function () {
+                            prodLinks[0].classList.add('is-active');
+                        });
+                        parentLi.addEventListener('mouseleave', function () {
+                            prodLinks.forEach(function (l) { l.classList.remove('is-active'); });
+                        });
+                    }
+                }
+            }
+
+            /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
+                var dropdown = item.querySelector(
+                    '.dropdown-menu-products, .mega-solutions, .mega-bento'
+                );
+                if (!dropdown) return;
+                var closeTimer = null;
+
+                function openMenu() {
+                    if (window.innerWidth < 1024) return;
+                    clearTimeout(closeTimer);
+                    item.classList.add('mega-open');
+                }
+                function scheduleClose(delay) {
+                    clearTimeout(closeTimer);
+                    closeTimer = setTimeout(function () {
+                        item.classList.remove('mega-open');
+                    }, delay);
+                }
+
+                item.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseleave', function () { scheduleClose(280); });
+                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+            });
+
+            /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
+            requestAnimationFrame(function () {
+                var headerEl = document.querySelector('header');
+                if (headerEl) {
+                    var bottom = headerEl.getBoundingClientRect().bottom;
+                    if (bottom > 0) {
+                        document.documentElement.style.setProperty('--mega-menu-top', (bottom - 37) + 'px');
+                    }
+                }
+            });
+
+        })();
+    </script>
+</div></div>
+    </header>
+
+    <aside>
+        <div id="edit-sidebar"></div>
+    </aside>
+
+    <aside>
+        <div id="sidebar"><div>
+    <div class="content-overlay">
+        <div class="content-edit-sidebar">
+            <div class="sidebar-header">
+                <div></div>
+                <div class="close-btn-second">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="content">
+                <span>Click on the Edit Content button to edit/add the content.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="mmenu-overlay"></div>
+    <nav class="mmenu-panel" aria-label="Mobile navigation">
+        <div class="mmenu-scroll">
+
+            <!-- Quick links -->
+            <div class="mmenu-quicklinks">
+                <a href="/" class="mmenu-quicklink">Home</a>
+                <a href="../about.html" class="mmenu-quicklink">About Us</a>
+                <a href="../contact.html" class="mmenu-quicklink">Contact Us</a>
+            </div>
+
+            <!-- Products -->
+            <div class="mmenu-section">
+                <span class="mmenu-label">Products</span>
+                <div class="mmenu-list">
+                    <a class="mmenu-row" href="../products/edge-devices.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-microchip"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Edge Devices</span>
+                            <span class="mmenu-row-sub">Wireless tiltmeters, GNSS &amp; vibration sensors</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="../products/core-communications.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-wifi"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Core Communications</span>
+                            <span class="mmenu-row-sub">Gateways, repeaters &amp; mesh networking</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="../products/wired-sensors.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-network-wired"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Wired Sensors</span>
+                            <span class="mmenu-row-sub">Accelerometers &amp; strain gauges</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="../products/laser-scanners.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-camera"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Laser Scanners <span class="mmenu-new-badge">New</span></span>
+                            <span class="mmenu-row-sub">LiDAR &amp; spatial capture devices</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="../products/lcc.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-cubes"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Softwares</span>
+                            <span class="mmenu-row-sub">LixelStudio &amp; Gaussian Splatting tools</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                </div>
+                <a class="mmenu-view-all" href="../products.html">View all products <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Featured Solutions -->
+            <div class="mmenu-card mmenu-card--amber">
+                <span class="mmenu-label mmenu-label--amber">Solutions</span>
+                <div class="mmenu-grid-2">
+                    <a class="mmenu-tile" href="../solutions/structural-health-monitoring.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Structural Health Monitoring</span>
+                        <span class="mmenu-tile-sub">Real-time sensing for critical infrastructure</span>
+                    </a>
+                    <a class="mmenu-tile" href="../solutions/bridge-inspection-and-condition-assessment.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bridge
+                            Inspection</span>
+                        <span class="mmenu-tile-sub">Condition assessment</span>
+                    </a>
+                    <a class="mmenu-tile" href="../solutions/asset-monitoring-and-management-solutions.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i> Asset
+                            Monitoring</span>
+                        <span class="mmenu-tile-sub">Lifecycle management</span>
+                    </a>
+                    <a class="mmenu-tile" href="../solutions/digital-twin.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i> Digital
+                            Twin</span>
+                        <span class="mmenu-tile-sub">Real-time asset simulation</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- More Solutions -->
+            <div class="mmenu-card mmenu-card--slate">
+                <span class="mmenu-label mmenu-label--slate">More Solutions</span>
+                <div class="mmenu-simple-list">
+                    <a class="mmenu-simple-link" href="../solutions/advanced-non-destructive-testing-ndt.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Advanced NDT</a>
+                    <a class="mmenu-simple-link" href="../solutions/geotechnical-and-foundation-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Geotechnical &amp; Foundation</a>
+                    <a class="mmenu-simple-link" href="../solutions/fatigue-and-residual-life-assessment.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Fatigue Assessment</a>
+                    <a class="mmenu-simple-link" href="../solutions/consulting-and-advisory-services.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
+                    <a class="mmenu-simple-link" href="../solutions/digital-engineering-and-documentation.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                </div>
+            </div>
+
+            <!-- Resources / Company -->
+            <div class="mmenu-card mmenu-card--neutral">
+                <div class="mmenu-footer-grid">
+                    <div class="mmenu-footer-col">
+                        <span class="mmenu-label">Resources</span>
+                        <a class="mmenu-footer-link" href="../resources.html#blogs"><i
+                                class="fa-solid fa-blog"></i> Blogs</a>
+                        <a class="mmenu-footer-link" href="../resources.html#case-studies"><i
+                                class="fa-solid fa-file-lines"></i> Case Studies</a>
+                        <a class="mmenu-footer-link" href="../resources.html#articles"><i
+                                class="fa-solid fa-newspaper"></i> Articles</a>
+                        <a class="mmenu-footer-link" href="../videos.html"><i
+                                class="fa-solid fa-video"></i> Videos &amp; Podcasts</a>
+                        <a class="mmenu-footer-link" href="../glossary.html"><i
+                                class="fa-solid fa-book"></i> Glossary</a>
+                        <a class="mmenu-footer-link" href="../faq.html"><i
+                                class="fa-solid fa-circle-question"></i> FAQ</a>
+                        <a class="mmenu-footer-link" href="../document-center.html"><i
+                                class="fa-solid fa-folder-open"></i> Document Center</a>
+                    </div>
+                    <div class="mmenu-footer-col">
+                        <span class="mmenu-label">Company</span>
+                        <a class="mmenu-footer-link" href="../industries.html"><i
+                                class="fa-solid fa-industry"></i> Industries</a>
+                        <a class="mmenu-footer-link" href="../testimonial.html"><i
+                                class="fa-solid fa-comments"></i> Testimonials</a>
+                        <a class="mmenu-footer-link" href="../partnership.html"><i
+                                class="fa-solid fa-handshake"></i> Partnership</a>
+                        <a class="mmenu-footer-link" href="../feed.html"><i
+                                class="fa-solid fa-bullhorn"></i> Social Feed</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sticky bottom bar -->
+        <div class="mmenu-bottom">
+            <div class="mmenu-follow-row">
+                <span class="mmenu-follow-label">Follow Us</span>
+                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                    target="_blank" rel="noopener">Book Demo</a>
+            </div>
+            <div class="mmenu-social-row">
+                <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
+                    rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="mmenu-social" href="https://x.com/Sentra970016" target="_blank" rel="noopener"
+                    aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a class="mmenu-social" href="https://www.instagram.com/sentra_tech_official/" target="_blank"
+                    rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="mmenu-social" href="https://www.facebook.com/profile.php?id=61591761143578" target="_blank"
+                    rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
+                    rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="mmenu-contact-row">
+                <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
+                <a href="mailto:sentra@clovetech.com"><i class="fa-solid fa-envelope"></i> sentra@clovetech.com</a>
+            </div>
+        </div>
+    </nav>
+</div></div>
+    </aside>
+
+    <main>
+        <!-- Hero -->
+        <section class="detail-hero">
+            <a href="../resources.html#articles" class="back-btn"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+            <div class="hero-bg-dots"></div>
+            <div class="hero-glow orange-glow"></div>
+            <div class="hero-top-line"></div>
+            <div class="hero-container-inner">
+                <div class="hero-grid">
+                    <div class="hero-text-col">
+                        <div class="hero-meta-row">
+                            <span class="hero-badge purple">Industrial</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> Sep 7, 2026</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-clock"></i> 11 min read</span>
+                        </div>
+                        <h1 class="hero-title">Predictive Maintenance for Industrial Facilities</h1>
+                        <div class="hero-intro">
+                            <p>How IoT vibration sensors prevent failure. A bearing that fails on a Tuesday afternoon started telling you about it weeks earlier &mdash; in a frequency band nobody was listening to. Continuous equipment vibration monitoring is how plants hear it in time.</p>
+                        </div>
+                    </div>
+                    <div class="hero-image-col">
+                        <div class="hero-image-wrap">
+                            <img src="../image/articles/articles_predictive-maintenance-industrial-facilities.webp" alt="Industrial facility with rotating equipment under continuous vibration monitoring" loading="eager">
+                            <div class="hero-image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <div class="detail-content-wrapper">
+            <div class="detail-grid">
+                <article class="detail-article">
+                    <div class="tts-bar">
+                        <button id="ttsPlayBtn" class="tts-btn" aria-label="Play article aloud" aria-pressed="false"><i class="fas fa-play"></i></button>
+                        <div class="tts-progress" id="ttsProgressBar">
+                            <div id="progressFill" class="tts-fill"></div>
+                        </div>
+                        <span class="tts-label">Listen</span>
+                    </div>
+
+                    <div class="detail-meta-bar">
+                        <div class="detail-meta-left">
+                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> Sep 7, 2026</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Industrial</span>
+                        </div>
+                        <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Sentra Content Team | Sentra Technologies</span>
+                    </div>
+
+                    <div id="ttsContent">
+                        <p>Every plant has a version of the same story. A pump runs for eleven years without complaint, then seizes on a Tuesday afternoon and takes a production line with it. The post-mortem finds a bearing that had been degrading for two months. Nobody was negligent. The information simply was not being collected between the monthly inspection rounds.</p>
+                        <p><strong>Industrial predictive maintenance</strong> closes that gap. Instead of servicing equipment on a calendar or repairing it after it stops, condition data is collected continuously and used to estimate how much useful life a component has left. Vibration is the signal that carries most of that information, which is why IoT vibration sensors have become the entry point for predictive programs in almost every kind of facility.</p>
+
+                        <h2 id="whyVibration">Why Vibration Is the Signal That Matters</h2>
+                        <p>Rotating machinery is honest. A shaft, a bearing and a coupling in good condition produce a stable, characteristic vibration pattern. When something changes &mdash; a bearing race spalls, a coupling drifts out of alignment, a fan blade collects deposit &mdash; the pattern changes with it, and it changes early.</p>
+                        <p>That is the crucial property. Temperature rises when a fault is already generating serious friction. Motor current changes when the machine is already working harder. Audible noise arrives later still, and by the time an operator hears it, the repair window has usually closed. Vibration moves first, often by weeks, because it responds to the geometry of the fault rather than to its consequences.</p>
+                        <p>It is also diagnostic rather than merely indicative. A rise in overall vibration says something is wrong. A frequency spectrum says <em>what</em> is wrong, because different faults excite different frequencies tied to shaft speed and bearing geometry.</p>
+
+                        <h2 id="whatSensorsMeasure">What an IoT Vibration Sensor Actually Measures</h2>
+                        <p>A modern wireless vibration sensor is a triaxial MEMS accelerometer, a processor, a radio and a battery in a sealed housing, mounted on the bearing cap or motor frame. It records acceleration in three axes, then derives the quantities maintenance engineers work with.</p>
+                        <ul>
+                            <li><strong>Acceleration</strong> (g or m/s&sup2;) emphasises high-frequency content and is the right measure for early bearing and gear defects.</li>
+                            <li><strong>Velocity</strong> (mm/s RMS) is the standard for overall machine condition. ISO 10816 and its successor ISO 20816 define velocity zones that classify a machine as acceptable, unsatisfactory or unacceptable by size and mounting class.</li>
+                            <li><strong>Displacement</strong> (&micro;m) matters at low frequencies, for imbalance and looseness on slow-turning equipment.</li>
+                            <li><strong>Envelope or demodulated spectra</strong> extract the repetitive impacts of an early bearing defect from the broadband noise that would otherwise hide them.</li>
+                        </ul>
+                        <p>Sampling strategy separates a useful sensor from a data-producing one. Devices that report only an RMS value every few hours will catch a machine that is already deteriorating badly. Devices that capture a full waveform and transmit a spectrum &mdash; typically a few thousand lines up to 10 kHz or more &mdash; support genuine diagnosis. Sentra's <a href="../products/vibration-meter.html">wireless vibration meter</a> and <a href="../products/accelerometers.html">triaxial accelerometers</a> are built for this second case.</p>
+
+                        <h2 id="faultSignatures">The Faults, and How They Announce Themselves</h2>
+                        <p>Most rotating-equipment problems fall into a handful of families, each with a recognisable signature relative to running speed (1&times;).</p>
+                        <ul>
+                            <li><strong>Imbalance</strong> &mdash; a dominant peak at 1&times;, radial, growing with the square of speed. The most common fault and usually the cheapest to fix.</li>
+                            <li><strong>Misalignment</strong> &mdash; strong 2&times; content, often with significant axial vibration. Frequently introduced by a well-intentioned repair.</li>
+                            <li><strong>Mechanical looseness</strong> &mdash; a series of harmonics, 1&times;, 2&times;, 3&times; and beyond, sometimes with half-order components.</li>
+                            <li><strong>Bearing defects</strong> &mdash; non-synchronous frequencies determined by bearing geometry: outer race, inner race, ball spin and cage. These are the classic early-warning targets, visible in envelope analysis long before the overall level moves.</li>
+                            <li><strong>Gear damage</strong> &mdash; energy at gear mesh frequency with sidebands spaced at shaft speed, where the sideband pattern indicates which gear is affected.</li>
+                            <li><strong>Cavitation</strong> in pumps &mdash; broadband high-frequency noise rather than discrete peaks, usually a system or suction problem rather than a machine fault.</li>
+                            <li><strong>Resonance</strong> &mdash; large amplification at a structural natural frequency, which is a design or installation issue and cannot be balanced away.</li>
+                        </ul>
+                        <p>Naming the fault is what converts monitoring into planning. "Motor 4 is running rough" leads to an exploratory shutdown. "Motor 4 shows an outer-race defect frequency with rising sidebands" leads to a bearing on order and a job card for the next planned outage.</p>
+
+                        <h2 id="uptime">What This Does to Asset Uptime</h2>
+                        <p>The gain is not mainly in avoiding repairs. Repairs still happen. The gain is that they stop happening at the worst possible moment.</p>
+                        <p>An unplanned failure carries costs a scheduled one does not: lost production while the plant waits for a part that is not in stores, overtime, collateral damage to couplings and shafts when a bearing finally seizes, and the safety exposure of an emergency intervention. A planned replacement during a scheduled window costs the part and a few hours of labour that were budgeted anyway.</p>
+                        <p>Calendar-based servicing has its own hidden cost. Perfectly serviceable components are discarded on schedule, and every intervention carries a risk of introducing a defect &mdash; a misaligned coupling, a contaminated bearing, an over-tightened foot. Condition-based intervention reduces both the number of intrusions and the number of surprises.</p>
+                        <p>Alongside vibration, most facilities already track motor current, temperature, pressure and flow. Reviewed together on one platform, the combination separates a machine fault from a process problem: a pump drawing more current with unchanged vibration is usually being asked to do more work, not failing. This is the wider brief of <a href="../industries/industrial-facilities-monitoring.html">industrial facility monitoring</a> and <a href="../solutions/asset-monitoring-and-management-solutions.html">asset monitoring and management</a>.</p>
+
+                        <h2 id="deployment">Building the IoT Layer in a Working Plant</h2>
+                        <p>The technology is rarely the hard part. Deploying it in a facility that cannot stop for the installation is.</p>
+                        <p><strong>Start with criticality, not with the sensor catalogue.</strong> Rank equipment by what its failure actually costs in production, safety and repair. A modest number of sensors on genuinely critical machines produces more value than blanket coverage of everything that rotates.</p>
+                        <p><strong>Mount for the frequency range you care about.</strong> Stud mounting preserves high-frequency response; adhesive is acceptable; magnets are convenient but roll off exactly where early bearing defects live. Position matters as much: on the bearing housing, in the load zone, with a consistent orientation so that later readings remain comparable.</p>
+                        <p><strong>Design the network for the building.</strong> Steel structure, concrete and rotating machinery are a hostile radio environment. LoRaWAN gateways handle range and penetration well for periodic spectra, and repeaters cover the awkward corners. Sentra's <a href="../products/gateway.html">rugged gateways</a> and <a href="../products/repeater.html">repeaters</a> exist for exactly this problem.</p>
+                        <p><strong>Establish a baseline before setting alarms.</strong> Every machine has its own normal. Collect several weeks across the full range of operating conditions, then set thresholds against that baseline rather than against a generic table. Absolute standards such as ISO 20816 give the outer bounds; the machine's own history gives the useful alarm.</p>
+                        <p><strong>Decide who acts, before the first alert.</strong> A predictive program fails on organisation far more often than on instrumentation. An alert with no named owner, no defined response and no route into the work-order system becomes an email that people learn to ignore.</p>
+
+                        <h2 id="analytics">Where Analytics Genuinely Helps &mdash; and Where It Does Not</h2>
+                        <p>Machine learning is applied to vibration data with mixed honesty. What works reliably is well established: anomaly detection against a learned baseline, trending toward a threshold with a projected crossing date, and automatic classification of known fault signatures. All three are useful, and none of them require a machine to fail first in order to be trained.</p>
+                        <p>What is oversold is precise remaining-useful-life prediction on general-purpose equipment. Credible RUL models need many observed run-to-failure examples of that machine type under those conditions, and most plants do not have them, because they replace components before failure &mdash; which is the entire point of the program.</p>
+                        <p>The realistic and still valuable output is a ranked list: which machines are deteriorating, how fast, and in what way. That is enough to plan a shutdown around.</p>
+
+                        <h2 id="ConclusionSection">Where to Begin</h2>
+                        <p>Predictive maintenance does not need to start as a plant-wide programme. It starts with a shortlist of machines whose failure genuinely hurts, a set of sensors mounted properly on them, a few weeks of baseline data, and one person who owns what happens when an alert fires. Coverage expands from there, funded by the outages it prevents.</p>
+                        <div class="detail-cta">
+                            <h4>Ready to start with the machines that matter?</h4>
+                            <p>Sentra designs and deploys equipment vibration monitoring for industrial facilities across India — sensors, gateways, dashboards and the threshold logic that turns a spectrum into a work order.</p>
+                            <a class="cta-btn" href="../contact.html">Talk to us about your plant <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="accordion" id="faqPdm" style="margin-top:2.5rem;">
+                        <h2 style="font-size:1.25rem;font-weight:600;text-transform:uppercase;margin-bottom:1rem;">Frequently Asked Questions</h2>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqPdm-q1" aria-expanded="true">What is industrial predictive maintenance?</button></h2>
+                            <div id="faqPdm-q1" class="accordion-collapse collapse show" data-bs-parent="#faqPdm">
+                                <div class="accordion-body">
+                                    <p>Industrial predictive maintenance uses continuous condition data from machinery to estimate when a component will fail, so that repair is scheduled shortly before failure rather than on a fixed calendar or after a breakdown. Vibration is the most widely used signal because most rotating-equipment faults change the vibration signature long before they change temperature, output or noise.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqPdm-q2" aria-expanded="false">What faults can vibration monitoring detect?</button></h2>
+                            <div id="faqPdm-q2" class="accordion-collapse collapse" data-bs-parent="#faqPdm">
+                                <div class="accordion-body">
+                                    <p>Equipment vibration monitoring detects imbalance, shaft misalignment, mechanical looseness, bearing wear at all four defect frequencies, gear tooth damage, rotor bar faults, belt problems, cavitation in pumps and resonance. Each has a characteristic frequency signature, which is what allows the fault to be named rather than only detected.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqPdm-q3" aria-expanded="false">How much warning does vibration monitoring give before failure?</button></h2>
+                            <div id="faqPdm-q3" class="accordion-collapse collapse" data-bs-parent="#faqPdm">
+                                <div class="accordion-body">
+                                    <p>It depends on the fault and the machine. Rolling-element bearing degradation typically progresses over weeks to months, and high-frequency envelope analysis often flags it long before the overall vibration level rises. Imbalance and looseness can be identified as soon as they appear. Sudden failures caused by foreign objects or lubrication loss give far less notice, which is why continuous monitoring outperforms periodic route-based readings.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqPdm-q4" aria-expanded="false">Do wireless IoT vibration sensors replace route-based data collection?</button></h2>
+                            <div id="faqPdm-q4" class="accordion-collapse collapse" data-bs-parent="#faqPdm">
+                                <div class="accordion-body">
+                                    <p>For most balance-of-plant equipment, yes. Wireless sensors measure continuously, cost far less per point than wired analysers, and remove the gap between monthly routes in which a fault can develop unseen. Critical, high-speed or safety-related machines usually keep permanently wired systems with higher bandwidth and protection functions alongside the wireless network.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <aside class="detail-sidebar">
+                    <div class="sidebar-sticky">
+                        <div class="sidebar-card toc">
+                            <h3><i class="fa-solid fa-list"></i> Table of Contents</h3>
+                            <div id="tocContainer">
+                                <button class="toc-item" data-target="whyVibration">Why Vibration Matters</button>
+                                <button class="toc-item" data-target="whatSensorsMeasure">What Sensors Measure</button>
+                                <button class="toc-item" data-target="faultSignatures">Fault Signatures</button>
+                                <button class="toc-item" data-target="uptime">Impact on Asset Uptime</button>
+                                <button class="toc-item" data-target="deployment">Deploying in a Live Plant</button>
+                                <button class="toc-item" data-target="analytics">Where Analytics Helps</button>
+                                <button class="toc-item" data-target="ConclusionSection">Where to Begin</button>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3><i class="fa-regular fa-share-from-square"></i> Share</h3>
+                            <div class="sidebar-share-icons">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html" target="_blank" class="share-icon-link" aria-label="Share on Facebook" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html&text=Predictive%20Maintenance%20for%20Industrial%20Facilities" target="_blank" class="share-icon-link" aria-label="Share on Twitter" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html" target="_blank" class="share-icon-link" aria-label="Share on LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://api.whatsapp.com/send?text=Predictive%20Maintenance%20for%20Industrial%20Facilities%20https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html" target="_blank" class="share-icon-link" aria-label="Share on WhatsApp" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+
+                        <a href="../resources.html#articles" class="back-btn" style="position:static;display:flex;width:100%;justify-content:center;"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- More Articles -->
+        <div class="hero-container" style="max-width:1280px;margin:0 auto;padding:0 1rem 4rem">
+            <div class="trending-section">
+                <div class="trending-header">
+                    <span class="trending-dot"></span>
+                    <h2>More Articles</h2>
+                </div>
+                <div class="trending-grid">
+                    <a href="../article/intelligent-pump-house-monitoring-and-control.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/articles/article_Intelligent%20Pump%20House%20Monitoring%20%26%20Control.webp" alt="Pump House Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Intelligent Pump House Monitoring &amp; Control</h4>
+                            <div class="trending-card-meta"><span>Smart Pumping</span><span>&middot;</span><span>Article</span></div>
+                        </div>
+                    </a>
+                    <a href="../article/digital-twin-predictive-maintenance-sentra.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/articles/article_digital-twin-predictive-maintenance-sentra.webp" alt="Digital Twin for Predictive Maintenance" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Digital Twin for Predictive Maintenance</h4>
+                            <div class="trending-card-meta"><span>Digital Twin</span><span>&middot;</span><span>Article</span></div>
+                        </div>
+                    </a>
+                    <a href="../article/ai-infrastructure-monitoring.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/articles/articles_ai_for_bridge_monitoring.webp" alt="AI Infrastructure Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>AI Is Coming for Infrastructure Monitoring</h4>
+                            <div class="trending-card-meta"><span>AI &amp; Monitoring</span><span>&middot;</span><span>Article</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div id="footer"><div class="section-footer">
+    <div class="bg-footer-wrapper">
+        <div class="bg-footer">
+            <div class="hero-container position-relative z-2">
+                <div class="d-flex flex-column gspace-2">
+                    <div class="footer-grid">
+                        <div class="footer-col footer-col-brand">
+                            <div class="footer-logo-container">
+                                <div class="logo-container-footer">
+                                    <img src="../image/branding/sentra_white_1.svg" alt="Logo"
+                                        class="site-logo img-fluid">
+                                </div>
+
+                                <h4>Smart
+                                    Innovation.
+                                    Strategic Growth.</h4>
+                                <h6 class="footer-p">
+                                    Sentra connects infrastructure, technology, and intelligence to build smarter,
+                                    safer, and more sustainable systems.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-products-container">
+                                <h5>Products</h5>
+                                <ul class="footer-list">
+                                    <li><a href="../products/edge-devices.html">Edge Devices</a></li>
+                                    <li><a href="../products/core-communications.html">Core Communications</a></li>
+                                    <li><a href="../products/wired-sensors.html">Wired Sensors</a></li>
+                                    <li><a href="../products/laser-scanners.html">Laser Scanners</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-services-container">
+                                <h5>Solutions</h5>
+                                <ul class="footer-list">
+                                    <li><a href="../solutions/structural-health-monitoring.html">Structural Health
+                                            Monitoring (SHM)</a></li>
+                                    <li><a href="../solutions/advanced-non-destructive-testing-ndt.html">Advanced
+                                            Non-Destructive Testing (NDT)</a></li>
+                                    <li><a href="../solutions/bridge-inspection-and-condition-assessment.html">Bridge
+                                            Inspection & Condition Assessment</a></li>
+                                    <li><a href="../solutions/consulting-and-advisory-services.html">Consulting &
+                                            Advisory
+                                            Services</a></li>
+                                    <li><a href="../solutions/geotechnical-and-foundation-monitoring.html">Geotechnical &
+                                            Foundation Monitoring</a></li>
+                                    <li><a href="../solutions/fatigue-and-residual-life-assessment.html">Fatigue and
+                                            Residual Life Assessment</a></li>
+                                    <li><a href="../solutions/digital-engineering-and-documentation.html">Digital
+                                            Engineering & Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-quick-links">
+                                <h5>Quick Links</h5>
+                                <ul class="footer-list">
+                                    <li><a href="../products.html">Products</a></li>
+                                    <li><a href="../solutions.html">Solutions</a></li>
+                                    <li><a href="../industries.html">Industries</a></li>
+                                    <li><a href="../about.html">About</a></li>
+                                    <li><a href="../faq.html">FAQ</a></li>
+                                    <li><a href="../resources.html">Insights &amp; Updates</a></li>
+                                    <li><a href="../contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-contact-container">
+                                <h5>Contact Info</h5>
+                                <ul class="footer-list">
+                                    <li><a href="mailto:sentra@clovetech.com">sentra@clovetech.com</a></li>
+                                    <li><a href="tel:+91 7893023322">+91 7893023322</a></li>
+                                    <li class="footer-address">IT SEZ, Hill no.2 , Rushikonda, Visakhapatnam, Andhra
+                                        Pradesh 530045</li>
+                                </ul>
+                                <div class="d-flex flex-column gspace-1">
+                                    <h5>Social Media</h5>
+                                    <div class="social-container">
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://www.facebook.com/profile.php?id=61591761143578"
+                                                class="social-item" aria-label="Facebook">
+                                                <i class="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render"
+                                                    data-url="https://www.facebook.com/profile.php?id=61591761143578"
+                                                    data-icon="fa-brands fa-facebook" data-icon-color="#1877f2"
+                                                    aria-label="QR Code for Facebook"></div>
+                                                <p class="qr-label qr-label--facebook"><i
+                                                        class="fa-brands fa-facebook"></i> Scan to follow</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://www.youtube.com/@Sentra-tech/" class="social-item"
+                                                aria-label="YouTube">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render"
+                                                    data-url="https://www.youtube.com/@Sentra-tech/"
+                                                    data-icon="fa-brands fa-youtube" data-icon-color="#ff0000"
+                                                    aria-label="QR Code for YouTube"></div>
+                                                <p class="qr-label qr-label--youtube"><i
+                                                        class="fa-brands fa-youtube"></i> Scan to subscribe</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://www.instagram.com/sentra_tech_official/"
+                                                class="social-item" aria-label="Instagram">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render"
+                                                    data-url="https://www.instagram.com/sentra_tech_official/"
+                                                    data-icon="fa-brands fa-instagram" data-icon-color="#e1306c"
+                                                    aria-label="QR Code for Instagram"></div>
+                                                <p class="qr-label qr-label--instagram"><i
+                                                        class="fa-brands fa-instagram"></i> Scan to follow</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://www.linkedin.com/company/sentrabyclove/"
+                                                class="social-item" aria-label="LinkedIn">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render"
+                                                    data-url="https://www.linkedin.com/company/sentrabyclove/"
+                                                    data-icon="fa-brands fa-linkedin" data-icon-color="#0a66c2"
+                                                    aria-label="QR Code for LinkedIn"></div>
+                                                <p class="qr-label"><i class="fa-brands fa-linkedin"></i> Scan to
+                                                    connect</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://x.com/Sentra970016" target="_blank" rel="noopener"
+                                                class="social-item" aria-label="X (Twitter)">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render" data-url="https://x.com/Sentra970016"
+                                                    data-icon="fa-brands fa-x-twitter" data-icon-color="#0a0a0a"
+                                                    aria-label="QR Code for X (Twitter)"></div>
+                                                <p class="qr-label"><i class="fa-brands fa-x-twitter"></i> Scan to
+                                                    follow</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://medium.com/@sentra_8835" target="_blank" rel="noopener"
+                                                class="social-item" aria-label="Medium">
+                                                <i class="fa-brands fa-medium"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render" data-url="https://medium.com/@sentra_8835"
+                                                    data-icon="fa-brands fa-medium" data-icon-color="#12100e"
+                                                    aria-label="QR Code for Medium"></div>
+                                                <p class="qr-label qr-label--medium"><i
+                                                        class="fa-brands fa-medium"></i> Scan to read</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://in.pinterest.com/sentra0070/" target="_blank" rel="noopener"
+                                                class="social-item" aria-label="Pinterest">
+                                                <i class="fa-brands fa-pinterest"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render" data-url="https://in.pinterest.com/sentra0070/"
+                                                    data-icon="fa-brands fa-pinterest" data-icon-color="#e60023"
+                                                    aria-label="QR Code for Pinterest"></div>
+                                                <p class="qr-label qr-label--pinterest"><i
+                                                        class="fa-brands fa-pinterest"></i> Scan to follow</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content-spacer"></div>
+                </div>
+                <div class="copyright-container">
+                    <span class="copyright">© 2026 <a href="https://clovetech.com/">Sentra By Clove Technologies Pvt.
+                            Ltd.</a><br>All
+                        Rights
+                        Reserved.</span>
+                    <div class="d-flex flex-row gspace-2">
+                        <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
+                        <a href="../glossary.html" class="legal-link">Glossary</a>
+                        <a href="../sitemap.xml" class="legal-link">Sitemap</a>
+                        <a href="../404-page.html" class="legal-link">404</a>
+                    </div>
+                </div>
+                <div class="footer-spacer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/vendor/qrcode.min.js"></script>
+<script>
+    (function () {
+        var SIZE = 236;          // render at 2x for crispness; CSS displays it at 118px
+
+        function roundedRect(ctx, x, y, w, h, r) {
+            r = Math.max(0, Math.min(r, w / 2, h / 2));
+            ctx.beginPath();
+            ctx.moveTo(x + r, y);
+            ctx.lineTo(x + w - r, y);
+            ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+            ctx.lineTo(x + w, y + h - r);
+            ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+            ctx.lineTo(x + r, y + h);
+            ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+            ctx.lineTo(x, y + r);
+            ctx.quadraticCurveTo(x, y, x + r, y);
+            ctx.closePath();
+            ctx.fill();
+        }
+
+        function inFinder(r, c, count) {
+            return (r < 7 && c < 7) || (r < 7 && c >= count - 7) || (r >= count - 7 && c < 7);
+        }
+
+        function drawEyes(ctx, count, m) {
+            var spots = [[0, 0], [0, count - 7], [count - 7, 0]];
+            spots.forEach(function (spot) {
+                var x = spot[0] * m;
+                var y = spot[1] * m;
+                ctx.fillStyle = '#111111';
+                roundedRect(ctx, x, y, 7 * m, 7 * m, 0.55 * m);
+                ctx.fillStyle = '#ffffff';
+                roundedRect(ctx, x + m, y + m, 5 * m, 5 * m, 0.42 * m);
+                ctx.fillStyle = '#111111';
+                roundedRect(ctx, x + 2 * m, y + 2 * m, 3 * m, 3 * m, 0.28 * m);
+            });
+        }
+
+        function renderSocialQR(el) {
+            var qr = qrcode(0, 'M');
+            qr.addData(el.getAttribute('data-url') || '');
+            qr.make();
+            var count = qr.getModuleCount();
+            var m = SIZE / count;
+            var canvas = document.createElement('canvas');
+            canvas.width = SIZE;
+            canvas.height = SIZE;
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, SIZE, SIZE);
+
+            var gap = m * 0.13;
+            var dot = m - gap * 2;
+            var dotR = m * 0.28;
+
+            ctx.fillStyle = '#111111';
+            for (var r = 0; r < count; r++) {
+                for (var c = 0; c < count; c++) {
+                    if (inFinder(r, c, count)) continue;
+                    if (qr.isDark(r, c)) roundedRect(ctx, c * m + gap, r * m + gap, dot, dot, dotR);
+                }
+            }
+            drawEyes(ctx, count, m);
+
+            el.appendChild(canvas);
+
+            var icon = document.createElement('span');
+            icon.className = 'qr-center-icon';
+            icon.style.color = el.getAttribute('data-icon-color') || '#f48120';
+            icon.innerHTML = '<i class="' + el.getAttribute('data-icon') + '"></i>';
+            el.appendChild(icon);
+        }
+
+        function initQR() {
+            var els = document.querySelectorAll('.qr-code-render');
+            if (!els.length) return;
+            if (typeof qrcode !== 'function') { setTimeout(initQR, 120); return; }
+            els.forEach(renderSocialQR);
+        }
+        initQR();
+    })();
+</script></div>
+    </footer>
+
+    <script>
+        (function () {
+            const synth = window.speechSynthesis;
+            let voices = [], isPlaying = false, isPaused = false, totalWords = 0;
+            let currentWordIndex = 0, wordSpans = [], paragraphs = [], currentParagraphIndex = 0;
+            let activeUtterance = null, fallbackTimer = null, boundarySupported = false;
+            let autoScrollEnabled = true, mouseIdleTimer;
+
+            const ttsContent = document.getElementById('ttsContent');
+            const playBtn = document.getElementById('ttsPlayBtn');
+            const progressFill = document.getElementById('progressFill');
+            const progressBar = document.getElementById('ttsProgressBar');
+
+            function loadVoices() { voices = synth.getVoices() || []; }
+            loadVoices();
+            if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = loadVoices;
+
+            function pickVoice() {
+                return voices.find(v => /Google US English|Samantha|en-US/i.test(v.name + ' ' + v.lang)) || voices[0];
+            }
+
+            document.addEventListener('mousemove', () => {
+                autoScrollEnabled = false;
+                clearTimeout(mouseIdleTimer);
+                mouseIdleTimer = setTimeout(() => { autoScrollEnabled = true; }, 5000);
+            });
+
+            function wrapWords() {
+                ttsContent.querySelectorAll('p, h2, h4, li').forEach(el => {
+                    if (el.querySelector('.word')) return;
+                    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+                    const nodes = [];
+                    let n;
+                    while (n = walker.nextNode()) { if (n.textContent.trim()) nodes.push(n); }
+                    nodes.forEach(tn => {
+                        const frag = document.createDocumentFragment();
+                        tn.textContent.split(/(\s+)/).forEach(tok => {
+                            if (/\s+/.test(tok)) { frag.appendChild(document.createTextNode(tok)); }
+                            else if (tok) { const s = document.createElement('span'); s.className = 'word'; s.textContent = tok; frag.appendChild(s); totalWords++; }
+                        });
+                        tn.parentNode.replaceChild(frag, tn);
+                    });
+                });
+                wordSpans = Array.from(ttsContent.querySelectorAll('.word'));
+            }
+            wrapWords();
+
+            function getParagraphs() { paragraphs = Array.from(ttsContent.querySelectorAll('p, h2, h4, li')).filter(el => el.textContent.trim()); }
+            getParagraphs();
+
+            function computeBoundaries(text) {
+                const words = text.split(/\s+/).filter(Boolean), bounds = [];
+                let cursor = 0;
+                words.forEach(w => { const f = text.indexOf(w, cursor); bounds.push(f === -1 ? cursor : f); cursor = (f === -1 ? cursor : f) + w.length; });
+                return bounds;
+            }
+
+            function scrollCenter(el) { if (el && autoScrollEnabled) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+            function clearTimer() { if (fallbackTimer) { clearInterval(fallbackTimer); fallbackTimer = null; } }
+
+            function speakFrom(index) {
+                clearTimer(); boundarySupported = false;
+                if (index >= paragraphs.length) {
+                    isPlaying = isPaused = false;
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    currentParagraphIndex = currentWordIndex = 0;
+                    progressFill.style.width = '0%';
+                    return;
+                }
+                currentParagraphIndex = index;
+                const p = paragraphs[index], text = p.textContent.trim();
+                if (!text) { speakFrom(index + 1); return; }
+                const bounds = computeBoundaries(text);
+                const spans = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim());
+                spans.forEach(w => w.classList.remove('highlight'));
+                const u = new SpeechSynthesisUtterance(text);
+                activeUtterance = u; u.lang = 'en-US'; u.rate = 1.1; u.pitch = 1.1;
+                const v = pickVoice(); if (v) u.voice = v;
+                const fps = Math.max(120, Math.round(1000 / (3.0 * u.rate)));
+                u.onstart = () => {
+                    isPlaying = true; isPaused = false;
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    currentWordIndex = 0;
+                    if (spans[0]) { spans[0].classList.add('highlight'); scrollCenter(spans[0]); }
+                    fallbackTimer = setInterval(() => {
+                        if (boundarySupported || !isPlaying || isPaused) { clearTimer(); return; }
+                        if (currentWordIndex < spans.length - 1) {
+                            spans[currentWordIndex].classList.remove('highlight');
+                            spans[++currentWordIndex].classList.add('highlight');
+                            scrollCenter(spans[currentWordIndex]);
+                        }
+                    }, fps);
+                };
+                u.onboundary = (ev) => {
+                    boundarySupported = true; clearTimer();
+                    const ci = ev.charIndex || 0;
+                    let wi = 0;
+                    for (let i = 0; i < bounds.length; i++) {
+                        const end = i < bounds.length - 1 ? bounds[i + 1] : text.length;
+                        if (ci >= bounds[i] && ci < end) { wi = i; break; }
+                        if (i === bounds.length - 1) wi = bounds.length - 1;
+                    }
+                    wi = Math.min(Math.max(wi, 0), spans.length - 1);
+                    if (wi !== currentWordIndex) {
+                        if (spans[currentWordIndex]) spans[currentWordIndex].classList.remove('highlight');
+                        if (spans[wi]) { spans[wi].classList.add('highlight'); scrollCenter(spans[wi]); }
+                        currentWordIndex = wi;
+                    }
+                };
+                u.onend = () => {
+                    p.querySelectorAll('.word.highlight').forEach(w => w.classList.remove('highlight'));
+                    activeUtterance = null; clearTimer();
+                    if (isPlaying && !isPaused) speakFrom(index + 1);
+                    else { isPlaying = isPaused = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
+                };
+                u.onerror = () => { activeUtterance = null; isPlaying = false; clearTimer(); playBtn.innerHTML = '<i class="fas fa-play"></i>'; };
+                try { synth.speak(u); } catch(e) {}
+                progressFill.style.width = ((index + 1) / paragraphs.length * 100) + '%';
+            }
+
+            playBtn.addEventListener('click', () => {
+                if (!voices.length) loadVoices();
+                if (isPlaying && !isPaused) { synth.pause(); isPaused = true; isPlaying = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
+                else if (isPaused) { synth.resume(); isPaused = false; isPlaying = true; playBtn.innerHTML = '<i class="fas fa-pause"></i>'; }
+                else { if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0; speakFrom(currentParagraphIndex); }
+            });
+
+            progressBar.addEventListener('click', (e) => {
+                const pct = (e.clientX - progressBar.getBoundingClientRect().left) / progressBar.clientWidth;
+                if (synth.speaking) synth.cancel();
+                wordSpans.forEach(w => w.classList.remove('highlight'));
+                clearTimer();
+                currentParagraphIndex = Math.floor(pct * paragraphs.length);
+                speakFrom(currentParagraphIndex);
+            });
+
+            window.addEventListener('beforeunload', () => { if (synth.speaking) synth.cancel(); });
+        })();
+    </script>
+
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../js/vendor/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/swiper-script.js"></script>
+    <script src="../js/submit-form.js"></script>
+    <script src="../js/video_embedded.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="../js/chatbot-widget.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tocItems = document.querySelectorAll('.toc-item');
+            var sections = [];
+            tocItems.forEach(function (btn) {
+                var target = document.getElementById(btn.getAttribute('data-target'));
+                if (target) sections.push({ btn: btn, target: target });
+                btn.addEventListener('click', function () {
+                    var el = document.getElementById(this.getAttribute('data-target'));
+                    if (el) {
+                        var h = (document.querySelector('header') || {getBoundingClientRect:()=>({height:0})}).getBoundingClientRect().height;
+                        window.scrollTo({ top: Math.max(el.getBoundingClientRect().top + window.scrollY - h - 80, 0), behavior: 'smooth' });
+                    }
+                });
+            });
+            window.addEventListener('scroll', function () {
+                var scrollY = window.scrollY + 200, active = null;
+                sections.forEach(function (s) { if (s.target.offsetTop <= scrollY) active = s; });
+                tocItems.forEach(function (b) { b.classList.remove('active'); });
+                if (active) active.btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
