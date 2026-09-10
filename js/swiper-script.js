@@ -195,46 +195,62 @@ $(function () {
         }
     }
 
-    /**
-     * Parse the original slide HTML from the first initialisation to have
-     * a clean reference for filtering.
-     */
-    var originalSlidesHTML = [];
-    var $firstContainer = $('.swiperProducts-layout').first();
-    $firstContainer.find('.swiper.swiperProducts .swiper-slide').each(function () {
-        originalSlidesHTML.push(this.outerHTML);
-    });
-
-    // Initialise all Swiper instances on the page
+    // Initialise all Swiper instances on the page. Each instance keeps its own
+    // copy of the slides it started with, so filtering one carousel can never
+    // pull slides in from another.
     var swiperInstances = [];
     $('.swiperProducts-layout').each(function () {
         var $container = $(this);
+        var originalSlidesHTML = [];
+        $container.find('.swiper.swiperProducts .swiper-slide').each(function () {
+            originalSlidesHTML.push(this.outerHTML);
+        });
         var swiper = initSwiper($container);
         if (swiper) {
-            swiperInstances.push({ container: $container, swiper: swiper });
+            swiperInstances.push({
+                container: $container,
+                swiper: swiper,
+                slides: originalSlidesHTML
+            });
         }
     });
 
+    /**
+     * Find the instance a filter bar controls: the first products carousel that
+     * follows the bar, falling back to one within the same section.
+     */
+    function findInstanceFor($filterBar) {
+        var $layout = $filterBar.nextAll('.swiperProducts-layout').first();
+        if (!$layout.length) {
+            $layout = $filterBar.closest('.section').find('.swiperProducts-layout').first();
+        }
+        if (!$layout.length) return null;
+        var target = null;
+        swiperInstances.forEach(function (item) {
+            if (item.container[0] === $layout[0]) target = item;
+        });
+        return target;
+    }
+
     // ---- Product filter ----
-    var $filterBar = $('.product-filter-bar');
-    if ($filterBar.length && swiperInstances.length) {
+    $('.product-filter-bar').each(function () {
+        var $filterBar = $(this);
+        var item = findInstanceFor($filterBar);
+        if (!item) return;
+
         $filterBar.on('click', '.product-filter-btn', function () {
             var $btn = $(this);
             if ($btn.hasClass('active')) return;
 
             var filter = $btn.data('filter');
 
-            // Determine which original slides match the filter
-            var matchingHTML = [];
-            originalSlidesHTML.forEach(function (html) {
-                // Parse the slide to read data-category
+            // Pick the slides this carousel started with that match the filter
+            var matchingHTML = item.slides.filter(function (html) {
+                if (filter === 'all') return true;
                 var temp = document.createElement('div');
                 temp.innerHTML = html;
                 var slideEl = temp.firstElementChild;
-                var category = slideEl.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    matchingHTML.push(html);
-                }
+                return slideEl && slideEl.getAttribute('data-category') === filter;
             });
 
             // Guard: if no slides match, do nothing and DON'T mark button active
@@ -244,43 +260,40 @@ $(function () {
             $filterBar.find('.product-filter-btn').removeClass('active');
             $btn.addClass('active');
 
-            // Rebuild each Swiper instance with matching slides
-            swiperInstances.forEach(function (item) {
-                var $container = item.container;
-                var oldSwiper = item.swiper;
+            var $container = item.container;
+            var oldSwiper = item.swiper;
 
-                // Disconnect old pagination observers before destroying Swiper
-                disconnectPaginationObservers();
+            // Disconnect old pagination observers before destroying Swiper
+            disconnectPaginationObservers();
 
-                if (oldSwiper && oldSwiper.destroy) {
-                    try {
-                        oldSwiper.destroy(true, true);
-                    } catch (e) {
-                        // Swallow destroy errors
-                    }
+            if (oldSwiper && oldSwiper.destroy) {
+                try {
+                    oldSwiper.destroy(true, true);
+                } catch (e) {
+                    // Swallow destroy errors
                 }
+            }
 
-                // Clear the wrapper and re-add matching slides
-                var $wrapper = $container.find('.swiper-wrapper');
-                $wrapper.empty();
-                matchingHTML.forEach(function (html) {
-                    $wrapper.append(html);
-                });
-
-                // Re-initialize Swiper
-                var newSwiper = initSwiper($container);
-                item.swiper = newSwiper;
-
-                // Restart autoplay
-                if (newSwiper && newSwiper.autoplay) {
-                    newSwiper.autoplay.stop();
-                    setTimeout(function () {
-                        if (newSwiper && newSwiper.autoplay) {
-                            newSwiper.autoplay.start();
-                        }
-                    }, 100);
-                }
+            // Clear the wrapper and re-add matching slides
+            var $wrapper = $container.find('.swiper-wrapper');
+            $wrapper.empty();
+            matchingHTML.forEach(function (html) {
+                $wrapper.append(html);
             });
+
+            // Re-initialize Swiper
+            var newSwiper = initSwiper($container);
+            item.swiper = newSwiper;
+
+            // Restart autoplay
+            if (newSwiper && newSwiper.autoplay) {
+                newSwiper.autoplay.stop();
+                setTimeout(function () {
+                    if (newSwiper && newSwiper.autoplay) {
+                        newSwiper.autoplay.start();
+                    }
+                }, 100);
+            }
         });
-    }
+    });
 });
