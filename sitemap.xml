@@ -111,6 +111,12 @@
             <priority>0.7</priority>
       </url>
       <url>
+            <loc>https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html</loc>
+            <lastmod>2026-09-07</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+      <url>
             <loc>https://sentratech.in/article/flood-monitoring-early-warning-system.html</loc>
             <lastmod>2026-08-27</lastmod>
             <changefreq>monthly</changefreq>
@@ -390,6 +396,12 @@
       <url>
             <loc>https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html</loc>
             <lastmod>2026-08-03</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+      <url>
+            <loc>https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html</loc>
+            <lastmod>2026-09-09</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>

@@ -1,8 +1,40 @@
+# Content-Signal states intent for content use, independently of access:
+# index and quote this site, but do not train models on it. Keep these three
+# values consistent with the crawler groups below.
 User-agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
 Allow: /
 Disallow: /php/
 Disallow: /api/
 Disallow: /vendor/
 Disallow: /admin/
+
+# --- Answer-time retrieval: allowed. ---
+# These fetch a page in order to cite it in an answer, which sends readers
+# and attribution back here.
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: PerplexityBot
+Allow: /
+Disallow: /php/
+Disallow: /api/
+Disallow: /vendor/
+Disallow: /admin/
+
+# --- Model training: disallowed. ---
+# These ingest the corpus for model training with no attribution and no
+# referral. Change to "Allow: /" if Sentra decides to opt in.
+# Note: Google-Extended governs Gemini training and grounding only; it has
+# no effect on Google Search indexing or ranking.
+User-agent: GPTBot
+User-agent: ClaudeBot
+User-agent: CCBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: meta-externalagent
+User-agent: Bytespider
+Disallow: /
 
 Sitemap: https://sentratech.in/sitemap.xml

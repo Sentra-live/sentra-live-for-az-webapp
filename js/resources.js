@@ -54,6 +54,18 @@
             link: './blogs/what-is-a-data-logger-types-guide.html'
         },
         {
+            id: 'blog-gnss-displacement-monitoring',
+            title: 'GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement',
+            excerpt: 'How GNSS monitoring turns satellite positioning into millimetre-level displacement records, what limits the accuracy, and where it fits alongside geotechnical instrumentation.',
+            category: 'Geotechnical',
+            color: 'teal',
+            type: 'blogs',
+            date: '9 Sep 2026',
+            image: './image/blogs/banners/blogs_gnss-displacement-monitoring.webp',
+            link: './blogs/gnss-displacement-monitoring-satellite-sensors.html',
+            featured: true
+        },
+        {
             id: 'blog-what-is-ground-penetrating-radar',
             title: 'What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels',
             excerpt: 'How GPR maps buried interfaces, utilities, voids, moisture and pavement layers for non-destructive road and tunnel monitoring.',
@@ -274,6 +286,17 @@
         },
 
         // ---------- Articles ----------
+        {
+            id: 'art-predictive-maintenance-industrial',
+            title: 'Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure',
+            excerpt: 'What IoT vibration sensors measure, which failure modes they catch weeks early, and how to build a predictive maintenance program that protects asset uptime.',
+            category: 'Industrial',
+            color: 'orange',
+            type: 'articles',
+            date: '7 Sep 2026',
+            image: './image/articles/articles_predictive-maintenance-industrial-facilities.webp',
+            link: './article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html'
+        },
         {
             id: 'art-10-construction-technologies',
             title: '10 Construction Technologies Redefining the Industry',

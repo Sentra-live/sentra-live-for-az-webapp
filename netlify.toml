@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && node scripts/inline-partials.mjs"
+  command = "npm install && node scripts/inline-partials.mjs && node scripts/generate-llms-txt.mjs"
   publish = "."
 
 # ─── Keep .html on internal links ───
@@ -72,6 +72,9 @@
     X-XSS-Protection = "1; mode=block"
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "geolocation=(), microphone=(), camera=()"
+    # Points agents at the site map written for them. RFC 8288; the llms-txt
+    # relation is not IANA-registered, so treat it as a hint, not a contract.
+    Link = "</llms.txt>; rel=\"llms-txt\""
 
 # Cache control for static assets
 [[headers]]
