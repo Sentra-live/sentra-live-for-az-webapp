@@ -1,0 +1,139 @@
+# Sentra
+
+> IoT structural health monitoring for bridges, railways, buildings, dams,
+> tunnels and water infrastructure. Sentra designs and deploys wireless sensor
+> networks, data loggers, laser scanning and digital twins, with analytics that
+> turn continuous tilt, strain, vibration, displacement and scour readings into
+> decisions about structures in service. Based in Visakhapatnam, Andhra Pradesh,
+> India; part of Clove Technologies. Authorised India reseller for Worldsensing
+> and XGRIDS.
+
+Sentra sells instrumentation and monitoring programmes to infrastructure owners,
+EPC contractors and consultants. Deployments include Indian Railways bridges,
+highway structures, high-rise buildings, dams, ports and mining slopes.
+
+This site is documentation and marketing content only. There is no public API,
+no agent tool endpoint and no authenticated interface; /api/ is an internal
+backend for the site's own chatbot and is disallowed in robots.txt.
+
+## Solutions
+
+What Sentra delivers, by discipline.
+
+- [Advanced Non-Destructive Testing (NDT)](https://sentratech.in/solutions/advanced-non-destructive-testing-ndt.html): Ultrasonic, radiographic, magnetic particle and other NDT methods to find subsurface defects without shutting down operations
+- [Asset Monitoring & Management Solutions](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html): IoT sensors and dashboards for monitoring manufacturing, utility and mining assets, with predictive maintenance alerts
+- [Bridge Inspection & Condition Assessment](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html): Drone surveys, NDT and AI analysis for bridge inspection
+- [Consulting & Advisory Services](https://sentratech.in/solutions/consulting-and-advisory-services.html): Vendor-neutral consulting for structural monitoring, asset management and digital engineering
+- [Digital Engineering & Documentation](https://sentratech.in/solutions/digital-engineering-and-documentation.html): ISO 19650-aligned BIM, scan-to-BIM, digital twin, and asset information management services that build a lasting digital foundation for your..
+- [Digital Twin Solutions](https://sentratech.in/solutions/digital-twin.html): Sentra's Digital Twin solutions integrate BIM, IoT sensors and real-time analytics to create virtual replicas of physical assets for infrastructure..
+- [Fatigue & Residual Life Assessment](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html): Engineering-grade fatigue and residual life assessment for bridges, steel structures and offshore platforms — quantify remaining life and extend..
+- [Geotechnical & Foundation Monitoring](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html): Real-time geotechnical and foundation monitoring for construction sites, tunnels and slopes — sub-millimetre precision, 24/7 ground intelligence
+- [Structural Health Monitoring Services](https://sentratech.in/solutions/structural-health-monitoring.html): Real-time structural health monitoring using IoT sensors, edge analytics and predictive ML to detect anomalies, reduce downtime and extend asset life
+
+## Industries
+
+The same capabilities framed by sector.
+
+- [Bridge & Highway Structure Monitoring](https://sentratech.in/industries/bridges-highways-monitoring.html): Continuous displacement, strain and inclination monitoring for bridges and highway structures using Sentra's wireless IoT sensors and edge analytics
+- [Building & High-Rise Structural Monitoring](https://sentratech.in/industries/buildings-highrise-monitoring.html): Settlement monitoring, tilt tracking and seismic response systems for residential, commercial and heritage buildings using Sentra's IoT sensor..
+- [Construction & Tunnelling Monitoring](https://sentratech.in/industries/construction-tunnelling-monitoring.html): Real-time deformation, convergence and vibration control during deep excavation, tunnelling and high-rise construction phases using Sentra's IoT..
+- [Dam & Reservoir Monitoring](https://sentratech.in/industries/dams-reservoirs-monitoring.html): GNSS-based displacement, pore pressure and seepage monitoring for earthfill, concrete and masonry dams using Sentra's wireless IoT sensor networks
+- [Industrial Facility Monitoring](https://sentratech.in/industries/industrial-facilities-monitoring.html): Asset health, predictive maintenance and equipment vibration monitoring for power plants, refineries and process industries using Sentra's IoT..
+- [Mining & Geotechnical Monitoring](https://sentratech.in/industries/mining-geotechnical-monitoring.html): Slope stability, subsidence and ground deformation monitoring for open-pit mines, tunnels and retaining structures using Sentra's IoT sensors
+- [Port & Marine Monitoring](https://sentratech.in/industries/ports-marine-monitoring.html): Corrosion tracking, jetty tilt and structural load monitoring for quays, wharves and offshore platforms using Sentra's IoT sensors in harsh marine..
+- [Railway Infrastructure Monitoring](https://sentratech.in/industries/railway-infrastructure-monitoring.html): Real-time vibration, tilt and dynamic load monitoring for railway tracks, bridges and rail structures using Sentra's IoT sensor networks and edge..
+
+## Products
+
+Hardware: laser scanners, wireless and wired sensors, data loggers, communications.
+
+- [Accelerometer](https://sentratech.in/products/accelerometers.html): Triaxial MEMS accelerometer for vibration, seismic and dynamic motion monitoring with ±16g range, 0.5-250Hz bandwidth, IP65 rated and LoRa..
+- [Analog Data Logger](https://sentratech.in/products/analog-data-logger.html): 4-channel wireless analog data logger for voltage, current, Wheatstone bridge and thermistor sensors
+- [Core Communications](https://sentratech.in/products/core-communications.html): Deploy robust, secure IoT networks with Sentra's Core Communications — narrowband & broadband gateways, repeaters, and cloud connectivity for..
+- [Digital Data Logger](https://sentratech.in/products/digital-data-logger.html): Digital Data Logger — wirelessly stream data from digital sensors using ModBus RTU
+- [Edge Devices](https://sentratech.in/products/edge-devices.html): Explore Sentra's edge devices portfolio — rugged sensors, low-power data loggers and gateways for long-term infrastructure monitoring and remote..
+- [4G Rugged Gateway](https://sentratech.in/products/gateway.html): Carrier-class 4G LoRaWAN gateway for remote monitoring — IP68, up to 15km range, 1000+ devices per network
+- [GNSS Meter](https://sentratech.in/products/gnss-meter.html): High-precision GNSS meter with RTK correction for millimeter-level displacement monitoring
+- [Laser Scanners](https://sentratech.in/products/laser-scanners.html): Sentra is the official India reseller for XGRIDS laser scanners — Lixel K2, PortalCam & Lixel L2 Pro
+- [Laser Tiltmeter](https://sentratech.in/products/laser-tiltmeter.html): 2-in-1 Laser Distance Meter and 3-axis tiltmeter for sub-millimeter convergence monitoring
+- [LCC](https://sentratech.in/products/lcc.html): LCC by XGRIDS — capture, create and share 3D Gaussian Splatting models with Studio, Cloud, Model & Scene Editor, available in India via Sentra
+- [Lixel K2](https://sentratech.in/products/lixel-k2.html): Lixel K2 by XGRIDS — lightweight handheld SLAM LiDAR scanner with onboard RTK, 200,000 pts/s, 1cm accuracy and up to 100m range
+- [Lixel L2 Pro](https://sentratech.in/products/lixel-l2-pro.html): Lixel L2 Pro by XGRIDS — handheld SLAM LiDAR scanner with dual 48MP panoramic camera, up to 640,000 pts/s and 300m range
+- [LixelStudio](https://sentratech.in/products/lixelstudio.html): LixelStudio by XGRIDS — one-click processing from raw scan data to production-ready point clouds, with SLAM mapping and BIM/CAD/GIS export, via..
+- [Piconode](https://sentratech.in/products/piconode-data-logger.html): Piconode — ultra-compact wireless data logger for analog sensors
+- [PortalCam](https://sentratech.in/products/portalcam.html): PortalCam by XGRIDS — the world's first handheld spatial camera, fusing LiDAR depth, RGB imaging and edge AI for real-time 3D Gaussian Splatting
+- [K20 Edge Repeater](https://sentratech.in/products/repeater.html): K20 Edge Repeater extends LoRaWAN coverage underground and through obstacles
+- [Strain Gauge](https://sentratech.in/products/strain-gauges.html): Vibrating wire strain gauges for precision stress and deformation measurement on steel, concrete and rock
+- [Thread X3](https://sentratech.in/products/thread.html): Thread X3 broadband 4G/LTE node for high-throughput sensor networks
+- [Wireless Tiltmeter](https://sentratech.in/products/tiltmeter-event-detection.html): Wireless 3-axis tiltmeter with event detection, edge processing, and up to 10-year battery life
+- [Tiltmeter](https://sentratech.in/products/tiltmeter.html): High-accuracy wireless tiltmeter for angular displacement and tilt trends in structures, slopes, and rail tracks
+- [Vibrating Wire RCR](https://sentratech.in/products/vibrating-wire-rcr.html): Vibrating Wire RCR — ultra-robust wireless data logger embedded in precast concrete
+- [G7 Vibrating Wire Data Logger](https://sentratech.in/products/vibrating-wire.html): G7 Vibrating Wire Data Logger — wirelessly stream data from all leading vibrating wire sensor manufacturers
+- [Wireless Vibration Meter](https://sentratech.in/products/vibration-meter.html): Wireless tri-axial vibration meter for automated, long-term structural vibration monitoring
+- [Wired Sensors](https://sentratech.in/products/wired-sensors.html): High-precision accelerometers and strain gauges engineered for accurate, reliable structural health monitoring in challenging infrastructure..
+
+## Key pages
+
+- [Sentra](https://sentratech.in/index.html): IoT edge devices, sensor networks and AI analytics for monitoring bridges, tunnels and industrial infrastructure
+- [About Sentra](https://sentratech.in/about.html): Learn about Sentra — our mission to make infrastructure safer with IoT and AI, our engineering team, and our track record delivering monitoring..
+- [Solutions](https://sentratech.in/solutions.html): IoT sensor networks and analytics for monitoring bridges, tunnels, dams, and other critical infrastructure
+- [Products](https://sentratech.in/products.html): Explore Sentra's innovative products for smart structural monitoring, wireless/wired sensors, communications, and advanced IoT solutions
+- [Industries](https://sentratech.in/industries.html): Sentra delivers IoT structural monitoring solutions across Railways, Bridges, Buildings, Dams, Mining, Ports, Construction, and Industrial sectors
+- [Resources Hub](https://sentratech.in/resources.html): One place for everything Sentra publishes — blogs, case studies and articles on IoT, structural health monitoring and predictive maintenance
+- [Partnership](https://sentratech.in/partnership.html): Learn about partnership opportunities with Sentra to collaborate on cutting-edge structural health monitoring and IoT projects
+- [Contact Sentra](https://sentratech.in/contact.html): Contact Sentra for demos, pilots or technical queries
+
+## Reference
+
+Definitional and technical material, useful for resolving terminology.
+
+- [Glossary](https://sentratech.in/glossary.html): Comprehensive glossary of IoT, structural health monitoring, sensor technology, and digital twin terms used across Sentra's platform
+- [Common Questions About Sentra's Monitoring Solutions](https://sentratech.in/faq.html): Answers to common questions about Sentra's IoT sensors, structural monitoring systems, and digital twin platform
+- [Document Center](https://sentratech.in/document-center.html): Download technical datasheets for Sentra's sensors, data loggers, communications hardware, and XGRIDS laser scanners — all in one document center
+- [Testimonials](https://sentratech.in/testimonial.html): Read testimonials from satisfied clients who have experienced the benefits of Sentra's structural health monitoring and IoT solutions
+- [Videos & Shorts](https://sentratech.in/videos.html): Watch Sentra's videos and shorts on structural health monitoring and IoT-driven infrastructure insights
+
+## Latest resources
+
+Newest first. The full, filterable index lives at https://sentratech.in/resources.html
+
+- [GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html): Blog, Geotechnical, 9 Sep 2026
+- [What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels](https://sentratech.in/blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html): Blog, Advanced NDT, 8 Sep 2026
+- [Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure](https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html): Article, Industrial, 7 Sep 2026
+- [Railway Bridge Fatigue Life Assessment and Load Testing](https://sentratech.in/case-studies/railway-bridge-fatigue-life-assessment-load-testing.html): Case study, Railways, 28 Aug 2026
+- [Flood Monitoring & Early Warning System](https://sentratech.in/article/flood-monitoring-early-warning-system.html): Article, Flood Early Warning, 27 Aug 2026
+- [Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html): Blog, Structural Health, 25 Aug 2026
+- [10 Construction Technologies Redefining the Industry](https://sentratech.in/article/10-construction-technologies-redefining-the-industry.html): Article, Construction Tech, 21 Aug 2026
+- [Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html): Blog, Bridge Safety, 15 Aug 2026
+- [Railway Bridge Digital Twin Using Drone and LiDAR Inspection](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html): Case study, Railways, 15 Aug 2026
+- [AI Is Coming for Infrastructure Monitoring](https://sentratech.in/article/ai-infrastructure-monitoring.html): Article, AI & Monitoring, 15 Aug 2026
+- [What Is a Strain Gauge? Types, Working Principle & Applications](https://sentratech.in/blogs/what-is-a-strain-gauge-types-working-principle.html): Blog, Sensor Technology, 10 Aug 2026
+- [Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html): Article, Digital Twin, 7 Aug 2026
+- [What Is an Inclinometer? Digital Tiltmeters Explained](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html): Blog, Sensor Technology, 3 Aug 2026
+- [What Is a Data Logger? Types, How They Work & How to Choose One](https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html): Blog, IoT Sensors, 27 Jul 2026
+- [The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html): Blog, Digital Twin, 24 Jul 2026
+- [Celebrating One Year of Partnership: Clove Technologies & Worldsensing](https://sentratech.in/article/worldsensing-official-reseller-india.html): Article, Company News, 23 Jul 2026
+- [Clove Technologies Becomes Authorized XGRIDS Reseller in India](https://sentratech.in/article/xgrids-authorized-reseller-india.html): Article, Company News, 23 Jul 2026
+- [What Is an Accelerometer Sensor? Working Principle, Types & Applications](https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html): Blog, Sensor Technology, 20 Jul 2026
+- [Structural Health Monitoring of Highway Bridges](https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html): Case study, Infrastructure, 16 Jul 2026
+- [Track to the Future: How Remote Monitoring Helps Safeguard Rail and Civil Infrastructure](https://sentratech.in/article/track-to-the-future-remote-monitoring-rail-infrastructure.html): Article, Rail Infrastructure, 24 Jun 2026
+
+## Optional
+
+Older published work, same index.
+
+- [Seismic Monitoring for Buildings and Critical Infrastructure](https://sentratech.in/blogs/seismic-monitoring-buildings-critical-infrastructure.html): Blog, Structural Health, 15 Jun 2026
+- [Monitoring Construction-Induced Vibrations in Urban Environments](https://sentratech.in/blogs/monitoring-construction-induced-vibrations.html): Blog, Structural Monitoring, 10 Jun 2026
+- [10 Early Warning Signs Your Bridge Needs Continuous Monitoring](https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html): Blog, Bridge Safety, 5 Jun 2026
+- [IoT Bridge Monitoring & Sensor Installation on Railway Bridges](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html): Case study, Railways, 1 Jun 2026
+- [Intelligent Pump House Monitoring & Control](https://sentratech.in/blogs/intelligent-pump-house-monitoring-and-control.html): Blog, Smart Pumping, 20 May 2026
+- [Advanced IoT Solutions](https://sentratech.in/blogs/advanced-iot-solutions.html): Blog, IoT Sensors, 15 Apr 2026
+- [Asset Monitoring & Facility Management](https://sentratech.in/blogs/asset-monitoring-facility-management.html): Blog, Facility Management, 1 Mar 2026
+- [BridgePulse — AI & Drone Technology for Bridge Health Monitoring](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html): Case study, Bridge Safety, 1 Mar 2026
+- [Intelligent Pump House Monitoring & Control](https://sentratech.in/article/intelligent-pump-house-monitoring-and-control.html): Article, Smart Pumping, 26 Feb 2026
+- [Real-Time Monitoring Solutions](https://sentratech.in/blogs/real-time-monitoring-solutions-transforming-infrastructure-safety-performance.html): Blog, Monitoring, 15 Jan 2026
+- [Fatigue Life Assessment](https://sentratech.in/blogs/fatigue-life-assessment.html): Blog, Fatigue Analysis, 1 Dec 2025
+- [Building Resilient Smart Cities with Data-Driven Insights](https://sentratech.in/article/building-resilient-smart-cities-with-data-driven-insights.html): Article, Smart Cities, 3 Nov 2025
+- [Structural Health Monitoring](https://sentratech.in/blogs/structural-health-monitoring.html): Blog, Structural Health, 15 Oct 2025
+- [IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins](https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html): Article, IoT Innovation, 10 Sep 2025
+- [Top 5 Hidden Structural Damages Manual Bridge Inspection Misses](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html): Blog, Bridge Safety, 1 Sep 2025
