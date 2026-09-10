@@ -1,4 +1,17 @@
 # 301 Redirects for renamed folders (uppercase → lowercase)
+/?q=:query / 301!
+/contact /contact.html 301!
+/feed /feed.html 301!
+/partnership /partnership.html 301!
+/resources /resources.html 301!
+/solutions /solutions.html 301!
+/solutions/consulting-and-advisory-services /solutions/consulting-and-advisory-services.html 301!
+/solutions/digital-twin /solutions/digital-twin.html 301!
+/case-studies/IoT-bridge-monitoring-and-sensor-installation-on-railway-bridges.html /case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html 301!
+/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges /case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html 301!
+/products/piconode-data-logger /products/piconode-data-logger.html 301!
+/products/laser-scanners /products/laser-scanners.html 301!
+
 /Products/*  /products/:splat  301
 /Solutions/* /solutions/:splat  301
 /Industries/* /industries/:splat  301
