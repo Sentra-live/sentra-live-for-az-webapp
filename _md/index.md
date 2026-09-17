@@ -324,6 +324,18 @@ Our Products
 
 From laser scanners and wireless sensors to data loggers, wired sensors and communications hardware, explore the hardware powering our monitoring solutions.
 
+![Lixel L3](https://sentratech.in/image/products/scanners/lixel-l3-hero.webp)
+
+New
+
+#### Lixel L3
+
+Laser Scanners
+
+Flagship spatial scanner. 5mm validated relative accuracy, triple 50MP camera and built-in RTK.
+
+[ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/lixel-l3.html)
+
 ![Lixel K2](https://sentratech.in/image/products/scanners/lixel-k2-hero.webp)
 
 New
@@ -858,7 +870,7 @@ Indian Railways
 
 Bridge Engineering Division
 
-“Sentra's comprehensive bridge monitoring solutions — SHM, fatigue life assessment, and BridgePulse AI — have given us unprecedented visibility into our critical rail bridges, transforming our maintenance strategy with real-time data and predictive alerts.”
+“Sentra's comprehensive bridge monitoring solutions: SHM, fatigue life assessment, and BridgePulse AI: have given us unprecedented visibility into our critical rail bridges, transforming our maintenance strategy with real-time data and predictive alerts.”
 
 ![Amaravathi CRDA](https://sentratech.in/image/about/partner_1.webp)
 

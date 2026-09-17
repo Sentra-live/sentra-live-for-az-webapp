@@ -9,7 +9,7 @@ Transforming infrastructure safety and performance with advanced sensors, IoT, a
 
 India alone operates over 1.5 lakh bridges, many of them crossing the 50-year mark. The Morbi cable-stayed bridge collapse in Gujarat (2022), which killed 135 people, exposed a harsh reality: visual inspections missed critical cable fatigue for years. Globally, the American Society of Civil Engineers (ASCE) assigns U.S. infrastructure a C-minus grade, estimating a $2.59 trillion investment gap over the next decade. Traditional manual inspections (periodic, subjective, and limited in scope) simply cannot keep pace with the scale and speed of structural degradation happening beneath the surface.
 
-Real-time monitoring solutions close this gap by giving structures a continuous voice. Instead of relying on a once-a-year walk-through, engineers now receive streaming sensor data that captures stress, vibration, temperature, and displacement in real time, enabling them to detect anomalies hours, days, or even months before they become visible to the human eye.
+Real-time monitoring solutions close this gap, giving structures a continuous voice. Instead of relying on a once-a-year walk-through, engineers now receive streaming sensor data that captures stress, vibration, temperature, and displacement in real time, enabling them to detect anomalies hours, days, or even months before they become visible to the human eye.
 
 ## What Are Real-Time Monitoring Solutions?
 

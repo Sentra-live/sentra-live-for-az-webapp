@@ -10,7 +10,7 @@ Railway Bridges Highway Bridges Flyovers Waterway Structures
 
 ## Bridge Inspection & Condition Assessment
 
-Know the true condition of your infrastructure before it fails — drone-assisted inspection, NDT, and AI-powered analysis in one integrated service.
+Know the true condition of your infrastructure before it fails: drone-assisted inspection, NDT, and AI-powered analysis in one integrated service.
 
 [Schedule an Inspection ](https://sentratech.in/contact.html) [Explore Solution](#sol-overview)
 
@@ -22,7 +22,7 @@ Sentra combines drone aerial surveys, non-destructive testing, and AI defect ana
 
 ### From Visual Survey to Risk-Ranked Engineering Report
 
-Traditional bridge inspection is time-consuming, expensive, and often incomplete — particularly for elements above water, in confined spaces, or at height. Sentra's integrated inspection service replaces that model with a technology-driven approach that covers every accessible and inaccessible element. Our inspection teams combine close visual inspection with UAV drone surveys, NDT techniques including ultrasonic testing, radiography, and magnetic particle inspection, and AI-powered defect detection from high-resolution imagery. The result is a complete condition dataset, not a set of inspector notes that vary in quality and completeness. All findings are rated using recognised condition rating frameworks and delivered in digital, searchable reports with photographic evidence, defect mapping on structure drawings, and a prioritised maintenance schedule. Clients receive a report they can act on immediately — and one that stands up to regulatory scrutiny.
+Traditional bridge inspection is time-consuming, expensive, and often incomplete, particularly for elements above water, in confined spaces, or at height. Sentra's integrated inspection service replaces that model with a technology-driven approach that covers every accessible and inaccessible element. Our inspection teams combine close visual inspection with UAV drone surveys, NDT techniques including ultrasonic testing, radiography, and magnetic particle inspection, and AI-powered defect detection from high-resolution imagery. The result is a complete condition dataset, not a set of inspector notes that vary in quality and completeness. All findings are rated using recognised condition rating frameworks and delivered in digital, searchable reports with photographic evidence, defect mapping on structure drawings, and a prioritised maintenance schedule. Clients receive a report they can act on immediately, and one that stands up to regulatory scrutiny.
 
 Systematic close-visual inspection and drone imagery capture cracks, spalling, delamination, efflorescence, and surface damage across all accessible bridge elements with georeferenced defect mapping.
 
@@ -92,13 +92,13 @@ A comprehensive visual and preliminary NDT survey documents current condition, i
 
 ### Drone & Aerial Inspection
 
-High-resolution drone surveys capture inaccessible areas — deck soffits, piers, cables — with photogrammetry generating detailed 3D models and orthomosaic maps for defect identification.
+High-resolution drone surveys capture inaccessible areas: deck soffits, piers, cables, with photogrammetry generating detailed 3D models and orthomosaic maps for defect identification.
 
 ![NDT & Structural Testing](https://sentratech.in/image/solutions/Solutions%20Stages/bridge-inspection/stage%203.webp)
 
 03 Step Three
 
-### Cracks and Fatigue Analysis — Structural Testing
+### Cracks and Fatigue Analysis: Structural Testing
 
 Targeted NDT (ultrasonics, ground-penetrating radar, impact-echo, half-cell potential) is deployed on identified defects to characterise sub-surface damage, corrosion, and material degradation.
 
@@ -124,7 +124,7 @@ Inspected elements are ranked by criticality (safety, operational, financial) to
 
 ### Maintenance Planning
 
-Condition data feeds directly into a recommended maintenance and intervention schedule — with cost estimates, urgency classification, and inspection interval recommendations for each element.
+Condition data feeds directly into a recommended maintenance and intervention schedule, with cost estimates, urgency classification, and inspection interval recommendations for each element.
 
 01 / 06
 
@@ -132,7 +132,7 @@ Showcase
 
 ## See Our Solutions in Action
 
-Real deployments, real impact — from field instrumentation to command centre dashboards.
+Real deployments, real impact, from field instrumentation to command centre dashboards.
 
 ![Drone-based bridge inspection with high-resolution imaging](https://sentratech.in/image/solutions/showcase/bridge%20inspection/Drone-based%20bridge%20inspection%20with%20high-resolution%20imaging.webp)
 
@@ -162,15 +162,15 @@ Drone inspection and NDT uncover sub-surface defects, hidden corrosion, and dela
 
 Reduce Inspection Time with Drones
 
-UAV surveys complete in hours what previously required lane closures, elevated platforms, and multi-day access arrangements — reducing inspection costs and disruption to traffic.
+UAV surveys complete in hours what previously required lane closures, elevated platforms, and multi-day access arrangements by reducing inspection costs and disruption to traffic.
 
 Prioritise Maintenance Spend
 
-Risk-ranked condition reports enable bridge owners to direct limited maintenance budgets to the defects that matter most — avoiding both under-investment in critical repairs and over-investment in low-risk elements.
+Risk-ranked condition reports enable bridge owners to direct limited maintenance budgets to the defects that matter most by avoiding both under-investment in critical repairs and over-investment in low-risk elements.
 
 Compliance-Ready Reports
 
-Inspection reports are structured to meet the requirements of Indian Railways, NHAI, and municipal bridge inspection standards — ready for regulatory submission without additional re-formatting.
+Inspection reports are structured to meet the requirements of Indian Railways, NHAI, and municipal bridge inspection standards: ready for regulatory submission without additional re-formatting.
 
 Avoid Emergency Closures
 
@@ -192,7 +192,7 @@ Poor condition knowledge is the root cause of most bridge maintenance failures. 
 
 Undetected Sub-Surface Defects
 
-Internal corrosion of reinforcement, voided concrete, and delaminated deck surfaces are invisible to standard visual inspection — and can lead to sudden element failures with no visible warning.
+Internal corrosion of reinforcement, voided concrete, and delaminated deck surfaces are invisible to standard visual inspection, and can lead to sudden element failures with no visible warning.
 
 Overestimated Load Ratings
 
@@ -256,13 +256,13 @@ Our inspection team comprises chartered structural engineers and certified NDT t
 
 Integrated NDT Capability
 
-Rather than outsourcing NDT, our in-house team executes over 10 NDT techniques on the same site visit — reducing mobilisation costs and ensuring consistent data quality.
+Rather than outsourcing NDT, our in-house team executes over 10 NDT techniques on the same site visit by reducing mobilisation costs and ensuring consistent data quality.
 
 04
 
 Digital Report Delivery
 
-Reports are delivered as structured digital documents with searchable defect databases, geolocated imagery, and interactive condition maps — not scanned PDF files of handwritten notes.
+Reports are delivered as structured digital documents with searchable defect databases, geolocated imagery, and interactive condition maps, not scanned PDF files of handwritten notes.
 
 Case Studies
 
@@ -276,7 +276,7 @@ See how our bridge inspection and condition assessment services deliver measurab
 
 AI & Drones Railways
 
-#### BridgePulse — AI and Drone Technology for Bridge Health Monitoring
+#### BridgePulse: AI and Drone Technology for Bridge Health Monitoring
 
 Read Case Study
 
@@ -338,7 +338,7 @@ See how our bridge inspection and condition assessment services deliver measurab
 
 AI & Drones Railways
 
-#### BridgePulse — AI and Drone Technology for Bridge Health Monitoring
+#### BridgePulse: AI and Drone Technology for Bridge Health Monitoring
 
 Read Case Study
 
@@ -392,7 +392,7 @@ FAQ
 
 ## Frequently Asked Questions
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
@@ -400,7 +400,7 @@ Inspection duration depends on bridge size, access requirements, and the scope o
 
 ##
 
-Drone-based inspection often requires minimal or no lane closures. Close-visual inspection of deck elements and bearings may require traffic management measures. We work with your operations team to plan inspection access that minimises disruption — including night-time working windows for rail bridges and lane-by-lane closures for highway structures. Our goal is always to complete the inspection with the least possible operational impact.
+Drone-based inspection often requires minimal or no lane closures. Close-visual inspection of deck elements and bearings may require traffic management measures. We work with your operations team to plan inspection access that minimises disruption, including night-time working windows for rail bridges and lane-by-lane closures for highway structures. Our goal is always to complete the inspection with the least possible operational impact.
 
 ##
 
@@ -408,7 +408,7 @@ Our standard NDT toolbox for bridge inspection includes: cover depth measurement
 
 ##
 
-Yes. Drone inspection is particularly effective for bridges over water, deep gorges, and high structures where rope access is expensive and risky. For underwater elements — pile caps, pier bases, and scour assessment — we work with partner underwater inspection specialists. For confined spaces, we deploy compact inspection cameras and borescopes. Difficult-access inspection is one of the primary use cases for our drone capability.
+Yes. Drone inspection is particularly effective for bridges over water, deep gorges, and high structures where rope access is expensive and risky. For underwater elements: pile caps, pier bases, and scour assessment; we work with partner underwater inspection specialists. For confined spaces, we deploy compact inspection cameras and borescopes. Difficult-access inspection is one of the primary use cases for our drone capability.
 
 ##
 
@@ -416,7 +416,7 @@ Inspection reports are delivered as structured digital documents (PDF and Excel)
 
 ##
 
-Standard practice for highway bridges is a routine inspection every 2 years and a principal inspection every 6 years, with special inspections triggered by events such as floods, vehicle collisions, or seismic activity. Railway bridges typically follow authority-specific inspection intervals. However, we recommend transitioning to a risk-based inspection approach where inspection frequency is tied to the structure's condition rating, age, traffic loading, and consequence of failure — which can optimise inspection spend across a portfolio.
+Standard practice for highway bridges is a routine inspection every 2 years and a principal inspection every 6 years, with special inspections triggered by events such as floods, vehicle collisions, or seismic activity. Railway bridges typically follow authority-specific inspection intervals. However, we recommend transitioning to a risk-based inspection approach where inspection frequency is tied to the structure's condition rating, age, traffic loading, and consequence of failure, which can optimise inspection spend across a portfolio.
 
 #### Stay Ahead in Smart Monitoring
 

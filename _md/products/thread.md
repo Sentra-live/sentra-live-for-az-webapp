@@ -1,4 +1,4 @@
-# Thread X3 — Broadband Communications Node | Sentra
+# Thread X3: Broadband Communications Node | Sentra
 
 > Thread X3 broadband 4G/LTE node for high-throughput sensor networks. 3 input channels, mesh networking, 128 sensors via MUX, integrated SIM and solar power.
 
@@ -6,9 +6,9 @@ Source: https://sentratech.in/products/thread.html
 
 Thread X3
 
-## Thread X3 — Broadband Communications Node
+## Thread X3: Broadband Communications Node
 
-High-performance broadband node for demanding monitoring environments. 4G/LTE connectivity, mesh networking, 3 versatile input channels and local event processing — connecting data-intensive sensors to your cloud or SCADA platform.
+High-performance broadband node for demanding monitoring environments. 4G/LTE connectivity, mesh networking, 3 versatile input channels and local event processing by connecting data-intensive sensors to your cloud or SCADA platform.
 
 [Explore Products](#th-products) [Get a Quote](https://sentratech.in/contact.html)
 
@@ -58,11 +58,11 @@ Direct solar panel connection
 
 **Reliable 4G/LTE Connectivity**
 
-Integrated SIM works on 600+ cellular networks across 190 countries — no provisioning or carrier setup required.
+Integrated SIM works on 600+ cellular networks across 190 countries: no provisioning or carrier setup required.
 
 **Mesh Networking Intelligence**
 
-LPWA wireless mesh with automatic network role detection — functions as Gateway, Repeater or Endpoint as needed.
+LPWA wireless mesh with automatic network role detection: functions as Gateway, Repeater or Endpoint as needed.
 
 **Rugged Industrial Design**
 
@@ -80,11 +80,11 @@ Broadband communications backbone for data-intensive monitoring projects requiri
 
 #### Integrated 4G/LTE Modem
 
-Global SIM card pre-provisioned for 600+ cellular networks across 190 countries. No carrier setup or physical SIM provisioning required — simply power on and connect.
+Global SIM card pre-provisioned for 600+ cellular networks across 190 countries. No carrier setup or physical SIM provisioning required: simply power on and connect.
 
 #### LPWA Wireless Mesh
 
-Automatic network role detection using MQTT-SN standard. Functions as Gateway, Repeater or Endpoint — self-organising mesh for robust multi-node deployments.
+Automatic network role detection using MQTT-SN standard. Functions as Gateway, Repeater or Endpoint: self-organising mesh for robust multi-node deployments.
 
 #### 3 Versatile Input Channels
 
@@ -100,7 +100,7 @@ Data secured with TLS 1.2 encryption over cellular, Ethernet or mesh networks. S
 
 #### Zero-Touch Configuration
 
-Configuration via cloud platform with no on-site setup required. Remote management, firmware updates and diagnostics — deploy and manage at scale.
+Configuration via cloud platform with no on-site setup required. Remote management, firmware updates and diagnostics; deploy and manage at scale.
 
 Applications
 
@@ -114,7 +114,7 @@ High-bandwidth video transmission from remote cameras for visual asset inspectio
 
 ##### Total Station Connectivity
 
-Connect robotic total stations for automated deformation monitoring — high-speed data transfer from optical survey instruments without cable runs.
+Connect robotic total stations for automated deformation monitoring: high-speed data transfer from optical survey instruments without cable runs.
 
 ##### Rail & Transport Corridors
 
@@ -122,7 +122,7 @@ Temporary or permanent broadband nodes along rail corridors for track geometry, 
 
 ##### Large Construction Sites
 
-Central data aggregation from multiple sensor types — total stations, weather stations, strain gauges and cameras — all connected through a single Thread X3 node.
+Central data aggregation from multiple sensor types: total stations, weather stations, strain gauges and cameras, all connected through a single Thread X3 node.
 
 ##### Hydrological Monitoring
 
@@ -140,7 +140,7 @@ Thread X3 Specifications |
 
 **Cellular:** 4G/LTE global SIM **Channels:** 3 **Max Sensors:** 128 via MUX | **Battery:** 3-day backup **Temp:** −40°C to +60°C
 
-Cellular | Integrated SIM card — globally compliant on 600+ cellular networks across 190 countries |
+Cellular | Integrated SIM card: globally compliant on 600+ cellular networks across 190 countries |
 
 Ethernet | 10/100 Ethernet interface with end-to-end encrypted communication secured by TLS 1.2 |
 
@@ -156,7 +156,7 @@ Input Voltage | Nominal 24 VDC, range 15-26 VDC |
 
 Power Consumption | Up to 2500mA (Charge) • 200mA RMS (Standard) • 20mA RMS (Low power) @24VDC |
 
-Battery | Internal 12.8V 9.9AH (126.72Wh) LiFePO4 — ~3-day backup |
+Battery | Internal 12.8V 9.9AH (126.72Wh) LiFePO4: ~3-day backup |
 
 Solar Panel | Max Peak Power (Pmax): 160W • Max Voc: 22.9V • Direct solar connection |
 
@@ -172,13 +172,13 @@ Complete specs, diagrams, and compatibility info
 
 ### Ready to Connect Broadband Sensors?
 
-Talk to our IoT specialists about deploying Thread X3 for your data-intensive monitoring project — cameras, total stations, weather stations or large sensor arrays. Fast deployment, reliable connectivity.
+Talk to our IoT specialists about deploying Thread X3 for your data-intensive monitoring project, including cameras, total stations, weather stations or large sensor arrays. Fast deployment, reliable connectivity.
 
 Frequently Asked Questions
 
 ## Got Questions About the Thread X3?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
@@ -190,16 +190,16 @@ Data is sent via 4G/LTE, Ethernet or mesh network with end-to-end encryption (TL
 
 ##
 
-Yes — it includes an internal 12.8V 9.9AH LiFePO4 battery with ~3-day backup. It also supports direct solar panel connection (160W max) for extended remote deployments with zero mains power.
+Yes; it includes an internal 12.8V 9.9AH LiFePO4 battery with ~3-day backup. It also supports direct solar panel connection (160W max) for extended remote deployments with zero mains power.
 
 ##
 
-Yes — it can relay or trigger alerts autonomously even if the network is temporarily unavailable. Each device port can output 12V that can be toggled via API integration, alert trigger or recorded flow.
+Yes; it can relay or trigger alerts autonomously even if the network is temporarily unavailable. Each device port can output 12V that can be toggled via API integration, alert trigger or recorded flow.
 
 ##
 
-Configuration is simplified via the Sensemetrics cloud platform — no on-site setup required. Remote management, firmware updates and diagnostics are available for fleet-wide deployments.
+Configuration is simplified via the Sensemetrics cloud platform: no on-site setup required. Remote management, firmware updates and diagnostics are available for fleet-wide deployments.
 
 ##
 
-Ideal for industrial, construction and remote monitoring sites with high-bandwidth sensor requirements — mines, large construction projects, rail corridors, hydrological stations and anywhere cameras or total stations are part of the monitoring system.
+Ideal for industrial, construction and remote monitoring sites with high-bandwidth sensor requirements: mines, large construction projects, rail corridors, hydrological stations and anywhere cameras or total stations are part of the monitoring system.

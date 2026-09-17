@@ -46,7 +46,7 @@ Indian Railways
 
 Bridge Engineering Division
 
-Sentra's comprehensive bridge monitoring solutions — SHM, fatigue life assessment, and BridgePulse AI — have given us unprecedented visibility into our critical rail bridges, transforming our maintenance strategy with real-time data and predictive alerts.
+Sentra's comprehensive bridge monitoring solutions: SHM, fatigue life assessment, and BridgePulse AI: have given us unprecedented visibility into our critical rail bridges, transforming our maintenance strategy with real-time data and predictive alerts.
 
 ![Amaravathi CRDA](https://sentratech.in/image/about/partner_1.webp)
 
@@ -96,6 +96,6 @@ Get exclusive insights, case studies, and IoT trends delivered straight to your 
 
 Sentra's smart monitoring platform gave us real-time visibility into structural performance, helping us prevent failures and optimize maintenance decisions.
 
-— Project Director, Infrastructure & Smart Cities
+: Project Director, Infrastructure & Smart Cities
 
 [ Talk to Our Experts ](https://sentratech.in/contact.html)

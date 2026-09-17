@@ -1,16 +1,16 @@
-# Lixel L2 Pro — Handheld SLAM LiDAR Scanner | Sentra × XGRIDS
+# Lixel L2 Pro: Handheld SLAM LiDAR Scanner | Sentra × XGRIDS
 
-> Lixel L2 Pro by XGRIDS — handheld SLAM LiDAR scanner with dual 48MP panoramic camera, up to 640,000 pts/s and 300m range. Available in India via Sentra.
+> Lixel L2 Pro by XGRIDS: handheld SLAM LiDAR scanner with dual 48MP panoramic camera, up to 640,000 pts/s and 300m range. Available in India via Sentra.
 
 Source: https://sentratech.in/products/lixel-l2-pro.html
 
-Official XGRIDS Reseller — India
+Official XGRIDS Reseller: India
 
 Lixel L2 Pro
 
-## Lixel L2 Pro — Precision Redefined
+## Lixel L2 Pro: Precision Redefined
 
-The Lixel L2 Pro pairs a rotating LiDAR scanner with a dual 48MP panoramic camera and multi-SLAM technology, capturing up to 640,000 points per second at ranges up to 300m — built for large-scale infrastructure, topography and corridor mapping.
+The Lixel L2 Pro pairs a rotating LiDAR scanner with a dual 48MP panoramic camera and multi-SLAM technology, capturing up to 640,000 points per second at ranges up to 300m, built for large-scale infrastructure, topography and corridor mapping.
 
 [See the Scanner](#ps-gallery) [Get a Quote](https://sentratech.in/contact.html?enquiry=1&amp;product=Lixel%20L2%20Pro)
 
@@ -36,7 +36,7 @@ Overview
 
 ## Survey-Grade Mapping at Scale
 
-The Lixel L2 Pro is available in 16-channel (320,000 pts/s, 120m range) and 32-channel (640,000 pts/s, 120m or 300m range) configurations. Point densities reach up to 1 million points per square metre at 1mm spacing, with absolute accuracy of 3cm — even with RTK signal disconnected for trajectories under 100m.
+The Lixel L2 Pro is available in 16-channel (320,000 pts/s, 120m range) and 32-channel (640,000 pts/s, 120m or 300m range) configurations. Point densities reach up to 1 million points per square metre at 1mm spacing, with absolute accuracy of 3cm, even with RTK signal disconnected for trajectories under 100m.
 
 Housed in an IP54 industrial aluminium body with a 1TB built-in SSD, the L2 Pro is engineered for demanding infrastructure, topography and construction surveying. The LixelGo app enables one-screen, one-click operation in the field, while LixelStudio 3.0 handles full point-cloud registration and export on the desktop.
 
@@ -84,7 +84,7 @@ Integration
 
 #### Dual 48MP Panoramic Vision
 
-High-resolution stereo cameras deliver photoreal colourisation — no external cameras needed.
+High-resolution stereo cameras deliver photoreal colourisation, with no external cameras needed.
 
 #### High-Precision 6DOF IMU
 
@@ -92,7 +92,7 @@ Six-degree-of-freedom inertial measurement unit for precise orientation and moti
 
 #### Multi-SLAM Joint Optimization
 
-LiDAR, visual and inertial SLAM fused and optimized together — maximizing performance in every environment.
+LiDAR, visual and inertial SLAM fused and optimized together: maximizing performance in every environment.
 
 See It In Action
 
@@ -100,7 +100,7 @@ See It In Action
 
 ### True SLAM with Real-Time Output
 
-L2 Pro delivers real-time point cloud data that rivals the accuracy of L2's post-processing, with no waiting—instantly ready for use.
+L2 Pro delivers real-time point cloud data that rivals the accuracy of L2's post-processing, with no waiting: instantly ready for use.
 
 Accuracy Comparison
 
@@ -122,7 +122,7 @@ Data Quality
 
 ## Real-Time Data with Absolute Coordinates
 
-The LixelUpSample™ algorithm generates photo-quality colour point clouds — dense, detailed, and survey-ready in real time.
+The LixelUpSample™ algorithm generates photo-quality colour point clouds: dense, detailed, and survey-ready in real time.
 
 1M/m²
 
@@ -134,7 +134,7 @@ The LixelUpSample™ algorithm generates photo-quality colour point clouds — d
 
 ##### Point Cloud Thickness
 
-Ultra-thin point clouds for more accurate mapping and line drawing — within 10m of the walking path.5
+Ultra-thin point clouds for more accurate mapping and line drawing, within 10m of the walking path.5
 
 Photo-Quality
 
@@ -162,7 +162,7 @@ Workflow
 
 ##### Precision Verification Report
 
-Generate accuracy verification reports directly from the scan — document quality assurance for every project.
+Generate accuracy verification reports directly from the scan: document quality assurance for every project.
 
 ##### Direct Phone Connection
 
@@ -170,7 +170,7 @@ Connect your smartphone via LixelGo for live preview, one-click operation and re
 
 ##### One-Click GCP Marking
 
-Streamlined ground control point marking process — maximize usability and flexibility in the field.
+Streamlined ground control point marking process: maximize usability and flexibility in the field.
 
 Core Capabilities
 
@@ -178,7 +178,7 @@ Core Capabilities
 
 #### Rotating LiDAR Scanner
 
-16 or 32-channel rotating LiDAR delivers up to 640,000 points per second — with dual range options covering short-range sites or long corridor projects.
+16 or 32-channel rotating LiDAR delivers up to 640,000 points per second, with dual range options covering short-range sites or long corridor projects.
 
 640,000 pts/s 120m / 300m range 16 / 32 channels
 
@@ -200,13 +200,13 @@ Ample onboard storage for full-day survey sessions without media swaps.
 
 #### LixelGo One-Screen Operation
 
-One-click field operation via the LixelGo mobile app — no separate controller needed.
+One-click field operation via the LixelGo mobile app: no separate controller needed.
 
 Live point-cloud view One-click record
 
 #### LixelStudio 3.0 Processing
 
-Full point-cloud registration, classification and export — straight to your CAD or BIM workflow.
+Full point-cloud registration, classification and export: straight to your CAD or BIM workflow.
 
 LAS LAZ E57 PLY 3D Gaussian Splat
 
@@ -276,7 +276,7 @@ Integrated
 
 ##### RTK Module
 
-Built-in RTK for centimetre-level absolute positioning — RTK and PPK supported.
+Built-in RTK for centimetre-level absolute positioning: RTK and PPK supported.
 
 ![Lixel L2 Pro phone mount live preview](https://sentratech.in/image/products/scanners/lixel-l2-pro-phone-mount.webp)
 
@@ -288,7 +288,7 @@ Securely attach your smartphone for live LixelGo app monitoring during scan sess
 
 ##### Supporting Harness
 
-Ergonomic harness for extended field sessions — distributes weight for all-day comfort.
+Ergonomic harness for extended field sessions: distributes weight for all-day comfort.
 
 ![Lixel L2 Pro drone mount aerial scanning](https://sentratech.in/image/products/scanners/lixel-l2-pro-drone-mount.webp)
 
@@ -296,7 +296,7 @@ Specs Available
 
 ##### Drone Mount
 
-Aerial scanning capability — mount the L2 Pro on compatible drone platforms for large-area capture.
+Aerial scanning capability: mount the L2 Pro on compatible drone platforms for large-area capture.
 
 ![Lixel L2 Pro vehicle mount mobile mapping](https://sentratech.in/image/products/scanners/lixel-l2-pro-vehicle-mount.webp)
 
@@ -304,19 +304,19 @@ Specs Available
 
 ##### Vehicle Mount
 
-Vehicle-based mobile mapping — cover long corridors and road networks efficiently.
+Vehicle-based mobile mapping: cover long corridors and road networks efficiently.
 
 1 RTK disconnection <100m. 2 RTK disconnection <100m. 3 Distance between two points is less than 100m. 4 WGS84 and CGCS2000 supported. 5 Point cloud thickness within 10m of the walking path. 6 RTK disconnection <100m.
 
 ### Ready to Deploy the Lixel L2 Pro?
 
-Talk to Sentra's reality capture team about pricing, demos and training for the Lixel L2 Pro — official XGRIDS reseller in India.
+Talk to Sentra's reality capture team about pricing, demos and training for the Lixel L2 Pro: official XGRIDS reseller in India.
 
 Frequently Asked Questions
 
 ## Got Questions About the Lixel L2 Pro?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html?enquiry=1&amp;product=Lixel%20L2%20Pro) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html?enquiry=1&amp;product=Lixel%20L2%20Pro). We're happy to help.
 
 ##
 
@@ -324,7 +324,7 @@ The 16-channel captures 320,000 points/sec with a 120m range. The 32-channel dou
 
 ##
 
-No — the L2 Pro maintains 3cm absolute accuracy even with RTK disconnected, for trajectories under 100m, thanks to its multi-SLAM fusion.
+No: the L2 Pro maintains 3cm absolute accuracy even with RTK disconnected, for trajectories under 100m, thanks to its multi-SLAM fusion.
 
 ##
 

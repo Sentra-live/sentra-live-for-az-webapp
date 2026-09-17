@@ -7,7 +7,7 @@ Source: https://sentratech.in/blogs/what-is-a-strain-gauge-types-working-princip
 
 A strain gauge is one of the oldest and still most widely used sensing technologies in engineering, turning a material's microscopic deformation into a precise electrical signal. Here's how they work, the main types available, and where they fit in a modern structural monitoring system.
 
-A strain gauge is a sensor that measures **strain** (the tiny amount a material stretches, compresses or deforms under load) by detecting a proportional change in electrical resistance. Bond one to a steel girder, a rebar cage or a machine housing, and it converts an invisible, microscopic deformation into a clean, measurable electrical signal.
+A strain gauge is a sensor that measures **strain** (the tiny amount a material stretches, compresses or deforms under load), detecting a proportional change in electrical resistance. Bond one to a steel girder, a rebar cage or a machine housing, and it converts an invisible, microscopic deformation into a clean, measurable electrical signal.
 
 Strain itself is unitless: it's the ratio of the change in length to the original length ( L / L), typically expressed in microstrain ( ε), millionths of a metre per metre. Because strain is directly related to stress through a material's modulus of elasticity, a strain gauge is effectively a window into how hard a structural member is actually working.
 

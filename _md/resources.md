@@ -1,6 +1,6 @@
-# Resources Hub — Blogs, Case Studies & Articles | Sentra
+# Resources Hub: Blogs, Case Studies & Articles | Sentra
 
-> One place for everything Sentra publishes — blogs, case studies and articles on IoT, structural health monitoring and predictive maintenance.
+> One place for everything Sentra publishes: blogs, case studies and articles on IoT, structural health monitoring and predictive maintenance.
 
 Source: https://sentratech.in/resources.html
 

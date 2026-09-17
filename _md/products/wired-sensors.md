@@ -1,4 +1,4 @@
-# Wired Sensors — Precision Monitoring for Structural Health | Sentra
+# Wired Sensors: Precision Monitoring for Structural Health | Sentra
 
 > High-precision accelerometers and strain gauges engineered for accurate, reliable structural health monitoring in challenging infrastructure environments.
 
@@ -8,7 +8,7 @@ Wired Sensors
 
 ## Precision Wired Sensors for Structural Health Monitoring
 
-High-precision accelerometers and strain gauges engineered for accurate, continuous monitoring of bridges, buildings, tunnels and industrial infrastructure — built for the harshest field conditions.
+High-precision accelerometers and strain gauges engineered for accurate, continuous monitoring of bridges, buildings, tunnels and industrial infrastructure, built for the harshest field conditions.
 
 [Explore Products](#carousel-slider) [Get a Quote](https://sentratech.in/contact.html)
 
@@ -56,11 +56,11 @@ Overview
 
 ## Benefits Built for Accuracy
 
-From bridge decks under live traffic loads to industrial machinery experiencing high-frequency vibration — Sentra wired sensors deliver the data precision engineers rely on for confident structural health decisions.
+From bridge decks under live traffic loads to industrial machinery experiencing high-frequency vibration: Sentra wired sensors deliver the data precision engineers rely on for confident structural health decisions.
 
 ##### High-Precision Detection
 
-Capture minute vibrations and micro-strain with exceptional accuracy across a wide dynamic range — delivering comprehensive structural health assessment data.
+Capture minute vibrations and micro-strain with exceptional accuracy across a wide dynamic range by delivering comprehensive structural health assessment data.
 
 ##### Rugged & Reliable
 
@@ -68,7 +68,7 @@ IP67-rated weatherproof enclosures survive full immersion, extreme temperatures 
 
 ##### Predictive Analytics
 
-AI-powered cloud analytics identify patterns and trends, enabling proactive maintenance before failures occur — reducing lifecycle costs significantly.
+AI-powered cloud analytics identify patterns and trends, enabling proactive maintenance before failures occur by reducing lifecycle costs significantly.
 
 ##### Easy Integration
 
@@ -82,11 +82,11 @@ Enterprise-grade hardware and software designed for mission-critical structural 
 
 #### 3-Axis MEMS Accelerometer
 
-Captures acceleration across all three axes simultaneously with a ±16g range — ideal for vibration, seismic response and modal analysis on any structure type.
+Captures acceleration across all three axes simultaneously with a ±16g range, ideal for vibration, seismic response and modal analysis on any structure type.
 
 #### Strain Gauge Technology
 
-Spot-weldable and 4100-series strain gauges for direct surface bonding on steel and concrete — measuring micro-strain under static and dynamic loading conditions.
+Spot-weldable and 4100-series strain gauges for direct surface bonding on steel and concrete: measuring micro-strain under static and dynamic loading conditions.
 
 #### Multi-Protocol Connectivity
 
@@ -98,7 +98,7 @@ Real-time dashboards, historical trend analysis and automated threshold alerts a
 
 #### Real-Time Alerts
 
-Configurable threshold-based alerts via SMS, email and push notifications — instant notification when sensor readings exceed safe operating parameters.
+Configurable threshold-based alerts via SMS, email and push notifications: instant notification when sensor readings exceed safe operating parameters.
 
 #### Long Battery Life
 
@@ -120,7 +120,7 @@ Seismic response monitoring, wind-induced sway and floor vibration measurement i
 
 ##### Tunnels & Metro
 
-Convergence and vibration monitoring in tunnelling operations — real-time data from excavation face through to final lining installation.
+Convergence and vibration monitoring in tunnelling operations: real-time data from excavation face through to final lining installation.
 
 ##### Industrial Machinery
 
@@ -132,7 +132,7 @@ Tower vibration, blade deflection and foundation monitoring on onshore and offsh
 
 ##### Dam & Hydraulic Structures
 
-Seismic event detection and dynamic response monitoring on large dams — complementing static instrumentation with vibration data.
+Seismic event detection and dynamic response monitoring on large dams: complementing static instrumentation with vibration data.
 
 Need the full technical details?
 
@@ -142,13 +142,13 @@ Complete specs, diagrams, and product data sheets
 
 ### Ready to Monitor with Precision?
 
-Talk to our engineering team about the right wired sensor combination for your project — bridges, industrial machinery, tunnels or wind turbines. Calibrated solutions, fast delivery.
+Talk to our engineering team about the right wired sensor combination for your project, including bridges, industrial machinery, tunnels or wind turbines. Calibrated solutions, fast delivery.
 
 Frequently Asked Questions
 
 ## Got Questions About Our Wired Sensors?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 

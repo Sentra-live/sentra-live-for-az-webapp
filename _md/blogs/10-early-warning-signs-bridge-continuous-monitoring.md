@@ -1,6 +1,6 @@
 # 10 Early Warning Signs Your Bridge Needs Continuous Monitoring
 
-> Discover the 10 critical warning signs that indicate your bridge needs continuous monitoring — before small issues become costly structural failures.
+> Discover the 10 critical warning signs that indicate your bridge needs continuous monitoring, before small issues become costly structural failures.
 
 Published: 2026-06-24  
 Source: https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html

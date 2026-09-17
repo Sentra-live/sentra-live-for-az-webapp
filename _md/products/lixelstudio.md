@@ -1,16 +1,16 @@
-# LixelStudio — Point Cloud Processing Workstation | Sentra × XGRIDS
+# LixelStudio: Point Cloud Processing Workstation | Sentra × XGRIDS
 
-> LixelStudio by XGRIDS — one-click processing from raw scan data to production-ready point clouds, with SLAM mapping and BIM/CAD/GIS export, via Sentra.
+> LixelStudio by XGRIDS: one-click processing from raw scan data to production-ready point clouds, with SLAM mapping and BIM/CAD/GIS export, via Sentra.
 
 Source: https://sentratech.in/products/lixelstudio.html
 
-Official XGRIDS Reseller — India
+Official XGRIDS Reseller: India
 
 LixelStudio
 
-## LixelStudio — Point Cloud Processing Workstation
+## LixelStudio: Point Cloud Processing Workstation
 
-LixelStudio turns raw scan data from Lixel K2 and L2 Pro into production-ready, engineering-grade point clouds — one click at a time. Automated SLAM mapping, map fusion, measurement tools and direct export into BIM, CAD and GIS workflows.
+LixelStudio turns raw scan data from Lixel K2 and L2 Pro into production-ready, engineering-grade point clouds: one click at a time. Automated SLAM mapping, map fusion, measurement tools and direct export into BIM, CAD and GIS workflows.
 
 [Explore LixelStudio](#ls-features) [Get a Quote](https://sentratech.in/contact.html?enquiry=1&amp;product=LixelStudio)
 
@@ -34,7 +34,7 @@ Overview
 
 ## Every Dataset, Delivered to Engineering-Grade Standards
 
-LixelStudio is the point cloud processing workstation built for Lixel scanners. It eliminates manual processing bottlenecks, transforming hours of complex workflows into minutes of automated processing — with photorealistic color, engineering-grade levelness and noise removal that preserves structural detail.
+LixelStudio is the point cloud processing workstation built for Lixel scanners. It eliminates manual processing bottlenecks, transforming hours of complex workflows into minutes of automated processing, with photorealistic color, engineering-grade levelness and noise removal that preserves structural detail.
 
 From SLAM mapping and multi-session map fusion to measurement, analysis and BIM/CAD/GIS-ready export, LixelStudio is the single desktop application that carries a scan from raw capture to deliverable.
 
@@ -62,7 +62,7 @@ Automated processing replaces manual, multi-step workflows.
 
 **One workstation, every step**
 
-From SLAM mapping to measurement to export — all in a single app.
+From SLAM mapping to measurement to export, all in a single app.
 
 **Industry-standard output**
 
@@ -76,7 +76,7 @@ Process
 
 ## Automated Data Processing
 
-Eliminate manual processing bottlenecks — transform hours of complex workflows into minutes of automated processing with centimeter-level accuracy.
+Eliminate manual processing bottlenecks: transform hours of complex workflows into minutes of automated processing with centimeter-level accuracy.
 
 ![SLAM Mapping](https://sentratech.in/image/products/software/ls_slam_mapping.webp)
 
@@ -112,7 +112,7 @@ Sectioning tools: horizontal/vertical slicing for floor plans and cross-sections
 
 #### Measurement Suite
 
-Comprehensive tools: point, distance, area and angle measurements — imperial or metric.
+Comprehensive tools: point, distance, area and angle measurements: imperial or metric.
 
 Analyze & Integrate
 
@@ -194,17 +194,17 @@ Slice, align, measure and quality-check the point cloud. Fuse multiple sessions 
 
 #### Export & Deliver
 
-Publish directly into BIM, CAD and GIS pipelines — LAS, E57, RCP and mesh formats, ready for engineering handoff.
+Publish directly into BIM, CAD and GIS pipelines: LAS, E57, RCP and mesh formats, ready for engineering handoff.
 
 ### Ready to Transform Your Point Cloud Workflow?
 
-See how LixelStudio can reduce processing time from hours to minutes while delivering centimeter-level accuracy — talk to Sentra's reality capture team, official XGRIDS reseller in India.
+See how LixelStudio can reduce processing time from hours to minutes while delivering centimeter-level accuracy: talk to Sentra's reality capture team, official XGRIDS reseller in India.
 
 Frequently Asked Questions
 
 ## Got Questions About LixelStudio?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html?enquiry=1&amp;product=LixelStudio) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html?enquiry=1&amp;product=LixelStudio). We're happy to help.
 
 ##
 
@@ -212,12 +212,12 @@ LixelStudio processes raw scan data from Lixel K2 and Lixel L2 Pro, and supports
 
 ##
 
-LAS and E57 point clouds, RCP for AutoCAD Recap compatibility, and mesh generation in.obj and.osgb — ready for BIM, CAD and GIS platforms.
+LAS and E57 point clouds, RCP for AutoCAD Recap compatibility, and mesh generation in.obj and.osgb: ready for BIM, CAD and GIS platforms.
 
 ##
 
-Yes — Map Fusion combines multiple scanning sessions using RTK, GCP or connection points, enabling large-area, multi-session mapping.
+Yes: Map Fusion combines multiple scanning sessions using RTK, GCP or connection points, enabling large-area, multi-session mapping.
 
 ##
 
-Yes — Sentra is the official XGRIDS reseller in India and provides LixelStudio licensing, demos and onboarding support alongside Lixel K2 and L2 Pro hardware.
+Yes: Sentra is the official XGRIDS reseller in India and provides LixelStudio licensing, demos and onboarding support alongside Lixel K2 and L2 Pro hardware.

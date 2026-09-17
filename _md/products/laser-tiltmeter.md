@@ -1,4 +1,4 @@
-# Laser Tiltmeter — Distance & Tilt Monitoring | Sentra
+# Laser Tiltmeter: Distance & Tilt Monitoring | Sentra
 
 > 2-in-1 Laser Distance Meter and 3-axis tiltmeter for sub-millimeter convergence monitoring. IP68 rated for tunnel, structural, and geotechnical deployments.
 
@@ -34,7 +34,7 @@ Overview
 
 ## Non-Intrusive Convergence Monitoring with Laser Precision
 
-The Laser Tiltmeter combines a visible laser distance meter (class II, 650 nm) with a 3-axis MEMS accelerometer in a single rugged enclosure. It provides non-intrusive, remote monitoring of inclinations, movements, and differential settlements of slopes or infrastructure — ideal for tunneling projects where it can be relocated after stabilization.
+The Laser Tiltmeter combines a visible laser distance meter (class II, 650 nm) with a 3-axis MEMS accelerometer in a single rugged enclosure. It provides non-intrusive, remote monitoring of inclinations, movements, and differential settlements of slopes or infrastructure, ideal for tunneling projects where it can be relocated after stabilization.
 
 The device stores up to 100,000 readings including time, distance, and 3-axis tilt measurements. Data is transmitted via LoRa radio communications to the CMT platform for real-time visualization and analysis.
 
@@ -84,7 +84,7 @@ Powered by 2 × 3.6V C-size replaceable batteries. Up to 14.3 years of unattende
 
 #### IP68 Rated & Rugged
 
-Industrial-grade IP68 enclosure for harsh environments. Operating range from −20°C to +60°C — suitable for tunnel and outdoor deployments.
+Industrial-grade IP68 enclosure for harsh environments. Operating range from −20°C to +60°C: suitable for tunnel and outdoor deployments.
 
 #### Dual-Sensor Fusion
 
@@ -216,11 +216,11 @@ Frequently Asked Questions
 
 ## Got Questions About the Laser Tiltmeter?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-It measures angular changes and distance displacement in structures, tunnels, slopes, and rails — detecting both gradual shifts and sudden events that could signal instability or deformation. Combines laser distance with 3-axis tilt sensing.
+It measures angular changes and distance displacement in structures, tunnels, slopes, and rails, detecting both gradual shifts and sudden events that could signal instability or deformation. Combines laser distance with 3-axis tilt sensing.
 
 ##
 
@@ -236,7 +236,7 @@ Battery life depends on reporting period and distance measurement. With 1-hour r
 
 ##
 
-Yes — data is provided via MQTT, REST API, or FTP, allowing seamless integration into SCADA, IoT dashboards, or asset management systems. Compatible with CMT Edge and CMT Cloud platforms.
+Yes: data is provided via MQTT, REST API, or FTP, allowing seamless integration into SCADA, IoT dashboards, or asset management systems. Compatible with CMT Edge and CMT Cloud platforms.
 
 ##
 

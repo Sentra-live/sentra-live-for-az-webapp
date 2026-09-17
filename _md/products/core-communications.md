@@ -1,6 +1,6 @@
-# Core Communications — IoT Connectivity for Monitoring Systems | Sentra
+# Core Communications: IoT Connectivity for Monitoring Systems | Sentra
 
-> Deploy robust, secure IoT networks with Sentra's Core Communications — narrowband & broadband gateways, repeaters, and cloud connectivity for monitoring.
+> Deploy robust, secure IoT networks with Sentra's Core Communications: narrowband & broadband gateways, repeaters, and cloud connectivity for monitoring.
 
 Source: https://sentratech.in/products/core-communications.html
 
@@ -76,11 +76,11 @@ Why Sentra Core Communications
 
 ## Built for Reliable Field Connectivity
 
-From underground mining tunnels to exposed bridge decks — our communications portfolio delivers consistent, secure, and scalable IoT connectivity wherever your monitoring network needs to reach.
+From underground mining tunnels to exposed bridge decks; our communications portfolio delivers consistent, secure, and scalable IoT connectivity wherever your monitoring network needs to reach.
 
 ### Comprehensive Connectivity
 
-Narrowband and broadband gateways covering all IoT connectivity requirements — from low-packet-rate sensors to data-intensive monitoring systems.
+Narrowband and broadband gateways covering all IoT connectivity requirements, from low-packet-rate sensors to data-intensive monitoring systems.
 
 ![Gateway network coverage](https://sentratech.in/image/products/gateway_banner.webp)
 
@@ -92,11 +92,11 @@ Narrowband and broadband gateways covering all IoT connectivity requirements —
 
 ### Unparalleled radio coverage
 
-Narrowband communications reaching up to 15 km in open terrain. Extend coverage further underground or through obstacles using K20 Edge Repeaters — purpose-built for tunnels, mines and dense urban environments.
+Narrowband communications reaching up to 15 km in open terrain. Extend coverage further underground or through obstacles using K20 Edge Repeaters, purpose-built for tunnels, mines and dense urban environments.
 
 ### Minimum Deployment Times
 
-Easy configuration and installation with multiple troubleshooting options — deploy a complete network in hours, not days.
+Easy configuration and installation with multiple troubleshooting options; deploy a complete network in hours, not days.
 
 ### Expert Support
 
@@ -104,11 +104,11 @@ IoT remote monitoring specialists available for deployment assistance, configura
 
 ### Mobile App Support
 
-Step-by-step setup wizard, radio signal coverage testing and data sampling — all via the Sentra mobile app without needing a laptop on site.
+Step-by-step setup wizard, radio signal coverage testing and data sampling, all via the Sentra mobile app without needing a laptop on site.
 
 ### Cloud & Local Configs
 
-Private isolated local deployments or multi-network cloud management — choose the architecture that fits your project's security and compliance needs.
+Private isolated local deployments or multi-network cloud management; choose the architecture that fits your project's security and compliance needs.
 
 Core Capabilities
 
@@ -122,11 +122,11 @@ LoRaWAN communications reaching up to 15 km in open terrain. Ideal for large-sca
 
 #### 4G Broadband Option
 
-Thread X3 provides broadband 4G communications for convenient connect-and-collect operations — perfect for temporary deployments, data-intensive sensors or urban monitoring sites with cellular coverage.
+Thread X3 provides broadband 4G communications for convenient connect-and-collect operations, perfect for temporary deployments, data-intensive sensors or urban monitoring sites with cellular coverage.
 
 #### Underground Repeaters
 
-K20 Edge Repeater extends communication into tunnels, mines and challenging terrain where direct gateway signals cannot penetrate — maintaining full network visibility underground.
+K20 Edge Repeater extends communication into tunnels, mines and challenging terrain where direct gateway signals cannot penetrate by maintaining full network visibility underground.
 
 #### Secure & Compliant
 
@@ -134,11 +134,11 @@ Industry-standard security and data privacy compliance built in. Private isolate
 
 #### High Scalability
 
-A single gateway network reliably supports 1000+ wireless devices simultaneously — from a handful of sensors on a single bridge to city-wide monitoring networks with hundreds of nodes.
+A single gateway network reliably supports 1000+ wireless devices simultaneously, from a handful of sensors on a single bridge to city-wide monitoring networks with hundreds of nodes.
 
 #### Flexible Network Modes
 
-Multiple network configurations support both data-intensive systems and low-packet-rate sensors — one platform adapts to any monitoring requirement without additional hardware.
+Multiple network configurations support both data-intensive systems and low-packet-rate sensors, including one platform adapts to any monitoring requirement without additional hardware.
 
 Applications
 
@@ -152,7 +152,7 @@ Reliable underground and surface communications for slope stability, seismic and
 
 ##### Transport & Bridges
 
-Long-range gateway networks covering road and rail corridors — continuous sensor data from bridge decks, tunnels and retaining structures.
+Long-range gateway networks covering road and rail corridors: continuous sensor data from bridge decks, tunnels and retaining structures.
 
 ##### Construction Sites
 
@@ -160,11 +160,11 @@ Temporary and permanent deployments for settlement, vibration and ground movemen
 
 ##### Geotechnical Slopes
 
-Wireless sensor networks across remote terrain — landslide early warning, slope stability and rainfall monitoring without cellular coverage dependency.
+Wireless sensor networks across remote terrain: landslide early warning, slope stability and rainfall monitoring without cellular coverage dependency.
 
 ##### Dam & Reservoir
 
-Wide-area gateway coverage for large embankment and concrete dam instrumentation networks — piezometers, tiltmeters and GNSS in a single network.
+Wide-area gateway coverage for large embankment and concrete dam instrumentation networks, including piezometers, tiltmeters and GNSS in a single network.
 
 ##### Environmental Monitoring
 
@@ -284,13 +284,13 @@ Bridge & Structures Division
 
 ### Ready to Connect Your Monitoring Network?
 
-Talk to our IoT connectivity specialists about the right gateway and repeater combination for your project — mining, bridges, dams, tunnels or slopes. Robust coverage, fast deployment.
+Talk to our IoT connectivity specialists about the right gateway and repeater combination for your project, including mining, bridges, dams, tunnels or slopes. Robust coverage, fast deployment.
 
 Frequently Asked Questions
 
 ## Got Questions About Core Communications?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
@@ -298,7 +298,7 @@ Narrowband gateways achieve wireless communication ranges of up to 15 km in open
 
 ##
 
-A single Sentra gateway network can support 1000+ wireless edge devices simultaneously. This makes our communications platform ideal for large-scale instrumentation networks — from city-wide bridge monitoring to full dam instrumentation programmes with hundreds of sensors.
+A single Sentra gateway network can support 1000+ wireless edge devices simultaneously. This makes our communications platform ideal for large-scale instrumentation networks, from city-wide bridge monitoring to full dam instrumentation programmes with hundreds of sensors.
 
 ##
 
@@ -306,11 +306,11 @@ Our portfolio covers narrowband LoRaWAN (up to 15 km) and broadband 4G LTE (Thre
 
 ##
 
-Yes. The K20 Edge Repeater is purpose-built to extend network coverage underground — into mining tunnels, metro infrastructure and any environment where direct gateway signals cannot penetrate. Repeater chains can be configured to maintain full connectivity across long underground corridors.
+Yes. The K20 Edge Repeater is purpose-built to extend network coverage underground, into mining tunnels, metro infrastructure and any environment where direct gateway signals cannot penetrate. Repeater chains can be configured to maintain full connectivity across long underground corridors.
 
 ##
 
-Both. The 4G Rugged Gateway Edge supports private, isolated local deployments (CMT Edge) where data stays on-site — ideal for high-security or connectivity-restricted environments. The 4G Rugged Gateway Cloud connects to multi-network cloud management (CMT Cloud) for centralised remote oversight of multiple sites.
+Both. The 4G Rugged Gateway Edge supports private, isolated local deployments (CMT Edge) where data stays on-site, ideal for high-security or connectivity-restricted environments. The 4G Rugged Gateway Cloud connects to multi-network cloud management (CMT Cloud) for centralised remote oversight of multiple sites.
 
 ##
 

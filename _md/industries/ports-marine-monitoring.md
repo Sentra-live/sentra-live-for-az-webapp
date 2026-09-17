@@ -1,4 +1,4 @@
-# Port & Marine Monitoring — Corrosion & Load Tracking | Sentra
+# Port & Marine Monitoring: Corrosion & Load Tracking | Sentra
 
 > Corrosion tracking, jetty tilt and structural load monitoring for quays, wharves and offshore platforms using Sentra's IoT sensors in harsh marine environments.
 
@@ -18,7 +18,7 @@ Monitoring Matters
 
 Ports and marine structures operate in one of the most corrosive environments on earth. Constant exposure to saltwater, wave action, and heavy cargo loads accelerates structural degradation and reduces asset lifespan.
 
-Sentra's IoT monitoring solutions provide continuous insight into the health of jetties, wharves, quay walls, and offshore platforms — tracking corrosion rates, structural tilt, and load distribution to enable data-driven maintenance decisions.
+Sentra's IoT monitoring solutions provide continuous insight into the health of jetties, wharves, quay walls, and offshore platforms, tracking corrosion rates, structural tilt, and load distribution to enable data-driven maintenance decisions.
 
 ## Key Monitoring Parameters
 

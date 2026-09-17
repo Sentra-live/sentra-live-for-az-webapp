@@ -1,14 +1,14 @@
-# K20 Edge Repeater — Network Range Extender | Sentra
+# K20 Edge Repeater: Network Range Extender | Sentra
 
-> K20 Edge Repeater extends LoRaWAN coverage underground and through obstacles. Up to 10km range, 8 hops, IP67 — ideal for tunnels, mines and rough terrain.
+> K20 Edge Repeater extends LoRaWAN coverage underground and through obstacles. Up to 10km range, 8 hops, IP67, ideal for tunnels, mines and rough terrain.
 
 Source: https://sentratech.in/products/repeater.html
 
 Repeater
 
-## K20 Edge Repeater — Extend Your Network Underground
+## K20 Edge Repeater: Extend Your Network Underground
 
-Purpose-built LoRaWAN range extender for tunnels, mines and challenging terrain. Supports up to 8 hops with 150m to 3km per hop — maintaining full network visibility where direct gateway signals cannot penetrate.
+Purpose-built LoRaWAN range extender for tunnels, mines and challenging terrain. Supports up to 8 hops with 150m to 3km per hop by maintaining full network visibility where direct gateway signals cannot penetrate.
 
 [Explore Products](#rp-products) [Get a Quote](https://sentratech.in/contact.html)
 
@@ -44,7 +44,7 @@ Overview
 
 The K20 Edge Repeater strengthens wireless sensor networks by boosting signal reach and maintaining continuous communication between sensors and gateways. It retransmits data from associated nodes to a main gateway using a tree network topology, allowing data to travel across multiple repeaters (up to 8 hops) to extend coverage.
 
-Ideal for challenging terrains, tunnels, mines and extended infrastructure projects — ensuring critical tilt, vibration and GNSS data is transmitted reliably even where direct gateway signals cannot reach.
+Ideal for challenging terrains, tunnels, mines and extended infrastructure projects by ensuring critical tilt, vibration and GNSS data is transmitted reliably even where direct gateway signals cannot reach.
 
 **Tree Network**
 
@@ -88,7 +88,7 @@ Field-proven range extension technology designed for underground and challenging
 
 #### Multi-Hop Range Extension
 
-Tree network topology supports up to 8 hops with 150m to 3km per hop — extending coverage into tunnels, mines and dense urban environments where direct signals cannot reach.
+Tree network topology supports up to 8 hops with 150m to 3km per hop: extending coverage into tunnels, mines and dense urban environments where direct signals cannot reach.
 
 #### High Transmission Reliability
 
@@ -104,7 +104,7 @@ Weatherproof IP67-rated enclosure protects against dust, water immersion and ext
 
 #### Simple PoE Power
 
-Power over Ethernet (PoE) supports both mode A and mode B — a single cable delivers power and data. USB-C also available for local access. Mean consumption just 4.5W.
+Power over Ethernet (PoE) supports both mode A and mode B: a single cable delivers power and data. USB-C also available for local access. Mean consumption just 4.5W.
 
 #### Multi-Band Support
 
@@ -126,7 +126,7 @@ Continuous sensor data from tunnel linings, track geometry and ventilation syste
 
 ##### Large Bridge Networks
 
-Bridge sensors located far from the gateway location can connect through repeaters — ensuring complete coverage across long-span and multi-structure sites.
+Bridge sensors located far from the gateway location can connect through repeaters by ensuring complete coverage across long-span and multi-structure sites.
 
 ##### Remote Terrain
 
@@ -180,17 +180,17 @@ Complete specs, diagrams, and compatibility info
 
 ### Ready to Extend Your Network?
 
-Talk to our IoT connectivity specialists about deploying K20 Edge Repeaters for your project — underground mines, tunnels, bridges or remote monitoring. Robust coverage, fast deployment.
+Talk to our IoT connectivity specialists about deploying K20 Edge Repeaters for your project, including underground mines, tunnels, bridges or remote monitoring. Robust coverage, fast deployment.
 
 Frequently Asked Questions
 
 ## Got Questions About the K20 Edge Repeater?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-It strengthens and extends wireless sensor networks, retransmitting data from associated nodes to a main gateway and enabling multi-hop communication — ensuring data from remote or hard-to-reach sensors reliably reaches gateways.
+It strengthens and extends wireless sensor networks, retransmitting data from associated nodes to a main gateway and enabling multi-hop communication by ensuring data from remote or hard-to-reach sensors reliably reaches gateways.
 
 ##
 
@@ -202,7 +202,7 @@ The maximum distance between hops ranges from 150 m to 3 km, depending on terrai
 
 ##
 
-It is designed for underground mines, metro tunnels, large bridge networks, remote terrain, urban canyons and large construction sites — anywhere direct gateway connectivity is challenging.
+It is designed for underground mines, metro tunnels, large bridge networks, remote terrain, urban canyons and large construction sites, anywhere direct gateway connectivity is challenging.
 
 ##
 
@@ -210,4 +210,4 @@ It supports Power over Ethernet (PoE) both mode A and mode B (802.3af specificat
 
 ##
 
-The K20 Edge Repeater works transparently within existing Worldsensing networks, compatible with both Cloud and Edge gateway deployments. No additional configuration is required — repeaters are automatically detected and managed by the network.
+The K20 Edge Repeater works transparently within existing Worldsensing networks, compatible with both Cloud and Edge gateway deployments. No additional configuration is required: repeaters are automatically detected and managed by the network.

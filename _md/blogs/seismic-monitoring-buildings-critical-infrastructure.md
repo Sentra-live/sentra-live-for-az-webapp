@@ -1,6 +1,6 @@
 # Seismic Monitoring for Buildings and Critical Infrastructure
 
-> Explore seismic monitoring for buildings and critical infrastructure — from accelerometer networks to real-time early warning systems.
+> Explore seismic monitoring for buildings and critical infrastructure, from accelerometer networks to real-time early warning systems.
 
 Published: 2026-06-24  
 Source: https://sentratech.in/blogs/seismic-monitoring-buildings-critical-infrastructure.html
@@ -13,7 +13,7 @@ Seismic events (whether natural earthquakes or induced seismicity from industria
 
 Modern building codes require structures in seismic zones to withstand design-level earthquakes without collapse. However, code compliance alone does not guarantee post-earthquake safety. Factors such as soil-structure interaction, non-structural component damage, and cumulative effects of aftershocks can compromise safety even when the primary structure appears intact.
 
-Seismic monitoring addresses this gap by providing:
+Seismic monitoring addresses this gap, providing:
 
 - **Real-time ground motion recording:** Capturing acceleration, velocity, and displacement at multiple points within the structure.
 

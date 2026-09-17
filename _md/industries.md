@@ -1,4 +1,4 @@
-# Industries — SENTRA — Smart Structural Monitoring
+# Industries: SENTRA: Smart Structural Monitoring
 
 > Sentra delivers IoT structural monitoring solutions across Railways, Bridges, Buildings, Dams, Mining, Ports, Construction, and Industrial sectors.
 
@@ -179,7 +179,7 @@ Fatigue Analysis
 
 Asset Monitoring & Fatigue Life Assessment
 
-Extending the service life of structures with IoT-powered monitoring — quantifying fatigue damage accumulation in real time.
+Extending the service life of structures with IoT-powered monitoring by quantifying fatigue damage accumulation in real time.
 
 Read Blog
 
@@ -203,9 +203,9 @@ Read Blog
 
 Bridge Safety
 
-BridgePulse — AI & Drone Technology for Bridge Health Monitoring
+BridgePulse: AI & Drone Technology for Bridge Health Monitoring
 
-Impact of IoT sensors and regularized monitoring devices on bridge health programs — a landmark deployment combining AI analytics with edge sensing hardware.
+Impact of IoT sensors and regularized monitoring devices on bridge health programs: a landmark deployment combining AI analytics with edge sensing hardware.
 
 Read Case Study
 
@@ -217,7 +217,7 @@ Railways
 
 IoT Bridge Monitoring & Sensor Installation on Railway Bridges
 
-24×7 monitoring, instant alerts, and data-driven decisions for safer rail networks — a full sensor deployment spanning multiple railway bridge spans.
+24×7 monitoring, instant alerts, and data-driven decisions for safer rail networks, including a full sensor deployment spanning multiple railway bridge spans.
 
 Read Case Study
 

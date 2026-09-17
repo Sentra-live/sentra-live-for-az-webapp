@@ -1,6 +1,6 @@
-# Digital Data Logger — RS485 ModBus Wireless Data Acquisition | Sentra
+# Digital Data Logger: RS485 ModBus Wireless Data Acquisition | Sentra
 
-> Digital Data Logger — wirelessly stream data from digital sensors using ModBus RTU. Connect IPIs, MPBXs, weather stations and more. Up to 15 km range, IP68.
+> Digital Data Logger: wirelessly stream data from digital sensors using ModBus RTU. Connect IPIs, MPBXs, weather stations and more. Up to 15 km range, IP68.
 
 Source: https://sentratech.in/products/digital-data-logger.html
 
@@ -8,7 +8,7 @@ Digital Data Logger
 
 ## Digital Data Logger
 
-The best option to stream data wirelessly from digital sensors using ModBus RTU communications. Connect in-place inclinometers (IPIs), multipoint borehole extensometers (MPBX), weather stations and more — with unrivalled autonomy and long range.
+The best option to stream data wirelessly from digital sensors using ModBus RTU communications. Connect in-place inclinometers (IPIs), multipoint borehole extensometers (MPBX), weather stations and more, with unrivalled autonomy and long range.
 
 [ Explore Products ](#dl-products) [ Get a Quote ](https://sentratech.in/contact.html)
 
@@ -34,7 +34,7 @@ Overview
 
 ## Wireless Data Acquisition for Digital Sensors
 
-The Digital Data Logger is a robust, low-power, long-battery life device that connects to a wide catalog of digital sensors, streaming data wirelessly to your information systems. It leverages intelligent edge processing to automatically collect, process, and transmit sensor data — eliminating manual data retrieval even in remote or isolated locations.
+The Digital Data Logger is a robust, low-power, long-battery life device that connects to a wide catalog of digital sensors, streaming data wirelessly to your information systems. It leverages intelligent edge processing to automatically collect, process, and transmit sensor data by eliminating manual data retrieval even in remote or isolated locations.
 
 Compatible with ModBus RTU and other proprietary protocols from leading geotechnical, structural, environmental and process sensor manufacturers. Suitable for connecting chains of sensors such as in-place inclinometers (IPIs) and multipoint borehole extensometers (MPBX).
 
@@ -92,7 +92,7 @@ Industrial-grade IP68 enclosure for harsh environments. Operating range from −
 
 #### Mobile App Configuration
 
-Wireless Bluetooth setup via Worldsensing App. Field sampling, signal coverage testing and diagnostics — no laptop needed.
+Wireless Bluetooth setup via Worldsensing App. Field sampling, signal coverage testing and diagnostics, with no laptop needed.
 
 #### Cloud & Edge Management
 
@@ -120,7 +120,7 @@ Connect piezometers and multi-point piezometers from all major manufacturers via
 
 ##### Load in Rock Bolts & Ground Anchors
 
-Load cells for monitoring anchor systems throughout their lifecycle — from load tests to long-term service.
+Load cells for monitoring anchor systems throughout their lifecycle, from load tests to long-term service.
 
 ### Structural & Environmental Monitoring
 
@@ -148,7 +148,7 @@ Control motor and pump protection systems. Monitor water flow with Variable Freq
 
 ##### Stress Changes in Rock
 
-Hollow Inclusion (HI) cells for 3-D stress measurements via digital converter — critical for underground excavation safety.
+Hollow Inclusion (HI) cells for 3-D stress measurements via digital converter, critical for underground excavation safety.
 
 ##### Soil Water Tension & Moisture
 
@@ -220,19 +220,19 @@ Frequently Asked Questions
 
 ## Got Questions About the Digital Data Logger?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-The Digital Data Logger is a wireless data acquisition IoT device that collects data from digital sensors using RS485 ModBus RTU communications or proprietary protocols and transmits them using long-range, low-power radio communications — ideal for geotechnical, structural and environmental monitoring.
+The Digital Data Logger is a wireless data acquisition IoT device that collects data from digital sensors using RS485 ModBus RTU communications or proprietary protocols and transmits them using long-range, low-power radio communications, ideal for geotechnical, structural and environmental monitoring.
 
 ##
 
-The device connects to one or a string of digital sensors via the RS485 port. It transmits data via Worldsensing LoRa networks to a CMT Edge for local-access, single-network deployments. Data can also be transmitted via the internet from the gateway to CMT Cloud for multi-project, multi-network deployment — accessible from anywhere.
+The device connects to one or a string of digital sensors via the RS485 port. It transmits data via Worldsensing LoRa networks to a CMT Edge for local-access, single-network deployments. Data can also be transmitted via the internet from the gateway to CMT Cloud for multi-project, multi-network deployment: accessible from anywhere.
 
 ##
 
-The Digital Data Logger connects to digital sensors using ModBus RTU and other proprietary protocols from leading geotechnical, structural, environmental and process sensor manufacturers — including in-place inclinometers (IPIs), ShapeArrays, multipoint borehole extensometers (MPBX), weather stations, water quality probes, and load cells.
+The Digital Data Logger connects to digital sensors using ModBus RTU and other proprietary protocols from leading geotechnical, structural, environmental and process sensor manufacturers, including in-place inclinometers (IPIs), ShapeArrays, multipoint borehole extensometers (MPBX), weather stations, water quality probes, and load cells.
 
 ##
 

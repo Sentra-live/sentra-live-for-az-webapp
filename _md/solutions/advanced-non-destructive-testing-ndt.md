@@ -10,7 +10,7 @@ Oil & Gas Power & Utilities Industrial Civil Infrastructure
 
 ## Advanced Non-Destructive Testing
 
-Inspect deeper, know more — without stopping operations. Sub-millimetre flaw detection across 12+ NDT techniques, executed by ISO-certified technicians.
+Inspect deeper, know more, without stopping operations. Sub-millimetre flaw detection across 12+ NDT techniques, executed by ISO-certified technicians.
 
 [Request an NDT Assessment ](https://sentratech.in/contact.html) [Explore Solution](#sol-overview)
 
@@ -18,11 +18,11 @@ What We Do
 
 ## Detect Defects Before They Become Failures
 
-Sentra's NDT services identify internal and surface defects in structural components, welds, pipelines, and pressure vessels — without cutting, drilling, or halting production.
+Sentra's NDT services identify internal and surface defects in structural components, welds, pipelines, and pressure vessels, without cutting, drilling, or halting production.
 
 ### 12+ NDT Methods. One Trusted Provider.
 
-Non-destructive testing is the only way to verify the internal integrity of welds, structural sections, pressure vessels, and pipeline systems without destroying the asset or taking it out of service. Sentra's NDT team holds qualifications across ultrasonic testing (UT), radiographic testing (RT), magnetic particle inspection (MPI), dye penetrant inspection (DPI), eddy current testing (ECT), impact-echo, half-cell potential mapping, ground-penetrating radar, cover meter surveys, Schmidt hammer testing, and more. Every NDT engagement begins with method selection — choosing the right technique for the material, geometry, defect type, and access conditions. We calibrate equipment to relevant standards (IS, ASNT, ISO, BS EN) and execute tests in the field or in our laboratory. All results are documented in calibrated, traceable reports signed by certified Level II or Level III technicians and reviewed by our senior engineering team. Our rapid field turnaround means clients get certified test results quickly — enabling maintenance decisions, regulatory submissions, and fitness-for-service assessments without delay.
+Non-destructive testing is the only way to verify the internal integrity of welds, structural sections, pressure vessels, and pipeline systems without destroying the asset or taking it out of service. Sentra's NDT team holds qualifications across ultrasonic testing (UT), radiographic testing (RT), magnetic particle inspection (MPI), dye penetrant inspection (DPI), eddy current testing (ECT), impact-echo, half-cell potential mapping, ground-penetrating radar, cover meter surveys, Schmidt hammer testing, and more. Every NDT engagement begins with method selection: choosing the right technique for the material, geometry, defect type, and access conditions. We calibrate equipment to relevant standards (IS, ASNT, ISO, BS EN) and execute tests in the field or in our laboratory. All results are documented in calibrated, traceable reports signed by certified Level II or Level III technicians and reviewed by our senior engineering team. Our rapid field turnaround means clients get certified test results quickly by enabling maintenance decisions, regulatory submissions, and fitness-for-service assessments without delay.
 
 Ultrasonic and radiographic testing detect internal porosity, inclusions, laminations, and voids inside metal components, concrete members, and composite materials without any material removal.
 
@@ -108,7 +108,7 @@ Tests are executed on site by certified Level II technicians following written e
 
 ### Data Processing & Interpretation
 
-Raw NDT data — A-scans, radiographs, eddy current signals — are processed and interpreted by our certified technicians, with anomalies characterised for size, location, and orientation.
+Raw NDT data, including A-scans, radiographs, and eddy current signals, are processed and interpreted by our certified technicians, with anomalies characterised for size, location, and orientation.
 
 ![Defect Classification](https://sentratech.in/image/solutions/Solutions%20Stages/advanced-ndt/stage%205.webp)
 
@@ -132,7 +132,7 @@ Showcase
 
 ## See Our Solutions in Action
 
-Real deployments, real impact — from field instrumentation to command centre dashboards.
+Real deployments, real impact, from field instrumentation to command centre dashboards.
 
 ![Solution in action](https://sentratech.in/image/solutions/showcase/advanced%20ndt/Advanced%20ultrasonic%20phased-array%20inspection%20in%20progress.webp)
 
@@ -158,23 +158,23 @@ Benefits
 
 ## How It Helps Your Organisation
 
-NDT protects assets, avoids unnecessary expenditure, and keeps operations running — providing engineering evidence where you need it most.
+NDT protects assets, avoids unnecessary expenditure, and keeps operations running, providing engineering evidence where you need it most.
 
 Test Without Shutdowns
 
-Most NDT methods are performed on in-service assets without production downtime. Pipelines, pressure vessels, and structural members can be inspected while operational — eliminating costly shutdown windows.
+Most NDT methods are performed on in-service assets without production downtime. Pipelines, pressure vessels, and structural members can be inspected while operational by eliminating costly shutdown windows.
 
 No Destructive Sampling Required
 
-NDT provides internal material information without cutting samples, drilling cores, or removing sections — preserving asset integrity and eliminating the need to repair sampling locations.
+NDT provides internal material information without cutting samples, drilling cores, or removing sections: preserving asset integrity and eliminating the need to repair sampling locations.
 
 International Standards Compliance
 
-All tests are conducted and reported to internationally recognised standards (ASNT, ISO 9712, BS EN, IS codes) — providing reports accepted by clients, regulators, and insurance assessors worldwide.
+All tests are conducted and reported to internationally recognised standards (ASNT, ISO 9712, BS EN, IS codes), providing reports accepted by clients, regulators, and insurance assessors worldwide.
 
 Sub-Surface Flaw Detection
 
-NDT locates defects invisible to the naked eye — internal cracks, lack of fusion in welds, sub-surface corrosion — before they initiate failures under service loading.
+NDT locates defects invisible to the naked eye: internal cracks, lack of fusion in welds, sub-surface corrosion, before they initiate failures under service loading.
 
 Traceable Records
 
@@ -182,11 +182,11 @@ Calibrated, certified NDT reports with technician credentials, equipment serial 
 
 Reduce Unnecessary Replacement
 
-Fitness-for-service assessment based on NDT findings often demonstrates that components can safely remain in service longer than conservative replacement schedules would suggest — delivering significant capital savings.
+Fitness-for-service assessment based on NDT findings often demonstrates that components can safely remain in service longer than conservative replacement schedules would suggest by delivering significant capital savings.
 
 Rapid Field Turnaround
 
-Our in-house team mobilises quickly and completes most field NDT programmes within 1–3 days, with certified reports issued within 5 working days — supporting fast maintenance and operational decisions.
+Our in-house team mobilises quickly and completes most field NDT programmes within 1–3 days, with certified reports issued within 5 working days by supporting fast maintenance and operational decisions.
 
 Risk Mitigation
 
@@ -196,11 +196,11 @@ Undetected defects are the leading cause of industrial asset failures. NDT is th
 
 Hidden Flaws Causing Failure
 
-Internal porosity, weld cracks, and laminar defects that escape visual inspection propagate under service loading until catastrophic failure — taking assets offline and causing serious safety incidents.
+Internal porosity, weld cracks, and laminar defects that escape visual inspection propagate under service loading until catastrophic failure: taking assets offline and causing serious safety incidents.
 
 Premature Asset Replacement
 
-Without NDT data, maintenance teams conservatively replace components at scheduled intervals, often retiring assets that have significant remaining service life — at unnecessary capital cost.
+Without NDT data, maintenance teams conservatively replace components at scheduled intervals, often retiring assets that have significant remaining service life: at unnecessary capital cost.
 
 Regulatory Non-Compliance
 
@@ -208,7 +208,7 @@ Pressure vessels, lifting equipment, pipeline systems, and structural welds are 
 
 Uninspected Weld Failures
 
-Fabrication defects in structural or pressure-system welds that are not inspected at time of manufacture may not reveal themselves until the weld is under full service load — often in critical locations.
+Fabrication defects in structural or pressure-system welds that are not inspected at time of manufacture may not reveal themselves until the weld is under full service load, often in critical locations.
 
 Unplanned Production Shutdowns
 
@@ -248,25 +248,25 @@ Why Us
 
 12+ NDT Techniques
 
-We offer the broadest in-house NDT capability of any single-source provider — covering ultrasonic, radiographic, magnetic particle, dye penetrant, eddy current, impact-echo, GPR, and more from one mobilisation.
+We offer the broadest in-house NDT capability of any single-source provider, covering ultrasonic, radiographic, magnetic particle, dye penetrant, eddy current, impact-echo, GPR, and more from one mobilisation.
 
 02
 
 Certified NDT Technicians
 
-All NDT is conducted by ASNT Level II certified technicians and supervised by Level III engineers — ensuring technical rigour, standard compliance, and defensible certifications for every test.
+All NDT is conducted by ASNT Level II certified technicians and supervised by Level III engineers by ensuring technical rigour, standard compliance, and defensible certifications for every test.
 
 03
 
 Rapid Field Turnaround
 
-Mobilisation within 48–72 hours for standard NDT assignments, with field testing completed quickly and certified reports issued within 5 working days — supporting fast maintenance and regulatory timelines.
+Mobilisation within 48–72 hours for standard NDT assignments, with field testing completed quickly and certified reports issued within 5 working days by supporting fast maintenance and regulatory timelines.
 
 04
 
 Digital Certified Reports
 
-All NDT reports are issued as structured digital documents with calibration records, procedure references, finding sketches, and technician certification details — ready for submission to regulators, insurers, and clients.
+All NDT reports are issued as structured digital documents with calibration records, procedure references, finding sketches, and technician certification details: ready for submission to regulators, insurers, and clients.
 
 Case Studies
 
@@ -280,7 +280,7 @@ Real-world applications of our non-destructive testing capabilities across infra
 
 AI & Drones Railways
 
-#### BridgePulse — AI and Drone Technology for Bridge Health Monitoring
+#### BridgePulse: AI and Drone Technology for Bridge Health Monitoring
 
 Read Case Study
 
@@ -334,19 +334,19 @@ FAQ
 
 ## Frequently Asked Questions
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-Destructive testing (DT) involves removing material samples and testing them to failure — providing precise material property data but consuming part of the asset. Non-destructive testing evaluates the integrity of a component in-situ without removing material or damaging the asset, making it suitable for inspection of in-service equipment and structures. Most regulatory inspection regimes mandate NDT precisely because assets cannot be destructively tested in service.
+Destructive testing (DT) involves removing material samples and testing them to failure, providing precise material property data but consuming part of the asset. Non-destructive testing evaluates the integrity of a component in-situ without removing material or damaging the asset, making it suitable for inspection of in-service equipment and structures. Most regulatory inspection regimes mandate NDT precisely because assets cannot be destructively tested in service.
 
 ##
 
-The right NDT method depends on: the material (steel, concrete, composite), the defect type of interest (cracks, porosity, corrosion, delamination), the geometry of the component, access constraints, and applicable standards. Ultrasonic testing is the most versatile for volumetric inspection of metals. Radiography provides a permanent image record. MPI is best for surface and near-surface defects in ferrous materials. Our engineers specify the most appropriate method — or combination — following a review of your asset and objectives.
+The right NDT method depends on: the material (steel, concrete, composite), the defect type of interest (cracks, porosity, corrosion, delamination), the geometry of the component, access constraints, and applicable standards. Ultrasonic testing is the most versatile for volumetric inspection of metals. Radiography provides a permanent image record. MPI is best for surface and near-surface defects in ferrous materials. Our engineers specify the most appropriate method: or combination: following a review of your asset and objectives.
 
 ##
 
-Many NDT techniques can be performed on in-service equipment. Ultrasonic thickness measurement can assess pipeline wall loss without shutdown. Eddy current inspection works on in-service heat exchanger tubes. However, some methods require the asset to be cool, depressurised, or de-energised for safety reasons — particularly radiographic testing. We assess operational requirements and work within your maintenance windows to minimise downtime impact.
+Many NDT techniques can be performed on in-service equipment. Ultrasonic thickness measurement can assess pipeline wall loss without shutdown. Eddy current inspection works on in-service heat exchanger tubes. However, some methods require the asset to be cool, depressurised, or de-energised for safety reasons, particularly radiographic testing. We assess operational requirements and work within your maintenance windows to minimise downtime impact.
 
 ##
 
@@ -358,7 +358,7 @@ A Sentra NDT report includes: client and asset details, examination scope and pr
 
 ##
 
-For urgent assignments — planned maintenance outages, post-incident assessment, or statutory inspection deadlines — we can typically mobilise within 48–72 hours within our service region. Emergency mobilisation within 24 hours is available for critical safety situations. Contact us directly to discuss your timeline and we will confirm availability immediately.
+For urgent assignments: planned maintenance outages, post-incident assessment, or statutory inspection deadlines; we can typically mobilise within 48–72 hours within our service region. Emergency mobilisation within 24 hours is available for critical safety situations. Contact us directly to discuss your timeline and we will confirm availability immediately.
 
 #### Stay Ahead in Smart Monitoring
 

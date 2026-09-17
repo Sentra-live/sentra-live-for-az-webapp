@@ -1,6 +1,6 @@
-# G7 Vibrating Wire Data Logger — Wireless Data Acquisition | Sentra
+# G7 Vibrating Wire Data Logger: Wireless Data Acquisition | Sentra
 
-> G7 Vibrating Wire Data Logger — wirelessly stream data from all leading vibrating wire sensor manufacturers. Up to 15-year battery, IP68, LoRaWAN & 4G LTE.
+> G7 Vibrating Wire Data Logger: wirelessly stream data from all leading vibrating wire sensor manufacturers. Up to 15-year battery, IP68, LoRaWAN & 4G LTE.
 
 Source: https://sentratech.in/products/vibrating-wire.html
 
@@ -8,7 +8,7 @@ Vibrating Wire
 
 ## G7 Vibrating Wire Data Logger
 
-Wirelessly stream data from all leading vibrating wire sensor manufacturers. Available in 6, 2 and 1-channel versions — with external antenna for maximum range or RCR variants with internal antenna for embedding in concrete.
+Wirelessly stream data from all leading vibrating wire sensor manufacturers. Available in 6, 2 and 1-channel versions, with external antenna for maximum range or RCR variants with internal antenna for embedding in concrete.
 
 [ Explore Products ](#vw-products) [ Get a Quote ](https://sentratech.in/contact.html)
 
@@ -50,7 +50,7 @@ Overview
 
 ## Wireless Data Acquisition for Geotechnical & Structural Monitoring
 
-The G7 Vibrating Wire Data Logger automates data collection by connecting your vibrating wire instruments — such as piezometers, load cells, strain gauges and pressure cells — wirelessly to your monitoring systems, making it an essential tool for construction projects.
+The G7 Vibrating Wire Data Logger automates data collection by connecting your vibrating wire instruments, such as piezometers, load cells, strain gauges and pressure cells: wirelessly to your monitoring systems, making it an essential tool for construction projects.
 
 Available in 6, 2 and 1-channel versions with an external antenna for maximum range. RCR variants with an internal antenna are designed for easy encapsulation and embedding in precast concrete.
 
@@ -108,7 +108,7 @@ Configure reporting periods from 30 seconds to 24 hours. Ideal for continuous, s
 
 Motion detection sensor detects activity events from variations in absolute angle, angular velocity or acceleration. When significant movement is detected, it triggers the primary sensor to capture detailed measurements.
 
-Customize when and how many measurements are taken — on event, after event, both, or across multiple events — with configurable delays and cooldown periods.
+Customize when and how many measurements are taken: on event, after event, both, or across multiple events, with configurable delays and cooldown periods.
 
 Core Capabilities
 
@@ -126,11 +126,11 @@ Up to 15 years of unattended operation on a single 3.6V D-size LSH20 Li-SOCl2 ba
 
 #### IP68 Rated & Rugged
 
-Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C — suitable for the harshest field conditions.
+Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C: suitable for the harshest field conditions.
 
 #### Universal Sensor Compatibility
 
-Compatible with all leading vibrating wire sensor manufacturers. Reads sensors working on 300 to 7000 Hz frequencies — covering virtually all geotechnical VW sensors available.
+Compatible with all leading vibrating wire sensor manufacturers. Reads sensors working on 300 to 7000 Hz frequencies, covering virtually all geotechnical VW sensors available.
 
 #### Cloud & Edge Management
 
@@ -138,7 +138,7 @@ Configure locally via CMT Edge for single-network deployments, or connect to CMT
 
 #### Mobile App Configuration
 
-Wireless Bluetooth setup via Worldsensing App. USB-C connector also available for direct configuration in the field — no laptop needed.
+Wireless Bluetooth setup via Worldsensing App. USB-C connector also available for direct configuration in the field, with no laptop needed.
 
 Applications
 
@@ -206,7 +206,7 @@ Pressure cells for assessing tangential and radial stresses in shotcrete support
 
 ##### Load in Rock Bolts & Ground Anchors
 
-Load cells for monitoring anchor systems throughout their lifecycle — from load tests to long-term service.
+Load cells for monitoring anchor systems throughout their lifecycle, from load tests to long-term service.
 
 Technical Specs
 
@@ -306,7 +306,7 @@ Frequently Asked Questions
 
 ## Got Questions About the G7 VW Data Logger?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
@@ -314,11 +314,11 @@ The G7 Vibrating Wire Data Logger is a wireless data acquisition IoT device that
 
 ##
 
-The data logger connects to one or more vibrating wire sensors and transmits data via LoRa networks to a CMT Edge for local-access, single-network deployments. Data can also be transmitted via the internet from the Gateway to CMT Cloud for multi-project, multi-network deployment — accessible from anywhere.
+The data logger connects to one or more vibrating wire sensors and transmits data via LoRa networks to a CMT Edge for local-access, single-network deployments. Data can also be transmitted via the internet from the Gateway to CMT Cloud for multi-project, multi-network deployment: accessible from anywhere.
 
 ##
 
-The G7 Vibrating Wire Data Logger can be connected to all vibrating wire sensors on the market. It reads sensors working on the 0 to 7000 Hz frequency range, which covers virtually all geotechnical vibrating wire sensors available globally — from piezometers and strain gauges to pressure cells and load cells.
+The G7 Vibrating Wire Data Logger can be connected to all vibrating wire sensors on the market. It reads sensors working on the 0 to 7000 Hz frequency range, which covers virtually all geotechnical vibrating wire sensors available globally, from piezometers and strain gauges to pressure cells and load cells.
 
 ##
 

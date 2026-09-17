@@ -29,7 +29,7 @@ A single sensor reading is just a number. What makes it useful is the chain that
 
 The value of IoT infrastructure monitoring isn't the sensor: it's the chain of custody the data travels through, from a raw reading in the field to a decision on someone's desk.
 
-This is also why IoT and Digital Twin technology are increasingly discussed together rather than as separate topics. The sensor network supplies the live data; the twin is where that data gets interpreted against the asset's design and history, so an engineer sees not just a number but what that number means for the structure. AI is advancing this further — our article on [AI infrastructure monitoring](https://sentratech.in/article/ai-infrastructure-monitoring.html) covers how machine learning transforms raw sensor streams into predictive insights.
+This is also why IoT and Digital Twin technology are increasingly discussed together rather than as separate topics. The sensor network supplies the live data; the twin is where that data gets interpreted against the asset's design and history, so an engineer sees not just a number but what that number means for the structure. AI is advancing this further; our article on [AI infrastructure monitoring](https://sentratech.in/article/ai-infrastructure-monitoring.html) covers how machine learning transforms raw sensor streams into predictive insights.
 
 ## Digital Twins: Virtual Mirrors of Reality
 

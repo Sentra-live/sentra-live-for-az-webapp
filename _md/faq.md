@@ -138,7 +138,7 @@ Fatigue is the progressive, localised structural damage that occurs when a mater
 
 This enables asset owners to make data-driven decisions about life extension, load restrictions, or rehabilitation timing. Conservative blanket replacement programmes give way to condition-based lifecycle management. [Learn more →](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html)
 
-Sentra's digital engineering and BIM (Building Information Modeling) services complement our monitoring solutions by providing the digital foundation for smart infrastructure management:
+Sentra's digital engineering and BIM (Building Information Modeling) services complement our monitoring solutions, providing the digital foundation for smart infrastructure management:
 
 - **LiDAR scanning & UAV photogrammetry**: High-precision reality capture creating accurate as-built point clouds and 3D models
 
@@ -430,7 +430,7 @@ All Sentra hardware comes with a warranty and support package covering:
 
 Smart Infrastructure & Climate Resilience 5 questions
 
-Smart infrastructure refers to physical assets (bridges, roads, dams, buildings, railways, and utilities) that are augmented with IoT sensors, connectivity, and data analytics to monitor their own condition, performance, and environment in real time. IoT enables smart infrastructure by providing:
+Smart infrastructure refers to physical assets (bridges, roads, dams, buildings, railways, and utilities) that are augmented with IoT sensors, connectivity, and data analytics to monitor their own condition, performance, and environment in real time. IoT enables smart infrastructure, providing:
 
 - **Continuous sensing**: Wireless tiltmeters, vibration sensors, strain gauges, and environmental sensors capture structural behaviour data 24/7 without human intervention
 

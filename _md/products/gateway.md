@@ -1,14 +1,14 @@
-# 4G Rugged Gateway — IoT Connectivity Hub | Sentra
+# 4G Rugged Gateway: IoT Connectivity Hub | Sentra
 
-> Carrier-class 4G LoRaWAN gateway for remote monitoring — IP68, up to 15km range, 1000+ devices per network. Cloud or Edge deployment options.
+> Carrier-class 4G LoRaWAN gateway for remote monitoring: IP68, up to 15km range, 1000+ devices per network. Cloud or Edge deployment options.
 
 Source: https://sentratech.in/products/gateway.html
 
 Gateway
 
-## 4G Rugged Gateway — Carrier-Class IoT Connectivity
+## 4G Rugged Gateway: Carrier-Class IoT Connectivity
 
-Central communication hub for wireless sensor networks. Carrier-class LoRaWAN gateway with 4G cellular backhaul, designed for harsh outdoor environments — connecting sensors in mines, tunnels, bridges and remote infrastructure.
+Central communication hub for wireless sensor networks. Carrier-class LoRaWAN gateway with 4G cellular backhaul, designed for harsh outdoor environments by connecting sensors in mines, tunnels, bridges and remote infrastructure.
 
 [Explore Products](#gw-products) [Get a Quote](https://sentratech.in/contact.html)
 
@@ -52,7 +52,7 @@ Overview
 
 The 4G Rugged Gateway is a carrier-class, outdoor LoRaWAN gateway designed to provide robust cellular connectivity for remote monitoring in harsh environments. It serves as the primary communication hub for Worldsensing edge devices, enabling high-volume bidirectional data messaging from remote locations.
 
-Available in three variants — Cloud (multi-gateway redundancy), Edge (local single-network management), and Edge 915R (902-928MHz band for North America) — to suit any deployment architecture.
+Available in three variants: Cloud (multi-gateway redundancy), Edge (local single-network management), and Edge 915R (902-928MHz band for North America): to suit any deployment architecture.
 
 **4G Fallback**
 
@@ -86,7 +86,7 @@ IP68-rated weatherproof enclosure withstands harsh outdoor and industrial condit
 
 **Flexible Deployment**
 
-Private isolated local networks or multi-network cloud management — choose the architecture for your project.
+Private isolated local networks or multi-network cloud management; choose the architecture for your project.
 
 Core Capabilities
 
@@ -108,7 +108,7 @@ A single gateway network reliably supports 1000+ wireless devices. Cloud variant
 
 #### Cloud & Local Management
 
-CMT Cloud for multi-gateway, multi-site oversight. CMT Edge for private, isolated local deployments where data stays on-site — ideal for high-security environments.
+CMT Cloud for multi-gateway, multi-site oversight. CMT Edge for private, isolated local deployments where data stays on-site, ideal for high-security environments.
 
 #### IP68 Rugged Enclosure
 
@@ -116,7 +116,7 @@ Industrial-grade IP68-rated housing for full submersion protection. Operating te
 
 #### Simple PoE Power
 
-Power over Ethernet (PoE) supports both mode A and B — a single cable delivers power and data. USB-C also available for local access. PoE injector included in the kit.
+Power over Ethernet (PoE) supports both mode A and B: a single cable delivers power and data. USB-C also available for local access. PoE injector included in the kit.
 
 Applications
 
@@ -130,7 +130,7 @@ Reliable surface and underground communications for slope stability, seismic and
 
 ##### Transport & Bridges
 
-Long-range gateway networks covering road and rail corridors — continuous sensor data from bridge decks, tunnels and retaining structures.
+Long-range gateway networks covering road and rail corridors: continuous sensor data from bridge decks, tunnels and retaining structures.
 
 ##### Construction Sites
 
@@ -138,11 +138,11 @@ Temporary and permanent deployments for settlement, vibration and ground movemen
 
 ##### Dam & Reservoir
 
-Wide-area gateway coverage for large embankment and concrete dam instrumentation networks — piezometers, tiltmeters and GNSS in a single network.
+Wide-area gateway coverage for large embankment and concrete dam instrumentation networks, including piezometers, tiltmeters and GNSS in a single network.
 
 ##### Geotechnical Slopes
 
-Wireless sensor networks across remote terrain — landslide early warning, slope stability and rainfall monitoring without cellular coverage dependency.
+Wireless sensor networks across remote terrain: landslide early warning, slope stability and rainfall monitoring without cellular coverage dependency.
 
 ##### Environmental Monitoring
 
@@ -186,13 +186,13 @@ Complete specs, diagrams, and datasheets
 
 ### Ready to Connect Your Monitoring Network?
 
-Talk to our IoT connectivity specialists about the right gateway configuration for your project — mining, bridges, dams, tunnels or slopes. Robust coverage, fast deployment.
+Talk to our IoT connectivity specialists about the right gateway configuration for your project, including mining, bridges, dams, tunnels or slopes. Robust coverage, fast deployment.
 
 Frequently Asked Questions
 
 ## Got Questions About the 4G Rugged Gateway?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 

@@ -1,0 +1,2269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8GFRCEFB87');
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Resource hints: warm up connections the page opens on every load -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <meta name="description" content="Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study" />
+    <meta property="og:description" content="Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup." />
+    <meta property="og:url" content="https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://sentratech.in/image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp" />
+    <meta property="og:image:width" content="2248" />
+    <meta property="og:image:height" content="1264" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study" />
+    <meta name="twitter:description" content="Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup." />
+    <meta name="twitter:image" content="https://sentratech.in/image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp" />
+    <meta name="twitter:site" content="@sentratech" />
+    <title>Handheld SLAM vs. TLS for Highway Bridge Surveys</title>
+    <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
+    <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="../css/vendor/brands.css">
+    <link rel="stylesheet" href="../css/vendor/regular.css">
+    <link rel="stylesheet" href="../css/vendor/solid.css">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/vendor/animate.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
+    <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
+    <link rel="stylesheet" href="../css/chatbot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=analytics,architecture,biotech,construction,database,insights,monitoring,precision_manufacturing,search,search_insights,sentiment_satisfied,settings_suggest,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/detail-page.css">
+    <style>
+        .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+        .word { transition: background-color 0.12s ease; padding: 0 1px; border-radius: 2px; }
+        .highlight { background-color: #f48120; transition: background-color 0.15s ease; }
+        body.lightmode .highlight { background-color: #ffe082; }
+        .conclusion-btn-wrapper { margin-bottom: 30px; }
+        body.dark-mode .detail-hero .hero-text-col, body.dark-mode .detail-article, body.dark-mode .hero-title { color: #fff; }
+        body.lightmode .hero-title { color: #111; }
+        body.dark-mode .hero-intro p, body.dark-mode .detail-article p, body.dark-mode .detail-article li { color: rgba(255,255,255,0.6); }
+        body.lightmode .hero-intro p, body.lightmode .detail-article p, body.lightmode .detail-article li { color: rgba(0,0,0,0.6); }
+        blockquote.highlight-quote {
+            border-left: 3px solid var(--accent-color);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            background: rgba(244,129,32,0.04);
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+        }
+        .insight-box {
+            background: rgba(244,129,32,0.05);
+            border: 1px solid rgba(244,129,32,0.12);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .insight-box h5 { color: var(--accent-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        .insight-box p { font-size: 0.9rem; margin: 0; }
+        .stat-highlight { display: inline-block; font-size: 2.2rem; font-weight: 800; color: var(--accent-color); line-height: 1; }
+
+        .detail-article table.compare-table { width:100%; border-collapse:collapse; margin:1.75rem 0; font-size:0.88rem; }
+        .detail-article table.compare-table th, .detail-article table.compare-table td { padding:0.75rem 1rem; border:1px solid rgba(255,255,255,0.08); text-align:left; vertical-align:top; }
+        .detail-article table.compare-table th { background:rgba(244,129,32,0.08); color:var(--accent-color); font-weight:700; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.03em; }
+        body.lightmode .detail-article table.compare-table th, body.lightmode .detail-article table.compare-table td { border-color: rgba(0,0,0,0.08); }
+        .detail-article table.compare-table tr:nth-child(even) td { background: rgba(255,255,255,0.015); }
+
+        .maint-flow { display:flex; flex-direction:column; align-items:center; gap:0.25rem; margin:1.75rem 0; }
+        .maint-step { width:100%; max-width:560px; border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:0.85rem 1.25rem; text-align:center; background:rgba(255,255,255,0.02); }
+        body.lightmode .maint-step { border-color: rgba(0,0,0,0.08); background:#fff; }
+        .maint-step-label { display:block; font-weight:700; font-size:0.82rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--accent-color); margin-bottom:0.25rem; }
+        .maint-step p { margin:0; font-size:0.85rem; }
+        .maint-step.highlight-step { border-color: rgba(244,129,32,0.4); background: rgba(244,129,32,0.06); }
+        .maint-arrow { opacity:0.4; font-size:0.8rem; }
+
+        .arch-stack { display:flex; flex-direction:column; gap:2px; margin:1.75rem 0; border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); }
+        body.lightmode .arch-stack { border-color: rgba(0,0,0,0.08); }
+        .arch-layer { padding:0.9rem 1.25rem; background:rgba(255,255,255,0.02); }
+        body.lightmode .arch-layer { background:#fff; }
+        .arch-layer-name { display:block; font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--accent-color); margin-bottom:0.15rem; }
+        .arch-layer-desc { font-size:0.83rem; opacity:0.75; }
+
+        .case-stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:1.75rem 0; }
+        @media (max-width: 700px) { .case-stats-grid { grid-template-columns:repeat(2,1fr); } }
+        .case-stat-item { text-align:center; padding:1.25rem 0.75rem; border-radius:14px; border:1px solid rgba(255,255,255,0.08); background:rgba(255,255,255,0.02); }
+        body.lightmode .case-stat-item { border-color:rgba(0,0,0,0.08); background:#fff; }
+        .case-stat-num { display:block; font-size:1.9rem; font-weight:800; color:var(--accent-color); line-height:1.1; }
+        .case-stat-label { display:block; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; margin-top:0.35rem; }
+        .case-stat-sub { display:block; font-size:0.78rem; opacity:0.6; margin-top:0.2rem; }
+
+        .ptb-card { border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:1.5rem 1.5rem 1.25rem; margin:1.75rem 0; background:rgba(255,255,255,0.02); }
+        body.lightmode .ptb-card { border-color:rgba(0,0,0,0.08); background:#fff; }
+        .ptb-title { font-size:1rem; font-weight:800; margin:0 0 1.1rem; }
+        .ptb-row { margin-bottom:1.25rem; }
+        .ptb-row-head { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:0.4rem 1rem; margin-bottom:0.4rem; }
+        .ptb-row-label { font-weight:700; font-size:0.9rem; }
+        .ptb-row-values { font-size:0.82rem; opacity:0.85; display:flex; gap:0.9rem; flex-wrap:wrap; }
+        .ptb-row-values .ptb-l2 { color:var(--accent-color); font-weight:700; }
+        .ptb-bar-track { position:relative; height:8px; border-radius:999px; background:rgba(120,120,120,0.18); overflow:hidden; }
+        .ptb-bar-fill { position:absolute; top:0; left:0; bottom:0; border-radius:999px; background:var(--accent-color); }
+        .ptb-row.ptb-total .ptb-bar-fill { background:#2d2e2f; }
+        body.lightmode .ptb-row.ptb-total .ptb-bar-fill { background:#111; }
+        .ptb-faster { display:block; text-align:right; font-size:0.76rem; font-weight:700; color:#1fa858; margin-top:0.3rem; }
+        .ptb-row.ptb-total { border-top:1px solid rgba(255,255,255,0.08); padding-top:1.1rem; }
+        body.lightmode .ptb-row.ptb-total { border-top-color:rgba(0,0,0,0.08); }
+
+        .case-gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:1.75rem 0; }
+        @media (max-width: 700px) { .case-gallery { grid-template-columns:1fr; } }
+        .case-gallery-item { border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); background:rgba(255,255,255,0.02); }
+        body.lightmode .case-gallery-item { border-color:rgba(0,0,0,0.08); background:#fff; }
+        .case-gallery-item img { width:100%; height:190px; object-fit:cover; display:block; }
+        .case-gallery-caption { padding:0.6rem 0.85rem; font-size:0.78rem; opacity:0.65; }
+
+        /* The sitewide .accordion-item .accordion-body rule zeroes out padding-left;
+           restore it here to match the question button above it. */
+        #faqBridgeCase.accordion .accordion-item .accordion-body {
+            padding-left: 1.25rem;
+            display: block;
+        }
+    </style>
+    <link rel="canonical" href="https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html">
+    <link rel="alternate" type="text/markdown" href="https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.md">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study",
+      "description": "Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup.",
+      "datePublished": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "author": {
+        "@type": "Organization",
+        "name": "Sentra Technologies"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sentra",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sentratech.in/image/branding/sentra.webp"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sentratech.in/image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp"
+      },
+      "inLanguage": "en"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".detail-article h2, .detail-article h4", ".detail-article p", ".hero-intro"]
+      },
+      "url": "https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html"
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sentratech.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://sentratech.in/resources.html" },
+        { "@type": "ListItem", "position": 3, "name": "Handheld SLAM vs. TLS for Highway Bridge Surveys", "item": "https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How much faster is mobile laser scanning than terrestrial laser scanning for bridge inspection?", "acceptedAnswer": { "@type": "Answer", "text": "In this bridge inspection case study, mobile laser scanning completed the full project in about 6 hours versus roughly 7.5 days for terrestrial laser scanning (TLS): a 29x improvement in total project time, driven by a 16x faster field survey and a 144x faster dynamic object removal step." } },
+        { "@type": "Question", "name": "How accurate is mobile laser scanning compared to a TLS baseline?", "acceptedAnswer": { "@type": "Answer", "text": "The mobile-scanned point cloud achieved under 1cm average accuracy when checked against the terrestrial laser scanning baseline, which is well within the tolerance required for bridge condition assessment and scan-to-BIM workflows." } },
+        { "@type": "Question", "name": "Why does terrestrial laser scanning take longer on a bridge?", "acceptedAnswer": { "@type": "Answer", "text": "TLS is a static, tripod-based method: the scanner has to be set up, levelled and registered at every position, and a bridge of any length can require hundreds of individual setups. In this case, TLS needed 350 setups against 3 walking loops for the mobile scanner, and each TLS setup also restricts access to that section of the structure while it runs." } },
+        { "@type": "Question", "name": "What is dynamic object removal in point cloud processing?", "acceptedAnswer": { "@type": "Answer", "text": "Dynamic object removal is the process of stripping moving objects: vehicles, pedestrians, passing traffic: out of a point cloud so only the static structure remains. Manual removal on a large TLS dataset can take days; an automated pipeline can complete the same cleanup in about an hour with roughly 90% of objects removed automatically." } },
+        { "@type": "Question", "name": "Does mobile laser scanning replace terrestrial laser scanning for infrastructure inspection?", "acceptedAnswer": { "@type": "Answer", "text": "Not universally: TLS still delivers the highest static, survey-grade accuracy for critical structural detail. But for full-structure bridge condition surveys where field time, site access and turnaround matter, mobile SLAM-based scanning delivers comparable practical accuracy at a fraction of the time and site disruption." } }
+      ]
+    }
+    </script>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo"><img src="../image/branding/sentra_white_1.svg" alt="Sentra"></div>
+            <div class="preloader-logo-sub">Smart · Secure · Scalable</div>
+            <div class="preloader-counter">
+                <span id="preloader-count">0</span>
+                <span class="preloader-percent">%</span>
+            </div>
+            <div class="preloader-bar">
+                <div class="preloader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div id="header"><!-- Mega nav styles live in css/style.css -->
+<style>
+    /* Self-contained import so the theme-toggle glyph renders even on pages
+       whose <head> doesn't already link Material Symbols. */
+    @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap');
+
+    /* ── Theme Toggle (Material Symbols, animated morph) ── */
+    .themeswitch {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .theme-toggle-icon {
+        font-family: 'Material Symbols Rounded';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 22px;
+        line-height: 1;
+        display: inline-block;
+        user-select: none;
+        -webkit-font-smoothing: antialiased;
+        font-variation-settings: 'FILL' 1, 'wght' 500, 'GRAD' 0, 'opsz' 24;
+        transition: transform 0.5s cubic-bezier(0.65, 0, 0.35, 1), filter 0.5s ease;
+        transform: rotate(0deg) scale(1);
+    }
+
+    .themeswitch:hover .theme-toggle-icon {
+        transform: rotate(-18deg) scale(1.12);
+    }
+
+    .theme-toggle-icon.rotating {
+        animation: themeIconMorph 0.6s cubic-bezier(0.65, 0, 0.35, 1);
+    }
+
+    @keyframes themeIconMorph {
+        0% {
+            transform: rotate(0deg) scale(1);
+            filter: blur(0px);
+        }
+
+        45% {
+            transform: rotate(160deg) scale(0.35);
+            filter: blur(2px);
+        }
+
+        55% {
+            transform: rotate(200deg) scale(0.35);
+            filter: blur(2px);
+        }
+
+        100% {
+            transform: rotate(360deg) scale(1);
+            filter: blur(0px);
+        }
+    }
+
+    /* ── Header Call Pill ── */
+    .navbar-call-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 4px 18px 4px 4px;
+        border-radius: 100px;
+        background: #f48120;
+        text-decoration: none;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+        box-shadow: 0 4px 14px rgba(244, 129, 32, 0.25);
+    }
+
+    .navbar-call-pill:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(244, 129, 32, 0.35);
+        background: #2d2e2f;
+    }
+
+    .navbar-call-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: #fff;
+        color: #f48120;
+        font-size: 15px;
+        flex-shrink: 0;
+        transition: color 0.25s ease;
+    }
+
+    .navbar-call-pill:hover .navbar-call-icon {
+        color: #2d2e2f;
+    }
+
+    .navbar-call-text {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+    }
+
+    body.lightmode .navbar-call-pill {
+        background: #2d2e2f;
+        box-shadow: 0 4px 14px rgba(45, 46, 47, 0.2);
+    }
+
+    body.lightmode .navbar-call-pill:hover {
+        background: #f48120;
+        box-shadow: 0 8px 20px rgba(244, 129, 32, 0.3);
+    }
+
+    body.lightmode .navbar-call-icon {
+        color: #2d2e2f;
+    }
+
+    body.lightmode .navbar-call-pill:hover .navbar-call-icon {
+        color: #f48120;
+    }
+
+    @media (max-width: 1282px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    /* ── About Us: Industry Verticals Row ── */
+    .mega-industries-row {
+        border-top: 1px solid rgba(255, 255, 255, 0.07);
+        margin-top: 8px;
+        padding-top: 12px;
+    }
+
+    body.lightmode .mega-industries-row {
+        border-top-color: rgba(0, 0, 0, 0.07);
+    }
+
+    .mega-industries-label {
+        display: block;
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.3);
+        margin-bottom: 10px;
+        padding: 0 4px;
+    }
+
+    body.lightmode .mega-industries-label {
+        color: rgba(0, 0, 0, 0.3);
+    }
+
+    .mega-industries-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4px;
+    }
+
+    .mega-industry-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 5px 10px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+        transition: background 0.2s, color 0.2s;
+    }
+
+    .mega-industry-link i {
+        font-size: 10px;
+        color: var(--accent-color);
+        opacity: 0.7;
+    }
+
+    .mega-industry-link:hover {
+        background: rgba(244, 129, 32, 0.1);
+        color: #fff;
+    }
+
+    body.lightmode .mega-industry-link {
+        color: rgba(0, 0, 0, 0.55);
+    }
+
+    body.lightmode .mega-industry-link:hover {
+        background: rgba(244, 129, 32, 0.08);
+        color: #111;
+    }
+
+    .mega-new-badge {
+        display: inline-block;
+        font-size: 8px;
+        font-weight: 800;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #f48120;
+        padding: 1px 5px;
+        border-radius: 999px;
+        vertical-align: middle;
+        margin-left: 2px;
+    }
+
+    /* ── Brand Logo Carousel ── */
+    .mega-brand-carousel {
+        margin-top: auto;
+        overflow: hidden;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+        padding: 16px 0 18px;
+    }
+
+    body.lightmode .mega-brand-carousel {
+        background: rgba(0, 0, 0, 0.03);
+        border-color: rgba(0, 0, 0, 0.07);
+    }
+
+    .mega-brand-label {
+        display: block;
+        font-size: 8px;
+        font-weight: 700;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.3);
+        padding: 0 10px 6px;
+    }
+
+    body.lightmode .mega-brand-label {
+        color: rgba(0, 0, 0, 0.35);
+    }
+
+    .mega-brand-track {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+        animation: megaBrandScroll 12s linear infinite;
+    }
+
+    .mega-brand-track:hover {
+        animation-play-state: paused;
+    }
+
+    .mega-brand-slide {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 114px;
+        height: 89px;
+    }
+
+    .mega-brand-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        filter: brightness(0) invert(1);
+        opacity: 0.5;
+        transition: opacity 0.25s ease, filter 0.25s ease;
+    }
+
+    .mega-brand-slide img:hover {
+        filter: none;
+        opacity: 0.9;
+    }
+
+    .mega-brand-slide.brand-dark img {
+        filter: grayscale(1) brightness(0.85);
+        opacity: 0.5;
+    }
+
+    .mega-brand-slide.brand-dark img:hover {
+        filter: grayscale(0) brightness(1);
+        opacity: 1;
+    }
+
+    body.lightmode .mega-brand-slide img {
+        filter: none;
+        opacity: 0.6;
+    }
+
+    body.lightmode .mega-brand-slide img:hover {
+        opacity: 1;
+    }
+
+    @keyframes megaBrandScroll {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+</style>
+
+<div class="navbar-wrapper">
+    <nav class="navbar navbar-expand-xl">
+        <div class="navbar-container">
+
+            <div class="logo-container">
+                <a class="navbar-brand" href="/" aria-label="Sentra home">
+                    <img src="../image/branding/sentra_white_1.svg" class="site-logo img-fluid" alt="Sentra logo" loading="lazy" decoding="async">
+                </a>
+            </div>
+
+            <button class="navbar-toggler nav-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">HOME</a>
+                    </li>
+
+                    <!-- ══ SOLUTIONS BENTO ══ -->
+                    <li class="nav-item dropdown">
+                        <a id="solutions-link" class="nav-link dropdown-toggle" href="../solutions.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
+                        </a>
+                        <div class="dropdown-menu mega-solutions">
+                            <div class="solutions-bento">
+
+                                <!-- Row 1: SHM (wide) + Bridge (narrow) -->
+                                <div class="sol-bento-img-row">
+                                    <a class="sol-img-card" href="../solutions/structural-health-monitoring.html">
+                                        <div class="sol-img-card-bg"
+                                            style="background-image:url('../image/solutions/Homepage/Structural%20Health%20Monitoring.webp');">
+                                        </div>
+                                        <div class="sol-img-card-overlay"></div>
+                                        <i class="fa-solid fa-arrow-right sol-img-card-arrow"></i>
+                                        <div class="sol-img-card-body">
+                                            <div class="sol-img-card-icon"><i class="fas fa-chart-line"></i></div>
+                                            <div class="sol-img-card-title">Structural Health Monitoring</div>
+                                            <div class="sol-img-card-sub">Real-time sensing for critical infrastructure
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a class="sol-img-card"
+                                        href="../solutions/bridge-inspection-and-condition-assessment.html">
+                                        <div class="sol-img-card-bg"
+                                            style="background-image:url('../image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp');">
+                                        </div>
+                                        <div class="sol-img-card-overlay"></div>
+                                        <i class="fa-solid fa-arrow-right sol-img-card-arrow"></i>
+                                        <div class="sol-img-card-body">
+                                            <div class="sol-img-card-icon"><i class="fas fa-bridge"></i></div>
+                                            <div class="sol-img-card-title">Bridge Inspection</div>
+                                            <div class="sol-img-card-sub">Condition assessment</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Row 2: Asset (narrow) + Digital Twin (wide) -->
+                                <div class="sol-bento-img-row2">
+                                    <a class="sol-img-card"
+                                        href="../solutions/asset-monitoring-and-management-solutions.html">
+                                        <div class="sol-img-card-bg"
+                                            style="background-image:url('../image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp');">
+                                        </div>
+                                        <div class="sol-img-card-overlay"></div>
+                                        <i class="fa-solid fa-arrow-right sol-img-card-arrow"></i>
+                                        <div class="sol-img-card-body">
+                                            <div class="sol-img-card-icon"><i class="fas fa-database"></i></div>
+                                            <div class="sol-img-card-title">Asset Monitoring</div>
+                                            <div class="sol-img-card-sub">Lifecycle management</div>
+                                        </div>
+                                    </a>
+                                    <a class="sol-img-card" href="../solutions/digital-twin.html">
+                                        <div class="sol-img-card-bg"
+                                            style="background-image:url('../image/solutions/Homepage/Facility-Management.webp');">
+                                        </div>
+                                        <div class="sol-img-card-overlay"></div>
+                                        <i class="fa-solid fa-arrow-right sol-img-card-arrow"></i>
+                                        <div class="sol-img-card-body">
+                                            <div class="sol-img-card-icon"><i class="fas fa-cubes"></i></div>
+                                            <div class="sol-img-card-title">Digital Twin</div>
+                                            <div class="sol-img-card-sub">Real-time asset simulation</div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <!-- Row 3: 5 small fill cards (3+2 bento grid) -->
+                                <div class="sol-bento-small-row">
+                                    <a class="sol-fill-card sol-fill-card--ndt" data-color="orange"
+                                        href="../solutions/advanced-non-destructive-testing-ndt.html">
+                                        <i class="fas fa-microscope"></i>
+                                        <span class="sol-fill-title">Advanced NDT</span>
+                                        <span class="sol-fill-sub">Non-destructive evaluation techniques</span>
+                                    </a>
+                                    <a class="sol-fill-card sol-fill-card--contour" data-color="dark"
+                                        href="../solutions/geotechnical-and-foundation-monitoring.html">
+                                        <i class="fas fa-mountain"></i>
+                                        <span class="sol-fill-title">Geotechnical</span>
+                                        <span class="sol-fill-sub">Slope & foundation monitoring</span>
+                                    </a>
+                                    <a class="sol-fill-card sol-fill-card--corner-img" data-color="white"
+                                        href="../solutions/fatigue-and-residual-life-assessment.html">
+                                        <img class="sol-fill-card-corner-img" src="../image/svg/fatigue%20life.svg"
+                                            alt="" aria-hidden="true" loading="lazy" decoding="async">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span class="sol-fill-title">Fatigue Assessment</span>
+                                        <span class="sol-fill-sub">Residual life & load cycles</span>
+                                    </a>
+                                    <a class="sol-fill-card sol-fill-card--corner-img" data-color="black"
+                                        href="../solutions/consulting-and-advisory-services.html">
+                                        <img class="sol-fill-card-corner-img" src="../image/svg/consulting.svg" alt=""
+                                            aria-hidden="true" loading="lazy" decoding="async">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span class="sol-fill-title">Consulting</span>
+                                        <span class="sol-fill-sub">Expert advisory services</span>
+                                    </a>
+                                    <a class="sol-fill-card" data-color="orange"
+                                        href="../solutions/digital-engineering-and-documentation.html">
+                                        <i class="fas fa-file-contract"></i>
+                                        <span class="sol-fill-title">Digital Engineering</span>
+                                        <span class="sol-fill-sub">Documentation & digital workflows</span>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ══ PRODUCTS ══ -->
+                    <li class="nav-item dropdown">
+                        <a id="products-link" class="nav-link dropdown-toggle" href="../products.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            PRODUCTS <i class="fa-solid fa-angle-down accent-color"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-products">
+                            <div class="dropdown-products-container">
+
+                                <!-- TOP: Quick Access horizontal bar (spans full width) -->
+                                <div class="mega-quickbar">
+                                    <span class="mega-quickbar-label">Quick Access</span>
+                                    <a class="mega-qb-link" href="../products.html">
+                                        <i class="fa-solid fa-border-all"></i> All Products
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/edge-devices.html">
+                                        <i class="fa-solid fa-microchip"></i> Edge Devices
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/core-communications.html">
+                                        <i class="fa-solid fa-wifi"></i> Core Communications
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/wired-sensors.html">
+                                        <i class="fa-solid fa-network-wired"></i> Wired Sensors
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/laser-scanners.html">
+                                        <i class="fa-solid fa-camera"></i> Laser Scanners
+                                    </a>
+                                    <a class="mega-qb-link" href="../products/lcc.html">
+                                        <i class="fa-solid fa-cubes"></i> Softwares
+                                    </a>
+                                </div>
+
+                                <!-- LEFT: Edge Devices -->
+                                <div class="mega-prod-left">
+                                    <a class="mega-cat-section-label" href="../products/edge-devices.html"
+                                        style="margin-top:0">Edge Devices <i class="fa-solid fa-arrow-right"
+                                            style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+
+                                    <div class="mega-edge-card">
+                                        <span class="mega-cat-label" style="margin-top:0"><i
+                                                class="fa-solid fa-satellite-dish"
+                                                style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Wireless
+                                            Sensors</span>
+                                        <a class="mega-prod-link" href="../products/tiltmeter.html"
+                                            data-img="../image/products/tiltmeter-1.webp" data-name="Tiltmeter 90°"
+                                            data-sub="High-resolution wireless tilt sensing"
+                                            data-url="../products/tiltmeter.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Tiltmeter
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/tiltmeter-event-detection.html"
+                                            data-img="../image/products/tiltmeter-2.webp"
+                                            data-name="Tiltmeter Event Detection"
+                                            data-sub="Event-triggered high-speed tilt monitoring"
+                                            data-url="../products/tiltmeter-event-detection.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Tiltmeter Event Detection
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/vibration-meter.html"
+                                            data-img="../image/products/vibration-meter.webp" data-name="Vibration Meter"
+                                            data-sub="Multi-axis vibration & dynamic load sensing"
+                                            data-url="../products/vibration-meter.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Vibration Meter
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/laser-tiltmeter.html"
+                                            data-img="../image/products/laser-tiltmeter-1.webp"
+                                            data-name="Laser Tiltmeter" data-sub="Precision laser-based inclination"
+                                            data-url="../products/laser-tiltmeter.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Laser Tiltmeter
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/gnss-meter.html"
+                                            data-img="../image/products/gnss-meter-1.webp" data-name="GNSS Meter"
+                                            data-sub="Millimetre-precision GNSS displacement"
+                                            data-url="../products/gnss-meter.html">
+                                            <i class="fa-solid fa-arrow-right"></i>GNSS Meter
+                                        </a>
+                                    </div>
+
+                                    <div class="mega-edge-card">
+                                        <span class="mega-cat-label" style="margin-top:0"><i
+                                                class="fa-solid fa-tower-broadcast"
+                                                style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Wireless Data
+                                            Acquisition</span>
+                                        <a class="mega-prod-link" href="../products/vibrating-wire.html"
+                                            data-img="../image/products/vibration-meter.webp" data-name="Vibrating Wire"
+                                            data-sub="Frequency-based geotechnical sensing"
+                                            data-url="../products/vibrating-wire.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Vibrating Wire
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/vibrating-wire-rcr.html"
+                                            data-img="../image/products/vibration-meter.webp"
+                                            data-name="Vibrating Wire RCR" data-sub="Vibrating wire data readout unit"
+                                            data-url="../products/vibrating-wire-rcr.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Vibrating Wire RCR
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/digital-data-logger.html"
+                                            data-img="../image/products/digital-data-logger-1.webp"
+                                            data-name="Digital Data Logger" data-sub="Wireless digital acquisition node"
+                                            data-url="../products/digital-data-logger.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Digital Data Logger
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/analog-data-logger.html"
+                                            data-img="../image/products/analog-data-logger.webp"
+                                            data-name="Analog Data Logger" data-sub="Multi-channel analog acquisition"
+                                            data-url="../products/analog-data-logger.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Analog Data Logger
+                                        </a>
+                                        <a class="mega-prod-link" href="../products/piconode-data-logger.html"
+                                            data-img="../image/products/piconode-data-logger-1.webp"
+                                            data-name="Piconode Data Logger"
+                                            data-sub="Ultra-compact edge acquisition unit"
+                                            data-url="../products/piconode-data-logger.html">
+                                            <i class="fa-solid fa-arrow-right"></i>Piconode Data Logger
+                                        </a>
+                                    </div>
+
+                                    <div class="mega-brand-carousel">
+                                        <span class="mega-brand-label">Our Partners</span>
+                                        <div class="mega-brand-track">
+                                            <div class="mega-brand-slide"><img
+                                                    src="../image/reseller_logo/worldsensing.webp" alt="Worldsensing" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="mega-brand-slide"><img
+                                                    src="../image/reseller_logo/GEOKON-Logos-H.webp" alt="Geokon" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide brand-dark"><img
+                                                    src="../image/reseller_logo/rockfiled.webp" alt="Rockfield" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide"><img src="../image/reseller_logo/xgrids.avif"
+                                                    alt="XGRIDS" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide"><img
+                                                    src="../image/reseller_logo/worldsensing.webp" alt="Worldsensing" loading="lazy" decoding="async">
+                                            </div>
+                                            <div class="mega-brand-slide"><img
+                                                    src="../image/reseller_logo/GEOKON-Logos-H.webp" alt="Geokon" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide brand-dark"><img
+                                                    src="../image/reseller_logo/rockfiled.webp" alt="Rockfield" loading="lazy" decoding="async"></div>
+                                            <div class="mega-brand-slide"><img src="../image/reseller_logo/xgrids.avif"
+                                                    alt="XGRIDS" loading="lazy" decoding="async"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- CENTRE: wired sensors + resources (top), image (bottom) -->
+                                <div class="mega-preview-panel">
+
+                                    <!-- TOP: 2-col grid — (core comms + wired sensors) | (laser scanners + resources) -->
+                                    <div class="mega-center-top">
+
+                                        <!-- Left: Core Communications card (top) + Wired Sensors card (bottom) -->
+                                        <div class="mega-center-left">
+                                            <div class="mega-center-wired">
+                                                <a class="mega-cat-section-label"
+                                                    href="../products/core-communications.html" style="margin-top:0">Core
+                                                    Communications <i class="fa-solid fa-arrow-right"
+                                                        style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+                                                <span class="mega-cat-label" style="margin-top:4px">Narrowband</span>
+                                                <a class="mega-prod-link" href="../products/gateway.html"
+                                                    data-img="../image/products/4g-rugged-gateway-1cloud.webp"
+                                                    data-name="4G Rugged Gateway"
+                                                    data-sub="Cloud-connected field gateway"
+                                                    data-url="../products/gateway.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Gateway
+                                                </a>
+                                                <a class="mega-prod-link" href="../products/repeater.html"
+                                                    data-img="../image/products/k20-edge-repeater-1.webp"
+                                                    data-name="K20 Edge Repeater"
+                                                    data-sub="Long-range mesh repeater node"
+                                                    data-url="../products/repeater.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Repeater
+                                                </a>
+                                                <span class="mega-cat-label" style="margin-top:4px">Broadband</span>
+                                                <a class="mega-prod-link" href="../products/thread.html"
+                                                    data-img="../image/products/thread-x3-1.webp" data-name="Thread X3"
+                                                    data-sub="Broadband mesh communications"
+                                                    data-url="../products/thread.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Thread
+                                                </a>
+                                            </div>
+
+                                            <div class="mega-center-wiredsensors">
+                                                <a class="mega-cat-section-label" href="../products/wired-sensors.html"
+                                                    style="margin-top:0"><i class="fa-solid fa-plug-circle-bolt"
+                                                        style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Wired
+                                                    Sensors <i class="fa-solid fa-arrow-right"
+                                                        style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+                                                <div class="mega-cat-row">
+                                                    <a class="mega-prod-link" href="../products/accelerometers.html"
+                                                        data-img="../image/products/accelerometer_cardnav.webp"
+                                                        data-name="Accelerometer"
+                                                        data-sub="High-precision wired acceleration sensing"
+                                                        data-url="../products/accelerometers.html">
+                                                        <i class="fa-solid fa-arrow-right"></i>Accelerometer
+                                                    </a>
+                                                    <a class="mega-prod-link" href="../products/strain-gauges.html"
+                                                        data-img="../image/products/strain_gauge.webp"
+                                                        data-name="Strain Gauge"
+                                                        data-sub="Structural strain & stress monitoring"
+                                                        data-url="../products/strain-gauges.html">
+                                                        <i class="fa-solid fa-arrow-right"></i>Strain Gauge
+                                                    </a>
+                                    </div>
+                                </div>
+                                </div>
+
+                                        <!-- Right: Laser Scanners card (top) + Resources card (bottom) -->
+                                        <div class="mega-center-right">
+                                            <div class="mega-center-scanners">
+                                                <a class="mega-cat-section-label" href="../products/laser-scanners.html"
+                                                    style="margin-top:0"><i class="fa-solid fa-camera"
+                                                        style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Laser
+                                                    Scanners <span class="mega-new-badge">New</span> <i
+                                                        class="fa-solid fa-arrow-right"
+                                                        style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+                                                <a class="mega-prod-link" href="../products/lixel-l3.html"
+                                                    data-img="../image/products/scanners/lixel-l3-hero.webp"
+                                                    data-name="Lixel L3"
+                                                    data-sub="5mm-accurate flagship spatial scanner"
+                                                    data-url="../products/lixel-l3.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Lixel L3 <span class="mega-new-badge">New</span>
+                                                </a>
+                                                <a class="mega-prod-link" href="../products/lixel-k2.html"
+                                                    data-img="../image/products/scanners/lixel-k2-hero.webp"
+                                                    data-name="Lixel K2"
+                                                    data-sub="The gold standard in lightweight scanning"
+                                                    data-url="../products/lixel-k2.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Lixel K2
+                                                </a>
+                                                <a class="mega-prod-link" href="../products/portalcam.html"
+                                                    data-img="../image/products/scanners/KV%20Horizontal.jpg"
+                                                    data-name="PortalCam" data-sub="The first true spatial camera"
+                                                    data-url="../products/portalcam.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>PortalCam
+                                                </a>
+                                                <a class="mega-prod-link" href="../products/lixel-l2-pro.html"
+                                                    data-img="../image/products/scanners/lixel-l2-pro.jpg"
+                                                    data-name="Lixel L2 Pro" data-sub="Precision redefined"
+                                                    data-url="../products/lixel-l2-pro.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>Lixel L2 Pro
+                                                </a>
+                                            </div>
+
+                                            <div class="mega-center-softwares" style="margin-top:14px;">
+                                                <a class="mega-cat-section-label" href="../products/lcc.html"
+                                                    style="margin-top:0"><i class="fa-solid fa-cubes"
+                                                        style="font-size:9px;margin-right:4px;opacity:0.8;"></i>Softwares <i
+                                                        class="fa-solid fa-arrow-right"
+                                                        style="font-size:9px;opacity:0.7;margin-left:4px;"></i></a>
+                                                <a class="mega-prod-link" href="../products/lixelstudio.html"
+                                                    data-img="../image/products/software/ls_nav_card_banner.webp"
+                                                    data-name="LixelStudio"
+                                                    data-sub="A revolutionary 3D data processing workstation"
+                                                    data-url="../products/lixelstudio.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>LixelStudio
+                                                </a>
+                                                <a class="mega-prod-link" href="../products/lcc.html"
+                                                    data-img="../image/products/software/lcc_card_nav.webp"
+                                                    data-name="LCC"
+                                                    data-sub="3D content production powered by 3D Gaussian Splatting"
+                                                    data-url="../products/lcc.html">
+                                                    <i class="fa-solid fa-arrow-right"></i>LCC
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <!-- BOTTOM: cinematic image preview -->
+                                    <div class="mega-preview-img-box">
+                                        <!-- Lives inside a dropdown that is hidden until hover, so there is no
+                                             reason to spend 400KB+ of the initial load on it. -->
+                                        <img id="megaPreviewImg" class="mega-preview-full-img"
+                                            src="../image/products/tiltmeter-1.webp" alt="Product preview"
+                                            loading="lazy" decoding="async" width="640" height="360">
+                                        <div class="mega-preview-overlay"></div>
+                                        <div class="mega-preview-vignette"></div>
+                                        <div class="mega-preview-content">
+                                            <span class="mega-preview-badge">Featured</span>
+                                            <p class="mega-preview-name" id="megaPreviewName">Tiltmeter 90°</p>
+                                            <p class="mega-preview-sub" id="megaPreviewSub">High-resolution wireless
+                                                tilt sensing</p>
+                                            <a class="mega-preview-cta" id="megaPreviewCta"
+                                                href="../products/tiltmeter.html">
+                                                View Product <i class="fa-solid fa-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <!-- RIGHT: resources/contact links card + contact card -->
+                                <div class="mega-quick">
+                                    <!-- Resources + Book Demo card -->
+                                    <div class="mega-quick-links-card">
+                                        <p class="mega-quick-label">Resources</p>
+                                        <a class="mega-quick-link" href="/resources.html">
+                                            <i class="fas fa-book-open"></i> Insights &amp; Updates
+                                        </a>
+                                        <a class="mega-quick-link" href="/feed.html">
+                                            <i class="fas fa-bullhorn"></i> Social Feed
+                                        </a>
+                                        <a class="mega-quick-link" href="/glossary.html">
+                                            <i class="fas fa-book"></i> Glossary
+                                        </a>
+                                        <a class="mega-quick-link" href="/faq.html">
+                                            <i class="fas fa-question-circle"></i> FAQ
+                                        </a>
+                                        <div class="mega-quick-divider"></div>
+                                        <a class="mega-quick-cta"
+                                            href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                                            target="_blank" rel="noopener">
+                                            <i class="fa-solid fa-calendar-check"></i> Book Demo
+                                        </a>
+                                    </div>
+
+                                    <!-- Contact card: eyebrow + heading + phone/email + social -->
+                                    <div class="mega-quick-contact mega-contact-card">
+                                        <span class="mega-contact-card-eyebrow">Let's Talk</span>
+                                        <p class="mega-contact-card-title">Talk to Our Experts</p>
+                                        <p class="mega-contact-card-sub">Get in touch with our team for product demos,
+                                            solutions &amp; support.</p>
+                                        <div class="mega-contact-card-divider"></div>
+                                        <div class="mega-quick-phone">
+                                            <i class="fa-solid fa-phone"></i>
+                                            <a href="tel:+917893023322">+91 78930 23322</a>
+                                        </div>
+                                        <div class="mega-quick-email">
+                                            <i class="fa-solid fa-envelope"></i>
+                                            <a href="mailto:sentra@clovetech.com">sentra@clovetech.com</a>
+                                        </div>
+                                        <div class="mega-contact-card-divider"></div>
+                                        <span class="mega-contact-card-follow">Follow us on</span>
+                                        <div class="mega-quick-social-row">
+                                            <a class="mega-q-social"
+                                                href="https://www.linkedin.com/company/sentrabyclove/"
+                                                target="_blank" rel="noopener" aria-label="LinkedIn">
+                                                <i class="fab fa-linkedin-in"></i>
+                                            </a>
+                                            <a class="mega-q-social" href="https://x.com/Sentra970016" target="_blank"
+                                                rel="noopener" aria-label="X (Twitter)">
+                                                <i class="fab fa-x-twitter"></i>
+                                            </a>
+                                            <a class="mega-q-social"
+                                                href="https://www.instagram.com/sentra_tech_official/" target="_blank"
+                                                rel="noopener" aria-label="Instagram">
+                                                <i class="fab fa-instagram"></i>
+                                            </a>
+                                            <a class="mega-q-social"
+                                                href="https://www.facebook.com/profile.php?id=61591761143578"
+                                                target="_blank" rel="noopener" aria-label="Facebook">
+                                                <i class="fab fa-facebook-f"></i>
+                                            </a>
+                                            <a class="mega-q-social"
+                                                href="https://www.youtube.com/@Sentra-tech/" target="_blank"
+                                                rel="noopener" aria-label="YouTube">
+                                                <i class="fab fa-youtube"></i>
+                                            </a>
+                                            <a class="mega-q-social" href="https://medium.com/@sentra_8835" target="_blank"
+                                                rel="noopener" aria-label="Medium">
+                                                <i class="fab fa-medium"></i>
+                                            </a>
+                                            <a class="mega-q-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                                                rel="noopener" aria-label="Pinterest">
+                                                <i class="fab fa-pinterest"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ══ ABOUT US ══ -->
+                    <li class="nav-item dropdown">
+                        <a id="about-link" class="nav-link dropdown-toggle" href="../about.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            ABOUT US <i class="fa-solid fa-angle-down accent-color"></i>
+                        </a>
+                        <div class="dropdown-menu mega-bento" style="width:min(92vw,560px) !important;">
+                            <div class="mega-bento-grid mega-bento-grid-2col">
+                                <a class="mega-bento-item" href="../about.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-question-circle"></i></div>
+                                    <div class="mega-bento-title">Why Sentra</div>
+                                    <div class="mega-bento-sub">Our mission, vision & values</div>
+                                </a>
+                                <a class="mega-bento-item" href="../testimonial.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-comments"></i></div>
+                                    <div class="mega-bento-title">Their Voices</div>
+                                    <div class="mega-bento-sub">Client testimonials & stories</div>
+                                </a>
+                                <a class="mega-bento-item" href="../industries.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-industry"></i></div>
+                                    <div class="mega-bento-title">Industries</div>
+                                    <div class="mega-bento-sub">Sectors we serve</div>
+                                </a>
+                                <a class="mega-bento-item" href="../partnership.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-handshake"></i></div>
+                                    <div class="mega-bento-title">Partners</div>
+                                    <div class="mega-bento-sub">Collaborate with us</div>
+                                </a>
+                            </div>
+                            <div class="mega-industries-row">
+                                <span class="mega-industries-label">Industry Verticals</span>
+                                <div class="mega-industries-links">
+                                    <a class="mega-industry-link"
+                                        href="../industries/railway-infrastructure-monitoring.html"><i
+                                            class="fa-solid fa-train"></i> Railway</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/bridges-highways-monitoring.html"><i
+                                            class="fa-solid fa-bridge"></i> Bridges</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/buildings-highrise-monitoring.html"><i
+                                            class="fa-solid fa-building"></i> Buildings</a>
+                                    <a class="mega-industry-link" href="../industries/dams-reservoirs-monitoring.html"><i
+                                            class="fa-solid fa-water"></i> Dams</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/mining-geotechnical-monitoring.html"><i
+                                            class="fa-solid fa-helmet-safety"></i> Mining</a>
+                                    <a class="mega-industry-link" href="../industries/ports-marine-monitoring.html"><i
+                                            class="fa-solid fa-anchor"></i> Ports</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/construction-tunnelling-monitoring.html"><i
+                                            class="fa-solid fa-person-digging"></i> Construction</a>
+                                    <a class="mega-industry-link"
+                                        href="../industries/industrial-facilities-monitoring.html"><i
+                                            class="fa-solid fa-industry"></i> Industrial</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- ══ RESOURCES ══ -->
+                    <li class="nav-item dropdown">
+                        <a id="resources-link" class="nav-link dropdown-toggle" href="/resources.html" role="button"
+                            aria-haspopup="true" aria-expanded="false">
+                            RESOURCES <i class="fa-solid fa-angle-down accent-color"></i>
+                        </a>
+                        <div class="dropdown-menu mega-bento" style="width:min(92vw,720px) !important;">
+                            <div class="mega-bento-grid mega-bento-grid-3col">
+                                <a class="mega-bento-item" href="/resources.html#blogs">
+                                    <div class="mega-bento-icon"><i class="fas fa-blog"></i></div>
+                                    <div class="mega-bento-title">Blogs</div>
+                                    <div class="mega-bento-sub">Expert insights & updates</div>
+                                </a>
+                                <a class="mega-bento-item" href="/resources.html#case-studies">
+                                    <div class="mega-bento-icon"><i class="fas fa-file-alt"></i></div>
+                                    <div class="mega-bento-title">Case Studies</div>
+                                    <div class="mega-bento-sub">Real-world deployments</div>
+                                </a>
+                                <div class="mega-bento-split">
+                                    <a class="mega-bento-split-half" href="/resources.html#articles">
+                                        <i class="fas fa-newspaper"></i> Articles
+                                    </a>
+                                    <a class="mega-bento-split-half" href="/feed.html">
+                                        <i class="fas fa-bullhorn"></i> Social Feed
+                                    </a>
+                                </div>
+                                <a class="mega-bento-item" href="/videos.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-video"></i></div>
+                                    <div class="mega-bento-title">Videos &amp; Podcasts</div>
+                                    <div class="mega-bento-sub">Watch &amp; listen</div>
+                                </a>
+                                <div class="mega-bento-split">
+                                    <a class="mega-bento-split-half" href="/glossary.html">
+                                        <i class="fas fa-book"></i> Glossary
+                                    </a>
+                                    <a class="mega-bento-split-half" href="/faq.html">
+                                        <i class="fas fa-question"></i> FAQ
+                                    </a>
+                                </div>
+                                <a class="mega-bento-item" href="/document-center.html">
+                                    <div class="mega-bento-icon"><i class="fas fa-folder-open"></i></div>
+                                    <div class="mega-bento-title">Document Center</div>
+                                    <div class="mega-bento-sub">Product datasheets</div>
+                                </a>
+                            </div>
+                            <div style="border-top:1px solid rgba(255,255,255,0.08);margin:8px 0 6px;"></div>
+                            <div style="padding:2px 12px 4px;font-size:0.78rem;">
+                                <span style="color:var(--accent-color);font-weight:600;display:block;margin-bottom:4px;">Featured</span>
+                                <div class="mega-featured-scroll-wrap" style="position:relative;"><div class="mega-featured-scroll" style="display:grid;grid-template-columns:1fr 1px 1fr 1px 1fr;gap:0;height:110px;overflow:hidden;position:relative;z-index:2;">
+                                    <div class="mega-featured-col mega-featured-col--slow">
+                                        <a href="/blogs/what-is-a-strain-gauge-types-working-principle.html" class="mega-featured-link">Strain Gauge Guide</a>
+                                        <a href="/blogs/what-is-an-accelerometer-sensor-guide.html" class="mega-featured-link">Accelerometer Guide</a>
+                                        <a href="/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html" class="mega-featured-link">Digital Twins Compared</a>
+                                        <a href="/blogs/10-early-warning-signs-bridge-continuous-monitoring.html" class="mega-featured-link">Bridge Warning Signs</a>
+                                        <a href="/blogs/advanced-iot-solutions.html" class="mega-featured-link">Advanced IoT</a>
+                                        <a href="/blogs/fatigue-life-assessment.html" class="mega-featured-link">Fatigue Life Assessment</a>
+                                        <a href="/article/ai-infrastructure-monitoring.html" class="mega-featured-link">AI Infrastructure Monitoring</a>
+                                        <a href="/article/worldsensing-official-reseller-india.html" class="mega-featured-link">Worldsensing Partnership</a>
+                                        <a href="/case-studies/structural-health-monitoring-of-highway-bridges.html" class="mega-featured-link">Highway Bridge SHM</a>
+                                        <a href="/blogs/what-is-a-strain-gauge-types-working-principle.html" class="mega-featured-link">Strain Gauge Guide</a>
+                                        <a href="/blogs/what-is-an-accelerometer-sensor-guide.html" class="mega-featured-link">Accelerometer Guide</a>
+                                        <a href="/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html" class="mega-featured-link">Digital Twins Compared</a>
+                                        <a href="/blogs/10-early-warning-signs-bridge-continuous-monitoring.html" class="mega-featured-link">Bridge Warning Signs</a>
+                                        <a href="/blogs/advanced-iot-solutions.html" class="mega-featured-link">Advanced IoT</a>
+                                        <a href="/blogs/fatigue-life-assessment.html" class="mega-featured-link">Fatigue Life Assessment</a>
+                                        <a href="/article/ai-infrastructure-monitoring.html" class="mega-featured-link">AI Infrastructure Monitoring</a>
+                                        <a href="/article/worldsensing-official-reseller-india.html" class="mega-featured-link">Worldsensing Partnership</a>
+                                        <a href="/case-studies/structural-health-monitoring-of-highway-bridges.html" class="mega-featured-link">Highway Bridge SHM</a>
+                                    </div>
+                                    <div class="mega-featured-divider"></div>
+                                    <div class="mega-featured-col mega-featured-col--medium">
+                                        <a href="/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html" class="mega-featured-link">Inclinometer Guide</a>
+                                        <a href="/blogs/monitoring-construction-induced-vibrations.html" class="mega-featured-link">Construction Vibrations</a>
+                                        <a href="/blogs/asset-monitoring-facility-management.html" class="mega-featured-link">Facility Management</a>
+                                        <a href="/blogs/structural-health-monitoring.html" class="mega-featured-link">Structural Health Monitoring</a>
+                                        <a href="/article/digital-twin-predictive-maintenance-sentra.html" class="mega-featured-link">Digital Twin Predictive Maintenance</a>
+                                        <a href="/article/xgrids-authorized-reseller-india.html" class="mega-featured-link">XGRIDS Reseller</a>
+                                        <a href="/article/building-resilient-smart-cities-with-data-driven-insights.html" class="mega-featured-link">Smart Cities</a>
+                                        <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" class="mega-featured-link">Railway Bridge IoT</a>
+                                        <a href="/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html" class="mega-featured-link">Inclinometer Guide</a>
+                                        <a href="/blogs/monitoring-construction-induced-vibrations.html" class="mega-featured-link">Construction Vibrations</a>
+                                        <a href="/blogs/asset-monitoring-facility-management.html" class="mega-featured-link">Facility Management</a>
+                                        <a href="/blogs/structural-health-monitoring.html" class="mega-featured-link">Structural Health Monitoring</a>
+                                        <a href="/article/digital-twin-predictive-maintenance-sentra.html" class="mega-featured-link">Digital Twin Predictive Maintenance</a>
+                                        <a href="/article/xgrids-authorized-reseller-india.html" class="mega-featured-link">XGRIDS Reseller</a>
+                                        <a href="/article/building-resilient-smart-cities-with-data-driven-insights.html" class="mega-featured-link">Smart Cities</a>
+                                        <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" class="mega-featured-link">Railway Bridge IoT</a>
+                                    </div>
+                                    <div class="mega-featured-divider"></div>
+                                    <div class="mega-featured-col mega-featured-col--fast">
+                                        <a href="/blogs/what-is-a-data-logger-types-guide.html" class="mega-featured-link">Data Logger Guide</a>
+                                        <a href="/blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="mega-featured-link">Seismic Monitoring</a>
+                                        <a href="/blogs/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Monitoring</a>
+                                        <a href="/blogs/real-time-monitoring-solutions-transforming-infrastructure-safety-performance.html" class="mega-featured-link">Real-Time Monitoring</a>
+                                        <a href="/blogs/top-5-hidden-structural-damages-bridge-inspection.html" class="mega-featured-link">Hidden Bridge Damages</a>
+                                        <a href="/article/revolutionizing-infrastructure-monitoring-with-iot.html" class="mega-featured-link">Revolutionizing IoT Monitoring</a>
+                                        <a href="/article/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Article</a>
+                                        <a href="/article/track-to-the-future-remote-monitoring-rail-infrastructure.html" class="mega-featured-link">Rail Monitoring</a>
+                                        <a href="/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="mega-featured-link">BridgePulse AI &amp; Drones</a>
+                                        <a href="/blogs/what-is-a-data-logger-types-guide.html" class="mega-featured-link">Data Logger Guide</a>
+                                        <a href="/blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="mega-featured-link">Seismic Monitoring</a>
+                                        <a href="/blogs/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Monitoring</a>
+                                        <a href="/blogs/real-time-monitoring-solutions-transforming-infrastructure-safety-performance.html" class="mega-featured-link">Real-Time Monitoring</a>
+                                        <a href="/blogs/top-5-hidden-structural-damages-bridge-inspection.html" class="mega-featured-link">Hidden Bridge Damages</a>
+                                        <a href="/article/revolutionizing-infrastructure-monitoring-with-iot.html" class="mega-featured-link">Revolutionizing IoT Monitoring</a>
+                                        <a href="/article/intelligent-pump-house-monitoring-and-control.html" class="mega-featured-link">Pump House Article</a>
+                                        <a href="/article/track-to-the-future-remote-monitoring-rail-infrastructure.html" class="mega-featured-link">Rail Monitoring</a>
+                                        <a href="/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="mega-featured-link">BridgePulse AI &amp; Drones</a>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">CONTACT US</a>
+                    </li>
+
+                </ul>
+            </div>
+
+            <div class="navbar-action-container">
+                <div class="navbar-action-button">
+                    <button id="themeSwitch" class="themeswitch" aria-label="Toggle Theme">
+                        <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
+                    </button>
+                </div>
+                <a href="tel:+917893023322" class="navbar-call-pill">
+                    <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
+                    <span class="navbar-call-text">+91 78930 23322</span>
+                </a>
+            </div>
+
+        </div>
+    </nav>
+
+    <script src="../js/themeswitch.js"></script>
+    <script>
+        /* Header is fetched & injected via jQuery .html() which runs scripts immediately.
+           DOMContentLoaded has already fired — run init directly, no wrapper needed. */
+        (function initMegaNav() {
+
+            /* ── Active nav highlighting ── */
+            var pathname = window.location.pathname.toLowerCase();
+            var el = {
+                products: document.getElementById('products-link'),
+                solutions: document.getElementById('solutions-link'),
+                about: document.getElementById('about-link'),
+                resources: document.getElementById('resources-link')
+            };
+            if (pathname.endsWith('/products.html') || pathname.includes('/products/')) {
+                el.products && el.products.classList.add('active');
+            } else if (pathname.endsWith('/solutions.html') || pathname.includes('/solutions/')) {
+                el.solutions && el.solutions.classList.add('active');
+            } else if (['/about.html', '/testimonial.html', '/partnership.html', '/industries.html'].some(function (p) { return pathname.endsWith(p); }) || pathname.includes('/industries/')) {
+                el.about && el.about.classList.add('active');
+            } else if (['/resources.html', '/feed.html', '/glossary.html', '/faq.html', '/videos.html', '/document-center.html'].some(function (p) { return pathname.endsWith(p); })) {
+                el.resources && el.resources.classList.add('active');
+            }
+
+            /* ── Product image preview hover swap ── */
+            var previewImg = document.getElementById('megaPreviewImg');
+            var previewName = document.getElementById('megaPreviewName');
+            var previewSub = document.getElementById('megaPreviewSub');
+            var previewCta = document.getElementById('megaPreviewCta');
+
+            if (previewImg) {
+                var prodLinks = document.querySelectorAll('.mega-prod-link[data-img]');
+                var swapTimer = null;
+
+                function swapPreview(link) {
+                    var img = link.getAttribute('data-img');
+                    var name = link.getAttribute('data-name');
+                    var sub = link.getAttribute('data-sub');
+                    var url = link.getAttribute('data-url');
+
+                    /* Skip if already showing this product */
+                    if (previewImg.getAttribute('src').indexOf(img.split('/').pop()) !== -1) {
+                        prodLinks.forEach(function (l) { l.classList.remove('is-active'); });
+                        link.classList.add('is-active');
+                        return;
+                    }
+
+                    previewImg.classList.add('is-fading');
+                    clearTimeout(swapTimer);
+                    swapTimer = setTimeout(function () {
+                        previewImg.src = img;
+                        previewImg.alt = name;
+                        previewName.textContent = name;
+                        previewSub.textContent = sub;
+                        previewCta.href = url;
+                        previewImg.classList.remove('is-fading');
+                    }, 220);
+
+                    prodLinks.forEach(function (l) { l.classList.remove('is-active'); });
+                    link.classList.add('is-active');
+                }
+
+                prodLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { swapPreview(link); });
+                });
+
+                /* Highlight first link on open */
+                var productDropdown = document.querySelector('.dropdown-menu-products');
+                if (productDropdown) {
+                    var parentLi = productDropdown.closest('.nav-item');
+                    if (parentLi && prodLinks.length) {
+                        parentLi.addEventListener('mouseenter', function () {
+                            prodLinks[0].classList.add('is-active');
+                        });
+                        parentLi.addEventListener('mouseleave', function () {
+                            prodLinks.forEach(function (l) { l.classList.remove('is-active'); });
+                        });
+                    }
+                }
+            }
+
+            /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
+                var dropdown = item.querySelector(
+                    '.dropdown-menu-products, .mega-solutions, .mega-bento'
+                );
+                if (!dropdown) return;
+                var closeTimer = null;
+
+                function openMenu() {
+                    if (window.innerWidth < 1024) return;
+                    clearTimeout(closeTimer);
+                    item.classList.add('mega-open');
+                }
+                function scheduleClose(delay) {
+                    clearTimeout(closeTimer);
+                    closeTimer = setTimeout(function () {
+                        item.classList.remove('mega-open');
+                    }, delay);
+                }
+
+                item.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseleave', function () { scheduleClose(280); });
+                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+            });
+
+            /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
+            requestAnimationFrame(function () {
+                var headerEl = document.querySelector('header');
+                if (headerEl) {
+                    var bottom = headerEl.getBoundingClientRect().bottom;
+                    if (bottom > 0) {
+                        document.documentElement.style.setProperty('--mega-menu-top', (bottom - 37) + 'px');
+                    }
+                }
+            });
+
+        })();
+    </script>
+</div></div>
+    </header>
+
+    <aside>
+        <div id="edit-sidebar"></div>
+    </aside>
+
+    <aside>
+        <div id="sidebar"><div>
+    <div class="content-overlay">
+        <div class="content-edit-sidebar">
+            <div class="sidebar-header">
+                <div></div>
+                <div class="close-btn-second">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <div class="content">
+                <span>Click on the Edit Content button to edit/add the content.</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="mmenu-overlay"></div>
+    <nav class="mmenu-panel" aria-label="Mobile navigation">
+        <div class="mmenu-scroll">
+
+            <!-- Quick links -->
+            <div class="mmenu-quicklinks">
+                <a href="/" class="mmenu-quicklink">Home</a>
+                <a href="../about.html" class="mmenu-quicklink">About Us</a>
+                <a href="../contact.html" class="mmenu-quicklink">Contact Us</a>
+            </div>
+
+            <!-- Products -->
+            <div class="mmenu-section">
+                <span class="mmenu-label">Products</span>
+                <div class="mmenu-list">
+                    <a class="mmenu-row" href="../products/edge-devices.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-microchip"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Edge Devices</span>
+                            <span class="mmenu-row-sub">Wireless tiltmeters, GNSS &amp; vibration sensors</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="../products/core-communications.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-wifi"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Core Communications</span>
+                            <span class="mmenu-row-sub">Gateways, repeaters &amp; mesh networking</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="../products/wired-sensors.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-network-wired"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Wired Sensors</span>
+                            <span class="mmenu-row-sub">Accelerometers &amp; strain gauges</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="../products/laser-scanners.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-camera"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Laser Scanners <span class="mmenu-new-badge">New</span></span>
+                            <span class="mmenu-row-sub">LiDAR &amp; spatial capture devices</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                    <a class="mmenu-row" href="../products/lcc.html">
+                        <span class="mmenu-row-icon"><i class="fa-solid fa-cubes"></i></span>
+                        <span class="mmenu-row-text">
+                            <span class="mmenu-row-title">Softwares</span>
+                            <span class="mmenu-row-sub">LixelStudio &amp; Gaussian Splatting tools</span>
+                        </span>
+                        <i class="fa-solid fa-arrow-up-right-from-square mmenu-row-arrow"></i>
+                    </a>
+                </div>
+                <a class="mmenu-view-all" href="../products.html">View all products <i
+                        class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Featured Solutions -->
+            <div class="mmenu-card mmenu-card--amber">
+                <span class="mmenu-label mmenu-label--amber">Solutions</span>
+                <div class="mmenu-grid-2">
+                    <a class="mmenu-tile" href="../solutions/structural-health-monitoring.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            Structural Health Monitoring</span>
+                        <span class="mmenu-tile-sub">Real-time sensing for critical infrastructure</span>
+                    </a>
+                    <a class="mmenu-tile" href="../solutions/bridge-inspection-and-condition-assessment.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i> Bridge
+                            Inspection</span>
+                        <span class="mmenu-tile-sub">Condition assessment</span>
+                    </a>
+                    <a class="mmenu-tile" href="../solutions/asset-monitoring-and-management-solutions.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i> Asset
+                            Monitoring</span>
+                        <span class="mmenu-tile-sub">Lifecycle management</span>
+                    </a>
+                    <a class="mmenu-tile" href="../solutions/digital-twin.html">
+                        <span class="mmenu-tile-title"><i class="fa-solid fa-arrow-up-right-from-square"></i> Digital
+                            Twin</span>
+                        <span class="mmenu-tile-sub">Real-time asset simulation</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- More Solutions -->
+            <div class="mmenu-card mmenu-card--slate">
+                <span class="mmenu-label mmenu-label--slate">More Solutions</span>
+                <div class="mmenu-simple-list">
+                    <a class="mmenu-simple-link" href="../solutions/advanced-non-destructive-testing-ndt.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Advanced NDT</a>
+                    <a class="mmenu-simple-link" href="../solutions/geotechnical-and-foundation-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Geotechnical &amp; Foundation</a>
+                    <a class="mmenu-simple-link" href="../solutions/fatigue-and-residual-life-assessment.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Fatigue Assessment</a>
+                    <a class="mmenu-simple-link" href="../solutions/consulting-and-advisory-services.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
+                    <a class="mmenu-simple-link" href="../solutions/digital-engineering-and-documentation.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                </div>
+            </div>
+
+            <!-- Resources / Company -->
+            <div class="mmenu-card mmenu-card--neutral">
+                <div class="mmenu-footer-grid">
+                    <div class="mmenu-footer-col">
+                        <span class="mmenu-label">Resources</span>
+                        <a class="mmenu-footer-link" href="../resources.html#blogs"><i
+                                class="fa-solid fa-blog"></i> Blogs</a>
+                        <a class="mmenu-footer-link" href="../resources.html#case-studies"><i
+                                class="fa-solid fa-file-lines"></i> Case Studies</a>
+                        <a class="mmenu-footer-link" href="../resources.html#articles"><i
+                                class="fa-solid fa-newspaper"></i> Articles</a>
+                        <a class="mmenu-footer-link" href="../videos.html"><i
+                                class="fa-solid fa-video"></i> Videos &amp; Podcasts</a>
+                        <a class="mmenu-footer-link" href="../glossary.html"><i
+                                class="fa-solid fa-book"></i> Glossary</a>
+                        <a class="mmenu-footer-link" href="../faq.html"><i
+                                class="fa-solid fa-circle-question"></i> FAQ</a>
+                        <a class="mmenu-footer-link" href="../document-center.html"><i
+                                class="fa-solid fa-folder-open"></i> Document Center</a>
+                    </div>
+                    <div class="mmenu-footer-col">
+                        <span class="mmenu-label">Company</span>
+                        <a class="mmenu-footer-link" href="../industries.html"><i
+                                class="fa-solid fa-industry"></i> Industries</a>
+                        <a class="mmenu-footer-link" href="../testimonial.html"><i
+                                class="fa-solid fa-comments"></i> Testimonials</a>
+                        <a class="mmenu-footer-link" href="../partnership.html"><i
+                                class="fa-solid fa-handshake"></i> Partnership</a>
+                        <a class="mmenu-footer-link" href="../feed.html"><i
+                                class="fa-solid fa-bullhorn"></i> Social Feed</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Sticky bottom bar -->
+        <div class="mmenu-bottom">
+            <div class="mmenu-follow-row">
+                <span class="mmenu-follow-label">Follow Us</span>
+                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                    target="_blank" rel="noopener">Book Demo</a>
+            </div>
+            <div class="mmenu-social-row">
+                <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
+                    rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a class="mmenu-social" href="https://x.com/Sentra970016" target="_blank" rel="noopener"
+                    aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+                <a class="mmenu-social" href="https://www.instagram.com/sentra_tech_official/" target="_blank"
+                    rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a class="mmenu-social" href="https://www.facebook.com/profile.php?id=61591761143578" target="_blank"
+                    rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
+                    rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="mmenu-contact-row">
+                <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
+                <a href="mailto:sentra@clovetech.com"><i class="fa-solid fa-envelope"></i> sentra@clovetech.com</a>
+            </div>
+        </div>
+    </nav>
+</div></div>
+    </aside>
+
+    <main>
+        <!-- Hero -->
+        <section class="detail-hero">
+            <a href="../resources.html#articles" class="back-btn"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+            <div class="hero-bg-dots"></div>
+            <div class="hero-glow orange-glow"></div>
+            <div class="hero-top-line"></div>
+            <div class="hero-container-inner">
+                <div class="hero-grid">
+                    <div class="hero-text-col">
+                        <div class="hero-meta-row">
+                            <span class="hero-badge orange">Comparison Study</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> Sep 17, 2026</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-clock"></i> 9 min read</span>
+                        </div>
+                        <h1 class="hero-title">Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study</h1>
+                        <div class="hero-intro">
+                            <p>A side-by-side bridge condition survey pitted a mobile SLAM-based scanner, the XGRIDS L2 Pro, against a conventional terrestrial laser scanning (TLS) workflow built around a static scanner such as the RTC360. The mobile workflow finished the entire project in about 6 hours against roughly 7.5 days for TLS: while holding accuracy to under 1cm against the TLS baseline.</p>
+                        </div>
+                    </div>
+                    <div class="hero-image-col">
+                        <div class="hero-image-wrap">
+                            <img src="../image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp" alt="Handheld SLAM vs. TLS for highway bridge surveys: colorized point cloud model of the bridge" loading="eager">
+                            <div class="hero-image-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Content -->
+        <div class="detail-content-wrapper">
+            <div class="detail-grid">
+                <article class="detail-article">
+                    <div class="tts-bar">
+                        <button id="ttsPlayBtn" class="tts-btn" aria-label="Play article aloud" aria-pressed="false"><i class="fas fa-play"></i></button>
+                        <div class="tts-progress" id="ttsProgressBar">
+                            <div id="progressFill" class="tts-fill"></div>
+                        </div>
+                        <span class="tts-label">Listen</span>
+                    </div>
+
+                    <div class="detail-meta-bar">
+                        <div class="detail-meta-left">
+                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> Sep 17, 2026</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Comparison Study</span>
+                        </div>
+                        <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Vishal Das <a href="https://in.linkedin.com/in/vishaldas01" target="_blank" rel="noopener" aria-label="Vishal Das on LinkedIn"><i class="fa-brands fa-linkedin"></i></a> | Sentra Technologies</span>
+                    </div>
+
+                    <div id="ttsContent">
+                        <p>Bridge condition surveys usually run into the same wall: terrestrial laser scanning (TLS) delivers excellent static accuracy, but it needs the scanner set up, levelled and registered again at every position along the structure. On a long bridge deck, that adds up to hundreds of individual setups, each one closing off part of the site while it runs.</p>
+                        <p>This case study compares that conventional TLS workflow, using a static scanner such as the RTC360, against a mobile SLAM-based alternative, the XGRIDS L2 Pro, on the same bridge. The scanner is carried or wheeled along the structure in a handful of continuous loops instead of being repositioned hundreds of times, and its onboard AI pipeline handles most of the point cloud cleanup automatically.</p>
+
+                        <div class="case-stats-grid">
+                            <div class="case-stat-item">
+                                <span class="case-stat-num">29x</span>
+                                <span class="case-stat-label">Faster Total Time</span>
+                                <span class="case-stat-sub">6 hrs vs 7.5 days</span>
+                            </div>
+                            <div class="case-stat-item">
+                                <span class="case-stat-num">&lt;1cm</span>
+                                <span class="case-stat-label">Avg. Accuracy</span>
+                                <span class="case-stat-sub">vs TLS baseline</span>
+                            </div>
+                            <div class="case-stat-item">
+                                <span class="case-stat-num">16x</span>
+                                <span class="case-stat-label">Faster Field Work</span>
+                                <span class="case-stat-sub">45 min vs 1.5 days</span>
+                            </div>
+                            <div class="case-stat-item">
+                                <span class="case-stat-num">90%</span>
+                                <span class="case-stat-label">Auto Cleaning</span>
+                                <span class="case-stat-sub">Dynamic objects</span>
+                            </div>
+                        </div>
+
+                        <h2 id="challengeSection">The Challenge: A Fixed-Setup Workflow on an Open Structure</h2>
+                        <p>Bridges are among the hardest assets to scan efficiently with TLS. The structure is long, linear and exposed to live traffic, so a static scanner can only cover a limited field of view from each tripod position before it has to be moved, re-levelled and re-registered. Every one of those setups also occupies part of the deck or the area beneath it, which means the survey team is constantly negotiating access around ongoing traffic or site activity.</p>
+                        <p>For this bridge, the TLS plan called for 350 individual scanner setups to achieve full coverage: a schedule that pushed field work alone to roughly a day and a half, before any office processing had started.</p>
+
+                        <h2 id="fieldworkSection">Field Work Comparison: 3 Loops vs 350 Setups</h2>
+                        <p>The mobile scanner covers the same bridge by walking or wheeling three continuous loops across the structure, recording geometry the entire time instead of stopping to set up at fixed stations. That single difference in method removes almost all of the field-time cost that TLS carries.</p>
+
+                        <table class="compare-table">
+                            <thead>
+                                <tr><th>Metric</th><th>L2 Pro</th><th>TLS (RTC360)</th><th>Advantage</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Scan Method</td><td>3 loops</td><td>350 setups</td><td>117x fewer setups</td></tr>
+                                <tr><td>Field Time</td><td>45 minutes</td><td>1.5 days</td><td>16x faster</td></tr>
+                                <tr><td>Site Access</td><td>Full mobility</td><td>Limited (traffic)</td><td>No constraints</td></tr>
+                            </tbody>
+                        </table>
+                        <p>Because the mobile scanner keeps moving, the survey crew never has to close off a section of the bridge to set up equipment: the structure stays fully accessible to traffic and other site activity throughout the capture.</p>
+
+                        <h2 id="processingSection">Processing Time Breakdown</h2>
+                        <p>Field time is only half of a scanning project's schedule. Every point cloud still has to be registered into a single coordinate system, and then cleaned of moving objects: vehicles, pedestrians, anything that isn't part of the static structure, before it is usable for inspection or scan-to-BIM work. This is where the gap between the two methods widens the most.</p>
+
+                        <div class="ptb-card">
+                            <p class="ptb-title">Processing Time Breakdown</p>
+                            <div class="ptb-row">
+                                <div class="ptb-row-head">
+                                    <span class="ptb-row-label">Registration</span>
+                                    <span class="ptb-row-values"><span class="ptb-l2">L2 Pro: 4.5 hrs</span><span>TLS: 24 hrs (1 day)</span></span>
+                                </div>
+                                <div class="ptb-bar-track"><div class="ptb-bar-fill" style="width:19%"></div></div>
+                                <span class="ptb-faster">5x faster</span>
+                            </div>
+                            <div class="ptb-row">
+                                <div class="ptb-row-head">
+                                    <span class="ptb-row-label">Dynamic Object Removal</span>
+                                    <span class="ptb-row-values"><span class="ptb-l2">L2 Pro: 1 hr (90% auto)</span><span>TLS: 144 hrs (6 days manual)</span></span>
+                                </div>
+                                <div class="ptb-bar-track"><div class="ptb-bar-fill" style="width:3%"></div></div>
+                                <span class="ptb-faster">144x faster</span>
+                            </div>
+                            <div class="ptb-row ptb-total">
+                                <div class="ptb-row-head">
+                                    <span class="ptb-row-label">Total Processing</span>
+                                    <span class="ptb-row-values"><span class="ptb-l2">L2 Pro: 5.5 hrs</span><span>TLS: 168 hrs (7 days)</span></span>
+                                </div>
+                                <div class="ptb-bar-track"><div class="ptb-bar-fill" style="width:4%"></div></div>
+                                <span class="ptb-faster">30x faster processing</span>
+                            </div>
+                        </div>
+                        <p>The dynamic object removal step is where TLS loses the most time. A static scan captures whatever passes through its field of view during setup, and stripping those moving objects out of a dense point cloud by hand is slow, meticulous work. The mobile workflow's onboard pipeline automates roughly 90% of that cleanup, cutting a six-day manual task down to about an hour.</p>
+
+                        <div class="insight-box">
+                            <h5><i class="fa-solid fa-clock" style="margin-right:8px;"></i>Total Project Time</h5>
+                            <p>Combining field work and processing, the mobile workflow delivered a finished, cleaned point cloud in about <strong>6 hours</strong>, compared with roughly <strong>7.5 days</strong> for the TLS workflow on the same bridge: a <span class="stat-highlight" style="font-size:1.3rem;">29x</span> reduction in total project time.</p>
+                        </div>
+
+                        <h2 id="accuracySection">Accuracy Validation Against the TLS Baseline</h2>
+                        <p>Speed only matters if the resulting model can be trusted. The mobile scan was checked point-by-point against the TLS dataset, which served as the survey-grade accuracy baseline for the comparison. Across the structure, the mobile-scanned point cloud held to an average deviation of under 1cm from that baseline: well within the tolerance needed for bridge condition assessment, clearance checks and scan-to-BIM modelling.</p>
+                        <p>That result is consistent with what SLAM-based mobile mapping systems are generally suited to: centimetre-level accuracy delivered far faster than static scanning, rather than an attempt to beat TLS on absolute precision. For most bridge inspection and digital twin use cases, that trade-off comes out strongly in favour of the mobile method once field time, site disruption and processing labour are counted.</p>
+
+                        <h2 id="resultsSection">Results &amp; Deliverables</h2>
+                        <p>The output of the mobile scan is a fully colorized, cleaned point cloud of the bridge: ready to hand off for condition assessment, clearance verification, or as the geometric baseline for a scan-to-BIM or digital twin workflow.</p>
+                        <div class="case-gallery">
+                            <div class="case-gallery-item">
+                                <img src="https://cdn-bukbb1.xgrids.cloud/prd/cms/1772179101471_7.png" alt="Colorized point cloud model of the bridge, view 1" loading="lazy">
+                                <div class="case-gallery-caption">Colorized Point Cloud Model of the Bridge</div>
+                            </div>
+                            <div class="case-gallery-item">
+                                <img src="https://cdn-bukbb1.xgrids.cloud/prd/cms/1772179114961_8.png" alt="Colorized point cloud model of the bridge, view 2" loading="lazy">
+                                <div class="case-gallery-caption">Colorized Point Cloud Model of the Bridge</div>
+                            </div>
+                            <div class="case-gallery-item">
+                                <img src="https://cdn-bukbb1.xgrids.cloud/prd/cms/1772179127199_9.png" alt="Colorized point cloud model of the bridge, view 3" loading="lazy">
+                                <div class="case-gallery-caption">Colorized Point Cloud Model of the Bridge</div>
+                            </div>
+                        </div>
+
+                        <h2 id="takeawaysSection">What This Means for Infrastructure Teams</h2>
+                        <p>For teams responsible for periodic bridge inspection or asset condition monitoring, the practical implication is straightforward: a mobile, SLAM-based scan captures full-structure geometry in a fraction of the field and processing time TLS requires, without closing off the structure to normal traffic during capture. That turns a survey that used to take the better part of two weeks: field work, registration and manual cleanup combined, into a same-day deliverable.</p>
+                        <p>It does not eliminate the need for TLS everywhere. Where a project genuinely requires the highest static, survey-grade accuracy on a specific critical component, terrestrial scanning still has a role. But for routine and periodic full-structure bridge condition surveys, where turnaround, site access and labour cost all matter, mobile laser scanning is now delivering practical accuracy fast enough to change how often a bridge can realistically be resurveyed.</p>
+
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="accordion" id="faqBridgeCase" style="margin-top:1rem;">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q1" aria-expanded="false">How much faster is mobile laser scanning than terrestrial laser scanning for bridge inspection?</button></h3>
+                                <div id="faqBC-q1" class="accordion-collapse collapse show" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>In this bridge inspection case study, mobile laser scanning completed the full project in about 6 hours versus roughly 7.5 days for terrestrial laser scanning (TLS): a 29x improvement in total project time, driven by a 16x faster field survey and a 144x faster dynamic object removal step.</p></div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q2" aria-expanded="false">How accurate is mobile laser scanning compared to a TLS baseline?</button></h3>
+                                <div id="faqBC-q2" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>The mobile-scanned point cloud achieved under 1cm average accuracy when checked against the terrestrial laser scanning baseline, which is well within the tolerance required for bridge condition assessment and scan-to-BIM workflows.</p></div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q3" aria-expanded="false">Why does terrestrial laser scanning take longer on a bridge?</button></h3>
+                                <div id="faqBC-q3" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>TLS is a static, tripod-based method: the scanner has to be set up, levelled and registered at every position, and a bridge of any length can require hundreds of individual setups. In this case, TLS needed 350 setups against 3 walking loops for the mobile scanner, and each TLS setup also restricts access to that section of the structure while it runs.</p></div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q4" aria-expanded="false">What is dynamic object removal in point cloud processing?</button></h3>
+                                <div id="faqBC-q4" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>Dynamic object removal is the process of stripping moving objects: vehicles, pedestrians, passing traffic: out of a point cloud so only the static structure remains. Manual removal on a large TLS dataset can take days; an automated pipeline can complete the same cleanup in about an hour with roughly 90% of objects removed automatically.</p></div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q5" aria-expanded="false">Does mobile laser scanning replace terrestrial laser scanning for infrastructure inspection?</button></h3>
+                                <div id="faqBC-q5" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>Not universally: TLS still delivers the highest static, survey-grade accuracy for critical structural detail. But for full-structure bridge condition surveys where field time, site access and turnaround matter, mobile SLAM-based scanning delivers comparable practical accuracy at a fraction of the time and site disruption.</p></div></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="detail-cta">
+                        <h2>Ready to Bring Faster Reality Capture to Your Next Bridge Survey?</h2>
+                        <p>Talk to Sentra's reality capture team about mobile laser scanning, scan-to-BIM and digital twin workflows for bridges, buildings and critical infrastructure.</p>
+                        <a class="cta-btn" href="/contact.html?enquiry=1&amp;product=Laser%20Scanners">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <aside class="detail-sidebar">
+                    <div class="sidebar-sticky">
+                        <div class="sidebar-card toc">
+                            <h3><i class="fa-solid fa-list"></i> Table of Contents</h3>
+                            <div id="tocContainer">
+                                <button class="toc-item" data-target="challengeSection">The Challenge</button>
+                                <button class="toc-item" data-target="fieldworkSection">Field Work Comparison</button>
+                                <button class="toc-item" data-target="processingSection">Processing Time Breakdown</button>
+                                <button class="toc-item" data-target="accuracySection">Accuracy Validation</button>
+                                <button class="toc-item" data-target="resultsSection">Results &amp; Deliverables</button>
+                                <button class="toc-item" data-target="takeawaysSection">Key Takeaways</button>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3><i class="fa-regular fa-share-from-square"></i> Share</h3>
+                            <div class="sidebar-share-icons">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" target="_blank" class="share-icon-link" aria-label="Share on Facebook" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html&text=Handheld%20SLAM%20vs.%20TLS%20for%20Highway%20Bridge%20Surveys" target="_blank" class="share-icon-link" aria-label="Share on Twitter" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" target="_blank" class="share-icon-link" aria-label="Share on LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://api.whatsapp.com/send?text=Handheld%20SLAM%20vs.%20TLS%20for%20Highway%20Bridge%20Surveys%20https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" target="_blank" class="share-icon-link" aria-label="Share on WhatsApp" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3><i class="fa-regular fa-bookmark"></i> Related Solutions</h3>
+                            <div style="display:flex;flex-direction:column;gap:8px;">
+                                <a href="../solutions/bridge-inspection-and-condition-assessment.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Bridge Inspection &amp; Condition Assessment</a>
+                                <a href="../products/laser-scanners.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Laser Scanners</a>
+                                <a href="../solutions/digital-twin.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Digital Twin</a>
+                                <a href="../solutions/asset-monitoring-and-management-solutions.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Asset Monitoring &amp; Management</a>
+                            </div>
+                        </div>
+
+                        <a href="../resources.html#articles" class="back-btn" style="position:static;display:flex;width:100%;justify-content:center;"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <!-- More Articles -->
+        <div class="hero-container" style="max-width:1280px;margin:0 auto;padding:0 1rem 4rem">
+            <div class="trending-section">
+                <div class="trending-header">
+                    <span class="trending-dot"></span>
+                    <h2>More Articles</h2>
+                </div>
+                <div class="trending-grid">
+                    <a href="../article/3d-laser-scanning-lidar-infrastructure-digital-twins.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp" alt="3D Laser Scanning and LiDAR for Infrastructure" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>3D Laser Scanning &amp; LiDAR for Infrastructure Digital Twins</h4>
+                            <div class="trending-card-meta"><span>Digital Twin</span><span>&middot;</span><span>Article</span></div>
+                        </div>
+                    </a>
+                    <a href="../article/track-to-the-future-remote-monitoring-rail-infrastructure.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/articles/article_track-to-the-future-remote-monitoring-rail-infrastructure.webp" alt="Rail Infrastructure Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Track to the Future: Remote Monitoring for Rail Infrastructure</h4>
+                            <div class="trending-card-meta"><span>Rail Infrastructure</span><span>&middot;</span><span>Article</span></div>
+                        </div>
+                    </a>
+                    <a href="../article/ai-infrastructure-monitoring.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/articles/articles_ai_for_bridge_monitoring.webp" alt="AI for Infrastructure Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>AI for Infrastructure Monitoring</h4>
+                            <div class="trending-card-meta"><span>AI Monitoring</span><span>&middot;</span><span>Article</span></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="footer"><div class="section-footer">
+    <div class="bg-footer-wrapper">
+        <div class="bg-footer">
+            <div class="hero-container position-relative z-2">
+                <div class="d-flex flex-column gspace-2">
+                    <div class="footer-grid">
+                        <div class="footer-col footer-col-brand">
+                            <div class="footer-logo-container">
+                                <div class="logo-container-footer">
+                                    <img src="../image/branding/sentra_white_1.svg" alt="Logo"
+                                        class="site-logo img-fluid">
+                                </div>
+
+                                <h4>Smart
+                                    Innovation.
+                                    Strategic Growth.</h4>
+                                <h6 class="footer-p">
+                                    Sentra connects infrastructure, technology, and intelligence to build smarter,
+                                    safer, and more sustainable systems.
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-products-container">
+                                <h5>Products</h5>
+                                <ul class="footer-list">
+                                    <li><a href="../products/edge-devices.html">Edge Devices</a></li>
+                                    <li><a href="../products/core-communications.html">Core Communications</a></li>
+                                    <li><a href="../products/wired-sensors.html">Wired Sensors</a></li>
+                                    <li><a href="../products/laser-scanners.html">Laser Scanners</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-services-container">
+                                <h5>Solutions</h5>
+                                <ul class="footer-list">
+                                    <li><a href="../solutions/structural-health-monitoring.html">Structural Health
+                                            Monitoring (SHM)</a></li>
+                                    <li><a href="../solutions/advanced-non-destructive-testing-ndt.html">Advanced
+                                            Non-Destructive Testing (NDT)</a></li>
+                                    <li><a href="../solutions/bridge-inspection-and-condition-assessment.html">Bridge
+                                            Inspection & Condition Assessment</a></li>
+                                    <li><a href="../solutions/consulting-and-advisory-services.html">Consulting &
+                                            Advisory
+                                            Services</a></li>
+                                    <li><a href="../solutions/geotechnical-and-foundation-monitoring.html">Geotechnical &
+                                            Foundation Monitoring</a></li>
+                                    <li><a href="../solutions/fatigue-and-residual-life-assessment.html">Fatigue and
+                                            Residual Life Assessment</a></li>
+                                    <li><a href="../solutions/digital-engineering-and-documentation.html">Digital
+                                            Engineering & Documentation</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-quick-links">
+                                <h5>Quick Links</h5>
+                                <ul class="footer-list">
+                                    <li><a href="../products.html">Products</a></li>
+                                    <li><a href="../solutions.html">Solutions</a></li>
+                                    <li><a href="../industries.html">Industries</a></li>
+                                    <li><a href="../about.html">About</a></li>
+                                    <li><a href="../faq.html">FAQ</a></li>
+                                    <li><a href="../resources.html">Insights &amp; Updates</a></li>
+                                    <li><a href="../contact.html">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <div class="footer-contact-container">
+                                <h5>Contact Info</h5>
+                                <ul class="footer-list">
+                                    <li><a href="mailto:sentra@clovetech.com">sentra@clovetech.com</a></li>
+                                    <li><a href="tel:+91 7893023322">+91 7893023322</a></li>
+                                    <li class="footer-address">IT SEZ, Hill no.2, Rushikonda, Visakhapatnam, Andhra
+                                        Pradesh 530045</li>
+                                </ul>
+                                <div class="d-flex flex-column gspace-1">
+                                    <h5>Social Media</h5>
+                                    <div class="social-container">
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://www.facebook.com/profile.php?id=61591761143578"
+                                                class="social-item" aria-label="Facebook">
+                                                <i class="fa-brands fa-facebook"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render"
+                                                    data-url="https://www.facebook.com/profile.php?id=61591761143578"
+                                                    data-icon="fa-brands fa-facebook" data-icon-color="#1877f2"
+                                                    aria-label="QR Code for Facebook"></div>
+                                                <p class="qr-label qr-label--facebook"><i
+                                                        class="fa-brands fa-facebook"></i> Scan to follow</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://www.youtube.com/@Sentra-tech/" class="social-item"
+                                                aria-label="YouTube">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render"
+                                                    data-url="https://www.youtube.com/@Sentra-tech/"
+                                                    data-icon="fa-brands fa-youtube" data-icon-color="#ff0000"
+                                                    aria-label="QR Code for YouTube"></div>
+                                                <p class="qr-label qr-label--youtube"><i
+                                                        class="fa-brands fa-youtube"></i> Scan to subscribe</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://www.instagram.com/sentra_tech_official/"
+                                                class="social-item" aria-label="Instagram">
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render"
+                                                    data-url="https://www.instagram.com/sentra_tech_official/"
+                                                    data-icon="fa-brands fa-instagram" data-icon-color="#e1306c"
+                                                    aria-label="QR Code for Instagram"></div>
+                                                <p class="qr-label qr-label--instagram"><i
+                                                        class="fa-brands fa-instagram"></i> Scan to follow</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://www.linkedin.com/company/sentrabyclove/"
+                                                class="social-item" aria-label="LinkedIn">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render"
+                                                    data-url="https://www.linkedin.com/company/sentrabyclove/"
+                                                    data-icon="fa-brands fa-linkedin" data-icon-color="#0a66c2"
+                                                    aria-label="QR Code for LinkedIn"></div>
+                                                <p class="qr-label"><i class="fa-brands fa-linkedin"></i> Scan to
+                                                    connect</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://x.com/Sentra970016" target="_blank" rel="noopener"
+                                                class="social-item" aria-label="X (Twitter)">
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render" data-url="https://x.com/Sentra970016"
+                                                    data-icon="fa-brands fa-x-twitter" data-icon-color="#0a0a0a"
+                                                    aria-label="QR Code for X (Twitter)"></div>
+                                                <p class="qr-label"><i class="fa-brands fa-x-twitter"></i> Scan to
+                                                    follow</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://medium.com/@sentra_8835" target="_blank" rel="noopener"
+                                                class="social-item" aria-label="Medium">
+                                                <i class="fa-brands fa-medium"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render" data-url="https://medium.com/@sentra_8835"
+                                                    data-icon="fa-brands fa-medium" data-icon-color="#12100e"
+                                                    aria-label="QR Code for Medium"></div>
+                                                <p class="qr-label qr-label--medium"><i
+                                                        class="fa-brands fa-medium"></i> Scan to read</p>
+                                            </div>
+                                        </div>
+                                        <div class="social-qr-wrapper">
+                                            <a href="https://in.pinterest.com/sentra0070/" target="_blank" rel="noopener"
+                                                class="social-item" aria-label="Pinterest">
+                                                <i class="fa-brands fa-pinterest"></i>
+                                            </a>
+                                            <div class="qr-hover-card">
+                                                <div class="qr-code-render" data-url="https://in.pinterest.com/sentra0070/"
+                                                    data-icon="fa-brands fa-pinterest" data-icon-color="#e60023"
+                                                    aria-label="QR Code for Pinterest"></div>
+                                                <p class="qr-label qr-label--pinterest"><i
+                                                        class="fa-brands fa-pinterest"></i> Scan to follow</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-content-spacer"></div>
+                </div>
+                <div class="copyright-container">
+                    <span class="copyright">© 2026 <a href="https://clovetech.com/">Sentra By Clove Technologies Pvt.
+                            Ltd.</a><br>All
+                        Rights
+                        Reserved.</span>
+                    <div class="d-flex flex-row gspace-2">
+                        <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
+                        <a href="../glossary.html" class="legal-link">Glossary</a>
+                        <a href="../sitemap.xml" class="legal-link">Sitemap</a>
+                        <a href="../404-page.html" class="legal-link">404</a>
+                    </div>
+                </div>
+                <div class="footer-spacer"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../js/vendor/qrcode.min.js"></script>
+<script>
+    (function () {
+        var SIZE = 236;          // render at 2x for crispness; CSS displays it at 118px
+
+        function roundedRect(ctx, x, y, w, h, r) {
+            r = Math.max(0, Math.min(r, w / 2, h / 2));
+            ctx.beginPath();
+            ctx.moveTo(x + r, y);
+            ctx.lineTo(x + w - r, y);
+            ctx.quadraticCurveTo(x + w, y, x + w, y + r);
+            ctx.lineTo(x + w, y + h - r);
+            ctx.quadraticCurveTo(x + w, y + h, x + w - r, y + h);
+            ctx.lineTo(x + r, y + h);
+            ctx.quadraticCurveTo(x, y + h, x, y + h - r);
+            ctx.lineTo(x, y + r);
+            ctx.quadraticCurveTo(x, y, x + r, y);
+            ctx.closePath();
+            ctx.fill();
+        }
+
+        function inFinder(r, c, count) {
+            return (r < 7 && c < 7) || (r < 7 && c >= count - 7) || (r >= count - 7 && c < 7);
+        }
+
+        function drawEyes(ctx, count, m) {
+            var spots = [[0, 0], [0, count - 7], [count - 7, 0]];
+            spots.forEach(function (spot) {
+                var x = spot[0] * m;
+                var y = spot[1] * m;
+                ctx.fillStyle = '#111111';
+                roundedRect(ctx, x, y, 7 * m, 7 * m, 0.55 * m);
+                ctx.fillStyle = '#ffffff';
+                roundedRect(ctx, x + m, y + m, 5 * m, 5 * m, 0.42 * m);
+                ctx.fillStyle = '#111111';
+                roundedRect(ctx, x + 2 * m, y + 2 * m, 3 * m, 3 * m, 0.28 * m);
+            });
+        }
+
+        function renderSocialQR(el) {
+            var qr = qrcode(0, 'M');
+            qr.addData(el.getAttribute('data-url') || '');
+            qr.make();
+            var count = qr.getModuleCount();
+            var m = SIZE / count;
+            var canvas = document.createElement('canvas');
+            canvas.width = SIZE;
+            canvas.height = SIZE;
+            var ctx = canvas.getContext('2d');
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, SIZE, SIZE);
+
+            var gap = m * 0.13;
+            var dot = m - gap * 2;
+            var dotR = m * 0.28;
+
+            ctx.fillStyle = '#111111';
+            for (var r = 0; r < count; r++) {
+                for (var c = 0; c < count; c++) {
+                    if (inFinder(r, c, count)) continue;
+                    if (qr.isDark(r, c)) roundedRect(ctx, c * m + gap, r * m + gap, dot, dot, dotR);
+                }
+            }
+            drawEyes(ctx, count, m);
+
+            el.appendChild(canvas);
+
+            var icon = document.createElement('span');
+            icon.className = 'qr-center-icon';
+            icon.style.color = el.getAttribute('data-icon-color') || '#f48120';
+            icon.innerHTML = '<i class="' + el.getAttribute('data-icon') + '"></i>';
+            el.appendChild(icon);
+        }
+
+        function initQR() {
+            var els = document.querySelectorAll('.qr-code-render');
+            if (!els.length) return;
+            if (typeof qrcode !== 'function') { setTimeout(initQR, 120); return; }
+            els.forEach(renderSocialQR);
+        }
+        initQR();
+    })();
+</script></div>
+    </footer>
+
+    <script>
+        (function () {
+            const synth = window.speechSynthesis;
+            let voices = [], isPlaying = false, isPaused = false, totalWords = 0;
+            let currentWordIndex = 0, wordSpans = [], paragraphs = [], currentParagraphIndex = 0;
+            let activeUtterance = null, fallbackTimer = null, boundarySupported = false;
+            let autoScrollEnabled = true, mouseIdleTimer;
+
+            const ttsContent = document.getElementById('ttsContent');
+            const playBtn = document.getElementById('ttsPlayBtn');
+            const progressFill = document.getElementById('progressFill');
+            const progressBar = document.getElementById('ttsProgressBar');
+
+            function loadVoices() { voices = synth.getVoices() || []; }
+            loadVoices();
+            if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = loadVoices;
+
+            function pickVoice() {
+                return voices.find(v => /Google US English|Samantha|en-US/i.test(v.name + ' ' + v.lang)) || voices[0];
+            }
+
+            document.addEventListener('mousemove', () => {
+                autoScrollEnabled = false;
+                clearTimeout(mouseIdleTimer);
+                mouseIdleTimer = setTimeout(() => { autoScrollEnabled = true; }, 5000);
+            });
+
+            function wrapWords() {
+                ttsContent.querySelectorAll('p, h2, h4, h5, li').forEach(el => {
+                    if (el.querySelector('.word')) return;
+                    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+                    const nodes = [];
+                    let n;
+                    while (n = walker.nextNode()) { if (n.textContent.trim()) nodes.push(n); }
+                    nodes.forEach(tn => {
+                        const frag = document.createDocumentFragment();
+                        tn.textContent.split(/(\s+)/).forEach(tok => {
+                            if (/\s+/.test(tok)) { frag.appendChild(document.createTextNode(tok)); }
+                            else if (tok) { const s = document.createElement('span'); s.className = 'word'; s.textContent = tok; frag.appendChild(s); totalWords++; }
+                        });
+                        tn.parentNode.replaceChild(frag, tn);
+                    });
+                });
+                wordSpans = Array.from(ttsContent.querySelectorAll('.word'));
+            }
+            wrapWords();
+
+            function getParagraphs() { paragraphs = Array.from(ttsContent.querySelectorAll('p, h2, h4, h5, li')).filter(el => el.textContent.trim()); }
+            getParagraphs();
+
+            function computeBoundaries(text) {
+                const words = text.split(/\s+/).filter(Boolean), bounds = [];
+                let cursor = 0;
+                words.forEach(w => { const f = text.indexOf(w, cursor); bounds.push(f === -1 ? cursor : f); cursor = (f === -1 ? cursor : f) + w.length; });
+                return bounds;
+            }
+
+            function scrollCenter(el) { if (el && autoScrollEnabled) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+            function clearTimer() { if (fallbackTimer) { clearInterval(fallbackTimer); fallbackTimer = null; } }
+
+            function speakFrom(index) {
+                clearTimer(); boundarySupported = false;
+                if (index >= paragraphs.length) {
+                    isPlaying = isPaused = false;
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    currentParagraphIndex = currentWordIndex = 0;
+                    progressFill.style.width = '0%';
+                    return;
+                }
+                currentParagraphIndex = index;
+                const p = paragraphs[index], text = p.textContent.trim();
+                if (!text) { speakFrom(index + 1); return; }
+                const bounds = computeBoundaries(text);
+                const spans = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim());
+                spans.forEach(w => w.classList.remove('highlight'));
+                const u = new SpeechSynthesisUtterance(text);
+                activeUtterance = u; u.lang = 'en-US'; u.rate = 1.1; u.pitch = 1.1;
+                const v = pickVoice(); if (v) u.voice = v;
+                const fps = Math.max(120, Math.round(1000 / (3.0 * u.rate)));
+                u.onstart = () => {
+                    isPlaying = true; isPaused = false;
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    currentWordIndex = 0;
+                    if (spans[0]) { spans[0].classList.add('highlight'); scrollCenter(spans[0]); }
+                    fallbackTimer = setInterval(() => {
+                        if (boundarySupported || !isPlaying || isPaused) { clearTimer(); return; }
+                        if (currentWordIndex < spans.length - 1) {
+                            spans[currentWordIndex].classList.remove('highlight');
+                            spans[++currentWordIndex].classList.add('highlight');
+                            scrollCenter(spans[currentWordIndex]);
+                        }
+                    }, fps);
+                };
+                u.onboundary = (ev) => {
+                    boundarySupported = true; clearTimer();
+                    const ci = ev.charIndex || 0;
+                    let wi = 0;
+                    for (let i = 0; i < bounds.length; i++) {
+                        const end = i < bounds.length - 1 ? bounds[i + 1] : text.length;
+                        if (ci >= bounds[i] && ci < end) { wi = i; break; }
+                        if (i === bounds.length - 1) wi = bounds.length - 1;
+                    }
+                    wi = Math.min(Math.max(wi, 0), spans.length - 1);
+                    if (wi !== currentWordIndex) {
+                        if (spans[currentWordIndex]) spans[currentWordIndex].classList.remove('highlight');
+                        if (spans[wi]) { spans[wi].classList.add('highlight'); scrollCenter(spans[wi]); }
+                        currentWordIndex = wi;
+                    }
+                };
+                u.onend = () => {
+                    p.querySelectorAll('.word.highlight').forEach(w => w.classList.remove('highlight'));
+                    activeUtterance = null; clearTimer();
+                    if (isPlaying && !isPaused) speakFrom(index + 1);
+                    else { isPlaying = isPaused = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
+                };
+                u.onerror = () => { activeUtterance = null; isPlaying = false; clearTimer(); playBtn.innerHTML = '<i class="fas fa-play"></i>'; };
+                try { synth.speak(u); } catch(e) {}
+                progressFill.style.width = ((index + 1) / paragraphs.length * 100) + '%';
+            }
+
+            playBtn.addEventListener('click', () => {
+                if (!voices.length) loadVoices();
+                if (isPlaying && !isPaused) { synth.pause(); isPaused = true; isPlaying = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
+                else if (isPaused) { synth.resume(); isPaused = false; isPlaying = true; playBtn.innerHTML = '<i class="fas fa-pause"></i>'; }
+                else { if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0; speakFrom(currentParagraphIndex); }
+            });
+
+            progressBar.addEventListener('click', (e) => {
+                const pct = (e.clientX - progressBar.getBoundingClientRect().left) / progressBar.clientWidth;
+                if (synth.speaking) synth.cancel();
+                wordSpans.forEach(w => w.classList.remove('highlight'));
+                clearTimer();
+                currentParagraphIndex = Math.floor(pct * paragraphs.length);
+                speakFrom(currentParagraphIndex);
+            });
+
+            window.addEventListener('beforeunload', () => { if (synth.speaking) synth.cancel(); });
+        })();
+    </script>
+
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../js/vendor/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/swiper-script.js"></script>
+    <script src="../js/submit-form.js"></script>
+    <script src="../js/video_embedded.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="../js/chatbot-widget.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tocItems = document.querySelectorAll('.toc-item');
+            var sections = [];
+            tocItems.forEach(function (btn) {
+                var target = document.getElementById(btn.getAttribute('data-target'));
+                if (target) sections.push({ btn: btn, target: target });
+                btn.addEventListener('click', function () {
+                    var el = document.getElementById(this.getAttribute('data-target'));
+                    if (el) {
+                        var h = (document.querySelector('header') || {getBoundingClientRect:()=>({height:0})}).getBoundingClientRect().height;
+                        window.scrollTo({ top: Math.max(el.getBoundingClientRect().top + window.scrollY - h - 80, 0), behavior: 'smooth' });
+                    }
+                });
+            });
+            window.addEventListener('scroll', function () {
+                var scrollY = window.scrollY + 200, active = null;
+                sections.forEach(function (s) { if (s.target.offsetTop <= scrollY) active = s; });
+                tocItems.forEach(function (b) { b.classList.remove('active'); });
+                if (active) active.btn.classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-# Contact Sentra — Request a Demo or Talk to Sales
+# Contact Sentra: Request a Demo or Talk to Sales
 
 > Contact Sentra for demos, pilots or technical queries. Request a demo of our structural health monitoring solutions or speak to our engineering team.
 
@@ -33,7 +33,7 @@ Follow Us
 
 ### Let's Talk
 
-Ready to start your next monitoring project? Book a call with our team or send us your requirements directly — a specialist will respond within 24 hours.
+Ready to start your next monitoring project? Book a call with our team or send us your requirements directly: a specialist will respond within 24 hours.
 
 Thank you! Form submitted successfully.
 

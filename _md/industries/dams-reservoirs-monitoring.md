@@ -1,4 +1,4 @@
-# Dam & Reservoir Monitoring — IoT Sensors & GNSS Tracking | Sentra
+# Dam & Reservoir Monitoring: IoT Sensors & GNSS Tracking | Sentra
 
 > GNSS-based displacement, pore pressure and seepage monitoring for earthfill, concrete and masonry dams using Sentra's wireless IoT sensor networks.
 
@@ -9,7 +9,7 @@ GNSS Displacement Pore Pressure Seepage Monitoring Structural Safety Early Warni
 ## Dams & Reservoirs
 Monitoring
 
-GNSS-based displacement, pore pressure and seepage monitoring for earthfill, concrete and masonry dams — providing early warning and continuous safety assurance.
+GNSS-based displacement, pore pressure and seepage monitoring for earthfill, concrete and masonry dams, providing early warning and continuous safety assurance.
 
 [Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
@@ -18,7 +18,7 @@ Monitoring Matters
 
 Dams are critical infrastructure assets where failure can have catastrophic consequences. Continuous monitoring of structural displacement, pore water pressure, and seepage is essential for early detection of developing issues.
 
-Sentra's IoT monitoring solutions provide real-time data on dam behaviour — enabling engineers to detect anomalies early, optimise maintenance schedules, and ensure compliance with safety regulations.
+Sentra's IoT monitoring solutions provide real-time data on dam behaviour by enabling engineers to detect anomalies early, optimise maintenance schedules, and ensure compliance with safety regulations.
 
 ## Key Monitoring Parameters
 

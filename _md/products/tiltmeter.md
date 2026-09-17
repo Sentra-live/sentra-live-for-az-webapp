@@ -1,4 +1,4 @@
-# Tiltmeter — 3-Axis Wireless Tilt Sensor | Sentra
+# Tiltmeter: 3-Axis Wireless Tilt Sensor | Sentra
 
 > High-accuracy wireless tiltmeter for angular displacement and tilt trends in structures, slopes, and rail tracks. ±90° range, IP68, up to 10yr battery.
 
@@ -6,7 +6,7 @@ Source: https://sentratech.in/products/tiltmeter.html
 
 Tiltmeter
 
-## Wireless Tiltmeter — 3-Axis High-Precision Inclinometer
+## Wireless Tiltmeter: 3-Axis High-Precision Inclinometer
 
 High-resolution 3-axis inclination sensor for monitoring angular displacement and long-term tilt trends in structures, slopes, rail tracks and tunnels. Available with external or internal antenna for flexible deployment.
 
@@ -44,7 +44,7 @@ Overview
 
 The Wireless Tiltmeter is a compact, 3-axis inclinometer built for long-term, unattended monitoring of slopes, structures, rail tracks and tunnelling works. It reports high-resolution inclination values plus measurement uncertainty to support noise filtering and trustworthy trend analysis.
 
-Available in two variants — XHP with external antenna for maximum range in high-precision applications, and IR with internal antenna for compact, vandal-resistant installations such as rail track monitoring.
+Available in two variants: XHP with external antenna for maximum range in high-precision applications, and IR with internal antenna for compact, vandal-resistant installations such as rail track monitoring.
 
 New to inclination sensing? Read our guide on [what an inclinometer is, and how digital tiltmeters work](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html).
 
@@ -106,7 +106,7 @@ LoRaWAN communications reaching up to 15 km in open terrain. External antenna va
 
 #### IP68 Rugged Design
 
-Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C — suitable for tunnels, mines, bridges and exposed infrastructure.
+Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C: suitable for tunnels, mines, bridges and exposed infrastructure.
 
 #### Cloud & Edge Management
 
@@ -250,7 +250,7 @@ LS-ACC-IN-HPTM
 
 #### Rail Track Mounting
 
-Horizontal surface mounting plate designed for track monitoring — glued to the surface for fast, robust fixing.
+Horizontal surface mounting plate designed for track monitoring: glued to the surface for fast, robust fixing.
 
 ![Horizontal surface mounting with double plate](https://sentratech.in/image/products/mounting/tiltmeter-mount-double-plate.webp)
 
@@ -266,7 +266,7 @@ LS-ACC-MRHP + LS-ACC-MAG
 
 #### Magnetic Mounting
 
-Mounting plate with a magnet kit attached to the back to mount on metallic surfaces — a versatile, tool-free tiltmeter mounting option.
+Mounting plate with a magnet kit attached to the back to mount on metallic surfaces: a versatile, tool-free tiltmeter mounting option.
 
 ![Mounting on a tilt beam using the beam fixation kit](https://sentratech.in/image/products/mounting/tiltmeter-mount-tilt-beam.webp)
 
@@ -274,7 +274,7 @@ WS-ACC-BEAMFIX
 
 #### Tilt Beam Mounting
 
-Fixation kit for beam accessory mounting — attachment to tilt beams for precise beam inclination monitoring in geotechnical applications.
+Fixation kit for beam accessory mounting: attachment to tilt beams for precise beam inclination monitoring in geotechnical applications.
 
 ![Pole mounting with L-shaped mount and u-bolts](https://sentratech.in/image/products/mounting/tiltmeter-mount-pole.webp)
 
@@ -286,17 +286,17 @@ L-shaped mount attached to a 50 mm pole with u-bolts for secure attachment to po
 
 ### Ready to Deploy Wireless Tilt Monitoring?
 
-Talk to our engineering team about the right tiltmeter configuration for your project — slopes, tunnels, rail tracks or structures. Custom solutions, fast delivery.
+Talk to our engineering team about the right tiltmeter configuration for your project, including slopes, tunnels, rail tracks or structures. Custom solutions, fast delivery.
 
 Frequently Asked Questions
 
 ## Got Questions About the Wireless Tiltmeter?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-A Tiltmeter measures small changes in an object's inclination — rotation, settlement, track cant or slow tilt of slopes and structures. It reveals gradual trends and sudden shifts that indicate instability or misalignment.
+A Tiltmeter measures small changes in an object's inclination: rotation, settlement, track cant or slow tilt of slopes and structures. It reveals gradual trends and sudden shifts that indicate instability or misalignment.
 
 ##
 
@@ -304,7 +304,7 @@ Precision MEMS accelerometers sense the gravity vector and temperature. Onboard 
 
 ##
 
-Tiltmeters capture very small, repeatable changes — much smaller than what the human eye detects. With ±0.0001° resolution and repeatability as low as <0.0003°, they are suitable for the most demanding engineering applications.
+Tiltmeters capture very small, repeatable changes: much smaller than what the human eye detects. With ±0.0001° resolution and repeatability as low as <0.0003°, they are suitable for the most demanding engineering applications.
 
 ##
 
@@ -312,8 +312,8 @@ The device runs in low-power modes and can operate unattended for up to 10 years
 
 ##
 
-Yes — data is transmitted via LoRa/LoRaWAN gateways to cloud endpoints in common data formats and APIs. It integrates with dashboards, alarm systems, asset-management software, and custom webhooks can be configured.
+Yes: data is transmitted via LoRa/LoRaWAN gateways to cloud endpoints in common data formats and APIs. It integrates with dashboards, alarm systems, asset-management software, and custom webhooks can be configured.
 
 ##
 
-The XHP variant features an external antenna for maximum range (up to 15 km in open terrain), ideal for high-precision applications. The IR variant has an internal antenna for a compact, vandal-resistant design — perfect for rail track monitoring and tight installations.
+The XHP variant features an external antenna for maximum range (up to 15 km in open terrain), ideal for high-precision applications. The IR variant has an internal antenna for a compact, vandal-resistant design, perfect for rail track monitoring and tight installations.

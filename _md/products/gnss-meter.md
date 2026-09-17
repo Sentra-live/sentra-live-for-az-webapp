@@ -1,4 +1,4 @@
-# GNSS Meter — RTK Positioning & Displacement | Sentra
+# GNSS Meter: RTK Positioning & Displacement | Sentra
 
 > High-precision GNSS meter with RTK correction for millimeter-level displacement monitoring. Multi-constellation, IP68, LoRaWAN, up to 3.5-year battery.
 
@@ -8,7 +8,7 @@ GNSS Meter
 
 ## GNSS Meter
 
-A high-precision GNSS positioning sensor for automated monitoring of surface point movements. Utilizes multi-band Real-Time Kinematic (RTK) technology to deliver sub-centimeter positioning accuracy — down to 2 mm for 24-hour aggregated values.
+A high-precision GNSS positioning sensor for automated monitoring of surface point movements. Utilizes multi-band Real-Time Kinematic (RTK) technology to deliver sub-centimeter positioning accuracy: down to 2 mm for 24-hour aggregated values.
 
 [Explore Products](#gn-products) [Get a Quote](https://sentratech.in/contact.html)
 
@@ -84,7 +84,7 @@ Powered by 4 × 3.6V D-size user-replaceable batteries. Up to 3.5 years of unatt
 
 #### IP68 Rated & Rugged
 
-Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C — suitable for the harshest field conditions.
+Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C: suitable for the harshest field conditions.
 
 #### Integrated Sensors
 
@@ -182,7 +182,7 @@ Distance (base to rover) | Orientation | 1 h (last sample) | 6 h (aggregated) | 
 
 | Vertical | 31 mm | 15 mm | 7 mm |
 
-GNSS Precision (95th Percentile) — RTK mode
+GNSS Precision (95th Percentile): RTK mode
 
 Warm-up Time | 10 s | 20 s | 30 s |
 
@@ -226,7 +226,7 @@ Frequently Asked Questions
 
 ## Got Questions About the GNSS Meter?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
@@ -246,7 +246,7 @@ Battery life depends on warmup time and mode. In rover mode with 10s warmup: 3.5
 
 ##
 
-Yes — data is provided via MQTT, REST API, or FTP, making it easy to integrate into SCADA, asset management, or custom monitoring platforms. Compatible with CMT Edge and CMT Cloud.
+Yes: data is provided via MQTT, REST API, or FTP, making it easy to integrate into SCADA, asset management, or custom monitoring platforms. Compatible with CMT Edge and CMT Cloud.
 
 ##
 

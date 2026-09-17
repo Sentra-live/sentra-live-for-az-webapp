@@ -1,4 +1,4 @@
-# Accelerometer — Vibration & Motion Sensor | Sentra
+# Accelerometer: Vibration & Motion Sensor | Sentra
 
 > Triaxial MEMS accelerometer for vibration, seismic and dynamic motion monitoring with ±16g range, 0.5-250Hz bandwidth, IP65 rated and LoRa connectivity.
 
@@ -6,7 +6,7 @@ Source: https://sentratech.in/products/accelerometers.html
 
 Accelerometer
 
-## Triaxial MEMS Accelerometer — Precision Motion Intelligence
+## Triaxial MEMS Accelerometer: Precision Motion Intelligence
 
 High-accuracy 3-axis accelerometer for precision measurement of acceleration, tilt, and low-frequency vibration across bridges, tunnels, buildings and machinery. ±16g range, IP65 rated, with LoRaWAN connectivity.
 
@@ -34,7 +34,7 @@ Overview
 
 ## Measure the Movements That Matter
 
-The Model 4030 Triaxial MEMS DC Accelerometer is engineered for precision measurement of acceleration, tilt, and low-frequency vibration across bridges, tunnels, buildings, and machinery. With ±2g and ±6g dynamic range options, it captures subtle and dynamic movements alike — from structural deflection to machine vibration.
+The Model 4030 Triaxial MEMS DC Accelerometer is engineered for precision measurement of acceleration, tilt, and low-frequency vibration across bridges, tunnels, buildings, and machinery. With ±2g and ±6g dynamic range options, it captures subtle and dynamic movements alike, from structural deflection to machine vibration.
 
 A rugged, molded nylon housing, brass mounting inserts, and a shielded six-conductor cable ensure durability and clean data transmission. Its integrated low-pass filter and self-test function make it ideal for permanent installations and smart infrastructure networks.
 
@@ -86,7 +86,7 @@ High-resolution triaxial capacitive MEMS sensing across X, Y, and Z axes. Conver
 
 #### Dual Range Options
 
-Available in ±2g and ±6g dynamic range options to suit different applications — from subtle structural deflection to more dynamic vibration and machinery monitoring.
+Available in ±2g and ±6g dynamic range options to suit different applications, from subtle structural deflection to more dynamic vibration and machinery monitoring.
 
 #### Rugged IP65 Design
 
@@ -98,7 +98,7 @@ Integrates with GeoNet LoRaWAN, Cellular, Wi-Fi, and Satellite data loggers for 
 
 #### PPV & MTVV Modes
 
-Dual operation modes — PPV-based for peak particle velocity and MTVV-based for whole-body vibration assessment. Covering 0.5 – 250 Hz frequency range.
+Dual operation modes: PPV-based for peak particle velocity and MTVV-based for whole-body vibration assessment. Covering 0.5 – 250 Hz frequency range.
 
 #### Integrated Self-Test
 
@@ -120,7 +120,7 @@ Seismic response monitoring, wind-induced sway and floor vibration measurement i
 
 ##### Tunnels & Metro
 
-Vibration monitoring in tunnelling operations — real-time data from excavation face through to final lining installation and operational phase.
+Vibration monitoring in tunnelling operations: real-time data from excavation face through to final lining installation and operational phase.
 
 ##### Industrial Machinery
 
@@ -196,17 +196,17 @@ Complete specs, diagrams, and product data sheet
 
 ### Ready to Deploy Precision Vibration Monitoring?
 
-Talk to our engineering team about the right accelerometer configuration for your project — bridges, tunnels, buildings or industrial machinery. Calibrated solutions, fast delivery.
+Talk to our engineering team about the right accelerometer configuration for your project, including bridges, tunnels, buildings or industrial machinery. Calibrated solutions, fast delivery.
 
 Frequently Asked Questions
 
 ## Got Questions About Our Accelerometer?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-Sentra accelerometers capture acceleration, vibration, and tilt — offering a complete picture of how a structure or machine responds to dynamic loads, traffic, or seismic activity.
+Sentra accelerometers capture acceleration, vibration, and tilt, offering a complete picture of how a structure or machine responds to dynamic loads, traffic, or seismic activity.
 
 ##
 
@@ -222,8 +222,8 @@ The sensor operates on 5–30 V DC and consumes minimal power. When paired with 
 
 ##
 
-Absolutely. It's designed for hybrid monitoring — combining acceleration data with strain, tilt, or displacement sensors to create a complete digital twin of structural behavior.
+Absolutely. It's designed for hybrid monitoring by combining acceleration data with strain, tilt, or displacement sensors to create a complete digital twin of structural behavior.
 
 ##
 
-They are ideal for bridges, tunnels, buildings, industrial foundations, seismic stations, and smart city assets — anywhere precise vibration or motion tracking is critical to safety and performance.
+They are ideal for bridges, tunnels, buildings, industrial foundations, seismic stations, and smart city assets, anywhere precise vibration or motion tracking is critical to safety and performance.

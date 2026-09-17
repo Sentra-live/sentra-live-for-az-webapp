@@ -8,7 +8,7 @@ Source: https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-senso
 
 A permanently installed GNSS receiver can resolve a few millimetres of movement on a dam crest, a mine slope or a tall building, and keep resolving it every hour for years. Here is how satellite displacement monitoring actually works, what limits its accuracy, and how to design a deployment that produces a record engineers will trust.
 
-**GNSS displacement monitoring** uses permanently installed satellite receivers to measure how a point on a structure or a piece of ground moves over time. The instrument is the same family of technology as a survey rover or a phone's location chip, but the job is different. A navigation receiver answers "where am I, roughly, right now." A monitoring receiver answers "has this point moved since yesterday, and by how much" — and it has to answer that to within a few millimetres, unattended, in whatever weather the site provides.
+**GNSS displacement monitoring** uses permanently installed satellite receivers to measure how a point on a structure or a piece of ground moves over time. The instrument is the same family of technology as a survey rover or a phone's location chip, but the job is different. A navigation receiver answers "where am I, roughly, right now." A monitoring receiver answers "has this point moved since yesterday, and by how much", and it has to answer that to within a few millimetres, unattended, in whatever weather the site provides.
 
 That difference in purpose changes almost every design decision: the antenna, the mount, the observation window, the processing strategy and the way results are reported. What follows is the working detail behind **GNSS monitoring** for dams, slopes, mines, embankments and structures.
 
@@ -16,7 +16,7 @@ That difference in purpose changes almost every design decision: the antenna, th
 
 GNSS is the general term for the satellite constellations a modern receiver tracks: GPS (United States), GLONASS (Russia), Galileo (Europe), BeiDou (China), and the regional NavIC constellation over India. Each satellite broadcasts a signal on more than one frequency. The receiver measures how far it is from each satellite it can see, and solves for its own position.
 
-A navigation-grade solution uses the **code** on the signal and lands within a few metres. Monitoring uses the **carrier phase** instead: the receiver counts cycles of the carrier wave itself, which is around 19 cm long on the GPS L1 frequency. A fraction of one cycle is millimetres. The difficulty is that the receiver does not know how many whole cycles lie between it and the satellite at the moment it starts tracking. That unknown integer is the **ambiguity**, and resolving it — "fixing" the solution — is what separates a millimetre-class result from a decimetre-class one.
+A navigation-grade solution uses the **code** on the signal and lands within a few metres. Monitoring uses the **carrier phase** instead: the receiver counts cycles of the carrier wave itself, which is around 19 cm long on the GPS L1 frequency. A fraction of one cycle is millimetres. The difficulty is that the receiver does not know how many whole cycles lie between it and the satellite at the moment it starts tracking. That unknown integer is the **ambiguity**, and resolving it: "fixing" the solution, is what separates a millimetre-class result from a decimetre-class one.
 
 The second essential idea is that monitoring is **relative**. A single receiver on its own inherits every error in the system. Two receivers observing the same satellites at the same time share most of those errors, so differencing one against the other cancels them. In practice a site has one or more **reference receivers** on ground believed to be stable, and a set of **monitoring receivers** on the structure or the moving mass. The output is not a map coordinate. It is a baseline vector between reference and monitoring point, reported as change in north, east and height against a declared epoch.
 
@@ -26,7 +26,7 @@ This is why a GNSS monitoring record is only as good as its reference. If the re
 
 Manufacturer figures for RTK positioning are usually quoted in a form such as `±(8 mm + 1 ppm)` horizontal. The second term is the part people forget: 1 ppm is 1 mm of additional uncertainty for every kilometre of baseline. A monitoring point 5 km from its reference carries 5 mm of baseline-length error before anything else goes wrong. Keeping baselines short is the cheapest accuracy improvement available.
 
-Those figures also describe a single epoch. Monitoring does not have to work that way. Averaging a long observation window — an hour, six hours, a full day — suppresses the noise that varies quickly and tightens the result considerably. A well-sited installation with short baselines and daily processing commonly reports horizontal displacement at the 2–5 mm level, with the vertical component roughly two to three times worse. The vertical is always the weak axis, because every satellite is above the horizon and the geometry is therefore one-sided.
+Those figures also describe a single epoch. Monitoring does not have to work that way. Averaging a long observation window: an hour, six hours, a full day: suppresses the noise that varies quickly and tightens the result considerably. A well-sited installation with short baselines and daily processing commonly reports horizontal displacement at the 2–5 mm level, with the vertical component roughly two to three times worse. The vertical is always the weak axis, because every satellite is above the horizon and the geometry is therefore one-sided.
 
 The trade-off is directly between precision and latency. A one-minute solution will show a sudden slope failure quickly but will scatter by a centimetre or more. A daily solution resolves a slow, millimetre-per-month trend that the one-minute record buries in noise, but it reports a day late. Most programs run both from the same raw data: a fast solution for alarms, a long-window solution for trend.
 
@@ -36,7 +36,7 @@ Once ambiguities are fixed and baselines are short, four things set the quality 
 
 - **Multipath.** Signal that arrives after bouncing off a rock face, a parapet, a haul road or a water surface adds a false path length. It is the single largest error at most monitoring sites, and it is not random: it repeats as the constellation geometry repeats, so it can masquerade as a real cyclic movement. Choke ring or ground-plane antennas and careful siting are the defence.
 
-- **Atmosphere.** The ionosphere and troposphere delay the signal. Differencing removes most of it on short baselines, but the troposphere is local and does not cancel when the reference and monitoring points differ significantly in height — which is exactly the case on a dam face, a high-wall or a tall building.
+- **Atmosphere.** The ionosphere and troposphere delay the signal. Differencing removes most of it on short baselines, but the troposphere is local and does not cancel when the reference and monitoring points differ significantly in height, which is exactly the case on a dam face, a high-wall or a tall building.
 
 - **Satellite geometry.** A partly obstructed sky raises PDOP and weakens the solution. A monitoring point in a valley, under a bridge deck or against a steep high-wall may only ever see half the sky, and no amount of processing recovers what was never observed.
 
@@ -70,7 +70,7 @@ It is equally worth naming where GNSS is the wrong choice. Inside a tunnel, unde
 
 **InSAR** covers hundreds of square kilometres from orbit with no site hardware, but it measures only along the satellite line of sight, revisits on a fixed schedule, and struggles over vegetation and fast movement. The two pair well: InSAR identifies where something is moving across a region, and GNSS instruments quantify it continuously at the points that matter.
 
-**Tiltmeters, extensometers and piezometers** resolve mechanism — rotation, crack opening, pore pressure — at far lower cost per point, but each measures relative to its own installation. They cannot tell you that the whole block they are mounted on has translated two centimetres downhill. A common and effective architecture is a small number of GNSS points establishing the global frame, with a dense network of [tiltmeters](https://sentratech.in/products/tiltmeter.html) and [strain gauges](https://sentratech.in/products/strain-gauges.html) filling in the detail between them. That combination is the basis of most [geotechnical and foundation monitoring](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) programs.
+**Tiltmeters, extensometers and piezometers** resolve mechanism: rotation, crack opening, pore pressure: at far lower cost per point, but each measures relative to its own installation. They cannot tell you that the whole block they are mounted on has translated two centimetres downhill. A common and effective architecture is a small number of GNSS points establishing the global frame, with a dense network of [tiltmeters](https://sentratech.in/products/tiltmeter.html) and [strain gauges](https://sentratech.in/products/strain-gauges.html) filling in the detail between them. That combination is the basis of most [geotechnical and foundation monitoring](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) programs.
 
 ## Designing a GNSS Sensor Infrastructure
 
@@ -106,7 +106,7 @@ Used on its own, GNSS gives a small number of very trustworthy points. Used as t
 
 #### Planning a GNSS monitoring deployment?
 
-We design, install and operate satellite displacement monitoring for dams, slopes, mines and structures — including reference network design and alarm thresholds.
+We design, install and operate satellite displacement monitoring for dams, slopes, mines and structures, including reference network design and alarm thresholds.
 
 [Talk to our team ](https://sentratech.in/contact.html)
 

@@ -1,4 +1,4 @@
-# Mining & Geotechnical Monitoring — Slope Stability | Sentra
+# Mining & Geotechnical Monitoring: Slope Stability | Sentra
 
 > Slope stability, subsidence and ground deformation monitoring for open-pit mines, tunnels and retaining structures using Sentra's IoT sensors.
 
@@ -9,7 +9,7 @@ Slope Stability Ground Deformation Subsidence Monitoring Tunnel Convergence Earl
 ## Mining & Geotechnical
 Monitoring
 
-Slope stability, subsidence and ground deformation monitoring for open-pit mines, tunnels and retaining structures — enabling safer mining operations.
+Slope stability, subsidence and ground deformation monitoring for open-pit mines, tunnels and retaining structures by enabling safer mining operations.
 
 [Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
@@ -18,7 +18,7 @@ Monitoring Matters
 
 Mining operations involve excavation at increasing depths, creating unstable slopes and potential for ground collapse. Real-time geotechnical monitoring is essential for worker safety, operational continuity, and regulatory compliance.
 
-Sentra's wireless sensor networks provide continuous tracking of slope movement, ground vibrations, and pore pressure changes — delivering early warning of potential slope failures and enabling proactive risk management.
+Sentra's wireless sensor networks provide continuous tracking of slope movement, ground vibrations, and pore pressure changes by delivering early warning of potential slope failures and enabling proactive risk management.
 
 ## Key Monitoring Parameters
 

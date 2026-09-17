@@ -1,4 +1,4 @@
-# Railway Infrastructure Monitoring — IoT Analytics | Sentra
+# Railway Infrastructure Monitoring: IoT Analytics | Sentra
 
 > Real-time vibration, tilt and dynamic load monitoring for railway tracks, bridges and rail structures using Sentra's IoT sensor networks and edge analytics.
 
@@ -9,7 +9,7 @@ Track Monitoring Rail Bridges Vibration Sensing Dynamic Load Asset Health
 ## Railway Infrastructure
 Monitoring
 
-Real-time vibration, tilt and dynamic load monitoring for railway tracks, bridges and rail structures under live traffic — powered by Sentra's IoT sensor networks and edge analytics.
+Real-time vibration, tilt and dynamic load monitoring for railway tracks, bridges and rail structures under live traffic, powered by Sentra's IoT sensor networks and edge analytics.
 
 [Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/structural-health-monitoring.html)
 
@@ -18,7 +18,7 @@ Monitoring Matters
 
 Rail networks are the backbone of modern transportation, carrying millions of passengers and tonnes of freight daily. Tracks, bridges, and viaducts endure constant dynamic loading, thermal cycling, and environmental stress that accelerate wear and increase the risk of failure.
 
-Traditional manual inspections cannot keep pace with the scale and frequency required. Continuous IoT monitoring fills the gap — detecting settlement, rail deflection, bridge strain, and track geometry changes in real time.
+Traditional manual inspections cannot keep pace with the scale and frequency required. Continuous IoT monitoring fills the gap, detecting settlement, rail deflection, bridge strain, and track geometry changes in real time.
 
 ## Key Monitoring Parameters
 

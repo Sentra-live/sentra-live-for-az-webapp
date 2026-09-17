@@ -8,7 +8,7 @@ Watch & Listen
 
 ## Videos & Shorts
 
-Product demos and project walkthroughs from the Sentra team — structural health monitoring and IoT-driven infrastructure insights in action.
+Product demos and project walkthroughs from the Sentra team: structural health monitoring and IoT-driven infrastructure insights in action.
 
 5 Videos
 

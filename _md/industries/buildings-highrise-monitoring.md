@@ -1,4 +1,4 @@
-# Building & High-Rise Structural Monitoring — IoT Sensors | Sentra
+# Building & High-Rise Structural Monitoring: IoT Sensors | Sentra
 
 > Settlement monitoring, tilt tracking and seismic response systems for residential, commercial and heritage buildings using Sentra's IoT sensor networks.
 
@@ -9,7 +9,7 @@ Settlement Monitoring Tilt Tracking Seismic Response Structural Health Heritage 
 ## Buildings & High-Rise
 Monitoring
 
-Settlement monitoring, tilt tracking and seismic response systems for residential, commercial, and heritage structures — ensuring safety and compliance throughout the building lifecycle.
+Settlement monitoring, tilt tracking and seismic response systems for residential, commercial, and heritage structures by ensuring safety and compliance throughout the building lifecycle.
 
 [Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/structural-health-monitoring.html)
 
@@ -18,7 +18,7 @@ Monitoring Matters
 
 High-rise buildings and complex structures face unique challenges from wind loading, thermal movement, foundation settlement, and seismic activity. Without continuous monitoring, subtle deformations can escalate into costly structural issues.
 
-Sentra's IoT sensors provide real-time visibility into building behaviour — tracking tilt, vibration, and displacement patterns. This data supports structural health assessments, compliance reporting, and proactive maintenance planning.
+Sentra's IoT sensors provide real-time visibility into building behaviour, tracking tilt, vibration, and displacement patterns. This data supports structural health assessments, compliance reporting, and proactive maintenance planning.
 
 ## Key Monitoring Parameters
 

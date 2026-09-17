@@ -1,4 +1,4 @@
-# Construction & Tunnelling Monitoring — Vibration Control | Sentra
+# Construction & Tunnelling Monitoring: Vibration Control | Sentra
 
 > Real-time deformation, convergence and vibration control during deep excavation, tunnelling and high-rise construction phases using Sentra's IoT sensors.
 
@@ -18,7 +18,7 @@ Monitoring Matters
 
 Construction and tunnelling projects involve significant ground disturbance, creating risks for nearby structures and workers. Real-time monitoring of ground movement, vibration levels, and structural response is critical for safe and compliant project delivery.
 
-Sentra's wireless IoT sensors provide continuous visibility into excavation stability, tunnel convergence, and construction-induced vibrations — enabling immediate response to developing risks and protecting adjacent infrastructure.
+Sentra's wireless IoT sensors provide continuous visibility into excavation stability, tunnel convergence, and construction-induced vibrations by enabling immediate response to developing risks and protecting adjacent infrastructure.
 
 ## Key Monitoring Parameters
 

@@ -1,6 +1,6 @@
-# Edge Devices — Rugged IoT Sensors & Data Loggers | Sentra
+# Edge Devices: Rugged IoT Sensors & Data Loggers | Sentra
 
-> Explore Sentra's edge devices portfolio — rugged sensors, low-power data loggers and gateways for long-term infrastructure monitoring and remote deployments.
+> Explore Sentra's edge devices portfolio, including rugged sensors, low-power data loggers and gateways for long-term infrastructure monitoring and remote deployments.
 
 Source: https://sentratech.in/products/edge-devices.html
 
@@ -8,7 +8,7 @@ Edge Devices
 
 ## Rugged IoT Sensors & Data Loggers for Infrastructure Monitoring
 
-Long-range, low-power wireless edge devices engineered for continuous structural health monitoring across bridges, tunnels, dams and industrial facilities — field-ready, IP68-rated, and built to last decades.
+Long-range, low-power wireless edge devices engineered for continuous structural health monitoring across bridges, tunnels, dams and industrial facilities, field-ready, IP68-rated, and built to last decades.
 
 [ Explore Products ](#carousel-slider) [ Get a Quote ](https://sentratech.in/contact.html)
 
@@ -126,7 +126,7 @@ Why Sentra Edge Devices
 
 ## Benefits Built for the Field
 
-Engineered for unattended long-term deployment in the harshest environments — from underground tunnels to exposed bridges — with minimal maintenance and maximum uptime.
+Engineered for unattended long-term deployment in the harshest environments, from underground tunnels to exposed bridges, with minimal maintenance and maximum uptime.
 
 ### High Scalability
 
@@ -172,7 +172,7 @@ LoRaWAN long-range communications up to 15 km with support for 4G LTE, Bluetooth
 
 #### Durable, IP68-Rated Hardware
 
-Industrial-grade enclosures rated IP68 for full submersion resistance. Operates reliably from −40°C to +85°C — from Arctic cold to desert heat.
+Industrial-grade enclosures rated IP68 for full submersion resistance. Operates reliably from −40°C to +85°C, from Arctic cold to desert heat.
 
 #### Ultra-Long Battery Life
 
@@ -180,7 +180,7 @@ High-energy C and D size battery cells with up to 25 years of field life. User-r
 
 #### Mobile App Configuration
 
-Configure devices in the field via the Sentra mobile app. Built-in setup wizard, radio signal coverage testing, and data sampling — no laptop needed.
+Configure devices in the field via the Sentra mobile app. Built-in setup wizard, radio signal coverage testing, and data sampling, with no laptop needed.
 
 #### Cloud & SCADA Integration
 
@@ -334,13 +334,13 @@ Bridge & Structures Division
 
 ### Ready to Deploy Smart Infrastructure Monitoring?
 
-Talk to our engineering team about the right edge device combination for your project — bridges, tunnels, dams, slopes or industrial facilities. Custom solutions, fast turnaround.
+Talk to our engineering team about the right edge device combination for your project, including bridges, tunnels, dams, slopes or industrial facilities. Custom solutions, fast turnaround.
 
 Frequently Asked Questions
 
 ## Got Questions About Our Edge Devices?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
@@ -364,4 +364,4 @@ Data is transmitted to Sentra's cloud platform and accessible via web dashboards
 
 ##
 
-A single Sentra LoRaWAN gateway network can support 1000+ wireless sensors and data loggers simultaneously — ideal for large-scale infrastructure projects like dam instrumentation networks or city-wide bridge monitoring programmes.
+A single Sentra LoRaWAN gateway network can support 1000+ wireless sensors and data loggers simultaneously, ideal for large-scale infrastructure projects like dam instrumentation networks or city-wide bridge monitoring programmes.

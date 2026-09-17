@@ -1,6 +1,6 @@
 # About Sentra - Team, Mission & Expertise
 
-> Learn about Sentra — our mission to make infrastructure safer with IoT and AI, our engineering team, and our track record delivering monitoring projects.
+> Learn about Sentra; our mission to make infrastructure safer with IoT and AI, our engineering team, and our track record delivering monitoring projects.
 
 Source: https://sentratech.in/about.html
 
@@ -17,7 +17,7 @@ About Us
 
 At Sentra, we engineer intelligent monitoring solutions that empower infrastructure owners, engineers, and decision-makers to build safer, smarter, and more resilient assets. From bridges and tunnels to railways and high-rise structures, we turn complex data into clear insights that drive timely action and long-term reliability.
 
-Our team brings together expertise in structural engineering, IoT technology, and real-time analytics to design systems that go beyond measurement — systems that interpret, predict, and protect. Driven by innovation and precision, we aim to redefine how infrastructure health is understood and maintained.
+Our team brings together expertise in structural engineering, IoT technology, and real-time analytics to design systems that go beyond measurement: systems that interpret, predict, and protect. Driven by innovation and precision, we aim to redefine how infrastructure health is understood and maintained.
 
 [Structural Health Monitoring](https://sentratech.in/solutions/structural-health-monitoring.html) [Bridge Inspection](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html) [Advanced NDT](https://sentratech.in/solutions/advanced-non-destructive-testing-ndt.html) [Asset Monitoring](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html) [Geotechnical Monitoring](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) [Fatigue Assessment](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html)
 
@@ -117,7 +117,7 @@ Our Capabilities
 
 ## The Principles That Define Us
 
-In today’s rapidly evolving infrastructure landscape, precision and reliability are non-negotiable. At Sentra, our values guide every solution we build — from sensor design to system deployment.
+In today’s rapidly evolving infrastructure landscape, precision and reliability are non-negotiable. At Sentra, our values guide every solution we build, from sensor design to system deployment.
 
 Structural Health Monitoring
 
@@ -127,13 +127,13 @@ Infrastructure is the backbone of any economy. As bridges, tunnels, and high-ris
 
 Innovative Smart Digital Solutions
 
-We blend technology with creativity — from smart infrastructure and automated systems to connected devices — helping you stay ahead in a rapidly evolving digital world.
+We blend technology with creativity, from smart infrastructure and automated systems to connected devices: helping you stay ahead in a rapidly evolving digital world.
 
 [Read More ](https://clovetech.com/services/digital-solutions/)
 
 Bridge Health Monitoring
 
-**BridgePulse** — From inspection to insight, BridgePulse ensures every detail is visible. With AI and drone precision, you’ll always have a clear view of your infrastructure’s health.
+**BridgePulse**, From inspection to insight, BridgePulse ensures every detail is visible. With AI and drone precision, you’ll always have a clear view of your infrastructure’s health.
 
 [Read More ](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html)
 

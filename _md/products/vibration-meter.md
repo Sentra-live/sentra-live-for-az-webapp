@@ -1,4 +1,4 @@
-# Wireless Vibration Meter — Tri-Axial Monitoring | Sentra
+# Wireless Vibration Meter: Tri-Axial Monitoring | Sentra
 
 > Wireless tri-axial vibration meter for automated, long-term structural vibration monitoring. PPV & MTVV modes, up to 2-year battery, IP68, LoRaWAN.
 
@@ -100,7 +100,7 @@ Up to 2 years of unattended operation on a single 3.6V D-size replaceable batter
 
 #### IP68 Rated & Rugged
 
-Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C — suitable for the harshest field conditions.
+Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C: suitable for the harshest field conditions.
 
 #### Edge Algorithm
 
@@ -242,11 +242,11 @@ Frequently Asked Questions
 
 ## Got Questions About the Vibration Meter?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-It's a wireless tri-axial sensor for continuous vibration monitoring of structures like bridges, tunnels, railways, and buildings — helping detect vibration events, assess structural health, and ensure safety compliance.
+It's a wireless tri-axial sensor for continuous vibration monitoring of structures like bridges, tunnels, railways, and buildings: helping detect vibration events, assess structural health, and ensure safety compliance.
 
 ##
 
@@ -254,7 +254,7 @@ The sensor uses a 3-axis MEMS accelerometer with an edge algorithm that identifi
 
 ##
 
-It supports LoRaWAN for long-range, low-power communication — up to 15 km range in open terrain. Configuration via Worldsensing App (Bluetooth) or remotely via CMT Edge and CMT Cloud.
+It supports LoRaWAN for long-range, low-power communication: up to 15 km range in open terrain. Configuration via Worldsensing App (Bluetooth) or remotely via CMT Edge and CMT Cloud.
 
 ##
 
@@ -266,4 +266,4 @@ With its ultra-low-power design, the replaceable D-size battery lasts up to 2 ye
 
 ##
 
-It can be installed on bridges, tunnels, buildings, industrial machinery, and construction sites — including underground or hard-to-reach locations, providing continuous vibration insights.
+It can be installed on bridges, tunnels, buildings, industrial machinery, and construction sites, including underground or hard-to-reach locations, providing continuous vibration insights.

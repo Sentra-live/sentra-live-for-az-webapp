@@ -1,4 +1,4 @@
-# BridgePulse — AI and Drone Technology for Bridge Health Monitoring
+# BridgePulse: AI and Drone Technology for Bridge Health Monitoring
 
 > How BridgePulse uses drones and AI to inspect bridge cracks, track defects over time, and flag issues before they need emergency repair.
 

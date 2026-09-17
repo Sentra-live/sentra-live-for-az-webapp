@@ -6,7 +6,7 @@ Published: 2026-09-07
 Section: Industrial  
 Source: https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html
 
-How IoT vibration sensors prevent failure. A bearing that fails on a Tuesday afternoon started telling you about it weeks earlier — in a frequency band nobody was listening to. Continuous equipment vibration monitoring is how plants hear it in time.
+How IoT vibration sensors prevent failure. A bearing that fails on a Tuesday afternoon started telling you about it weeks earlier: in a frequency band nobody was listening to. Continuous equipment vibration monitoring is how plants hear it in time.
 
 Every plant has a version of the same story. A pump runs for eleven years without complaint, then seizes on a Tuesday afternoon and takes a production line with it. The post-mortem finds a bearing that had been degrading for two months. Nobody was negligent. The information simply was not being collected between the monthly inspection rounds.
 
@@ -14,7 +14,7 @@ Every plant has a version of the same story. A pump runs for eleven years withou
 
 ## Why Vibration Is the Signal That Matters
 
-Rotating machinery is honest. A shaft, a bearing and a coupling in good condition produce a stable, characteristic vibration pattern. When something changes — a bearing race spalls, a coupling drifts out of alignment, a fan blade collects deposit — the pattern changes with it, and it changes early.
+Rotating machinery is honest. A shaft, a bearing and a coupling in good condition produce a stable, characteristic vibration pattern. When something changes: a bearing race spalls, a coupling drifts out of alignment, a fan blade collects deposit: the pattern changes with it, and it changes early.
 
 That is the crucial property. Temperature rises when a fault is already generating serious friction. Motor current changes when the machine is already working harder. Audible noise arrives later still, and by the time an operator hears it, the repair window has usually closed. Vibration moves first, often by weeks, because it responds to the geometry of the fault rather than to its consequences.
 
@@ -32,25 +32,25 @@ A modern wireless vibration sensor is a triaxial MEMS accelerometer, a processor
 
 - **Envelope or demodulated spectra** extract the repetitive impacts of an early bearing defect from the broadband noise that would otherwise hide them.
 
-Sampling strategy separates a useful sensor from a data-producing one. Devices that report only an RMS value every few hours will catch a machine that is already deteriorating badly. Devices that capture a full waveform and transmit a spectrum — typically a few thousand lines up to 10 kHz or more — support genuine diagnosis. Sentra's [wireless vibration meter](https://sentratech.in/products/vibration-meter.html) and [triaxial accelerometers](https://sentratech.in/products/accelerometers.html) are built for this second case.
+Sampling strategy separates a useful sensor from a data-producing one. Devices that report only an RMS value every few hours will catch a machine that is already deteriorating badly. Devices that capture a full waveform and transmit a spectrum, typically a few thousand lines up to 10 kHz or more: support genuine diagnosis. Sentra's [wireless vibration meter](https://sentratech.in/products/vibration-meter.html) and [triaxial accelerometers](https://sentratech.in/products/accelerometers.html) are built for this second case.
 
 ## The Faults, and How They Announce Themselves
 
 Most rotating-equipment problems fall into a handful of families, each with a recognisable signature relative to running speed (1×).
 
-- **Imbalance** — a dominant peak at 1×, radial, growing with the square of speed. The most common fault and usually the cheapest to fix.
+- **Imbalance**: a dominant peak at 1×, radial, growing with the square of speed. The most common fault and usually the cheapest to fix.
 
-- **Misalignment** — strong 2× content, often with significant axial vibration. Frequently introduced by a well-intentioned repair.
+- **Misalignment**: strong 2× content, often with significant axial vibration. Frequently introduced by a well-intentioned repair.
 
-- **Mechanical looseness** — a series of harmonics, 1×, 2×, 3× and beyond, sometimes with half-order components.
+- **Mechanical looseness**: a series of harmonics, 1×, 2×, 3× and beyond, sometimes with half-order components.
 
-- **Bearing defects** — non-synchronous frequencies determined by bearing geometry: outer race, inner race, ball spin and cage. These are the classic early-warning targets, visible in envelope analysis long before the overall level moves.
+- **Bearing defects**: non-synchronous frequencies determined by bearing geometry: outer race, inner race, ball spin and cage. These are the classic early-warning targets, visible in envelope analysis long before the overall level moves.
 
-- **Gear damage** — energy at gear mesh frequency with sidebands spaced at shaft speed, where the sideband pattern indicates which gear is affected.
+- **Gear damage**: energy at gear mesh frequency with sidebands spaced at shaft speed, where the sideband pattern indicates which gear is affected.
 
-- **Cavitation** in pumps — broadband high-frequency noise rather than discrete peaks, usually a system or suction problem rather than a machine fault.
+- **Cavitation** in pumps: broadband high-frequency noise rather than discrete peaks, usually a system or suction problem rather than a machine fault.
 
-- **Resonance** — large amplification at a structural natural frequency, which is a design or installation issue and cannot be balanced away.
+- **Resonance**: large amplification at a structural natural frequency, which is a design or installation issue and cannot be balanced away.
 
 Naming the fault is what converts monitoring into planning. "Motor 4 is running rough" leads to an exploratory shutdown. "Motor 4 shows an outer-race defect frequency with rising sidebands" leads to a bearing on order and a job card for the next planned outage.
 
@@ -60,7 +60,7 @@ The gain is not mainly in avoiding repairs. Repairs still happen. The gain is th
 
 An unplanned failure carries costs a scheduled one does not: lost production while the plant waits for a part that is not in stores, overtime, collateral damage to couplings and shafts when a bearing finally seizes, and the safety exposure of an emergency intervention. A planned replacement during a scheduled window costs the part and a few hours of labour that were budgeted anyway.
 
-Calendar-based servicing has its own hidden cost. Perfectly serviceable components are discarded on schedule, and every intervention carries a risk of introducing a defect — a misaligned coupling, a contaminated bearing, an over-tightened foot. Condition-based intervention reduces both the number of intrusions and the number of surprises.
+Calendar-based servicing has its own hidden cost. Perfectly serviceable components are discarded on schedule, and every intervention carries a risk of introducing a defect: a misaligned coupling, a contaminated bearing, an over-tightened foot. Condition-based intervention reduces both the number of intrusions and the number of surprises.
 
 Alongside vibration, most facilities already track motor current, temperature, pressure and flow. Reviewed together on one platform, the combination separates a machine fault from a process problem: a pump drawing more current with unchanged vibration is usually being asked to do more work, not failing. This is the wider brief of [industrial facility monitoring](https://sentratech.in/industries/industrial-facilities-monitoring.html) and [asset monitoring and management](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html).
 
@@ -78,11 +78,11 @@ The technology is rarely the hard part. Deploying it in a facility that cannot s
 
 **Decide who acts, before the first alert.** A predictive program fails on organisation far more often than on instrumentation. An alert with no named owner, no defined response and no route into the work-order system becomes an email that people learn to ignore.
 
-## Where Analytics Genuinely Helps — and Where It Does Not
+## Where Analytics Genuinely Helps, and Where It Does Not
 
 Machine learning is applied to vibration data with mixed honesty. What works reliably is well established: anomaly detection against a learned baseline, trending toward a threshold with a projected crossing date, and automatic classification of known fault signatures. All three are useful, and none of them require a machine to fail first in order to be trained.
 
-What is oversold is precise remaining-useful-life prediction on general-purpose equipment. Credible RUL models need many observed run-to-failure examples of that machine type under those conditions, and most plants do not have them, because they replace components before failure — which is the entire point of the program.
+What is oversold is precise remaining-useful-life prediction on general-purpose equipment. Credible RUL models need many observed run-to-failure examples of that machine type under those conditions, and most plants do not have them, because they replace components before failure, which is the entire point of the program.
 
 The realistic and still valuable output is a ranked list: which machines are deteriorating, how fast, and in what way. That is enough to plan a shutdown around.
 
@@ -92,7 +92,7 @@ Predictive maintenance does not need to start as a plant-wide programme. It star
 
 #### Ready to start with the machines that matter?
 
-Sentra designs and deploys equipment vibration monitoring for industrial facilities across India — sensors, gateways, dashboards and the threshold logic that turns a spectrum into a work order.
+Sentra designs and deploys equipment vibration monitoring for industrial facilities across India: sensors, gateways, dashboards and the threshold logic that turns a spectrum into a work order.
 
 [Talk to us about your plant ](https://sentratech.in/contact.html)
 

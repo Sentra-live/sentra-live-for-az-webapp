@@ -1,6 +1,6 @@
-# Piconode — Ultra-Compact Wireless Data Logger | Sentra
+# Piconode: Ultra-Compact Wireless Data Logger | Sentra
 
-> Piconode — ultra-compact wireless data logger for analog sensors. 3-channel (configurable, thermistor, pulse counter), up to 25-year battery, IP68, LoRaWAN.
+> Piconode: ultra-compact wireless data logger for analog sensors. 3-channel (configurable, thermistor, pulse counter), up to 25-year battery, IP68, LoRaWAN.
 
 Source: https://sentratech.in/products/piconode-data-logger.html
 
@@ -8,7 +8,7 @@ Piconode
 
 ## Piconode Data Logger
 
-Ultra-compact wireless data logger designed for high-density monitoring in tight spaces. Featuring 3 channels — configurable analog, thermistor, and pulse counter — with up to 25 years of battery life and fully potted IP68 protection for the harshest environments.
+Ultra-compact wireless data logger designed for high-density monitoring in tight spaces. Featuring 3 channels: configurable analog, thermistor, and pulse counter, with up to 25 years of battery life and fully potted IP68 protection for the harshest environments.
 
 [ Explore Products ](#pc-products) [ Get a Quote ](https://sentratech.in/contact.html)
 
@@ -34,9 +34,9 @@ Overview
 
 ## Compact Wireless Data Acquisition for Tight Spaces
 
-The Piconode is an ultra-compact, 3-channel wireless data logger designed for long-term, unattended monitoring in confined spaces. It includes one configurable analog channel (voltage, potentiometer, Full Wheatstone bridge), one precision thermistor channel, and one pulse counter channel — all in a fully potted, IP68-rated enclosure.
+The Piconode is an ultra-compact, 3-channel wireless data logger designed for long-term, unattended monitoring in confined spaces. It includes one configurable analog channel (voltage, potentiometer, Full Wheatstone bridge), one precision thermistor channel, and one pulse counter channel, all in a fully potted, IP68-rated enclosure.
 
-With its compact form factor and long-range LoRa communications, the Piconode is ideal for high-density monitoring applications where space is at a premium — such as manholes, inside structural joints, boreholes, and cramped construction sites.
+With its compact form factor and long-range LoRa communications, the Piconode is ideal for high-density monitoring applications where space is at a premium, such as manholes, inside structural joints, boreholes, and cramped construction sites.
 
 **Configurable Analog**
 
@@ -58,7 +58,7 @@ Encapsulated electronics for extreme conditions
 
 Versatile analog & pulse interface
 
-The Piconode supports a wide range of analog sensors through its configurable channel, precision thermistor input, and pulse counter — ideal for environmental, geotechnical, and structural monitoring in space-constrained deployments.
+The Piconode supports a wide range of analog sensors through its configurable channel, precision thermistor input, and pulse counter, ideal for environmental, geotechnical, and structural monitoring in space-constrained deployments.
 
 Rain Gauges Load Cells NTC Thermistors Displacement Sensors Strain Gauges Pulse Output Meters
 
@@ -82,11 +82,11 @@ Up to 25 years of unattended operation with 2-cell configuration. User-replaceab
 
 #### Triple-Mode Sensing
 
-3 dedicated channels: configurable analog (voltage/potentiometer/FWB), precision thermistor (0 Ω–2 MΩ), and pulse counter (0–4.3B pulses) — all in one compact device.
+3 dedicated channels: configurable analog (voltage/potentiometer/FWB), precision thermistor (0 Ω–2 MΩ), and pulse counter (0–4.3B pulses), all in one compact device.
 
 #### IP68 Fully Potted
 
-Industrial-grade fully potted IP68 enclosure. Operating range from −40°C to +80°C — survives submersion and the harshest field conditions.
+Industrial-grade fully potted IP68 enclosure. Operating range from −40°C to +80°C: survives submersion and the harshest field conditions.
 
 #### Long-Range Wireless
 
@@ -94,7 +94,7 @@ LoRaWAN communications reaching up to 4 km in urban environments. Reliable data 
 
 #### Mobile App Configuration
 
-Wireless Bluetooth setup via Worldsensing App. Wiring assistant, field sampling, signal coverage testing and diagnostics — no laptop needed.
+Wireless Bluetooth setup via Worldsensing App. Wiring assistant, field sampling, signal coverage testing and diagnostics, with no laptop needed.
 
 Applications
 
@@ -114,7 +114,7 @@ Wireline extensometers, crackmeters and displacement sensors for monitoring tens
 
 ##### Load in Rock Bolts & Ground Anchors
 
-Load cells connected via Full Wheatstone bridge for monitoring anchor systems throughout their lifecycle — from load tests to long-term service.
+Load cells connected via Full Wheatstone bridge for monitoring anchor systems throughout their lifecycle, from load tests to long-term service.
 
 ##### In-ground Displacement
 
@@ -184,7 +184,7 @@ Detailed Sensor Specifications |
 
 **Inputs:** 3-ch (analog/thermistor/pulse) **Temp:** −40°C to +80°C **Protection:** IP68 potted | Battery @1hr: **1 cell:** 8.6 yrs **2 cells:** 17.2 yrs
 
-Channel 1 — Configurable Analog |
+Channel 1: Configurable Analog |
 
 Input Types | Voltage, Potentiometer, Full Wheatstone Bridge |
 
@@ -200,13 +200,13 @@ Potentiometer Accuracy | 0.1% FS |
 
 Single-ended Voltage Accuracy | 0.04–0.5% FS |
 
-Channel 2 — Thermistor |
+Channel 2: Thermistor |
 
 Measuring Range | 0 Ω to 2 MΩ |
 
 Accuracy (at 25°C) | 0.04°C (0.04% FS) for 32kΩ 0.05°C (0.04% FS) for 50kΩ |
 
-Channel 3 — Pulse Counter |
+Channel 3: Pulse Counter |
 
 Pulse Count Range | 0 to 4,294,967,295 pulses |
 
@@ -258,11 +258,11 @@ Frequently Asked Questions
 
 ## Got Questions About the Piconode?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-The Piconode is an ultra-compact wireless data logger designed for long-term, unattended monitoring in confined spaces. It captures data from voltage, potentiometer, Wheatstone bridge, thermistor, and pulse-output sensors — making it ideal for environmental, geotechnical, and structural monitoring where space is at a premium.
+The Piconode is an ultra-compact wireless data logger designed for long-term, unattended monitoring in confined spaces. It captures data from voltage, potentiometer, Wheatstone bridge, thermistor, and pulse-output sensors, making it ideal for environmental, geotechnical, and structural monitoring where space is at a premium.
 
 ##
 
@@ -282,4 +282,4 @@ In open sight, the range can reach up to 15 km (9.3 mi). In dense urban environm
 
 ##
 
-The Piconode can be configured wirelessly via the Worldsensing App using Bluetooth — no laptop needed. The app provides a wiring assistant, field sampling mode, signal coverage testing, and full diagnostics. For remote management, configuration can be done through CMT Edge or CMT Cloud platforms.
+The Piconode can be configured wirelessly via the Worldsensing App using Bluetooth, with no laptop needed. The app provides a wiring assistant, field sampling mode, signal coverage testing, and full diagnostics. For remote management, configuration can be done through CMT Edge or CMT Cloud platforms.

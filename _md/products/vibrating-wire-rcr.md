@@ -1,6 +1,6 @@
-# Vibrating Wire RCR — Embedded Data Logger for Concrete | Sentra
+# Vibrating Wire RCR: Embedded Data Logger for Concrete | Sentra
 
-> Vibrating Wire RCR — ultra-robust wireless data logger embedded in precast concrete. Up to 25-year battery, IP68, internal antenna for underground monitoring.
+> Vibrating Wire RCR: ultra-robust wireless data logger embedded in precast concrete. Up to 25-year battery, IP68, internal antenna for underground monitoring.
 
 Source: https://sentratech.in/products/vibrating-wire-rcr.html
 
@@ -8,7 +8,7 @@ Vibrating Wire RCR
 
 ## G7 Vibrating Wire RCR Data Logger
 
-Ultra-robust wireless data logger with internal antenna, designed to be embedded in precast concrete. Measure real-time stress and strain in tunnel linings and concrete segments — starting from the manufacturing stage.
+Ultra-robust wireless data logger with internal antenna, designed to be embedded in precast concrete. Measure real-time stress and strain in tunnel linings and concrete segments: starting from the manufacturing stage.
 
 [ Explore Products ](#vw-products) [ Get a Quote ](https://sentratech.in/contact.html)
 
@@ -20,7 +20,7 @@ Ultra-robust wireless data logger with internal antenna, designed to be embedded
 
 Model: LSG7VW-6IL0-RCR
 
-Internal Antenna — Embed in Concrete
+Internal Antenna: Embed in Concrete
 
 ![G7 VW 2-Channel RCR](https://sentratech.in/image/products/worldsensing_vw_g7_2ch_rcr.webp)
 
@@ -28,7 +28,7 @@ Internal Antenna — Embed in Concrete
 
 Model: LSG7VW-2IL0-RCR
 
-Internal Antenna — Embed in Concrete
+Internal Antenna: Embed in Concrete
 
 6ch Max Channels 6 & 2 channel RCR variants
 
@@ -102,11 +102,11 @@ Up to 22.7 years at 1-hour reporting, exceeding 25 years at 6-hour intervals. Us
 
 #### IP68 Rated & Rugged
 
-Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C — survives the harshest construction environments.
+Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C: survives the harshest construction environments.
 
 #### Universal Sensor Compatibility
 
-Compatible with all leading vibrating wire sensor manufacturers. Reads sensors from 300 to 7000 Hz — covering virtually all geotechnical VW sensors.
+Compatible with all leading vibrating wire sensor manufacturers. Reads sensors from 300 to 7000 Hz, covering virtually all geotechnical VW sensors.
 
 #### Cloud & Edge Management
 
@@ -202,19 +202,19 @@ Frequently Asked Questions
 
 ## Got Questions About the G7 VW RCR?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-The G7 Vibrating Wire RCR is a wireless data acquisition IoT device with an internal antenna, designed for embedding in precast concrete. It collects data from vibrating wire sensors and transmits it using long-range, low-power radio communications — ideal for tunnel linings and underground construction.
+The G7 Vibrating Wire RCR is a wireless data acquisition IoT device with an internal antenna, designed for embedding in precast concrete. It collects data from vibrating wire sensors and transmits it using long-range, low-power radio communications, ideal for tunnel linings and underground construction.
 
 ##
 
-The RCR variant features an internal antenna instead of an external one, making it suitable for encapsulation in precast concrete. It's also more compact and rugged, designed specifically for embedding in concrete segments during manufacturing — ideal for tunnel lining monitoring where external antennas would be impractical.
+The RCR variant features an internal antenna instead of an external one, making it suitable for encapsulation in precast concrete. It's also more compact and rugged, designed specifically for embedding in concrete segments during manufacturing, ideal for tunnel lining monitoring where external antennas would be impractical.
 
 ##
 
-The G7 VW RCR can be connected to all vibrating wire sensors on the market. It reads sensors working on the 0 to 7000 Hz frequency range, covering virtually all geotechnical vibrating wire sensors globally — including piezometers, strain gauges, pressure cells, load cells, crackmeters, and extensometers.
+The G7 VW RCR can be connected to all vibrating wire sensors on the market. It reads sensors working on the 0 to 7000 Hz frequency range, covering virtually all geotechnical vibrating wire sensors globally, including piezometers, strain gauges, pressure cells, load cells, crackmeters, and extensometers.
 
 ##
 
@@ -222,7 +222,7 @@ With a 1-hour reporting interval, the 5-channel RCR achieves up to 22.7 years of
 
 ##
 
-Yes. The RCR variant is specifically designed with an internal antenna and robust enclosure for direct embedment in precast concrete segments. It can withstand the casting process and provide long-term monitoring from within the concrete structure — perfect for tunnel segment lining monitoring from the manufacturing stage.
+Yes. The RCR variant is specifically designed with an internal antenna and robust enclosure for direct embedment in precast concrete segments. It can withstand the casting process and provide long-term monitoring from within the concrete structure, perfect for tunnel segment lining monitoring from the manufacturing stage.
 
 ##
 

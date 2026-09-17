@@ -1,18 +1,16 @@
-# Lixel K2 — Handheld SLAM LiDAR Scanner with RTK | Sentra × XGRIDS
+# Lixel K2: Handheld SLAM LiDAR Scanner with RTK | Sentra × XGRIDS
 
-> Lixel K2 by XGRIDS — lightweight handheld SLAM LiDAR scanner with onboard RTK, 200,000 pts/s, 1cm accuracy and up to 100m range. Available via Sentra.
+> Lixel K2 by XGRIDS: lightweight handheld SLAM LiDAR scanner with onboard RTK, 200,000 pts/s, 1cm accuracy and up to 100m range. Available via Sentra.
 
 Source: https://sentratech.in/products/lixel-k2.html
 
-Official XGRIDS Reseller — India
+Official XGRIDS Reseller: India
 
 Lixel K2
 
-## Lixel K2 — The Gold Standard in Lightweight SLAM Scanning
+## Lixel K2: The Gold Standard in Lightweight SLAM Scanning
 
-A handheld SLAM LiDAR scanner with onboard RTK, delivering survey-grade point clouds and 3D Gaussian Splat models in a single 1.2kg device. Walk the site, capture everything — no tripods, targets or GCPs required.
-
-List price $6,500 USD
+A handheld SLAM LiDAR scanner with onboard RTK, delivering survey-grade point clouds and 3D Gaussian Splat models in a single 1.2kg device. Walk the site, capture everything: no tripods, targets or GCPs required.
 
 [See the Scanner](#ps-gallery) [Get a Quote](https://sentratech.in/contact.html?enquiry=1&amp;product=Lixel%20K2)
 
@@ -38,9 +36,9 @@ Overview
 
 ## Survey-Grade Handheld Scanning, Redefined
 
-The Lixel K2 fuses LiDAR, visual and inertial SLAM with an onboard RTK module to deliver centimetre-level accuracy without ground control points. Three cameras — two fisheye and one forward-facing at 4000×3000 resolution — capture full 360° × -7° to +52° coverage alongside the point cloud.
+The Lixel K2 fuses LiDAR, visual and inertial SLAM with an onboard RTK module to deliver centimetre-level accuracy without ground control points. Three cameras: two fisheye and one forward-facing at 4000×3000 resolution: capture full 360° × -7° to +52° coverage alongside the point cloud.
 
-Data is processed through XGRIDS' LixelGo app for one-click on-device reconstruction, or LixelStudio for full desktop registration, classification and export — including native 3D Gaussian Splatting for photoreal digital twins.
+Data is processed through XGRIDS' LixelGo app for one-click on-device reconstruction, or LixelStudio for full desktop registration, classification and export, including native 3D Gaussian Splatting for photoreal digital twins.
 
 **Onboard RTK Module**
 
@@ -62,7 +60,7 @@ Point cloud + photoreal 3D model from one scan
 
 **Faster site capture**
 
-Walk-and-scan workflow replaces static setups — cover large sites in a fraction of the time.
+Walk-and-scan workflow replaces static setups: cover large sites in a fraction of the time.
 
 **Fewer people on site**
 
@@ -88,7 +86,7 @@ Multi-SLAM
 
 #### Real-Time Spatial Perception System
 
-Fuses LiDAR, visual and inertial SLAM data in real time for robust tracking and reconstruction — even in featureless or dynamic environments.
+Fuses LiDAR, visual and inertial SLAM data in real time for robust tracking and reconstruction, even in featureless or dynamic environments.
 
 **3-sensor fusion**, one continuous pass
 
@@ -98,7 +96,7 @@ Multi-Camera Array
 
 #### Complete Environmental Detail, Captured
 
-Three cameras — two fisheye plus one forward-facing at 4000×3000 — deliver full 360° × -7° to +52° coverage alongside the point cloud.
+Three cameras: two fisheye plus one forward-facing at 4000×3000: deliver full 360° × -7° to +52° coverage alongside the point cloud.
 
 ![Lixel K2 integrated RTK module](https://sentratech.in/image/products/scanners/Lixel-k2-Integrated-RTK.webp)
 
@@ -106,7 +104,7 @@ Integrated RTK
 
 #### Spatial Coordinates, Precisely Locked
 
-Built-in UM980 RTK module delivers centimetre-level absolute positioning — RTK and PPK supported, no ground control points required.
+Built-in UM980 RTK module delivers centimetre-level absolute positioning: RTK and PPK supported, no ground control points required.
 
 Data Fidelity
 
@@ -116,13 +114,13 @@ Data Fidelity
 
 #### Measurement Accuracy
 
-Wall distances and window dimensions you can rely on — relative accuracy within 1 cm.
+Wall distances and window dimensions you can rely on: relative accuracy within 1 cm.
 
 ≤1cm
 
 #### Point Cloud Thickness
 
-Fine detail, faithfully reproduced — post-processed point cloud thickness as thin as 1 cm.
+Fine detail, faithfully reproduced: post-processed point cloud thickness as thin as 1 cm.
 
 Output Quality
 
@@ -130,33 +128,33 @@ Output Quality
 
 #### Complex Geometry
 
-Clearly resolved — intricate structures captured with precision.
+Clearly resolved: intricate structures captured with precision.
 
 #### Uniform Colorization
 
-Every detail, visible — consistent true-colour across the entire scan.
+Every detail, visible: consistent true-colour across the entire scan.
 
 #### Denser Point Clouds
 
-Truer detail — 200,000 pts/sec for high-density capture.
+Truer detail: 200,000 pts/sec for high-density capture.
 
 #### Low-Light Performance
 
-Still sharp — LiDAR-based capture works in any lighting condition.
+Still sharp: LiDAR-based capture works in any lighting condition.
 
 #### Engineering-Grade
 
-Built for precision — survey-grade output you can build on.
+Built for precision: survey-grade output you can build on.
 
 Multiple Outputs
 
 ## One Device. Any Scenario.
 
-One scan, multiple outputs — each matched to the task.
+One scan, multiple outputs: each matched to the task.
 
 #### Real-Time Point Cloud
 
-On-site assurance for urgent projects. Assess data quality as you scan — verify coverage, check alignment and confirm completeness before leaving the site.
+On-site assurance for urgent projects. Assess data quality as you scan: verify coverage, check alignment and confirm completeness before leaving the site.
 
 See It In Action
 
@@ -172,19 +170,19 @@ Your entry point into spatial intelligence. When you choose Lixel K2, you tap in
 
 ##### Scan-to-BIM
 
-Streamline the point-cloud-to-model workflow, delivered to engineering standards — from raw scan to classified, usable BIM models.
+Streamline the point-cloud-to-model workflow, delivered to engineering standards, from raw scan to classified, usable BIM models.
 
 02
 
 ##### Digital Twin
 
-Rapidly digitize real spaces for visual management and ongoing operations — from facility monitoring to remote collaboration.
+Rapidly digitize real spaces for visual management and ongoing operations, from facility monitoring to remote collaboration.
 
 03
 
 ##### NVIDIA Isaac Sim
 
-Feed real-world data into simulation training to accelerate robot perception and decision validation — bridging physical and digital worlds.
+Feed real-world data into simulation training to accelerate robot perception and decision validation: bridging physical and digital worlds.
 
 Core Capabilities
 
@@ -194,7 +192,7 @@ Core Capabilities
 
 #### Onboard RTK
 
-Integrated RTK module delivers 3cm absolute accuracy on both elevation and horizontal axes — no ground control points needed.
+Integrated RTK module delivers 3cm absolute accuracy on both elevation and horizontal axes: no ground control points needed.
 
 3cm accuracy Dual-axis No GCPs
 
@@ -224,7 +222,7 @@ Compact, one-hand ergonomics for extended field sessions without operator fatigu
 
 #### LixelGo One-Click Processing
 
-On-device app for instant preview and one-click registration in the field — no laptop required.
+On-device app for instant preview and one-click registration in the field, with no laptop required.
 
 Live preview One-click registration
 
@@ -232,7 +230,7 @@ Live preview One-click registration
 
 #### Open Export Formats
 
-Export to LAS, LAZ, E57, PLY and Gaussian Splat — compatible with CAD, BIM and 3D engine pipelines.
+Export to LAS, LAZ, E57, PLY and Gaussian Splat: compatible with CAD, BIM and 3D engine pipelines.
 
 LAS LAZ E57 PLY 3DGS
 
@@ -268,9 +266,9 @@ Point Rate | Up to 200,000 points/sec |
 
 Relative Accuracy (RMSE) | 1 cm |
 
-Absolute Accuracy — Elevation (RMSE) | 3 cm |
+Absolute Accuracy: Elevation (RMSE) | 3 cm |
 
-Absolute Accuracy — Horizontal (RMSE) | 3 cm |
+Absolute Accuracy: Horizontal (RMSE) | 3 cm |
 
 Repeatability | 2 cm |
 
@@ -278,7 +276,7 @@ Post-Processed Point Cloud Thickness | ≤ 1 cm |
 
 Real-Time Absolute Accuracy (RMSE) | 3 cm (elevation & horizontal) |
 
-Positioning | Onboard RTK module (UM980) — RTK & PPK supported |
+Positioning | Onboard RTK module (UM980): RTK & PPK supported |
 
 Cameras | 3× (2 fisheye + 1 forward-facing), 4000×3000, 1/2" CMOS |
 
@@ -320,13 +318,13 @@ Software
 
 Point Cloud Processing Workstation
 
-Upgraded for higher-quality data output — the desktop companion for full registration, classification and export of Lixel K2 captures.
+Upgraded for higher-quality data output: the desktop companion for full registration, classification and export of Lixel K2 captures.
 
 #### Upgraded for Higher-Quality Output
 
 Photo-realistic color, clear even in low light
 
-Improved leveling — horizontals and verticals, precisely aligned
+Improved leveling: horizontals and verticals, precisely aligned
 
 Cleaner filtering, sharper edges
 
@@ -356,19 +354,19 @@ Included
 
 ##### Extension Pole
 
-Reach higher vantage points for elevated captures — ideal for large interiors and overhead structures.
+Reach higher vantage points for elevated captures, ideal for large interiors and overhead structures.
 
 Included
 
 ### Ready to Deploy the Lixel K2?
 
-Talk to Sentra's reality capture team about pricing, demos and training for the Lixel K2 — official XGRIDS reseller in India.
+Talk to Sentra's reality capture team about pricing, demos and training for the Lixel K2: official XGRIDS reseller in India.
 
 Frequently Asked Questions
 
 ## Got Questions About the Lixel K2?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html?enquiry=1&amp;product=Lixel%20K2) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html?enquiry=1&amp;product=Lixel%20K2). We're happy to help.
 
 ##
 
@@ -376,7 +374,7 @@ No. The onboard RTK module provides centimetre-level absolute positioning during
 
 ##
 
-Yes — the Lixel K2 natively generates 3D Gaussian Splat models alongside the classified point cloud, so you get a photoreal 3D asset from the same scan.
+Yes: the Lixel K2 natively generates 3D Gaussian Splat models alongside the classified point cloud, so you get a photoreal 3D asset from the same scan.
 
 ##
 

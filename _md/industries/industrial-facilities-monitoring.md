@@ -1,4 +1,4 @@
-# Industrial Facility Monitoring — Asset Health | Sentra
+# Industrial Facility Monitoring: Asset Health | Sentra
 
 > Asset health, predictive maintenance and equipment vibration monitoring for power plants, refineries and process industries using Sentra's IoT sensors.
 
@@ -18,7 +18,7 @@ Monitoring Matters
 
 Industrial facilities operate expensive, high-risk equipment that must run reliably 24/7. Unplanned downtime from equipment failure can cost millions in lost production and repair. Traditional time-based maintenance misses early signs of degradation.
 
-Sentra's IoT condition monitoring solutions track vibration, temperature, and operational parameters in real time — enabling predictive maintenance that catches developing faults before they cause failures.
+Sentra's IoT condition monitoring solutions track vibration, temperature, and operational parameters in real time by enabling predictive maintenance that catches developing faults before they cause failures.
 
 ## Key Monitoring Parameters
 

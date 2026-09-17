@@ -256,7 +256,7 @@ The success of this project proves that IoT Bridge Monitoring is not just a diag
 
 ## Conclusion: Advance Railway Safety with IoT Bridge Monitoring
 
-The amalgamation of Sensor Installation on Railway Bridges with IoT Bridge Monitoring is a significant step forward in the management of railway infrastructure. It is these systems that, by providing continuous, ultra-precise data on stress, deflection, vibration, and fatigue, enable engineers and officials to decide on maintenance interventions based on evidence.
+The amalgamation of Sensor Installation on Railway Bridges with IoT Bridge Monitoring is a significant step forward in the management of railway infrastructure. It is these systems that,, providing continuous, ultra-precise data on stress, deflection, vibration, and fatigue, enable engineers and officials to decide on maintenance interventions based on evidence.
 
 ## Interested in IoT Bridge Monitoring?
 

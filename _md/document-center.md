@@ -1,6 +1,6 @@
-# Document Center — Product Datasheets | Sentra
+# Document Center: Product Datasheets | Sentra
 
-> Download technical datasheets for Sentra's sensors, data loggers, communications hardware, and XGRIDS laser scanners — all in one document center.
+> Download technical datasheets for Sentra's sensors, data loggers, communications hardware, and XGRIDS laser scanners, all in one document center.
 
 Source: https://sentratech.in/document-center.html
 
@@ -8,7 +8,7 @@ Document Center
 
 ## Product Datasheets
 
-Technical specifications for every sensor, data logger, and XGRIDS laser scanner Sentra supplies — share a few details and get instant access.
+Technical specifications for every sensor, data logger, and XGRIDS laser scanner Sentra supplies: share a few details and get instant access.
 
 15
 
@@ -22,7 +22,7 @@ Scanners & Software
 
 Ready to Download
 
-Datasheets marked **Available** open or download after you share a few quick details — this helps our team follow up with the right specs for your project.
+Datasheets marked **Available** open or download after you share a few quick details; this helps our team follow up with the right specs for your project.
 
 ## Sensors & Data Loggers
 
@@ -34,7 +34,7 @@ Wireless and wired sensors, data acquisition units, and communications hardware 
 
 #### [Strain Gauge](https://sentratech.in/products/strain-gauges.html)
 
-Precision strain sensors — 4100 Series & GV-2411 spot-weldable variants.
+Precision strain sensors: 4100 Series & GV-2411 spot-weldable variants.
 
 Available
 
@@ -44,7 +44,7 @@ Available
 
 #### [Accelerometer](https://sentratech.in/products/accelerometers.html)
 
-Vibration & motion sensor — 4020/4030 Series.
+Vibration & motion sensor: 4020/4030 Series.
 
 Available
 
@@ -70,9 +70,9 @@ Available
 
 [ Download Datasheet](#)
 
-![Tiltmeter — Event Detection](https://sentratech.in/image/products/worldsensing_tiltmeter_ir.webp)
+![Tiltmeter, Event Detection](https://sentratech.in/image/products/worldsensing_tiltmeter_ir.webp)
 
-#### [Tiltmeter — Event Detection](https://sentratech.in/products/tiltmeter-event-detection.html)
+#### [Tiltmeter, Event Detection](https://sentratech.in/products/tiltmeter-event-detection.html)
 
 3-axis wireless tiltmeter with configurable event-triggered alerts.
 
@@ -184,7 +184,7 @@ Available
 
 7
 
-XGRIDS handheld SLAM LiDAR scanners, spatial cameras and processing software — Sentra is the official India reseller.
+XGRIDS handheld SLAM LiDAR scanners, spatial cameras and processing software: Sentra is the official India reseller.
 
 ![Lixel K2](https://sentratech.in/image/products/scanners/Lixel-k2-product.webp)
 
@@ -210,7 +210,7 @@ Available
 
 #### [Lixel L2 Pro](https://sentratech.in/products/lixel-l2-pro.html)
 
-Long-range scanner — up to 640,000 pts/s and 300m range.
+Long-range scanner: up to 640,000 pts/s and 300m range.
 
 Available
 
@@ -220,7 +220,7 @@ Available
 
 #### [LixelStudio](https://sentratech.in/products/lixelstudio.html)
 
-Point cloud processing workstation — one-click processing from raw scan data to production-ready point clouds.
+Point cloud processing workstation: one-click processing from raw scan data to production-ready point clouds.
 
 Available
 
@@ -230,7 +230,7 @@ Available
 
 #### [LCC](https://sentratech.in/products/lcc.html)
 
-3D Gaussian Splatting content platform — LCC Studio, LCC Cloud, Model & Scene Editors, and cross-platform SDKs.
+3D Gaussian Splatting content platform: LCC Studio, LCC Cloud, Model & Scene Editors, and cross-platform SDKs.
 
 Available
 

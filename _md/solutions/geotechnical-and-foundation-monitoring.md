@@ -1,6 +1,6 @@
 # Geotechnical & Foundation Monitoring | Sentra
 
-> Real-time geotechnical and foundation monitoring for construction sites, tunnels and slopes — sub-millimetre precision, 24/7 ground intelligence.
+> Real-time geotechnical and foundation monitoring for construction sites, tunnels and slopes: sub-millimetre precision, 24/7 ground intelligence.
 
 Source: https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html
 
@@ -10,7 +10,7 @@ Construction Metro & Tunnels Mining Coastal Slopes & Embankments
 
 ## Geotechnical & Foundation Monitoring
 
-Ground-level intelligence that keeps projects safe and on schedule — real-time settlement, slope stability, and piezometric data from sub-millimetre precision instruments.
+Ground-level intelligence that keeps projects safe and on schedule: real-time settlement, slope stability, and piezometric data from sub-millimetre precision instruments.
 
 [Talk to a Geotechnical Expert ](https://sentratech.in/contact.html) [Explore Solution](#sol-overview)
 
@@ -20,21 +20,21 @@ What We Do
 
 From deep excavation monitoring to long-term slope stability surveillance, Sentra's geotechnical monitoring programmes provide the ground truth that engineers and project managers need to make safe, informed decisions.
 
-### From Borehole to Dashboard — Complete Geotechnical Monitoring
+### From Borehole to Dashboard: Complete Geotechnical Monitoring
 
-Ground behaviour is complex, three-dimensional, and often invisible — yet it governs the safety of every major construction project, tunnel, embankment, and slope. Sentra's geotechnical monitoring service deploys the full range of subsurface instruments — settlement plates, inclinometers, piezometers, vibrating wire strain gauges, tiltmeters, and seismographs — connected via our IoT data acquisition network to a real-time cloud dashboard. Our geotechnical engineers design monitoring programmes that are aligned with the specific ground conditions, construction activities, and risk profile of each project. We install instruments into boreholes, embankments, retaining walls, and foundation elements, and configure alert thresholds based on ground movement trigger levels defined in the geotechnical design. From construction-phase excavation monitoring to permanent long-term slope surveillance, we provide continuous ground intelligence that protects workers, prevents property damage, and keeps projects on programme. When ground behaviour exceeds alert thresholds, our engineers are available around the clock to interpret data and advise on appropriate response.
+Ground behaviour is complex, three-dimensional, and often invisible: yet it governs the safety of every major construction project, tunnel, embankment, and slope. Sentra's geotechnical monitoring service deploys the full range of subsurface instruments, including settlement plates, inclinometers, piezometers, vibrating wire strain gauges, tiltmeters, and seismographs, connected via our IoT data acquisition network to a real-time cloud dashboard. Our geotechnical engineers design monitoring programmes that are aligned with the specific ground conditions, construction activities, and risk profile of each project. We install instruments into boreholes, embankments, retaining walls, and foundation elements, and configure alert thresholds based on ground movement trigger levels defined in the geotechnical design. From construction-phase excavation monitoring to permanent long-term slope surveillance, we provide continuous ground intelligence that protects workers, prevents property damage, and keeps projects on programme. When ground behaviour exceeds alert thresholds, our engineers are available around the clock to interpret data and advise on appropriate response.
 
 Settlement sensors, GNSS stations, and precise levelling arrays measure vertical ground movement and differential settlement at foundations, adjacent structures, and surface infrastructure with sub-millimetre resolution.
 
 In-place inclinometers, surface tiltmeters, and GNSS arrays track lateral deformation within slopes and embankments, enabling early detection of failure plane initiation before surface cracks appear.
 
-Vibrating wire piezometers measure pore water pressure changes in response to construction activities, rainfall events, and tidal fluctuations — the critical driver of slope instability and embankment failure.
+Vibrating wire piezometers measure pore water pressure changes in response to construction activities, rainfall events, and tidal fluctuations, the critical driver of slope instability and embankment failure.
 
 Inclinometers and tiltmeters monitor lateral deflection of sheet piles, diaphragm walls, bored pile walls, and retaining structures during and after deep excavation works.
 
 Vibrating wire strain gauges, tell-tales, and load cells installed in bored and driven piles monitor load distribution, settlement, and negative skin friction during and after construction.
 
-Seismographs and vibration monitors record blast vibrations, traffic-induced ground motion, and natural seismic activity — providing evidence for neighbour impact assessments and blast control programmes.
+Seismographs and vibration monitors record blast vibrations, traffic-induced ground motion, and natural seismic activity, providing evidence for neighbour impact assessments and blast control programmes.
 
 Impact
 
@@ -92,7 +92,7 @@ Review of geotechnical investigation reports, ground models, and design document
 
 ### Monitoring Network Design
 
-A comprehensive instrument layout is designed, specifying instrument types, depths, locations, and data acquisition configuration — aligned with the observational method approach in the geotechnical design.
+A comprehensive instrument layout is designed, specifying instrument types, depths, locations, and data acquisition configuration, aligned with the observational method approach in the geotechnical design.
 
 ![Subsurface Installation](https://sentratech.in/image/solutions/Solutions%20Stages/geotechnical/stage%203.webp)
 
@@ -100,7 +100,7 @@ A comprehensive instrument layout is designed, specifying instrument types, dept
 
 ### Subsurface Installation
 
-Instruments are installed into boreholes, trenches, and structural elements by our geotechnical engineers — with baseline readings established before construction activities commence.
+Instruments are installed into boreholes, trenches, and structural elements by our geotechnical engineers, with baseline readings established before construction activities commence.
 
 ![Automated Data Logging](https://sentratech.in/image/solutions/Solutions%20Stages/geotechnical/stage%204.webp)
 
@@ -108,7 +108,7 @@ Instruments are installed into boreholes, trenches, and structural elements by o
 
 ### Automated Data Logging
 
-Edge-enabled data acquisition units collect readings at defined intervals — from 15-minute cycles for routine monitoring to 1-minute or continuous logging during critical construction stages.
+Edge-enabled data acquisition units collect readings at defined intervals, from 15-minute cycles for routine monitoring to 1-minute or continuous logging during critical construction stages.
 
 ![Alert Management](https://sentratech.in/image/solutions/Solutions%20Stages/geotechnical/stage%205.webp)
 
@@ -132,7 +132,7 @@ Showcase
 
 ## See Our Solutions in Action
 
-Real deployments, real impact — from field instrumentation to command centre dashboards.
+Real deployments, real impact, from field instrumentation to command centre dashboards.
 
 ![Solution in action](https://sentratech.in/image/solutions/showcase/geotechnical/Geotechnical%20instrumentation%20at%20deep%20excavation%20site.webp)
 
@@ -162,7 +162,7 @@ Real-time ground data protects workers, accelerates projects, and provides the e
 
 Prevent Ground Failure
 
-Continuous monitoring of settlement, pore pressure, and lateral movement detects early signs of ground instability — enabling intervention before conditions become unsafe for workers or adjacent structures.
+Continuous monitoring of settlement, pore pressure, and lateral movement detects early signs of ground instability by enabling intervention before conditions become unsafe for workers or adjacent structures.
 
 Monitor Excavation Impacts
 
@@ -174,11 +174,11 @@ Slope failure typically progresses through detectable deformation phases. Inclin
 
 Verify Foundation Performance
 
-Pile load monitoring and settlement surveys verify that foundations are performing as designed — providing quality assurance data for the structural designer and building owner.
+Pile load monitoring and settlement surveys verify that foundations are performing as designed, providing quality assurance data for the structural designer and building owner.
 
 Safe Working Conditions
 
-Real-time alerts enable immediate site response when ground movement exceeds warning levels — protecting workers in excavations, tunnels, and on slopes from sudden ground behaviour changes.
+Real-time alerts enable immediate site response when ground movement exceeds warning levels by protecting workers in excavations, tunnels, and on slopes from sudden ground behaviour changes.
 
 Regulatory Evidence
 
@@ -186,13 +186,13 @@ Automated monitoring records provide the continuous engineering evidence require
 
 Protect Project Programme
 
-Early detection of adverse ground behaviour enables rapid response — preventing the major programme delays and cost overruns that result from undetected ground instability during construction.
+Early detection of adverse ground behaviour enables rapid response by preventing the major programme delays and cost overruns that result from undetected ground instability during construction.
 
 Risk Mitigation
 
 ## What It Prevents
 
-Unmonitored ground is the source of the most serious and costly construction failures. Geotechnical monitoring eliminates these risks by providing real-time visibility of ground behaviour.
+Unmonitored ground is the source of the most serious and costly construction failures. Geotechnical monitoring eliminates these risks, providing real-time visibility of ground behaviour.
 
 Foundation Settlement Damage
 
@@ -200,7 +200,7 @@ Differential settlement of foundations causes cracking, structural distortion, a
 
 Slope & Embankment Failure
 
-Railway embankment failures, highway slope collapses, and mining tip failures are among the most catastrophic infrastructure incidents — all preventable with continuous slope deformation and piezometric monitoring.
+Railway embankment failures, highway slope collapses, and mining tip failures are among the most catastrophic infrastructure incidents, all preventable with continuous slope deformation and piezometric monitoring.
 
 Groundwater Changes
 
@@ -212,7 +212,7 @@ Blasting, piling, and dynamic compaction create ground vibrations that can damag
 
 Legal Liability for Ground Damage
 
-Without continuous monitoring records, contractors and developers have no evidence base to respond to third-party claims of construction-induced damage — making disputes costly and difficult to resolve.
+Without continuous monitoring records, contractors and developers have no evidence base to respond to third-party claims of construction-induced damage, making disputes costly and difficult to resolve.
 
 Industries
 
@@ -248,19 +248,19 @@ Why Us
 
 Multi-Parameter Ground IQ
 
-We deploy settlement, deformation, pore pressure, and seismic instruments simultaneously — providing a complete picture of ground behaviour that single-parameter monitoring cannot deliver.
+We deploy settlement, deformation, pore pressure, and seismic instruments simultaneously, providing a complete picture of ground behaviour that single-parameter monitoring cannot deliver.
 
 02
 
 Real-Time Ground Truth
 
-Automated data acquisition and instant alerting means your project team is always working with current ground data — not readings that are days or weeks old when the ground could have moved significantly.
+Automated data acquisition and instant alerting means your project team is always working with current ground data, not readings that are days or weeks old when the ground could have moved significantly.
 
 03
 
 Construction-Phase Support
 
-Our geotechnical engineers provide interpretation support during critical construction stages — attending review meetings, advising on trigger level exceedances, and coordinating with the design team as needed.
+Our geotechnical engineers provide interpretation support during critical construction stages, attending review meetings, advising on trigger level exceedances, and coordinating with the design team as needed.
 
 04
 
@@ -280,7 +280,7 @@ Real-world geotechnical monitoring deployments ensuring safe construction and lo
 
 AI & Drones Railways
 
-#### BridgePulse — AI and Drone Technology for Bridge Health Monitoring
+#### BridgePulse: AI and Drone Technology for Bridge Health Monitoring
 
 Read Case Study
 
@@ -334,11 +334,11 @@ FAQ
 
 ## Frequently Asked Questions
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-Geotechnical monitoring is the systematic measurement of ground behaviour — settlement, lateral movement, pore water pressure, and vibration — using instruments installed in or on the ground or in structures. It is required during construction activities that interact with the ground (deep excavations, tunnelling, piling, embankment construction), during long-term operation of infrastructure on or in unstable ground (slopes, dams, mine tailings), and wherever ground movement could affect public safety or adjacent structures. Regulatory authorities frequently mandate geotechnical monitoring as a condition of planning consent for major construction projects.
+Geotechnical monitoring is the systematic measurement of ground behaviour, including settlement, lateral movement, pore water pressure, and vibration by using instruments installed in or on the ground or in structures. It is required during construction activities that interact with the ground (deep excavations, tunnelling, piling, embankment construction), during long-term operation of infrastructure on or in unstable ground (slopes, dams, mine tailings), and wherever ground movement could affect public safety or adjacent structures. Regulatory authorities frequently mandate geotechnical monitoring as a condition of planning consent for major construction projects.
 
 ##
 
@@ -346,7 +346,7 @@ Common geotechnical instruments include: inclinometers (installed in boreholes t
 
 ##
 
-Alert trigger levels are typically defined by the geotechnical designer based on the structural capacity of affected elements, predicted ground movements, and acceptable risk thresholds. A standard three-tier system is used: Alert level 1 (Amber) — monitoring readings approach the predicted values, review required; Alert level 2 (Amber+) — readings approach the design limit state, action required; Alert level 3 (Red) — readings at or exceeding design limits, immediate action required. We configure these thresholds in the monitoring platform and ensure all project stakeholders understand the response protocols for each level.
+Alert trigger levels are typically defined by the geotechnical designer based on the structural capacity of affected elements, predicted ground movements, and acceptable risk thresholds. A standard three-tier system is used: Alert level 1 (Amber): monitoring readings approach the predicted values, review required; Alert level 2 (Amber+): readings approach the design limit state, action required; Alert level 3 (Red): readings at or exceeding design limits, immediate action required. We configure these thresholds in the monitoring platform and ensure all project stakeholders understand the response protocols for each level.
 
 ##
 
@@ -354,11 +354,11 @@ Yes, and for many asset types long-term post-construction monitoring is essentia
 
 ##
 
-When a monitoring alert is triggered, the system sends immediate notifications via SMS and email to all designated project stakeholders — typically the site engineer, geotechnical designer, and project manager. The notification includes the alert level, the instrument and parameter concerned, the reading value, and the trigger level exceeded. Our geotechnical engineers are available 24/7 to provide interpretation and response guidance. All alerts are logged with timestamps and response records in the monitoring system for the project record.
+When a monitoring alert is triggered, the system sends immediate notifications via SMS and email to all designated project stakeholders, typically the site engineer, geotechnical designer, and project manager. The notification includes the alert level, the instrument and parameter concerned, the reading value, and the trigger level exceeded. Our geotechnical engineers are available 24/7 to provide interpretation and response guidance. All alerts are logged with timestamps and response records in the monitoring system for the project record.
 
 ##
 
-Yes. We provide regular monitoring reports — typically weekly during active construction and monthly for long-term surveillance — that document all readings, trend analysis, trigger level status, and any exceedances with engineering commentary. These reports are structured for submission to regulatory authorities, building control bodies, and planning departments. We also provide final monitoring reports at the end of construction phases with a complete dataset and interpretation for the permanent project record.
+Yes. We provide regular monitoring reports, typically weekly during active construction and monthly for long-term surveillance; that document all readings, trend analysis, trigger level status, and any exceedances with engineering commentary. These reports are structured for submission to regulatory authorities, building control bodies, and planning departments. We also provide final monitoring reports at the end of construction phases with a complete dataset and interpretation for the permanent project record.
 
 #### Stay Ahead in Smart Monitoring
 

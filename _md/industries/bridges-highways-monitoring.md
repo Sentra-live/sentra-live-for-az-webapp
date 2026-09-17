@@ -1,4 +1,4 @@
-# Bridge & Highway Structure Monitoring — IoT Sensors | Sentra
+# Bridge & Highway Structure Monitoring: IoT Sensors | Sentra
 
 > Continuous displacement, strain and inclination monitoring for bridges and highway structures using Sentra's wireless IoT sensors and edge analytics.
 
@@ -16,7 +16,7 @@ Continuous displacement, strain and inclination monitoring for bridges and highw
 ## Why Bridge
 Monitoring Matters
 
-Bridges and highway structures face continuous stress from traffic loads, environmental exposure, and aging materials. Cracks, corrosion, and fatigue develop over time — often invisible until they become critical.
+Bridges and highway structures face continuous stress from traffic loads, environmental exposure, and aging materials. Cracks, corrosion, and fatigue develop over time, often invisible until they become critical.
 
 Sentra's wireless IoT sensors provide 24/7 vigilance, measuring strain, displacement, tilt, and vibration. Real-time alerts enable proactive maintenance, extending asset life and preventing catastrophic failures.
 

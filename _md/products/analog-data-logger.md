@@ -1,4 +1,4 @@
-# Analog Data Logger — 4-Channel Wireless Data Acquisition | Sentra
+# Analog Data Logger: 4-Channel Wireless Data Acquisition | Sentra
 
 > 4-channel wireless analog data logger for voltage, current, Wheatstone bridge and thermistor sensors. Up to 10-year battery, IP68, 15 km LoRa range.
 
@@ -8,7 +8,7 @@ Analog Data Logger
 
 ## Analog Data Logger
 
-4-channel wireless data acquisition for a wide range of analog sensors. Supports voltage, current loop, potentiometer, Full Wheatstone bridge, thermistor and PT-100 inputs — with up to 10 years of battery life and 15 km communication range.
+4-channel wireless data acquisition for a wide range of analog sensors. Supports voltage, current loop, potentiometer, Full Wheatstone bridge, thermistor and PT-100 inputs, with up to 10 years of battery life and 15 km communication range.
 
 [ Explore Products ](#al-products) [ Get a Quote ](https://sentratech.in/contact.html)
 
@@ -34,7 +34,7 @@ Overview
 
 ## Versatile Wireless Data Acquisition for Analog Sensors
 
-The Analog Data Logger is a 4-channel wireless device designed for unattended, long-term monitoring. It converts analog sensor signals into digital data with high accuracy and transmits them via secure LoRa networks — simplifying deployment and ensuring reliable data collection for bridges, tunnels, buildings, and industrial assets.
+The Analog Data Logger is a 4-channel wireless device designed for unattended, long-term monitoring. It converts analog sensor signals into digital data with high accuracy and transmits them via secure LoRa networks by simplifying deployment and ensuring reliable data collection for bridges, tunnels, buildings, and industrial assets.
 
 Supporting voltage, current loop, potentiometer, Full Wheatstone bridge, thermistor and PT-100 inputs, it seamlessly connects with load cells, strain gauges, pressure sensors, thermometers, flow sensors and more. Configurable through mobile or cloud applications.
 
@@ -74,11 +74,11 @@ Purpose-built for connecting a wide range of analog sensors with long-range wire
 
 #### Universal Analog Inputs
 
-Supports voltage (±10V), current loop (4-20 mA), potentiometer, Full Wheatstone bridge, thermistor, and PT-100 inputs — covering virtually all common analog sensors.
+Supports voltage (±10V), current loop (4-20 mA), potentiometer, Full Wheatstone bridge, thermistor, and PT-100 inputs, covering virtually all common analog sensors.
 
 #### Flexible Sensor Power
 
-Configurable power outputs at 5V, 12V and 24V DC (up to 60 mA per channel) — no external power supply needed for most sensors.
+Configurable power outputs at 5V, 12V and 24V DC (up to 60 mA per channel), with no external power supply needed for most sensors.
 
 #### Ultra-Long Battery Life
 
@@ -94,7 +94,7 @@ Industrial-grade IP68 enclosure for harsh environments. Operating range from −
 
 #### Mobile App Configuration
 
-Wireless Bluetooth setup via Worldsensing App. Wiring assistant, field sampling, signal coverage testing and diagnostics — no laptop needed.
+Wireless Bluetooth setup via Worldsensing App. Wiring assistant, field sampling, signal coverage testing and diagnostics, with no laptop needed.
 
 Applications
 
@@ -118,7 +118,7 @@ Wireline extensometers, crackmeters and displacement sensors for monitoring tens
 
 ##### Load in Rock Bolts & Ground Anchors
 
-Load cells for monitoring anchor systems throughout their lifecycle — from load tests to long-term service.
+Load cells for monitoring anchor systems throughout their lifecycle, from load tests to long-term service.
 
 ### Structural & Environmental Monitoring
 
@@ -250,11 +250,11 @@ Frequently Asked Questions
 
 ## Got Questions About the Analog Data Logger?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-The Analog Data Logger is a wireless data acquisition IoT device that collects data from most analog signals and transmits them using long-range, low-power radio communications — ideal for geotechnical, structural, environmental and remote process monitoring.
+The Analog Data Logger is a wireless data acquisition IoT device that collects data from most analog signals and transmits them using long-range, low-power radio communications, ideal for geotechnical, structural, environmental and remote process monitoring.
 
 ##
 

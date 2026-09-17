@@ -1,18 +1,16 @@
-# PortalCam — The First True Spatial Camera | Sentra × XGRIDS
+# PortalCam: The First True Spatial Camera | Sentra × XGRIDS
 
-> PortalCam by XGRIDS — the world's first handheld spatial camera, fusing LiDAR depth, RGB imaging and edge AI for real-time 3D Gaussian Splatting.
+> PortalCam by XGRIDS: the world's first handheld spatial camera, fusing LiDAR depth, RGB imaging and edge AI for real-time 3D Gaussian Splatting.
 
 Source: https://sentratech.in/products/portalcam.html
 
-Official XGRIDS Reseller — India
+Official XGRIDS Reseller: India
 
 PortalCam
 
-## PortalCam — The First True Spatial Camera
+## PortalCam: The First True Spatial Camera
 
-PortalCam captures light fields, not flat pixels — fusing ToF LiDAR depth, an RGB camera array and dedicated edge AI to turn any indoor space into a photorealistic, walkable 3D environment in minutes. No heavy PC, no external tracking, no complex setup.
-
-List price $5,500 USD
+PortalCam captures light fields, not flat pixels: fusing ToF LiDAR depth, an RGB camera array and dedicated edge AI to turn any indoor space into a photorealistic, walkable 3D environment in minutes. No heavy PC, no external tracking, no complex setup.
 
 [See PortalCam](#ps-gallery) [Get a Quote](https://sentratech.in/contact.html?enquiry=1&amp;product=PortalCam)
 
@@ -38,9 +36,9 @@ Overview
 
 ## Light-Field Capture for Instant 3D Spaces
 
-PortalCam combines a Time-of-Flight LiDAR sensor for depth, an RGB camera array for colour, and dedicated edge AI for real-time 3D Gaussian Splatting reconstruction. Four cameras — two front-facing plus a fisheye lens on each side — fuse texture and geometry as you walk, live, without post-processing on a separate PC.
+PortalCam combines a Time-of-Flight LiDAR sensor for depth, an RGB camera array for colour, and dedicated edge AI for real-time 3D Gaussian Splatting reconstruction. Four cameras: two front-facing plus a fisheye lens on each side: fuse texture and geometry as you walk, live, without post-processing on a separate PC.
 
-Captured data automatically syncs to LCC Studio, generating textured, real-time 3D models compatible with Unity, Unreal Engine and Blender — ready for virtual tours, digital twins and immersive marketing.
+Captured data automatically syncs to LCC Studio, generating textured, real-time 3D models compatible with Unity, Unreal Engine and Blender: ready for virtual tours, digital twins and immersive marketing.
 
 **ToF LiDAR + RGB Fusion**
 
@@ -80,25 +78,25 @@ How It Works
 
 ## How PortalCam Works
 
-PortalCam combines active depth sensing with passive visual capture and real-time AI — producing photoreal 3D environments from a single handheld walkthrough.
+PortalCam combines active depth sensing with passive visual capture and real-time AI by producing photoreal 3D environments from a single handheld walkthrough.
 
 01
 
 #### Perfect Spatial Structure
 
-A ToF LiDAR sensor projects infrared light and measures return time to build a precise 3D depth map of every surface — capturing accurate geometry even in textureless or low-light environments where cameras alone fail.
+A ToF LiDAR sensor projects infrared light and measures return time to build a precise 3D depth map of every surface, capturing accurate geometry even in textureless or low-light environments where cameras alone fail.
 
 02
 
 #### Complete Visual Coverage
 
-Four cameras — two front-facing RGB lenses plus a fisheye on each side — deliver a seamless 200° × 200° panoramic field of view, fusing colour and texture onto the depth mesh for photoreal detail from every angle.
+Four cameras: two front-facing RGB lenses plus a fisheye on each side: deliver a seamless 200° × 200° panoramic field of view, fusing colour and texture onto the depth mesh for photoreal detail from every angle.
 
 03
 
 #### Advanced Spatial Computing
 
-Dedicated onboard GPU and AI engine run real-time 3D Gaussian Splatting reconstruction — no laptop, no external workstation. The captured environment is processed and refined on-device as you walk.
+Dedicated onboard GPU and AI engine run real-time 3D Gaussian Splatting reconstruction, with no laptop, no external workstation. The captured environment is processed and refined on-device as you walk.
 
 See It In Action
 
@@ -108,7 +106,7 @@ Workflow
 
 ## Three Steps to Spatial Content
 
-From capture to shareable 3D — the entire workflow is designed for speed and simplicity.
+From capture to shareable 3D: the entire workflow is designed for speed and simplicity.
 
 01
 
@@ -120,7 +118,7 @@ Walk through the space at a natural pace. PortalCam records depth, colour and mo
 
 ##### Process
 
-Onboard AI generates a real-time 3D Gaussian Splat during capture. LCC Studio automatically generates publication-ready 3DGS models from the scan data using SLAM algorithms, sensor fusion and model optimisation — with minimal manual intervention.
+Onboard AI generates a real-time 3D Gaussian Splat during capture. LCC Studio automatically generates publication-ready 3DGS models from the scan data using SLAM algorithms, sensor fusion and model optimisation, with minimal manual intervention.
 
 03
 
@@ -136,11 +134,11 @@ Use Cases
 
 ### Real Estate
 
-- Create immersive, walkthrough-ready 3D tours of properties in minutes — no photography crew or staging required
+- Create immersive, walkthrough-ready 3D tours of properties in minutes: no photography crew or staging required
 
 - Capture accurate spatial layouts with true-to-scale geometry for remote buyer walkthroughs
 
-- Generate shareable links for listings — buyers explore every room interactively from their browser
+- Generate shareable links for listings: buyers explore every room interactively from their browser
 
 - Reduce time-to-listing from days to hours with a single handheld capture session
 
@@ -150,7 +148,7 @@ Use Cases
 
 - Digitally preserve real-world locations as photoreal 3D environments for pre-visualisation and virtual production
 
-- Capture authentic location scans for VFX set extensions — matching real-world lighting and geometry
+- Capture authentic location scans for VFX set extensions: matching real-world lighting and geometry
 
 - Export directly to Unreal Engine for real-time rendering in virtual production pipelines
 
@@ -164,7 +162,7 @@ Use Cases
 
 - Create interactive museum exhibits, product showcases and educational content from actual environments
 
-- Share walkable 3D scenes directly via web links — no app download required for viewers
+- Share walkable 3D scenes directly via web links: no app download required for viewers
 
 - Combine with 3D text, annotations and overlays in LCC Studio for branded spatial content
 
@@ -174,9 +172,9 @@ Use Cases
 
 - Preserve your home, garden or meaningful spaces as photoreal 3D memories you can revisit anytime
 
-- Capture a child's room, holiday rental or family space — walk through it again years later in full 3D
+- Capture a child's room, holiday rental or family space: walk through it again years later in full 3D
 
-- Share spatial memories with family and friends via a simple web link — they explore in their browser
+- Share spatial memories with family and friends via a simple web link; they explore in their browser
 
 - Lightweight, one-hand operation makes capturing personal spaces effortless and unobtrusive
 
@@ -212,7 +210,7 @@ See It In Action
 
 ## Automated 3DGS Processing
 
-Monitor scans live via the LCC Scan mobile app, then let LCC Studio handle automated 3DGS processing, editing and export — all on your local machine.
+Monitor scans live via the LCC Scan mobile app, then let LCC Studio handle automated 3DGS processing, editing and export, all on your local machine.
 
 Desktop workflow
 
@@ -226,23 +224,23 @@ Refine raw PortalCam captures into publication-quality 3D Gaussian Splat models 
 
 ##### LCC Format Output
 
-Export in LCC, PLY and USDZ formats — optimised for web sharing, AR deployment, and integration with Unity, Unreal Engine and Blender.
+Export in LCC, PLY and USDZ formats: optimised for web sharing, AR deployment, and integration with Unity, Unreal Engine and Blender.
 
 ##### Download Sample Data
 
-Try before you buy — download pre-captured PortalCam sample scenes to explore the output quality and compare with your existing workflows.
+Try before you buy: download pre-captured PortalCam sample scenes to explore the output quality and compare with your existing workflows.
 
 Comparison
 
 ## The Difference Is Depth
 
-PortalCam doesn't just take pictures — it captures spatial structure. Here's how it compares to other capture methods.
+PortalCam doesn't just take pictures; it captures spatial structure. Here's how it compares to other capture methods.
 
 | PortalCam | 360° Camera + Tripod | Phone 3D Scanning | DSLR Photos |
 
-Capture Method | LiDAR + RGB + AI — single walk | 360° panoramic stitching | ARCore / LiDAR on phone | Multi-angle photo set |
+Capture Method | LiDAR + RGB + AI: single walk | 360° panoramic stitching | ARCore / LiDAR on phone | Multi-angle photo set |
 
-3D Geometry | True depth-accurate mesh | No geometry — images only | Approximate mesh | Requires photogrammetry post |
+3D Geometry | True depth-accurate mesh | No geometry: images only | Approximate mesh | Requires photogrammetry post |
 
 Walkable Output | Native walkable 3DGS | Static panoramic hotspots | Limited AR viewing | Requires 3rd-party processing |
 
@@ -250,7 +248,7 @@ Capture Time | Minutes | Minutes (per room) | Minutes | 30 min+ per scene |
 
 Post-Processing | None on-device; optional cloud | Stitching + hotspot editing | Cloud processing | Hours of photogrammetry |
 
-Equipment Needed | PortalCam only — handheld | Camera + tripod + laptop | Phone only | DSLR + tripod + workstation |
+Equipment Needed | PortalCam only: handheld | Camera + tripod + laptop | Phone only | DSLR + tripod + workstation |
 
 Output Quality | Photoreal, spatially accurate | Flat image quality | Low-detail mesh | High photo, variable 3D |
 
@@ -276,13 +274,13 @@ Optional
 
 ##### Protective Backpack
 
-Padded carry case for PortalCam and accessories — designed for field work and travel.
+Padded carry case for PortalCam and accessories: designed for field work and travel.
 
 ![PortalCam extension pole accessory](https://sentratech.in/image/products/accessories/extension-pole.webp)
 
 ##### Extension Pole
 
-Reach higher vantage points for elevated captures — ideal for large interiors and atriums.
+Reach higher vantage points for elevated captures, ideal for large interiors and atriums.
 
 Optional
 
@@ -298,7 +296,7 @@ LiDAR Field of View | 180° azimuth × 180° elevation |
 
 Laser Classification | Class 1 / 940 nm |
 
-Camera Configuration | 4-camera array — 2× fisheye + 2× front-facing |
+Camera Configuration | 4-camera array: 2× fisheye + 2× front-facing |
 
 Camera Resolution | 4000 × 3000 px (1/2" CMOS, rolling shutter) |
 
@@ -306,13 +304,13 @@ Fisheye Camera FOV | 200° × 200° (each) |
 
 Front Camera FOV | 100° × 85° (each) |
 
-Processing | Onboard GPU + IMU + AI — real-time 3D Gaussian Splatting |
+Processing | Onboard GPU + IMU + AI: real-time 3D Gaussian Splatting |
 
 Storage | 512GB internal + optional external SSD (512GB/1TB) |
 
 Data Interface | USB 3.0 |
 
-WiFi | 802.11 a/b/g/n/ac/ax — 2.4GHz & 5GHz |
+WiFi | 802.11 a/b/g/n/ac/ax: 2.4GHz & 5GHz |
 
 Bluetooth | 5.2 |
 
@@ -338,7 +336,7 @@ Operating Temperature | -20°C to 45°C (indirect sunlight only) |
 
 Charging Temperature | 5°C to 30°C |
 
-Output Formats | PLY, USDZ, LCC — Unity, Unreal Engine, Blender compatible |
+Output Formats | PLY, USDZ, LCC: Unity, Unreal Engine, Blender compatible |
 
 Need the full technical datasheet?
 
@@ -348,17 +346,17 @@ Download the complete PortalCam brochure
 
 ### Ready to Capture in 3D?
 
-Talk to Sentra's reality capture team about pricing, demos and onboarding for PortalCam — official XGRIDS reseller in India.
+Talk to Sentra's reality capture team about pricing, demos and onboarding for PortalCam: official XGRIDS reseller in India.
 
 Frequently Asked Questions
 
 ## Got Questions About PortalCam?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html?enquiry=1&amp;product=PortalCam) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html?enquiry=1&amp;product=PortalCam). We're happy to help.
 
 ##
 
-No — PortalCam's dedicated edge AI processes 3D Gaussian Splatting reconstruction on-device. Data then syncs automatically to LCC Studio, which uses SLAM algorithms, sensor fusion and model optimisation to generate the final publication-ready model.
+No: PortalCam's dedicated edge AI processes 3D Gaussian Splatting reconstruction on-device. Data then syncs automatically to LCC Studio, which uses SLAM algorithms, sensor fusion and model optimisation to generate the final publication-ready model.
 
 ##
 
@@ -370,4 +368,4 @@ Most rooms or small properties can be captured in a single continuous walkthroug
 
 ##
 
-Yes — finished 3D Gaussian Splat models are compatible with Unity, Unreal Engine and Blender for interactive or cinematic use.
+Yes: finished 3D Gaussian Splat models are compatible with Unity, Unreal Engine and Blender for interactive or cinematic use.

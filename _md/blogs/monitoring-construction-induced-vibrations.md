@@ -1,6 +1,6 @@
 # Monitoring Construction-Induced Vibrations in Urban Environments
 
-> Learn how to monitor construction-induced vibrations in urban areas — protecting adjacent structures, ensuring compliance, and mitigating risk with IoT sensors.
+> Learn how to monitor construction-induced vibrations in urban areas by protecting adjacent structures, ensuring compliance, and mitigating risk with IoT sensors.
 
 Published: 2026-06-24  
 Source: https://sentratech.in/blogs/monitoring-construction-induced-vibrations.html

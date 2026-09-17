@@ -8,7 +8,7 @@ Collaborate
 
 ## Partnership
 
-Strong partnerships, proven success — join the network of industry leaders transforming infrastructure monitoring.
+Strong partnerships, proven success; join the network of industry leaders transforming infrastructure monitoring.
 
 Sentra collaborates with leading engineering firms, technology providers, and research institutions to deliver comprehensive structural health monitoring solutions across the globe.
 

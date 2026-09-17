@@ -1,4 +1,4 @@
-# Solutions — Infrastructure Monitoring | Sentra
+# Solutions: Infrastructure Monitoring | Sentra
 
 > IoT sensor networks and analytics for monitoring bridges, tunnels, dams, and other critical infrastructure.
 
@@ -9,7 +9,7 @@ Structural Health Asset Monitoring NDT
 ## Solutions That Protect
 Critical Infrastructure
 
-From bridges and tunnels to industrial assets — our end-to-end monitoring solutions combine intelligent sensors, edge analytics, and AI-driven insights to detect structural risks before they become failures.
+From bridges and tunnels to industrial assets; our end-to-end monitoring solutions combine intelligent sensors, edge analytics, and AI-driven insights to detect structural risks before they become failures.
 
 [Explore Solutions ](#core-solutions) [Talk to an Expert](https://sentratech.in/contact.html)
 
@@ -139,7 +139,7 @@ Our Products
 
 ## Hardware Built for Real-World Monitoring
 
-From wireless sensors to data loggers and communications hardware — explore the devices powering our monitoring solutions.
+From wireless sensors to data loggers and communications hardware; explore the devices powering our monitoring solutions.
 
 ![Lixel K2](https://sentratech.in/image/products/scanners/lixel-k2-hero.webp)
 
@@ -293,7 +293,7 @@ LS-G6-PICO
 
 Data Loggers
 
-Compact wireless data logger for ultra-low-power analog sensor networks — ideal for distributed, long-deployment monitoring.
+Compact wireless data logger for ultra-low-power analog sensor networks, ideal for distributed, long-deployment monitoring.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/piconode-data-logger.html)
 
@@ -387,7 +387,7 @@ How It Works
 
 ## Smart Steps in Monitoring Excellence
 
-From concept to continuous performance — we combine engineering expertise with intelligent automation for a seamless, scalable monitoring journey.
+From concept to continuous performance: we combine engineering expertise with intelligent automation for a seamless, scalable monitoring journey.
 
 search 01
 
@@ -399,7 +399,7 @@ architecture 02
 
 ##### Strategy & System Design
 
-Our experts develop a tailored monitoring architecture — combining precision sensors, edge analytics, and network design — built to match your project requirements.
+Our experts develop a tailored monitoring architecture by combining precision sensors, edge analytics, and network design, built to match your project requirements.
 
 settings_suggest 03
 
@@ -439,7 +439,7 @@ Case Study
 
 Bridge Safety
 
-#### BridgePulse — AI & Drone Technology for Bridge Health Monitoring
+#### BridgePulse: AI & Drone Technology for Bridge Health Monitoring
 
 ](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
 
@@ -489,7 +489,7 @@ Case Study
 
 Bridge Safety
 
-#### BridgePulse — AI & Drone Technology for Bridge Health Monitoring
+#### BridgePulse: AI & Drone Technology for Bridge Health Monitoring
 
 ](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
 
@@ -633,7 +633,7 @@ Flagship Solution Demo
 
 Below is an interactive, real-time demo replica of our flagship structural health monitoring solution.
 
-* This demo provides a live preview of the solution — it simulates real-time behavior.
+* This demo provides a live preview of the solution; it simulates real-time behavior.
 
 #### Stay Ahead in Smart Infrastructure
 
@@ -643,6 +643,6 @@ Talk to Our Team
 
 ## Ready to Transform Your Infrastructure Monitoring?
 
-Describe your monitoring requirements and our solution engineers will recommend the ideal approach — with a detailed proposal within 24 hours.
+Describe your monitoring requirements and our solution engineers will recommend the ideal approach, with a detailed proposal within 24 hours.
 
 [Request a Consultation ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)

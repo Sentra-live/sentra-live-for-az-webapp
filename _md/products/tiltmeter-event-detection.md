@@ -1,4 +1,4 @@
-# Wireless Tiltmeter — 3-Axis Event Detection & Monitoring | Sentra
+# Wireless Tiltmeter: 3-Axis Event Detection & Monitoring | Sentra
 
 > Wireless 3-axis tiltmeter with event detection, edge processing, and up to 10-year battery life. IP68 rated for railway, mining, and geotechnical monitoring.
 
@@ -110,7 +110,7 @@ Up to 10 years of unattended operation on a single 3.6V D-size LSH20 Li-SOCl2 ba
 
 #### IP68 Rated & Rugged
 
-Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C — suitable for the harshest field conditions.
+Industrial-grade IP68 enclosure for full submersion protection. Operating range from −40°C to +80°C: suitable for the harshest field conditions.
 
 #### Edge Processing
 
@@ -122,7 +122,7 @@ Configure locally via CMT Edge for single-network deployments, or connect to CMT
 
 #### Mobile App Configuration
 
-Wireless Bluetooth setup via Worldsensing App. USB-C connector also available for direct configuration in the field — no laptop needed.
+Wireless Bluetooth setup via Worldsensing App. USB-C connector also available for direct configuration in the field, with no laptop needed.
 
 Applications
 
@@ -256,11 +256,11 @@ Frequently Asked Questions
 
 ## Got Questions About the Wireless Tiltmeter?
 
-Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html) — we're happy to help.
+Can't find what you're looking for? [Contact our team](https://sentratech.in/contact.html). We're happy to help.
 
 ##
 
-It tracks rapid or sudden inclination changes in structures, slopes, or rail systems — detecting motion that may signal instability, movement, or failure events in real time. The 3-axis MEMS sensor measures tilt relative to gravity with a range of ±90°.
+It tracks rapid or sudden inclination changes in structures, slopes, or rail systems, detecting motion that may signal instability, movement, or failure events in real time. The 3-axis MEMS sensor measures tilt relative to gravity with a range of ±90°.
 
 ##
 
@@ -280,4 +280,4 @@ Configuration can be done locally via the Worldsensing App using Bluetooth conne
 
 ##
 
-Ideal for railway tracks, slopes, retaining walls, tunnels, bridges, mining pits, and tailings dams — anywhere fast, autonomous tilt event detection enhances safety and operational awareness.
+Ideal for railway tracks, slopes, retaining walls, tunnels, bridges, mining pits, and tailings dams, anywhere fast, autonomous tilt event detection enhances safety and operational awareness.

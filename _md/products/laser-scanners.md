@@ -1,18 +1,22 @@
-# Laser Scanners — XGRIDS SLAM LiDAR & Spatial Cameras | Sentra
+# Laser Scanners: XGRIDS SLAM LiDAR & Spatial Cameras | Sentra
 
-> Sentra is the official India reseller for XGRIDS laser scanners — Lixel K2, PortalCam & Lixel L2 Pro. SLAM LiDAR for 3D capture.
+> Sentra is the official India reseller for XGRIDS laser scanners: Lixel K2, PortalCam & Lixel L2 Pro. SLAM LiDAR for 3D capture.
 
 Source: https://sentratech.in/products/laser-scanners.html
 
-Official XGRIDS Reseller — India
+Official XGRIDS Reseller: India
 
 ## Laser Scanners & Spatial Cameras for Reality Capture
 
-Handheld SLAM LiDAR scanners and spatial cameras from XGRIDS — capture survey-grade 3D point clouds and photoreal digital twins of any site in minutes, without tripods, targets or complex workflows. Sentra is XGRIDS' authorised reseller and support partner in India.
+Handheld SLAM LiDAR scanners and spatial cameras from XGRIDS: capture survey-grade 3D point clouds and photoreal digital twins of any site in minutes, without tripods, targets or complex workflows. Sentra is XGRIDS' authorised reseller and support partner in India.
 
 [Explore the Range](#ls-products) [Get a Quote](https://sentratech.in/contact.html?enquiry=1&amp;product=Laser%20Scanners)
 
 Up to 640,000 pts/sec Up to 3cm Absolute Accuracy Native 3D Gaussian Splatting Tripod-Free SLAM Capture
+
+![Lixel L3 high-accuracy spatial scanner](https://sentratech.in/image/products/scanners/lixel-l3-hero.webp)
+
+Lixel L3
 
 ![Lixel K2 handheld SLAM LiDAR scanner](https://sentratech.in/image/products/scanners/lixel-k2-hero.webp)
 
@@ -28,11 +32,21 @@ Lixel L2 Pro
 
 The Range
 
-## Three Scanners, One Ecosystem
+## Four Scanners, One Ecosystem
 
-From ultra-compact wearable capture to long-range survey-grade mapping — every XGRIDS device shares the same LixelStudio / LixelGo processing pipeline.
+From ultra-compact wearable capture to long-range survey-grade mapping: every XGRIDS device shares the same LixelStudio / LixelGo processing pipeline.
 
 [ New
+
+![Lixel L3](https://sentratech.in/image/products/scanners/lixel-l3-product.webp)
+
+### Lixel L3
+
+Flagship spatial scanner. 5mm validated relative accuracy, triple 50MP camera and built-in RTK.
+
+View Product
+
+](https://sentratech.in/products/lixel-l3.html) [
 
 ![Lixel K2](https://sentratech.in/image/products/scanners/Lixel-k2-product.webp)
 
@@ -68,35 +82,45 @@ Compare
 
 ## Which Scanner Is Right for You?
 
-Spec | Lixel K2 | PortalCam | Lixel L2 Pro |
+Spec | Lixel K2 | PortalCam | Lixel L2 Pro | Lixel L3 |
 
-Weight | 1.2 kg | 870g | 1.7 kg |
+Weight | 1.2 kg | 870g | 1.7 kg | 2.5 kg |
 
-Scan Range | ≥40m @ 10%; 100m max | 0.1–30m @ 10%; 60m @ 90% | ≥40m @ 10%; 100m max |
+Scan Range | ≥40m @ 10%; 100m max | 0.1–30m @ 10%; 60m @ 90% | ≥40m @ 10%; 100m max | 0.7m–120m |
 
-Point Rate | 200,000 pts/s | 856,000 pts/s | Up to 640,000 pts/s |
+Point Rate | 200,000 pts/s | 856,000 pts/s | Up to 640,000 pts/s | Up to 640,000 pts/s |
 
-LiDAR FOV | 360° × -7° to +52° | 180° × 180° | 360° × 270° |
+Relative Accuracy | 1 cm | – | 2 cm (within 100m) | 5 mm (validated) |
 
-Laser Class | Class 1 / 905 nm | Class 1 / 940 nm | Class 1 / 905 nm |
+LiDAR FOV | 360° × -7° to +52° | 180° × 180° | 360° × 270° | – |
 
-Cameras | 3× (2 fisheye + 1 front) | 4× (2 fisheye + 2 front) | 2× 48MP panoramic |
+Laser Class | Class 1 / 905 nm | Class 1 / 940 nm | Class 1 / 905 nm | – |
 
-Internal Storage | 512 GB eMMC | 512GB + external SSD | 1 TB SSD |
+Cameras | 3× (2 fisheye + 1 front) | 4× (2 fisheye + 2 front) | 2× 48MP panoramic | 3× 50MP, 4K HDR |
 
-Battery Life | 1.5 hours | 60 min | 1.5 hours |
+Internal Storage | 512 GB eMMC | 512GB + external SSD | 1 TB SSD | – |
 
-Operating Temp | -20°C to +50°C | -20°C to +45°C | -20°C to +50°C |
+RTK | Built-in | – | Integrated module | Built-in |
 
-Processing | LixelGo / LixelStudio | Onboard AI 3DGS + LCC Cloud | LixelGo / LixelStudio |
+Display | – | – | – | 4.3" 1000-nit |
 
-Best For | General survey & AEC | Real estate & indoor walkthroughs | Large-scale infrastructure & corridor mapping |
+Battery Life | 1.5 hours | 60 min | 1.5 hours | 100 min |
+
+Operating Temp | -20°C to +50°C | -20°C to +45°C | -20°C to +50°C | -20°C to +50°C |
+
+Enclosure | IP54 | – | IP54 | IP54 |
+
+Outputs | Point cloud, 3DGS | Point cloud, 3DGS | Point cloud, 3DGS | Point cloud, mesh, 3DGS (LCC2) |
+
+Processing | LixelGo / LixelStudio | Onboard AI 3DGS + LCC Cloud | LixelGo / LixelStudio | LixelGo / LixelStudio |
+
+Best For | General survey & AEC | Real estate & indoor walkthroughs | Large-scale infrastructure & corridor mapping | Precision surveying, BIM & digital twin |
 
 Why XGRIDS
 
 ## Reality Capture, Reimagined
 
-Every XGRIDS device is built around multi-sensor SLAM fusion and on-device processing — no external tracking, no dedicated survey crew required.
+Every XGRIDS device is built around multi-sensor SLAM fusion and on-device processing: no external tracking, no dedicated survey crew required.
 
 #### Multi-SLAM + RTK Fusion
 
@@ -104,7 +128,7 @@ LiDAR, visual and inertial SLAM fused with onboard RTK for centimetre-level abso
 
 #### Native 3D Gaussian Splatting
 
-Point clouds and photoreal Gaussian Splat models generated together — deliver both survey data and immersive walkthroughs from one scan.
+Point clouds and photoreal Gaussian Splat models generated together: deliver both survey data and immersive walkthroughs from one scan.
 
 #### Walk-and-Scan Workflow
 
@@ -116,7 +140,7 @@ One-click on-device processing via LixelGo, with full point-cloud registration, 
 
 #### Open Data Formats
 
-Export to LAS, LAZ, E57, PLY and Gaussian Splat formats — compatible with Revit, AutoCAD, Unreal Engine, Unity and Blender.
+Export to LAS, LAZ, E57, PLY and Gaussian Splat formats: compatible with Revit, AutoCAD, Unreal Engine, Unity and Blender.
 
 #### India-Based Support
 
@@ -152,4 +176,4 @@ Fast, repeatable scene documentation for accident reconstruction and forensic si
 
 ### Ready to See XGRIDS in Action?
 
-Book a live demo with Sentra's reality capture team — we'll help you pick the right scanner for your project and walk you through pricing, training and support in India.
+Book a live demo with Sentra's reality capture team: we'll help you pick the right scanner for your project and walk you through pricing, training and support in India.
