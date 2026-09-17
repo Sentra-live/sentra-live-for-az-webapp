@@ -3129,3 +3129,21 @@ body.lightmode .newsletter-form-inline input[type=email]::placeholder {
         inset: 100px 16px 16px 16px;
     }
 }
+
+/* Cover tall mobile hero containers without embedded-player letterboxing. */
+@media (max-width: 768px) {
+    .sol-hero-media {
+        container-type: size;
+    }
+
+    .sol-hero-media iframe.sol-hero-video {
+        width: max(100cqw, 177.777778cqh);
+        height: max(100cqh, 56.25cqw);
+    }
+
+    .sol-hero-media video.sol-hero-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

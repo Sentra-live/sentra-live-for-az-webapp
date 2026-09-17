@@ -537,7 +537,7 @@ $(document).ready(function () {
         },
         {
             title: "Services",
-            description: "Our Core Services | SENTRA offers end-to-end IoT and Monitoring Solutions — including Structural Health Monitoring (SHM), IoT Sensor Deployment, Data Acquisition Systems, Predictive Analytics, and Remote Infrastructure Monitoring. Our solutions are tailored for bridges, buildings, and industrial projects to ensure operational excellence.",
+            description: "Our Core Services | SENTRA offers end-to-end IoT and Monitoring Solutions, including Structural Health Monitoring (SHM), IoT Sensor Deployment, Data Acquisition Systems, Predictive Analytics, and Remote Infrastructure Monitoring. Our solutions are tailored for bridges, buildings, and industrial projects to ensure operational excellence.",
             url: "service.html"
         },
         {
@@ -547,12 +547,12 @@ $(document).ready(function () {
         },
         {
             title: "Case Studies",
-            description: "Explore SENTRA Case Studies — Discover how our IoT-driven SHM systems have improved safety and reliability across India’s bridges, railway lines, and industrial plants. See the measurable benefits in data accuracy, cost reduction, and preventive maintenance efficiency.",
+            description: "Explore SENTRA Case Studies; Discover how our IoT-driven SHM systems have improved safety and reliability across India’s bridges, railway lines, and industrial plants. See the measurable benefits in data accuracy, cost reduction, and preventive maintenance efficiency.",
             url: "resources.html#case-studies"
         },
         {
             title: "Our Team",
-            description: "Meet the SENTRA Team — A group of engineers, IoT specialists, and data scientists dedicated to redefining how infrastructure is monitored. Our team combines expertise in electronics, civil engineering, and analytics to deliver reliable SHM solutions for the real world.",
+            description: "Meet the SENTRA Team: A group of engineers, IoT specialists, and data scientists dedicated to redefining how infrastructure is monitored. Our team combines expertise in electronics, civil engineering, and analytics to deliver reliable SHM solutions for the real world.",
             url: "team.html"
         },
         {
@@ -577,7 +577,7 @@ $(document).ready(function () {
         },
         {
             title: "Error 404",
-            description: "404 — Oops! Page Not Found. The page you’re looking for might have been moved or temporarily unavailable. Return to SENTRA Home to explore our Smart Monitoring Solutions for infrastructure and industrial applications.",
+            description: "404: Oops! Page Not Found. The page you’re looking for might have been moved or temporarily unavailable. Return to SENTRA Home to explore our Smart Monitoring Solutions for infrastructure and industrial applications.",
             url: "404-page.html"
         },
         {

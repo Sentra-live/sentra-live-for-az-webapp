@@ -1,5 +1,5 @@
 ﻿/* ==========================================================================
-   Resources Hub — data + interaction logic
+   Resources Hub: data + interaction logic
    Unifies Blogs, Case Studies and Articles into one filterable page.
    ========================================================================== */
 
@@ -54,6 +54,18 @@
             link: './blogs/what-is-a-data-logger-types-guide.html'
         },
         {
+            id: 'blog-dam-safety-monitoring',
+            title: 'Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection',
+            excerpt: 'How LiDAR, drone survey, IoT sensors and digital twins are transforming dam safety monitoring and inspection, from spillways and embankments to seepage and deformation.',
+            category: 'Dams',
+            color: 'orange',
+            type: 'blogs',
+            date: '10 Sep 2026',
+            image: './image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp',
+            link: './blogs/dam-safety-monitoring-lidar-drones-digital-twins.html',
+            featured: true
+        },
+        {
             id: 'blog-gnss-displacement-monitoring',
             title: 'GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement',
             excerpt: 'How GNSS monitoring turns satellite positioning into millimetre-level displacement records, what limits the accuracy, and where it fits alongside geotechnical instrumentation.',
@@ -103,7 +115,7 @@
         {
             id: 'blog-construction-vibrations',
             title: 'Monitoring Construction-Induced Vibrations in Urban Environments',
-            excerpt: 'Best practices for monitoring construction vibrations in dense urban settings — from pile driving to demolition — using real-time IoT sensor networks.',
+            excerpt: 'Best practices for monitoring construction vibrations in dense urban settings, from pile driving to demolition by using real-time IoT sensor networks.',
             category: 'Structural Monitoring',
             color: 'orange',
             type: 'blogs',
@@ -114,7 +126,7 @@
         {
             id: 'blog-bridge-warning-signs',
             title: '10 Early Warning Signs Your Bridge Needs Continuous Monitoring',
-            excerpt: 'From cracking patterns to vibration anomalies — discover the 10 critical indicators that demand real-time structural health monitoring for bridges.',
+            excerpt: 'From cracking patterns to vibration anomalies; discover the 10 critical indicators that demand real-time structural health monitoring for bridges.',
             category: 'Bridge Safety',
             color: 'rose',
             type: 'blogs',
@@ -274,7 +286,7 @@
         },
         {
             id: 'cs-bridgepulse',
-            title: 'BridgePulse — AI & Drone Technology for Bridge Health Monitoring',
+            title: 'BridgePulse: AI & Drone Technology for Bridge Health Monitoring',
             excerpt: 'Impact of implementation of IoT sensors and regularized monitoring devices on bridge health programs.',
             category: 'Bridge Safety',
             color: 'rose',
@@ -300,7 +312,7 @@
         {
             id: 'art-10-construction-technologies',
             title: '10 Construction Technologies Redefining the Industry',
-            excerpt: 'AI, reality capture, digital twins, IoT, BIM beyond design, connected construction, XR, robotics, 3D printing and predictive monitoring — and how they converge.',
+            excerpt: 'AI, reality capture, digital twins, IoT, BIM beyond design, connected construction, XR, robotics, 3D printing and predictive monitoring: and how they converge.',
             category: 'Construction Tech',
             color: 'teal',
             type: 'articles',
@@ -331,6 +343,30 @@
             date: '15 Aug 2026',
             image: './image/articles/articles_ai_for_bridge_monitoring.webp',
             link: './article/ai-infrastructure-monitoring.html',
+            featured: true
+        },
+        {
+            id: 'art-handheld-slam-vs-tls-highway-bridge-surveys',
+            title: 'Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study',
+            excerpt: 'Comparison study: handheld SLAM scanning cut highway bridge survey field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup.',
+            category: 'Comparison Study',
+            color: 'orange',
+            type: 'articles',
+            date: '17 Sep 2026',
+            image: './image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp',
+            link: './article/handheld-slam-vs-tls-highway-bridge-surveys.html',
+            featured: true
+        },
+        {
+            id: 'art-3d-laser-scanning-lidar-digital-twins',
+            title: '3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins',
+            excerpt: 'How 3D laser scanning and LiDAR reality capture build the accurate spatial foundation for infrastructure digital twins: methods, workflow, point clouds, scan-to-BIM and real projects.',
+            category: 'Digital Twin',
+            color: 'purple',
+            type: 'articles',
+            date: '10 Sep 2026',
+            image: './image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp',
+            link: './article/3d-laser-scanning-lidar-infrastructure-digital-twins.html',
             featured: true
         },
         {

@@ -393,7 +393,7 @@ Sentra Wired Sensors
 Product Overview: 
 
 Sentra Wired Sensors deliver precise, real-time data for continuous structural health monitoring across a wide range of infrastructure and industrial environments.
-Engineered for reliability and accuracy, these sensors provide direct, stable, and interference-free measurements—making them ideal for long-term monitoring of structural integrity, load behavior, and vibration response.
+Engineered for reliability and accuracy, these sensors provide direct, stable, and interference-free measurements by making them ideal for long-term monitoring of structural integrity, load behavior, and vibration response.
 
 Whether installed on bridges, tunnels, buildings, or machinery, Sentra Wired Sensors offer the accuracy and durability required for mission-critical applications, forming an integral part of the Sentra monitoring ecosystem.
 
@@ -807,7 +807,7 @@ Range
 
 
 Device Variants
-LS-G6-TIL90-X — with external antenna for high-precision applications LS-G6-TIL90-I — with internal antenna for rail track monitoring
+LS-G6-TIL90-X, with external antenna for high-precision applications LS-G6-TIL90-I, with internal antenna for rail track monitoring
 
 
 Secondary Sensor
@@ -1372,15 +1372,15 @@ Message Rate (High Demand Network)
 Probability of Transmission Success (High Demand Network)
 > 98.75% ± 2.5σ
 Device Capacity per Network
-Reporting Period — 5 min
+Reporting Period: 5 min
 Default Network: 15 High Demand Network: 40
 
 
-Reporting Period — 30 min
+Reporting Period: 30 min
 Default Network: 93 High Demand Network: 240
 
 
-Reporting Period — 1 h
+Reporting Period: 1 h
 Default Network: 187 High Demand Network: 480
 Power Options
 Power Options

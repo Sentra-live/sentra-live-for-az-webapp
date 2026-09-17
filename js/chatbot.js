@@ -204,7 +204,7 @@ function finalizeQualification(category, subcategory) {
     ? `📋 Lead Interest: ${category} → ${subcategory}`
     : `📋 Lead Interest: ${category}`;
   appendQualifyUserChoice(summary);
-  appendQualifyBotNote("Thanks! I've passed this along to our team — they'll follow up with more details shortly.");
+  appendQualifyBotNote("Thanks! I've passed this along to our team: they'll follow up with more details shortly.");
 }
 
 function startQualificationFlow() {
@@ -1124,12 +1124,12 @@ Sentra provides structural health monitoring solutions across a wide range of in
 Sentra's installation process is designed to be efficient and minimally disruptive to your operations.
 
 **Typical Process:**
-1. **Site Survey** — Our engineers visit to assess conditions and identify sensor locations
-2. **Design** — A bespoke sensor layout is designed for your structure
-3. **Installation** — Certified engineers install sensors, gateways, and communication equipment
-4. **Configuration** — Edge devices are configured and connected to cloud platforms
-5. **Testing** — Full system testing with calibration and baseline data collection
-6. **Handover** — Training and documentation provided to your team
+1. **Site Survey**; Our engineers visit to assess conditions and identify sensor locations
+2. **Design**: A bespoke sensor layout is designed for your structure
+3. **Installation**: Certified engineers install sensors, gateways, and communication equipment
+4. **Configuration**: Edge devices are configured and connected to cloud platforms
+5. **Testing**: Full system testing with calibration and baseline data collection
+6. **Handover**: Training and documentation provided to your team
 
 **Timeline:** Small projects can be installed in days; complex multi-site deployments typically take 2-6 weeks.
 
@@ -1193,10 +1193,10 @@ We recommend starting with a free consultation to understand your needs and prov
 We offer several ways to experience Sentra's monitoring solutions before committing.
 
 **Demo Options:**
-1. **Live Product Demo** — A guided walkthrough of our sensors, edge devices, and analytics platform (30-45 min)
-2. **Pilot Deployment** — A small-scale trial on your structure (typically 4-8 weeks)
-3. **Virtual Dashboard Tour** — See our real-time monitoring dashboards in action
-4. **Sample Reports** — Review example monitoring reports and analytics
+1. **Live Product Demo**: A guided walkthrough of our sensors, edge devices, and analytics platform (30-45 min)
+2. **Pilot Deployment**: A small-scale trial on your structure (typically 4-8 weeks)
+3. **Virtual Dashboard Tour**; See our real-time monitoring dashboards in action
+4. **Sample Reports**: Review example monitoring reports and analytics
 
 To schedule a demo or discuss a pilot:
 - Call: +91 7893023322

@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && node scripts/inline-partials.mjs && node scripts/generate-llms-txt.mjs"
+  command = "npm install && node scripts/inline-partials.mjs && node scripts/generate-markdown.mjs && node scripts/generate-llms-txt.mjs"
   publish = "."
 
 # ─── Keep .html on internal links ───
@@ -75,6 +75,9 @@
     # Points agents at the site map written for them. RFC 8288; the llms-txt
     # relation is not IANA-registered, so treat it as a hint, not a contract.
     Link = "</llms.txt>; rel=\"llms-txt\""
+    # Same URL serves HTML or Markdown depending on Accept (see
+    # netlify/edge-functions/markdown.ts), so caches must key on it.
+    Vary = "Accept"
 
 # Cache control for static assets
 [[headers]]
