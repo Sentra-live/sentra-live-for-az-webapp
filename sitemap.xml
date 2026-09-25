@@ -406,6 +406,12 @@
             <priority>0.6</priority>
       </url>
       <url>
+            <loc>https://sentratech.in/blogs/slope-stability-monitoring-mining.html</loc>
+            <lastmod>2026-09-25</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.7</priority>
+      </url>
+      <url>
             <loc>https://sentratech.in/blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html</loc>
             <lastmod>2026-09-08</lastmod>
             <changefreq>monthly</changefreq>
@@ -652,10 +658,18 @@
             <priority>0.6</priority>
       </url>
 
-      <!-- Article: Handheld SLAM vs. TLS for Highway Bridge Surveys -->
+      <!-- Case Study: Handheld SLAM vs. TLS for Highway Bridge Surveys -->
       <url>
-            <loc>https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html</loc>
+            <loc>https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html</loc>
             <lastmod>2026-09-17</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+
+      <!-- Article: Port & Marine Infrastructure Monitoring -->
+      <url>
+            <loc>https://sentratech.in/article/port-marine-infrastructure-monitoring.html</loc>
+            <lastmod>2026-09-25</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>

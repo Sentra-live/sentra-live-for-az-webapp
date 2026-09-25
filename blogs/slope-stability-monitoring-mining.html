@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GFRCEFB87"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-  gtag('config', 'G-8GFRCEFB87');
-</script>
+        gtag('config', 'G-8GFRCEFB87');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Resource hints: warm up connections the page opens on every load -->
@@ -20,21 +20,32 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <meta name="description" content="Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup." />
+    <meta name="description"
+        content="How slope stability monitoring works in open-pit mines: how pit walls fail, the sensors that detect movement, how to design a monitoring network, and how alarm thresholds give early warning." />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study" />
-    <meta property="og:description" content="Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup." />
-    <meta property="og:url" content="https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" />
+    <meta property="og:title"
+        content="Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines" />
+    <meta property="og:description"
+        content="Pit walls rarely fail without warning. Here is how slope stability monitoring picks up that warning: failure modes, radar, prisms, GNSS, inclinometers, piezometers and alarm thresholds." />
+    <meta property="og:url"
+        content="https://sentratech.in/blogs/slope-stability-monitoring-mining.html" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://sentratech.in/image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp" />
+    <meta property="og:image"
+        content="https://sentratech.in/image/blogs/banners/blogs_slope-stability-monitoring-mining.webp" />
     <meta property="og:image:width" content="2248" />
     <meta property="og:image:height" content="1264" />
+
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study" />
-    <meta name="twitter:description" content="Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup." />
-    <meta name="twitter:image" content="https://sentratech.in/image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp" />
+    <meta name="twitter:title"
+        content="Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines" />
+    <meta name="twitter:description"
+        content="Pit walls rarely fail without warning. Here is how slope stability monitoring picks up that warning: failure modes, radar, prisms, GNSS, inclinometers, piezometers and alarm thresholds." />
+    <meta name="twitter:image"
+        content="https://sentratech.in/image/blogs/banners/blogs_slope-stability-monitoring-mining.webp" />
     <meta name="twitter:site" content="@sentratech" />
-    <title>Handheld SLAM vs. TLS for Highway Bridge Surveys</title>
+    <meta name="twitter:image:width" content="2248" />
+    <meta name="twitter:image:height" content="1264" />
+    <title>Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines</title>
     <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
     <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="../css/vendor/fontawesome.css">
@@ -46,111 +57,168 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
+    <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
     <link rel="stylesheet" href="../css/chatbot.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=analytics,architecture,biotech,construction,database,insights,monitoring,precision_manufacturing,search,search_insights,sentiment_satisfied,settings_suggest,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+        rel="stylesheet" />
+
+
     <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/detail-page.css">
     <style>
-        .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
-        .word { transition: background-color 0.12s ease; padding: 0 1px; border-radius: 2px; }
-        .highlight { background-color: #f48120; transition: background-color 0.15s ease; }
-        body.lightmode .highlight { background-color: #ffe082; }
-        .conclusion-btn-wrapper { margin-bottom: 30px; }
-        body.dark-mode .detail-hero .hero-text-col, body.dark-mode .detail-article, body.dark-mode .hero-title { color: #fff; }
-        body.lightmode .hero-title { color: #111; }
-        body.dark-mode .hero-intro p, body.dark-mode .detail-article p, body.dark-mode .detail-article li { color: rgba(255,255,255,0.6); }
-        body.lightmode .hero-intro p, body.lightmode .detail-article p, body.lightmode .detail-article li { color: rgba(0,0,0,0.6); }
-        blockquote.highlight-quote {
-            border-left: 3px solid var(--accent-color);
-            padding: 1rem 1.5rem;
-            margin: 1.5rem 0;
-            background: rgba(244,129,32,0.04);
-            border-radius: 0 12px 12px 0;
-            font-style: italic;
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            border: 0;
         }
-        .insight-box {
-            background: rgba(244,129,32,0.05);
-            border: 1px solid rgba(244,129,32,0.12);
-            border-radius: 16px;
-            padding: 1.5rem;
-            margin: 1.5rem 0;
+
+        .word {
+            transition: background-color 0.12s ease;
+            padding: 0 1px;
+            border-radius: 2px;
         }
-        .insight-box h5 { color: var(--accent-color); margin-bottom: 0.75rem; font-size: 1rem; }
-        .insight-box p { font-size: 0.9rem; margin: 0; }
-        .stat-highlight { display: inline-block; font-size: 2.2rem; font-weight: 800; color: var(--accent-color); line-height: 1; }
 
-        .detail-article table.compare-table { width:100%; border-collapse:collapse; margin:1.75rem 0; font-size:0.88rem; }
-        .detail-article table.compare-table th, .detail-article table.compare-table td { padding:0.75rem 1rem; border:1px solid rgba(255,255,255,0.08); text-align:left; vertical-align:top; }
-        .detail-article table.compare-table th { background:rgba(244,129,32,0.08); color:var(--accent-color); font-weight:700; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.03em; }
-        body.lightmode .detail-article table.compare-table th, body.lightmode .detail-article table.compare-table td { border-color: rgba(0,0,0,0.08); }
-        .detail-article table.compare-table tr:nth-child(even) td { background: rgba(255,255,255,0.015); }
+        .highlight {
+            background-color: #f48120;
+            transition: background-color 0.15s ease;
+        }
 
-        .maint-flow { display:flex; flex-direction:column; align-items:center; gap:0.25rem; margin:1.75rem 0; }
-        .maint-step { width:100%; max-width:560px; border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:0.85rem 1.25rem; text-align:center; background:rgba(255,255,255,0.02); }
-        body.lightmode .maint-step { border-color: rgba(0,0,0,0.08); background:#fff; }
-        .maint-step-label { display:block; font-weight:700; font-size:0.82rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--accent-color); margin-bottom:0.25rem; }
-        .maint-step p { margin:0; font-size:0.85rem; }
-        .maint-step.highlight-step { border-color: rgba(244,129,32,0.4); background: rgba(244,129,32,0.06); }
-        .maint-arrow { opacity:0.4; font-size:0.8rem; }
+        body.lightmode .highlight {
+            background-color: #ffe082;
+        }
 
-        .arch-stack { display:flex; flex-direction:column; gap:2px; margin:1.75rem 0; border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); }
-        body.lightmode .arch-stack { border-color: rgba(0,0,0,0.08); }
-        .arch-layer { padding:0.9rem 1.25rem; background:rgba(255,255,255,0.02); }
-        body.lightmode .arch-layer { background:#fff; }
-        .arch-layer-name { display:block; font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--accent-color); margin-bottom:0.15rem; }
-        .arch-layer-desc { font-size:0.83rem; opacity:0.75; }
+        .conclusion-btn-wrapper {
+            margin-bottom: 30px;
+        }
 
-        .case-stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:1.75rem 0; }
-        @media (max-width: 700px) { .case-stats-grid { grid-template-columns:repeat(2,1fr); } }
-        .case-stat-item { text-align:center; padding:1.25rem 0.75rem; border-radius:14px; border:1px solid rgba(255,255,255,0.08); background:rgba(255,255,255,0.02); }
-        body.lightmode .case-stat-item { border-color:rgba(0,0,0,0.08); background:#fff; }
-        .case-stat-num { display:block; font-size:1.9rem; font-weight:800; color:var(--accent-color); line-height:1.1; }
-        .case-stat-label { display:block; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; margin-top:0.35rem; }
-        .case-stat-sub { display:block; font-size:0.78rem; opacity:0.6; margin-top:0.2rem; }
+        .swiperProducts .card-blog {
+            display: flex;
+            flex-direction: column;
+        }
 
-        .ptb-card { border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:1.5rem 1.5rem 1.25rem; margin:1.75rem 0; background:rgba(255,255,255,0.02); }
-        body.lightmode .ptb-card { border-color:rgba(0,0,0,0.08); background:#fff; }
-        .ptb-title { font-size:1rem; font-weight:800; margin:0 0 1.1rem; }
-        .ptb-row { margin-bottom:1.25rem; }
-        .ptb-row-head { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:0.4rem 1rem; margin-bottom:0.4rem; }
-        .ptb-row-label { font-weight:700; font-size:0.9rem; }
-        .ptb-row-values { font-size:0.82rem; opacity:0.85; display:flex; gap:0.9rem; flex-wrap:wrap; }
-        .ptb-row-values .ptb-l2 { color:var(--accent-color); font-weight:700; }
-        .ptb-bar-track { position:relative; height:8px; border-radius:999px; background:rgba(120,120,120,0.18); overflow:hidden; }
-        .ptb-bar-fill { position:absolute; top:0; left:0; bottom:0; border-radius:999px; background:var(--accent-color); }
-        .ptb-row.ptb-total .ptb-bar-fill { background:#2d2e2f; }
-        body.lightmode .ptb-row.ptb-total .ptb-bar-fill { background:#111; }
-        .ptb-faster { display:block; text-align:right; font-size:0.76rem; font-weight:700; color:#1fa858; margin-top:0.3rem; }
-        .ptb-row.ptb-total { border-top:1px solid rgba(255,255,255,0.08); padding-top:1.1rem; }
-        body.lightmode .ptb-row.ptb-total { border-top-color:rgba(0,0,0,0.08); }
+        @media (min-width: 992px) {
+            .swiperProducts .card-blog {
+                width: 600px !important;
+            }
+        }
 
-        .case-gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:1.75rem 0; }
-        @media (max-width: 700px) { .case-gallery { grid-template-columns:1fr; } }
-        .case-gallery-item { border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); background:rgba(255,255,255,0.02); }
-        body.lightmode .case-gallery-item { border-color:rgba(0,0,0,0.08); background:#fff; }
-        .case-gallery-item img { width:100%; height:190px; object-fit:cover; display:block; }
-        .case-gallery-caption { padding:0.6rem 0.85rem; font-size:0.78rem; opacity:0.65; }
+        .swiperProducts .blog-image {
+            aspect-ratio: 836 / 442 !important;
+        }
 
-        /* The sitewide .accordion-item .accordion-body rule zeroes out padding-left;
-           restore it here to match the question button above it. */
-        #faqBridgeCase.accordion .accordion-item .accordion-body {
-            padding-left: 1.25rem;
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        body.dark-mode .detail-hero .hero-text-col,
+        body.dark-mode .detail-article,
+        body.dark-mode .hero-title {
+            color: #fff;
+        }
+
+        body.lightmode .hero-title {
+            color: #111;
+        }
+
+        body.dark-mode .hero-intro p,
+        body.dark-mode .detail-article p,
+        body.dark-mode .detail-article li {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        body.lightmode .hero-intro p,
+        body.lightmode .detail-article p,
+        body.lightmode .detail-article li {
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        .post-figure {
+            margin: 2rem 0 2.5rem;
+            padding: 0;
+        }
+
+        .post-figure img {
             display: block;
+            width: 100%;
+            max-height: 520px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .post-figure--diagram img {
+            object-fit: contain;
+            background: #f4f4f2;
+            padding: 1rem;
+        }
+
+        /* Product shots ship with a transparent background, so they need their
+           own white plate - in both themes, not just light. */
+        .post-figure--product img,
+        body.dark-mode .post-figure--product img,
+        body.lightmode .post-figure--product img {
+            object-fit: contain;
+            background: #fff;
+            padding: 1.5rem;
+            max-height: 420px;
+        }
+
+        .post-figure figcaption {
+            margin-top: 0.65rem;
+            font-size: 0.78rem;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, 0.58);
+        }
+
+        body.dark-mode .post-figure figcaption {
+            color: rgba(255, 255, 255, 0.58);
+        }
+
+        .post-figure figcaption a {
+            color: #f48120;
+        }
+        /* The sitewide .accordion-item .accordion-body rule (built for the homepage
+           FAQ, which nests an .accordion-content wrapper for its own left padding)
+           zeroes out padding-left and adds a large vertical pad. This FAQ uses the
+           plain Bootstrap structure, so restore the left padding and close the gap
+           between a question and its answer. */
+        #faqSlope.accordion .accordion-item {
+            gap: 8px;
+        }
+
+        #faqSlope.accordion .accordion-item .accordion-body {
+            display: block;
+            padding: 20px 32px 20px 1.25rem;
+        }
+
+        #faqSlope.accordion .accordion-item .accordion-body p:last-child {
+            margin-bottom: 0;
         }
     </style>
-    <link rel="canonical" href="https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html">
-    <link rel="alternate" type="text/markdown" href="https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.md">
+
+    <link rel="canonical"
+        href="https://sentratech.in/blogs/slope-stability-monitoring-mining.html">
+
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study",
-      "description": "Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup.",
-      "datePublished": "2026-09-17",
-      "dateModified": "2026-09-17",
+      "@type": "BlogPosting",
+      "headline": "Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines",
+      "description": "How slope stability monitoring works in open-pit mines: how pit walls fail, the sensors that detect movement, how to design a monitoring network, and how alarm thresholds give early warning.",
+      "datePublished": "2026-09-25",
+      "dateModified": "2026-09-25",
       "author": {
         "@type": "Organization",
         "name": "Sentra Technologies"
@@ -165,12 +233,14 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html"
+        "@id": "https://sentratech.in/blogs/slope-stability-monitoring-mining.html"
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://sentratech.in/image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp"
+        "url": "https://sentratech.in/image/blogs/banners/blogs_slope-stability-monitoring-mining.webp"
       },
+      "keywords": "slope stability monitoring, mining geotechnical monitoring, open-pit mine safety sensors",
+      "articleSection": "Mining",
       "inLanguage": "en"
     }
     </script>
@@ -183,19 +253,7 @@
         "@type": "SpeakableSpecification",
         "cssSelector": [".detail-article h2, .detail-article h4", ".detail-article p", ".hero-intro"]
       },
-      "url": "https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html"
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sentratech.in/" },
-        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://sentratech.in/resources.html" },
-        { "@type": "ListItem", "position": 3, "name": "Handheld SLAM vs. TLS for Highway Bridge Surveys", "item": "https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" }
-      ]
+      "url": "https://sentratech.in/blogs/slope-stability-monitoring-mining.html"
     }
     </script>
 
@@ -204,15 +262,43 @@
       "@context": "https://schema.org",
       "@type": "FAQPage",
       "mainEntity": [
-        { "@type": "Question", "name": "How much faster is mobile laser scanning than terrestrial laser scanning for bridge inspection?", "acceptedAnswer": { "@type": "Answer", "text": "In this bridge inspection case study, mobile laser scanning completed the full project in about 6 hours versus roughly 7.5 days for terrestrial laser scanning (TLS): a 29x improvement in total project time, driven by a 16x faster field survey and a 144x faster dynamic object removal step." } },
-        { "@type": "Question", "name": "How accurate is mobile laser scanning compared to a TLS baseline?", "acceptedAnswer": { "@type": "Answer", "text": "The mobile-scanned point cloud achieved under 1cm average accuracy when checked against the terrestrial laser scanning baseline, which is well within the tolerance required for bridge condition assessment and scan-to-BIM workflows." } },
-        { "@type": "Question", "name": "Why does terrestrial laser scanning take longer on a bridge?", "acceptedAnswer": { "@type": "Answer", "text": "TLS is a static, tripod-based method: the scanner has to be set up, levelled and registered at every position, and a bridge of any length can require hundreds of individual setups. In this case, TLS needed 350 setups against 3 walking loops for the mobile scanner, and each TLS setup also restricts access to that section of the structure while it runs." } },
-        { "@type": "Question", "name": "What is dynamic object removal in point cloud processing?", "acceptedAnswer": { "@type": "Answer", "text": "Dynamic object removal is the process of stripping moving objects: vehicles, pedestrians, passing traffic: out of a point cloud so only the static structure remains. Manual removal on a large TLS dataset can take days; an automated pipeline can complete the same cleanup in about an hour with roughly 90% of objects removed automatically." } },
-        { "@type": "Question", "name": "Does mobile laser scanning replace terrestrial laser scanning for infrastructure inspection?", "acceptedAnswer": { "@type": "Answer", "text": "Not universally: TLS still delivers the highest static, survey-grade accuracy for critical structural detail. But for full-structure bridge condition surveys where field time, site access and turnaround matter, mobile SLAM-based scanning delivers comparable practical accuracy at a fraction of the time and site disruption." } }
+        {
+          "@type": "Question",
+          "name": "What is slope stability monitoring in mining?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Slope stability monitoring is the continuous measurement of movement, groundwater pressure and related conditions on pit walls, benches and waste dumps. Radar, survey prisms, GNSS receivers, inclinometers, piezometers and other sensors detect deformation early, so the mine can compare movement rates against agreed thresholds and clear people and equipment before a failure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What sensors are used for open-pit mine slope monitoring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most open-pit mines combine surface and subsurface instruments. Slope stability radar and robotic total stations with prisms cover large areas of the wall, GNSS receivers give continuous 3D displacement at key points, in-place inclinometers and extensometers show movement at depth, piezometers track groundwater pressure, and tiltmeters and crack meters watch specific structures and tension cracks."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much warning does slope monitoring give before a failure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends on the failure mechanism and rock type. Many large slope failures go through a phase of accelerating movement lasting hours to weeks, which continuous monitoring can detect. Brittle, structurally controlled failures can give much less warning, which is why monitoring is paired with good geotechnical design, inspections and conservative exclusion zones."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is a Trigger Action Response Plan (TARP) for slope monitoring?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A TARP is a pre-agreed plan that links monitoring thresholds to actions. Each alarm level, usually defined by movement velocity or acceleration, has named people and specific responses, from increased inspection at the lowest level to evacuation of the affected area at the highest. It ensures the mine reacts consistently when the data changes."
+          }
+        }
       ]
     }
     </script>
 
+    <link rel="alternate" type="text/markdown" href="https://sentratech.in/blogs/slope-stability-monitoring-mining.md">
 </head>
 
 <body>
@@ -231,7 +317,9 @@
         </div>
     </div>
 
+    <!-- Section Header -->
     <header>
+        <!-- Section Navbar -->
         <div id="header"><!-- Mega nav styles live in css/style.css -->
 <style>
     /* Self-contained import so the theme-toggle glyph renders even on pages
@@ -1349,10 +1437,12 @@
 </div></div>
     </header>
 
+    <!-- Section Content Edit -->
     <aside>
         <div id="edit-sidebar"></div>
     </aside>
 
+    <!-- Section Sidebar -->
     <aside>
         <div id="sidebar"><div>
     <div class="content-overlay">
@@ -1539,10 +1629,11 @@
 </div></div>
     </aside>
 
+    <!-- Section Main Content -->
     <main>
-        <!-- Hero -->
         <section class="detail-hero">
-            <a href="../resources.html#articles" class="back-btn"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+            <a href="../resources.html#blogs" class="back-btn"><i class="fa-solid fa-chevron-left"
+                    style="font-size:10px"></i> Back to Resources</a>
             <div class="hero-bg-dots"></div>
             <div class="hero-glow orange-glow"></div>
             <div class="hero-top-line"></div>
@@ -1550,18 +1641,20 @@
                 <div class="hero-grid">
                     <div class="hero-text-col">
                         <div class="hero-meta-row">
-                            <span class="hero-badge orange">Comparison Study</span>
-                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> Sep 17, 2026</span>
-                            <span class="hero-meta-icon"><i class="fa-regular fa-clock"></i> 9 min read</span>
+                            <span class="hero-badge rose">Mining</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> 25 Sep 2026</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-clock"></i> 8 min read</span>
                         </div>
-                        <h1 class="hero-title">Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study</h1>
+                        <h1 class="hero-title">Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for
+                            Open-Pit Mines</h1>
                         <div class="hero-intro">
-                            <p>A side-by-side bridge condition survey pitted a mobile SLAM-based scanner, the XGRIDS L2 Pro, against a conventional terrestrial laser scanning (TLS) workflow built around a static scanner such as the RTC360. The mobile workflow finished the entire project in about 6 hours against roughly 7.5 days for TLS: while holding accuracy to under 1cm against the TLS baseline.</p>
+                            <p>Pit walls almost never fail without warning. The rock moves, slowly at first, then faster, often for days or weeks before it lets go. Slope stability monitoring exists to catch that acceleration early enough to move people and equipment out of the way. Here is how it works in an open-pit mine, and how to build a system a mine can actually act on.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
                         <div class="hero-image-wrap">
-                            <img src="../image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp" alt="Handheld SLAM vs. TLS for highway bridge surveys: colorized point cloud model of the bridge" loading="eager">
+                            <img src="../image/blogs/banners/blogs_slope-stability-monitoring-mining.webp"
+                                alt="Slope stability monitoring in an open-pit mine with benched pit walls" loading="eager">
                             <div class="hero-image-overlay"></div>
                         </div>
                     </div>
@@ -1569,234 +1662,335 @@
             </div>
         </section>
 
-        <!-- Content -->
         <div class="detail-content-wrapper">
             <div class="detail-grid">
                 <article class="detail-article">
                     <div class="tts-bar">
-                        <button id="ttsPlayBtn" class="tts-btn" aria-label="Play article aloud" aria-pressed="false"><i class="fas fa-play"></i></button>
+                        <button id="ttsPlayBtn" class="tts-btn" aria-label="Play article aloud" aria-pressed="false"><i
+                                class="fas fa-play"></i></button>
                         <div class="tts-progress" id="ttsProgressBar">
                             <div id="progressFill" class="tts-fill"></div>
                         </div>
                         <span class="tts-label">Listen</span>
                     </div>
-
                     <div class="detail-meta-bar">
                         <div class="detail-meta-left">
-                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> Sep 17, 2026</span>
-                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Comparison Study</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> 25 Sep 2026</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Mining</span>
                         </div>
-                        <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Vishal Das <a href="https://in.linkedin.com/in/vishaldas01" target="_blank" rel="noopener" aria-label="Vishal Das on LinkedIn"><i class="fa-brands fa-linkedin"></i></a> | Sentra Technologies</span>
+                        <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Sentra Content Team | Sentra
+                            Technologies</span>
                     </div>
-
                     <div id="ttsContent">
-                        <p>Bridge condition surveys usually run into the same wall: terrestrial laser scanning (TLS) delivers excellent static accuracy, but it needs the scanner set up, levelled and registered again at every position along the structure. On a long bridge deck, that adds up to hundreds of individual setups, each one closing off part of the site while it runs.</p>
-                        <p>This case study compares that conventional TLS workflow, using a static scanner such as the RTC360, against a mobile SLAM-based alternative, the XGRIDS L2 Pro, on the same bridge. The scanner is carried or wheeled along the structure in a handful of continuous loops instead of being repositioned hundreds of times, and its onboard AI pipeline handles most of the point cloud cleanup automatically.</p>
 
-                        <div class="case-stats-grid">
-                            <div class="case-stat-item">
-                                <span class="case-stat-num">29x</span>
-                                <span class="case-stat-label">Faster Total Time</span>
-                                <span class="case-stat-sub">6 hrs vs 7.5 days</span>
-                            </div>
-                            <div class="case-stat-item">
-                                <span class="case-stat-num">&lt;1cm</span>
-                                <span class="case-stat-label">Avg. Accuracy</span>
-                                <span class="case-stat-sub">vs TLS baseline</span>
-                            </div>
-                            <div class="case-stat-item">
-                                <span class="case-stat-num">16x</span>
-                                <span class="case-stat-label">Faster Field Work</span>
-                                <span class="case-stat-sub">45 min vs 1.5 days</span>
-                            </div>
-                            <div class="case-stat-item">
-                                <span class="case-stat-num">90%</span>
-                                <span class="case-stat-label">Auto Cleaning</span>
-                                <span class="case-stat-sub">Dynamic objects</span>
-                            </div>
+                        <p id="what-is-slope-monitoring">
+                            <strong>Slope stability monitoring</strong> is the continuous measurement of how pit walls,
+                            benches and waste dumps are moving, and why. It sits at the centre of
+                            <strong>mining geotechnical monitoring</strong>: the design of a pit slope is a set of
+                            assumptions about rock strength, geological structure and groundwater, and monitoring is how
+                            the mine checks those assumptions against what the ground is actually doing as the pit gets
+                            deeper.
+                        </p>
+                        <p>
+                            The stakes are simple. A wall failure in an active pit can bury haul roads, shovels and
+                            people. A monitoring system does not stop the rock from moving. What it does is turn a
+                            sudden event into a developing one that the mine can see, measure and respond to.
+                        </p>
+
+                        <h2 id="how-slopes-fail">How Open-Pit Slopes Fail</h2>
+                        <p>
+                            Pit slopes are designed at three scales, and they fail at all three. A <strong>bench</strong>
+                            failure drops a few tonnes onto the bench below. An <strong>inter-ramp</strong> failure takes
+                            out several benches and can cut a haul road. An <strong>overall slope</strong> failure
+                            involves the full height of the wall and can close a pit.
+                        </p>
+                        <p>The mechanism depends mostly on geology:</p>
+                        <ul class="blog-bullets">
+                            <li><strong>Planar and wedge failures</strong> happen when joints, bedding or faults dip out
+                                of the face and the rock slides along them. They are structurally controlled and can move
+                                quickly once they start.</li>
+                            <li><strong>Toppling</strong> occurs where steep joints dip into the slope, so columns of rock
+                                rotate forward. It often shows as slow, steady movement over long periods.</li>
+                            <li><strong>Circular or rotational failures</strong> develop in weak, weathered or heavily
+                                fractured rock and in waste dumps, where the material behaves more like soil.</li>
+                            <li><strong>Step-path and complex failures</strong> combine several structures and intact
+                                rock bridges, and are common in large, deep pits.</li>
+                        </ul>
+                        <p>
+                            Water makes almost all of these worse. Pore pressure behind a wall reduces the effective
+                            stress holding it together, which is why failures cluster after heavy rain and during the
+                            monsoon. Blasting adds vibration and loosens the rock mass near the face.
+                        </p>
+
+                        <h2 id="warning-signal">The Warning Signal: Accelerating Movement</h2>
+                        <p>
+                            The reason slope monitoring works at all is that most large failures do not happen in one
+                            step. Before collapse, a moving slope typically goes through three phases. First, an initial
+                            response to mining, where movement starts and then slows. Second, a period of steady creep at
+                            a roughly constant rate, which can last months. Third, <strong>progressive
+                            acceleration</strong>, where movement speeds up as the failure surface develops, ending in
+                            collapse.
+                        </p>
+                        <p>
+                            That third phase is the target. A wall moving steadily at a few millimetres a day may be
+                            perfectly manageable. The same wall whose velocity has doubled in two days is a different
+                            situation, even if its total movement is smaller. <strong>Velocity and acceleration, not
+                            total displacement, are the numbers that matter.</strong>
+                        </p>
+                        <p>
+                            Once a slope is accelerating, engineers often use the <strong>inverse velocity
+                            method</strong> to estimate when it might fail. Plotting 1/velocity against time for an
+                            accelerating slope tends to give a line that trends towards zero; where it meets the time
+                            axis is an estimate of the failure time. It is a forecasting aid, not a guarantee, and it is
+                            only as good as the data feeding it, which is another argument for frequent, continuous
+                            readings.
+                        </p>
+
+                        <h2 id="sensor-toolkit">The Sensor Toolkit for Open-Pit Mine Safety</h2>
+                        <p>
+                            No single instrument covers every failure mode. <strong>Open-pit mine safety
+                            sensors</strong> fall into two groups: those that watch the surface of the wall over large
+                            areas, and those that measure what is happening at a point or at depth.
+                        </p>
+
+                        <h4 style="margin-top:1.5rem;">Area coverage</h4>
+                        <p>
+                            <strong>Slope stability radar</strong> scans a wall repeatedly from a fixed position and
+                            measures movement along its line of sight to sub-millimetre precision, across the whole face,
+                            day and night and through dust and rain. It is the main tool for critical walls above active
+                            work areas because it sees movement anywhere in the scan, not only where a sensor happens to
+                            be.
+                        </p>
+                        <figure class="post-figure">
+                            <img src="../image/solutions/showcase/geotechnical/Slope%20Stability%20Radar.webp"
+                                alt="Slope stability radar displacement map showing localised movement on a pit wall"
+                                loading="lazy" decoding="async">
+                            <figcaption>A slope radar displacement map. Most of the wall is stable (green), while a
+                                localised zone has moved up to 100 mm (red). Area coverage finds the moving block;
+                                point instruments are then used to understand its mechanism.</figcaption>
+                        </figure>
+                        <p>
+                            <strong>Robotic total stations and prisms</strong> measure 3D position of reflective prisms
+                            installed on benches, cycling through them automatically. They are precise and relatively
+                            cheap per point, but need line of sight and degrade in dust, fog and heat shimmer.
+                        </p>
+                        <p>
+                            <strong>InSAR, drone survey and laser scanning</strong> compare the shape of the pit over
+                            time. Satellite InSAR covers the whole mine and its surroundings on a fixed revisit schedule,
+                            while repeat <a href="../products/laser-scanners.html">laser scans</a> and drone
+                            photogrammetry detect bulging, cracking and volume change between surveys.
+                        </p>
+
+                        <h4 style="margin-top:1.5rem;">Point and subsurface measurement</h4>
+                        <ul class="blog-bullets">
+                            <li><strong>GNSS receivers</strong> give continuous 3D displacement at key points on the crest
+                                and benches, with no line of sight needed between points. Our guide to
+                                <a href="../blogs/gnss-displacement-monitoring-satellite-sensors.html">GNSS displacement
+                                    monitoring</a> covers accuracy and siting in detail, and the
+                                <a href="../products/gnss-meter.html">GNSS Meter</a> is built for this kind of
+                                deployment.</li>
+                            <li><strong>In-place inclinometers and shape arrays</strong> installed in boreholes show where
+                                the failure surface is and how fast it is moving at depth, which surface instruments
+                                cannot see. Our <a href="../blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html">inclinometer
+                                    guide</a> explains how they work.</li>
+                            <li><strong>Extensometers and crack meters</strong> measure opening across tension cracks
+                                behind the crest, often the first visible sign of a developing failure.</li>
+                            <li><strong>Piezometers</strong> measure groundwater pressure in the slope. Vibrating wire
+                                piezometers connected to <a href="../products/vibrating-wire.html">wireless vibrating
+                                    wire loggers</a> give continuous records without long cable runs across the pit.</li>
+                            <li><strong>Tiltmeters</strong> on benches, retaining structures, conveyors and crest
+                                infrastructure detect rotation. <a href="../products/tiltmeter.html">Wireless
+                                    tiltmeters</a> are easy to add as mining moves.</li>
+                            <li><strong>Vibration monitors</strong> record blast vibration at the wall, so movement can be
+                                checked against the blasting schedule.</li>
+                        </ul>
+
+                        <h2 id="network-design">Designing a Slope Monitoring Network</h2>
+                        <p>
+                            A monitoring network should come from the geotechnical risk assessment, not from an equipment
+                            list. The walls with the highest consequence of failure, usually those above active
+                            working areas, main haul roads and infrastructure, get the most coverage and the fastest
+                            update rates.
+                        </p>
+                        <ul class="blog-bullets">
+                            <li><strong>Match instruments to mechanism.</strong> A structurally controlled wedge needs
+                                something that watches the whole block. A deep-seated failure in weak rock needs
+                                subsurface instruments to find the failure surface.</li>
+                            <li><strong>Overlap methods.</strong> Radar for coverage, prisms or GNSS for independent
+                                confirmation, piezometers for cause. Two instruments that agree are far more convincing
+                                than one.</li>
+                            <li><strong>Set update rates by risk.</strong> A critical wall above a working shovel needs
+                                readings every few minutes. A stable, inactive wall may be fine with daily data.</li>
+                            <li><strong>Plan for the pit to change.</strong> Benches get mined out, prisms get buried and
+                                access roads move. Wireless, battery-powered sensors are much easier to relocate than
+                                cabled systems.</li>
+                            <li><strong>Protect the stable reference.</strong> GNSS references and total station
+                                pillars must be outside the zone of movement, or every reading will be wrong in the same
+                                direction.</li>
+                        </ul>
+
+                        <h2 id="alarms-tarps">Alarms, Thresholds and Trigger Action Response Plans</h2>
+                        <p>
+                            Data only reduces risk if it leads to action. Mines do this with a <strong>Trigger Action
+                            Response Plan (TARP)</strong>, which ties monitoring thresholds to pre-agreed responses.
+                            A typical TARP has several levels:
+                        </p>
+                        <ul class="blog-bullets">
+                            <li><strong>Normal:</strong> movement within expected limits. Routine data review and
+                                inspection.</li>
+                            <li><strong>Alert:</strong> velocity above a first threshold. Increased inspection, closer
+                                data review, geotechnical engineer notified.</li>
+                            <li><strong>Alarm:</strong> velocity or acceleration above a second threshold. Restrict
+                                access below the wall, stop work in the affected area, review with management.</li>
+                            <li><strong>Evacuation:</strong> sustained acceleration or a forecast failure time.
+                                Clear the area, barricade and keep monitoring from a safe distance.</li>
+                        </ul>
+                        <p>
+                            Thresholds are site-specific. They depend on rock type, failure mechanism and how the wall
+                            has behaved before, and they are refined as the monitoring record grows. The important part
+                            is agreeing them, and who acts on each level, before the wall starts moving.
+                        </p>
+                        <p>
+                            Context matters just as much. Movement that follows heavy rain and slows as the slope drains
+                            is a different finding from the same movement with no obvious cause. Reviewing displacement
+                            next to rainfall, pore pressure, blasting records and mining progress, in one platform, is
+                            what separates a real warning from normal behaviour. That combined view is the basis of
+                            Sentra's <a href="../industries/mining-geotechnical-monitoring.html">mining and geotechnical
+                                monitoring</a> and wider
+                            <a href="../solutions/geotechnical-and-foundation-monitoring.html">geotechnical and
+                                foundation monitoring</a> work.
+                        </p>
+
+                        <h2 id="ConclusionSection">Takeaway</h2>
+                        <p>
+                            Open-pit slopes are designed on assumptions, and slope stability monitoring is how a mine
+                            finds out whether those assumptions still hold as the pit deepens. Most large failures give
+                            a warning in the form of accelerating movement. The job of the monitoring system is to see
+                            that acceleration early, confirm it with more than one method, and put it in front of people
+                            who already know what to do.
+                        </p>
+                        <p>
+                            The instruments are well proven. What makes the difference is choosing them for the actual
+                            failure mechanisms, keeping the network current as the pit changes, and backing every
+                            threshold with a response plan.
+                        </p>
+                        <div class="detail-cta">
+                            <h4>Planning slope monitoring for an open-pit mine?</h4>
+                            <p>We design and deploy slope stability monitoring for pit walls and waste dumps, from
+                                GNSS, tilt and piezometer networks to data platforms with alarm thresholds.</p>
+                            <a class="cta-btn" href="../contact.html">Talk to our team <i
+                                    class="fa-solid fa-arrow-right"></i></a>
                         </div>
-
-                        <h2 id="challengeSection">The Challenge: A Fixed-Setup Workflow on an Open Structure</h2>
-                        <p>Bridges are among the hardest assets to scan efficiently with TLS. The structure is long, linear and exposed to live traffic, so a static scanner can only cover a limited field of view from each tripod position before it has to be moved, re-levelled and re-registered. Every one of those setups also occupies part of the deck or the area beneath it, which means the survey team is constantly negotiating access around ongoing traffic or site activity.</p>
-                        <p>For this bridge, the TLS plan called for 350 individual scanner setups to achieve full coverage: a schedule that pushed field work alone to roughly a day and a half, before any office processing had started.</p>
-
-                        <h2 id="fieldworkSection">Field Work Comparison: 3 Loops vs 350 Setups</h2>
-                        <p>The mobile scanner covers the same bridge by walking or wheeling three continuous loops across the structure, recording geometry the entire time instead of stopping to set up at fixed stations. That single difference in method removes almost all of the field-time cost that TLS carries.</p>
-
-                        <table class="compare-table">
-                            <thead>
-                                <tr><th>Metric</th><th>L2 Pro</th><th>TLS (RTC360)</th><th>Advantage</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>Scan Method</td><td>3 loops</td><td>350 setups</td><td>117x fewer setups</td></tr>
-                                <tr><td>Field Time</td><td>45 minutes</td><td>1.5 days</td><td>16x faster</td></tr>
-                                <tr><td>Site Access</td><td>Full mobility</td><td>Limited (traffic)</td><td>No constraints</td></tr>
-                            </tbody>
-                        </table>
-                        <p>Because the mobile scanner keeps moving, the survey crew never has to close off a section of the bridge to set up equipment: the structure stays fully accessible to traffic and other site activity throughout the capture.</p>
-
-                        <h2 id="processingSection">Processing Time Breakdown</h2>
-                        <p>Field time is only half of a scanning project's schedule. Every point cloud still has to be registered into a single coordinate system, and then cleaned of moving objects: vehicles, pedestrians, anything that isn't part of the static structure, before it is usable for inspection or scan-to-BIM work. This is where the gap between the two methods widens the most.</p>
-
-                        <div class="ptb-card">
-                            <p class="ptb-title">Processing Time Breakdown</p>
-                            <div class="ptb-row">
-                                <div class="ptb-row-head">
-                                    <span class="ptb-row-label">Registration</span>
-                                    <span class="ptb-row-values"><span class="ptb-l2">L2 Pro: 4.5 hrs</span><span>TLS: 24 hrs (1 day)</span></span>
-                                </div>
-                                <div class="ptb-bar-track"><div class="ptb-bar-fill" style="width:19%"></div></div>
-                                <span class="ptb-faster">5x faster</span>
-                            </div>
-                            <div class="ptb-row">
-                                <div class="ptb-row-head">
-                                    <span class="ptb-row-label">Dynamic Object Removal</span>
-                                    <span class="ptb-row-values"><span class="ptb-l2">L2 Pro: 1 hr (90% auto)</span><span>TLS: 144 hrs (6 days manual)</span></span>
-                                </div>
-                                <div class="ptb-bar-track"><div class="ptb-bar-fill" style="width:3%"></div></div>
-                                <span class="ptb-faster">144x faster</span>
-                            </div>
-                            <div class="ptb-row ptb-total">
-                                <div class="ptb-row-head">
-                                    <span class="ptb-row-label">Total Processing</span>
-                                    <span class="ptb-row-values"><span class="ptb-l2">L2 Pro: 5.5 hrs</span><span>TLS: 168 hrs (7 days)</span></span>
-                                </div>
-                                <div class="ptb-bar-track"><div class="ptb-bar-fill" style="width:4%"></div></div>
-                                <span class="ptb-faster">30x faster processing</span>
-                            </div>
-                        </div>
-                        <p>The dynamic object removal step is where TLS loses the most time. A static scan captures whatever passes through its field of view during setup, and stripping those moving objects out of a dense point cloud by hand is slow, meticulous work. The mobile workflow's onboard pipeline automates roughly 90% of that cleanup, cutting a six-day manual task down to about an hour.</p>
-
-                        <div class="insight-box">
-                            <h5><i class="fa-solid fa-clock" style="margin-right:8px;"></i>Total Project Time</h5>
-                            <p>Combining field work and processing, the mobile workflow delivered a finished, cleaned point cloud in about <strong>6 hours</strong>, compared with roughly <strong>7.5 days</strong> for the TLS workflow on the same bridge: a <span class="stat-highlight" style="font-size:1.3rem;">29x</span> reduction in total project time.</p>
-                        </div>
-
-                        <h2 id="accuracySection">Accuracy Validation Against the TLS Baseline</h2>
-                        <p>Speed only matters if the resulting model can be trusted. The mobile scan was checked point-by-point against the TLS dataset, which served as the survey-grade accuracy baseline for the comparison. Across the structure, the mobile-scanned point cloud held to an average deviation of under 1cm from that baseline: well within the tolerance needed for bridge condition assessment, clearance checks and scan-to-BIM modelling.</p>
-                        <p>That result is consistent with what SLAM-based mobile mapping systems are generally suited to: centimetre-level accuracy delivered far faster than static scanning, rather than an attempt to beat TLS on absolute precision. For most bridge inspection and digital twin use cases, that trade-off comes out strongly in favour of the mobile method once field time, site disruption and processing labour are counted.</p>
-
-                        <h2 id="resultsSection">Results &amp; Deliverables</h2>
-                        <p>The output of the mobile scan is a fully colorized, cleaned point cloud of the bridge: ready to hand off for condition assessment, clearance verification, or as the geometric baseline for a scan-to-BIM or digital twin workflow.</p>
-                        <div class="case-gallery">
-                            <div class="case-gallery-item">
-                                <img src="https://cdn-bukbb1.xgrids.cloud/prd/cms/1772179101471_7.png" alt="Colorized point cloud model of the bridge, view 1" loading="lazy">
-                                <div class="case-gallery-caption">Colorized Point Cloud Model of the Bridge</div>
-                            </div>
-                            <div class="case-gallery-item">
-                                <img src="https://cdn-bukbb1.xgrids.cloud/prd/cms/1772179114961_8.png" alt="Colorized point cloud model of the bridge, view 2" loading="lazy">
-                                <div class="case-gallery-caption">Colorized Point Cloud Model of the Bridge</div>
-                            </div>
-                            <div class="case-gallery-item">
-                                <img src="https://cdn-bukbb1.xgrids.cloud/prd/cms/1772179127199_9.png" alt="Colorized point cloud model of the bridge, view 3" loading="lazy">
-                                <div class="case-gallery-caption">Colorized Point Cloud Model of the Bridge</div>
-                            </div>
-                        </div>
-
-                        <h2 id="takeawaysSection">What This Means for Infrastructure Teams</h2>
-                        <p>For teams responsible for periodic bridge inspection or asset condition monitoring, the practical implication is straightforward: a mobile, SLAM-based scan captures full-structure geometry in a fraction of the field and processing time TLS requires, without closing off the structure to normal traffic during capture. That turns a survey that used to take the better part of two weeks: field work, registration and manual cleanup combined, into a same-day deliverable.</p>
-                        <p>It does not eliminate the need for TLS everywhere. Where a project genuinely requires the highest static, survey-grade accuracy on a specific critical component, terrestrial scanning still has a role. But for routine and periodic full-structure bridge condition surveys, where turnaround, site access and labour cost all matter, mobile laser scanning is now delivering practical accuracy fast enough to change how often a bridge can realistically be resurveyed.</p>
-
-                        <h2>Frequently Asked Questions</h2>
-                        <div class="accordion" id="faqBridgeCase" style="margin-top:1rem;">
-                            <div class="accordion-item">
-                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q1" aria-expanded="false">How much faster is mobile laser scanning than terrestrial laser scanning for bridge inspection?</button></h3>
-                                <div id="faqBC-q1" class="accordion-collapse collapse show" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>In this bridge inspection case study, mobile laser scanning completed the full project in about 6 hours versus roughly 7.5 days for terrestrial laser scanning (TLS): a 29x improvement in total project time, driven by a 16x faster field survey and a 144x faster dynamic object removal step.</p></div></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q2" aria-expanded="false">How accurate is mobile laser scanning compared to a TLS baseline?</button></h3>
-                                <div id="faqBC-q2" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>The mobile-scanned point cloud achieved under 1cm average accuracy when checked against the terrestrial laser scanning baseline, which is well within the tolerance required for bridge condition assessment and scan-to-BIM workflows.</p></div></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q3" aria-expanded="false">Why does terrestrial laser scanning take longer on a bridge?</button></h3>
-                                <div id="faqBC-q3" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>TLS is a static, tripod-based method: the scanner has to be set up, levelled and registered at every position, and a bridge of any length can require hundreds of individual setups. In this case, TLS needed 350 setups against 3 walking loops for the mobile scanner, and each TLS setup also restricts access to that section of the structure while it runs.</p></div></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q4" aria-expanded="false">What is dynamic object removal in point cloud processing?</button></h3>
-                                <div id="faqBC-q4" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>Dynamic object removal is the process of stripping moving objects: vehicles, pedestrians, passing traffic: out of a point cloud so only the static structure remains. Manual removal on a large TLS dataset can take days; an automated pipeline can complete the same cleanup in about an hour with roughly 90% of objects removed automatically.</p></div></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q5" aria-expanded="false">Does mobile laser scanning replace terrestrial laser scanning for infrastructure inspection?</button></h3>
-                                <div id="faqBC-q5" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>Not universally: TLS still delivers the highest static, survey-grade accuracy for critical structural detail. But for full-structure bridge condition surveys where field time, site access and turnaround matter, mobile SLAM-based scanning delivers comparable practical accuracy at a fraction of the time and site disruption.</p></div></div>
-                            </div>
-                        </div>
-
                     </div>
-
-                    <div class="detail-cta">
-                        <h2>Ready to Bring Faster Reality Capture to Your Next Bridge Survey?</h2>
-                        <p>Talk to Sentra's reality capture team about mobile laser scanning, scan-to-BIM and digital twin workflows for bridges, buildings and critical infrastructure.</p>
-                        <a class="cta-btn" href="/contact.html?enquiry=1&amp;product=Laser%20Scanners">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
+                    <div class="accordion" id="faqSlope" style="margin-top:2.5rem;">
+                        <h2 style="font-size:1.25rem;font-weight:600;text-transform:uppercase;margin-bottom:1rem;">
+                            Frequently Asked Questions</h2>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqSlope-q1" aria-expanded="true">What is slope stability monitoring in mining?</button></h2>
+                            <div id="faqSlope-q1" class="accordion-collapse collapse show" data-bs-parent="#faqSlope">
+                                <div class="accordion-body">
+                                    <p>Slope stability monitoring is the continuous measurement of movement, groundwater pressure and related conditions on pit walls, benches and waste dumps. Radar, survey prisms, GNSS receivers, inclinometers, piezometers and other sensors detect deformation early, so the mine can compare movement rates against agreed thresholds and clear people and equipment before a failure.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqSlope-q2" aria-expanded="false">What sensors are used for open-pit mine slope monitoring?</button></h2>
+                            <div id="faqSlope-q2" class="accordion-collapse collapse" data-bs-parent="#faqSlope">
+                                <div class="accordion-body">
+                                    <p>Most open-pit mines combine surface and subsurface instruments. Slope stability radar and robotic total stations with prisms cover large areas of the wall, GNSS receivers give continuous 3D displacement at key points, in-place inclinometers and extensometers show movement at depth, piezometers track groundwater pressure, and tiltmeters and crack meters watch specific structures and tension cracks.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqSlope-q3" aria-expanded="false">How much warning does slope monitoring give before a failure?</button></h2>
+                            <div id="faqSlope-q3" class="accordion-collapse collapse" data-bs-parent="#faqSlope">
+                                <div class="accordion-body">
+                                    <p>It depends on the failure mechanism and rock type. Many large slope failures go through a phase of accelerating movement lasting hours to weeks, which continuous monitoring can detect. Brittle, structurally controlled failures can give much less warning, which is why monitoring is paired with good geotechnical design, inspections and conservative exclusion zones.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header"><button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#faqSlope-q4" aria-expanded="false">What is a Trigger Action Response Plan (TARP) for slope monitoring?</button></h2>
+                            <div id="faqSlope-q4" class="accordion-collapse collapse" data-bs-parent="#faqSlope">
+                                <div class="accordion-body">
+                                    <p>A TARP is a pre-agreed plan that links monitoring thresholds to actions. Each alarm level, usually defined by movement velocity or acceleration, has named people and specific responses, from increased inspection at the lowest level to evacuation of the affected area at the highest. It ensures the mine reacts consistently when the data changes.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </article>
-
                 <aside class="detail-sidebar">
                     <div class="sidebar-sticky">
                         <div class="sidebar-card toc">
                             <h3><i class="fa-solid fa-list"></i> Table of Contents</h3>
                             <div id="tocContainer">
-                                <button class="toc-item" data-target="challengeSection">The Challenge</button>
-                                <button class="toc-item" data-target="fieldworkSection">Field Work Comparison</button>
-                                <button class="toc-item" data-target="processingSection">Processing Time Breakdown</button>
-                                <button class="toc-item" data-target="accuracySection">Accuracy Validation</button>
-                                <button class="toc-item" data-target="resultsSection">Results &amp; Deliverables</button>
-                                <button class="toc-item" data-target="takeawaysSection">Key Takeaways</button>
+                                <button class="toc-item" data-target="what-is-slope-monitoring">What Is Slope Monitoring?</button>
+                                <button class="toc-item" data-target="how-slopes-fail">How Pit Slopes Fail</button>
+                                <button class="toc-item" data-target="warning-signal">The Warning Signal</button>
+                                <button class="toc-item" data-target="sensor-toolkit">The Sensor Toolkit</button>
+                                <button class="toc-item" data-target="network-design">Designing the Network</button>
+                                <button class="toc-item" data-target="alarms-tarps">Alarms &amp; TARPs</button>
+                                <button class="toc-item" data-target="ConclusionSection">Takeaway</button>
                             </div>
                         </div>
-
                         <div class="sidebar-card">
                             <h3><i class="fa-regular fa-share-from-square"></i> Share</h3>
                             <div class="sidebar-share-icons">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" target="_blank" class="share-icon-link" aria-label="Share on Facebook" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html&text=Handheld%20SLAM%20vs.%20TLS%20for%20Highway%20Bridge%20Surveys" target="_blank" class="share-icon-link" aria-label="Share on Twitter" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" target="_blank" class="share-icon-link" aria-label="Share on LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://api.whatsapp.com/send?text=Handheld%20SLAM%20vs.%20TLS%20for%20Highway%20Bridge%20Surveys%20https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html" target="_blank" class="share-icon-link" aria-label="Share on WhatsApp" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/blogs/slope-stability-monitoring-mining.html"
+                                    target="_blank" class="share-icon-link" rel="noopener"><i
+                                        class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/blogs/slope-stability-monitoring-mining.html&text=Slope%20Stability%20Monitoring%20in%20Mining"
+                                    target="_blank" class="share-icon-link" rel="noopener"><i
+                                        class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/blogs/slope-stability-monitoring-mining.html"
+                                    target="_blank" class="share-icon-link" rel="noopener"><i
+                                        class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://api.whatsapp.com/send?text=Slope%20Stability%20Monitoring%20in%20Mining%20https://sentratech.in/blogs/slope-stability-monitoring-mining.html"
+                                    target="_blank" class="share-icon-link" rel="noopener"><i
+                                        class="fa-brands fa-whatsapp"></i></a>
                             </div>
                         </div>
-
-                        <div class="sidebar-card">
-                            <h3><i class="fa-regular fa-bookmark"></i> Related Solutions</h3>
-                            <div style="display:flex;flex-direction:column;gap:8px;">
-                                <a href="../solutions/bridge-inspection-and-condition-assessment.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Bridge Inspection &amp; Condition Assessment</a>
-                                <a href="../products/laser-scanners.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Laser Scanners</a>
-                                <a href="../solutions/digital-twin.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Digital Twin</a>
-                                <a href="../solutions/asset-monitoring-and-management-solutions.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Asset Monitoring &amp; Management</a>
-                            </div>
-                        </div>
-
-                        <a href="../resources.html#articles" class="back-btn" style="position:static;display:flex;width:100%;justify-content:center;"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+                        <a href="../resources.html#blogs" class="back-btn"
+                            style="position:static;display:flex;width:100%;justify-content:center;"><i
+                                class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
                     </div>
                 </aside>
             </div>
         </div>
-
-        <!-- More Articles -->
+        <!-- ── More Blogs ── -->
         <div class="hero-container" style="max-width:1280px;margin:0 auto;padding:0 1rem 4rem">
             <div class="trending-section">
-                <div class="trending-header">
+                <div class="cs-section-label">
                     <span class="trending-dot"></span>
-                    <h2>More Articles</h2>
+                    <h2>More Blogs</h2>
                 </div>
                 <div class="trending-grid">
-                    <a href="../article/3d-laser-scanning-lidar-infrastructure-digital-twins.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp" alt="3D Laser Scanning and LiDAR for Infrastructure" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <a href="../blogs/gnss-displacement-monitoring-satellite-sensors.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blogs_gnss-displacement-monitoring.webp" alt="GNSS Displacement Monitoring: How Satellite Sensors Detect Movement" loading="lazy"
+                                style="width:100%;height:100%;object-fit:cover;"></div>
                         <div class="trending-card-body">
-                            <h4>3D Laser Scanning &amp; LiDAR for Infrastructure Digital Twins</h4>
-                            <div class="trending-card-meta"><span>Digital Twin</span><span>&middot;</span><span>Article</span></div>
+                            <h4>GNSS Displacement Monitoring: How Satellite Sensors Detect Movement</h4>
+                            <div class="trending-card-meta"><span>Geotechnical</span><span>&middot;</span><span>Blog</span></div>
                         </div>
                     </a>
-                    <a href="../article/track-to-the-future-remote-monitoring-rail-infrastructure.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/articles/article_track-to-the-future-remote-monitoring-rail-infrastructure.webp" alt="Rail Infrastructure Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <a href="../blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blogs_what-is-an-inclinometer-digital-tiltmeter-guide.webp" alt="What Is an Inclinometer? Digital Tiltmeters Explained" loading="lazy"
+                                style="width:100%;height:100%;object-fit:cover;"></div>
                         <div class="trending-card-body">
-                            <h4>Track to the Future: Remote Monitoring for Rail Infrastructure</h4>
-                            <div class="trending-card-meta"><span>Rail Infrastructure</span><span>&middot;</span><span>Article</span></div>
+                            <h4>What Is an Inclinometer? Digital Tiltmeters Explained</h4>
+                            <div class="trending-card-meta"><span>Sensor Technology</span><span>&middot;</span><span>Blog</span></div>
                         </div>
                     </a>
-                    <a href="../article/ai-infrastructure-monitoring.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/articles/articles_ai_for_bridge_monitoring.webp" alt="AI for Infrastructure Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
+                    <a href="../blogs/dam-safety-monitoring-lidar-drones-digital-twins.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp" alt="Dam Safety Monitoring with LiDAR, Drones and Digital Twins" loading="lazy"
+                                style="width:100%;height:100%;object-fit:cover;"></div>
                         <div class="trending-card-body">
-                            <h4>AI for Infrastructure Monitoring</h4>
-                            <div class="trending-card-meta"><span>AI Monitoring</span><span>&middot;</span><span>Article</span></div>
+                            <h4>Dam Safety Monitoring with LiDAR, Drones &amp; Digital Twins</h4>
+                            <div class="trending-card-meta"><span>Dams</span><span>&middot;</span><span>Blog</span></div>
                         </div>
                     </a>
                 </div>
@@ -1804,8 +1998,8 @@
         </div>
     </main>
 
-    <footer>
-        <div id="footer"><div class="section-footer">
+    <!-- Section Footer -->
+    <div id="footer"><div class="section-footer">
     <div class="bg-footer-wrapper">
         <div class="bg-footer">
             <div class="hero-container position-relative z-2">
@@ -2089,147 +2283,294 @@
         initQR();
     })();
 </script></div>
-    </footer>
 
     <script>
         (function () {
             const synth = window.speechSynthesis;
-            let voices = [], isPlaying = false, isPaused = false, totalWords = 0;
-            let currentWordIndex = 0, wordSpans = [], paragraphs = [], currentParagraphIndex = 0;
-            let activeUtterance = null, fallbackTimer = null, boundarySupported = false;
-            let autoScrollEnabled = true, mouseIdleTimer;
+            let voices = [];
+            let isPlaying = false;
+            let isPaused = false;
+            let totalWords = 0;
+            let currentWordIndex = 0;
+            let wordSpans = [];
+            let paragraphs = [];
+            let currentParagraphIndex = 0;
+            let activeUtterance = null;
+            let fallbackTimer = null;
+            let boundarySupported = false;
+            let autoScrollEnabled = true;
+            let mouseIdleTimer;
 
             const ttsContent = document.getElementById('ttsContent');
             const playBtn = document.getElementById('ttsPlayBtn');
             const progressFill = document.getElementById('progressFill');
             const progressBar = document.getElementById('ttsProgressBar');
 
-            function loadVoices() { voices = synth.getVoices() || []; }
+            function loadVoices() {
+                voices = synth.getVoices() || [];
+            }
             loadVoices();
-            if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = loadVoices;
+            if (speechSynthesis.onvoiceschanged !== undefined) {
+                speechSynthesis.onvoiceschanged = loadVoices;
+            }
 
-            function pickVoice() {
-                return voices.find(v => /Google US English|Samantha|en-US/i.test(v.name + ' ' + v.lang)) || voices[0];
+            function pickFemaleVoice() {
+                const femaleCandidates = voices.filter(v => /Deepa|Joanna|Google Translate|female|woman|Google US English|Samantha|Alloy|Amy|Emma|en-US/i.test(v.name + ' ' + v.lang));
+                return femaleCandidates[0] || voices.find(v => /en-?us|en-?gb/i.test(v.lang)) || voices[0];
+            }
+
+            function pickMaleVoice() {
+                const maleCandidates = voices.filter(v => /Sundar|Google Translate|male|man|Google UK English|Daniel|Alex|en-?gb|en-?au/i.test(v.name + ' ' + v.lang));
+                return maleCandidates[0] || voices.find(v => /en-?us|en-?gb/i.test(v.lang)) || voices[0];
             }
 
             document.addEventListener('mousemove', () => {
                 autoScrollEnabled = false;
                 clearTimeout(mouseIdleTimer);
-                mouseIdleTimer = setTimeout(() => { autoScrollEnabled = true; }, 5000);
+                mouseIdleTimer = setTimeout(() => {
+                    autoScrollEnabled = true;
+                }, 5000);
             });
 
             function wrapWords() {
-                ttsContent.querySelectorAll('p, h2, h4, h5, li').forEach(el => {
+                const elements = ttsContent.querySelectorAll('p, h2, h4, li');
+                elements.forEach(el => {
                     if (el.querySelector('.word')) return;
                     const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
-                    const nodes = [];
-                    let n;
-                    while (n = walker.nextNode()) { if (n.textContent.trim()) nodes.push(n); }
-                    nodes.forEach(tn => {
-                        const frag = document.createDocumentFragment();
-                        tn.textContent.split(/(\s+)/).forEach(tok => {
-                            if (/\s+/.test(tok)) { frag.appendChild(document.createTextNode(tok)); }
-                            else if (tok) { const s = document.createElement('span'); s.className = 'word'; s.textContent = tok; frag.appendChild(s); totalWords++; }
+                    const textNodes = [];
+                    let node;
+                    while (node = walker.nextNode()) {
+                        if (node.textContent.trim()) textNodes.push(node);
+                    }
+                    textNodes.forEach(textNode => {
+                        const tokens = textNode.textContent.split(/(\s+)/);
+                        const fragment = document.createDocumentFragment();
+                        tokens.forEach(tok => {
+                            if (/\s+/.test(tok)) {
+                                fragment.appendChild(document.createTextNode(tok));
+                            } else if (tok) {
+                                const span = document.createElement('span');
+                                span.className = 'word';
+                                span.textContent = tok;
+                                fragment.appendChild(span);
+                                totalWords++;
+                            }
                         });
-                        tn.parentNode.replaceChild(frag, tn);
+                        textNode.parentNode.replaceChild(fragment, textNode);
                     });
                 });
                 wordSpans = Array.from(ttsContent.querySelectorAll('.word'));
             }
             wrapWords();
 
-            function getParagraphs() { paragraphs = Array.from(ttsContent.querySelectorAll('p, h2, h4, h5, li')).filter(el => el.textContent.trim()); }
+            function getParagraphs() {
+                const elements = ttsContent.querySelectorAll('p, h2, h4, li');
+                paragraphs = Array.from(elements).filter(el => el.textContent.trim() !== '');
+            }
             getParagraphs();
 
-            function computeBoundaries(text) {
-                const words = text.split(/\s+/).filter(Boolean), bounds = [];
+            function computeWordBoundaries(text) {
+                const words = text.split(/\s+/).filter(Boolean);
+                const boundaries = [];
                 let cursor = 0;
-                words.forEach(w => { const f = text.indexOf(w, cursor); bounds.push(f === -1 ? cursor : f); cursor = (f === -1 ? cursor : f) + w.length; });
-                return bounds;
+                for (let i = 0; i < words.length; i++) {
+                    const w = words[i];
+                    const found = text.indexOf(w, cursor);
+                    if (found === -1) {
+                        boundaries.push(cursor);
+                        cursor += w.length;
+                    } else {
+                        boundaries.push(found);
+                        cursor = found + w.length;
+                    }
+                }
+                return boundaries;
             }
 
-            function scrollCenter(el) { if (el && autoScrollEnabled) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
-            function clearTimer() { if (fallbackTimer) { clearInterval(fallbackTimer); fallbackTimer = null; } }
+            function clearAllHighlights() {
+                wordSpans.forEach(w => w.classList.remove('highlight'));
+            }
+
+            function scrollIntoCenter(el) {
+                if (!el) return;
+                if (autoScrollEnabled) {
+                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                }
+            }
+
+            function clearFallbackTimer() {
+                if (fallbackTimer) {
+                    clearInterval(fallbackTimer);
+                    fallbackTimer = null;
+                }
+            }
 
             function speakFrom(index) {
-                clearTimer(); boundarySupported = false;
+                clearFallbackTimer();
+                boundarySupported = false;
+
                 if (index >= paragraphs.length) {
-                    isPlaying = isPaused = false;
+                    isPlaying = false;
+                    isPaused = false;
                     playBtn.innerHTML = '<i class="fas fa-play"></i>';
-                    currentParagraphIndex = currentWordIndex = 0;
+                    currentParagraphIndex = 0;
+                    currentWordIndex = 0;
                     progressFill.style.width = '0%';
                     return;
                 }
+
                 currentParagraphIndex = index;
-                const p = paragraphs[index], text = p.textContent.trim();
-                if (!text) { speakFrom(index + 1); return; }
-                const bounds = computeBoundaries(text);
-                const spans = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim());
-                spans.forEach(w => w.classList.remove('highlight'));
-                const u = new SpeechSynthesisUtterance(text);
-                activeUtterance = u; u.lang = 'en-US'; u.rate = 1.1; u.pitch = 1.1;
-                const v = pickVoice(); if (v) u.voice = v;
-                const fps = Math.max(120, Math.round(1000 / (3.0 * u.rate)));
+                const p = paragraphs[index];
+                const role = (p.getAttribute('data-voice') || 'female').toLowerCase();
+                const voice = role === 'male' ? pickMaleVoice() : pickFemaleVoice();
+                const utterText = p.textContent.trim();
+                if (!utterText) {
+                    speakFrom(index + 1);
+                    return;
+                }
+
+                const boundaries = computeWordBoundaries(utterText);
+                const wordSpansInP = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim() !== '');
+                wordSpansInP.forEach(w => w.classList.remove('highlight'));
+
+                const u = new SpeechSynthesisUtterance(utterText);
+                activeUtterance = u;
+                u.lang = 'en-US';
+                u.rate = role === 'male' ? 0.9 : 1.3;
+                u.pitch = 1.2;
+                if (voice) u.voice = voice;
+
+                const wordsPerSecondBase = 3.0 * u.rate;
+                const fallbackIntervalMs = Math.max(120, Math.round(1000 / wordsPerSecondBase));
+
                 u.onstart = () => {
-                    isPlaying = true; isPaused = false;
+                    isPlaying = true;
+                    isPaused = false;
                     playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+
                     currentWordIndex = 0;
-                    if (spans[0]) { spans[0].classList.add('highlight'); scrollCenter(spans[0]); }
-                    fallbackTimer = setInterval(() => {
-                        if (boundarySupported || !isPlaying || isPaused) { clearTimer(); return; }
-                        if (currentWordIndex < spans.length - 1) {
-                            spans[currentWordIndex].classList.remove('highlight');
-                            spans[++currentWordIndex].classList.add('highlight');
-                            scrollCenter(spans[currentWordIndex]);
-                        }
-                    }, fps);
-                };
-                u.onboundary = (ev) => {
-                    boundarySupported = true; clearTimer();
-                    const ci = ev.charIndex || 0;
-                    let wi = 0;
-                    for (let i = 0; i < bounds.length; i++) {
-                        const end = i < bounds.length - 1 ? bounds[i + 1] : text.length;
-                        if (ci >= bounds[i] && ci < end) { wi = i; break; }
-                        if (i === bounds.length - 1) wi = bounds.length - 1;
+                    if (wordSpansInP.length > 0) {
+                        wordSpansInP.forEach(w => w.classList.remove('highlight'));
+                        const first = wordSpansInP[0];
+                        first.classList.add('highlight');
+                        scrollIntoCenter(first);
                     }
-                    wi = Math.min(Math.max(wi, 0), spans.length - 1);
+
+                    fallbackTimer = setInterval(() => {
+                        if (boundarySupported) return;
+                        if (!isPlaying || isPaused) { clearFallbackTimer(); return; }
+
+                        if (currentWordIndex < wordSpansInP.length - 1) {
+                            wordSpansInP[currentWordIndex].classList.remove('highlight');
+                            currentWordIndex++;
+                            wordSpansInP[currentWordIndex].classList.add('highlight');
+                            scrollIntoCenter(wordSpansInP[currentWordIndex]);
+                        }
+                    }, fallbackIntervalMs);
+                };
+
+                u.onboundary = (ev) => {
+                    boundarySupported = true;
+                    clearFallbackTimer();
+
+                    const charIndex = ev.charIndex || 0;
+                    let wi = 0;
+                    for (let i = 0; i < boundaries.length; i++) {
+                        const start = boundaries[i];
+                        const end = (i < boundaries.length - 1) ? boundaries[i + 1] : utterText.length;
+                        if (charIndex >= start && charIndex < end) {
+                            wi = i;
+                            break;
+                        }
+                        if (i === boundaries.length - 1) wi = boundaries.length - 1;
+                    }
+
+                    wi = Math.min(wi, wordSpansInP.length - 1);
+                    if (wi < 0) wi = 0;
+
                     if (wi !== currentWordIndex) {
-                        if (spans[currentWordIndex]) spans[currentWordIndex].classList.remove('highlight');
-                        if (spans[wi]) { spans[wi].classList.add('highlight'); scrollCenter(spans[wi]); }
+                        if (wordSpansInP[currentWordIndex]) wordSpansInP[currentWordIndex].classList.remove('highlight');
+                        if (wordSpansInP[wi]) {
+                            wordSpansInP[wi].classList.add('highlight');
+                            scrollIntoCenter(wordSpansInP[wi]);
+                        }
                         currentWordIndex = wi;
                     }
                 };
+
                 u.onend = () => {
                     p.querySelectorAll('.word.highlight').forEach(w => w.classList.remove('highlight'));
-                    activeUtterance = null; clearTimer();
-                    if (isPlaying && !isPaused) speakFrom(index + 1);
-                    else { isPlaying = isPaused = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
+                    activeUtterance = null;
+                    clearFallbackTimer();
+
+                    if (isPlaying && !isPaused) {
+                        speakFrom(index + 1);
+                    } else {
+                        isPlaying = false;
+                        isPaused = false;
+                        playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    }
                 };
-                u.onerror = () => { activeUtterance = null; isPlaying = false; clearTimer(); playBtn.innerHTML = '<i class="fas fa-play"></i>'; };
-                try { synth.speak(u); } catch(e) {}
-                progressFill.style.width = ((index + 1) / paragraphs.length * 100) + '%';
+
+                u.onerror = (err) => {
+                    console.error('Speech error', err);
+                    activeUtterance = null;
+                    isPlaying = false;
+                    clearFallbackTimer();
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                };
+
+                try {
+                    synth.speak(u);
+                } catch (e) {
+                    console.error('synth.speak error:', e);
+                }
+
+                const progress = ((index + 1) / paragraphs.length) * 100;
+                progressFill.style.width = progress + '%';
             }
 
+
             playBtn.addEventListener('click', () => {
-                if (!voices.length) loadVoices();
-                if (isPlaying && !isPaused) { synth.pause(); isPaused = true; isPlaying = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
-                else if (isPaused) { synth.resume(); isPaused = false; isPlaying = true; playBtn.innerHTML = '<i class="fas fa-pause"></i>'; }
-                else { if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0; speakFrom(currentParagraphIndex); }
+                if (!voices || voices.length === 0) loadVoices();
+
+                if (isPlaying && !isPaused) {
+                    synth.pause();
+                    isPaused = true;
+                    isPlaying = false;
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                } else if (isPaused) {
+                    synth.resume();
+                    isPaused = false;
+                    isPlaying = true;
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                } else {
+                    if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0;
+                    speakFrom(currentParagraphIndex);
+                }
             });
 
             progressBar.addEventListener('click', (e) => {
-                const pct = (e.clientX - progressBar.getBoundingClientRect().left) / progressBar.clientWidth;
-                if (synth.speaking) synth.cancel();
-                wordSpans.forEach(w => w.classList.remove('highlight'));
-                clearTimer();
-                currentParagraphIndex = Math.floor(pct * paragraphs.length);
-                speakFrom(currentParagraphIndex);
+                const rect = progressBar.getBoundingClientRect();
+                const clickX = e.clientX - rect.left;
+                const percentage = clickX / rect.width;
+                const targetIndex = Math.floor(percentage * paragraphs.length);
+                if (synth.speaking) {
+                    synth.cancel();
+                }
+                clearAllHighlights();
+                clearFallbackTimer();
+                currentParagraphIndex = targetIndex;
+                speakFrom(targetIndex);
             });
 
-            window.addEventListener('beforeunload', () => { if (synth.speaking) synth.cancel(); });
+            window.addEventListener('beforeunload', () => {
+                if (synth && synth.speaking) synth.cancel();
+            });
         })();
     </script>
+
+
 
     <script src="../js/vendor/jquery.min.js"></script>
     <script src="../js/vendor/bootstrap.bundle.min.js"></script>
@@ -2238,8 +2579,6 @@
     <script src="../js/swiper-script.js"></script>
     <script src="../js/submit-form.js"></script>
     <script src="../js/video_embedded.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
-    <script src="../js/chatbot-widget.js"></script>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -2251,19 +2590,27 @@
                 btn.addEventListener('click', function () {
                     var el = document.getElementById(this.getAttribute('data-target'));
                     if (el) {
-                        var h = (document.querySelector('header') || {getBoundingClientRect:()=>({height:0})}).getBoundingClientRect().height;
-                        window.scrollTo({ top: Math.max(el.getBoundingClientRect().top + window.scrollY - h - 80, 0), behavior: 'smooth' });
+                        var header = document.querySelector('header');
+                        var h = header ? header.getBoundingClientRect().height : 0;
+                        var y = el.getBoundingClientRect().top + window.scrollY - h - 80;
+                        window.scrollTo({ top: Math.max(y, 0), behavior: 'smooth' });
                     }
                 });
             });
             window.addEventListener('scroll', function () {
-                var scrollY = window.scrollY + 200, active = null;
-                sections.forEach(function (s) { if (s.target.offsetTop <= scrollY) active = s; });
+                var scrollY = window.scrollY + 200;
+                var active = null;
+                sections.forEach(function (s) {
+                    if (s.target.offsetTop <= scrollY) active = s;
+                });
                 tocItems.forEach(function (b) { b.classList.remove('active'); });
                 if (active) active.btn.classList.add('active');
             });
         });
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="../js/chatbot-widget.js"></script>
 </body>
 
 </html>

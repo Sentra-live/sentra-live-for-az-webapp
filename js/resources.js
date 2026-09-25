@@ -9,6 +9,18 @@
     var RESOURCES = [
         // ---------- Blogs ----------
         {
+            id: 'blog-slope-stability-monitoring-mining',
+            title: 'Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines',
+            excerpt: 'How open-pit slopes fail, the accelerating movement that warns of collapse, and how radar, prisms, GNSS, inclinometers and piezometers feed alarm thresholds and response plans.',
+            category: 'Mining',
+            color: 'rose',
+            type: 'blogs',
+            date: '25 Sep 2026',
+            image: './image/blogs/banners/blogs_slope-stability-monitoring-mining.webp',
+            link: './blogs/slope-stability-monitoring-mining.html',
+            featured: true
+        },
+        {
             id: 'blog-what-is-strain-gauge',
             title: 'What Is a Strain Gauge? Types, Working Principle & Applications',
             excerpt: 'How strain gauges work, the gauge factor formula, the main types (foil, semiconductor, rosette, vibrating wire), and where they fit in structural monitoring.',
@@ -60,7 +72,7 @@
             category: 'Dams',
             color: 'orange',
             type: 'blogs',
-            date: '10 Sep 2026',
+            date: '16 Sep 2026',
             image: './image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp',
             link: './blogs/dam-safety-monitoring-lidar-drones-digital-twins.html',
             featured: true
@@ -239,6 +251,18 @@
 
         // ---------- Case Studies ----------
         {
+            id: 'cs-handheld-slam-vs-tls-highway-bridge-surveys',
+            title: 'Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study',
+            excerpt: 'Comparison study: handheld SLAM scanning cut highway bridge survey field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup.',
+            category: 'Comparison Study',
+            color: 'orange',
+            type: 'case-studies',
+            date: '17 Sep 2026',
+            image: './image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp',
+            link: './case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html',
+            featured: true
+        },
+        {
             id: 'cs-railway-fatigue-life',
             title: 'Railway Bridge Fatigue Life Assessment and Load Testing',
             excerpt: 'Instrumentation, controlled load testing, FE model calibration and residual fatigue life assessment of two steel railway bridges ahead of higher axle loads.',
@@ -299,6 +323,18 @@
 
         // ---------- Articles ----------
         {
+            id: 'art-port-marine-infrastructure-monitoring',
+            title: 'Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures',
+            excerpt: 'How port infrastructure monitoring protects jetties, quay walls and offshore structures: corrosion, tilt, settlement, berthing and mooring loads, sensors and implementation.',
+            category: 'Ports',
+            color: 'blue',
+            type: 'articles',
+            date: '25 Sep 2026',
+            image: './image/articles/article_port-marine-infrastructure-monitoring.webp',
+            link: './article/port-marine-infrastructure-monitoring.html',
+            featured: true
+        },
+        {
             id: 'art-predictive-maintenance-industrial',
             title: 'Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure',
             excerpt: 'What IoT vibration sensors measure, which failure modes they catch weeks early, and how to build a predictive maintenance program that protects asset uptime.',
@@ -343,18 +379,6 @@
             date: '15 Aug 2026',
             image: './image/articles/articles_ai_for_bridge_monitoring.webp',
             link: './article/ai-infrastructure-monitoring.html',
-            featured: true
-        },
-        {
-            id: 'art-handheld-slam-vs-tls-highway-bridge-surveys',
-            title: 'Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study',
-            excerpt: 'Comparison study: handheld SLAM scanning cut highway bridge survey field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup.',
-            category: 'Comparison Study',
-            color: 'orange',
-            type: 'articles',
-            date: '17 Sep 2026',
-            image: './image/articles/article_handheld-slam-vs-tls-highway-bridge-surveys.webp',
-            link: './article/handheld-slam-vs-tls-highway-bridge-surveys.html',
             featured: true
         },
         {

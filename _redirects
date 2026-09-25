@@ -23,6 +23,10 @@
 /products/k20-edge-repeater.html /products/repeater.html    301
 /products/thread-x3.html         /products/thread.html      301
 
+# Content moved between sections
+/article/handheld-slam-vs-tls-highway-bridge-surveys.html  /case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html  301
+/article/handheld-slam-vs-tls-highway-bridge-surveys       /case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html  301
+
 /api/* https://veronica-sentra-prod.subharam-v.workers.dev/api/:splat 200
 
 # Section index URLs that Google has indexed but that have no page of their

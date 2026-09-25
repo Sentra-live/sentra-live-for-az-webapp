@@ -3,7 +3,7 @@
 > Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup.
 
 Published: 2026-09-17  
-Source: https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html
+Source: https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html
 
 A side-by-side bridge condition survey pitted a mobile SLAM-based scanner, the XGRIDS L2 Pro, against a conventional terrestrial laser scanning (TLS) workflow built around a static scanner such as the RTC360. The mobile workflow finished the entire project in about 6 hours against roughly 7.5 days for TLS: while holding accuracy to under 1cm against the TLS baseline.
 

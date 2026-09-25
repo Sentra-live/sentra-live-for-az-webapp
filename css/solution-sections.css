@@ -1,0 +1,1536 @@
+/* ==========================================================================
+   Solution pages: section designs below the hero (What We Do, outcomes
+   bento, system flow, benefits, risks, industries, CTA). Loaded by every
+   solutions/*.html page after solutions-v2.css. Animations live in
+   js/solution-sections.js (GSAP).
+   ========================================================================== */
+
+.solx-wwd,
+.solx-outcomes,
+.solx-system,
+.solx-benefits,
+.solx-risks,
+.solx-industries,
+.solx-cta {
+    --shm-orange: #f48120;
+    --shm-orange-deep: #ba5a09;
+    --shm-card: rgba(255, 255, 255, .03);
+    --shm-card-hover: rgba(255, 255, 255, .055);
+    --shm-line: rgba(255, 255, 255, .08);
+    --shm-text: #fff;
+    --shm-muted: rgba(255, 255, 255, .62);
+}
+
+body.lightmode .solx-wwd,
+body.lightmode .solx-outcomes,
+body.lightmode .solx-system,
+body.lightmode .solx-benefits,
+body.lightmode .solx-risks,
+body.lightmode .solx-industries,
+body.lightmode .solx-cta {
+    --shm-card: #fff;
+    --shm-card-hover: #fff;
+    --shm-line: rgba(0, 0, 0, .08);
+    --shm-text: #1a1a1a;
+    --shm-muted: #555;
+}
+
+/* ---------- Shared ---------- */
+
+.solx-head {
+    max-width: 700px;
+    margin-bottom: 48px;
+}
+
+.solx-head--split {
+    max-width: none;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 48px;
+    align-items: end;
+}
+
+.solx-head--split .sol-section-subtitle {
+    margin: 0;
+}
+
+.solx-head--center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.solx-head--center .sol-eyebrow {
+    justify-content: center;
+}
+
+.solx-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--shm-orange);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.solx-link i {
+    font-size: 12px;
+    transition: transform .25s ease;
+}
+
+.solx-link:hover {
+    color: var(--shm-orange);
+}
+
+.solx-link:hover i,
+a:hover > .solx-link i,
+a:hover .solx-param-sensor i {
+    transform: translateX(4px);
+}
+
+.solx-live-dot {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    flex-shrink: 0;
+}
+
+.solx-live-dot::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid #22c55e;
+    opacity: 0;
+    animation: solx-ping 1.8s ease-out infinite;
+}
+
+@keyframes solx-ping {
+    0% { transform: scale(.5); opacity: .8; }
+    100% { transform: scale(1.6); opacity: 0; }
+}
+
+/* ---------- 2. What We Do ---------- */
+
+.solx-wwd-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 32px;
+    align-items: stretch;
+}
+
+.solx-wwd-story {
+    padding: 36px;
+    border-radius: 24px;
+    background: var(--shm-card);
+    border: 1px solid var(--shm-line);
+}
+
+.solx-wwd-story h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--shm-text);
+    margin: 0 0 16px;
+}
+
+.solx-wwd-story p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--shm-muted);
+    margin: 0 0 14px;
+}
+
+.solx-wwd-story p a {
+    color: var(--shm-orange);
+}
+
+.solx-checks {
+    list-style: none;
+    padding: 0;
+    margin: 22px 0 28px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+}
+
+.solx-checks li {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--shm-text);
+}
+
+.solx-checks i {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    color: #fff;
+    background: var(--shm-orange-deep);
+    margin-top: 1px;
+}
+
+.solx-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 24px;
+}
+
+.solx-wwd-media {
+    position: relative;
+    margin: 0;
+    border-radius: 24px;
+    overflow: hidden;
+    min-height: 420px;
+    background: #111;
+}
+
+.solx-wwd-media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 115%;
+    object-fit: cover;
+    will-change: transform;
+}
+
+.solx-wwd-media::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, .7) 100%);
+    pointer-events: none;
+}
+
+.solx-live-chip {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    background: rgba(0, 0, 0, .45);
+    border: 1px solid rgba(255, 255, 255, .18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.solx-media-stack {
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.solx-media-stack span {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff;
+    background: rgba(255, 255, 255, .12);
+    border: 1px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.solx-media-stack i {
+    color: var(--shm-orange);
+}
+
+.solx-measure {
+    margin-top: 72px;
+}
+
+.solx-measure-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 8px 24px;
+    margin-bottom: 24px;
+}
+
+.solx-measure-head h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--shm-text);
+    margin: 0;
+}
+
+.solx-measure-head p {
+    font-size: 14px;
+    color: var(--shm-muted);
+    margin: 0;
+}
+
+.solx-param-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.solx-param {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 24px;
+    border-radius: 18px;
+    background: var(--shm-card);
+    border: 1px solid var(--shm-line);
+    color: inherit;
+    text-decoration: none;
+    overflow: hidden;
+    transition: border-color .3s ease, background-color .3s ease, transform .3s ease;
+}
+
+.solx-param::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(260px circle at var(--mx, 50%) var(--my, 0%), rgba(244, 129, 32, .14), transparent 70%);
+    opacity: 0;
+    transition: opacity .3s ease;
+    pointer-events: none;
+}
+
+.solx-param:hover {
+    border-color: rgba(244, 129, 32, .45);
+    background: var(--shm-card-hover);
+    transform: translateY(-4px);
+}
+
+.solx-param:hover::before {
+    opacity: 1;
+}
+
+.solx-param-icon,
+.solx-benefit-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--shm-orange);
+    background: rgba(244, 129, 32, .12);
+    transition: background-color .3s ease, color .3s ease, transform .3s ease;
+}
+
+.solx-param:hover .solx-param-icon,
+.solx-benefit:hover .solx-benefit-icon {
+    background: var(--shm-orange-deep);
+    color: #fff;
+    transform: rotate(-6deg) scale(1.05);
+}
+
+.solx-param h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--shm-text);
+    margin: 6px 0 0;
+}
+
+.solx-param p {
+    font-size: 13px;
+    line-height: 1.6;
+    color: var(--shm-muted);
+    margin: 0;
+    flex: 1;
+}
+
+.solx-param-sensor {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--shm-orange);
+}
+
+.solx-param-sensor i {
+    font-size: 10px;
+    transition: transform .25s ease;
+}
+
+.solx-param-sensor--plain {
+    color: var(--shm-muted);
+    font-weight: 600;
+}
+
+/* ---------- Measurable Outcomes (bento) ---------- */
+
+.solx-bento {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr .9fr;
+    grid-template-areas:
+        "big photo dark"
+        "big photo accent"
+        "wide wide outline";
+    gap: 16px;
+}
+
+.solx-tile {
+    position: relative;
+    margin: 0;
+    border-radius: 24px;
+    padding: 28px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.solx-tile--big {
+    grid-area: big;
+    justify-content: space-between;
+    color: #fff;
+    background:
+        radial-gradient(420px circle at 85% 10%, rgba(255, 255, 255, .18), transparent 60%),
+        linear-gradient(145deg, #e8730f 0%, #b04f05 100%);
+    min-height: 420px;
+}
+
+.solx-tile--big::after {
+    content: '';
+    position: absolute;
+    right: -60px;
+    bottom: -60px;
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    border: 40px solid rgba(255, 255, 255, .08);
+    pointer-events: none;
+}
+
+.solx-tile--photo {
+    grid-area: photo;
+    padding: 0;
+    background: #111;
+}
+
+.solx-tile--wide {
+    grid-area: wide;
+    padding: 0;
+    background: #111;
+    min-height: 240px;
+}
+
+.solx-tile--dark {
+    grid-area: dark;
+    background: #141414;
+    border: 1px solid rgba(255, 255, 255, .08);
+    color: #fff;
+}
+
+.solx-tile--accent {
+    grid-area: accent;
+    background: linear-gradient(145deg, #e8730f 0%, #b04f05 100%);
+    color: #fff;
+}
+
+.solx-tile--outline {
+    grid-area: outline;
+    background: var(--shm-card);
+    border: 1px solid rgba(244, 129, 32, .45);
+    color: var(--shm-text);
+}
+
+.solx-tile--photo img,
+.solx-tile--wide img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s cubic-bezier(.2, .7, .2, 1);
+}
+
+.solx-tile--photo:hover img,
+.solx-tile--wide:hover img {
+    transform: scale(1.06);
+}
+
+.solx-tile--photo::after,
+.solx-tile--wide::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, .78) 100%);
+    pointer-events: none;
+}
+
+.solx-tile--photo figcaption,
+.solx-tile--wide figcaption {
+    position: absolute;
+    left: 24px;
+    right: 24px;
+    bottom: 22px;
+    z-index: 2;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.solx-tile--wide figcaption strong {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.solx-tile--wide figcaption span {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, .8);
+}
+
+.solx-tile-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    opacity: .85;
+}
+
+.solx-tile-num {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -.5px;
+    margin-top: auto;
+    padding-top: 18px;
+    font-variant-numeric: tabular-nums;
+}
+
+.solx-tile--big .solx-tile-num {
+    font-size: clamp(48px, 5vw, 64px);
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.solx-tile--outline .solx-tile-num {
+    color: var(--shm-orange);
+}
+
+.solx-tile-caption {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 10px 0 0;
+    color: inherit;
+    opacity: .85;
+}
+
+.solx-tile--big .solx-tile-caption {
+    font-size: 16px;
+    max-width: 320px;
+}
+
+.solx-tile-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.solx-tile-pills span {
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    background: rgba(255, 255, 255, .16);
+    border: 1px solid rgba(255, 255, 255, .25);
+}
+
+body.lightmode .solx-tile--dark {
+    background: #1a1a1a;
+}
+
+/* ---------- The SHM System ---------- */
+
+.solx-flow {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.solx-flow-track {
+    position: absolute;
+    top: 32px;
+    left: 32px;
+    right: calc((100% - 72px) / 4 - 32px);
+    height: 2px;
+    background: var(--shm-line);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.solx-flow-fill {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, var(--shm-orange-deep), var(--shm-orange));
+    transform-origin: left center;
+    transform: scaleX(1);
+}
+
+.solx-flow-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.solx-flow-node {
+    position: relative;
+    z-index: 1;
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: var(--shm-orange);
+    background: #0f0f0f;
+    border: 1px solid rgba(244, 129, 32, .35);
+    margin-bottom: 8px;
+    transition: background-color .4s ease, color .4s ease, box-shadow .4s ease;
+}
+
+body.lightmode .solx-flow-node {
+    background: #fff;
+}
+
+.solx-flow-step.is-on .solx-flow-node {
+    background: var(--shm-orange-deep);
+    color: #fff;
+    box-shadow: 0 0 0 6px rgba(244, 129, 32, .15), 0 10px 30px rgba(244, 129, 32, .25);
+}
+
+.solx-flow-idx {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--shm-orange);
+}
+
+.solx-flow-step h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--shm-text);
+    margin: 0;
+}
+
+.solx-flow-step p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--shm-muted);
+    margin: 0;
+}
+
+.solx-tiers {
+    margin-top: 64px;
+    padding: 32px;
+    border-radius: 24px;
+    background: var(--shm-card);
+    border: 1px solid var(--shm-line);
+    display: grid;
+    grid-template-columns: .8fr 2fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.solx-tiers-head h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--shm-text);
+    margin: 0 0 8px;
+}
+
+.solx-tiers-head p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--shm-muted);
+    margin: 0;
+}
+
+.solx-tier-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.solx-tier {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.solx-tier-bar {
+    height: 6px;
+    border-radius: 6px;
+    background: var(--tier);
+    transform-origin: left center;
+}
+
+.solx-tier strong {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--tier);
+}
+
+.solx-tier span:last-child {
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--shm-muted);
+}
+
+.solx-tier--normal { --tier: #22c55e; }
+.solx-tier--warning { --tier: #eab308; }
+.solx-tier--alert { --tier: #f48120; }
+.solx-tier--critical { --tier: #ef4444; }
+
+body.lightmode .solx-tier--normal { --tier: #15803d; }
+body.lightmode .solx-tier--warning { --tier: #a16207; }
+body.lightmode .solx-tier--alert { --tier: #c2410c; }
+body.lightmode .solx-tier--critical { --tier: #dc2626; }
+
+/* ---------- Benefits ---------- */
+
+.solx-benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.solx-benefit {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 28px 24px;
+    border-radius: 20px;
+    background: var(--shm-card);
+    border: 1px solid var(--shm-line);
+    overflow: hidden;
+    transition: border-color .3s ease, transform .3s ease;
+}
+
+.solx-benefit::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(300px circle at var(--mx, 50%) var(--my, 0%), rgba(244, 129, 32, .12), transparent 70%);
+    opacity: 0;
+    transition: opacity .3s ease;
+    pointer-events: none;
+}
+
+.solx-benefit:hover {
+    border-color: rgba(244, 129, 32, .4);
+    transform: translateY(-4px);
+}
+
+.solx-benefit:hover::before {
+    opacity: 1;
+}
+
+.solx-benefit h3 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--shm-text);
+    margin: 6px 0 0;
+}
+
+.solx-benefit p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--shm-muted);
+    margin: 0;
+}
+
+.solx-benefit--cta {
+    justify-content: space-between;
+    text-decoration: none;
+    color: #fff;
+    border-color: transparent;
+    background:
+        radial-gradient(300px circle at 100% 0%, rgba(255, 255, 255, .18), transparent 60%),
+        linear-gradient(145deg, #e8730f 0%, #b04f05 100%);
+}
+
+.solx-benefit--cta h3 {
+    color: #fff;
+    font-size: 20px;
+}
+
+.solx-benefit--cta .solx-link {
+    color: #fff;
+}
+
+.solx-benefit--cta:hover {
+    color: #fff;
+    border-color: transparent;
+}
+
+.solx-benefit-kicker {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    opacity: .85;
+}
+
+/* ---------- What It Prevents ---------- */
+
+.solx-risks-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.3fr;
+    gap: 64px;
+    align-items: start;
+}
+
+.solx-risks-intro {
+    position: sticky;
+    top: 120px;
+}
+
+.solx-risks-intro .sol-section-subtitle {
+    margin-bottom: 24px;
+}
+
+.solx-risk-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    counter-reset: none;
+}
+
+.solx-risk {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 20px;
+    align-items: start;
+    padding: 24px 26px;
+    border-radius: 20px;
+    background: var(--shm-card);
+    border: 1px solid var(--shm-line);
+    overflow: hidden;
+    transition: border-color .3s ease, background-color .3s ease;
+}
+
+.solx-risk::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #ef4444, var(--shm-orange));
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .45s ease;
+}
+
+.solx-risk:hover {
+    border-color: rgba(239, 68, 68, .35);
+}
+
+.solx-risk:hover::before,
+.solx-risk.is-on::before {
+    transform: scaleY(1);
+}
+
+.solx-risk-num {
+    font-size: 14px;
+    font-weight: 800;
+    color: var(--shm-orange);
+    font-variant-numeric: tabular-nums;
+    padding-top: 2px;
+}
+
+.solx-risk-body h3 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--shm-text);
+    margin: 0 0 8px;
+}
+
+.solx-risk-body p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--shm-muted);
+    margin: 0;
+}
+
+.solx-risk-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #ef4444;
+    background: rgba(239, 68, 68, .1);
+    font-size: 16px;
+}
+
+body.lightmode .solx-risk-icon {
+    color: #dc2626;
+}
+
+/* ---------- Industries (expanding panels) ---------- */
+
+.solx-ind-panels {
+    display: flex;
+    gap: 12px;
+    height: 460px;
+}
+
+.solx-ind {
+    position: relative;
+    flex: 1;
+    min-width: 0;
+    border-radius: 24px;
+    overflow: hidden;
+    color: #fff;
+    text-decoration: none;
+    background: #111;
+    transition: flex .6s cubic-bezier(.2, .7, .2, 1);
+}
+
+.solx-ind.is-active {
+    flex: 3.2;
+}
+
+.solx-ind img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .8s cubic-bezier(.2, .7, .2, 1);
+}
+
+.solx-ind.is-active img {
+    transform: scale(1.04);
+}
+
+.solx-ind::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .05) 30%, rgba(0, 0, 0, .9) 100%);
+    pointer-events: none;
+}
+
+.solx-ind-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.solx-ind-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #fff;
+    background: rgba(255, 255, 255, .14);
+    border: 1px solid rgba(255, 255, 255, .22);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background-color .3s ease;
+}
+
+.solx-ind.is-active .solx-ind-icon {
+    background: var(--shm-orange-deep);
+    border-color: var(--shm-orange-deep);
+}
+
+.solx-ind h3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 4px 0 0;
+    color: #fff;
+}
+
+.solx-ind:not(.is-active) h3 {
+    font-size: 16px;
+}
+
+.solx-ind p,
+.solx-ind .solx-link {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height .5s ease, opacity .4s ease;
+}
+
+.solx-ind p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, .8);
+    margin: 0;
+    max-width: 420px;
+}
+
+.solx-ind .solx-link {
+    color: #fff;
+}
+
+.solx-ind.is-active p,
+.solx-ind.is-active .solx-link {
+    max-height: 80px;
+    opacity: 1;
+}
+
+/* ---------- CTA ---------- */
+
+.solx-cta {
+    padding: 40px 20px 100px;
+    background: #0a0a0a;
+}
+
+body.lightmode .solx-cta {
+    background: #f3f3f3;
+}
+
+.solx-cta-panel {
+    position: relative;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 64px;
+    border-radius: 32px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 48px;
+    align-items: center;
+    color: #fff;
+    background:
+        radial-gradient(600px circle at 90% 0%, rgba(255, 255, 255, .16), transparent 60%),
+        linear-gradient(135deg, #d9650a 0%, #a84a04 55%, #6e3003 100%);
+}
+
+.solx-cta-grid-bg {
+    position: absolute;
+    inset: -40px;
+    background-image:
+        linear-gradient(rgba(255, 255, 255, .07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, .07) 1px, transparent 1px);
+    background-size: 44px 44px;
+    -webkit-mask-image: radial-gradient(ellipse at 70% 40%, #000 20%, transparent 75%);
+    mask-image: radial-gradient(ellipse at 70% 40%, #000 20%, transparent 75%);
+    pointer-events: none;
+}
+
+.solx-cta-copy,
+.solx-cta-actions {
+    position: relative;
+    z-index: 1;
+}
+
+.solx-cta-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 700;
+    background: rgba(0, 0, 0, .22);
+    border: 1px solid rgba(255, 255, 255, .22);
+    margin-bottom: 20px;
+}
+
+.solx-cta-title {
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -.5px;
+    color: #fff;
+    margin: 0 0 14px;
+}
+
+.solx-cta-copy p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .88);
+    margin: 0 0 22px;
+    max-width: 560px;
+}
+
+.solx-cta-points {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 22px;
+}
+
+.solx-cta-points li {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.solx-cta-points i {
+    font-size: 12px;
+}
+
+.solx-cta-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.solx-cta-btn,
+.solx-cta-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    height: 56px;
+    padding: 0 28px;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color .3s ease, color .3s ease, box-shadow .3s ease;
+}
+
+.solx-cta-btn {
+    background: #fff;
+    color: #9a4403;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+}
+
+.solx-cta-btn:hover {
+    color: #7a3602;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, .32);
+}
+
+.solx-cta-btn i {
+    font-size: 13px;
+    transition: transform .25s ease;
+}
+
+.solx-cta-btn:hover i {
+    transform: translateX(4px);
+}
+
+.solx-cta-ghost {
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, .45);
+    background: rgba(255, 255, 255, .06);
+}
+
+.solx-cta-ghost:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, .16);
+}
+
+.solx-cta-phone {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    padding-top: 4px;
+}
+
+.solx-cta-phone:hover {
+    color: #fff;
+}
+
+body.lightmode .solx-cta-btn,
+body.lightmode .solx-cta-btn:hover {
+    color: #9a4403;
+}
+
+body.lightmode .solx-cta-ghost,
+body.lightmode .solx-cta-ghost:hover,
+body.lightmode .solx-cta-phone,
+body.lightmode .solx-benefit--cta,
+body.lightmode .solx-benefit--cta h3,
+body.lightmode .solx-benefit--cta .solx-link {
+    color: #fff;
+}
+
+/* ---------- Outcomes: variant without the outline tile ---------- */
+
+.solx-bento--compact {
+    grid-template-areas:
+        "big photo dark"
+        "big photo accent"
+        "wide wide wide";
+}
+
+.solx-tile-sub {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 4px 0 0;
+    color: inherit;
+    opacity: .7;
+}
+
+.solx-tile--big .solx-tile-sub {
+    font-size: 14px;
+}
+
+div.solx-ind {
+    cursor: default;
+}
+
+div.solx-ind:focus-visible {
+    outline: 2px solid var(--solx-orange);
+    outline-offset: 3px;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 1199px) {
+    .solx-param-grid,
+    .solx-benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .solx-tiers {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 991px) {
+    .solx-head--split,
+    .solx-wwd-grid,
+    .solx-risks-grid,
+    .solx-cta-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .solx-head--split {
+        gap: 16px;
+    }
+
+    .solx-wwd-media {
+        min-height: 320px;
+    }
+
+    .solx-bento {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "big big"
+            "photo dark"
+            "photo accent"
+            "wide wide"
+            "outline outline";
+    }
+
+    .solx-bento--compact {
+        grid-template-areas:
+            "big big"
+            "photo dark"
+            "photo accent"
+            "wide wide";
+    }
+
+    .solx-tile--big {
+        min-height: 320px;
+    }
+
+    .solx-flow {
+        grid-template-columns: 1fr;
+        gap: 28px;
+        padding-left: 88px;
+    }
+
+    .solx-flow-track {
+        top: 32px;
+        bottom: 32px;
+        left: 31px;
+        right: auto;
+        width: 2px;
+        height: auto;
+    }
+
+    .solx-flow-fill {
+        transform-origin: center top;
+    }
+
+    .solx-flow-node {
+        position: absolute;
+        left: -88px;
+        top: 0;
+    }
+
+    .solx-risks-intro {
+        position: static;
+    }
+
+    .solx-risks-grid {
+        gap: 32px;
+    }
+
+    .solx-ind-panels {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .solx-ind,
+    .solx-ind.is-active {
+        flex: none;
+        height: 240px;
+    }
+
+    .solx-ind p,
+    .solx-ind .solx-link {
+        max-height: 80px;
+        opacity: 1;
+    }
+
+    .solx-cta-panel {
+        padding: 44px 32px;
+        gap: 32px;
+    }
+}
+
+@media (max-width: 575px) {
+    .solx-wwd-story {
+        padding: 24px;
+    }
+
+    .solx-checks {
+        grid-template-columns: 1fr;
+    }
+
+    .solx-param-grid,
+    .solx-benefit-grid,
+    .solx-tier-row {
+        grid-template-columns: 1fr;
+    }
+
+    .solx-tier-row {
+        gap: 18px;
+    }
+
+    .solx-tiers {
+        padding: 24px;
+    }
+
+    .solx-bento {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "big"
+            "dark"
+            "accent"
+            "photo"
+            "wide"
+            "outline";
+    }
+
+    .solx-bento--compact {
+        grid-template-areas:
+            "big"
+            "dark"
+            "accent"
+            "photo"
+            "wide";
+    }
+
+    .solx-tile--photo {
+        min-height: 240px;
+    }
+
+    .solx-flow {
+        padding-left: 76px;
+    }
+
+    .solx-flow-node {
+        left: -76px;
+        width: 56px;
+        height: 56px;
+        font-size: 20px;
+    }
+
+    .solx-flow-track {
+        left: 27px;
+        top: 28px;
+    }
+
+    .solx-risk {
+        grid-template-columns: auto 1fr;
+        padding: 20px;
+        gap: 14px;
+    }
+
+    .solx-risk-icon {
+        display: none;
+    }
+
+    .solx-cta {
+        padding: 24px 16px 72px;
+    }
+
+    .solx-cta-panel {
+        padding: 36px 22px;
+        border-radius: 24px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .solx-live-dot::after {
+        animation: none;
+    }
+
+    .solx-ind,
+    .solx-ind img,
+    .solx-param,
+    .solx-benefit,
+    .solx-tile--photo img,
+    .solx-tile--wide img {
+        transition: none;
+    }
+}
+
+.solx-nowrap {
+    white-space: nowrap;
+}
+
+/* ---------- Featured project (Digital Twin page) ---------- */
+
+.solx-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.solx-featured-img {
+    width: 100%;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, .06);
+}
+
+.solx-featured-body {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.solx-featured-body p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, .7);
+    margin: 0;
+}
+
+.solx-featured-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.solx-featured-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.solx-featured-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, .7);
+}
+
+.solx-featured-list i {
+    color: #22c55e;
+}
+
+body.lightmode .solx-featured-img {
+    border-color: rgba(0, 0, 0, .08);
+}
+
+body.lightmode .solx-featured-body p,
+body.lightmode .solx-featured-list li {
+    color: #555;
+}
+
+body.lightmode .solx-featured-label {
+    color: #1a1a1a;
+}
+
+body.lightmode .solx-featured-list i {
+    color: #15803d;
+}
+
+@media (max-width: 991px) {
+    .solx-featured {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}

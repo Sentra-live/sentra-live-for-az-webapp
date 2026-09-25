@@ -101,8 +101,10 @@ Definitional and technical material, useful for resolving terminology.
 
 Newest first. The full, filterable index lives at https://sentratech.in/resources.html
 
-- [Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study](https://sentratech.in/article/handheld-slam-vs-tls-highway-bridge-surveys.html): Article, Comparison Study, 17 Sep 2026
-- [Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html): Blog, Dams, 10 Sep 2026
+- [Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/article/port-marine-infrastructure-monitoring.html): Article, Ports, 25 Sep 2026
+- [Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/blogs/slope-stability-monitoring-mining.html): Blog, Mining, 25 Sep 2026
+- [Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study](https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html): Case study, Comparison Study, 17 Sep 2026
+- [Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html): Blog, Dams, 16 Sep 2026
 - [3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html): Article, Digital Twin, 10 Sep 2026
 - [GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html): Blog, Geotechnical, 9 Sep 2026
 - [What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels](https://sentratech.in/blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html): Blog, Advanced NDT, 8 Sep 2026

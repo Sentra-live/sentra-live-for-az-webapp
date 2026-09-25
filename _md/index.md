@@ -588,6 +588,56 @@ Explore our latest blogs, case studies, and company updates on IoT-powered monit
 
 [
 
+![Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/image/articles/article_port-marine-infrastructure-monitoring.webp)
+
+Article
+
+Ports
+
+#### Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures
+
+](https://sentratech.in/article/port-marine-infrastructure-monitoring.html) [
+
+![Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/image/blogs/banners/blogs_slope-stability-monitoring-mining.webp)
+
+Blog
+
+Mining
+
+#### Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines
+
+](https://sentratech.in/blogs/slope-stability-monitoring-mining.html) [
+
+![Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study](https://sentratech.in/image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp)
+
+Case Study
+
+Comparison Study
+
+#### Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
+
+](https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html) [
+
+![3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp)
+
+Article
+
+Digital Twin
+
+#### 3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins
+
+](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html) [
+
+![Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp)
+
+Blog
+
+Dams
+
+#### Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection
+
+](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html) [
+
 ![GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/image/blogs/banners/blogs_gnss-displacement-monitoring.webp)
 
 Blog
@@ -647,6 +697,56 @@ Structural Health
 #### Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured
 
 ](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html) [
+
+![Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/image/articles/article_port-marine-infrastructure-monitoring.webp)
+
+Article
+
+Ports
+
+#### Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures
+
+](https://sentratech.in/article/port-marine-infrastructure-monitoring.html) [
+
+![Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/image/blogs/banners/blogs_slope-stability-monitoring-mining.webp)
+
+Blog
+
+Mining
+
+#### Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines
+
+](https://sentratech.in/blogs/slope-stability-monitoring-mining.html) [
+
+![Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study](https://sentratech.in/image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp)
+
+Case Study
+
+Comparison Study
+
+#### Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
+
+](https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html) [
+
+![3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp)
+
+Article
+
+Digital Twin
+
+#### 3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins
+
+](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html) [
+
+![Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp)
+
+Blog
+
+Dams
+
+#### Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection
+
+](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html) [
 
 ![GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/image/blogs/banners/blogs_gnss-displacement-monitoring.webp)
 
@@ -961,6 +1061,56 @@ Explore our latest articles covering IoT adoption, infrastructure monitoring, AI
 [View All Articles](https://sentratech.in/resources.html#articles)
 
 [
+
+![Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/image/articles/article_port-marine-infrastructure-monitoring.webp)
+
+Ports
+
+#### Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures
+
+Ports · Sep 25, 2026
+
+](https://sentratech.in/article/port-marine-infrastructure-monitoring.html) [
+
+![Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/image/blogs/banners/blogs_slope-stability-monitoring-mining.webp)
+
+Mining
+
+#### Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines
+
+Mining · Sep 25, 2026
+
+](https://sentratech.in/blogs/slope-stability-monitoring-mining.html) [
+
+![Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study](https://sentratech.in/image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp)
+
+Comparison Study
+
+#### Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
+
+Comparison Study · Sep 17, 2026
+
+](https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html) [
+
+![3D laser scanning and LiDAR for infrastructure digital twins](https://sentratech.in/image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp)
+
+Digital Twin
+
+#### 3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins
+
+Digital Twin · Sep 10, 2026
+
+](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html) [
+
+![Predictive maintenance for industrial facilities](https://sentratech.in/image/articles/articles_predictive-maintenance-industrial-facilities.webp)
+
+Industrial
+
+#### Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure
+
+Industrial · Sep 7, 2026
+
+](https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html) [
 
 ![Flood monitoring and early warning system](https://sentratech.in/image/articles/articles_floodmonitoringandearlywarningsystem.webp)
 

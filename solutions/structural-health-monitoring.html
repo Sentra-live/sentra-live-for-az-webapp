@@ -64,6 +64,7 @@
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/home.css">
   <link rel="stylesheet" href="../css/solutions-v2.css">
+  <link rel="stylesheet" href="../css/solution-sections.css">
   <link rel="stylesheet" href="../css/chatbot.css">
   <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
   <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
@@ -1520,166 +1521,570 @@
       <div class="sol-hero-scroll-indicator"><span></span></div>
     </section>
 
-    <!-- 2. OVERVIEW -->
-    <!-- 2. OVERVIEW -->
-    <section class="sol-section sol-bg-dark" id="sol-overview">
+    <!-- 2. WHAT WE DO -->
+    <section class="sol-section sol-bg-dark solx-wwd" id="sol-overview">
       <div class="sol-section-inner">
-        <div class="sol-reveal" style="margin-bottom:48px;">
-          <span class="sol-eyebrow">What We Do</span>
-          <h2 class="sol-section-title">Continuous Structural Health Monitoring for Critical Infrastructure</h2>
-        </div>
-        <div class="sol-overview-grid">
-          <!-- Left Column -->
-          <div class="sol-overview-left">
-            <p class="sol-section-subtitle sol-reveal">From single-span bridges to city-wide rail networks, Sentra
-              deploys purpose-built IoT systems that deliver structural intelligence around the clock.</p>
-            <div class="sol-overview-desc sol-reveal">
-              <h3 class="sol-overview-desc-title">End-to-End SHM, Purpose-Built for Your Asset</h3>
-              <p class="sol-overview-desc-body">Sentra's Structural Health Monitoring service combines high-fidelity
-                sensors: GNSS, accelerometers, tiltmeters, vibrating wire gauges, with edge-enabled data acquisition
-                gateways and cloud-hosted analytics to give asset owners a continuous, real-time picture of structural
-                behaviour. Our engineers design each monitoring programme around the specific failure modes of your
-                structure: fatigue cracking in steel railway bridges, differential settlement in high-rise foundations,
-                concrete spalling in highway flyovers, or seepage-driven instability in dams. Thresholds and alerts are
-                calibrated against structural design limits so your team receives only meaningful, actionable
-                notifications, not noise. Whether you need a short-term construction-phase monitoring system or
-                permanent lifetime surveillance, we scale from a single sensor node to multi-site enterprise deployments
-                with role-based dashboards, API integrations, and automated reporting. Our approach is grounded in
-                <a href="../article/ai-infrastructure-monitoring.html">AI-driven infrastructure monitoring</a> techniques
-                that transform raw sensor data into actionable structural intelligence.</p>
-            </div>
+        <div class="solx-head solx-head--split">
+          <div>
+            <span class="sol-eyebrow solx-anim">What We Do</span>
+            <h2 class="sol-section-title solx-anim">Continuous Structural Health Monitoring for Critical Infrastructure</h2>
           </div>
-          <!-- Right Column: Accordion -->
-          <div class="sol-overview-right sol-reveal">
-            <div class="sol-accordion">
-              <div class="sol-accordion-item active">
-                <button class="sol-accordion-trigger" type="button">
-                  <span class="sol-acc-icon"><i class="fa-solid fa-arrows-up-down"></i></span>
-                  <span class="sol-acc-title">Displacement & Settlement</span>
-                  <span class="sol-acc-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-                </button>
-                <div class="sol-accordion-body">
-                  <p>GNSS-based millimetre-precision tracking of vertical and horizontal displacements, long-term
-                    settlement trends, and differential movement between critical structural points.</p>
-                </div>
-              </div>
-              <div class="sol-accordion-item">
-                <button class="sol-accordion-trigger" type="button">
-                  <span class="sol-acc-icon"><i class="fa-solid fa-wave-square"></i></span>
-                  <span class="sol-acc-title">Vibration & Dynamic Response</span>
-                  <span class="sol-acc-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-                </button>
-                <div class="sol-accordion-body">
-                  <p>Multi-axis accelerometers capture modal frequencies, damping ratios, and peak acceleration under
-                    live traffic and environmental loads to detect stiffness degradation.</p>
-                </div>
-              </div>
-              <div class="sol-accordion-item">
-                <button class="sol-accordion-trigger" type="button">
-                  <span class="sol-acc-icon"><i class="fa-solid fa-compress-arrows-alt"></i></span>
-                  <span class="sol-acc-title">Strain & Stress</span>
-                  <span class="sol-acc-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-                </button>
-                <div class="sol-accordion-body">
-                  <p>Vibrating wire strain gauges and foil gauges measure live load strains, residual stresses, and
-                    cumulative fatigue damage accumulation on critical structural members.</p>
-                </div>
-              </div>
-              <div class="sol-accordion-item">
-                <button class="sol-accordion-trigger" type="button">
-                  <span class="sol-acc-icon"><i class="fa-solid fa-level-up-alt"></i></span>
-                  <span class="sol-acc-title">Tilt & Inclination</span>
-                  <span class="sol-acc-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-                </button>
-                <div class="sol-accordion-body">
-                  <p>High-resolution tiltmeters and laser tiltmeters monitor angular rotation of piers, pylons,
-                    retaining walls, and towers with sub-arcminute accuracy.</p>
-                </div>
-              </div>
-              <div class="sol-accordion-item">
-                <button class="sol-accordion-trigger" type="button">
-                  <span class="sol-acc-icon"><i class="fa-solid fa-ruler-combined"></i></span>
-                  <span class="sol-acc-title">Crack Width Monitoring</span>
-                  <span class="sol-acc-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-                </button>
-                <div class="sol-accordion-body">
-                  <p>Automated crack gauges track opening, closing, and propagation of known cracks in concrete and
-                    masonry, with configurable alert thresholds tied to structural limit states.</p>
-                </div>
-              </div>
-              <div class="sol-accordion-item">
-                <button class="sol-accordion-trigger" type="button">
-                  <span class="sol-acc-icon"><i class="fa-solid fa-temperature-high"></i></span>
-                  <span class="sol-acc-title">Temperature Effects</span>
-                  <span class="sol-acc-chevron"><i class="fa-solid fa-chevron-down"></i></span>
-                </button>
-                <div class="sol-accordion-body">
-                  <p>Distributed temperature sensors capture thermal gradients, seasonal expansion cycles, and
-                    freeze-thaw effects that drive long-term structural movement and cracking.</p>
-                </div>
-              </div>
+          <p class="sol-section-subtitle solx-anim">From single-span bridges to city-wide rail networks, Sentra deploys
+            purpose-built IoT systems that deliver structural intelligence around the clock.</p>
+        </div>
+
+        <div class="solx-wwd-grid">
+          <article class="solx-wwd-story solx-anim">
+            <h3>End-to-End SHM, Purpose-Built for Your Asset</h3>
+            <p>Sentra combines high-fidelity sensors (GNSS, accelerometers, tiltmeters and vibrating wire gauges) with
+              edge data acquisition and cloud analytics, giving asset owners a continuous, real-time picture of how their
+              structure behaves.</p>
+            <p>Every programme is designed around the failure modes of your structure: fatigue cracking in steel railway
+              bridges, differential settlement under high-rise foundations, spalling on highway flyovers or seepage in
+              dams. Alert thresholds are calibrated against design limits, so your team is notified about what matters,
+              not noise. The analytics build on
+              <a href="../article/ai-infrastructure-monitoring.html">AI-driven infrastructure monitoring</a> to turn raw
+              readings into decisions.</p>
+            <ul class="solx-checks">
+              <li><i class="fa-solid fa-check"></i> Static and dynamic monitoring in one system</li>
+              <li><i class="fa-solid fa-check"></i> Construction-phase or permanent lifetime surveillance</li>
+              <li><i class="fa-solid fa-check"></i> Thresholds calibrated to structural design limits</li>
+              <li><i class="fa-solid fa-check"></i> From one sensor node to multi-site networks</li>
+            </ul>
+            <div class="solx-actions">
+              <a href="/contact.html" class="sol-btn-primary">Talk to an Expert <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="#sol-system" class="solx-link">How the system works <i class="fa-solid fa-arrow-down"></i></a>
             </div>
+          </article>
+          <figure class="solx-wwd-media solx-anim">
+            <img src="../image/solutions/banners/shm%20banner.webp"
+              alt="Structural health monitoring sensors installed on a bridge" loading="lazy">
+            <figcaption class="solx-live-chip"><span class="solx-live-dot"></span> Monitoring 24/7</figcaption>
+            <div class="solx-media-stack" aria-hidden="true">
+              <span><i class="fa-solid fa-wave-square"></i> Vibration</span>
+              <span><i class="fa-solid fa-arrows-up-down"></i> Displacement</span>
+              <span><i class="fa-solid fa-ruler-combined"></i> Crack width</span>
+            </div>
+          </figure>
+        </div>
+
+        <div class="solx-measure">
+          <div class="solx-measure-head solx-anim">
+            <h3>What We Measure</h3>
+            <p>Each parameter is matched to the sensor best suited to the structure and its environment.</p>
+          </div>
+          <div class="solx-param-grid">
+            <a class="solx-param" href="../products/gnss-meter.html">
+              <span class="solx-param-icon"><i class="fa-solid fa-arrows-up-down"></i></span>
+              <h4>Displacement &amp; Settlement</h4>
+              <p>GNSS tracking of vertical and horizontal movement, long-term settlement and differential movement between critical points, to millimetre precision.</p>
+              <span class="solx-param-sensor">GNSS Meter <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a class="solx-param" href="../products/accelerometers.html">
+              <span class="solx-param-icon"><i class="fa-solid fa-wave-square"></i></span>
+              <h4>Vibration &amp; Dynamic Response</h4>
+              <p>Modal frequencies, damping and peak acceleration under live traffic and wind, the earliest sign of lost stiffness.</p>
+              <span class="solx-param-sensor">Accelerometers <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a class="solx-param" href="../products/strain-gauges.html">
+              <span class="solx-param-icon"><i class="fa-solid fa-compress"></i></span>
+              <h4>Strain &amp; Stress</h4>
+              <p>Live-load strain, residual stress and cumulative fatigue damage on the members that carry the load.</p>
+              <span class="solx-param-sensor">Strain Gauges <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a class="solx-param" href="../products/tiltmeter.html">
+              <span class="solx-param-icon"><i class="fa-solid fa-ruler-vertical"></i></span>
+              <h4>Tilt &amp; Rotation</h4>
+              <p>Angular rotation of piers, pylons, retaining walls and towers with sub-arcminute resolution.</p>
+              <span class="solx-param-sensor">Tiltmeter <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a class="solx-param" href="../products/vibrating-wire.html">
+              <span class="solx-param-icon"><i class="fa-solid fa-ruler-combined"></i></span>
+              <h4>Crack &amp; Joint Movement</h4>
+              <p>Opening, closing and growth of known cracks and expansion joints, with thresholds tied to limit states.</p>
+              <span class="solx-param-sensor">Vibrating Wire Logger <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <a class="solx-param" href="../products/wired-sensors.html">
+              <span class="solx-param-icon"><i class="fa-solid fa-droplet"></i></span>
+              <h4>Pore Pressure &amp; Water Level</h4>
+              <p>Piezometers track groundwater and uplift pressure at foundations, abutments and embankments.</p>
+              <span class="solx-param-sensor">Wired Sensors <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
+            <div class="solx-param">
+              <span class="solx-param-icon"><i class="fa-solid fa-temperature-half"></i></span>
+              <h4>Temperature Effects</h4>
+              <p>Thermal gradients and seasonal cycles, used to separate temperature-driven movement from real structural change.</p>
+              <span class="solx-param-sensor solx-param-sensor--plain">Built into the sensor network</span>
+            </div>
+            <a class="solx-param" href="../products/laser-scanners.html">
+              <span class="solx-param-icon"><i class="fa-solid fa-cube"></i></span>
+              <h4>3D Geometry &amp; Deformation</h4>
+              <p>LiDAR scans capture the as-built shape of the structure to compare against design drawings and earlier surveys.</p>
+              <span class="solx-param-sensor">Laser Scanners <i class="fa-solid fa-arrow-right"></i></span>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
     <!-- STAT CARDS ROW -->
-    <section class="sol-section sol-bg-darker">
+    <section class="sol-section sol-bg-darker solx-outcomes">
       <div class="sol-section-inner">
-        <div class="sol-reveal" style="max-width:700px;margin-bottom:60px;">
-          <span class="sol-eyebrow">Impact</span>
-          <h2 class="sol-section-title">Measurable Outcomes</h2>
-          <p class="sol-section-subtitle">Quantifiable results delivered through our monitoring and engineering
+        <div class="solx-head">
+          <span class="sol-eyebrow solx-anim">Impact</span>
+          <h2 class="sol-section-title solx-anim">Measurable Outcomes</h2>
+          <p class="sol-section-subtitle solx-anim">Quantifiable results delivered through our monitoring and engineering
             solutions across infrastructure projects.</p>
         </div>
-        <div class="sol-stat-cards-grid">
-          <!-- Stat Card 1 -->
-          <div class="sol-stat-card">
-            <div class="sol-stat-card-bg"></div>
-            <div class="sol-stat-card-content">
-              <div class="sol-stat-card-header">
-                <div class="sol-stat-card-icon"><i class="fa-solid fa-chart-simple"></i></div>
-                <div>
-                  <h4 class="sol-stat-card-label">Track Record</h4>
-                  <span class="sol-stat-card-sub">Proven delivery</span>
-                </div>
-              </div>
-              <div class="sol-stat-card-number">200+</div>
-              <div class="sol-stat-card-trend">Structures Monitored</div>
-              <div class="sol-stat-card-desc">Across bridges, buildings & railways</div>
+        <div class="solx-bento">
+          <div class="solx-tile solx-tile--big">
+            <span class="solx-tile-label"><i class="fa-solid fa-chart-simple"></i> Track record</span>
+            <div class="solx-tile-num"><span class="solx-count" data-to="200">200</span>+</div>
+            <p class="solx-tile-caption">Structures monitored across bridges, buildings and railways</p>
+            <div class="solx-tile-pills">
+              <span>Bridges</span><span>Railways</span><span>Buildings</span><span>Dams</span>
             </div>
           </div>
-          <!-- Stat Card 2 -->
-          <div class="sol-stat-card sol-stat-card--purple">
-            <div class="sol-stat-card-border"></div>
-            <div class="sol-stat-card-content">
-              <div class="sol-stat-card-header">
-                <div class="sol-stat-card-icon"><i class="fa-solid fa-clock"></i></div>
-                <div>
-                  <h4 class="sol-stat-card-label">Efficiency Gains</h4>
-                  <span class="sol-stat-card-sub">Optimised operations</span>
-                </div>
-              </div>
-              <div class="sol-stat-card-number">40%</div>
-              <div class="sol-stat-card-trend">Cost Reduction</div>
-              <div class="sol-stat-card-desc">Avg. inspection cost savings</div>
-            </div>
+          <figure class="solx-tile solx-tile--photo">
+            <img src="../image/solutions/showcase/shm/Railway%20Bridge%20Monitoring%20System.webp"
+              alt="Railway bridge monitoring system" loading="lazy">
+            <figcaption>Railway bridge monitoring system</figcaption>
+          </figure>
+          <div class="solx-tile solx-tile--dark">
+            <span class="solx-tile-label"><i class="fa-solid fa-coins"></i> Efficiency</span>
+            <div class="solx-tile-num"><span class="solx-count" data-to="40">40</span>%</div>
+            <p class="solx-tile-caption">Average reduction in inspection costs</p>
           </div>
-          <!-- Stat Card 3 -->
-          <div class="sol-stat-card sol-stat-card--green">
-            <div class="sol-stat-card-bg"></div>
-            <div class="sol-stat-card-content">
-              <div class="sol-stat-card-header">
-                <div class="sol-stat-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                <div>
-                  <h4 class="sol-stat-card-label">Reliability</h4>
-                  <span class="sol-stat-card-sub">Always on</span>
-                </div>
+          <div class="solx-tile solx-tile--accent">
+            <span class="solx-tile-label"><i class="fa-solid fa-shield-halved"></i> Reliability</span>
+            <div class="solx-tile-num"><span class="solx-count" data-to="99.5" data-decimals="1">99.5</span>%</div>
+            <p class="solx-tile-caption">System availability, 24/7</p>
+          </div>
+          <figure class="solx-tile solx-tile--wide">
+            <img src="../image/solutions/showcase/shm/Real-time%20SHM%20dashboard%20with%20multi-sensor%20data%20visualization.webp"
+              alt="Real-time SHM dashboard with multi-sensor data visualisation" loading="lazy">
+            <figcaption>
+              <strong>One dashboard for every sensor</strong>
+              <span>Live readings, trends and multi-tier alerts by SMS, email and dashboard.</span>
+            </figcaption>
+          </figure>
+          <div class="solx-tile solx-tile--outline">
+            <span class="solx-tile-label"><i class="fa-solid fa-triangle-exclamation"></i> Cost of waiting</span>
+            <div class="solx-tile-num">3&ndash;5&times;</div>
+            <p class="solx-tile-caption">What emergency repairs typically cost compared with planned interventions</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHM RESOURCES: case studies, blogs and articles related to SHM -->
+    <section class="sol-section sol-bg-dark" id="sol-shm-resources">
+      <div class="sol-section-inner">
+        <div class="sol-reveal" style="max-width:650px;margin-bottom:0;">
+          <span class="sol-eyebrow">SHM Resources</span>
+          <h2 class="sol-section-title">Structural Health Monitoring in the Field</h2>
+          <p class="sol-section-subtitle">Case studies, engineering guides and articles from our structural health
+            monitoring work on bridges, railways and buildings.</p>
+        </div>
+        <div class="insight-marquee sol-resources-marquee">
+            <div class="marquee-row marquee-row--ltr">
+              <div class="marquee-track">
+                  <a href="../case-studies/structural-health-monitoring-of-highway-bridges.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp" alt="Structural Health Monitoring of Highway Bridges" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Infrastructure</span>
+                      <h4>Structural Health Monitoring of Highway Bridges</h4>
+                    </div>
+                  </a>
+                  <a href="../case-studies/railway-bridge-fatigue-life-assessment-load-testing.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp" alt="Railway Bridge Fatigue Life Assessment and Load Testing" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Railways</span>
+                      <h4>Railway Bridge Fatigue Life Assessment and Load Testing</h4>
+                    </div>
+                  </a>
+                  <a href="../article/ai-infrastructure-monitoring.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/articles/articles_ai_for_bridge_monitoring.webp" alt="AI Is Coming for Infrastructure Monitoring" loading="lazy">
+                      <span class="marquee-card-type type-articles">Article</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">AI &amp; Monitoring</span>
+                      <h4>AI Is Coming for Infrastructure Monitoring</h4>
+                    </div>
+                  </a>
+                  <a href="../case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp" alt="Railway Bridge Digital Twin Using Drone and LiDAR Inspection" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Railways</span>
+                      <h4>Railway Bridge Digital Twin Using Drone and LiDAR Inspection</h4>
+                    </div>
+                  </a>
+                  <a href="../case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp" alt="IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Railways</span>
+                      <h4>IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges</h4>
+                    </div>
+                  </a>
+                  <a href="../article/revolutionizing-infrastructure-monitoring-with-iot.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp" alt="IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins" loading="lazy">
+                      <span class="marquee-card-type type-articles">Article</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">IoT Innovation</span>
+                      <h4>IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins</h4>
+                    </div>
+                  </a>
+                  <a href="../case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp" alt="BridgePulse: AI &amp; Drone Technology for Bridge Health Monitoring" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Bridge Safety</span>
+                      <h4>BridgePulse: AI &amp; Drone Technology for Bridge Health Monitoring</h4>
+                    </div>
+                  </a>
+                  <!-- Duplicate set so the marquee loops seamlessly -->
+                  <a href="../case-studies/structural-health-monitoring-of-highway-bridges.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Infrastructure</span>
+                      <h4>Structural Health Monitoring of Highway Bridges</h4>
+                    </div>
+                  </a>
+                  <a href="../case-studies/railway-bridge-fatigue-life-assessment-load-testing.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Railways</span>
+                      <h4>Railway Bridge Fatigue Life Assessment and Load Testing</h4>
+                    </div>
+                  </a>
+                  <a href="../article/ai-infrastructure-monitoring.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/articles/articles_ai_for_bridge_monitoring.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-articles">Article</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">AI &amp; Monitoring</span>
+                      <h4>AI Is Coming for Infrastructure Monitoring</h4>
+                    </div>
+                  </a>
+                  <a href="../case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Railways</span>
+                      <h4>Railway Bridge Digital Twin Using Drone and LiDAR Inspection</h4>
+                    </div>
+                  </a>
+                  <a href="../case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Railways</span>
+                      <h4>IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges</h4>
+                    </div>
+                  </a>
+                  <a href="../article/revolutionizing-infrastructure-monitoring-with-iot.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-articles">Article</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">IoT Innovation</span>
+                      <h4>IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins</h4>
+                    </div>
+                  </a>
+                  <a href="../case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-case-studies">Case Study</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Bridge Safety</span>
+                      <h4>BridgePulse: AI &amp; Drone Technology for Bridge Health Monitoring</h4>
+                    </div>
+                  </a>
               </div>
-              <div class="sol-stat-card-number">99.5%</div>
-              <div class="sol-stat-card-trend">System Availability</div>
-              <div class="sol-stat-card-desc">24/7 continuous uptime</div>
+            </div>
+            <div class="marquee-row marquee-row--rtl">
+              <div class="marquee-track">
+                  <a href="../blogs/continuous-building-shm-iot-sensors.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp" alt="Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Structural Health</span>
+                      <h4>Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/bridge-scour-monitoring-iot-digital-twins.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp" alt="Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Bridge Safety</span>
+                      <h4>Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/what-is-a-strain-gauge-types-working-principle.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_what-is-a-strain-gauge-types-working-principle.webp" alt="What Is a Strain Gauge? Types, Working Principle &amp; Applications" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Sensor Technology</span>
+                      <h4>What Is a Strain Gauge? Types, Working Principle &amp; Applications</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/what-is-an-accelerometer-sensor-guide.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_what-is-an-accelerometer-sensor-guide.webp" alt="What Is an Accelerometer Sensor? Working Principle, Types &amp; Applications" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Sensor Technology</span>
+                      <h4>What Is an Accelerometer Sensor? Working Principle, Types &amp; Applications</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp" alt="Seismic Monitoring for Buildings and Critical Infrastructure" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Structural Health</span>
+                      <h4>Seismic Monitoring for Buildings and Critical Infrastructure</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/monitoring-construction-induced-vibrations.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_monitoring-construction-induced-vibrations.webp" alt="Monitoring Construction-Induced Vibrations in Urban Environments" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Structural Monitoring</span>
+                      <h4>Monitoring Construction-Induced Vibrations in Urban Environments</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/10-early-warning-signs-bridge-continuous-monitoring.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_10-early-warning-signs-bridge-continuous-monitoring.webp" alt="10 Early Warning Signs Your Bridge Needs Continuous Monitoring" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Bridge Safety</span>
+                      <h4>10 Early Warning Signs Your Bridge Needs Continuous Monitoring</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/structural-health-monitoring.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_structural-health-monitoring.webp" alt="Structural Health Monitoring" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Structural Health</span>
+                      <h4>Structural Health Monitoring</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/top-5-hidden-structural-damages-bridge-inspection.html" class="marquee-card">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_top-5-hidden-structural-damages-bridge-inspection.webp" alt="Top 5 Hidden Structural Damages Manual Bridge Inspection Misses" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Bridge Safety</span>
+                      <h4>Top 5 Hidden Structural Damages Manual Bridge Inspection Misses</h4>
+                    </div>
+                  </a>
+                  <!-- Duplicate set so the marquee loops seamlessly -->
+                  <a href="../blogs/continuous-building-shm-iot-sensors.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Structural Health</span>
+                      <h4>Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/bridge-scour-monitoring-iot-digital-twins.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Bridge Safety</span>
+                      <h4>Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/what-is-a-strain-gauge-types-working-principle.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_what-is-a-strain-gauge-types-working-principle.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Sensor Technology</span>
+                      <h4>What Is a Strain Gauge? Types, Working Principle &amp; Applications</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/what-is-an-accelerometer-sensor-guide.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_what-is-an-accelerometer-sensor-guide.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Sensor Technology</span>
+                      <h4>What Is an Accelerometer Sensor? Working Principle, Types &amp; Applications</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Structural Health</span>
+                      <h4>Seismic Monitoring for Buildings and Critical Infrastructure</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/monitoring-construction-induced-vibrations.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_monitoring-construction-induced-vibrations.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Structural Monitoring</span>
+                      <h4>Monitoring Construction-Induced Vibrations in Urban Environments</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/10-early-warning-signs-bridge-continuous-monitoring.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_10-early-warning-signs-bridge-continuous-monitoring.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Bridge Safety</span>
+                      <h4>10 Early Warning Signs Your Bridge Needs Continuous Monitoring</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/structural-health-monitoring.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_structural-health-monitoring.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Structural Health</span>
+                      <h4>Structural Health Monitoring</h4>
+                    </div>
+                  </a>
+                  <a href="../blogs/top-5-hidden-structural-damages-bridge-inspection.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                    <div class="marquee-card-img">
+                      <img src="../image/blogs/banners/blogs_top-5-hidden-structural-damages-bridge-inspection.webp" alt="" loading="lazy">
+                      <span class="marquee-card-type type-blogs">Blog</span>
+                    </div>
+                    <div class="marquee-card-body">
+                      <span class="marquee-card-cat">Bridge Safety</span>
+                      <h4>Top 5 Hidden Structural Damages Manual Bridge Inspection Misses</h4>
+                    </div>
+                  </a>
+              </div>
+            </div>
+        </div>
+        <a href="../resources.html" class="sol-btn-case-all" style="display:inline-flex;margin-top:32px">View All
+          Resources <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- THE SHM SYSTEM: sensor-to-decision architecture -->
+    <section class="sol-section sol-bg-darker solx-system" id="sol-system">
+      <div class="sol-section-inner">
+        <div class="solx-head">
+          <span class="sol-eyebrow solx-anim">The System</span>
+          <h2 class="sol-section-title solx-anim">From Sensor to Decision</h2>
+          <p class="sol-section-subtitle solx-anim">Every Sentra programme runs on the same four-layer architecture, so data
+            moves from the structure to your team without gaps.</p>
+        </div>
+        <div class="solx-flow">
+          <div class="solx-flow-track" aria-hidden="true"><span class="solx-flow-fill"></span></div>
+          <div class="solx-flow-step">
+            <span class="solx-flow-node"><i class="fa-solid fa-tower-broadcast"></i></span>
+            <span class="solx-flow-idx">01 &middot; Sense</span>
+            <h3>Sensors on the structure</h3>
+            <p>GNSS, accelerometers, tiltmeters, strain and vibrating wire gauges placed at the critical points identified in the site survey.</p>
+          </div>
+          <div class="solx-flow-step">
+            <span class="solx-flow-node"><i class="fa-solid fa-microchip"></i></span>
+            <span class="solx-flow-idx">02 &middot; Acquire</span>
+            <h3>Edge loggers &amp; gateways</h3>
+            <p>Wireless data loggers and edge gateways sample, pre-process and transmit readings, storing data locally if the link drops.</p>
+          </div>
+          <div class="solx-flow-step">
+            <span class="solx-flow-node"><i class="fa-solid fa-chart-line"></i></span>
+            <span class="solx-flow-idx">03 &middot; Analyse</span>
+            <h3>Cloud analytics</h3>
+            <p>The platform trends structural behaviour, correlates loads with responses and uses machine learning to flag anomalies.</p>
+          </div>
+          <div class="solx-flow-step">
+            <span class="solx-flow-node"><i class="fa-solid fa-bell"></i></span>
+            <span class="solx-flow-idx">04 &middot; Act</span>
+            <h3>Alerts, reports &amp; API</h3>
+            <p>Multi-tier alerts reach your team by SMS, email and dashboard, backed by scheduled reports and API integrations.</p>
+          </div>
+        </div>
+        <div class="solx-tiers solx-anim">
+          <div class="solx-tiers-head">
+            <h3>Multi-Tier Alerting</h3>
+            <p>Thresholds are set against structural design limits, so each level comes with a clear, agreed
+              response.</p>
+          </div>
+          <div class="solx-tier-row">
+            <div class="solx-tier solx-tier--normal">
+              <span class="solx-tier-bar"></span>
+              <strong>Normal</strong>
+              <span>Within expected behaviour. Readings are logged and trended.</span>
+            </div>
+            <div class="solx-tier solx-tier--warning">
+              <span class="solx-tier-bar"></span>
+              <strong>Warning</strong>
+              <span>Approaching a limit. Engineers review the trend and verify the sensor.</span>
+            </div>
+            <div class="solx-tier solx-tier--alert">
+              <span class="solx-tier-bar"></span>
+              <strong>Alert</strong>
+              <span>Limit reached. Targeted inspection and increased reading frequency.</span>
+            </div>
+            <div class="solx-tier solx-tier--critical">
+              <span class="solx-tier-bar"></span>
+              <strong>Critical</strong>
+              <span>Design limit exceeded. Immediate notification to support restriction or closure decisions.</span>
             </div>
           </div>
         </div>
@@ -1688,7 +2093,7 @@
 
     <!-- 3. HOW IT WORKS -->
     <div class="sol-how-scroll-track">
-      <section class="sol-section sol-bg-darker sol-how-sticky">
+      <section class="sol-section sol-bg-dark sol-how-sticky" id="sol-how">
         <div class="sol-section-inner">
           <div class="sol-how-header sol-reveal" style="max-width:700px;">
             <span class="sol-eyebrow">Process</span>
@@ -1851,7 +2256,7 @@
 
 
     <!-- IMAGE SHOWCASE -->
-    <section class="sol-section sol-bg-dark">
+    <section class="sol-section sol-bg-darker">
       <div class="sol-section-inner">
         <div class="sol-reveal" style="max-width:700px;margin-bottom:60px;">
           <span class="sol-eyebrow">Showcase</span>
@@ -1891,162 +2296,174 @@
     </section>
 
     <!-- 4. HOW IT HELPS -->
-    <section class="sol-section sol-bg-dark">
+    <section class="sol-section sol-bg-dark solx-benefits">
       <div class="sol-section-inner">
-        <div class="sol-reveal" style="max-width:650px;margin-bottom:60px;">
-          <span class="sol-eyebrow">Benefits</span>
-          <h2 class="sol-section-title">How Structural Health Monitoring Helps Your Organisation</h2>
-          <p class="sol-section-subtitle">Quantifiable outcomes that transform how infrastructure owners manage,
+        <div class="solx-head solx-head--center">
+          <span class="sol-eyebrow solx-anim">Benefits</span>
+          <h2 class="sol-section-title solx-anim">How Structural Health Monitoring Helps Your Organisation</h2>
+          <p class="sol-section-subtitle solx-anim">Quantifiable outcomes that transform how infrastructure owners manage,
             maintain, and extend the life of their assets.</p>
         </div>
-        <div class="sol-bento-grid">
-          <div class="sol-bento-cell sol-bento-cell--half sol-reveal">
-            <div class="sol-bento-icon"><i class="fa-solid fa-shield-halved"></i></div>
-            <div class="sol-bento-title">Prevent Catastrophic Failure</div>
-            <div class="sol-bento-body">Continuous monitoring detects early-stage structural deterioration: cracks,
-              excessive deflection, vibration anomalies, before they escalate into safety-critical events or structural
-              collapse.</div>
+        <div class="solx-benefit-grid">
+          <div class="solx-benefit">
+            <span class="solx-benefit-icon"><i class="fa-solid fa-shield-halved"></i></span>
+            <h3>Prevent Catastrophic Failure</h3>
+            <p>Detect cracks, excessive deflection and vibration anomalies at an early stage, before they become safety-critical events.</p>
           </div>
-          <div class="sol-bento-cell sol-bento-cell--half sol-reveal">
-            <div class="sol-bento-icon"><i class="fa-solid fa-coins"></i></div>
-            <div class="sol-bento-title">Cut Inspection Costs 40–60%</div>
-            <div class="sol-bento-body">Condition-based monitoring replaces expensive blanket inspection regimes.
-              Resources are directed only to locations and time periods where data indicates it is needed.</div>
+          <div class="solx-benefit">
+            <span class="solx-benefit-icon"><i class="fa-solid fa-coins"></i></span>
+            <h3>Cut Inspection Costs <span class="solx-nowrap">40&ndash;60%</span></h3>
+            <p>Condition-based monitoring replaces blanket inspection regimes and sends crews only where the data says they are needed.</p>
           </div>
-          <div class="sol-bento-cell sol-bento-cell--third sol-reveal">
-            <div class="sol-bento-icon"><i class="fa-solid fa-hourglass-half"></i></div>
-            <div class="sol-bento-title">Extend Service Life</div>
-            <div class="sol-bento-body">Early intervention and optimised maintenance, guided by real structural data,
-              can extend asset service life by decades compared to time-based replacement schedules.</div>
+          <div class="solx-benefit">
+            <span class="solx-benefit-icon"><i class="fa-solid fa-hourglass-half"></i></span>
+            <h3>Extend Service Life</h3>
+            <p>Early, data-led intervention can add decades of service compared with time-based replacement schedules.</p>
           </div>
-          <div class="sol-bento-cell sol-bento-cell--third sol-reveal">
-            <div class="sol-bento-icon"><i class="fa-solid fa-file-shield"></i></div>
-            <div class="sol-bento-title">Regulatory Compliance</div>
-            <div class="sol-bento-body">Automated audit trails, certified reports, and documented alert responses
-              support compliance with railway safety authorities, national bridge codes, and international standards.
-            </div>
+          <div class="solx-benefit">
+            <span class="solx-benefit-icon"><i class="fa-solid fa-file-shield"></i></span>
+            <h3>Regulatory Compliance</h3>
+            <p>Audit trails, certified reports and documented alert responses support railway authorities, bridge codes and international standards.</p>
           </div>
-          <div class="sol-bento-cell sol-bento-cell--third sol-reveal">
-            <div class="sol-bento-icon"><i class="fa-solid fa-gears"></i></div>
-            <div class="sol-bento-title">Predictive Maintenance</div>
-            <div class="sol-bento-body">Machine learning models trained on your structure's behaviour forecast when
-              maintenance interventions will be needed, enabling planned rather than reactive works.</div>
+          <div class="solx-benefit">
+            <span class="solx-benefit-icon"><i class="fa-solid fa-gears"></i></span>
+            <h3>Predictive Maintenance</h3>
+            <p>Models trained on your structure&rsquo;s own behaviour forecast when work will be needed, so it can be planned instead of reactive.</p>
           </div>
-          <div class="sol-bento-cell sol-bento-cell--half sol-reveal">
-            <div class="sol-bento-icon"><i class="fa-solid fa-chart-line"></i></div>
-            <div class="sol-bento-title">Informed Lifecycle Decisions</div>
-            <div class="sol-bento-body">Longitudinal structural data supports major asset decisions: rehabilitation vs
-              replacement, load restriction, capacity upgrades, and life extension justification, backed by engineering
-              evidence.</div>
+          <div class="solx-benefit">
+            <span class="solx-benefit-icon"><i class="fa-solid fa-chart-line"></i></span>
+            <h3>Informed Lifecycle Decisions</h3>
+            <p>Long-term data backs the big calls: rehabilitation or replacement, load restrictions, capacity upgrades and life extension.</p>
           </div>
-          <div class="sol-bento-cell sol-bento-cell--half sol-reveal">
-            <div class="sol-bento-icon"><i class="fa-solid fa-bell"></i></div>
-            <div class="sol-bento-title">Instant Alerting</div>
-            <div class="sol-bento-body">Configurable multi-tier alerts (warning, alert, critical) are delivered via SMS,
-              email, and dashboard notifications, enabling your operations team to respond immediately to structural
-              events.</div>
+          <div class="solx-benefit">
+            <span class="solx-benefit-icon"><i class="fa-solid fa-bell"></i></span>
+            <h3>Instant Alerting</h3>
+            <p>Warning, alert and critical notifications by SMS, email and dashboard let your operations team respond immediately.</p>
           </div>
+          <a class="solx-benefit solx-benefit--cta" href="/contact.html">
+            <span class="solx-benefit-kicker">Build the business case</span>
+            <h3>See what monitoring could save on your asset</h3>
+            <span class="solx-link">Get a free assessment <i class="fa-solid fa-arrow-right"></i></span>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- 5. WHAT IT PREVENTS -->
-    <section class="sol-section sol-bg-darker">
+    <section class="sol-section sol-bg-darker solx-risks">
       <div class="sol-section-inner">
-        <div class="sol-reveal" style="max-width:650px;margin-bottom:60px;">
-          <span class="sol-eyebrow">Risk Mitigation</span>
-          <h2 class="sol-section-title">What It Prevents</h2>
-          <p class="sol-section-subtitle">The real cost of not monitoring is measured in emergency closures,
-            catastrophic repairs, and legal liability. SHM eliminates these risks before they materialise.</p>
-        </div>
-        <div class="sol-risk-carousel sol-reveal">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <div class="sol-risk-card-interactive swiper-slide">
-                <div class="sol-risk-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                <div class="sol-risk-title">Undetected Structural Degradation</div>
-                <div class="sol-risk-desc">Without continuous monitoring, fatigue cracks, corrosion, and foundation
-                  settlement progress silently until a costly emergency inspection or, worse, a structural failure.
-                </div>
-              </div>
-              <div class="sol-risk-card-interactive swiper-slide">
-                <div class="sol-risk-icon"><i class="fa-solid fa-sack-xmark"></i></div>
-                <div class="sol-risk-title">Emergency Reactive Repair Costs</div>
-                <div class="sol-risk-desc">Emergency closures and reactive repairs typically cost 3–5× more than planned
-                  preventive interventions. SHM enables intervention at the optimal point in the deterioration curve.
-                </div>
-              </div>
-              <div class="sol-risk-card-interactive swiper-slide">
-                <div class="sol-risk-icon"><i class="fa-solid fa-gavel"></i></div>
-                <div class="sol-risk-title">Regulatory Non-Compliance</div>
-                <div class="sol-risk-desc">Inspection authorities increasingly mandate data-driven evidence of
-                  structural safety. Operating without a monitoring programme exposes owners to regulatory action and
-                  legal liability.</div>
-              </div>
-              <div class="sol-risk-card-interactive swiper-slide">
-                <div class="sol-risk-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                <div class="sol-risk-title">Unplanned Service Downtime</div>
-                <div class="sol-risk-desc">Structural incidents on railways and highways result in service suspensions
-                  that carry significant commercial and reputational costs. SHM enables proactive management to avoid
-                  unplanned downtime.</div>
-              </div>
-              <div class="sol-risk-card-interactive swiper-slide">
-                <div class="sol-risk-icon"><i class="fa-solid fa-user-slash"></i></div>
-                <div class="sol-risk-title">Safety Incidents & Public Harm</div>
-                <div class="sol-risk-desc">Structural failures affecting public safety carry devastating consequences: loss of life, legal proceedings, and lasting reputational damage. Monitoring is a fundamental
-                  duty-of-care obligation.</div>
-              </div>
-            </div>
+        <div class="solx-risks-grid">
+          <div class="solx-risks-intro">
+            <span class="sol-eyebrow solx-anim">Risk Mitigation</span>
+            <h2 class="sol-section-title solx-anim">What It Prevents</h2>
+            <p class="sol-section-subtitle solx-anim">The real cost of not monitoring is measured in emergency closures,
+              catastrophic repairs, and legal liability. SHM removes these risks before they materialise.</p>
+            <a href="/contact.html" class="solx-link solx-anim">Assess the risk on your structure <i
+                class="fa-solid fa-arrow-right"></i></a>
           </div>
-          <div class="sol-risk-carousel-nav">
-            <div class="swiper-pagination"></div>
-            <div class="sol-risk-arrows">
-              <button class="sol-risk-arrow sol-risk-prev" aria-label="Previous risk"><i
-                  class="fa-solid fa-arrow-left"></i></button>
-              <button class="sol-risk-arrow sol-risk-next" aria-label="Next risk"><i
-                  class="fa-solid fa-arrow-right"></i></button>
+          <ol class="solx-risk-list">
+          <li class="solx-risk">
+            <span class="solx-risk-num">01</span>
+            <div class="solx-risk-body">
+              <h3>Undetected Structural Degradation</h3>
+              <p>Without continuous monitoring, fatigue cracks, corrosion and foundation settlement progress silently until an emergency inspection, or a failure.</p>
             </div>
-          </div>
+            <span class="solx-risk-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>
+          </li>
+          <li class="solx-risk">
+            <span class="solx-risk-num">02</span>
+            <div class="solx-risk-body">
+              <h3>Emergency Reactive Repair Costs</h3>
+              <p>Emergency closures and reactive repairs typically cost 3&ndash;5&times; more than planned work. SHM lets you intervene at the right point on the deterioration curve.</p>
+            </div>
+            <span class="solx-risk-icon"><i class="fa-solid fa-sack-xmark"></i></span>
+          </li>
+          <li class="solx-risk">
+            <span class="solx-risk-num">03</span>
+            <div class="solx-risk-body">
+              <h3>Regulatory Non-Compliance</h3>
+              <p>Authorities increasingly expect data-driven evidence of structural safety. Operating without it exposes owners to regulatory action and liability.</p>
+            </div>
+            <span class="solx-risk-icon"><i class="fa-solid fa-gavel"></i></span>
+          </li>
+          <li class="solx-risk">
+            <span class="solx-risk-num">04</span>
+            <div class="solx-risk-body">
+              <h3>Unplanned Service Downtime</h3>
+              <p>Structural incidents on railways and highways force service suspensions with real commercial and reputational cost.</p>
+            </div>
+            <span class="solx-risk-icon"><i class="fa-solid fa-clock-rotate-left"></i></span>
+          </li>
+          <li class="solx-risk">
+            <span class="solx-risk-num">05</span>
+            <div class="solx-risk-body">
+              <h3>Safety Incidents &amp; Public Harm</h3>
+              <p>Failures that affect the public carry the heaviest consequences: loss of life, legal proceedings and lasting damage to trust.</p>
+            </div>
+            <span class="solx-risk-icon"><i class="fa-solid fa-user-slash"></i></span>
+          </li>
+          </ol>
         </div>
       </div>
     </section>
 
     <!-- 6. INDUSTRIES -->
-    <section class="sol-section sol-bg-dark">
+    <section class="sol-section sol-bg-dark solx-industries">
       <div class="sol-section-inner">
-        <div class="sol-reveal" style="max-width:650px;margin-bottom:60px;">
-          <span class="sol-eyebrow">Industries</span>
-          <h2 class="sol-section-title">Industries We Serve</h2>
-          <p class="sol-section-subtitle">Sentra's SHM solutions are tailored for the asset types, operating
+        <div class="solx-head solx-head--split">
+          <div>
+            <span class="sol-eyebrow solx-anim">Industries</span>
+            <h2 class="sol-section-title solx-anim">Industries We Serve</h2>
+          </div>
+          <p class="sol-section-subtitle solx-anim">Sentra's SHM solutions are tailored for the asset types, operating
             environments, and regulatory frameworks of each sector.</p>
         </div>
-        <div class="sol-industry-grid">
-          <div class="sol-industry-card sol-reveal">
-            <div class="sol-industry-icon"><i class="fa-solid fa-train"></i></div>
-            <div class="sol-industry-name">Railway Networks</div>
-            <div class="sol-industry-desc">Bridges, viaducts, and embankments under live rail traffic monitoring</div>
-          </div>
-          <div class="sol-industry-card sol-reveal">
-            <div class="sol-industry-icon"><i class="fa-solid fa-road-bridge"></i></div>
-            <div class="sol-industry-name">Road Bridges</div>
-            <div class="sol-industry-desc">Highway flyovers, cable-stayed bridges, and major crossings</div>
-          </div>
-          <div class="sol-industry-card sol-reveal">
-            <div class="sol-industry-icon"><i class="fa-solid fa-building"></i></div>
-            <div class="sol-industry-name">High-Rise Buildings</div>
-            <div class="sol-industry-desc">Tall structures, deep basements, and adjacent construction impacts</div>
-          </div>
-          <div class="sol-industry-card sol-reveal">
-            <div class="sol-industry-icon"><i class="fa-solid fa-water"></i></div>
-            <div class="sol-industry-name">Dams & Reservoirs</div>
-            <div class="sol-industry-desc">Embankment, gravity, and arch dams with seepage and deformation monitoring
+        <div class="solx-ind-panels">
+          <a class="solx-ind is-active" href="../industries/railway-infrastructure-monitoring.html">
+            <img src="../image/industries/hero/railway-infrastructure.webp" alt="" loading="lazy">
+            <div class="solx-ind-content">
+              <span class="solx-ind-icon"><i class="fa-solid fa-train"></i></span>
+              <h3>Railway Networks</h3>
+              <p>Bridges, viaducts and embankments monitored under live rail traffic.</p>
+              <span class="solx-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
             </div>
-          </div>
-          <div class="sol-industry-card sol-reveal">
-            <div class="sol-industry-icon"><i class="fa-solid fa-anchor"></i></div>
-            <div class="sol-industry-name"><a href="../industries/ports-marine-monitoring.html">Ports & Marine</a></div>
-            <div class="sol-industry-desc">Wharves, jetties, and marine structures in corrosive environments</div>
-          </div>
+          </a>
+          <a class="solx-ind" href="../industries/bridges-highways-monitoring.html">
+            <img src="../image/industries/hero/bridge-structure.webp" alt="" loading="lazy">
+            <div class="solx-ind-content">
+              <span class="solx-ind-icon"><i class="fa-solid fa-road-bridge"></i></span>
+              <h3>Road Bridges</h3>
+              <p>Highway flyovers, cable-stayed bridges and major crossings.</p>
+              <span class="solx-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a class="solx-ind" href="../industries/buildings-highrise-monitoring.html">
+            <img src="../image/industries/hero/buildings-skyscrapers.webp" alt="" loading="lazy">
+            <div class="solx-ind-content">
+              <span class="solx-ind-icon"><i class="fa-solid fa-building"></i></span>
+              <h3>High-Rise Buildings</h3>
+              <p>Tall structures, deep basements and the impact of adjacent construction.</p>
+              <span class="solx-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a class="solx-ind" href="../industries/dams-reservoirs-monitoring.html">
+            <img src="../image/industries/hero/dam-water.webp" alt="" loading="lazy">
+            <div class="solx-ind-content">
+              <span class="solx-ind-icon"><i class="fa-solid fa-water"></i></span>
+              <h3>Dams &amp; Reservoirs</h3>
+              <p>Embankment, gravity and arch dams, with seepage and deformation monitoring.</p>
+              <span class="solx-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
+          <a class="solx-ind" href="../industries/ports-marine-monitoring.html">
+            <img src="../image/industries/hero/port-containers.webp" alt="" loading="lazy">
+            <div class="solx-ind-content">
+              <span class="solx-ind-icon"><i class="fa-solid fa-anchor"></i></span>
+              <h3>Ports &amp; Marine</h3>
+              <p>Wharves, jetties and marine structures in corrosive environments.</p>
+              <span class="solx-link">Explore <i class="fa-solid fa-arrow-right"></i></span>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -2087,59 +2504,6 @@
               structure's specific failure modes, operational constraints, reporting requirements, and budget.</div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- 8. CASE STUDIES (NEW) -->
-    <section class="sol-section sol-bg-darker">
-      <div class="sol-section-inner">
-        <div class="sol-reveal" style="max-width:650px;margin-bottom:60px;">
-          <span class="sol-eyebrow">Case Studies</span>
-          <h2 class="sol-section-title">Success Stories in Action</h2>
-          <p class="sol-section-subtitle">Real-world deployments of our structural health monitoring technology
-            delivering measurable outcomes.</p>
-        </div>
-        <div class="sol-case-carousel">
-          <div class="swiper">
-            <div class="swiper-wrapper">
-              <a href="/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html"
-                class="sol-case-card sol-reveal swiper-slide">
-                <div class="sol-case-card-image">
-                  <img
-                    src="../image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp"
-                    alt="BridgePulse" loading="lazy">
-                </div>
-                <div class="sol-case-card-body">
-                  <div class="sol-case-card-tags">
-                    <span class="sol-case-card-tag">AI &amp; Drones</span>
-                    <span class="sol-case-card-tag">Railways</span>
-                  </div>
-                  <h4>BridgePulse: AI and Drone Technology for Bridge Health Monitoring</h4>
-                  <span class="sol-case-cta-link">Read Case Study <i class="fa-solid fa-arrow-right"></i></span>
-                </div>
-              </a>
-              <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html"
-                class="sol-case-card sol-reveal swiper-slide">
-                <div class="sol-case-card-image">
-                  <img
-                    src="../image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp"
-                    alt="IoT Bridge Monitoring" loading="lazy">
-                </div>
-                <div class="sol-case-card-body">
-                  <div class="sol-case-card-tags">
-                    <span class="sol-case-card-tag">IoT &amp; Sensors</span>
-                    <span class="sol-case-card-tag">Railways</span>
-                  </div>
-                  <h4>IoT Bridge Monitoring &amp; Sensor Installation on Railway Bridges</h4>
-                  <span class="sol-case-cta-link">Read Case Study <i class="fa-solid fa-arrow-right"></i></span>
-                </div>
-              </a>
-            </div>
-          </div>
-
-        </div>
-        <a href="/resources.html#case-studies" class="sol-btn-case-all" style="display:inline-flex;margin-top:32px">View
-          All Case Studies <i class="fa-solid fa-arrow-right"></i></a>
       </div>
     </section>
 
@@ -2190,7 +2554,7 @@
     </section>
 
     <!-- 10. FAQ -->
-    <section class="sol-section sol-bg-dark">
+    <section class="sol-section sol-bg-darker">
       <div class="hero-container">
         <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
           <div class="col col-xl-5">
@@ -2199,7 +2563,7 @@
                 <i class="fa-regular fa-circle-dot"></i>
                 <span>FAQ</span>
               </div>
-              <h2 class="title-heading" style="font-size:clamp(22px,3.5vw,36px);">Frequently Asked Questions</h2>
+              <h2 class="title-heading" style="font-size:clamp(22px,3.2vw,34px);">Frequently Asked Questions</h2>
               <p style="opacity:0.6;font-size:0.87rem;line-height:1.65;margin-top:1rem;">
                 Can't find what you're looking for?
                 <a href="../contact.html" style="color:var(--accent-color);">Contact our team</a>. We're happy to help.
@@ -2347,17 +2711,26 @@
     </div>
 
     <!-- 12. CTA -->
-    <section class="sol-cta-expert">
-      <div class="sol-cta-expert-inner sol-reveal">
-        <div class="sol-cta-badge">Free Consultation Available</div>
-        <h2 class="sol-cta-title">Talk to Our SHM Expert</h2>
-        <p class="sol-cta-subtitle">Tell us about your structure and monitoring objectives. We'll design a programme
-          that fits your asset, budget, and timeline, with no obligation.</p>
-        <div class="sol-cta-actions">
-          <a href="/contact.html" class="sol-btn-cta">Get a Free Assessment <i
+    <section class="solx-cta">
+      <div class="solx-cta-panel">
+        <div class="solx-cta-grid-bg" aria-hidden="true"></div>
+        <div class="solx-cta-copy">
+          <span class="solx-cta-badge"><span class="solx-live-dot"></span> Free consultation available</span>
+          <h2 class="solx-cta-title">Talk to Our SHM Expert</h2>
+          <p>Tell us about your structure and monitoring objectives. We'll design a programme that fits your asset,
+            budget and timeline, with no obligation.</p>
+          <ul class="solx-cta-points">
+            <li><i class="fa-solid fa-check"></i> No obligation</li>
+            <li><i class="fa-solid fa-check"></i> Designed around your asset</li>
+            <li><i class="fa-solid fa-check"></i> Sensors to dashboard, one team</li>
+          </ul>
+        </div>
+        <div class="solx-cta-actions">
+          <a href="/contact.html" class="solx-cta-btn solx-magnetic">Get a Free Assessment <i
               class="fa-solid fa-arrow-right"></i></a>
-          <a href="https://calendly.com/sentra-clovetech/30min?primary_color=f48120" class="sol-btn-cta-ghost"><i
-              class="fa-solid fa-phone"></i> Schedule a Call</a>
+          <a href="https://calendly.com/sentra-clovetech/30min?primary_color=f48120" class="solx-cta-ghost"><i
+              class="fa-solid fa-calendar"></i> Schedule a Call</a>
+          <a href="tel:+917893023322" class="solx-cta-phone"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
         </div>
       </div>
     </section>
@@ -2660,19 +3033,7 @@
   <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
   <script src="../js/chatbot-widget.js"></script>
   <script src="../js/solutions-v2.js" defer></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      new Swiper('.sol-case-carousel .swiper', {
-        slidesPerView: 1,
-        spaceBetween: 20,
-
-        breakpoints: {
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 }
-        }
-      });
-    });
-  </script>
+  <script src="../js/solution-sections.js" defer></script>
 </body>
 
 </html>
