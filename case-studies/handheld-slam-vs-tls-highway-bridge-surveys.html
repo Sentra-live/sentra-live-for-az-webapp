@@ -18,35 +18,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <title>4G Rugged Gateway: IoT Connectivity Hub | Sentra</title>
-    <meta name="description" content="Carrier-class 4G LoRaWAN gateway for remote monitoring: IP68, up to 15km range, 1000+ devices per network. Cloud or Edge deployment options." />
+    <meta name="description" content="Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup." />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="4G Rugged Gateway: IoT Connectivity Hub | Sentra" />
-    <meta property="og:description" content="Carrier-class 4G LoRaWAN gateway for remote monitoring. IP68, up to 15km range, 1000+ devices per network." />
-    <meta property="og:url" content="https://sentratech.in/products/gateway.html" />
-    <meta property="og:type" content="product" />
-    <meta property="og:image" content="https://sentratech.in/image/branding/sentra.webp" />
+    <meta property="og:title" content="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study" />
+    <meta property="og:description" content="Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup." />
+    <meta property="og:url" content="https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://sentratech.in/image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp" />
+    <meta property="og:image:width" content="2248" />
+    <meta property="og:image:height" content="1264" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="4G Rugged Gateway: IoT Connectivity Hub | Sentra" />
-    <meta name="twitter:description" content="Carrier-class 4G LoRaWAN gateway for remote monitoring. IP68, up to 15km range, 1000+ devices per network." />
-    <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
+    <meta name="twitter:title" content="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study" />
+    <meta name="twitter:description" content="Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup." />
+    <meta name="twitter:image" content="https://sentratech.in/image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp" />
     <meta name="twitter:site" content="@sentratech" />
-
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": "4G Rugged Gateway",
-  "description": "Carrier-class 4G LoRaWAN gateway for remote monitoring. IP68, up to 15km range, 1000+ devices per network.",
-  "brand": {
-    "@type": "Brand",
-    "name": "Sentra"
-  },
-  "image": "https://sentratech.in/image/products/worldsensing_gateway_cloud.webp"
-}
-</script>
-
+    <title>Handheld SLAM vs. TLS for Highway Bridge Surveys</title>
     <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
     <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="../css/vendor/fontawesome.css">
@@ -56,222 +44,178 @@
     <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/vendor/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
     <link rel="stylesheet" href="../css/chatbot.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=analytics,architecture,biotech,construction,database,insights,monitoring,precision_manufacturing,search,search_insights,sentiment_satisfied,settings_suggest,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
-    <link rel="canonical" href="https://sentratech.in/products/gateway.html">
-    <link rel="alternate" type="text/markdown" href="https://sentratech.in/products/gateway.md">
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../css/detail-page.css">
+    <style>
+        .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+        .word { transition: background-color 0.12s ease; padding: 0 1px; border-radius: 2px; }
+        .highlight { background-color: #f48120; transition: background-color 0.15s ease; }
+        body.lightmode .highlight { background-color: #ffe082; }
+        .conclusion-btn-wrapper { margin-bottom: 30px; }
+        body.dark-mode .detail-hero .hero-text-col, body.dark-mode .detail-article, body.dark-mode .hero-title { color: #fff; }
+        body.lightmode .hero-title { color: #111; }
+        body.dark-mode .hero-intro p, body.dark-mode .detail-article p, body.dark-mode .detail-article li { color: rgba(255,255,255,0.6); }
+        body.lightmode .hero-intro p, body.lightmode .detail-article p, body.lightmode .detail-article li { color: rgba(0,0,0,0.6); }
+        blockquote.highlight-quote {
+            border-left: 3px solid var(--accent-color);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            background: rgba(244,129,32,0.04);
+            border-radius: 0 12px 12px 0;
+            font-style: italic;
+        }
+        .insight-box {
+            background: rgba(244,129,32,0.05);
+            border: 1px solid rgba(244,129,32,0.12);
+            border-radius: 16px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        .insight-box h5 { color: var(--accent-color); margin-bottom: 0.75rem; font-size: 1rem; }
+        .insight-box p { font-size: 0.9rem; margin: 0; }
+        .stat-highlight { display: inline-block; font-size: 2.2rem; font-weight: 800; color: var(--accent-color); line-height: 1; }
 
-<style>
-.visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+        .detail-article table.compare-table { width:100%; border-collapse:collapse; margin:1.75rem 0; font-size:0.88rem; }
+        .detail-article table.compare-table th, .detail-article table.compare-table td { padding:0.75rem 1rem; border:1px solid rgba(255,255,255,0.08); text-align:left; vertical-align:top; }
+        .detail-article table.compare-table th { background:rgba(244,129,32,0.08); color:var(--accent-color); font-weight:700; font-size:0.78rem; text-transform:uppercase; letter-spacing:0.03em; }
+        body.lightmode .detail-article table.compare-table th, body.lightmode .detail-article table.compare-table td { border-color: rgba(0,0,0,0.08); }
+        .detail-article table.compare-table tr:nth-child(even) td { background: rgba(255,255,255,0.015); }
 
-/* ══ HERO ══ */
-.gw-hero { position: relative; overflow: hidden; padding: 5rem 1.5rem 3.5rem; background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(244,129,32,0.18) 0%, transparent 70%); border-bottom: 1px solid rgba(255,255,255,0.06); text-align: center; }
-.gw-hero::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px); background-size: 48px 48px; pointer-events: none; }
-.gw-hero-inner { position: relative; max-width: 860px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 1.25rem; }
-.gw-hero h1 { font-size: clamp(28px, 4vw, 48px); font-weight: 800; line-height: 1.15; margin: 0; background: linear-gradient(135deg, #fff 40%, rgba(244,129,32,0.9) 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
-.gw-hero p { font-size: 1.05rem; line-height: 1.65; max-width: 660px; opacity: 0.7; margin: 0; }
-.gw-hero-btns { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; margin-top: 0.5rem; }
-.gw-hero-stats { display: flex; gap: 0.5rem; flex-wrap: wrap; justify-content: center; margin-top: 0.75rem; }
-.gw-hero-stat { display: inline-flex; align-items: center; gap: 0.45rem; padding: 6px 14px; border-radius: 999px; border: 1px solid rgba(244,129,32,0.35); background: rgba(244,129,32,0.08); font-size: 0.78rem; font-weight: 600; color: rgba(255,255,255,0.85); }
-.gw-hero-stat i { color: var(--accent-color); font-size: 0.7rem; }
-body.lightmode .gw-hero { background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(244,129,32,0.12) 0%, transparent 70%); border-bottom-color: rgba(0,0,0,0.08); }
-body.lightmode .gw-hero::before { background-image: linear-gradient(rgba(0,0,0,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(0,0,0,0.04) 1px, transparent 1px); }
-body.lightmode .gw-hero h1 { background: linear-gradient(135deg, #111 40%, #f48120 100%); -webkit-background-clip: text; background-clip: text; }
-body.lightmode .gw-hero-stat { border-color: rgba(244,129,32,0.3); background: rgba(244,129,32,0.07); color: #222; }
+        .maint-flow { display:flex; flex-direction:column; align-items:center; gap:0.25rem; margin:1.75rem 0; }
+        .maint-step { width:100%; max-width:560px; border:1px solid rgba(255,255,255,0.08); border-radius:12px; padding:0.85rem 1.25rem; text-align:center; background:rgba(255,255,255,0.02); }
+        body.lightmode .maint-step { border-color: rgba(0,0,0,0.08); background:#fff; }
+        .maint-step-label { display:block; font-weight:700; font-size:0.82rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--accent-color); margin-bottom:0.25rem; }
+        .maint-step p { margin:0; font-size:0.85rem; }
+        .maint-step.highlight-step { border-color: rgba(244,129,32,0.4); background: rgba(244,129,32,0.06); }
+        .maint-arrow { opacity:0.4; font-size:0.8rem; }
 
-.gw-spec-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,0.06); border-radius: 16px; overflow: hidden; border: 1px solid rgba(255,255,255,0.06); }
-.gw-spec-item { padding: 1.75rem 1.5rem; text-align: center; background: rgba(255,255,255,0.02); display: flex; flex-direction: column; align-items: center; gap: 0.4rem; }
-.gw-spec-item:hover { background: rgba(244,129,32,0.06); }
-.gw-spec-num { font-size: 2.2rem; font-weight: 800; color: var(--accent-color); letter-spacing: -0.03em; line-height: 1; }
-.gw-spec-label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.07em; opacity: 0.55; }
-.gw-spec-desc { font-size: 0.78rem; opacity: 0.5; }
-body.lightmode .gw-spec-bar { background: rgba(0,0,0,0.06); border-color: rgba(0,0,0,0.06); }
-body.lightmode .gw-spec-item { background: #fff; }
-body.lightmode .gw-spec-label { color: #555; opacity: 1; }
-body.lightmode .gw-spec-desc { color: #888; opacity: 1; }
-body.dark-mode .gw-spec-label { color: #fff; opacity: 1; }
-body.dark-mode .gw-spec-desc { color: rgba(255,255,255,0.65); opacity: 1; }
-@media (max-width: 767px) { .gw-spec-bar { grid-template-columns: 1fr 1fr; } .gw-spec-item:nth-child(1), .gw-spec-item:nth-child(2) { border-bottom: 1px solid rgba(255,255,255,0.06); } }
+        .arch-stack { display:flex; flex-direction:column; gap:2px; margin:1.75rem 0; border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); }
+        body.lightmode .arch-stack { border-color: rgba(0,0,0,0.08); }
+        .arch-layer { padding:0.9rem 1.25rem; background:rgba(255,255,255,0.02); }
+        body.lightmode .arch-layer { background:#fff; }
+        .arch-layer-name { display:block; font-weight:700; font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; color:var(--accent-color); margin-bottom:0.15rem; }
+        .arch-layer-desc { font-size:0.83rem; opacity:0.75; }
 
-.gw-features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-.gw-feat-card { border-radius: 14px; padding: 1.75rem; border: 1px solid rgba(255,255,255,0.07); background: rgba(255,255,255,0.03); display: flex; flex-direction: column; gap: 1rem; transition: transform 0.25s ease, box-shadow 0.25s ease; }
-.gw-feat-card:hover { transform: translateY(-3px); box-shadow: inset 0 3px 0 0 var(--accent-color), 0 12px 30px rgba(0,0,0,0.2); }
-.gw-feat-icon { width: 48px; height: 48px; border-radius: 12px; background: rgba(244,129,32,0.1); display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.2rem; }
-.gw-feat-card h4 { font-size: 0.95rem; font-weight: 700; margin: 0; }
-.gw-feat-card p { font-size: 0.8rem; margin: 0; line-height: 1.6; opacity: 0.6; }
-body.lightmode .gw-feat-card { border-color: rgba(0,0,0,0.08); background: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-body.lightmode .gw-feat-icon { background: rgba(244,129,32,0.08); }
-@media (max-width: 991px) { .gw-features-grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 575px) { .gw-features-grid { grid-template-columns: 1fr; } }
+        .case-stats-grid { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; margin:1.75rem 0; }
+        @media (max-width: 700px) { .case-stats-grid { grid-template-columns:repeat(2,1fr); } }
+        .case-stat-item { text-align:center; padding:1.25rem 0.75rem; border-radius:14px; border:1px solid rgba(255,255,255,0.08); background:rgba(255,255,255,0.02); }
+        body.lightmode .case-stat-item { border-color:rgba(0,0,0,0.08); background:#fff; }
+        .case-stat-num { display:block; font-size:1.9rem; font-weight:800; color:var(--accent-color); line-height:1.1; }
+        .case-stat-label { display:block; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.03em; margin-top:0.35rem; }
+        .case-stat-sub { display:block; font-size:0.78rem; opacity:0.6; margin-top:0.2rem; }
 
-.gw-app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-.gw-app-card { border-radius: 14px; padding: 1.5rem; border: 1px solid rgba(255,255,255,0.07); background: rgba(255,255,255,0.02); display: flex; align-items: flex-start; gap: 1rem; transition: border-color 0.25s ease, background 0.25s ease; }
-.gw-app-card:hover { border-color: rgba(244,129,32,0.35); background: rgba(244,129,32,0.04); }
-.gw-app-icon { width: 44px; height: 44px; min-width: 44px; border-radius: 10px; background: rgba(244,129,32,0.1); display: flex; align-items: center; justify-content: center; color: var(--accent-color); font-size: 1.1rem; flex-shrink: 0; }
-.gw-app-card h5 { font-size: 0.9rem; font-weight: 700; margin: 0 0 0.3rem; }
-.gw-app-card p { font-size: 0.77rem; margin: 0; line-height: 1.55; opacity: 0.55; }
-body.lightmode .gw-app-card { border-color: rgba(0,0,0,0.08); background: #fff; }
-body.lightmode .gw-app-icon { background: rgba(244,129,32,0.08); }
-@media (max-width: 767px) { .gw-app-grid { grid-template-columns: 1fr; } }
+        .ptb-card { border:1px solid rgba(255,255,255,0.08); border-radius:16px; padding:1.5rem 1.5rem 1.25rem; margin:1.75rem 0; background:rgba(255,255,255,0.02); }
+        body.lightmode .ptb-card { border-color:rgba(0,0,0,0.08); background:#fff; }
+        .ptb-title { font-size:1rem; font-weight:800; margin:0 0 1.1rem; }
+        .ptb-row { margin-bottom:1.25rem; }
+        .ptb-row-head { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:0.4rem 1rem; margin-bottom:0.4rem; }
+        .ptb-row-label { font-weight:700; font-size:0.9rem; }
+        .ptb-row-values { font-size:0.82rem; opacity:0.85; display:flex; gap:0.9rem; flex-wrap:wrap; }
+        .ptb-row-values .ptb-l2 { color:var(--accent-color); font-weight:700; }
+        .ptb-bar-track { position:relative; height:8px; border-radius:999px; background:rgba(120,120,120,0.18); overflow:hidden; }
+        .ptb-bar-fill { position:absolute; top:0; left:0; bottom:0; border-radius:999px; background:var(--accent-color); }
+        .ptb-row.ptb-total .ptb-bar-fill { background:#2d2e2f; }
+        body.lightmode .ptb-row.ptb-total .ptb-bar-fill { background:#111; }
+        .ptb-faster { display:block; text-align:right; font-size:0.76rem; font-weight:700; color:#1fa858; margin-top:0.3rem; }
+        .ptb-row.ptb-total { border-top:1px solid rgba(255,255,255,0.08); padding-top:1.1rem; }
+        body.lightmode .ptb-row.ptb-total { border-top-color:rgba(0,0,0,0.08); }
 
-.gw-specs-table-wrap { border-radius: 14px; border: 1px solid rgba(255,255,255,0.07); background: rgba(255,255,255,0.02); overflow: hidden; }
-.gw-specs-table-wrap table { width: 100%; border-collapse: collapse; }
-.gw-specs-table-wrap th, .gw-specs-table-wrap td { padding: 14px 18px; text-align: left; border-bottom: 1px solid rgba(255,255,255,0.05); font-size: 0.87rem; }
-.gw-specs-table-wrap th { width: 38%; font-weight: 600; color: var(--accent-color); background: rgba(244,129,32,0.03); }
-.gw-specs-table-wrap .gw-spec-section { background: rgba(244,129,32,0.06); font-weight: 700; font-size: 0.82rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent-color); }
-.gw-specs-table-wrap td { color: rgba(255,255,255,0.8); }
-.gw-specs-table-wrap tr:last-child th, .gw-specs-table-wrap tr:last-child td { border-bottom: none; }
-body.lightmode .gw-specs-table-wrap { border-color: rgba(0,0,0,0.08); background: #fff; }
-body.lightmode .gw-specs-table-wrap th { background: rgba(244,129,32,0.04); color: var(--accent-color); }
-body.lightmode .gw-specs-table-wrap td { color: #444; }
-body.lightmode .gw-specs-table-wrap th, body.lightmode .gw-specs-table-wrap td { border-bottom-color: rgba(0,0,0,0.06); }
+        .case-gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; margin:1.75rem 0; }
+        @media (max-width: 700px) { .case-gallery { grid-template-columns:1fr; } }
+        .case-gallery-item { border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,0.08); background:rgba(255,255,255,0.02); }
+        body.lightmode .case-gallery-item { border-color:rgba(0,0,0,0.08); background:#fff; }
+        .case-gallery-item img { width:100%; height:190px; object-fit:cover; display:block; }
+        .case-gallery-caption { padding:0.6rem 0.85rem; font-size:0.78rem; opacity:0.65; }
 
-.gw-cta-banner { border-radius: 20px; padding: 4rem 3rem; background: linear-gradient(135deg, rgba(244,129,32,0.15) 0%, rgba(244,129,32,0.05) 50%, rgba(0,0,0,0) 100%); border: 1px solid rgba(244,129,32,0.2); display: flex; align-items: center; justify-content: space-between; gap: 2rem; position: relative; overflow: hidden; }
-.gw-cta-banner::before { content: ""; position: absolute; right: -60px; top: -60px; width: 320px; height: 320px; border-radius: 50%; background: radial-gradient(circle, rgba(244,129,32,0.12) 0%, transparent 70%); pointer-events: none; }
-.gw-cta-left { flex: 1; }
-.gw-cta-left h3 { font-size: 1.5rem; font-weight: 800; margin: 0 0 0.75rem; }
-.gw-cta-left p { font-size: 0.9rem; opacity: 0.65; margin: 0; line-height: 1.6; max-width: 520px; }
-.gw-cta-btns { display: flex; gap: 0.75rem; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
-body.lightmode .gw-cta-banner { background: linear-gradient(135deg, rgba(244,129,32,0.1) 0%, #fff 100%); }
-@media (max-width: 767px) { .gw-cta-banner { flex-direction: column; align-items: flex-start; padding: 2.5rem 2rem; } .gw-cta-btns { justify-content: flex-start; } }
+        /* The sitewide .accordion-item .accordion-body rule zeroes out padding-left;
+           restore it here to match the question button above it. */
+        #faqBridgeCase.accordion .accordion-item .accordion-body {
+            padding-left: 1.25rem;
+            display: block;
+        }
+    </style>
+    <link rel="canonical" href="https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html">
+    <link rel="alternate" type="text/markdown" href="https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.md">
 
-.btn-quote { background-color: #f48120 !important; border: none !important; box-shadow: none !important; }
-.btn-quote .btn-title span { color: #fff !important; }
-.btn-quote .icon-circle { background-color: rgba(255,255,255,0.22) !important; color: #fff !important; }
-.btn-quote:hover { background-color: #fff !important; box-shadow: 0 8px 24px rgba(244,129,32,0.25) !important; }
-.btn-quote:hover .btn-title span { color: #f48120 !important; }
-.btn-quote:hover .icon-circle { background-color: #f48120 !important; color: #fff !important; }
-body.lightmode .btn-quote { background-color: #f48120 !important; border: none !important; }
-body.lightmode .btn-quote:hover { background-color: #fff !important; box-shadow: 0 8px 24px rgba(244,129,32,0.2) !important; }
-body.lightmode .btn-quote:hover .btn-title span { color: #f48120 !important; }
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study",
+      "description": "Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup.",
+      "datePublished": "2026-09-17",
+      "dateModified": "2026-09-17",
+      "author": {
+        "@type": "Organization",
+        "name": "Sentra Technologies"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Sentra",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sentratech.in/image/branding/sentra.webp"
+        }
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://sentratech.in/image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp"
+      },
+      "inLanguage": "en"
+    }
+    </script>
 
-.gw-cta-btns .btn.btn-primary { background-color: #ffffff !important; border-color: #ffffff !important; }
-.gw-cta-btns .btn.btn-primary .btn-title span { color: #111111 !important; }
-.gw-cta-btns .btn.btn-primary .icon-circle { background-color: rgba(0,0,0,0.1) !important; color: #111111 !important; }
-.gw-cta-btns .btn.btn-primary:hover { background-color: rgba(255,255,255,0.88) !important; }
-body.lightmode .gw-cta-btns .btn.btn-primary { background-color: #111111 !important; border-color: #111111 !important; }
-body.lightmode .gw-cta-btns .btn.btn-primary .btn-title span { color: #ffffff !important; }
-body.lightmode .gw-cta-btns .btn.btn-primary .icon-circle { background-color: rgba(255,255,255,0.15) !important; color: #ffffff !important; }
-body.lightmode .gw-cta-btns .btn.btn-primary:hover { background-color: #333333 !important; }
-
-.newsletter-layout .btn { height: 48px; width: fit-content; align-self: center; }
-.newsletter-layout .btn-title { padding: 10px 30px; font-size: var(--font-size-sm); }
-.newsletter-layout .icon-circle { width: 42px; height: 42px; }
-[data-bs-theme="dark"] .dark-accent { color: #f48120 !important; }
-.dark-accent { color: #f48120 !important; }
-body.lightmode .dark-accent { color: #2d2e2f !important; }
-
-.p-img-wrap { background: #fff; border-radius: 14px; overflow: hidden; display: flex; align-items: center; justify-content: center; width: 100%; padding: 1.75rem 1.5rem; margin-bottom: 0.5rem; }
-.p-img-wrap img { transition: transform 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94); display: block; }
-.p-img-wrap:hover img { transform: scale(1.12); }
-body.lightmode .p-img-wrap { background: #fff; box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
-
-.gw-battery-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; margin-top: 4px; }
-.gw-battery-table th { text-align: left; padding: 10px 16px; font-weight: 600; color: var(--accent-color); background: transparent !important; border-bottom: 1px solid rgba(255,255,255,0.08); white-space: nowrap; }
-.gw-battery-table td { padding: 10px 16px; border-bottom: 1px solid rgba(255,255,255,0.03); background: transparent !important; }
-body.lightmode .gw-battery-table th { color: var(--accent-color); }
-body.lightmode .gw-battery-table td { color: #555; }
-body.lightmode .gw-battery-table th, body.lightmode .gw-battery-table td { border-bottom-color: rgba(0,0,0,0.05); }
-
-.gw-battery-toggle { float: right; display: inline-flex; align-items: center; gap: 0.4rem; padding: 3px 10px; border-radius: 6px; border: 1px solid rgba(244,129,32,0.25); background: rgba(244,129,32,0.08); color: var(--accent-color); font-size: 0.72rem; font-weight: 600; cursor: pointer; transition: all 0.2s ease; text-transform: none; letter-spacing: normal; }
-.gw-battery-toggle:hover { background: rgba(244,129,32,0.15); border-color: rgba(244,129,32,0.4); }
-.gw-battery-toggle i { font-size: 0.6rem; transition: transform 0.25s ease; }
-.gw-battery-toggle[aria-expanded="true"] i { transform: rotate(180deg); }
-body.lightmode .gw-battery-toggle { border-color: rgba(244,129,32,0.3); background: rgba(244,129,32,0.06); color: var(--accent-color); }
-
-@media (max-width: 768px) { .gw-specs-table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; } .gw-battery-table { min-width: 420px; } }
-</style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".detail-article h2, .detail-article h4", ".detail-article p", ".hero-intro"]
+      },
+      "url": "https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html"
+    }
+    </script>
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://sentratech.in/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "Products",
-          "item": "https://sentratech.in/products.html"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "4G Rugged Gateway: IoT Connectivity Hub",
-          "item": "https://sentratech.in/products/gateway.html"
-        }
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://sentratech.in/" },
+        { "@type": "ListItem", "position": 2, "name": "Resources", "item": "https://sentratech.in/resources.html" },
+        { "@type": "ListItem", "position": 3, "name": "Handheld SLAM vs. TLS for Highway Bridge Surveys", "item": "https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html" }
       ]
     }
     </script>
-    
 
     <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
     {
-      "@type": "Question",
-      "name": "What is the 4G Rugged Gateway used for?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It serves as the central communication hub for wireless sensor networks in remote monitoring projects. It collects data from field sensors such as tiltmeters, GNSS meters, vibration meters and vibrating wire loggers, and transmits it to cloud or local servers via 4G cellular backhaul."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How does it ensure reliable data transmission?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The gateway uses 4G LTE with automatic 3G/2G fallback and includes local data buffering to prevent data loss during temporary network outages. Multi-spreading factor technology optimises range and efficiency."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What environments can it operate in?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The gateway is IP68-rated and operates from −40°C to +60°C, making it suitable for harsh outdoor environments including mines, tunnels, bridges, dams and remote infrastructure sites."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How is it powered?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The gateway supports Power over Ethernet (PoE) both mode A and mode B per 802.3af specifications, and 5V through USB-C. A PoE injector for indoor use is included in the kit."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between Cloud and Edge variants?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The Cloud variant supports multi-gateway networks for data redundancy and centralised management via CMT Cloud (up to 300 messages/min). The Edge variant provides local network and device management using embedded CMT Edge (up to 30 messages/min), ideal for private isolated deployments."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How many sensors can it handle simultaneously?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A single 4G Rugged Gateway network can support 1000+ wireless edge devices simultaneously, making it ideal for large-scale instrumentation networks from city-wide bridge monitoring to full dam instrumentation programmes."
-      }
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "How much faster is mobile laser scanning than terrestrial laser scanning for bridge inspection?", "acceptedAnswer": { "@type": "Answer", "text": "In this bridge inspection case study, mobile laser scanning completed the full project in about 6 hours versus roughly 7.5 days for terrestrial laser scanning (TLS): a 29x improvement in total project time, driven by a 16x faster field survey and a 144x faster dynamic object removal step." } },
+        { "@type": "Question", "name": "How accurate is mobile laser scanning compared to a TLS baseline?", "acceptedAnswer": { "@type": "Answer", "text": "The mobile-scanned point cloud achieved under 1cm average accuracy when checked against the terrestrial laser scanning baseline, which is well within the tolerance required for bridge condition assessment and scan-to-BIM workflows." } },
+        { "@type": "Question", "name": "Why does terrestrial laser scanning take longer on a bridge?", "acceptedAnswer": { "@type": "Answer", "text": "TLS is a static, tripod-based method: the scanner has to be set up, levelled and registered at every position, and a bridge of any length can require hundreds of individual setups. In this case, TLS needed 350 setups against 3 walking loops for the mobile scanner, and each TLS setup also restricts access to that section of the structure while it runs." } },
+        { "@type": "Question", "name": "What is dynamic object removal in point cloud processing?", "acceptedAnswer": { "@type": "Answer", "text": "Dynamic object removal is the process of stripping moving objects: vehicles, pedestrians, passing traffic: out of a point cloud so only the static structure remains. Manual removal on a large TLS dataset can take days; an automated pipeline can complete the same cleanup in about an hour with roughly 90% of objects removed automatically." } },
+        { "@type": "Question", "name": "Does mobile laser scanning replace terrestrial laser scanning for infrastructure inspection?", "acceptedAnswer": { "@type": "Answer", "text": "Not universally: TLS still delivers the highest static, survey-grade accuracy for critical structural detail. But for full-structure bridge condition surveys where field time, site access and turnaround matter, mobile SLAM-based scanning delivers comparable practical accuracy at a fraction of the time and site disruption." } }
+      ]
     }
-  ]
-}
     </script>
+
 </head>
 
-<body class="product-page">
+<body>
     <!-- Preloader -->
     <div id="preloader">
         <div class="preloader-inner">
@@ -286,7 +230,9 @@ body.lightmode .gw-battery-toggle { border-color: rgba(244,129,32,0.3); backgrou
             </div>
         </div>
     </div>
-    <header><div id="header"><!-- Mega nav styles live in css/style.css -->
+
+    <header>
+        <div id="header"><!-- Mega nav styles live in css/style.css -->
 <style>
     /* Self-contained import so the theme-toggle glyph renders even on pages
        whose <head> doesn't already link Material Symbols. */
@@ -1400,9 +1346,15 @@ body.lightmode .gw-battery-toggle { border-color: rgba(244,129,32,0.3); backgrou
 
         })();
     </script>
-</div></div></header>
-    <aside><div id="edit-sidebar"></div></aside>
-    <aside><div id="sidebar"><div>
+</div></div>
+    </header>
+
+    <aside>
+        <div id="edit-sidebar"></div>
+    </aside>
+
+    <aside>
+        <div id="sidebar"><div>
     <div class="content-overlay">
         <div class="content-edit-sidebar">
             <div class="sidebar-header">
@@ -1584,273 +1536,276 @@ body.lightmode .gw-battery-toggle { border-color: rgba(244,129,32,0.3); backgrou
             </div>
         </div>
     </nav>
-</div></div></aside>
+</div></div>
+    </aside>
 
     <main>
-        <section class="gw-hero">
-            <div class="gw-hero-inner">
-                <div class="sub-heading"><i class="fa-regular fa-circle-dot"></i><span>Gateway</span></div>
-                <h1>4G Rugged Gateway: Carrier-Class IoT Connectivity</h1>
-                <p>Central communication hub for wireless sensor networks. Carrier-class LoRaWAN gateway with 4G cellular backhaul, designed for harsh outdoor environments by connecting sensors in mines, tunnels, bridges and remote infrastructure.</p>
-                <div class="gw-hero-btns">
-                    <a href="#gw-products" class="btn btn-accent"><span class="btn-title"><span>Explore Products</span></span><span class="icon-circle"><i class="fa-solid fa-arrow-down"></i></span></a>
-                    <a href="../contact.html" class="btn btn-accent btn-quote"><span class="btn-title"><span>Get a Quote</span></span><span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span></a>
-                </div>
-                <div class="gw-hero-stats">
-                    <span class="gw-hero-stat"><i class="fa-solid fa-circle-dot"></i> 15 km Wireless Range</span>
-                    <span class="gw-hero-stat"><i class="fa-solid fa-circle-dot"></i> 1000+ Devices / Network</span>
-                    <span class="gw-hero-stat"><i class="fa-solid fa-circle-dot"></i> IP68 Rated</span>
-                    <span class="gw-hero-stat"><i class="fa-solid fa-circle-dot"></i> 4G + LoRaWAN</span>
+        <!-- Hero -->
+        <section class="detail-hero">
+            <a href="../resources.html#case-studies" class="back-btn"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+            <div class="hero-bg-dots"></div>
+            <div class="hero-glow orange-glow"></div>
+            <div class="hero-top-line"></div>
+            <div class="hero-container-inner">
+                <div class="hero-grid">
+                    <div class="hero-text-col">
+                        <div class="hero-meta-row">
+                            <span class="hero-badge orange">Comparison Study</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> Sep 17, 2026</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-clock"></i> 9 min read</span>
+                        </div>
+                        <h1 class="hero-title">Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study</h1>
+                        <div class="hero-intro">
+                            <p>A side-by-side bridge condition survey pitted a mobile SLAM-based scanner, the XGRIDS L2 Pro, against a conventional terrestrial laser scanning (TLS) workflow built around a static scanner such as the RTC360. The mobile workflow finished the entire project in about 6 hours against roughly 7.5 days for TLS: while holding accuracy to under 1cm against the TLS baseline.</p>
+                        </div>
+                    </div>
+                    <div class="hero-image-col">
+                        <div class="hero-image-wrap">
+                            <img src="../image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp" alt="Handheld SLAM vs. TLS for highway bridge surveys: colorized point cloud model of the bridge" loading="eager">
+                            <div class="hero-image-overlay"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <div class="section pb-0" id="gw-products">
-            <div class="hero-container">
-                <div class="row row-cols-xl-3 row-cols-1 grid-spacer-4">
-                    <div class="col">
-                        <div class="d-flex flex-column align-items-center text-center gspace-2" style="border-radius:14px;border:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.02);padding:2rem 1.5rem;">
-                            <div class="p-img-wrap">
-                                <img src="../image/products/worldsensing_gateway_cloud.webp" alt="4G Rugged Gateway Cloud" style="width:100%;max-width:320px;height:auto;object-fit:contain;">
-                            </div>
-                            <h4 style="font-size:1.1rem;font-weight:700;margin-top:0.75rem;">4G Rugged Gateway Cloud</h4>
-                            <p style="font-size:0.82rem;opacity:0.6;">Multi-gateway networks for data redundancy</p>
-                            <span class="gw-hero-stat" style="font-size:0.7rem;"><i class="fa-solid fa-circle-dot"></i> Cloud Managed</span>
+        <!-- Content -->
+        <div class="detail-content-wrapper">
+            <div class="detail-grid">
+                <article class="detail-article">
+                    <div class="tts-bar">
+                        <button id="ttsPlayBtn" class="tts-btn" aria-label="Play article aloud" aria-pressed="false"><i class="fas fa-play"></i></button>
+                        <div class="tts-progress" id="ttsProgressBar">
+                            <div id="progressFill" class="tts-fill"></div>
                         </div>
+                        <span class="tts-label">Listen</span>
                     </div>
-                    <div class="col">
-                        <div class="d-flex flex-column align-items-center text-center gspace-2" style="border-radius:14px;border:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.02);padding:2rem 1.5rem;">
-                            <div class="p-img-wrap">
-                                <img src="../image/products/worldsensing_gateway_edge.webp" alt="4G Rugged Gateway Edge" style="width:100%;max-width:320px;height:auto;object-fit:contain;">
-                            </div>
-                            <h4 style="font-size:1.1rem;font-weight:700;margin-top:0.75rem;">4G Rugged Gateway Edge</h4>
-                            <p style="font-size:0.82rem;opacity:0.6;">Local network management via CMT Edge</p>
-                            <span class="gw-hero-stat" style="font-size:0.7rem;"><i class="fa-solid fa-circle-dot"></i> Edge Managed</span>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex flex-column align-items-center text-center gspace-2" style="border-radius:14px;border:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.02);padding:2rem 1.5rem;">
-                            <div class="p-img-wrap">
-                                <img src="../image/home/gateway_01.webp" alt="Gateway Edge 915R" style="width:100%;max-width:320px;height:auto;object-fit:contain;">
-                            </div>
-                            <h4 style="font-size:1.1rem;font-weight:700;margin-top:0.75rem;">Gateway Edge 915R</h4>
-                            <p style="font-size:0.82rem;opacity:0.6;">902-928MHz band for North America</p>
-                            <span class="gw-hero-stat" style="font-size:0.7rem;"><i class="fa-solid fa-circle-dot"></i> 915 MHz Band</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="section pb-0">
-            <div class="hero-container">
-                <div class="gw-spec-bar">
-                    <div class="gw-spec-item"><span class="gw-spec-num">15<span style="font-size:1.2rem">km</span></span><span class="gw-spec-label">Wireless Range</span><span class="gw-spec-desc">LoRaWAN multi-spreading factor</span></div>
-                    <div class="gw-spec-item"><span class="gw-spec-num">1000<span style="font-size:1.2rem">+</span></span><span class="gw-spec-label">Devices / Network</span><span class="gw-spec-desc">Single gateway capacity</span></div>
-                    <div class="gw-spec-item"><span class="gw-spec-num" style="font-size:1.6rem;">4G + LoRa</span><span class="gw-spec-label">Connectivity</span><span class="gw-spec-desc">Cellular backhaul + LoRaWAN</span></div>
-                    <div class="gw-spec-item"><span class="gw-spec-num">IP68</span><span class="gw-spec-label">Protection</span><span class="gw-spec-desc">−40°C to +60°C operating range</span></div>
-                </div>
-            </div>
-        </div>
+                    <div class="detail-meta-bar">
+                        <div class="detail-meta-left">
+                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> Sep 17, 2026</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Comparison Study</span>
+                        </div>
+                        <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Vishal Das <a href="https://in.linkedin.com/in/vishaldas01" target="_blank" rel="noopener" aria-label="Vishal Das on LinkedIn"><i class="fa-brands fa-linkedin"></i></a> | Sentra Technologies</span>
+                    </div>
 
-        <div class="section">
-            <div class="hero-container">
-                <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
-                    <div class="col">
-                        <div class="d-flex flex-column gspace-3">
-                            <div class="d-flex flex-column gspace-2 animate-box animated animate__animated" data-animate="animate__fadeInLeft">
-                                <div class="sub-heading"><i class="fa-regular fa-circle-dot"></i><span>Overview</span></div>
-                                <h2 class="title-heading intro-heading-compact">Reliable Connectivity for Smart Monitoring</h2>
+                    <div id="ttsContent">
+                        <p>Bridge condition surveys usually run into the same wall: terrestrial laser scanning (TLS) delivers excellent static accuracy, but it needs the scanner set up, levelled and registered again at every position along the structure. On a long bridge deck, that adds up to hundreds of individual setups, each one closing off part of the site while it runs.</p>
+                        <p>This case study compares that conventional TLS workflow, using a static scanner such as the RTC360, against a mobile SLAM-based alternative, the XGRIDS L2 Pro, on the same bridge. The scanner is carried or wheeled along the structure in a handful of continuous loops instead of being repositioned hundreds of times, and its onboard AI pipeline handles most of the point cloud cleanup automatically.</p>
+
+                        <div class="case-stats-grid">
+                            <div class="case-stat-item">
+                                <span class="case-stat-num">29x</span>
+                                <span class="case-stat-label">Faster Total Time</span>
+                                <span class="case-stat-sub">6 hrs vs 7.5 days</span>
                             </div>
-                            <p class="intro-text-compact">The 4G Rugged Gateway is a carrier-class, outdoor LoRaWAN gateway designed to provide robust cellular connectivity for remote monitoring in harsh environments. It serves as the primary communication hub for Worldsensing edge devices, enabling high-volume bidirectional data messaging from remote locations.</p>
-                            <p class="intro-text-compact">Available in three variants: Cloud (multi-gateway redundancy), Edge (local single-network management), and Edge 915R (902-928MHz band for North America): to suit any deployment architecture.</p>
-                            <div class="row row-cols-2 grid-spacer-2" style="margin-top:0.5rem;">
-                                <div class="col"><div class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check" style="color:var(--accent-color);font-size:0.85rem;margin-top:3px;"></i><div><strong style="font-size:0.85rem;">4G Fallback</strong><p style="font-size:0.78rem;margin:0;opacity:0.6;">3G/2G fallback for uninterrupted service</p></div></div></div>
-                                <div class="col"><div class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check" style="color:var(--accent-color);font-size:0.85rem;margin-top:3px;"></i><div><strong style="font-size:0.85rem;">Edge Computing</strong><p style="font-size:0.78rem;margin:0;opacity:0.6;">Local validation and buffering on-board</p></div></div></div>
-                                <div class="col"><div class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check" style="color:var(--accent-color);font-size:0.85rem;margin-top:3px;"></i><div><strong style="font-size:0.85rem;">Multi-Band Support</strong><p style="font-size:0.78rem;margin:0;opacity:0.6;">EMEA, Americas, APAC frequency bands</p></div></div></div>
-                                <div class="col"><div class="d-flex align-items-start gap-2"><i class="fa-solid fa-circle-check" style="color:var(--accent-color);font-size:0.85rem;margin-top:3px;"></i><div><strong style="font-size:0.85rem;">PoE Powered</strong><p style="font-size:0.78rem;margin:0;opacity:0.6;">Single cable for power + data</p></div></div></div>
+                            <div class="case-stat-item">
+                                <span class="case-stat-num">&lt;1cm</span>
+                                <span class="case-stat-label">Avg. Accuracy</span>
+                                <span class="case-stat-sub">vs TLS baseline</span>
+                            </div>
+                            <div class="case-stat-item">
+                                <span class="case-stat-num">16x</span>
+                                <span class="case-stat-label">Faster Field Work</span>
+                                <span class="case-stat-sub">45 min vs 1.5 days</span>
+                            </div>
+                            <div class="case-stat-item">
+                                <span class="case-stat-num">90%</span>
+                                <span class="case-stat-label">Auto Cleaning</span>
+                                <span class="case-stat-sub">Dynamic objects</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex flex-column gspace-2">
-                            <div style="border-radius:14px;border:1px solid rgba(255,255,255,0.07);background:rgba(255,255,255,0.02);padding:2rem;">
-                                <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;">
-                                    <div style="width:44px;height:44px;border-radius:10px;background:rgba(244,129,32,0.1);display:flex;align-items:center;justify-content:center;color:var(--accent-color);font-size:1.2rem;flex-shrink:0;"><i class="fa-solid fa-tower-broadcast"></i></div>
-                                    <div><h3 style="font-size:1.2rem;font-weight:800;margin:0;">Key Benefits</h3></div>
-                                </div>
-                                <div class="d-flex flex-column gspace-2">
-                                    <div class="d-flex align-items-start gap-2"><i class="fa-regular fa-circle-check accent-color" style="margin-top:3px;"></i><div><strong style="font-size:0.85rem;">Reliable Connectivity</strong><p style="font-size:0.78rem;margin:0;opacity:0.6;">Ensures uninterrupted data transfer from remote sensors via 4G LTE with automatic 3G/2G fallback.</p></div></div>
-                                    <div class="d-flex align-items-start gap-2"><i class="fa-regular fa-circle-check accent-color" style="margin-top:3px;"></i><div><strong style="font-size:0.85rem;">Edge Intelligence</strong><p style="font-size:0.78rem;margin:0;opacity:0.6;">Processes events locally for faster alerts and reduced latency. Local data buffering prevents loss during outages.</p></div></div>
-                                    <div class="d-flex align-items-start gap-2"><i class="fa-regular fa-circle-check accent-color" style="margin-top:3px;"></i><div><strong style="font-size:0.85rem;">Durable Design</strong><p style="font-size:0.78rem;margin:0;opacity:0.6;">IP68-rated weatherproof enclosure withstands harsh outdoor and industrial conditions.</p></div></div>
-                                    <div class="d-flex align-items-start gap-2"><i class="fa-regular fa-circle-check accent-color" style="margin-top:3px;"></i><div><strong style="font-size:0.85rem;">Flexible Deployment</strong><p style="font-size:0.78rem;margin:0;opacity:0.6;">Private isolated local networks or multi-network cloud management; choose the architecture for your project.</p></div></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div class="section">
-            <div class="hero-container">
-                <div class="d-flex flex-column gspace-5">
-                    <div class="d-flex flex-column justify-content-center text-center gspace-2">
-                        <div class="sub-heading align-self-center animate-box animated animate__animated" data-animate="animate__fadeInDown"><i class="fa-regular fa-circle-dot"></i><span>Core Capabilities</span></div>
-                        <h2 class="title-heading heading-container heading-container-medium animate-box animated animate__animated" data-animate="animate__fadeInDown" style="font-size:clamp(22px,3.2vw,34px);">What Makes the 4G Rugged Gateway Different</h2>
-                        <p style="max-width:600px;margin:0 auto;opacity:0.6;font-size:0.9rem;line-height:1.65;">Field-proven gateway technology designed for large-scale geotechnical, structural and environmental monitoring networks.</p>
-                    </div>
-                    <div class="gw-features-grid">
-                        <div class="gw-feat-card animate-box animated animate__animated" data-animate="animate__fadeInUp"><div class="gw-feat-icon"><i class="fa-solid fa-signal"></i></div><div><h4>Long-Range LoRaWAN</h4><p>Up to 15 km wireless coverage using multi-spreading factor technology. Connects hundreds of sensors across bridges, dams, slopes and remote infrastructure with a single gateway.</p></div></div>
-                        <div class="gw-feat-card animate-box animated animate__animated" data-animate="animate__fadeInUp"><div class="gw-feat-icon"><i class="fa-solid fa-tower-cell"></i></div><div><h4>4G Cellular Backhaul</h4><p>Worldwide 4G module with 3G/2G fallback ensures data reaches the cloud even in areas with limited cellular coverage. Ethernet option also available for wired connections.</p></div></div>
-                        <div class="gw-feat-card animate-box animated animate__animated" data-animate="animate__fadeInUp"><div class="gw-feat-icon"><i class="fa-solid fa-network-wired"></i></div><div><h4>High Scalability</h4><p>A single gateway network reliably supports 1000+ wireless devices. Cloud variant handles up to 300 messages/min; Edge variant handles up to 30 messages/min for single-network deployments.</p></div></div>
-                        <div class="gw-feat-card animate-box animated animate__animated" data-animate="animate__fadeInUp"><div class="gw-feat-icon"><i class="fa-solid fa-sliders"></i></div><div><h4>Cloud & Local Management</h4><p>CMT Cloud for multi-gateway, multi-site oversight. CMT Edge for private, isolated local deployments where data stays on-site, ideal for high-security environments.</p></div></div>
-                        <div class="gw-feat-card animate-box animated animate__animated" data-animate="animate__fadeInUp"><div class="gw-feat-icon"><i class="fa-solid fa-shield-halved"></i></div><div><h4>IP68 Rugged Enclosure</h4><p>Industrial-grade IP68-rated housing for full submersion protection. Operating temperature range of −40°C to +60°C for the harshest field conditions.</p></div></div>
-                        <div class="gw-feat-card animate-box animated animate__animated" data-animate="animate__fadeInUp"><div class="gw-feat-icon"><i class="fa-solid fa-plug"></i></div><div><h4>Simple PoE Power</h4><p>Power over Ethernet (PoE) supports both mode A and B: a single cable delivers power and data. USB-C also available for local access. PoE injector included in the kit.</p></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <h2 id="challengeSection">The Challenge: A Fixed-Setup Workflow on an Open Structure</h2>
+                        <p>Bridges are among the hardest assets to scan efficiently with TLS. The structure is long, linear and exposed to live traffic, so a static scanner can only cover a limited field of view from each tripod position before it has to be moved, re-levelled and re-registered. Every one of those setups also occupies part of the deck or the area beneath it, which means the survey team is constantly negotiating access around ongoing traffic or site activity.</p>
+                        <p>For this bridge, the TLS plan called for 350 individual scanner setups to achieve full coverage: a schedule that pushed field work alone to roughly a day and a half, before any office processing had started.</p>
 
-        <div class="section">
-            <div class="hero-container">
-                <div class="d-flex flex-column gspace-5">
-                    <div class="d-flex flex-column text-center align-items-center gspace-2">
-                        <div class="sub-heading align-self-center"><i class="fa-regular fa-circle-dot"></i><span>Applications</span></div>
-                        <h2 class="title-heading heading-container heading-container-medium" style="font-size:clamp(22px,3.2vw,34px);">Where the 4G Rugged Gateway Deploys</h2>
-                        <p style="max-width:600px;margin:0 auto;opacity:0.6;font-size:0.9rem;line-height:1.65;">Deploy the 4G Rugged Gateway across mining, transport, construction and environmental monitoring projects.</p>
-                    </div>
-                    <div class="gw-app-grid">
-                        <div class="gw-app-card"><div class="gw-app-icon"><i class="fa-solid fa-gem"></i></div><div><h5>Mining Operations</h5><p>Reliable surface and underground communications for slope stability, seismic and groundwater monitoring across open-pit and underground mines.</p></div></div>
-                        <div class="gw-app-card"><div class="gw-app-icon"><i class="fa-solid fa-bridge"></i></div><div><h5>Transport & Bridges</h5><p>Long-range gateway networks covering road and rail corridors: continuous sensor data from bridge decks, tunnels and retaining structures.</p></div></div>
-                        <div class="gw-app-card"><div class="gw-app-icon"><i class="fa-solid fa-helmet-safety"></i></div><div><h5>Construction Sites</h5><p>Temporary and permanent deployments for settlement, vibration and ground movement monitoring throughout the construction lifecycle.</p></div></div>
-                        <div class="gw-app-card"><div class="gw-app-icon"><i class="fa-solid fa-water"></i></div><div><h5>Dam & Reservoir</h5><p>Wide-area gateway coverage for large embankment and concrete dam instrumentation networks, including piezometers, tiltmeters and GNSS in a single network.</p></div></div>
-                        <div class="gw-app-card"><div class="gw-app-icon"><i class="fa-solid fa-mountain"></i></div><div><h5>Geotechnical Slopes</h5><p>Wireless sensor networks across remote terrain: landslide early warning, slope stability and rainfall monitoring without cellular coverage dependency.</p></div></div>
-                        <div class="gw-app-card"><div class="gw-app-icon"><i class="fa-solid fa-leaf"></i></div><div><h5>Environmental Monitoring</h5><p>Flood early warning systems, weather kits and environmental sensor arrays connected over long-range narrowband with minimal infrastructure.</p></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
+                        <h2 id="fieldworkSection">Field Work Comparison: 3 Loops vs 350 Setups</h2>
+                        <p>The mobile scanner covers the same bridge by walking or wheeling three continuous loops across the structure, recording geometry the entire time instead of stopping to set up at fixed stations. That single difference in method removes almost all of the field-time cost that TLS carries.</p>
 
-        <div class="section">
-            <div class="hero-container">
-                <div class="d-flex flex-column gspace-4">
-                    <div class="d-flex flex-column text-center align-items-center gspace-2">
-                        <div class="sub-heading align-self-center"><i class="fa-regular fa-circle-dot"></i><span>Technical Specs</span></div>
-                        <h2 class="title-heading heading-container heading-container-medium" style="font-size:clamp(22px,3.2vw,34px);">4G Rugged Gateway Specifications</h2>
-                    </div>
-                    <div class="gw-specs-table-wrap">
-                        <table>
+                        <table class="compare-table">
+                            <thead>
+                                <tr><th>Metric</th><th>L2 Pro</th><th>TLS (RTC360)</th><th>Advantage</th></tr>
+                            </thead>
                             <tbody>
-                                <tr>
-                                    <td colspan="2" class="gw-spec-section">
-                                        4G Rugged Gateway Specifications
-                                        <button class="gw-battery-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#gwDetailSpecs" aria-expanded="false" aria-controls="gwDetailSpecs">
-                                            <span>Show full specs</span>
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" style="padding:10px 18px;">
-                                        <div style="display:flex;flex-wrap:wrap;gap:1rem;padding:8px 4px;font-size:0.85rem;align-items:center;">
-                                            <span><strong>Protocol:</strong> LoRa/LoRaWAN</span>
-                                            <span><strong>Backhaul:</strong> 4G + Ethernet</span>
-                                            <span><strong>Bands:</strong> 863-928MHz</span>
-                                            <span style="opacity:0.5;">|</span>
-                                            <span><strong>Sensitivity:</strong> -141 dBm</span>
-                                            <span><strong>Protection:</strong> IP68</span>
-                                            <span><strong>Temp:</strong> −40°C to +60°C</span>
-                                        </div>
-                                        <div class="collapse" id="gwDetailSpecs">
-                                            <table class="gw-battery-table" style="margin-top:12px;">
-                                                <tbody>
-                                                    <tr><th style="width:38%;">Radio Communication Protocol</th><td>LoRa/LoRaWAN</td></tr>
-                                                    <tr><th>Backhaul Connectivity</th><td>4G Worldwide module with 3G/2G fallback; Ethernet (RJ45)</td></tr>
-                                                    <tr><th>Supported Unlicensed Bands</th><td>863-874.4MHz (EMEA, India), 902-928MHz (North America), 915-928MHz (APAC, Latin America)</td></tr>
-                                                    <tr><th>Rx Sensitivity</th><td>-141 dBm (SF12)</td></tr>
-                                                    <tr><th>Antenna</th><td>Integrated internal antennas GPS, 4G, LoRa (peak gain=2.6dBi). Optional external antenna.</td></tr>
-                                                    <tr><th>Device Interfaces</th><td>Ethernet: Waterproof RJ45 • Cellular: Waterproof Mini SIM Card slot • Local: USB-C</td></tr>
-                                                    <tr><th>Power Options</th><td>PoE both mode A and mode B (802.3af); 5V through USB-C; PoE injector for indoor use included</td></tr>
-                                                    <tr><th>Mean Power Consumption</th><td>4.5 W</td></tr>
-                                                    <tr><th>Weather Protection</th><td>IP68</td></tr>
-                                                    <tr><th>Operating Temperature</th><td>−40°C to +60°C</td></tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </td>
-                                </tr>
+                                <tr><td>Scan Method</td><td>3 loops</td><td>350 setups</td><td>117x fewer setups</td></tr>
+                                <tr><td>Field Time</td><td>45 minutes</td><td>1.5 days</td><td>16x faster</td></tr>
+                                <tr><td>Site Access</td><td>Full mobility</td><td>Limited (traffic)</td><td>No constraints</td></tr>
                             </tbody>
                         </table>
+                        <p>Because the mobile scanner keeps moving, the survey crew never has to close off a section of the bridge to set up equipment: the structure stays fully accessible to traffic and other site activity throughout the capture.</p>
+
+                        <h2 id="processingSection">Processing Time Breakdown</h2>
+                        <p>Field time is only half of a scanning project's schedule. Every point cloud still has to be registered into a single coordinate system, and then cleaned of moving objects: vehicles, pedestrians, anything that isn't part of the static structure, before it is usable for inspection or scan-to-BIM work. This is where the gap between the two methods widens the most.</p>
+
+                        <div class="ptb-card">
+                            <p class="ptb-title">Processing Time Breakdown</p>
+                            <div class="ptb-row">
+                                <div class="ptb-row-head">
+                                    <span class="ptb-row-label">Registration</span>
+                                    <span class="ptb-row-values"><span class="ptb-l2">L2 Pro: 4.5 hrs</span><span>TLS: 24 hrs (1 day)</span></span>
+                                </div>
+                                <div class="ptb-bar-track"><div class="ptb-bar-fill" style="width:19%"></div></div>
+                                <span class="ptb-faster">5x faster</span>
+                            </div>
+                            <div class="ptb-row">
+                                <div class="ptb-row-head">
+                                    <span class="ptb-row-label">Dynamic Object Removal</span>
+                                    <span class="ptb-row-values"><span class="ptb-l2">L2 Pro: 1 hr (90% auto)</span><span>TLS: 144 hrs (6 days manual)</span></span>
+                                </div>
+                                <div class="ptb-bar-track"><div class="ptb-bar-fill" style="width:3%"></div></div>
+                                <span class="ptb-faster">144x faster</span>
+                            </div>
+                            <div class="ptb-row ptb-total">
+                                <div class="ptb-row-head">
+                                    <span class="ptb-row-label">Total Processing</span>
+                                    <span class="ptb-row-values"><span class="ptb-l2">L2 Pro: 5.5 hrs</span><span>TLS: 168 hrs (7 days)</span></span>
+                                </div>
+                                <div class="ptb-bar-track"><div class="ptb-bar-fill" style="width:4%"></div></div>
+                                <span class="ptb-faster">30x faster processing</span>
+                            </div>
+                        </div>
+                        <p>The dynamic object removal step is where TLS loses the most time. A static scan captures whatever passes through its field of view during setup, and stripping those moving objects out of a dense point cloud by hand is slow, meticulous work. The mobile workflow's onboard pipeline automates roughly 90% of that cleanup, cutting a six-day manual task down to about an hour.</p>
+
+                        <div class="insight-box">
+                            <h5><i class="fa-solid fa-clock" style="margin-right:8px;"></i>Total Project Time</h5>
+                            <p>Combining field work and processing, the mobile workflow delivered a finished, cleaned point cloud in about <strong>6 hours</strong>, compared with roughly <strong>7.5 days</strong> for the TLS workflow on the same bridge: a <span class="stat-highlight" style="font-size:1.3rem;">29x</span> reduction in total project time.</p>
+                        </div>
+
+                        <h2 id="accuracySection">Accuracy Validation Against the TLS Baseline</h2>
+                        <p>Speed only matters if the resulting model can be trusted. The mobile scan was checked point-by-point against the TLS dataset, which served as the survey-grade accuracy baseline for the comparison. Across the structure, the mobile-scanned point cloud held to an average deviation of under 1cm from that baseline: well within the tolerance needed for bridge condition assessment, clearance checks and scan-to-BIM modelling.</p>
+                        <p>That result is consistent with what SLAM-based mobile mapping systems are generally suited to: centimetre-level accuracy delivered far faster than static scanning, rather than an attempt to beat TLS on absolute precision. For most bridge inspection and digital twin use cases, that trade-off comes out strongly in favour of the mobile method once field time, site disruption and processing labour are counted.</p>
+
+                        <h2 id="resultsSection">Results &amp; Deliverables</h2>
+                        <p>The output of the mobile scan is a fully colorized, cleaned point cloud of the bridge: ready to hand off for condition assessment, clearance verification, or as the geometric baseline for a scan-to-BIM or digital twin workflow.</p>
+                        <div class="case-gallery">
+                            <div class="case-gallery-item">
+                                <img src="https://cdn-bukbb1.xgrids.cloud/prd/cms/1772179101471_7.png" alt="Colorized point cloud model of the bridge, view 1" loading="lazy">
+                                <div class="case-gallery-caption">Colorized Point Cloud Model of the Bridge</div>
+                            </div>
+                            <div class="case-gallery-item">
+                                <img src="https://cdn-bukbb1.xgrids.cloud/prd/cms/1772179114961_8.png" alt="Colorized point cloud model of the bridge, view 2" loading="lazy">
+                                <div class="case-gallery-caption">Colorized Point Cloud Model of the Bridge</div>
+                            </div>
+                            <div class="case-gallery-item">
+                                <img src="https://cdn-bukbb1.xgrids.cloud/prd/cms/1772179127199_9.png" alt="Colorized point cloud model of the bridge, view 3" loading="lazy">
+                                <div class="case-gallery-caption">Colorized Point Cloud Model of the Bridge</div>
+                            </div>
+                        </div>
+
+                        <h2 id="takeawaysSection">What This Means for Infrastructure Teams</h2>
+                        <p>For teams responsible for periodic bridge inspection or asset condition monitoring, the practical implication is straightforward: a mobile, SLAM-based scan captures full-structure geometry in a fraction of the field and processing time TLS requires, without closing off the structure to normal traffic during capture. That turns a survey that used to take the better part of two weeks: field work, registration and manual cleanup combined, into a same-day deliverable.</p>
+                        <p>It does not eliminate the need for TLS everywhere. Where a project genuinely requires the highest static, survey-grade accuracy on a specific critical component, terrestrial scanning still has a role. But for routine and periodic full-structure bridge condition surveys, where turnaround, site access and labour cost all matter, mobile laser scanning is now delivering practical accuracy fast enough to change how often a bridge can realistically be resurveyed.</p>
+
+                        <h2>Frequently Asked Questions</h2>
+                        <div class="accordion" id="faqBridgeCase" style="margin-top:1rem;">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q1" aria-expanded="false">How much faster is mobile laser scanning than terrestrial laser scanning for bridge inspection?</button></h3>
+                                <div id="faqBC-q1" class="accordion-collapse collapse show" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>In this bridge inspection case study, mobile laser scanning completed the full project in about 6 hours versus roughly 7.5 days for terrestrial laser scanning (TLS): a 29x improvement in total project time, driven by a 16x faster field survey and a 144x faster dynamic object removal step.</p></div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q2" aria-expanded="false">How accurate is mobile laser scanning compared to a TLS baseline?</button></h3>
+                                <div id="faqBC-q2" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>The mobile-scanned point cloud achieved under 1cm average accuracy when checked against the terrestrial laser scanning baseline, which is well within the tolerance required for bridge condition assessment and scan-to-BIM workflows.</p></div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q3" aria-expanded="false">Why does terrestrial laser scanning take longer on a bridge?</button></h3>
+                                <div id="faqBC-q3" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>TLS is a static, tripod-based method: the scanner has to be set up, levelled and registered at every position, and a bridge of any length can require hundreds of individual setups. In this case, TLS needed 350 setups against 3 walking loops for the mobile scanner, and each TLS setup also restricts access to that section of the structure while it runs.</p></div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q4" aria-expanded="false">What is dynamic object removal in point cloud processing?</button></h3>
+                                <div id="faqBC-q4" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>Dynamic object removal is the process of stripping moving objects: vehicles, pedestrians, passing traffic: out of a point cloud so only the static structure remains. Manual removal on a large TLS dataset can take days; an automated pipeline can complete the same cleanup in about an hour with roughly 90% of objects removed automatically.</p></div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBC-q5" aria-expanded="false">Does mobile laser scanning replace terrestrial laser scanning for infrastructure inspection?</button></h3>
+                                <div id="faqBC-q5" class="accordion-collapse collapse" data-bs-parent="#faqBridgeCase"><div class="accordion-body"><p>Not universally: TLS still delivers the highest static, survey-grade accuracy for critical structural detail. But for full-structure bridge condition surveys where field time, site access and turnaround matter, mobile SLAM-based scanning delivers comparable practical accuracy at a fraction of the time and site disruption.</p></div></div>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <div style="border-radius:12px;border:1px solid rgba(244,129,32,0.15);background:rgba(244,129,32,0.04);padding:1.25rem 1.5rem;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;justify-content:center;text-align:center;">
-                        <div style="display:flex;align-items:center;gap:0.75rem;">
-                            <div style="width:40px;height:40px;border-radius:10px;background:rgba(244,129,32,0.1);display:flex;align-items:center;justify-content:center;color:var(--accent-color);font-size:1rem;flex-shrink:0;"><i class="fa-solid fa-file-arrow-down"></i></div>
-                            <div style="text-align:left;"><p style="font-size:0.88rem;font-weight:700;margin:0;line-height:1.3;">Need the full technical details?</p><p style="font-size:0.75rem;margin:0;opacity:0.55;line-height:1.3;">Complete specs, diagrams, and datasheets</p></div>
-                        </div>
-                        <a href="#" data-brochure-download="https://info.worldsensing.com/Datasheet_4GGateway_EN" data-brochure-name="4G Rugged Gateway Datasheet" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.55rem 1.25rem;border-radius:8px;background:var(--accent-color);color:#fff;text-decoration:none;font-size:0.82rem;font-weight:700;transition:all 0.2s ease;border:none;white-space:nowrap;" onmouseover="this.style.background='#e07010'" onmouseout="this.style.background='var(--accent-color)'"><i class="fa-solid fa-file-pdf"></i><span>Download Datasheet</span><i class="fa-solid fa-arrow-up-right-from-square" style="font-size:0.65rem;"></i></a>
+                    <div class="detail-cta">
+                        <h2>Ready to Bring Faster Reality Capture to Your Next Bridge Survey?</h2>
+                        <p>Talk to Sentra's reality capture team about mobile laser scanning, scan-to-BIM and digital twin workflows for bridges, buildings and critical infrastructure.</p>
+                        <a class="cta-btn" href="/contact.html?enquiry=1&amp;product=Laser%20Scanners">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
-                </div>
+                </article>
+
+                <aside class="detail-sidebar">
+                    <div class="sidebar-sticky">
+                        <div class="sidebar-card toc">
+                            <h3><i class="fa-solid fa-list"></i> Table of Contents</h3>
+                            <div id="tocContainer">
+                                <button class="toc-item" data-target="challengeSection">The Challenge</button>
+                                <button class="toc-item" data-target="fieldworkSection">Field Work Comparison</button>
+                                <button class="toc-item" data-target="processingSection">Processing Time Breakdown</button>
+                                <button class="toc-item" data-target="accuracySection">Accuracy Validation</button>
+                                <button class="toc-item" data-target="resultsSection">Results &amp; Deliverables</button>
+                                <button class="toc-item" data-target="takeawaysSection">Key Takeaways</button>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3><i class="fa-regular fa-share-from-square"></i> Share</h3>
+                            <div class="sidebar-share-icons">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html" target="_blank" class="share-icon-link" aria-label="Share on Facebook" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html&text=Handheld%20SLAM%20vs.%20TLS%20for%20Highway%20Bridge%20Surveys" target="_blank" class="share-icon-link" aria-label="Share on Twitter" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html" target="_blank" class="share-icon-link" aria-label="Share on LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://api.whatsapp.com/send?text=Handheld%20SLAM%20vs.%20TLS%20for%20Highway%20Bridge%20Surveys%20https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html" target="_blank" class="share-icon-link" aria-label="Share on WhatsApp" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3><i class="fa-regular fa-bookmark"></i> Related Solutions</h3>
+                            <div style="display:flex;flex-direction:column;gap:8px;">
+                                <a href="../solutions/bridge-inspection-and-condition-assessment.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Bridge Inspection &amp; Condition Assessment</a>
+                                <a href="../products/laser-scanners.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Laser Scanners</a>
+                                <a href="../solutions/digital-twin.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Digital Twin</a>
+                                <a href="../solutions/asset-monitoring-and-management-solutions.html" style="font-size:0.85rem;color:var(--accent-color);"><i class="fa-solid fa-arrow-right" style="font-size:0.7rem;margin-right:6px;"></i>Asset Monitoring &amp; Management</a>
+                            </div>
+                        </div>
+
+                        <a href="../resources.html#case-studies" class="back-btn" style="position:static;display:flex;width:100%;justify-content:center;"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+                    </div>
+                </aside>
             </div>
         </div>
 
-        <div class="section">
-            <div class="hero-container">
-                <div class="gw-cta-banner animate-box animated animate__animated" data-animate="animate__fadeInUp">
-                    <div class="gw-cta-left"><h3>Ready to Connect Your Monitoring Network?</h3><p>Talk to our IoT connectivity specialists about the right gateway configuration for your project, including mining, bridges, dams, tunnels or slopes. Robust coverage, fast deployment.</p></div>
-                    <div class="gw-cta-btns">
-                        <a href="../contact.html" class="btn btn-accent btn-quote"><span class="btn-title"><span>Get a Quote</span></span><span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span></a>
-                        <a href="../case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="btn btn-primary"><span class="btn-title"><span>View Case Study</span></span><span class="icon-circle"><i class="fa-solid fa-arrow-right"></i></span></a>
-                    </div>
+        <!-- More Case Studies -->
+        <div class="hero-container" style="max-width:1280px;margin:0 auto;padding:0 1rem 4rem">
+            <div class="trending-section">
+                <div class="trending-header">
+                    <span class="trending-dot"></span>
+                    <h2>More Case Studies</h2>
                 </div>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="hero-container">
-                <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
-                    <div class="col col-xl-5">
-                        <div class="faq-title-container">
-                            <div class="sub-heading"><i class="fa-regular fa-circle-dot"></i><span>Frequently Asked Questions</span></div>
-                            <h2 class="title-heading" style="font-size:clamp(22px,3.2vw,34px);">Got Questions About the 4G Rugged Gateway?</h2>
-                            <p style="opacity:0.6;font-size:0.87rem;line-height:1.65;margin-top:1rem;">Can't find what you're looking for? <a href="../contact.html" style="color:var(--accent-color);">Contact our team</a>. We're happy to help.</p>
+                <div class="trending-grid">
+                    <a href="../case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp" alt="Railway Bridge Digital Twin Using Drone and LiDAR Inspection" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Railway Bridge Digital Twin Using Drone and LiDAR Inspection</h4>
+                            <div class="trending-card-meta"><span>Railways</span><span>&middot;</span><span>Case Study</span></div>
                         </div>
-                    </div>
-                    <div class="col col-xl-7">
-                        <div class="accordion" id="faqAccordion1">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">What is the 4G Rugged Gateway used for?</button></h2>
-                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion1"><div class="accordion-body"><div class="accordion-spacer"></div><p>It serves as the central communication hub for wireless sensor networks in remote monitoring projects. It collects data from field sensors such as tiltmeters, GNSS meters, vibration meters and vibrating wire loggers, and transmits it to cloud or local servers via 4G cellular backhaul.</p></div></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">How does it ensure reliable data transmission?</button></h2>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1"><div class="accordion-body"><div class="accordion-spacer"></div><p>The gateway uses 4G LTE with automatic 3G/2G fallback and includes local data buffering to prevent data loss during temporary network outages. Multi-spreading factor technology optimises range and efficiency.</p></div></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">What environments can it operate in?</button></h2>
-                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1"><div class="accordion-body"><div class="accordion-spacer"></div><p>The gateway is IP68-rated and operates from −40°C to +60°C, making it suitable for harsh outdoor environments including mines, tunnels, bridges, dams and remote infrastructure sites.</p></div></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">How is it powered?</button></h2>
-                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1"><div class="accordion-body"><div class="accordion-spacer"></div><p>The gateway supports Power over Ethernet (PoE) both mode A and mode B per 802.3af specifications, and 5V through USB-C. A PoE injector for indoor use is included in the kit.</p></div></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">What is the difference between Cloud and Edge variants?</button></h2>
-                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1"><div class="accordion-body"><div class="accordion-spacer"></div><p>The Cloud variant supports multi-gateway networks for data redundancy and centralised management via CMT Cloud (up to 300 messages/min). The Edge variant provides local network and device management using embedded CMT Edge (up to 30 messages/min), ideal for private isolated deployments.</p></div></div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">How many sensors can it handle simultaneously?</button></h2>
-                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1"><div class="accordion-body"><div class="accordion-spacer"></div><p>A single 4G Rugged Gateway network can support 1000+ wireless edge devices simultaneously, making it ideal for large-scale instrumentation networks from city-wide bridge monitoring to full dam instrumentation programmes.</p></div></div>
-                            </div>
+                    </a>
+                    <a href="../case-studies/structural-health-monitoring-of-highway-bridges.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp" alt="Structural Health Monitoring of Highway Bridges" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Structural Health Monitoring of Highway Bridges</h4>
+                            <div class="trending-card-meta"><span>Infrastructure</span><span>&middot;</span><span>Case Study</span></div>
                         </div>
-                    </div>
+                    </a>
+                    <a href="../case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp" alt="BridgePulse AI and Drone Technology for Bridge Health Monitoring" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>BridgePulse: AI &amp; Drone Technology for Bridge Health Monitoring</h4>
+                            <div class="trending-card-meta"><span>Bridge Safety</span><span>&middot;</span><span>Case Study</span></div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer><div id="footer"><div class="section-footer">
+    <footer>
+        <div id="footer"><div class="section-footer">
     <div class="bg-footer-wrapper">
         <div class="bg-footer">
             <div class="hero-container position-relative z-2">
@@ -2133,7 +2088,148 @@ body.lightmode .gw-battery-toggle { border-color: rgba(244,129,32,0.3); backgrou
         }
         initQR();
     })();
-</script></div></footer>
+</script></div>
+    </footer>
+
+    <script>
+        (function () {
+            const synth = window.speechSynthesis;
+            let voices = [], isPlaying = false, isPaused = false, totalWords = 0;
+            let currentWordIndex = 0, wordSpans = [], paragraphs = [], currentParagraphIndex = 0;
+            let activeUtterance = null, fallbackTimer = null, boundarySupported = false;
+            let autoScrollEnabled = true, mouseIdleTimer;
+
+            const ttsContent = document.getElementById('ttsContent');
+            const playBtn = document.getElementById('ttsPlayBtn');
+            const progressFill = document.getElementById('progressFill');
+            const progressBar = document.getElementById('ttsProgressBar');
+
+            function loadVoices() { voices = synth.getVoices() || []; }
+            loadVoices();
+            if (speechSynthesis.onvoiceschanged !== undefined) speechSynthesis.onvoiceschanged = loadVoices;
+
+            function pickVoice() {
+                return voices.find(v => /Google US English|Samantha|en-US/i.test(v.name + ' ' + v.lang)) || voices[0];
+            }
+
+            document.addEventListener('mousemove', () => {
+                autoScrollEnabled = false;
+                clearTimeout(mouseIdleTimer);
+                mouseIdleTimer = setTimeout(() => { autoScrollEnabled = true; }, 5000);
+            });
+
+            function wrapWords() {
+                ttsContent.querySelectorAll('p, h2, h4, h5, li').forEach(el => {
+                    if (el.querySelector('.word')) return;
+                    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
+                    const nodes = [];
+                    let n;
+                    while (n = walker.nextNode()) { if (n.textContent.trim()) nodes.push(n); }
+                    nodes.forEach(tn => {
+                        const frag = document.createDocumentFragment();
+                        tn.textContent.split(/(\s+)/).forEach(tok => {
+                            if (/\s+/.test(tok)) { frag.appendChild(document.createTextNode(tok)); }
+                            else if (tok) { const s = document.createElement('span'); s.className = 'word'; s.textContent = tok; frag.appendChild(s); totalWords++; }
+                        });
+                        tn.parentNode.replaceChild(frag, tn);
+                    });
+                });
+                wordSpans = Array.from(ttsContent.querySelectorAll('.word'));
+            }
+            wrapWords();
+
+            function getParagraphs() { paragraphs = Array.from(ttsContent.querySelectorAll('p, h2, h4, h5, li')).filter(el => el.textContent.trim()); }
+            getParagraphs();
+
+            function computeBoundaries(text) {
+                const words = text.split(/\s+/).filter(Boolean), bounds = [];
+                let cursor = 0;
+                words.forEach(w => { const f = text.indexOf(w, cursor); bounds.push(f === -1 ? cursor : f); cursor = (f === -1 ? cursor : f) + w.length; });
+                return bounds;
+            }
+
+            function scrollCenter(el) { if (el && autoScrollEnabled) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
+            function clearTimer() { if (fallbackTimer) { clearInterval(fallbackTimer); fallbackTimer = null; } }
+
+            function speakFrom(index) {
+                clearTimer(); boundarySupported = false;
+                if (index >= paragraphs.length) {
+                    isPlaying = isPaused = false;
+                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    currentParagraphIndex = currentWordIndex = 0;
+                    progressFill.style.width = '0%';
+                    return;
+                }
+                currentParagraphIndex = index;
+                const p = paragraphs[index], text = p.textContent.trim();
+                if (!text) { speakFrom(index + 1); return; }
+                const bounds = computeBoundaries(text);
+                const spans = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim());
+                spans.forEach(w => w.classList.remove('highlight'));
+                const u = new SpeechSynthesisUtterance(text);
+                activeUtterance = u; u.lang = 'en-US'; u.rate = 1.1; u.pitch = 1.1;
+                const v = pickVoice(); if (v) u.voice = v;
+                const fps = Math.max(120, Math.round(1000 / (3.0 * u.rate)));
+                u.onstart = () => {
+                    isPlaying = true; isPaused = false;
+                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
+                    currentWordIndex = 0;
+                    if (spans[0]) { spans[0].classList.add('highlight'); scrollCenter(spans[0]); }
+                    fallbackTimer = setInterval(() => {
+                        if (boundarySupported || !isPlaying || isPaused) { clearTimer(); return; }
+                        if (currentWordIndex < spans.length - 1) {
+                            spans[currentWordIndex].classList.remove('highlight');
+                            spans[++currentWordIndex].classList.add('highlight');
+                            scrollCenter(spans[currentWordIndex]);
+                        }
+                    }, fps);
+                };
+                u.onboundary = (ev) => {
+                    boundarySupported = true; clearTimer();
+                    const ci = ev.charIndex || 0;
+                    let wi = 0;
+                    for (let i = 0; i < bounds.length; i++) {
+                        const end = i < bounds.length - 1 ? bounds[i + 1] : text.length;
+                        if (ci >= bounds[i] && ci < end) { wi = i; break; }
+                        if (i === bounds.length - 1) wi = bounds.length - 1;
+                    }
+                    wi = Math.min(Math.max(wi, 0), spans.length - 1);
+                    if (wi !== currentWordIndex) {
+                        if (spans[currentWordIndex]) spans[currentWordIndex].classList.remove('highlight');
+                        if (spans[wi]) { spans[wi].classList.add('highlight'); scrollCenter(spans[wi]); }
+                        currentWordIndex = wi;
+                    }
+                };
+                u.onend = () => {
+                    p.querySelectorAll('.word.highlight').forEach(w => w.classList.remove('highlight'));
+                    activeUtterance = null; clearTimer();
+                    if (isPlaying && !isPaused) speakFrom(index + 1);
+                    else { isPlaying = isPaused = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
+                };
+                u.onerror = () => { activeUtterance = null; isPlaying = false; clearTimer(); playBtn.innerHTML = '<i class="fas fa-play"></i>'; };
+                try { synth.speak(u); } catch(e) {}
+                progressFill.style.width = ((index + 1) / paragraphs.length * 100) + '%';
+            }
+
+            playBtn.addEventListener('click', () => {
+                if (!voices.length) loadVoices();
+                if (isPlaying && !isPaused) { synth.pause(); isPaused = true; isPlaying = false; playBtn.innerHTML = '<i class="fas fa-play"></i>'; }
+                else if (isPaused) { synth.resume(); isPaused = false; isPlaying = true; playBtn.innerHTML = '<i class="fas fa-pause"></i>'; }
+                else { if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0; speakFrom(currentParagraphIndex); }
+            });
+
+            progressBar.addEventListener('click', (e) => {
+                const pct = (e.clientX - progressBar.getBoundingClientRect().left) / progressBar.clientWidth;
+                if (synth.speaking) synth.cancel();
+                wordSpans.forEach(w => w.classList.remove('highlight'));
+                clearTimer();
+                currentParagraphIndex = Math.floor(pct * paragraphs.length);
+                speakFrom(currentParagraphIndex);
+            });
+
+            window.addEventListener('beforeunload', () => { if (synth.speaking) synth.cancel(); });
+        })();
+    </script>
 
     <script src="../js/vendor/jquery.min.js"></script>
     <script src="../js/vendor/bootstrap.bundle.min.js"></script>
@@ -2144,6 +2240,30 @@ body.lightmode .gw-battery-toggle { border-color: rgba(244,129,32,0.3); backgrou
     <script src="../js/video_embedded.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
     <script src="../js/chatbot-widget.js"></script>
-    <script src="../js/brochure-download.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var tocItems = document.querySelectorAll('.toc-item');
+            var sections = [];
+            tocItems.forEach(function (btn) {
+                var target = document.getElementById(btn.getAttribute('data-target'));
+                if (target) sections.push({ btn: btn, target: target });
+                btn.addEventListener('click', function () {
+                    var el = document.getElementById(this.getAttribute('data-target'));
+                    if (el) {
+                        var h = (document.querySelector('header') || {getBoundingClientRect:()=>({height:0})}).getBoundingClientRect().height;
+                        window.scrollTo({ top: Math.max(el.getBoundingClientRect().top + window.scrollY - h - 80, 0), behavior: 'smooth' });
+                    }
+                });
+            });
+            window.addEventListener('scroll', function () {
+                var scrollY = window.scrollY + 200, active = null;
+                sections.forEach(function (s) { if (s.target.offsetTop <= scrollY) active = s; });
+                tocItems.forEach(function (b) { b.classList.remove('active'); });
+                if (active) active.btn.classList.add('active');
+            });
+        });
+    </script>
 </body>
+
 </html>

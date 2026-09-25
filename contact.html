@@ -174,10 +174,10 @@
             color: var(--accent-color);
         }
         .contact-hero h1 {
-            font-size: clamp(36px, 6vw, 72px);
-            font-weight: 900;
+            font-size: clamp(36px, 5.5vw, 68px);
+            font-weight: 800;
             text-transform: uppercase;
-            letter-spacing: -1px;
+            letter-spacing: normal;
             line-height: 1.0;
             position: relative;
             z-index: 1;
@@ -212,8 +212,8 @@
         }
 
         .contact-left h2 {
-            font-size: clamp(24px, 3vw, 36px);
-            font-weight: 900;
+            font-size: clamp(24px, 3vw, 34px);
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: -0.5px;
             line-height: 1.1;
@@ -377,6 +377,8 @@
         body.lightmode .map-wrap { border-color: rgba(0,0,0,0.08); }
         .map-wrap .leaflet-container { height: 100%; width: 100%; background: #111; }
         body.lightmode .map-wrap .leaflet-container { background: #e8e8e8; }
+        /* Leaflet's stylesheet sets Helvetica Neue on the map; keep the overlay text in the site font */
+        .map-wrap.leaflet-container { font-family: inherit; }
         /* OSM tiles are light-only; invert them for the dark theme (pin/labels stay untouched) */
         .map-wrap.map-dark .leaflet-tile-pane {
             filter: invert(1) hue-rotate(180deg) brightness(0.92) contrast(0.88) saturate(0.7);

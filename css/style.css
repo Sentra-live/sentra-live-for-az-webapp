@@ -234,6 +234,8 @@
     --box-shadow-top-left-wide: -3px -3px 10px 0px #000000;
     --box-shadow-bottom-right-wide: 3px 3px 10px 0px #000000;
     --global-font: "Plus Jakarta Sans", sans-serif;
+    --bs-body-font-family: var(--global-font);
+    --bs-font-sans-serif: var(--global-font);
     --global-border-radius: 25px 25px 25px 25px;
     --animation-normal: 1.25s;
     --animation-slow: 2s;
@@ -245,7 +247,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
-    --font-weight-black: 900;
+    --font-weight-black: 800;
 
     /* 2.3 Font Size Variables */
     --font-size-xs: 12px;
@@ -438,6 +440,21 @@ body {
     transition: background_color 0.5s ease;
     overflow-x: hidden;
     overflow-x: clip;
+}
+
+button,
+input,
+select,
+textarea,
+optgroup {
+    font-family: inherit;
+}
+
+/* Plus Jakarta Sans stops at 800: the UA default `bolder` would resolve to a
+   synthetic 900 inside 600+ weight parents, so pin bold text to a real weight. */
+b,
+strong {
+    font-weight: 700;
 }
 
 body.lightmode .keep-dark {
@@ -10930,8 +10947,8 @@ body.lightmode .preloader-bar {
 }
 
 .article-title {
-    font-family: "Merriweather", var(--global-font), serif;
-    font-size: clamp(2.75rem, 5.4vw, 4.5rem);
+    font-family: var(--global-font);
+    font-size: clamp(2.25rem, 4.5vw, 3rem);
     line-height: 1.15;
     color: var(--text-color);
 }
@@ -11006,7 +11023,7 @@ body.lightmode .preloader-bar {
 }
 
 .editorial-heading {
-    font-family: "Merriweather", var(--global-font), serif;
+    font-family: var(--global-font);
     font-size: clamp(1.75rem, 3vw, 2.5rem);
     letter-spacing: -0.01em;
     color: var(--text-color);
@@ -11529,7 +11546,7 @@ body.lightmode .preloader-bar {
     --audio-gold: #f1d79a;
     --audio-muted: rgba(255, 255, 255, 0.7);
     --audio-accent-dark: rgba(0, 0, 0, 0.35);
-    font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    font-family: var(--global-font);
 }
 
 /* Audio Player Wrapper */

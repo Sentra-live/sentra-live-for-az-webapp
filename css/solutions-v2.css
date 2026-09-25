@@ -114,19 +114,19 @@ header {
 }
 
 .sol-hero-title {
-    font-size: clamp(38px, 5.5vw, 76px);
+    font-size: clamp(36px, 5.5vw, 68px);
     font-weight: 800;
     line-height: 1.05;
     color: #fff;
     margin-bottom: 20px;
-    letter-spacing: -1px
+    letter-spacing: normal
 }
 
 .sol-hero-subtitle {
-    font-size: clamp(16px, 1.6vw, 20px);
+    font-size: clamp(15px, 1.4vw, 18px);
     color: rgba(255, 255, 255, .65);
     max-width: 500px;
-    line-height: 1.6;
+    line-height: 1.5;
     margin-bottom: 40px
 }
 
@@ -254,7 +254,7 @@ header {
 .sol-overview-desc-body {
     font-size: 14px;
     color: rgba(255, 255, 255, .55);
-    line-height: 1.75;
+    line-height: 1.6;
     margin: 0
 }
 
@@ -345,7 +345,7 @@ header {
 .sol-accordion-body p {
     font-size: 14px;
     color: rgba(255, 255, 255, .55);
-    line-height: 1.75;
+    line-height: 1.6;
     margin: 0;
     padding-left: 52px
 }
@@ -431,19 +431,19 @@ body.lightmode .sol-acc-chevron {
 }
 
 .sol-section-title {
-    font-size: clamp(28px, 3.5vw, 48px);
-    font-weight: 800;
+    font-size: clamp(26px, 3.2vw, 34px);
+    font-weight: 700;
     color: #fff;
-    line-height: 1.15;
+    line-height: 1.2;
     margin-bottom: 16px;
-    letter-spacing: -.5px
+    letter-spacing: normal
 }
 
 .sol-section-subtitle {
-    font-size: 17px;
+    font-size: 16px;
     color: rgba(255, 255, 255, .55);
     max-width: 560px;
-    line-height: 1.65;
+    line-height: 1.5;
     margin-bottom: 60px
 }
 
@@ -523,8 +523,8 @@ body.lightmode .sol-acc-chevron {
 }
 
 .sol-bento-stat {
-    font-size: clamp(32px, 3.5vw, 52px);
-    font-weight: 900;
+    font-size: clamp(28px, 3vw, 40px);
+    font-weight: 800;
     color: #f48120;
     line-height: 1;
     margin-bottom: 8px
@@ -571,7 +571,7 @@ body.lightmode .sol-acc-chevron {
     justify-content: center;
     color: #f48120;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 800;
     flex-shrink: 0;
     position: relative;
     z-index: 1
@@ -589,9 +589,9 @@ body.lightmode .sol-acc-chevron {
 }
 
 .sol-step-desc {
-    font-size: 15px;
+    font-size: 14px;
     color: rgba(255, 255, 255, .55);
-    line-height: 1.65
+    line-height: 1.6
 }
 
 .sol-risk-grid {
@@ -725,7 +725,7 @@ body.lightmode .sol-acc-chevron {
 .sol-risk-carousel .sol-risk-card-interactive .sol-risk-desc {
     font-size: 13.5px;
     color: rgba(255, 255, 255, .5);
-    line-height: 1.7;
+    line-height: 1.6;
     position: relative;
     z-index: 1;
     width: 100%;
@@ -921,8 +921,8 @@ body.lightmode .sol-risk-arrow:hover {
 }
 
 .sol-why-num {
-    font-size: 52px;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: 800;
     color: rgba(244, 129, 32, .15);
     line-height: 1;
     margin-bottom: 16px
@@ -938,7 +938,7 @@ body.lightmode .sol-risk-arrow:hover {
 .sol-why-body {
     font-size: 14px;
     color: rgba(255, 255, 255, .5);
-    line-height: 1.65
+    line-height: 1.6
 }
 
 .sol-cta-expert {
@@ -981,19 +981,19 @@ body.lightmode .sol-risk-arrow:hover {
 }
 
 .sol-cta-title {
-    font-size: clamp(32px, 4vw, 56px);
-    font-weight: 900;
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 700;
     color: #fff;
     margin-bottom: 16px;
-    line-height: 1.1;
-    letter-spacing: -1px
+    line-height: 1.15;
+    letter-spacing: -.5px
 }
 
 .sol-cta-subtitle {
-    font-size: 18px;
+    font-size: 16px;
     color: rgba(255, 255, 255, .55);
     margin-bottom: 40px;
-    line-height: 1.6
+    line-height: 1.5
 }
 
 .sol-cta-actions {
@@ -1114,8 +1114,8 @@ body.lightmode .sol-risk-arrow:hover {
 
 .sol-section .accordion-body {
     color: rgba(255, 255, 255, .6);
-    font-size: 15px;
-    line-height: 1.7;
+    font-size: 14px;
+    line-height: 1.6;
     padding-top: 0
 }
 
@@ -1427,8 +1427,8 @@ body.lightmode .sol-section .newsletter-form-inline .btn-compact {
 }
 
 .sol-stat-card-number {
-    font-size: clamp(36px, 3vw, 52px);
-    font-weight: 900;
+    font-size: clamp(32px, 2.8vw, 40px);
+    font-weight: 800;
     color: #f48120;
     line-height: 1;
     margin-top: 4px
@@ -1756,7 +1756,7 @@ body.solution-page .navbar {
 
     .sol-hero-title {
         font-size: clamp(26px, 7.5vw, 36px);
-        letter-spacing: -.5px;
+        letter-spacing: normal;
         margin-bottom: 14px
     }
 
@@ -2230,11 +2230,11 @@ body.lightmode .sol-btn-case-all:hover {
 }
 
 .sol-how-step-num {
-    font-size: 54px;
-    font-weight: 900;
+    font-size: 40px;
+    font-weight: 800;
     color: rgba(244, 129, 32, .12);
     line-height: 1;
-    letter-spacing: -2px
+    letter-spacing: -1px
 }
 
 .sol-how-step-title {
@@ -2246,9 +2246,9 @@ body.lightmode .sol-btn-case-all:hover {
 }
 
 .sol-how-step-desc {
-    font-size: 15px;
+    font-size: 14px;
     color: rgba(255, 255, 255, .55);
-    line-height: 1.65;
+    line-height: 1.6;
     margin: 0
 }
 
@@ -2304,7 +2304,7 @@ body.lightmode .sol-how-step-image {
     }
 
     .sol-how-step-num {
-        font-size: 40px
+        font-size: 32px
     }
 }
 
@@ -2405,16 +2405,16 @@ body.lightmode .sol-how-step-image {
 }
 
 .sol-sticky-slide-title {
-    font-size: clamp(22px, 2vw, 30px);
+    font-size: clamp(18px, 1.6vw, 22px);
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.3;
     color: #fff;
     margin: 0 0 16px
 }
 
 .sol-sticky-slide-desc {
-    font-size: 15px;
-    line-height: 1.75;
+    font-size: 14px;
+    line-height: 1.6;
     color: rgba(255, 255, 255, .58);
     margin: 0
 }
@@ -2569,7 +2569,7 @@ body.lightmode .sol-slide-btn:hover {
     }
 
     .sol-sticky-slide-title {
-        font-size: 22px
+        font-size: 20px
     }
 
     .sol-slideshow-progress-bar {
@@ -3130,6 +3130,45 @@ body.lightmode .newsletter-form-inline input[type=email]::placeholder {
     }
 }
 
+/* Solution hero, desktop (>=1025px wide, >=681px tall): taller hero that
+   scales with the viewport, text block centred inside the video frame
+   (frame = 130px from top, 20px from bottom), and the photo card aligned
+   to the 1280px content column and centred on the same axis as the text. */
+@media (min-width: 1025px) and (min-height: 681px) {
+    .sol-hero {
+        min-height: clamp(744px, 85vh, 900px);
+    }
+
+    .sol-hero-container {
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 130px 24px 20px;
+    }
+
+    .sol-hero-content {
+        width: 55%;
+        padding: 80px 0;
+    }
+
+    .sol-hero-image-card {
+        right: max(64px, calc((100% - 1280px) / 2 + 24px));
+        width: min(500px, 36vw);
+        /* centre inside the video frame with auto margins instead of
+           translateY(-50%): the GSAP float rewrites transform and could
+           drop the -50% offset if it initialised before the image loaded */
+        top: 130px;
+        bottom: 20px;
+        height: fit-content;
+        margin: auto 0;
+        transform: none;
+    }
+
+    .sol-hero-scroll-indicator {
+        bottom: 32px;
+    }
+}
+
 /* Cover tall mobile hero containers without embedded-player letterboxing. */
 @media (max-width: 768px) {
     .sol-hero-media {
@@ -3146,4 +3185,38 @@ body.lightmode .newsletter-form-inline input[type=email]::placeholder {
         height: 100%;
         object-fit: cover;
     }
+}
+
+/* SHM resources marquee: match the edge fade to the .sol-bg-dark section */
+.sol-resources-marquee::before {
+    background: linear-gradient(90deg, #0a0a0a 0%, transparent 100%)
+}
+
+.sol-resources-marquee::after {
+    background: linear-gradient(270deg, #0a0a0a 0%, transparent 100%)
+}
+
+body.lightmode .sol-resources-marquee::before {
+    background: linear-gradient(90deg, #f3f3f3 0%, transparent 100%)
+}
+
+body.lightmode .sol-resources-marquee::after {
+    background: linear-gradient(270deg, #f3f3f3 0%, transparent 100%)
+}
+
+/* Edge fades must match the section behind them on darker sections too. */
+.sol-bg-darker .sol-resources-marquee::before {
+    background: linear-gradient(90deg, #060606 0%, transparent 100%)
+}
+
+.sol-bg-darker .sol-resources-marquee::after {
+    background: linear-gradient(270deg, #060606 0%, transparent 100%)
+}
+
+body.lightmode .sol-bg-darker .sol-resources-marquee::before {
+    background: linear-gradient(90deg, #eaeaea 0%, transparent 100%)
+}
+
+body.lightmode .sol-bg-darker .sol-resources-marquee::after {
+    background: linear-gradient(270deg, #eaeaea 0%, transparent 100%)
 }

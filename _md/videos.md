@@ -18,12 +18,12 @@ No videos or shorts found.
 
 ## Videos
 
-5
+10
 
 Product demos, project spotlights, and technology explainers from the Clove Technologies & Sentra channel.
 
 ## Shorts
 
-0
+2
 
 Quick-hit tips and highlights, straight from the field.
