@@ -35,6 +35,8 @@ Different construction activities produce distinct vibration signatures. Underst
 
 - **Blasting:** Controlled explosions produce transient, high-frequency vibrations requiring specialised monitoring.
 
+Not every vibration source near a building is a construction site. **Traffic-induced vibrations in buildings** - from heavy vehicles, trams and trains passing close to a structure - follow the same physics as construction vibration (ground-borne waves coupling into the foundation) but are continuous and long-term rather than a fixed-duration project. A building near a busy road or rail line benefits from the same accelerometer-based monitoring approach described here, just run as permanent structural health monitoring rather than a project-length deployment, since the goal shifts from proving compliance during works to tracking cumulative fatigue over the building's life.
+
 ## Regulatory Standards and Thresholds
 
 Most jurisdictions define vibration limits based on peak particle velocity (PPV) measured in millimetres per second (mm/s). Common thresholds include:

@@ -833,3 +833,36 @@ function initLoadMoreStories() {
         });
     }, 5000);
 })();
+
+/* ================== GA4 conversion events ==================
+   The gtag snippet only ever sent page_views, so GA reported a 0% key event
+   rate on every channel. trackEvent is shared with submit-form.js and
+   brochure-download.js; the listeners below cover contact links and Calendly
+   bookings site-wide. Mark generate_lead, contact_click and book_call as key
+   events in GA4 (Admin > Events) for them to count as conversions. */
+function trackEvent(name, params) {
+    if (typeof window.gtag !== 'function') return;
+    try {
+        window.gtag('event', name, params || {});
+    } catch (err) { /* analytics must never break the page */ }
+}
+window.trackEvent = trackEvent;
+
+document.addEventListener('click', function (e) {
+    var link = e.target.closest && e.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    var method = /^tel:/i.test(href) ? 'phone'
+        : /^mailto:/i.test(href) ? 'email'
+        : /wa\.me|whatsapp\.com/i.test(href) ? 'whatsapp'
+        : null;
+    if (method) trackEvent('contact_click', { method: method, link_url: href });
+});
+
+// Calendly's embed posts calendly.event_scheduled to the parent window.
+window.addEventListener('message', function (e) {
+    if (!/calendly\.com$/.test(e.origin || '')) return;
+    if (e.data && e.data.event === 'calendly.event_scheduled') {
+        trackEvent('book_call', { method: 'calendly' });
+    }
+});

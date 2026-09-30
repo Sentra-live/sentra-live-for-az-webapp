@@ -19,17 +19,17 @@ At its core, a data logger performs three jobs: it **samples** one or more conne
  Single-purpose loggers built around a temperature probe or thermocouple, common in cold-chain, HVAC and environmental applications.
 
 **Analog data loggers**
- Multi-channel loggers that accept a range of analog sensor inputs (4-20mA, 0-5V, thermocouples, RTDs), giving flexibility to connect different sensor types to one unit.
+ Multi-channel loggers that accept a range of analog sensor inputs, 4-20mA current loop, 0-5V or 0-10V voltage, thermocouples, RTDs, potentiometric sensors, giving flexibility to connect different third-party sensor types to a single acquisition unit rather than locking a site into one sensor vendor. An analog data logger is the usual choice when a site already has legacy analog instrumentation (older tiltmeters, pressure transducers, flow meters) that needs to be brought onto a modern wireless network without replacing the sensors themselves. Sentra's [analog data logger](https://sentratech.in/products/analog-data-logger.html) handles this multi-channel, multi-sensor-type role over LoRaWAN.
 
 **Vibrating wire data loggers**
- Purpose-built to excite and read vibrating wire sensors, strain gauges, piezometers, extensometers, converting their frequency output into calibrated engineering units. This is the class Sentra's [G7 vibrating wire data logger](https://sentratech.in/products/vibrating-wire.html) belongs to.
+ Purpose-built to excite and read vibrating wire sensors, strain gauges, piezometers, extensometers, converting their frequency output into calibrated engineering units. Unlike a general-purpose analog data logger, a vibrating wire data logger includes the excitation circuitry needed to pluck the wire and read its resonant frequency, so it cannot substitute for one on a generic 4-20mA sensor and vice versa. This is the class Sentra's [G7 vibrating wire data logger](https://sentratech.in/products/vibrating-wire.html) belongs to.
 
 **Wireless IoT data loggers**
  Combine sensor sampling with built-in LoRaWAN, cellular or satellite connectivity, streaming data continuously to a cloud platform rather than storing it locally for manual download. This is the category most infrastructure and remote-site monitoring has moved to.
 
 ## Data Logger vs Real-Time IoT Telemetry
 
-The term "data logger" carries some historical baggage: it can still imply a standalone device that stores readings locally until someone retrieves it in person, fine for a short research deployment, impractical for a bridge, dam or rail corridor that needs continuous, unattended visibility. Modern connected data loggers close that gap entirely, sampling on the same schedule a legacy logger would, but pushing every reading to the cloud in near real time over LoRaWAN or cellular, with local memory kept only as a buffer in case of a connectivity gap. The result is the reliability of a logger with the immediacy of live telemetry.
+The term "data logger" carries some historical baggage: it can still imply a standalone device that stores readings locally until someone retrieves it in person, fine for a short research deployment, impractical for a bridge, dam or rail corridor that needs continuous, unattended visibility. Modern connected data loggers close that gap entirely, sampling on the same schedule a legacy logger would, but pushing every reading to the cloud in near real time over LoRaWAN or cellular, with local memory kept only as a buffer in case of a connectivity gap. The result is the reliability of a logger with the immediacy of live telemetry. In practice this is what most people mean today when they search for "monitoring and logging": one device and one platform doing both jobs, rather than a separate logger you download by hand and a separate live monitoring system you check on a screen.
 
 ## What to Look For When Choosing a Data Logger
 

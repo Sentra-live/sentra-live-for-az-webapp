@@ -317,3 +317,7 @@ Yes: data is transmitted via LoRa/LoRaWAN gateways to cloud endpoints in common 
 ##
 
 The XHP variant features an external antenna for maximum range (up to 15 km in open terrain), ideal for high-precision applications. The IR variant has an internal antenna for a compact, vandal-resistant design, perfect for rail track monitoring and tight installations.
+
+##
+
+Yes. Sentra by Clove Technologies supplies and supports the tiltmeter across India, with growing demand from highway, railway, mining and building-monitoring projects as agencies move from manual inclinometer readings to continuous wireless tilt sensing.

@@ -12,6 +12,18 @@
 /products/piconode-data-logger /products/piconode-data-logger.html 301!
 /products/laser-scanners /products/laser-scanners.html 301!
 
+# Google has both the .html page and the extensionless URL indexed
+# separately (Search Console: same content, two ranking entries splitting
+# clicks/position). These collapse each pair onto the canonical .html URL.
+/products/lixel-l2-pro /products/lixel-l2-pro.html 301!
+/products/lixelstudio /products/lixelstudio.html 301!
+/about /about.html 301!
+/industries /industries.html 301!
+/article/xgrids-authorized-reseller-india /article/xgrids-authorized-reseller-india.html 301!
+/blogs/what-is-a-strain-gauge-types-working-principle /blogs/what-is-a-strain-gauge-types-working-principle.html 301!
+/blogs/what-is-an-inclinometer-digital-tiltmeter-guide /blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html 301!
+/blogs/fatigue-life-assessment /blogs/fatigue-life-assessment.html 301!
+
 /Products/*  /products/:splat  301
 /Solutions/* /solutions/:splat  301
 /Industries/* /industries/:splat  301

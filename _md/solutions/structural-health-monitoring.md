@@ -22,19 +22,81 @@ From single-span bridges to city-wide rail networks, Sentra deploys purpose-buil
 
 ### End-to-End SHM, Purpose-Built for Your Asset
 
-Sentra's Structural Health Monitoring service combines high-fidelity sensors: GNSS, accelerometers, tiltmeters, vibrating wire gauges, with edge-enabled data acquisition gateways and cloud-hosted analytics to give asset owners a continuous, real-time picture of structural behaviour. Our engineers design each monitoring programme around the specific failure modes of your structure: fatigue cracking in steel railway bridges, differential settlement in high-rise foundations, concrete spalling in highway flyovers, or seepage-driven instability in dams. Thresholds and alerts are calibrated against structural design limits so your team receives only meaningful, actionable notifications, not noise. Whether you need a short-term construction-phase monitoring system or permanent lifetime surveillance, we scale from a single sensor node to multi-site enterprise deployments with role-based dashboards, API integrations, and automated reporting. Our approach is grounded in [AI-driven infrastructure monitoring](https://sentratech.in/article/ai-infrastructure-monitoring.html) techniques that transform raw sensor data into actionable structural intelligence.
+Sentra combines high-fidelity sensors (GNSS, accelerometers, tiltmeters and vibrating wire gauges) with edge data acquisition and cloud analytics, giving asset owners a continuous, real-time picture of how their structure behaves.
 
-GNSS-based millimetre-precision tracking of vertical and horizontal displacements, long-term settlement trends, and differential movement between critical structural points.
+Every programme is designed around the failure modes of your structure: fatigue cracking in steel railway bridges, differential settlement under high-rise foundations, spalling on highway flyovers or seepage in dams. Alert thresholds are calibrated against design limits, so your team is notified about what matters, not noise. The analytics build on [AI-driven infrastructure monitoring](https://sentratech.in/article/ai-infrastructure-monitoring.html) to turn raw readings into decisions.
 
-Multi-axis accelerometers capture modal frequencies, damping ratios, and peak acceleration under live traffic and environmental loads to detect stiffness degradation.
+- Static and dynamic monitoring in one system
 
-Vibrating wire strain gauges and foil gauges measure live load strains, residual stresses, and cumulative fatigue damage accumulation on critical structural members.
+- Construction-phase or permanent lifetime surveillance
 
-High-resolution tiltmeters and laser tiltmeters monitor angular rotation of piers, pylons, retaining walls, and towers with sub-arcminute accuracy.
+- Thresholds calibrated to structural design limits
 
-Automated crack gauges track opening, closing, and propagation of known cracks in concrete and masonry, with configurable alert thresholds tied to structural limit states.
+- From one sensor node to multi-site networks
 
-Distributed temperature sensors capture thermal gradients, seasonal expansion cycles, and freeze-thaw effects that drive long-term structural movement and cracking.
+[Talk to an Expert ](https://sentratech.in/contact.html) [How the system works ](#sol-system)
+
+![Structural health monitoring sensors installed on a bridge](https://sentratech.in/image/solutions/banners/shm%20banner.webp)
+
+Monitoring 24/7
+
+Vibration Displacement Crack width
+
+### What We Measure
+
+Each parameter is matched to the sensor best suited to the structure and its environment.
+
+[
+
+#### Displacement & Settlement
+
+GNSS tracking of vertical and horizontal movement, long-term settlement and differential movement between critical points, to millimetre precision.
+
+GNSS Meter ](https://sentratech.in/products/gnss-meter.html) [
+
+#### Vibration & Dynamic Response
+
+Modal frequencies, damping and peak acceleration under live traffic and wind, the earliest sign of lost stiffness.
+
+Accelerometers ](https://sentratech.in/products/accelerometers.html) [
+
+#### Strain & Stress
+
+Live-load strain, residual stress and cumulative fatigue damage on the members that carry the load.
+
+Strain Gauges ](https://sentratech.in/products/strain-gauges.html) [
+
+#### Tilt & Rotation
+
+Angular rotation of piers, pylons, retaining walls and towers with sub-arcminute resolution.
+
+Tiltmeter ](https://sentratech.in/products/tiltmeter.html) [
+
+#### Crack & Joint Movement
+
+Opening, closing and growth of known cracks and expansion joints, with thresholds tied to limit states.
+
+Vibrating Wire Logger ](https://sentratech.in/products/vibrating-wire.html) [
+
+#### Pore Pressure & Water Level
+
+Piezometers track groundwater and uplift pressure at foundations, abutments and embankments.
+
+Wired Sensors ](https://sentratech.in/products/wired-sensors.html)
+
+#### Temperature Effects
+
+Thermal gradients and seasonal cycles, used to separate temperature-driven movement from real structural change.
+
+Built into the sensor network
+
+[
+
+#### 3D Geometry & Deformation
+
+LiDAR scans capture the as-built shape of the structure to compare against design drawings and earlier surveys.
+
+Laser Scanners ](https://sentratech.in/products/laser-scanners.html)
 
 Impact
 
@@ -42,35 +104,413 @@ Impact
 
 Quantifiable results delivered through our monitoring and engineering solutions across infrastructure projects.
 
-#### Track Record
-
-Proven delivery
+Track record
 
 200+
 
-Structures Monitored
+Structures monitored across bridges, buildings and railways
 
-Across bridges, buildings & railways
+BridgesRailwaysBuildingsDams
 
-#### Efficiency Gains
+![Railway bridge monitoring system](https://sentratech.in/image/solutions/showcase/shm/Railway%20Bridge%20Monitoring%20System.webp)
 
-Optimised operations
+Railway bridge monitoring system
+
+Efficiency
 
 40%
 
-Cost Reduction
+Average reduction in inspection costs
 
-Avg. inspection cost savings
-
-#### Reliability
-
-Always on
+Reliability
 
 99.5%
 
-System Availability
+System availability, 24/7
 
-24/7 continuous uptime
+![Real-time SHM dashboard with multi-sensor data visualisation](https://sentratech.in/image/solutions/showcase/shm/Real-time%20SHM%20dashboard%20with%20multi-sensor%20data%20visualization.webp)
+
+**One dashboard for every sensor** Live readings, trends and multi-tier alerts by SMS, email and dashboard.
+
+Cost of waiting
+
+3–5×
+
+What emergency repairs typically cost compared with planned interventions
+
+SHM Resources
+
+## Structural Health Monitoring in the Field
+
+Case studies, engineering guides and articles from our structural health monitoring work on bridges, railways and buildings.
+
+[
+
+![Structural Health Monitoring of Highway Bridges](https://sentratech.in/image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp)
+
+Case Study
+
+Infrastructure
+
+#### Structural Health Monitoring of Highway Bridges
+
+](https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html) [
+
+![Railway Bridge Fatigue Life Assessment and Load Testing](https://sentratech.in/image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp)
+
+Case Study
+
+Railways
+
+#### Railway Bridge Fatigue Life Assessment and Load Testing
+
+](https://sentratech.in/case-studies/railway-bridge-fatigue-life-assessment-load-testing.html) [
+
+![AI Is Coming for Infrastructure Monitoring](https://sentratech.in/image/articles/articles_ai_for_bridge_monitoring.webp)
+
+Article
+
+AI & Monitoring
+
+#### AI Is Coming for Infrastructure Monitoring
+
+](https://sentratech.in/article/ai-infrastructure-monitoring.html) [
+
+![Railway Bridge Digital Twin Using Drone and LiDAR Inspection](https://sentratech.in/image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp)
+
+Case Study
+
+Railways
+
+#### Railway Bridge Digital Twin Using Drone and LiDAR Inspection
+
+](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html) [
+
+![IoT Bridge Monitoring & Sensor Installation on Railway Bridges](https://sentratech.in/image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp)
+
+Case Study
+
+Railways
+
+#### IoT Bridge Monitoring & Sensor Installation on Railway Bridges
+
+](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html) [
+
+![IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins](https://sentratech.in/image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp)
+
+Article
+
+IoT Innovation
+
+#### IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins
+
+](https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html) [
+
+![BridgePulse: AI & Drone Technology for Bridge Health Monitoring](https://sentratech.in/image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp)
+
+Case Study
+
+Bridge Safety
+
+#### BridgePulse: AI & Drone Technology for Bridge Health Monitoring
+
+](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
+
+!
+
+Case Study
+
+Infrastructure
+
+#### Structural Health Monitoring of Highway Bridges
+
+](https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html) [
+
+!
+
+Case Study
+
+Railways
+
+#### Railway Bridge Fatigue Life Assessment and Load Testing
+
+](https://sentratech.in/case-studies/railway-bridge-fatigue-life-assessment-load-testing.html) [
+
+!
+
+Article
+
+AI & Monitoring
+
+#### AI Is Coming for Infrastructure Monitoring
+
+](https://sentratech.in/article/ai-infrastructure-monitoring.html) [
+
+!
+
+Case Study
+
+Railways
+
+#### Railway Bridge Digital Twin Using Drone and LiDAR Inspection
+
+](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html) [
+
+!
+
+Case Study
+
+Railways
+
+#### IoT Bridge Monitoring & Sensor Installation on Railway Bridges
+
+](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html) [
+
+!
+
+Article
+
+IoT Innovation
+
+#### IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins
+
+](https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html) [
+
+!
+
+Case Study
+
+Bridge Safety
+
+#### BridgePulse: AI & Drone Technology for Bridge Health Monitoring
+
+](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html)
+
+[
+
+![Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp)
+
+Blog
+
+Structural Health
+
+#### Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured
+
+](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html) [
+
+![Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp)
+
+Blog
+
+Bridge Safety
+
+#### Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss
+
+](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html) [
+
+![What Is a Strain Gauge? Types, Working Principle & Applications](https://sentratech.in/image/blogs/banners/blogs_what-is-a-strain-gauge-types-working-principle.webp)
+
+Blog
+
+Sensor Technology
+
+#### What Is a Strain Gauge? Types, Working Principle & Applications
+
+](https://sentratech.in/blogs/what-is-a-strain-gauge-types-working-principle.html) [
+
+![What Is an Accelerometer Sensor? Working Principle, Types & Applications](https://sentratech.in/image/blogs/banners/blogs_what-is-an-accelerometer-sensor-guide.webp)
+
+Blog
+
+Sensor Technology
+
+#### What Is an Accelerometer Sensor? Working Principle, Types & Applications
+
+](https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html) [
+
+![Seismic Monitoring for Buildings and Critical Infrastructure](https://sentratech.in/image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp)
+
+Blog
+
+Structural Health
+
+#### Seismic Monitoring for Buildings and Critical Infrastructure
+
+](https://sentratech.in/blogs/seismic-monitoring-buildings-critical-infrastructure.html) [
+
+![Monitoring Construction-Induced Vibrations in Urban Environments](https://sentratech.in/image/blogs/banners/blogs_monitoring-construction-induced-vibrations.webp)
+
+Blog
+
+Structural Monitoring
+
+#### Monitoring Construction-Induced Vibrations in Urban Environments
+
+](https://sentratech.in/blogs/monitoring-construction-induced-vibrations.html) [
+
+![10 Early Warning Signs Your Bridge Needs Continuous Monitoring](https://sentratech.in/image/blogs/banners/blogs_10-early-warning-signs-bridge-continuous-monitoring.webp)
+
+Blog
+
+Bridge Safety
+
+#### 10 Early Warning Signs Your Bridge Needs Continuous Monitoring
+
+](https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html) [
+
+![Structural Health Monitoring](https://sentratech.in/image/blogs/banners/blogs_structural-health-monitoring.webp)
+
+Blog
+
+Structural Health
+
+#### Structural Health Monitoring
+
+](https://sentratech.in/blogs/structural-health-monitoring.html) [
+
+![Top 5 Hidden Structural Damages Manual Bridge Inspection Misses](https://sentratech.in/image/blogs/banners/blogs_top-5-hidden-structural-damages-bridge-inspection.webp)
+
+Blog
+
+Bridge Safety
+
+#### Top 5 Hidden Structural Damages Manual Bridge Inspection Misses
+
+](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html) [
+
+!
+
+Blog
+
+Structural Health
+
+#### Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured
+
+](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html) [
+
+!
+
+Blog
+
+Bridge Safety
+
+#### Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss
+
+](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html) [
+
+!
+
+Blog
+
+Sensor Technology
+
+#### What Is a Strain Gauge? Types, Working Principle & Applications
+
+](https://sentratech.in/blogs/what-is-a-strain-gauge-types-working-principle.html) [
+
+!
+
+Blog
+
+Sensor Technology
+
+#### What Is an Accelerometer Sensor? Working Principle, Types & Applications
+
+](https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html) [
+
+!
+
+Blog
+
+Structural Health
+
+#### Seismic Monitoring for Buildings and Critical Infrastructure
+
+](https://sentratech.in/blogs/seismic-monitoring-buildings-critical-infrastructure.html) [
+
+!
+
+Blog
+
+Structural Monitoring
+
+#### Monitoring Construction-Induced Vibrations in Urban Environments
+
+](https://sentratech.in/blogs/monitoring-construction-induced-vibrations.html) [
+
+!
+
+Blog
+
+Bridge Safety
+
+#### 10 Early Warning Signs Your Bridge Needs Continuous Monitoring
+
+](https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html) [
+
+!
+
+Blog
+
+Structural Health
+
+#### Structural Health Monitoring
+
+](https://sentratech.in/blogs/structural-health-monitoring.html) [
+
+!
+
+Blog
+
+Bridge Safety
+
+#### Top 5 Hidden Structural Damages Manual Bridge Inspection Misses
+
+](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html)
+
+[View All Resources ](https://sentratech.in/resources.html)
+
+The System
+
+## From Sensor to Decision
+
+Every Sentra programme runs on the same four-layer architecture, so data moves from the structure to your team without gaps.
+
+01 · Sense
+
+### Sensors on the structure
+
+GNSS, accelerometers, tiltmeters, strain and vibrating wire gauges placed at the critical points identified in the site survey.
+
+02 · Acquire
+
+### Edge loggers & gateways
+
+Wireless data loggers and edge gateways sample, pre-process and transmit readings, storing data locally if the link drops.
+
+03 · Analyse
+
+### Cloud analytics
+
+The platform trends structural behaviour, correlates loads with responses and uses machine learning to flag anomalies.
+
+04 · Act
+
+### Alerts, reports & API
+
+Multi-tier alerts reach your team by SMS, email and dashboard, backed by scheduled reports and API integrations.
+
+### Multi-Tier Alerting
+
+Thresholds are set against structural design limits, so each level comes with a clear, agreed response.
+
+**Normal** Within expected behaviour. Readings are logged and trended.
+
+**Warning** Approaching a limit. Engineers review the trend and verify the sensor.
+
+**Alert** Limit reached. Targeted inspection and increased reading frequency.
+
+**Critical** Design limit exceeded. Immediate notification to support restriction or closure decisions.
 
 Process
 
@@ -160,59 +600,77 @@ Benefits
 
 Quantifiable outcomes that transform how infrastructure owners manage, maintain, and extend the life of their assets.
 
-Prevent Catastrophic Failure
+### Prevent Catastrophic Failure
 
-Continuous monitoring detects early-stage structural deterioration: cracks, excessive deflection, vibration anomalies, before they escalate into safety-critical events or structural collapse.
+Detect cracks, excessive deflection and vibration anomalies at an early stage, before they become safety-critical events.
 
-Cut Inspection Costs 40–60%
+### Cut Inspection Costs 40–60%
 
-Condition-based monitoring replaces expensive blanket inspection regimes. Resources are directed only to locations and time periods where data indicates it is needed.
+Condition-based monitoring replaces blanket inspection regimes and sends crews only where the data says they are needed.
 
-Extend Service Life
+### Extend Service Life
 
-Early intervention and optimised maintenance, guided by real structural data, can extend asset service life by decades compared to time-based replacement schedules.
+Early, data-led intervention can add decades of service compared with time-based replacement schedules.
 
-Regulatory Compliance
+### Regulatory Compliance
 
-Automated audit trails, certified reports, and documented alert responses support compliance with railway safety authorities, national bridge codes, and international standards.
+Audit trails, certified reports and documented alert responses support railway authorities, bridge codes and international standards.
 
-Predictive Maintenance
+### Predictive Maintenance
 
-Machine learning models trained on your structure's behaviour forecast when maintenance interventions will be needed, enabling planned rather than reactive works.
+Models trained on your structure’s own behaviour forecast when work will be needed, so it can be planned instead of reactive.
 
-Informed Lifecycle Decisions
+### Informed Lifecycle Decisions
 
-Longitudinal structural data supports major asset decisions: rehabilitation vs replacement, load restriction, capacity upgrades, and life extension justification, backed by engineering evidence.
+Long-term data backs the big calls: rehabilitation or replacement, load restrictions, capacity upgrades and life extension.
 
-Instant Alerting
+### Instant Alerting
 
-Configurable multi-tier alerts (warning, alert, critical) are delivered via SMS, email, and dashboard notifications, enabling your operations team to respond immediately to structural events.
+Warning, alert and critical notifications by SMS, email and dashboard let your operations team respond immediately.
+
+[ Build the business case
+
+### See what monitoring could save on your asset
+
+Get a free assessment ](https://sentratech.in/contact.html)
 
 Risk Mitigation
 
 ## What It Prevents
 
-The real cost of not monitoring is measured in emergency closures, catastrophic repairs, and legal liability. SHM eliminates these risks before they materialise.
+The real cost of not monitoring is measured in emergency closures, catastrophic repairs, and legal liability. SHM removes these risks before they materialise.
 
-Undetected Structural Degradation
+[Assess the risk on your structure ](https://sentratech.in/contact.html)
 
-Without continuous monitoring, fatigue cracks, corrosion, and foundation settlement progress silently until a costly emergency inspection or, worse, a structural failure.
+1. 01
 
-Emergency Reactive Repair Costs
+### Undetected Structural Degradation
 
-Emergency closures and reactive repairs typically cost 3–5× more than planned preventive interventions. SHM enables intervention at the optimal point in the deterioration curve.
+Without continuous monitoring, fatigue cracks, corrosion and foundation settlement progress silently until an emergency inspection, or a failure.
 
-Regulatory Non-Compliance
+2. 02
 
-Inspection authorities increasingly mandate data-driven evidence of structural safety. Operating without a monitoring programme exposes owners to regulatory action and legal liability.
+### Emergency Reactive Repair Costs
 
-Unplanned Service Downtime
+Emergency closures and reactive repairs typically cost 3–5× more than planned work. SHM lets you intervene at the right point on the deterioration curve.
 
-Structural incidents on railways and highways result in service suspensions that carry significant commercial and reputational costs. SHM enables proactive management to avoid unplanned downtime.
+3. 03
 
-Safety Incidents & Public Harm
+### Regulatory Non-Compliance
 
-Structural failures affecting public safety carry devastating consequences: loss of life, legal proceedings, and lasting reputational damage. Monitoring is a fundamental duty-of-care obligation.
+Authorities increasingly expect data-driven evidence of structural safety. Operating without it exposes owners to regulatory action and liability.
+
+4. 04
+
+### Unplanned Service Downtime
+
+Structural incidents on railways and highways force service suspensions with real commercial and reputational cost.
+
+5. 05
+
+### Safety Incidents & Public Harm
+
+Failures that affect the public carry the heaviest consequences: loss of life, legal proceedings and lasting damage to trust.
 
 Industries
 
@@ -220,25 +678,57 @@ Industries
 
 Sentra's SHM solutions are tailored for the asset types, operating environments, and regulatory frameworks of each sector.
 
-Railway Networks
+[
 
-Bridges, viaducts, and embankments under live rail traffic monitoring
+!
 
-Road Bridges
+### Railway Networks
 
-Highway flyovers, cable-stayed bridges, and major crossings
+Bridges, viaducts and embankments monitored under live rail traffic.
 
-High-Rise Buildings
+Explore
 
-Tall structures, deep basements, and adjacent construction impacts
+](https://sentratech.in/industries/railway-infrastructure-monitoring.html) [
 
-Dams & Reservoirs
+!
 
-Embankment, gravity, and arch dams with seepage and deformation monitoring
+### Road Bridges
 
-[Ports & Marine](https://sentratech.in/industries/ports-marine-monitoring.html)
+Highway flyovers, cable-stayed bridges and major crossings.
 
-Wharves, jetties, and marine structures in corrosive environments
+Explore
+
+](https://sentratech.in/industries/bridges-highways-monitoring.html) [
+
+!
+
+### High-Rise Buildings
+
+Tall structures, deep basements and the impact of adjacent construction.
+
+Explore
+
+](https://sentratech.in/industries/buildings-highrise-monitoring.html) [
+
+!
+
+### Dams & Reservoirs
+
+Embankment, gravity and arch dams, with seepage and deformation monitoring.
+
+Explore
+
+](https://sentratech.in/industries/dams-reservoirs-monitoring.html) [
+
+!
+
+### Ports & Marine
+
+Wharves, jetties and marine structures in corrosive environments.
+
+Explore
+
+](https://sentratech.in/industries/ports-marine-monitoring.html)
 
 Why Us
 
@@ -267,36 +757,6 @@ Our structural and instrumentation engineers hold relevant professional certific
 Custom Monitoring Protocols
 
 We don't sell off-the-shelf packages. Every programme is designed around your structure's specific failure modes, operational constraints, reporting requirements, and budget.
-
-Case Studies
-
-## Success Stories in Action
-
-Real-world deployments of our structural health monitoring technology delivering measurable outcomes.
-
-[
-
-![BridgePulse](https://sentratech.in/image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp)
-
-AI & Drones Railways
-
-#### BridgePulse: AI and Drone Technology for Bridge Health Monitoring
-
-Read Case Study
-
-](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
-
-![IoT Bridge Monitoring](https://sentratech.in/image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp)
-
-IoT & Sensors Railways
-
-#### IoT Bridge Monitoring & Sensor Installation on Railway Bridges
-
-Read Case Study
-
-](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html)
-
-[View All Case Studies ](https://sentratech.in/resources.html#case-studies)
 
 Explore More
 
@@ -364,10 +824,16 @@ Standard monthly reports include an executive summary, sensor health and system 
 
 Get exclusive insights, innovations, and industry trends delivered to your inbox.
 
-Free Consultation Available
+Free consultation available
 
 ## Talk to Our SHM Expert
 
-Tell us about your structure and monitoring objectives. We'll design a programme that fits your asset, budget, and timeline, with no obligation.
+Tell us about your structure and monitoring objectives. We'll design a programme that fits your asset, budget and timeline, with no obligation.
 
-[Get a Free Assessment ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)
+- No obligation
+
+- Designed around your asset
+
+- Sensors to dashboard, one team
+
+[Get a Free Assessment ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

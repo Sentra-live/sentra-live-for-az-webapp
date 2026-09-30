@@ -1,6 +1,6 @@
 # Track to the Future: How Remote Monitoring Helps Safeguard Rail and Civil Infrastructure
 
-> Remote sensors and digital twins let rail engineers monitor track conditions in hard-to-reach areas without regular site visits.
+> Remote railway track monitoring: wireless sensors and digital twins let rail engineers monitor track and slope conditions in hard-to-reach areas without regular site visits.
 
 Published: 2026-06-24  
 Source: https://sentratech.in/article/track-to-the-future-remote-monitoring-rail-infrastructure.html
@@ -37,7 +37,7 @@ We work the same way. Sentra partners with engineering consultancies, infrastruc
 
 ## Intelligent Wireless Monitoring
 
-Getting to the early warning approach Matt Azzopardi describes means giving up on reactive maintenance. Manual inspection is slow, and it puts people on live tracks and unstable slopes to collect readings a sensor could send on its own. Wireless monitoring gives an accurate, continuous picture of structural movement and keeps staff away from the trackside while doing it.
+Getting to the early warning approach Matt Azzopardi describes means giving up on reactive maintenance. Manual inspection is slow, and it puts people on live tracks and unstable slopes to collect readings a sensor could send on its own. Remote railway track monitoring (or remote railroad track monitoring, in US terminology) replaces that manual walk-the-line inspection with wireless sensors that give an accurate, continuous picture of structural movement and keep staff away from the trackside while doing it.
 
 Smart Guard, running on Worldsensing's IoT architecture, is built for exactly those field conditions. It uses long-range, low-frequency LoRa connectivity, which holds a reliable link through dense vegetation, deep rock cuttings, and saturated soils. The devices are battery powered and run ultra-low power protocols, so they can sit in a remote location for up to **10 years without maintenance**.
 

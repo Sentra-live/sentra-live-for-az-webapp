@@ -22,17 +22,51 @@ Sentra's NDT services identify internal and surface defects in structural compon
 
 ### 12+ NDT Methods. One Trusted Provider.
 
-Non-destructive testing is the only way to verify the internal integrity of welds, structural sections, pressure vessels, and pipeline systems without destroying the asset or taking it out of service. Sentra's NDT team holds qualifications across ultrasonic testing (UT), radiographic testing (RT), magnetic particle inspection (MPI), dye penetrant inspection (DPI), eddy current testing (ECT), impact-echo, half-cell potential mapping, ground-penetrating radar, cover meter surveys, Schmidt hammer testing, and more. Every NDT engagement begins with method selection: choosing the right technique for the material, geometry, defect type, and access conditions. We calibrate equipment to relevant standards (IS, ASNT, ISO, BS EN) and execute tests in the field or in our laboratory. All results are documented in calibrated, traceable reports signed by certified Level II or Level III technicians and reviewed by our senior engineering team. Our rapid field turnaround means clients get certified test results quickly by enabling maintenance decisions, regulatory submissions, and fitness-for-service assessments without delay.
+Non-destructive testing is the only way to verify the internal integrity of welds, structural sections, pressure vessels, and pipeline systems without destroying the asset or taking it out of service. Sentra's NDT team holds qualifications across ultrasonic testing (UT), radiographic testing (RT), magnetic particle inspection (MPI), dye penetrant inspection (DPI), eddy current testing (ECT), impact-echo, half-cell potential mapping, ground-penetrating radar, cover meter surveys, Schmidt hammer testing, and more.
+
+Every NDT engagement begins with method selection: choosing the right technique for the material, geometry, defect type, and access conditions. We calibrate equipment to relevant standards (IS, ASNT, ISO, BS EN) and execute tests in the field or in our laboratory. All results are documented in calibrated, traceable reports signed by certified Level II or Level III technicians and reviewed by our senior engineering team. Our rapid field turnaround means clients get certified test results quickly by enabling maintenance decisions, regulatory submissions, and fitness-for-service assessments without delay.
+
+- 12+ NDT methods under one provider
+
+- Method chosen for material, geometry and access
+
+- Calibrated to IS, ASNT, ISO and BS EN
+
+- Reports signed by Level II or III technicians
+
+[Talk to an Expert ](https://sentratech.in/contact.html) [See how it works ](#sol-how)
+
+![Advanced Non-Destructive Testing](https://sentratech.in/image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp)
+
+Certified Level II / III
+
+Internal Defects & Voids Weld Integrity Wall Thickness Measurement
+
+### What We Detect
+
+Each engagement starts with the right method for the material, geometry, defect type and access.
+
+#### Internal Defects & Voids
 
 Ultrasonic and radiographic testing detect internal porosity, inclusions, laminations, and voids inside metal components, concrete members, and composite materials without any material removal.
 
+#### Weld Integrity
+
 Comprehensive weld inspection using UT, RT, MPI, and DPI detects lack of fusion, undercut, porosity, cracks, and incomplete penetration in structural and pressure-system welds.
+
+#### Wall Thickness Measurement
 
 Ultrasonic thickness gauging measures pipeline and vessel wall loss from corrosion or erosion, identifying sections below minimum acceptable thickness before they reach critical condition.
 
+#### Material Microstructure
+
 Hardness testing, positive material identification (PMI), and surface replication assess material properties and microstructural degradation in service-exposed components.
 
+#### Bond Integrity
+
 Impact-echo, ultrasonic, and thermographic methods assess adhesive bond quality, delamination in composites, and the integrity of overlays, linings, and coatings.
+
+#### Coating Adhesion
 
 Pull-off adhesion testing, dry film thickness measurement, and holiday detection assess protective coating systems on steel structures, pipelines, and storage tanks.
 
@@ -42,9 +76,7 @@ Impact
 
 Quantifiable results delivered through our monitoring and engineering solutions across infrastructure projects.
 
-#### Track Record
-
-Proven delivery
+Track Record
 
 12+
 
@@ -52,25 +84,221 @@ NDT Methods
 
 Ultrasonic, phased array, TOFD & more
 
-#### Efficiency Gains
+Oil & GasPower & UtilitiesIndustrialCivil Infrastructure
 
-Optimised operations
+![Phased Array Ultrasonics](https://sentratech.in/image/solutions/showcase/advanced-ndt/phased-array-ultrasonics.avif)
 
-1mm
+Phased Array Ultrasonics
+
+Efficiency Gains
+
+< 1mm
 
 Defect Detection
 
 Sub-millimetre resolution
 
-#### Reliability
-
-Always on
+Reliability
 
 500+
 
 Tests Performed
 
 Across oil & gas, power, civil
+
+![Solution in action](https://sentratech.in/image/solutions/showcase/advanced%20ndt/Advanced%20ultrasonic%20phased-array%20inspection%20in%20progress.webp)
+
+**Advanced phased-array inspection** Certified results delivered in calibrated, traceable reports.
+
+NDT Resources
+
+## Non-Destructive Testing in Practice
+
+Case studies, engineering guides and articles on finding hidden defects in bridges, concrete and steel structures.
+
+[
+
+![What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels](https://sentratech.in/image/blogs/banners/blogs_what-is-ground-penetrating-radar.webp)
+
+Blog
+
+Advanced NDT
+
+#### What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels
+
+](https://sentratech.in/blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html) [
+
+![BridgePulse: AI & Drone Technology for Bridge Health Monitoring](https://sentratech.in/image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp)
+
+Case Study
+
+Bridge Safety
+
+#### BridgePulse: AI & Drone Technology for Bridge Health Monitoring
+
+](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
+
+![Top 5 Hidden Structural Damages Manual Bridge Inspection Misses](https://sentratech.in/image/blogs/banners/blogs_top-5-hidden-structural-damages-bridge-inspection.webp)
+
+Blog
+
+Bridge Safety
+
+#### Top 5 Hidden Structural Damages Manual Bridge Inspection Misses
+
+](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html) [
+
+![Structural Health Monitoring of Highway Bridges](https://sentratech.in/image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp)
+
+Case Study
+
+Infrastructure
+
+#### Structural Health Monitoring of Highway Bridges
+
+](https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html) [
+
+![Fatigue Life Assessment](https://sentratech.in/image/blogs/banners/blogs_fatigue-life-assessment.webp)
+
+Blog
+
+Fatigue Analysis
+
+#### Fatigue Life Assessment
+
+](https://sentratech.in/blogs/fatigue-life-assessment.html) [
+
+![AI Is Coming for Infrastructure Monitoring](https://sentratech.in/image/articles/articles_ai_for_bridge_monitoring.webp)
+
+Article
+
+AI & Monitoring
+
+#### AI Is Coming for Infrastructure Monitoring
+
+](https://sentratech.in/article/ai-infrastructure-monitoring.html) [
+
+![What Is a Strain Gauge? Types, Working Principle & Applications](https://sentratech.in/image/blogs/banners/blogs_what-is-a-strain-gauge-types-working-principle.webp)
+
+Blog
+
+Sensor Technology
+
+#### What Is a Strain Gauge? Types, Working Principle & Applications
+
+](https://sentratech.in/blogs/what-is-a-strain-gauge-types-working-principle.html) [
+
+![10 Early Warning Signs Your Bridge Needs Continuous Monitoring](https://sentratech.in/image/blogs/banners/blogs_10-early-warning-signs-bridge-continuous-monitoring.webp)
+
+Blog
+
+Bridge Safety
+
+#### 10 Early Warning Signs Your Bridge Needs Continuous Monitoring
+
+](https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html) [
+
+![What Is an Accelerometer Sensor? Working Principle, Types & Applications](https://sentratech.in/image/blogs/banners/blogs_what-is-an-accelerometer-sensor-guide.webp)
+
+Blog
+
+Sensor Technology
+
+#### What Is an Accelerometer Sensor? Working Principle, Types & Applications
+
+](https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html) [
+
+!
+
+Blog
+
+Advanced NDT
+
+#### What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels
+
+](https://sentratech.in/blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html) [
+
+!
+
+Case Study
+
+Bridge Safety
+
+#### BridgePulse: AI & Drone Technology for Bridge Health Monitoring
+
+](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
+
+!
+
+Blog
+
+Bridge Safety
+
+#### Top 5 Hidden Structural Damages Manual Bridge Inspection Misses
+
+](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html) [
+
+!
+
+Case Study
+
+Infrastructure
+
+#### Structural Health Monitoring of Highway Bridges
+
+](https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html) [
+
+!
+
+Blog
+
+Fatigue Analysis
+
+#### Fatigue Life Assessment
+
+](https://sentratech.in/blogs/fatigue-life-assessment.html) [
+
+!
+
+Article
+
+AI & Monitoring
+
+#### AI Is Coming for Infrastructure Monitoring
+
+](https://sentratech.in/article/ai-infrastructure-monitoring.html) [
+
+!
+
+Blog
+
+Sensor Technology
+
+#### What Is a Strain Gauge? Types, Working Principle & Applications
+
+](https://sentratech.in/blogs/what-is-a-strain-gauge-types-working-principle.html) [
+
+!
+
+Blog
+
+Bridge Safety
+
+#### 10 Early Warning Signs Your Bridge Needs Continuous Monitoring
+
+](https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html) [
+
+!
+
+Blog
+
+Sensor Technology
+
+#### What Is an Accelerometer Sensor? Working Principle, Types & Applications
+
+](https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html)
+
+[View All Resources ](https://sentratech.in/resources.html)
 
 Process
 
@@ -160,33 +388,39 @@ Benefits
 
 NDT protects assets, avoids unnecessary expenditure, and keeps operations running, providing engineering evidence where you need it most.
 
-Test Without Shutdowns
+### Test Without Shutdowns
 
 Most NDT methods are performed on in-service assets without production downtime. Pipelines, pressure vessels, and structural members can be inspected while operational by eliminating costly shutdown windows.
 
-No Destructive Sampling Required
+### No Destructive Sampling Required
 
 NDT provides internal material information without cutting samples, drilling cores, or removing sections: preserving asset integrity and eliminating the need to repair sampling locations.
 
-International Standards Compliance
+### International Standards Compliance
 
 All tests are conducted and reported to internationally recognised standards (ASNT, ISO 9712, BS EN, IS codes), providing reports accepted by clients, regulators, and insurance assessors worldwide.
 
-Sub-Surface Flaw Detection
+### Sub-Surface Flaw Detection
 
 NDT locates defects invisible to the naked eye: internal cracks, lack of fusion in welds, sub-surface corrosion, before they initiate failures under service loading.
 
-Traceable Records
+### Traceable Records
 
 Calibrated, certified NDT reports with technician credentials, equipment serial numbers, and procedure references provide the defensible documentation trail required for regulatory, insurance, and legal purposes.
 
-Reduce Unnecessary Replacement
+### Reduce Unnecessary Replacement
 
 Fitness-for-service assessment based on NDT findings often demonstrates that components can safely remain in service longer than conservative replacement schedules would suggest by delivering significant capital savings.
 
-Rapid Field Turnaround
+### Rapid Field Turnaround
 
 Our in-house team mobilises quickly and completes most field NDT programmes within 1–3 days, with certified reports issued within 5 working days by supporting fast maintenance and operational decisions.
+
+[ Next step
+
+### Find the right test method for your asset
+
+Talk to Our NDT Engineer ](https://sentratech.in/contact.html)
 
 Risk Mitigation
 
@@ -194,23 +428,35 @@ Risk Mitigation
 
 Undetected defects are the leading cause of industrial asset failures. NDT is the only engineering tool that can confirm internal integrity without destructive investigation.
 
-Hidden Flaws Causing Failure
+[Request an NDT assessment ](https://sentratech.in/contact.html)
+
+1. 01
+
+### Hidden Flaws Causing Failure
 
 Internal porosity, weld cracks, and laminar defects that escape visual inspection propagate under service loading until catastrophic failure: taking assets offline and causing serious safety incidents.
 
-Premature Asset Replacement
+2. 02
+
+### Premature Asset Replacement
 
 Without NDT data, maintenance teams conservatively replace components at scheduled intervals, often retiring assets that have significant remaining service life: at unnecessary capital cost.
 
-Regulatory Non-Compliance
+3. 03
+
+### Regulatory Non-Compliance
 
 Pressure vessels, lifting equipment, pipeline systems, and structural welds are subject to mandatory periodic NDT under Indian and international codes. Non-compliance risks operating permits and insurance cover.
 
-Uninspected Weld Failures
+4. 04
+
+### Uninspected Weld Failures
 
 Fabrication defects in structural or pressure-system welds that are not inspected at time of manufacture may not reveal themselves until the weld is under full service load, often in critical locations.
 
-Unplanned Production Shutdowns
+5. 05
+
+### Unplanned Production Shutdowns
 
 Equipment failures driven by undetected defects force unplanned shutdowns that cost production, create safety hazards, and require emergency repair work at premium cost and speed.
 
@@ -220,23 +466,45 @@ Industries
 
 Sentra's NDT capability serves the full range of industries where material integrity is critical to operational safety and regulatory compliance.
 
-Oil & Gas
+!
+
+### Oil & Gas
 
 Pipelines, pressure vessels, storage tanks, and structural steelwork
 
-Power Plants
+[
+
+!
+
+### Power Plants
 
 Boiler tubing, turbine components, pressure piping, and structural steel
 
-Manufacturing
+Explore
+
+](https://sentratech.in/industries/industrial-facilities-monitoring.html)
+
+!
+
+### Manufacturing
 
 Fabrication weld inspection, incoming material testing, and QA inspection
 
-Civil Engineering
+[
+
+!
+
+### Civil Engineering
 
 Bridge steelwork, concrete structures, foundations, and piling
 
-Petrochemical
+Explore
+
+](https://sentratech.in/industries/bridges-highways-monitoring.html)
+
+!
+
+### Petrochemical
 
 Chemical plant pressure systems, reactors, columns, and heat exchangers
 
@@ -267,36 +535,6 @@ Mobilisation within 48–72 hours for standard NDT assignments, with field testi
 Digital Certified Reports
 
 All NDT reports are issued as structured digital documents with calibration records, procedure references, finding sketches, and technician certification details: ready for submission to regulators, insurers, and clients.
-
-Case Studies
-
-## NDT in Action
-
-Real-world applications of our non-destructive testing capabilities across infrastructure and industrial assets.
-
-[
-
-![BridgePulse](https://sentratech.in/image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp)
-
-AI & Drones Railways
-
-#### BridgePulse: AI and Drone Technology for Bridge Health Monitoring
-
-Read Case Study
-
-](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
-
-![IoT Bridge Monitoring](https://sentratech.in/image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp)
-
-IoT & Sensors Railways
-
-#### IoT Bridge Monitoring & Sensor Installation on Railway Bridges
-
-Read Case Study
-
-](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html)
-
-[View All Case Studies ](https://sentratech.in/resources.html#case-studies)
 
 Explore More
 
@@ -370,4 +608,10 @@ Free Consultation Available
 
 Describe your asset, material, and inspection objectives. Our NDT engineers will recommend the right methods and deliver a scope and quote within 24 hours.
 
-[Talk to Our NDT Engineer ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)
+- No obligation
+
+- Tailored to your asset
+
+- Clear scope and timeline
+
+[Talk to Our NDT Engineer ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

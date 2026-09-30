@@ -11,6 +11,7 @@
 
   gtag('config', 'G-8GFRCEFB87');
 </script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Resource hints: warm up connections the page opens on every load -->
@@ -18,26 +19,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <meta name="description" content="Buildings settle, sway and crack over time. Real-time building monitoring with IoT sensors gives owners continuous structural data to act early, not just an annual inspection." />
+    <meta name="description" content="How TGNPDCL's Bathupally substation became a navigable digital twin with 360° imagery, a 3D model, geo-tagged maintenance points and construction records." />
     <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured" />
-    <meta property="og:description"
-        content="Buildings settle, sway and crack over time. Continuous structural health monitoring with IoT sensors gives owners real-time data to act early." />
-    <meta property="og:url" content="https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html" />
+    <meta property="og:title" content="Digital Asset Management &amp; Predictive Maintenance for Substation - Bathupally TGNPDCL" />
+    <meta property="og:description" content="How TGNPDCL's Bathupally substation became a navigable digital twin with 360° imagery, a 3D model, geo-tagged maintenance points and construction records." />
+    <meta property="og:url" content="https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html" />
     <meta property="og:type" content="article" />
-    <meta property="og:image" content="https://sentratech.in/image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+    <meta property="og:image" content="https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp" />
+    <meta property="og:image:width" content="2248" />
+    <meta property="og:image:height" content="1264" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured" />
-    <meta name="twitter:description"
-        content="Buildings settle, sway and crack over time. Continuous structural health monitoring with IoT sensors gives owners real-time data to act early." />
-    <meta name="twitter:image" content="https://sentratech.in/image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp" />
+    <meta name="twitter:title" content="Digital Asset Management &amp; Predictive Maintenance for Substation - Bathupally TGNPDCL" />
+    <meta name="twitter:description" content="How TGNPDCL's Bathupally substation became a navigable digital twin with 360° imagery, a 3D model, geo-tagged maintenance points and construction records." />
+    <meta name="twitter:image" content="https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp" />
     <meta name="twitter:site" content="@sentratech" />
-    <meta name="twitter:image:width" content="1200" />
-    <meta name="twitter:image:height" content="630" />
-    <title>Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured</title>
+    <meta name="twitter:image:width" content="2248" />
+    <meta name="twitter:image:height" content="1264" />
+    <title>Substation Digital Twin &amp; Predictive Maintenance | TGNPDCL</title>
     <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
     <link rel="stylesheet" href="../css/vendor/bootstrap.min.css">
     <link rel="stylesheet" href="../css/vendor/fontawesome.css">
@@ -47,39 +47,61 @@
     <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/vendor/animate.min.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
     <link rel="stylesheet" href="../css/chatbot.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:FILL@0..1&icon_names=analytics,architecture,biotech,construction,database,insights,monitoring,precision_manufacturing,search,search_insights,sentiment_satisfied,settings_suggest,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap" rel="stylesheet" />
-
+    <link rel="stylesheet" href="../css/vendor/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/detail-page.css">
     <style>
         .visually-hidden { position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
         .word { transition: background-color 0.12s ease; padding: 0 1px; border-radius: 2px; }
         .highlight { background-color: #f48120; transition: background-color 0.15s ease; }
         body.lightmode .highlight { background-color: #ffe082; }
-        .conclusion-btn-wrapper { margin-bottom: 30px; }
         body.dark-mode .detail-hero .hero-text-col, body.dark-mode .detail-article, body.dark-mode .hero-title { color: #fff; }
         body.lightmode .hero-title { color: #111; }
         body.dark-mode .hero-intro p, body.dark-mode .detail-article p, body.dark-mode .detail-article li { color: rgba(255,255,255,0.6); }
         body.lightmode .hero-intro p, body.lightmode .detail-article p, body.lightmode .detail-article li { color: rgba(0,0,0,0.6); }
+
+        .post-figure {
+            margin: 2rem 0 2.5rem;
+            padding: 0;
+        }
+
+        .post-figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .post-figure figcaption {
+            margin-top: 0.65rem;
+            font-size: 0.78rem;
+            line-height: 1.5;
+            color: rgba(0, 0, 0, 0.58);
+        }
+
+        body.dark-mode .post-figure figcaption {
+            color: rgba(255, 255, 255, 0.58);
+        }
     </style>
-    <link rel="canonical" href="https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html">
-    <link rel="alternate" type="text/markdown" href="https://sentratech.in/blogs/continuous-building-shm-iot-sensors.md">
+    <link rel="canonical" href="https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html">
+    <link rel="alternate" type="text/markdown" href="https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.md">
 
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "BlogPosting",
-      "headline": "Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured",
-      "description": "Buildings settle, sway and crack over time. Continuous structural health monitoring with IoT sensors gives owners real-time data to act early.",
-      "datePublished": "2026-08-25",
+      "@type": "Article",
+      "headline": "Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL",
+      "description": "How TGNPDCL's Bathupally substation became a navigable digital twin with 360° imagery, a 3D model, geo-tagged maintenance points and construction records.",
+      "datePublished": "2026-09-30",
       "dateModified": "2026-09-30",
       "author": {
-        "@type": "Person",
-        "name": "Yuva Subharam",
-        "url": "https://www.linkedin.com/in/yuva-subharam-vasamsetti-75a39117a/"
+        "@type": "Organization",
+        "name": "Sentra Technologies"
       },
       "publisher": {
         "@type": "Organization",
@@ -91,11 +113,13 @@
       },
       "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html"
+        "@id": "https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html"
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://sentratech.in/image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp"
+        "url": "https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp",
+        "width": 2248,
+        "height": 1264
       },
       "inLanguage": "en"
     }
@@ -109,14 +133,13 @@
         "@type": "SpeakableSpecification",
         "cssSelector": [".detail-article h2, .detail-article h4", ".detail-article p", ".hero-intro"]
       },
-      "url": "https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html"
+      "url": "https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html"
     }
     </script>
 
 </head>
 
 <body>
-    <!-- Preloader -->
     <div id="preloader">
         <div class="preloader-inner">
             <div class="preloader-logo"><img src="../image/branding/sentra_white_1.svg" alt="Sentra"></div>
@@ -131,9 +154,7 @@
         </div>
     </div>
 
-    <header>
-        <!-- Section Navbar -->
-        <div id="header"><!-- Mega nav styles live in css/style.css -->
+    <header><div id="header"><!-- Mega nav styles live in css/style.css -->
 <style>
     /* Self-contained import so the theme-toggle glyph renders even on pages
        whose <head> doesn't already link Material Symbols. */
@@ -1247,19 +1268,9 @@
 
         })();
     </script>
-</div></div>
-    </header>
-
-    <!-- Section Content Edit -->
-    <aside>
-        <div id="edit-sidebar"></div>
-    </aside>
-
-
-
-    <!-- Section Sidebar -->
-    <aside>
-        <div id="sidebar"><div>
+</div></div></header>
+    <aside><div id="edit-sidebar"></div></aside>
+    <aside><div id="sidebar"><div>
     <div class="content-overlay">
         <div class="content-edit-sidebar">
             <div class="sidebar-header">
@@ -1441,13 +1452,11 @@
             </div>
         </div>
     </nav>
-</div></div>
-    </aside>
+</div></div></aside>
 
-    <!-- Section Main Content -->
     <main>
         <section class="detail-hero">
-            <a href="../resources.html#blogs" class="back-btn"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+            <a href="../resources.html#case-studies" class="back-btn"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
             <div class="hero-bg-dots"></div>
             <div class="hero-glow orange-glow"></div>
             <div class="hero-top-line"></div>
@@ -1455,18 +1464,17 @@
                 <div class="hero-grid">
                     <div class="hero-text-col">
                         <div class="hero-meta-row">
-                            <span class="hero-badge orange">Building Monitoring</span>
-                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> Aug 25, 2026</span>
-                            <span class="hero-meta-icon"><i class="fa-regular fa-clock"></i> 7 min read</span>
+                            <span class="hero-badge orange">Smart Substation</span>
+                            <span class="hero-meta-icon"><i class="fa-regular fa-calendar"></i> Sep 30, 2026</span>
                         </div>
-                        <h1 class="hero-title">Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured</h1>
+                        <h1 class="hero-title">Digital Asset Management &amp; Predictive Maintenance for Substation - Bathupally TGNPDCL</h1>
                         <div class="hero-intro">
-                            <p>Buildings settle, sway, and crack. Most of that is normal. Continuous monitoring exists to tell you which part of it is not, and to do so early enough that you still have cheap options.</p>
+                            <p>Clove Technologies turned the Bathupally substation of TGNPDCL into a browser-based digital twin: 360&deg; site imagery, a 3D asset model and a point cloud in one georeferenced viewer, with maintenance points, measurements and construction records attached to the equipment they describe.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
                         <div class="hero-image-wrap">
-                            <img src="../image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp" alt="IoT sensors installed for continuous building monitoring" loading="eager">
+                            <img src="../image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp" alt="Smart substation digital twin for digital asset management and predictive maintenance at Bathupally TGNPDCL" loading="eager" width="2248" height="1264">
                             <div class="hero-image-overlay"></div>
                         </div>
                     </div>
@@ -1477,132 +1485,190 @@
         <div class="detail-content-wrapper">
             <div class="detail-grid">
                 <article class="detail-article">
-                    <div class="tts-bar">
-                        <button id="ttsPlayBtn" class="tts-btn" aria-label="Play article aloud" aria-pressed="false"><i class="fas fa-play"></i></button>
-                        <div class="tts-progress" id="ttsProgressBar">
-                            <div id="progressFill" class="tts-fill"></div>
-                        </div>
-                        <span class="tts-label">Listen</span>
-                    </div>
                     <div class="detail-meta-bar">
                         <div class="detail-meta-left">
-                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> Aug 25, 2026</span>
-                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Building Monitoring</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-calendar"></i> Sep 30, 2026</span>
+                            <span class="detail-meta-item"><i class="fa-regular fa-folder"></i> Case Study</span>
                         </div>
                         <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Yuva Subharam <a href="https://www.linkedin.com/in/yuva-subharam-vasamsetti-75a39117a/" target="_blank" rel="noopener" aria-label="Yuva Subharam on LinkedIn"><i class="fa-brands fa-linkedin"></i></a> | Sentra Technologies</span>
                     </div>
-                    <div id="ttsContent">
-                        <p>
-                            "Continuous structural health monitoring" is a phrase that gets used without much specificity. Owners are told their building will be monitored in real time, and are rarely told what quantity is being measured, at what resolution, or what number would actually prompt somebody to do something.
-                        </p>
-                        <p>
-                            This is a walk through the measurements that make up a building monitoring system, why each one is taken, and what the reading has to beat to be meaningful.
-                        </p>
 
-                        <h2 id="section1">The problem with periodic inspection</h2>
-                        <p>
-                            A structural inspection is a snapshot. Someone walks the building, records crack widths, notes anything that has changed since last time, and writes it up. For many defects that is entirely adequate.
-                        </p>
-                        <p>
-                            It works less well for movement, because movement is a rate rather than a state. A 2 mm crack tells you very little on its own. A 2 mm crack that was 1.2 mm eighteen months ago, and which opens a further 0.3 mm every summer, tells you something specific. Getting from the first statement to the second requires either a long series of careful manual readings or an instrument that takes them for you.
-                        </p>
-                        <p>
-                            There is a second issue. Buildings move for reasons that have nothing to do with damage. Concrete expands when it warms. Timber and masonry respond to humidity. A tall building leans measurably in the wind and comes back. If you sample twice a year at unrecorded times of day, seasonal and thermal effects are folded invisibly into your trend, and they are often larger than the signal you were looking for.
-                        </p>
+                    <p>A distribution substation is one of the densest places a utility owns. Power transformers, isolators, circuit breakers, current and potential transformers, lightning arresters, control kiosks, cable trenches and overhead gantries all share a fenced yard, and most of it is energised. Knowing exactly what is where, what condition it is in and what was done to it last usually means either a site visit or a search through registers and drawings that may no longer match the yard.</p>
 
-                        <img src="../image/blogs/blog_building_sensors.webp" alt="Sensor placement for continuous building structural health monitoring">
+                    <p>Telangana Northern Power Distribution Company Limited (TGNPDCL) wanted the Bathupally substation documented in a way its engineers could use from a desk. Clove Technologies delivered that as a <a href="../solutions/digital-twin.html" style="color: #f48120;">digital twin</a>: the substation captured as it stands, modelled asset by asset, and published in a web viewer where maintenance teams can walk the yard, measure equipment and log issues against real coordinates.</p>
 
-                        <h2 id="section2">Settlement and differential settlement</h2>
-                        <p>
-                            Nearly every building settles after construction as the soil beneath it consolidates. Uniform settlement is usually tolerable. The structure goes down as a unit and little distress appears.
-                        </p>
-                        <p>
-                            Differential settlement is the damaging case. One part of the foundation moves more than another, the frame is forced to accommodate the difference, and the result appears as diagonal cracking, jammed doors, and out of level floors. Causes include variable soil conditions, changes to the water table, leaking drainage, nearby excavation, and vibration from adjacent construction.
-                        </p>
-                        <p>
-                            Continuous measurement usually relies on:
-                        </p>
-                        <ul class="blog-bullets">
-                            <li><strong>Liquid level settlement systems:</strong> Connected vessels around the building share a fluid reservoir, so vertical movement at one point registers as a pressure change. These resolve fractions of a millimetre and are well suited to slow consolidation.</li>
-                            <li><strong>GNSS receivers:</strong> Practical on larger or taller structures where a few millimetres of resolution is enough, and useful because they give absolute position rather than movement relative to another part of the same building.</li>
-                            <li><strong>Borehole extensometers:</strong> Where the concern is the ground itself, these show which soil layer is actually compressing.</li>
-                        </ul>
-
-                        <h2 id="section3">Tilt and inter-story drift</h2>
-                        <p>
-                            Tilt is a sensitive early indicator because rotation shows up before settlement becomes visible. A foundation losing support on one side rotates the column above it, and a <a href="../products/tiltmeter.html" style="color: #f48120;">MEMS tiltmeter</a> resolving a few arc seconds will register that long before anyone notices a sloping floor.
-                        </p>
-                        <p>
-                            Inter-story drift is the related measurement in taller buildings: the horizontal displacement of one floor relative to the one below, divided by the storey height. It is the parameter most closely tied to damage in frames, which is why it appears in seismic assessment criteria. It can be derived from accelerometers at multiple levels or measured more directly with displacement sensors across the storey.
-                        </p>
-                        <p>
-                            Two practical notes. Tiltmeters need rigid mounting to structural elements, since a sensor fixed to a partition measures the partition. And they need temperature compensation, because thermal effects on both the sensor and its mount can exceed the movement being tracked.
-                        </p>
-
-                        <h2 id="section4">Crack width and movement</h2>
-                        <p>
-                            Cracks are the most visible symptom and the most commonly misread. What matters is not the width so much as whether the crack is active.
-                        </p>
-                        <p>
-                            A stable crack from settlement that finished years ago needs cosmetic repair. A crack that opens and closes seasonally is responding to thermal or moisture cycling and may need a movement joint. A crack that opens steadily in one direction indicates something ongoing, and that is the one worth investigating.
-                        </p>
-                        <p>
-                            <a href="../products/vibrating-wire.html" style="color: #f48120;">Vibrating wire crackmeters</a> are the common instrument here. They resolve movements well under a tenth of a millimetre, hold calibration over years, and include a thermistor so readings can be corrected for temperature. That correction matters more than people expect. On an exposed facade, the daily thermal cycle can move a crack more than a year of structural change.
-                        </p>
-
-                        <h2 id="section5">Vibration and dynamic properties</h2>
-                        <p>
-                            Every structure has natural frequencies determined by its mass and stiffness. Mass rarely changes much. Stiffness falls when a structure is damaged. So a downward drift in natural frequency is a global indicator that something has changed, without needing a sensor at the damage location.
-                        </p>
-                        <p>
-                            <a href="../products/accelerometers.html" style="color: #f48120;">Accelerometers</a> placed at a handful of levels capture enough response to track those frequencies over time, using ambient excitation from wind and traffic rather than any deliberate forcing.
-                        </p>
-                        <p>
-                            The method has real limits and it is worth being honest about them. Frequency shifts are sensitive to temperature and occupancy load, often by more than moderate damage would cause, so a raw drop is not proof of anything. Useful systems normalise against temperature using a long baseline before treating a shift as significant. Localising damage from frequency data alone is difficult, and in practice the technique works best as a trigger for inspection rather than a diagnosis.
-                        </p>
-                        <p>
-                            Vibration monitoring also covers a more immediate concern: construction next door. Piling, excavation, and demolition transmit ground vibration that can damage neighbouring structures, and continuous measurement provides both protection and an evidential record. Our note on <a href="../blogs/monitoring-construction-induced-vibrations.html" style="color: #f48120;">construction-induced vibration</a> covers that in more depth.
-                        </p>
-
-                        <h2 id="section6">Environmental context</h2>
-                        <p>
-                            Environmental sensors are not really about the environment. They are there so the structural data can be interpreted.
-                        </p>
-                        <ul class="blog-bullets">
-                            <li><strong>Temperature:</strong> Recorded at the structure rather than from a weather service, because surface temperature on a sunlit facade differs substantially from ambient air. Nearly every other measurement needs this to be corrected properly.</li>
-                            <li><strong>Humidity:</strong> Relevant for timber and masonry, and for corrosion risk in reinforced concrete.</li>
-                            <li><strong>Wind speed and direction:</strong> Explains short-term sway in tall buildings and separates wind response from anything structural.</li>
-                            <li><strong>Groundwater level:</strong> Often the missing link when settlement correlates with the seasons or with pumping nearby.</li>
-                        </ul>
-                        <p>
-                            A monitoring system without environmental context produces alarms that nobody trusts, because the first few will turn out to be hot afternoons.
-                        </p>
-
-                        <h2 id="section7">Baselines, thresholds, and who gets called</h2>
-                        <p>
-                            Instrumentation only becomes monitoring once someone has decided what the numbers mean.
-                        </p>
-                        <p>
-                            That starts with a baseline. A monitoring system needs a period of normal operation recorded before its readings can be judged, and long enough to capture a full seasonal cycle if thermal effects matter. Systems commissioned in a hurry and alarmed immediately tend to generate false positives through their first winter, after which people stop reading the alerts.
-                        </p>
-                        <p>
-                            Thresholds should come from the structure rather than from a catalogue. Allowable tilt for a heritage masonry building is not the allowable tilt for a modern steel frame. The engineer who understands the structure sets the numbers, informed by the design and its condition.
-                        </p>
-                        <p>
-                            Then the response has to be defined in advance. An alert that arrives with no agreed action is noise. Practical systems distinguish a level that prompts a closer look at the data from a level that brings an engineer to site, and name the person responsible at each stage.
-                        </p>
-                        <p>
-                            For buildings where several of these measurements are combined, a <a href="../solutions/digital-twin.html" style="color: #f48120;">digital twin</a> is a reasonable way to hold sensor data against the structural model so readings are assessed in context. Our overview of <a href="../solutions/structural-health-monitoring.html" style="color: #f48120;">structural health monitoring</a> covers how these systems are specified, and <a href="../industries/buildings-highrise-monitoring.html" style="color: #f48120;">building and high-rise monitoring</a> describes deployments on occupied towers. If earthquake loading is a concern for your site, <a href="../blogs/seismic-monitoring-buildings-critical-infrastructure.html" style="color: #f48120;">seismic monitoring for buildings</a> deals with the post-event assessment side.
-                        </p>
+                    <div class="snapshot-wrapper">
+                        <div class="snapshot-card">
+                            <div class="snapshot-grid">
+                                <div>
+                                    <div class="snapshot-icon-row"><i class="fa-solid fa-bolt"></i> <strong>Project snapshot</strong></div>
+                                    <div class="snapshot-label">Client</div>
+                                    <div class="snapshot-value">TGNPDCL (Telangana Northern Power Distribution Company Limited)</div>
+                                    <div class="snapshot-label">Asset</div>
+                                    <div class="snapshot-value">Bathupally substation, outdoor switchyard and power transformers</div>
+                                    <div class="snapshot-label">Deliverable</div>
+                                    <div class="snapshot-value">Web-based digital twin for asset management and maintenance</div>
+                                </div>
+                                <div>
+                                    <div class="snapshot-label">Technologies on site</div>
+                                    <div class="snapshot-tech-grid">
+                                        <span class="snapshot-tech-item"><i class="fa-solid fa-street-view"></i> 360&deg; imagery</span>
+                                        <span class="snapshot-tech-item"><i class="fa-solid fa-cubes"></i> Point cloud</span>
+                                        <span class="snapshot-tech-item"><i class="fa-solid fa-cube"></i> 3D asset model</span>
+                                        <span class="snapshot-tech-item"><i class="fa-solid fa-location-dot"></i> Geo-tagged POIs</span>
+                                    </div>
+                                    <div class="snapshot-label" style="margin-top:1rem">Users</div>
+                                    <div class="snapshot-value">Operations, maintenance and construction teams</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <h2 id="overview">Project Details</h2>
+                    <table class="monitoring-table">
+                        <thead>
+                            <tr>
+                                <th class="case-studies-title">Parameter</th>
+                                <th class="case-studies-title">Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td><p>Client / utility</p></td><td><p>Telangana Northern Power Distribution Company Limited (TGNPDCL)</p></td></tr>
+                            <tr><td><p>Site</p></td><td><p>Bathupally substation, Telangana</p></td></tr>
+                            <tr><td><p>Asset type</p></td><td><p>Outdoor distribution substation</p></td></tr>
+                            <tr><td><p>Equipment documented</p></td><td><p>Power transformers, gantry structures, isolators, breakers, instrument transformers, lightning arresters, control kiosks, plinths, cable trenches and boundary fencing</p></td></tr>
+                            <tr><td><p>Data layers</p></td><td><p>360&deg; panoramic imagery, 3D asset model, point cloud, construction video</p></td></tr>
+                            <tr><td><p>Spatial reference</p></td><td><p>Georeferenced, with X, Y and Z coordinates for every point picked in the viewer</p></td></tr>
+                            <tr><td><p>Viewer tools</p></td><td><p>Layer switching, measurement, clipping, points of interest, maintenance and construction modes, site minimap</p></td></tr>
+                            <tr><td><p>Digital deliverable</p></td><td><p>Digital twin for asset management and predictive maintenance</p></td></tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="challenge">Why Substations Are Hard to Manage on Paper</h2>
+                    <p>Most substation records are organised by document, not by location. A transformer's test history lives in one register, the single line diagram in another file, and the photographs from the last inspection somewhere on a shared drive. None of it tells an engineer where on the yard a problem actually is, or what the equipment around it looks like today.</p>
+
+                    <p>Four problems came up repeatedly:</p>
+                    <ul class="blog-bullets">
+                        <li>As-built drawings drift from reality as equipment is added, replaced or relocated over the life of the substation.</li>
+                        <li>Simple questions such as a clearance, a structure height or which bay a breaker sits in often need someone to travel to site and check.</li>
+                        <li>Energised equipment limits how close anyone can get, so measuring by hand is slow and needs safety clearances.</li>
+                        <li>Maintenance observations are written up as text. The next person has to work out which piece of equipment the note refers to.</li>
+                    </ul>
+
+                    <p>A digital twin solves these by putting the record and the location in the same place. Every observation, measurement and document is tied to a point in a model of the actual substation.</p>
+
+                    <h2 id="approach">What We Built</h2>
+
+                    <span class="case-studies-title">01. Reality capture of the yard</span>
+                    <p>The substation was captured as it stands. 360&deg; panoramic imagery was recorded at stations across the switchyard, giving a photographic walk-through of every bay, and an aerial point cloud of the full site provides the overhead reference. In the viewer the point cloud appears as a minimap in the corner, so a user always knows where they are standing in the yard.</p>
+
+                    <figure class="post-figure">
+                        <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/360-panorama-view.webp"
+                            alt="360 degree panoramic view of the Bathupally substation switchyard with power transformer, gantries and minimap"
+                            loading="lazy" decoding="async" width="1600" height="729">
+                        <figcaption>The 360&deg; imagery layer. The power transformer sits centre frame with the incoming gantries behind it, and the point cloud minimap at the bottom right shows the viewer's position on the site.</figcaption>
+                    </figure>
+
+                    <span class="case-studies-title">02. A 3D model of every asset</span>
+                    <p>From the captured data, the substation was modelled component by component. Gantry columns and beams, insulator strings, the power transformer and its conservator, isolators, kiosks, plinths, cable trenches and the boundary fence each exist as separate objects. The model shares the same coordinates as the imagery, so a user can switch between the photograph and the model at any position and see the same equipment.</p>
+
+                    <figure class="post-figure">
+                        <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/3d-model-view.webp"
+                            alt="3D asset model of the Bathupally substation showing transformer, gantry structures, conductors and plinths"
+                            loading="lazy" decoding="async" width="1600" height="729">
+                        <figcaption>The same view in the 3D model layer. Structures, conductors, the transformer and civil works are separate objects, which is what allows records to be attached to individual assets.</figcaption>
+                    </figure>
+
+                    <p>This is the step that turns a survey into an asset register. A photograph shows a transformer; a model knows it is a transformer, where it stands and what surrounds it. Modelling from captured data is the core of our <a href="../solutions/digital-engineering-and-documentation.html" style="color: #f48120;">digital engineering and documentation</a> work.</p>
+
+                    <span class="case-studies-title">03. Measurement without a site visit</span>
+                    <p>Because the model and imagery are georeferenced, the viewer measures in real units. Engineers can take point coordinates, straight-line distances and vertical heights by clicking two points. A gantry column, for example, measures 7.86 m from plinth to beam in the screenshot below. Clearances, bay spacing and equipment dimensions can be checked the same way, without a permit to work or a tape measure near live conductors.</p>
+
+                    <figure class="post-figure">
+                        <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/measurement-tool.webp"
+                            alt="Measurement tool in the substation digital twin showing a 7.86 metre gantry column height"
+                            loading="lazy" decoding="async" width="1041" height="818">
+                        <figcaption>The measurement toolbar offers point, distance and height modes. Here a gantry column is measured at 7.86 m directly in the 3D model.</figcaption>
+                    </figure>
+
+                    <span class="case-studies-title">04. Points of interest for maintenance</span>
+                    <p>Maintenance findings are logged as points of interest (POIs) placed directly on the equipment. Each POI carries a category such as <em>Maintenance Required</em>, the asset it belongs to, its X, Y and Z coordinates, and a free-text description. The next engineer to open the model sees the flag on the transformer itself rather than a line in a spreadsheet.</p>
+
+                    <figure class="post-figure">
+                        <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/point-of-interest.webp"
+                            alt="Creating a Maintenance Required point of interest on the transformer with X, Y and Z coordinates"
+                            loading="lazy" decoding="async" width="1430" height="846">
+                        <figcaption>Creating a POI on the transformer. The category, asset and coordinates are recorded with the note, so the issue is always found in the same place.</figcaption>
+                    </figure>
+
+                    <p>Over time these POIs build into a maintenance history organised by location. Which transformer has the most open issues, which bay was last inspected, and which findings are still unresolved all become questions the model can answer.</p>
+
+                    <span class="case-studies-title">05. Construction records linked to the site</span>
+                    <p>The twin also holds the substation's construction history. In construction mode, video recorded while the gantries, plinths and transformer were being installed plays over the model. When a question comes up later about how a foundation was built or what sits under a trench cover, the footage is one click away and already linked to the right place.</p>
+
+                    <figure class="post-figure">
+                        <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/construction-video.webp"
+                            alt="Construction phase video of the substation gantries playing inside the digital twin viewer"
+                            loading="lazy" decoding="async" width="1600" height="790">
+                        <figcaption>Construction mode plays site footage from the build phase inside the viewer, with the 33 kV gantries being erected and the transformer being installed.</figcaption>
+                    </figure>
+
+                    <h2 id="technology">Technology Used</h2>
+                    <table class="monitoring-table">
+                        <thead>
+                            <tr>
+                                <th class="case-studies-title">Technology</th>
+                                <th class="case-studies-title">Role on this project</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="../products/laser-scanners.html" target="_blank" rel="noopener"><p style="color: #f48120;">360&deg; imagery and point cloud</p></a></td>
+                                <td><p>Photographic walk-through of the yard and a georeferenced 3D record of the site</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="../solutions/digital-engineering-and-documentation.html" target="_blank" rel="noopener"><p style="color: #f48120;">3D asset modelling</p></a></td>
+                                <td><p>Separate, identifiable objects for each structure, piece of equipment and civil element</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="../solutions/digital-twin.html" target="_blank" rel="noopener"><p style="color: #f48120;">Digital twin viewer</p></a></td>
+                                <td><p>Browser-based access to all layers with measurement, clipping and layer switching</p></td>
+                            </tr>
+                            <tr>
+                                <td><a href="../solutions/asset-monitoring-and-management-solutions.html" target="_blank" rel="noopener"><p style="color: #f48120;">Asset and maintenance records</p></a></td>
+                                <td><p>Geo-tagged points of interest and construction footage attached to the model</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <h2 id="predictive">From Asset Register to Predictive Maintenance</h2>
+                    <p>The twin as delivered is a digital asset management system: it records what is on the site, where it is and what has been done to it. Predictive maintenance is what comes next, and the model is what makes it practical.</p>
+
+                    <p>Predictive maintenance needs condition data tied to specific assets. For a substation that means sensors on the equipment most likely to fail and most expensive to replace: vibration and temperature on transformers, tilt on gantry structures, and settlement on plinths and foundations. With the twin already in place, each sensor has a location and an asset to report against, and an alert opens on the equipment it refers to rather than as an anonymous tag number.</p>
+
+                    <p>This is the same approach we describe in <a href="../article/digital-twin-predictive-maintenance-sentra.html" style="color: #f48120;">digital twins for predictive maintenance</a>, and Sentra's <a href="../products/edge-devices.html" style="color: #f48120;">wireless edge devices</a> such as the <a href="../products/vibration-meter.html" style="color: #f48120;">vibration meter</a> and <a href="../products/tiltmeter.html" style="color: #f48120;">tiltmeter</a> are built for this kind of retrofit, with no cabling across an energised yard. For rotating and electrical plant more broadly, see our article on <a href="../article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html" style="color: #f48120;">IoT vibration sensors for predictive maintenance</a>.</p>
+
+                    <h2 id="outcome">What the Project Delivered</h2>
+                    <p>TGNPDCL now holds a measured, navigable digital record of the Bathupally substation. In practice the twin supports:</p>
+                    <ul class="blog-bullets">
+                        <li>Remote walk-throughs of the switchyard for planning and review</li>
+                        <li>A 3D asset register with each structure and piece of equipment modelled separately</li>
+                        <li>Measurements of heights, distances and clearances without entering the yard</li>
+                        <li>Maintenance issues logged as geo-tagged POIs on the equipment they concern</li>
+                        <li>Construction footage kept with the asset for future reference</li>
+                        <li>A spatial base for adding condition monitoring sensors and moving to predictive maintenance</li>
+                    </ul>
+
+                    <h2 id="conclusion">Conclusion</h2>
+                    <p>The Bathupally project shows what a substation looks like when its records are organised by location instead of by file. Imagery, model, measurements, maintenance notes and construction history sit in one viewer, and every item in it points to a real place on the yard.</p>
+                    <p>For a distribution utility with hundreds of substations, that is the starting point for managing them as a portfolio. Add <a href="../solutions/asset-monitoring-and-management-solutions.html" style="color: #f48120;">asset monitoring</a> and the same twin moves from recording condition to predicting it.</p>
 
                     <div class="detail-cta">
-                        <h2 id="ConclusionSection">Work out what your building needs</h2>
-                        <p>
-                            Not every building needs continuous monitoring, and the ones that do rarely need everything described here. Sentra helps owners and engineers decide which measurements are worth taking on a given structure, then designs, installs, and runs the system. Get in touch if you have a building you are unsure about.
-                        </p>
+                        <h2>Planning a digital twin for your substations?</h2>
+                        <p>Tell us about your sites and we will scope the capture, the asset model and how maintenance and sensor data would connect to it.</p>
                         <a class="cta-btn" href="/contact.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
+
                 </article>
 
                 <aside class="detail-sidebar">
@@ -1610,92 +1676,89 @@
                         <div class="sidebar-card toc">
                             <h3><i class="fa-solid fa-list"></i> Table of Contents</h3>
                             <div id="tocContainer">
-                                <button class="toc-item" data-target="section1">Why Periodic Inspection Falls Short</button>
-                                <button class="toc-item" data-target="section2">Settlement</button>
-                                <button class="toc-item" data-target="section3">Tilt and Drift</button>
-                                <button class="toc-item" data-target="section4">Crack Movement</button>
-                                <button class="toc-item" data-target="section5">Vibration</button>
-                                <button class="toc-item" data-target="section6">Environmental Context</button>
-                                <button class="toc-item" data-target="section7">Baselines and Thresholds</button>
-                                <button class="toc-item" data-target="ConclusionSection">Get Started</button>
+                                <button class="toc-item" data-target="overview">Project Details</button>
+                                <button class="toc-item" data-target="challenge">Why Substations Are Hard to Manage</button>
+                                <button class="toc-item" data-target="approach">What We Built</button>
+                                <button class="toc-item" data-target="technology">Technology Used</button>
+                                <button class="toc-item" data-target="predictive">From Asset Register to Predictive Maintenance</button>
+                                <button class="toc-item" data-target="outcome">What the Project Delivered</button>
+                                <button class="toc-item" data-target="conclusion">Conclusion</button>
                             </div>
                         </div>
                         <div class="sidebar-card">
                             <h3><i class="fa-regular fa-share-from-square"></i> Share</h3>
                             <div class="sidebar-share-icons">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html" target="_blank" class="share-icon-link" aria-label="Share on Facebook" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
-                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html&text=Continuous%20Building%20Monitoring%20with%20IoT%20Sensors" target="_blank" class="share-icon-link" aria-label="Share on Twitter" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
-                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html" target="_blank" class="share-icon-link" aria-label="Share on LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://api.whatsapp.com/send?text=Continuous%20Building%20Monitoring%20with%20IoT%20Sensors%20https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html" target="_blank" class="share-icon-link" aria-label="Share on WhatsApp" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html" target="_blank" class="share-icon-link" aria-label="Share on Facebook" rel="noopener"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://x.com/intent/tweet?url=https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html&text=Digital%20Asset%20Management%20%26%20Predictive%20Maintenance%20for%20Substation%20-%20Bathupally%20TGNPDCL" target="_blank" class="share-icon-link" aria-label="Share on Twitter" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html" target="_blank" class="share-icon-link" aria-label="Share on LinkedIn" rel="noopener"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a href="https://api.whatsapp.com/send?text=Digital%20Asset%20Management%20%26%20Predictive%20Maintenance%20for%20Substation%20-%20Bathupally%20TGNPDCL%20https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html" target="_blank" class="share-icon-link" aria-label="Share on WhatsApp" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
                             </div>
                         </div>
-                        <a href="../resources.html#blogs" class="back-btn" style="position:static;display:flex;width:100%;justify-content:center;"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
+                        <a href="../resources.html#case-studies" class="back-btn" style="position:static;display:flex;width:100%;justify-content:center;"><i class="fa-solid fa-chevron-left" style="font-size:10px"></i> Back to Resources</a>
                     </div>
                 </aside>
-            </div>
-        </div>
-
-        <!-- More Blogs -->
+        <!-- More Blogs & Case Studies -->
         <div class="hero-container" style="max-width:1280px;margin:0 auto;padding:0 1rem 4rem">
-            <div class="trending-section">
-                <div class="cs-section-label">
-                    <span class="trending-dot"></span>
-                    <h2>More Blogs</h2>
+                <div class="trending-section">
+                    <div class="cs-section-label">
+                        <span class="trending-dot"></span>
+                        <h2>More Blogs</h2>
+                    </div>
+                <div class="trending-grid cs-combined-grid">
+                    <a href="../article/digital-twin-predictive-maintenance-sentra.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/articles/article_digital-twin-predictive-maintenance-sentra.webp" alt="Digital twin for predictive maintenance" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Digital Twin for Predictive Maintenance: How It Works</h4>
+                            <div class="trending-card-meta"><span>Digital Twin</span><span>&middot;</span><span>Article</span></div>
+                        </div>
+                    </a>
+                    <a href="../article/3d-laser-scanning-lidar-infrastructure-digital-twins.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp" alt="3D laser scanning and LiDAR for infrastructure digital twins" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>3D Laser Scanning &amp; LiDAR for Infrastructure Digital Twins</h4>
+                            <div class="trending-card-meta"><span>Digital Twin</span><span>&middot;</span><span>Article</span></div>
+                        </div>
+                    </a>
+                    <div class="cs-divider"></div>
+                    <a href="../case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp" alt="Railway bridge digital twin using drone and LiDAR inspection" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Railway Bridge Digital Twin Using Drone and LiDAR Inspection</h4>
+                            <div class="trending-card-meta"><span>Railways</span><span>&middot;</span><span>Case Study</span></div>
+                        </div>
+                    </a>
+                    <a href="../case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp" alt="Handheld SLAM vs TLS for highway bridge surveys" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Handheld SLAM vs. TLS for Highway Bridge Surveys</h4>
+                            <div class="trending-card-meta"><span>Comparison Study</span><span>&middot;</span><span>Case Study</span></div>
+                        </div>
+                    </a>
+                    <a href="../case-studies/railway-bridge-fatigue-life-assessment-load-testing.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp" alt="Railway bridge fatigue life assessment and load testing" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>Railway Bridge Fatigue Life Assessment and Load Testing</h4>
+                            <div class="trending-card-meta"><span>Railways</span><span>&middot;</span><span>Case Study</span></div>
+                        </div>
+                    </a>
+                    <a href="../case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" class="trending-card">
+                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp" alt="IoT Bridge Monitoring" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+                        <div class="trending-card-body">
+                            <h4>IoT Bridge Monitoring on Railway Bridges</h4>
+                            <div class="trending-card-meta"><span>Railways</span><span>&middot;</span><span>Case Study</span></div>
+                        </div>
+                    </a>
                 </div>
-                <div class="trending-grid">
-                    <a href="../blogs/seismic-monitoring-buildings-critical-infrastructure.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blogs_seismic-monitoring-buildings-critical-infrastructure.webp" alt="Seismic Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
-                        <div class="trending-card-body">
-                            <h4>Seismic Monitoring for Buildings and Critical Infrastructure</h4>
-                            <div class="trending-card-meta"><span>Seismic Monitoring</span><span>&middot;</span><span>Blog</span></div>
-                        </div>
-                    </a>
-                    <a href="../blogs/monitoring-construction-induced-vibrations.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blogs_monitoring-construction-induced-vibrations.webp" alt="Construction Vibration Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
-                        <div class="trending-card-body">
-                            <h4>Monitoring Construction-Induced Vibrations</h4>
-                            <div class="trending-card-meta"><span>Monitoring</span><span>&middot;</span><span>Blog</span></div>
-                        </div>
-                    </a>
-                    <a href="../blogs/bridge-scour-monitoring-iot-digital-twins.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp" alt="Bridge Scour Monitoring" style="width:100%;height:100%;object-fit:cover;"></div>
-                        <div class="trending-card-body">
-                            <h4>Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss</h4>
-                            <div class="trending-card-meta"><span>Bridge Safety</span><span>&middot;</span><span>Blog</span></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <!-- More Case Studies -->
-        <div class="hero-container" style="max-width:1280px;margin:0 auto;padding:0 1rem 4rem">
-            <div class="trending-section">
-                <div class="cs-section-label">
+                <div class="cs-related-label">
                     <span class="trending-dot"></span>
                     <h2>More Case Studies</h2>
                 </div>
-                <div class="trending-grid">
-                    <a href="../case-studies/structural-health-monitoring-of-highway-bridges.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_structural-health-monitoring-of-highway-bridges.webp" alt="Highway Bridge SHM" style="width:100%;height:100%;object-fit:cover;"></div>
-                        <div class="trending-card-body">
-                            <h4>Structural Health Monitoring of Highway Bridges</h4>
-                            <div class="trending-card-meta"><span>Highways</span><span>&middot;</span><span>Case Study</span></div>
-                        </div>
-                    </a>
-                    <a href="../case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html" class="trending-card">
-                        <div class="trending-card-thumb"><img src="../image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp" alt="BridgePulse" style="width:100%;height:100%;object-fit:cover;"></div>
-                        <div class="trending-card-body">
-                            <h4>BridgePulse: AI and Drone Technology</h4>
-                            <div class="trending-card-meta"><span>AI &amp; Drones</span><span>&middot;</span><span>Case Study</span></div>
-                        </div>
-                    </a>
-                </div>
             </div>
         </div>
+            </div><!-- /.detail-grid -->
+        </div><!-- /.detail-content-wrapper -->
     </main>
 
-    <!-- Footer -->
     <div id="footer"><div class="section-footer">
     <div class="bg-footer-wrapper">
         <div class="bg-footer">
@@ -1981,16 +2044,6 @@
     })();
 </script></div>
 
-    <script src="../js/vendor/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/vendor/swiper-bundle.min.js"></script>
-    <script src="../js/script.js"></script>
-    <script src="../js/swiper-script.js"></script>
-    <script src="../js/submit-form.js"></script>
-    <script src="../js/video_embedded.js"></script>
-    <script src="../js/resources.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
-    <script src="../js/chatbot-widget.js"></script>
     <script>
         (function () {
             const synth = window.speechSynthesis;
@@ -2013,13 +2066,9 @@
             const progressFill = document.getElementById('progressFill');
             const progressBar = document.getElementById('ttsProgressBar');
 
-            function loadVoices() {
-                voices = synth.getVoices() || [];
-            }
+            function loadVoices() { voices = synth.getVoices() || []; }
             loadVoices();
-            if (speechSynthesis.onvoiceschanged !== undefined) {
-                speechSynthesis.onvoiceschanged = loadVoices;
-            }
+            if (speechSynthesis.onvoiceschanged !== undefined) { speechSynthesis.onvoiceschanged = loadVoices; }
 
             function pickFemaleVoice() {
                 const femaleCandidates = voices.filter(v => /Deepa|Joanna|Google Translate|female|woman|Google US English|Samantha|Alloy|Amy|Emma|en-US/i.test(v.name + ' ' + v.lang));
@@ -2034,9 +2083,7 @@
             document.addEventListener('mousemove', () => {
                 autoScrollEnabled = false;
                 clearTimeout(mouseIdleTimer);
-                mouseIdleTimer = setTimeout(() => {
-                    autoScrollEnabled = true;
-                }, 5000);
+                mouseIdleTimer = setTimeout(() => { autoScrollEnabled = true; }, 5000);
             });
 
             function wrapWords() {
@@ -2046,21 +2093,16 @@
                     const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, null, false);
                     const textNodes = [];
                     let node;
-                    while (node = walker.nextNode()) {
-                        if (node.textContent.trim()) textNodes.push(node);
-                    }
+                    while (node = walker.nextNode()) { if (node.textContent.trim()) textNodes.push(node); }
                     textNodes.forEach(textNode => {
                         const tokens = textNode.textContent.split(/(\s+)/);
                         const fragment = document.createDocumentFragment();
                         tokens.forEach(tok => {
-                            if (/\s+/.test(tok)) {
-                                fragment.appendChild(document.createTextNode(tok));
-                            } else if (tok) {
+                            if (/\s+/.test(tok)) { fragment.appendChild(document.createTextNode(tok)); }
+                            else if (tok) {
                                 const span = document.createElement('span');
-                                span.className = 'word';
-                                span.textContent = tok;
-                                fragment.appendChild(span);
-                                totalWords++;
+                                span.className = 'word'; span.textContent = tok;
+                                fragment.appendChild(span); totalWords++;
                             }
                         });
                         textNode.parentNode.replaceChild(fragment, textNode);
@@ -2083,78 +2125,48 @@
                 for (let i = 0; i < words.length; i++) {
                     const w = words[i];
                     const found = text.indexOf(w, cursor);
-                    if (found === -1) {
-                        boundaries.push(cursor);
-                        cursor += w.length;
-                    } else {
-                        boundaries.push(found);
-                        cursor = found + w.length;
-                    }
+                    if (found === -1) { boundaries.push(cursor); cursor += w.length; }
+                    else { boundaries.push(found); cursor = found + w.length; }
                 }
                 return boundaries;
             }
 
-            function clearAllHighlights() {
-                wordSpans.forEach(w => w.classList.remove('highlight'));
-            }
+            function clearAllHighlights() { wordSpans.forEach(w => w.classList.remove('highlight')); }
 
-            function scrollIntoCenter(el) {
-                if (!el) return;
-                if (autoScrollEnabled) {
-                    el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                }
-            }
+            function scrollIntoCenter(el) { if (el && autoScrollEnabled) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }
 
-            function clearFallbackTimer() {
-                if (fallbackTimer) {
-                    clearInterval(fallbackTimer);
-                    fallbackTimer = null;
-                }
-            }
+            function clearFallbackTimer() { if (fallbackTimer) { clearInterval(fallbackTimer); fallbackTimer = null; } }
 
             function speakFrom(index) {
                 clearFallbackTimer();
                 boundarySupported = false;
-
                 if (index >= paragraphs.length) {
-                    isPlaying = false;
-                    isPaused = false;
-                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
-                    currentParagraphIndex = 0;
-                    currentWordIndex = 0;
+                    isPlaying = false; isPaused = false;
+                    playBtn.innerHTML = '<i class=\"fas fa-play\"></i>';
+                    currentParagraphIndex = 0; currentWordIndex = 0;
                     progressFill.style.width = '0%';
                     return;
                 }
-
                 currentParagraphIndex = index;
                 const p = paragraphs[index];
                 const role = (p.getAttribute('data-voice') || 'female').toLowerCase();
                 const voice = role === 'male' ? pickMaleVoice() : pickFemaleVoice();
                 const utterText = p.textContent.trim();
-                if (!utterText) {
-                    speakFrom(index + 1);
-                    return;
-                }
-
+                if (!utterText) { speakFrom(index + 1); return; }
                 const boundaries = computeWordBoundaries(utterText);
                 const wordSpansInP = Array.from(p.querySelectorAll('.word')).filter(s => s.textContent.trim() !== '');
                 wordSpansInP.forEach(w => w.classList.remove('highlight'));
-
                 const u = new SpeechSynthesisUtterance(utterText);
                 activeUtterance = u;
                 u.lang = 'en-US';
                 u.rate = role === 'male' ? 0.9 : 1.3;
                 u.pitch = 1.2;
                 if (voice) u.voice = voice;
-
                 const wordsPerSecondBase = 3.0 * u.rate;
                 const fallbackIntervalMs = Math.max(120, Math.round(1000 / wordsPerSecondBase));
-
                 u.onstart = () => {
-                    isPlaying = true;
-                    isPaused = false;
-                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
-
+                    isPlaying = true; isPaused = false;
+                    playBtn.innerHTML = '<i class=\"fas fa-pause\"></i>';
                     currentWordIndex = 0;
                     if (wordSpansInP.length > 0) {
                         wordSpansInP.forEach(w => w.classList.remove('highlight'));
@@ -2162,11 +2174,9 @@
                         first.classList.add('highlight');
                         scrollIntoCenter(first);
                     }
-
                     fallbackTimer = setInterval(() => {
                         if (boundarySupported) return;
                         if (!isPlaying || isPaused) { clearFallbackTimer(); return; }
-
                         if (currentWordIndex < wordSpansInP.length - 1) {
                             wordSpansInP[currentWordIndex].classList.remove('highlight');
                             currentWordIndex++;
@@ -2175,85 +2185,48 @@
                         }
                     }, fallbackIntervalMs);
                 };
-
                 u.onboundary = (ev) => {
                     boundarySupported = true;
                     clearFallbackTimer();
-
                     const charIndex = ev.charIndex || 0;
                     let wi = 0;
                     for (let i = 0; i < boundaries.length; i++) {
                         const start = boundaries[i];
                         const end = (i < boundaries.length - 1) ? boundaries[i + 1] : utterText.length;
-                        if (charIndex >= start && charIndex < end) {
-                            wi = i;
-                            break;
-                        }
+                        if (charIndex >= start && charIndex < end) { wi = i; break; }
                         if (i === boundaries.length - 1) wi = boundaries.length - 1;
                     }
-
                     wi = Math.min(wi, wordSpansInP.length - 1);
                     if (wi < 0) wi = 0;
-
                     if (wi !== currentWordIndex) {
                         if (wordSpansInP[currentWordIndex]) wordSpansInP[currentWordIndex].classList.remove('highlight');
-                        if (wordSpansInP[wi]) {
-                            wordSpansInP[wi].classList.add('highlight');
-                            scrollIntoCenter(wordSpansInP[wi]);
-                        }
+                        if (wordSpansInP[wi]) { wordSpansInP[wi].classList.add('highlight'); scrollIntoCenter(wordSpansInP[wi]); }
                         currentWordIndex = wi;
                     }
                 };
-
                 u.onend = () => {
                     p.querySelectorAll('.word.highlight').forEach(w => w.classList.remove('highlight'));
                     activeUtterance = null;
                     clearFallbackTimer();
-
-                    if (isPlaying && !isPaused) {
-                        speakFrom(index + 1);
-                    } else {
-                        isPlaying = false;
-                        isPaused = false;
-                        playBtn.innerHTML = '<i class="fas fa-play"></i>';
-                    }
+                    if (isPlaying && !isPaused) { speakFrom(index + 1); }
+                    else { isPlaying = false; isPaused = false; playBtn.innerHTML = '<i class=\"fas fa-play\"></i>'; }
                 };
-
                 u.onerror = (err) => {
                     console.error('Speech error', err);
-                    activeUtterance = null;
-                    isPlaying = false;
+                    activeUtterance = null; isPlaying = false;
                     clearFallbackTimer();
-                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
+                    playBtn.innerHTML = '<i class=\"fas fa-play\"></i>';
                 };
-
-                try {
-                    synth.speak(u);
-                } catch (e) {
-                    console.error('synth.speak error:', e);
-                }
-
+                try { synth.speak(u); } catch (e) { console.error('synth.speak error:', e); }
                 const progress = ((index + 1) / paragraphs.length) * 100;
                 progressFill.style.width = progress + '%';
             }
 
             playBtn.addEventListener('click', () => {
                 if (!voices || voices.length === 0) loadVoices();
-
-                if (isPlaying && !isPaused) {
-                    synth.pause();
-                    isPaused = true;
-                    isPlaying = false;
-                    playBtn.innerHTML = '<i class="fas fa-play"></i>';
-                } else if (isPaused) {
-                    synth.resume();
-                    isPaused = false;
-                    isPlaying = true;
-                    playBtn.innerHTML = '<i class="fas fa-pause"></i>';
-                } else {
-                    if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0;
-                    speakFrom(currentParagraphIndex);
-                }
+                if (isPlaying && !isPaused) { synth.pause(); isPaused = true; isPlaying = false; playBtn.innerHTML = '<i class=\"fas fa-play\"></i>'; }
+                else if (isPaused) { synth.resume(); isPaused = false; isPlaying = true; playBtn.innerHTML = '<i class=\"fas fa-pause\"></i>'; }
+                else { if (currentParagraphIndex >= paragraphs.length) currentParagraphIndex = 0; speakFrom(currentParagraphIndex); }
             });
 
             progressBar.addEventListener('click', (e) => {
@@ -2261,23 +2234,26 @@
                 const clickX = e.clientX - rect.left;
                 const percentage = clickX / rect.width;
                 const targetIndex = Math.floor(percentage * paragraphs.length);
-                if (synth.speaking) {
-                    synth.cancel();
-                }
+                if (synth.speaking) { synth.cancel(); }
                 clearAllHighlights();
                 clearFallbackTimer();
                 currentParagraphIndex = targetIndex;
                 speakFrom(targetIndex);
             });
 
-            window.addEventListener('beforeunload', () => {
-                if (synth && synth.speaking) synth.cancel();
-            });
+            window.addEventListener('beforeunload', () => { if (synth && synth.speaking) synth.cancel(); });
         })();
     </script>
 
+    <script src="../js/vendor/jquery.min.js"></script>
+    <script src="../js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="../js/vendor/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/swiper-script.js"></script>
+    <script src="../js/submit-form.js"></script>
+    <script src="../js/video_embedded.js"></script>
 
-        <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             var tocItems = document.querySelectorAll('.toc-item');
             var sections = [];
@@ -2297,14 +2273,13 @@
             window.addEventListener('scroll', function() {
                 var scrollY = window.scrollY + 200;
                 var active = null;
-                sections.forEach(function(s) {
-                    if (s.target.offsetTop <= scrollY) active = s;
-                });
+                sections.forEach(function(s) { if (s.target.offsetTop <= scrollY) active = s; });
                 tocItems.forEach(function(b) { b.classList.remove('active'); });
                 if (active) active.btn.classList.add('active');
             });
         });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+  <script src="../js/chatbot-widget.js"></script>
 </body>
-
 </html>

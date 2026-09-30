@@ -10,7 +10,7 @@ Support
 
 Sensor specs, solution capabilities, digital twin integration, deployment timelines. If what you need is not here, ask us directly.
 
-All Questions 46
+All Questions 71
 
 Sensor Products 10
 
@@ -22,7 +22,15 @@ Digital Twin 7
 
 Implementation 7
 
+Smart Cities 5
+
+Predictive AI 5
+
+By Industry 5
+
 Laser Scanners 6
+
+Bridge Inspection 10
 
 Sensor Products & Hardware 10 questions
 
@@ -679,6 +687,28 @@ Reality capture is the foundation of every Digital Twin. A typical workflow is:
 [Explore Sentra's Digital Twin solutions →](https://sentratech.in/solutions/digital-twin.html)
 
 All XGRIDS scanners export to open formats: **LAS, LAZ, E57, PLY, and Gaussian Splat**, compatible with Revit, AutoCAD, Unreal Engine, Unity, and Blender. Processing runs through **LixelGo** (mobile, one-click on-device registration) and **LixelStudio** (desktop, full registration, classification, and export). Sentra provides local demos, training, and after-sales support across India as the official reseller. [See full specifications →](https://sentratech.in/products/laser-scanners.html)
+
+Bridge Inspection & Monitoring 10 questions
+
+Bridge inspection exists to identify damage, deterioration, or safety risks before they become serious. Inspectors assess the deck, superstructure, substructure, bearings, and foundations against a condition rating scale, and the results feed maintenance planning, load-rating decisions, and, in the worst case, closure decisions. Regular inspection is what keeps a bridge safe, serviceable, and open to traffic.
+
+The seven main bridge types are **Beam, Arch, Truss, Cantilever, Suspension, Cable-Stayed, and Tied-Arch** bridges. Each uses a different structural system to carry and distribute load: a beam bridge resists bending directly, an arch pushes load into compression, and a suspension or cable-stayed bridge hangs the deck from cables in tension. The type of bridge affects which components (cables, bearings, hangers, arch ribs) are the highest-priority monitoring points.
+
+Bridge inspection programmes typically define five inspection types: **initial** (baseline condition when a bridge opens), **routine** (scheduled periodic inspection, commonly every one to two years), **in-depth** (a close-up, hands-on inspection of specific members), **damage** (unscheduled, after an impact or other damaging event), and **special** (targeted monitoring of a known deficiency between routine cycles). Continuous structural health monitoring increasingly supports the special-inspection role, tracking a known issue between scheduled visits.
+
+Most national standards call for a routine bridge inspection **every 24 months**, with underwater components typically inspected every five years and more frequent inspection for bridges in poor condition or carrying unusual loads. That fixed interval is also the core limitation continuous monitoring addresses: a defect discovered mid-cycle, or one that develops rapidly after a flood or impact, is invisible until the next scheduled inspection unless sensors are already watching the structure.
+
+A bridge health monitoring system continuously tracks structural condition instead of relying only on periodic inspection. That gives three main benefits: **earlier warning** of developing damage, often months before it would be visible at the next inspection; **data-driven predictive maintenance** instead of fixed-schedule or reactive repair; and **improved public safety** through automated alerts when a structure's behaviour crosses a defined threshold. [Read the full guide to structural health monitoring →](https://sentratech.in/blogs/structural-health-monitoring.html)
+
+IoT connects sensors mounted on the bridge, measuring strain, tilt, vibration, and displacement, to a central platform over wireless networks like LoRaWAN or cellular, so engineers see structural data continuously instead of only during a site visit. The platform compares live readings against thresholds and automatically alerts engineers when conditions change, turning a bridge into a structure that reports its own condition. [See it deployed in our highway bridge case study →](https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html)
+
+The core sensor set for bridge monitoring is **strain gauges** (stress at fatigue-critical details), **accelerometers** (vibration and dynamic response), **tiltmeters** (pier, abutment, and bearing rotation), **displacement sensors** (expansion joint and deck movement), **corrosion sensors** (reinforcement and cable degradation), and **crack sensors** (crack width and propagation). Together, these cover the structural behaviours that precede most bridge failures. [Explore Sentra's sensor range →](https://sentratech.in/products.html)
+
+Bridge inspection is a periodic, largely visual assessment carried out by an engineer at fixed intervals, typically every one to two years. Structural health monitoring uses permanently installed sensors to measure structural behaviour continuously between those inspections, so a defect's progression is visible as a trend on a dashboard rather than only being caught the next time an inspector is physically on site.
+
+**Scour**, the erosion of streambed material around bridge piers and abutments during high water flow, is widely cited as the leading cause of bridge failure worldwide. It is also one of the hardest failure modes to catch through visual inspection alone, since the damage happens underwater and often during a flood, which is exactly when continuous water-level and scour monitoring provides the most value.
+
+No. Structural health monitoring complements manual inspection rather than replacing it: sensors track quantitative structural behaviour continuously, but a qualified inspector's visual assessment still catches things instruments do not measure, such as debris accumulation, vegetation, or surface-level deterioration. The combination, continuous sensor data plus periodic hands-on inspection, is more effective than either approach alone.
 
 #### No results found
 

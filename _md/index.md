@@ -61,7 +61,7 @@ At Sentra, we monitor infrastructure to give industries the intelligence and pre
 
 [Solutions We Serve](https://sentratech.in/solutions.html)
 
-[ monitoring Structural Health Monitoring ](https://sentratech.in/solutions/structural-health-monitoring.html) [ signpost Bridge Inspection & Condition Assessment ](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html) [ speed Fatigue & Residual Life Assessment ](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html) [ database Asset Monitoring & Management Solutions ](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html) [ terrain Geotechnical & Foundation Monitoring ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) [ biotech Advanced Non-Destructive Testing (NDT) ](https://sentratech.in/solutions/advanced-non-destructive-testing-ndt.html)
+[ monitoring Structural Health Monitoring ](https://sentratech.in/solutions/structural-health-monitoring.html) [ signpost Bridge Inspection & Condition Assessment ](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html) [ speed Fatigue & Residual Life Assessment ](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html) [ database Asset Monitoring & Management Solutions ](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html) [ terrain Geotechnical & Foundation Monitoring ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) [ view_in_ar Digital Twin ](https://sentratech.in/solutions/digital-twin.html)
 
 Applications
 
@@ -295,13 +295,13 @@ Detect ground movement before it impacts your structure. We monitor soil behavio
 
 [Explore Geotechnical & Foundation Monitoring](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
-biotech
+view_in_ar
 
-#### Advanced Non-Destructive Testing (NDT)
+#### Digital Twin
 
-Experience precision diagnostics with the latest ultrasonic, GPR, and acoustic technologies. We help you uncover hidden flaws and certify structural integrity without damaging the asset.
+See your assets as they really are, in real time. Our digital twins combine accurate 3D models, BIM and live IoT sensor data to give you one view for monitoring, simulation and smarter maintenance decisions.
 
-[Explore Advanced Non-Destructive Testing (NDT)](https://sentratech.in/solutions/advanced-non-destructive-testing-ndt.html)
+[Explore Digital Twin](https://sentratech.in/solutions/digital-twin.html)
 
 ![Structural Health Monitoring](https://sentratech.in/image/solutions/Homepage/Structural%20Health%20Monitoring.webp)
 
@@ -309,14 +309,47 @@ Experience precision diagnostics with the latest ultrasonic, GPR, and acoustic t
 
 [Let's Talk Strategy](https://sentratech.in/contact.html)
 
-See How We
-Build a Family
+Watch & Learn
 
-### Reimagine What’s Possible
+## See Sentra in Action
 
-We help businesses use IoT-driven insights and innovative solutions to build what's next.
+Short films on LiDAR scanning, structural health monitoring, railway safety and connected infrastructure, straight from the field and the Sentra team.
 
-[ Got Questions? **Read FAQs** ](https://sentratech.in/faq.html)
+[Visit Our YouTube Channel](https://www.youtube.com/@Sentra-tech/)
+
+### From LiDAR Scan to Interactive 3D Experience
+
+Sentra · 0:57
+
+### Drone LiDAR vs Terrestrial LiDAR: Which Is Better for Infrastructure Monitoring?
+
+Sentra · 2:24
+
+### Connected Asset Intelligence for Water Infrastructure | SENTRA by Clove Technologies
+
+Sentra · 1:15
+
+### Nepal | A reminder that seeing change sooner matters.
+
+Sentra · 1:24
+
+### The Silent Danger Hiding Beneath Every Railway Track | Meet Sentra - Railway Safety, Reimagined.
+
+Sentra · 0:47
+
+### Still Moving Forward | Sentra Independence Day 2026
+
+Sentra · 1:16
+
+### Monitor Today. Protect Tomorrow. | Sentra's Structural Health Monitoring | Buildings
+
+Sentra · 0:41
+
+### Predict Failures Before They Happen | Structural Health Monitoring by Sentra
+
+Sentra · 1:40
+
+**01** / 08
 
 Our Products
 
@@ -588,6 +621,26 @@ Explore our latest blogs, case studies, and company updates on IoT-powered monit
 
 [
 
+![SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk](https://sentratech.in/image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp)
+
+Article
+
+Consulting
+
+#### SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk
+
+](https://sentratech.in/article/shm-consulting-expert-advisory-infrastructure-risk.html) [
+
+![Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL](https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp)
+
+Case Study
+
+Smart Substation
+
+#### Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL
+
+](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html) [
+
 ![Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/image/articles/article_port-marine-infrastructure-monitoring.webp)
 
 Article
@@ -697,6 +750,26 @@ Structural Health
 #### Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured
 
 ](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html) [
+
+![SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk](https://sentratech.in/image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp)
+
+Article
+
+Consulting
+
+#### SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk
+
+](https://sentratech.in/article/shm-consulting-expert-advisory-infrastructure-risk.html) [
+
+![Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL](https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp)
+
+Case Study
+
+Smart Substation
+
+#### Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL
+
+](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html) [
 
 ![Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/image/articles/article_port-marine-infrastructure-monitoring.webp)
 
@@ -870,6 +943,56 @@ Digital Twin
 
 ](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html) [
 
+![What Is an Inclinometer? Digital Tiltmeters Explained](https://sentratech.in/image/blogs/banners/blogs_what-is-an-inclinometer-digital-tiltmeter-guide.webp)
+
+Blog
+
+Sensor Technology
+
+#### What Is an Inclinometer? Digital Tiltmeters Explained
+
+](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html) [
+
+![What Is a Data Logger? Types, How They Work & How to Choose One](https://sentratech.in/image/blogs/banners/blogs_what-is-a-data-logger-types-guide.webp)
+
+Blog
+
+IoT Sensors
+
+#### What Is a Data Logger? Types, How They Work & How to Choose One
+
+](https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html) [
+
+![The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/image/blogs/banners/blogs_future-digital-twins-mesh-point-cloud-gaussian-splatting.webp)
+
+Blog
+
+Digital Twin
+
+#### The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared
+
+](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html) [
+
+![Celebrating One Year of Partnership: Clove Technologies & Worldsensing](https://sentratech.in/image/articles/worldsensing-official-reseller-india.png)
+
+Article
+
+Company News
+
+#### Celebrating One Year of Partnership: Clove Technologies & Worldsensing
+
+](https://sentratech.in/article/worldsensing-official-reseller-india.html) [
+
+![Clove Technologies Becomes Authorized XGRIDS Reseller in India](https://sentratech.in/image/articles/xgrids-authorized-reseller-india.webp)
+
+Article
+
+Company News
+
+#### Clove Technologies Becomes Authorized XGRIDS Reseller in India
+
+](https://sentratech.in/article/xgrids-authorized-reseller-india.html) [
+
 ![10 Construction Technologies Redefining the Industry](https://sentratech.in/image/articles/articles_10constructiontechnologiesredefiningtheindustry.webp)
 
 Article
@@ -928,7 +1051,57 @@ Digital Twin
 
 #### Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation
 
-](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html)
+](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html) [
+
+![What Is an Inclinometer? Digital Tiltmeters Explained](https://sentratech.in/image/blogs/banners/blogs_what-is-an-inclinometer-digital-tiltmeter-guide.webp)
+
+Blog
+
+Sensor Technology
+
+#### What Is an Inclinometer? Digital Tiltmeters Explained
+
+](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html) [
+
+![What Is a Data Logger? Types, How They Work & How to Choose One](https://sentratech.in/image/blogs/banners/blogs_what-is-a-data-logger-types-guide.webp)
+
+Blog
+
+IoT Sensors
+
+#### What Is a Data Logger? Types, How They Work & How to Choose One
+
+](https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html) [
+
+![The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/image/blogs/banners/blogs_future-digital-twins-mesh-point-cloud-gaussian-splatting.webp)
+
+Blog
+
+Digital Twin
+
+#### The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared
+
+](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html) [
+
+![Celebrating One Year of Partnership: Clove Technologies & Worldsensing](https://sentratech.in/image/articles/worldsensing-official-reseller-india.png)
+
+Article
+
+Company News
+
+#### Celebrating One Year of Partnership: Clove Technologies & Worldsensing
+
+](https://sentratech.in/article/worldsensing-official-reseller-india.html) [
+
+![Clove Technologies Becomes Authorized XGRIDS Reseller in India](https://sentratech.in/image/articles/xgrids-authorized-reseller-india.webp)
+
+Article
+
+Company News
+
+#### Clove Technologies Becomes Authorized XGRIDS Reseller in India
+
+](https://sentratech.in/article/xgrids-authorized-reseller-india.html)
 
 #### Stay Ahead in Smart Infrastructure
 
@@ -1012,6 +1185,15 @@ Indian Railways
 
 “Sentra's SHM, fatigue life assessment, and BridgePulse AI have given us unprecedented visibility into our critical rail bridges, transforming our maintenance strategy with real-time data and predictive alerts.”
 
+See How We
+Build a Family
+
+### Reimagine What’s Possible
+
+We help businesses use IoT-driven insights and innovative solutions to build what's next.
+
+[ Got Questions? **Read FAQs** ](https://sentratech.in/faq.html)
+
 How It Works
 
 ## Smart Steps in Monitoring Excellence
@@ -1061,6 +1243,26 @@ Explore our latest articles covering IoT adoption, infrastructure monitoring, AI
 [View All Articles](https://sentratech.in/resources.html#articles)
 
 [
+
+![SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk](https://sentratech.in/image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp)
+
+Consulting
+
+#### SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk
+
+Consulting · Sep 30, 2026
+
+](https://sentratech.in/article/shm-consulting-expert-advisory-infrastructure-risk.html) [
+
+![Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL](https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp)
+
+Smart Substation
+
+#### Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL
+
+Smart Substation · Sep 30, 2026
+
+](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html) [
 
 ![Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/image/articles/article_port-marine-infrastructure-monitoring.webp)
 
@@ -1210,4 +1412,14 @@ Company News
 
 Company News · Jul 23, 2026
 
-](https://sentratech.in/article/worldsensing-official-reseller-india.html)
+](https://sentratech.in/article/worldsensing-official-reseller-india.html) [
+
+![IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins](https://sentratech.in/image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp)
+
+IoT Innovation
+
+#### IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins
+
+IoT Innovation · Sep 10, 2025
+
+](https://sentratech.in/article/revolutionizing-infrastructure-monitoring-with-iot.html)

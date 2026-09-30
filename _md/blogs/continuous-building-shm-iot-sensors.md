@@ -1,6 +1,6 @@
 # Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured
 
-> Buildings settle, sway and crack over time. Continuous structural health monitoring with IoT sensors gives owners real-time data to act early.
+> Buildings settle, sway and crack over time. Real-time building monitoring with IoT sensors gives owners continuous structural data to act early, not just an annual inspection.
 
 Published: 2026-08-25  
 Source: https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html
