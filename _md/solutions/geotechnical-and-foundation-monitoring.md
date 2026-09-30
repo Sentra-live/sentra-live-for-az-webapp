@@ -22,19 +22,67 @@ From deep excavation monitoring to long-term slope stability surveillance, Sentr
 
 ### From Borehole to Dashboard: Complete Geotechnical Monitoring
 
-Ground behaviour is complex, three-dimensional, and often invisible: yet it governs the safety of every major construction project, tunnel, embankment, and slope. Sentra's geotechnical monitoring service deploys the full range of subsurface instruments, including settlement plates, inclinometers, piezometers, vibrating wire strain gauges, tiltmeters, and seismographs, connected via our IoT data acquisition network to a real-time cloud dashboard. Our geotechnical engineers design monitoring programmes that are aligned with the specific ground conditions, construction activities, and risk profile of each project. We install instruments into boreholes, embankments, retaining walls, and foundation elements, and configure alert thresholds based on ground movement trigger levels defined in the geotechnical design. From construction-phase excavation monitoring to permanent long-term slope surveillance, we provide continuous ground intelligence that protects workers, prevents property damage, and keeps projects on programme. When ground behaviour exceeds alert thresholds, our engineers are available around the clock to interpret data and advise on appropriate response.
+Ground behaviour is complex, three-dimensional, and often invisible: yet it governs the safety of every major construction project, tunnel, embankment, and slope. Sentra's geotechnical monitoring service deploys the full range of subsurface instruments, including settlement plates, inclinometers, piezometers, vibrating wire strain gauges, tiltmeters, and seismographs, connected via our IoT data acquisition network to a real-time cloud dashboard. Our geotechnical engineers design monitoring programmes that are aligned with the specific ground conditions, construction activities, and risk profile of each project.
+
+We install instruments into boreholes, embankments, retaining walls, and foundation elements, and configure alert thresholds based on ground movement trigger levels defined in the geotechnical design. From construction-phase excavation monitoring to permanent long-term slope surveillance, we provide continuous ground intelligence that protects workers, prevents property damage, and keeps projects on programme. When ground behaviour exceeds alert thresholds, our engineers are available around the clock to interpret data and advise on appropriate response.
+
+- Settlement plates, inclinometers, piezometers and more
+
+- Instruments in boreholes, walls and foundations
+
+- Alerts set from design trigger levels
+
+- Engineers on call around the clock
+
+[Talk to an Expert ](https://sentratech.in/contact.html) [How the system works ](#sol-system)
+
+![Geotechnical & Foundation Monitoring](https://sentratech.in/image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp)
+
+Engineers on call 24/7
+
+Ground Settlement Slope Stability Piezometric Pressure
+
+### What We Monitor
+
+Instruments are selected for the ground conditions and construction activity on each project.
+
+[
+
+#### Ground Settlement
 
 Settlement sensors, GNSS stations, and precise levelling arrays measure vertical ground movement and differential settlement at foundations, adjacent structures, and surface infrastructure with sub-millimetre resolution.
 
+GNSS Meter ](https://sentratech.in/products/gnss-meter.html) [
+
+#### Slope Stability
+
 In-place inclinometers, surface tiltmeters, and GNSS arrays track lateral deformation within slopes and embankments, enabling early detection of failure plane initiation before surface cracks appear.
+
+Tiltmeter ](https://sentratech.in/products/tiltmeter.html) [
+
+#### Piezometric Pressure
 
 Vibrating wire piezometers measure pore water pressure changes in response to construction activities, rainfall events, and tidal fluctuations, the critical driver of slope instability and embankment failure.
 
+Vibrating Wire Logger ](https://sentratech.in/products/vibrating-wire.html) [
+
+#### Retaining Wall Deflection
+
 Inclinometers and tiltmeters monitor lateral deflection of sheet piles, diaphragm walls, bored pile walls, and retaining structures during and after deep excavation works.
+
+Laser Tiltmeter ](https://sentratech.in/products/laser-tiltmeter.html) [
+
+#### Pile Behaviour
 
 Vibrating wire strain gauges, tell-tales, and load cells installed in bored and driven piles monitor load distribution, settlement, and negative skin friction during and after construction.
 
+Strain Gauges ](https://sentratech.in/products/strain-gauges.html) [
+
+#### Seismic Activity
+
 Seismographs and vibration monitors record blast vibrations, traffic-induced ground motion, and natural seismic activity, providing evidence for neighbour impact assessments and blast control programmes.
+
+Vibration Meter ](https://sentratech.in/products/vibration-meter.html)
 
 Impact
 
@@ -42,9 +90,7 @@ Impact
 
 Quantifiable results delivered through our monitoring and engineering solutions across infrastructure projects.
 
-#### Track Record
-
-Proven delivery
+Track Record
 
 200+
 
@@ -52,9 +98,13 @@ Projects Delivered
 
 Across bridges, railways & infrastructure
 
-#### Efficiency
+ConstructionMetro & TunnelsMiningCoastal
 
-Optimised operations
+![Inclinometer Installation](https://sentratech.in/image/solutions/showcase/geotechnical/Inclinometer%20Installation.webp)
+
+Inclinometer Installation
+
+Efficiency
 
 40%
 
@@ -62,15 +112,269 @@ Cost Reduction
 
 Avg. inspection and monitoring cost savings
 
-#### Reliability
-
-Always on
+Reliability
 
 99.5%
 
 System Availability
 
 24/7 continuous uptime
+
+![Solution in action](https://sentratech.in/image/solutions/showcase/geotechnical/Geotechnical%20instrumentation%20at%20deep%20excavation%20site.webp)
+
+**Deep excavation instrumentation** Ground movement tracked against the trigger levels in the geotechnical design.
+
+Geotechnical Resources
+
+## Geotechnical Monitoring in the Field
+
+Guides and articles on monitoring slopes, foundations, dams and ground movement with GNSS, tilt and piezometric sensors.
+
+[
+
+![Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/image/blogs/banners/blogs_slope-stability-monitoring-mining.webp)
+
+Blog
+
+Mining
+
+#### Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines
+
+](https://sentratech.in/blogs/slope-stability-monitoring-mining.html) [
+
+![GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/image/blogs/banners/blogs_gnss-displacement-monitoring.webp)
+
+Blog
+
+Geotechnical
+
+#### GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement
+
+](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html) [
+
+![What Is an Inclinometer? Digital Tiltmeters Explained](https://sentratech.in/image/blogs/banners/blogs_what-is-an-inclinometer-digital-tiltmeter-guide.webp)
+
+Blog
+
+Sensor Technology
+
+#### What Is an Inclinometer? Digital Tiltmeters Explained
+
+](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html) [
+
+![Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp)
+
+Blog
+
+Dams
+
+#### Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection
+
+](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html) [
+
+![Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp)
+
+Blog
+
+Bridge Safety
+
+#### Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss
+
+](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html) [
+
+![Flood Monitoring & Early Warning System](https://sentratech.in/image/articles/articles_floodmonitoringandearlywarningsystem.webp)
+
+Article
+
+Flood Early Warning
+
+#### Flood Monitoring & Early Warning System
+
+](https://sentratech.in/article/flood-monitoring-early-warning-system.html) [
+
+![Monitoring Construction-Induced Vibrations in Urban Environments](https://sentratech.in/image/blogs/banners/blogs_monitoring-construction-induced-vibrations.webp)
+
+Blog
+
+Structural Monitoring
+
+#### Monitoring Construction-Induced Vibrations in Urban Environments
+
+](https://sentratech.in/blogs/monitoring-construction-induced-vibrations.html) [
+
+![Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/image/articles/article_port-marine-infrastructure-monitoring.webp)
+
+Article
+
+Ports
+
+#### Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures
+
+](https://sentratech.in/article/port-marine-infrastructure-monitoring.html) [
+
+![What Is a Data Logger? Types, How They Work & How to Choose One](https://sentratech.in/image/blogs/banners/blogs_what-is-a-data-logger-types-guide.webp)
+
+Blog
+
+IoT Sensors
+
+#### What Is a Data Logger? Types, How They Work & How to Choose One
+
+](https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html) [
+
+![Celebrating One Year of Partnership: Clove Technologies & Worldsensing](https://sentratech.in/image/articles/worldsensing-official-reseller-india.png)
+
+Article
+
+Company News
+
+#### Celebrating One Year of Partnership: Clove Technologies & Worldsensing
+
+](https://sentratech.in/article/worldsensing-official-reseller-india.html) [
+
+!
+
+Blog
+
+Mining
+
+#### Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines
+
+](https://sentratech.in/blogs/slope-stability-monitoring-mining.html) [
+
+!
+
+Blog
+
+Geotechnical
+
+#### GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement
+
+](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html) [
+
+!
+
+Blog
+
+Sensor Technology
+
+#### What Is an Inclinometer? Digital Tiltmeters Explained
+
+](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html) [
+
+!
+
+Blog
+
+Dams
+
+#### Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection
+
+](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html) [
+
+!
+
+Blog
+
+Bridge Safety
+
+#### Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss
+
+](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html) [
+
+!
+
+Article
+
+Flood Early Warning
+
+#### Flood Monitoring & Early Warning System
+
+](https://sentratech.in/article/flood-monitoring-early-warning-system.html) [
+
+!
+
+Blog
+
+Structural Monitoring
+
+#### Monitoring Construction-Induced Vibrations in Urban Environments
+
+](https://sentratech.in/blogs/monitoring-construction-induced-vibrations.html) [
+
+!
+
+Article
+
+Ports
+
+#### Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures
+
+](https://sentratech.in/article/port-marine-infrastructure-monitoring.html) [
+
+!
+
+Blog
+
+IoT Sensors
+
+#### What Is a Data Logger? Types, How They Work & How to Choose One
+
+](https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html) [
+
+!
+
+Article
+
+Company News
+
+#### Celebrating One Year of Partnership: Clove Technologies & Worldsensing
+
+](https://sentratech.in/article/worldsensing-official-reseller-india.html)
+
+[View All Resources ](https://sentratech.in/resources.html)
+
+The System
+
+## From Borehole to Decision
+
+Every programme follows the same path from instrument to response, so ground data reaches decision-makers in time to act.
+
+01 · Install
+
+### Instruments in the ground
+
+Settlement plates, inclinometers, piezometers, strain gauges, tiltmeters and seismographs in boreholes, walls and foundations.
+
+02 · Acquire
+
+### IoT data acquisition
+
+Readings flow through our IoT data acquisition network to a real-time cloud dashboard.
+
+03 · Compare
+
+### Design trigger levels
+
+Ground movement is checked against alert thresholds defined in the geotechnical design.
+
+04 · Respond
+
+### Engineers on call
+
+When a threshold is exceeded, our engineers interpret the data and advise on the response, around the clock.
+
+### Multi-Tier Alerting
+
+Trigger levels come from the geotechnical design, so every level has an agreed response.
+
+**Normal** Ground movement within the predicted range. Readings are trended.
+
+**Warning** Approaching a trigger level. Engineers review trends against site activity.
+
+**Alert** Trigger level reached. Increased reading frequency and site inspection.
+
+**Critical** Design limit exceeded. Immediate notification to support stop-work or remedial decisions.
 
 Process
 
@@ -160,33 +464,39 @@ Benefits
 
 Real-time ground data protects workers, accelerates projects, and provides the engineering evidence base for critical decisions during construction and throughout asset life.
 
-Prevent Ground Failure
+### Prevent Ground Failure
 
 Continuous monitoring of settlement, pore pressure, and lateral movement detects early signs of ground instability by enabling intervention before conditions become unsafe for workers or adjacent structures.
 
-Monitor Excavation Impacts
+### Monitor Excavation Impacts
 
 Deep excavation adjacent to existing buildings, utilities, and infrastructure requires continuous settlement and deflection data to demonstrate that construction impacts remain within acceptable limits.
 
-Detect Slope Instability Early
+### Detect Slope Instability Early
 
 Slope failure typically progresses through detectable deformation phases. Inclinometer and piezometer data identify these phases early, enabling drainage, reinforcement, or evacuation decisions before failure.
 
-Verify Foundation Performance
+### Verify Foundation Performance
 
 Pile load monitoring and settlement surveys verify that foundations are performing as designed, providing quality assurance data for the structural designer and building owner.
 
-Safe Working Conditions
+### Safe Working Conditions
 
 Real-time alerts enable immediate site response when ground movement exceeds warning levels by protecting workers in excavations, tunnels, and on slopes from sudden ground behaviour changes.
 
-Regulatory Evidence
+### Regulatory Evidence
 
 Automated monitoring records provide the continuous engineering evidence required by regulatory bodies, building authorities, and insurance assessors overseeing major excavation and tunnelling works.
 
-Protect Project Programme
+### Protect Project Programme
 
 Early detection of adverse ground behaviour enables rapid response by preventing the major programme delays and cost overruns that result from undetected ground instability during construction.
+
+[ Next step
+
+### Scope monitoring for your project
+
+Schedule a Site Visit ](https://sentratech.in/contact.html)
 
 Risk Mitigation
 
@@ -194,23 +504,35 @@ Risk Mitigation
 
 Unmonitored ground is the source of the most serious and costly construction failures. Geotechnical monitoring eliminates these risks, providing real-time visibility of ground behaviour.
 
-Foundation Settlement Damage
+[Schedule a site visit ](https://sentratech.in/contact.html)
+
+1. 01
+
+### Foundation Settlement Damage
 
 Differential settlement of foundations causes cracking, structural distortion, and serviceability failures in both the monitored structure and adjacent buildings affected by excavation-induced ground movement.
 
-Slope & Embankment Failure
+2. 02
+
+### Slope & Embankment Failure
 
 Railway embankment failures, highway slope collapses, and mining tip failures are among the most catastrophic infrastructure incidents, all preventable with continuous slope deformation and piezometric monitoring.
 
-Groundwater Changes
+3. 03
+
+### Groundwater Changes
 
 Dewatering, drainage disruption, and tidal fluctuations change pore pressures in ways that can trigger ground movement and slope instability. Piezometric monitoring detects these changes in real time.
 
-Construction Vibration Damage
+4. 04
+
+### Construction Vibration Damage
 
 Blasting, piling, and dynamic compaction create ground vibrations that can damage adjacent structures and utilities. Vibration monitoring provides legal evidence of compliance with vibration limits.
 
-Legal Liability for Ground Damage
+5. 05
+
+### Legal Liability for Ground Damage
 
 Without continuous monitoring records, contractors and developers have no evidence base to respond to third-party claims of construction-induced damage, making disputes costly and difficult to resolve.
 
@@ -220,23 +542,51 @@ Industries
 
 Wherever construction, mining, or infrastructure development interacts with ground, Sentra's geotechnical monitoring provides the safety intelligence that projects require.
 
-Construction & Real Estate
+[
+
+!
+
+### Construction & Real Estate
 
 Deep basements, piling works, and major civil construction adjacent to existing structures
 
-Metro & Tunnel Projects
+Explore
+
+](https://sentratech.in/industries/buildings-highrise-monitoring.html) [
+
+!
+
+### Metro & Tunnel Projects
 
 TBM tunnelling, cut-and-cover, and NATM tunnel construction monitoring
 
-[Mining](https://sentratech.in/industries/mining-geotechnical-monitoring.html)
+Explore
+
+](https://sentratech.in/industries/construction-tunnelling-monitoring.html) [
+
+!
+
+### Mining
 
 Open pit wall stability, tailings dam surveillance, and underground workings monitoring
 
-Coastal Development
+Explore
+
+](https://sentratech.in/industries/mining-geotechnical-monitoring.html) [
+
+!
+
+### Coastal Development
 
 Reclamation, seawall, and coastal structure monitoring in tidal environments
 
-Slope Management
+Explore
+
+](https://sentratech.in/industries/ports-marine-monitoring.html)
+
+!
+
+### Slope Management
 
 Highway and railway cutting slopes, natural hillside stability, and debris flow hazard monitoring
 
@@ -267,36 +617,6 @@ Our geotechnical engineers provide interpretation support during critical constr
 Long-Term Monitoring
 
 From short-term construction-phase programmes to permanent post-construction surveillance of slopes, embankments, and foundations, we scale our service to the full lifecycle of your asset.
-
-Case Studies
-
-## Ground Monitoring Success Stories
-
-Real-world geotechnical monitoring deployments ensuring safe construction and long-term ground stability.
-
-[
-
-![BridgePulse](https://sentratech.in/image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp)
-
-AI & Drones Railways
-
-#### BridgePulse: AI and Drone Technology for Bridge Health Monitoring
-
-Read Case Study
-
-](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
-
-![IoT Bridge Monitoring](https://sentratech.in/image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp)
-
-IoT & Sensors Railways
-
-#### IoT Bridge Monitoring & Sensor Installation on Railway Bridges
-
-Read Case Study
-
-](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html)
-
-[View All Case Studies ](https://sentratech.in/resources.html#case-studies)
 
 Explore More
 
@@ -370,4 +690,10 @@ Free Consultation Available
 
 Share your project details and ground conditions. We'll propose a monitoring programme tailored to your geotechnical risk profile and construction programme.
 
-[Schedule a Site Visit ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)
+- No obligation
+
+- Tailored to your asset
+
+- Clear scope and timeline
+
+[Schedule a Site Visit ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

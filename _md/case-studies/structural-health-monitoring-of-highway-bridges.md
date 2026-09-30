@@ -1,6 +1,6 @@
 # Structural Health Monitoring of Highway Bridges for Early Infrastructure Deterioration Detection
 
-> Continuous sensor monitoring detects early bridge deterioration and supports predictive maintenance decisions.
+> How structural health monitoring of highway bridges works in practice: continuous sensor monitoring detects early bridge deterioration and supports predictive maintenance decisions.
 
 Published: 2026-07-16  
 Source: https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html

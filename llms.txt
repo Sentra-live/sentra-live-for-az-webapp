@@ -24,7 +24,7 @@ backend for the site's own chatbot and is disallowed in robots.txt.
 What Sentra delivers, by discipline.
 
 - [Advanced Non-Destructive Testing (NDT)](https://sentratech.in/solutions/advanced-non-destructive-testing-ndt.html): Ultrasonic, radiographic, magnetic particle and other NDT methods to find subsurface defects without shutting down operations
-- [Asset Monitoring & Management Solutions](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html): IoT sensors and dashboards for monitoring manufacturing, utility and mining assets, with predictive maintenance alerts
+- [Asset Monitoring & Management Solutions](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html): Industrial asset monitoring built on IoT sensors and dashboards: a real-time infrastructure monitoring system for manufacturing, utility and mining..
 - [Bridge Inspection & Condition Assessment](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html): Drone surveys, NDT and AI analysis for bridge inspection
 - [Consulting & Advisory Services](https://sentratech.in/solutions/consulting-and-advisory-services.html): Vendor-neutral consulting for structural monitoring, asset management and digital engineering
 - [Digital Engineering & Documentation](https://sentratech.in/solutions/digital-engineering-and-documentation.html): ISO 19650-aligned BIM, scan-to-BIM, digital twin, and asset information management services that build a lasting digital foundation for your..
@@ -101,8 +101,11 @@ Definitional and technical material, useful for resolving terminology.
 
 Newest first. The full, filterable index lives at https://sentratech.in/resources.html
 
-- [Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/article/port-marine-infrastructure-monitoring.html): Article, Ports, 25 Sep 2026
+- [Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html): Case study, Smart Substation, 30 Sep 2026
+- [SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk](https://sentratech.in/article/shm-consulting-expert-advisory-infrastructure-risk.html): Article, Consulting, 30 Sep 2026
+- [Madhya Pradesh Bridge Collapses & Structural Health Monitoring](https://sentratech.in/article/madhya-pradesh-bridge-collapses-structural-health-monitoring.html): Article, Structural Health, 28 Sep 2026
 - [Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/blogs/slope-stability-monitoring-mining.html): Blog, Mining, 25 Sep 2026
+- [Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/article/port-marine-infrastructure-monitoring.html): Article, Ports, 25 Sep 2026
 - [Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study](https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html): Case study, Comparison Study, 17 Sep 2026
 - [Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html): Blog, Dams, 16 Sep 2026
 - [3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html): Article, Digital Twin, 10 Sep 2026
@@ -118,16 +121,16 @@ Newest first. The full, filterable index lives at https://sentratech.in/resource
 - [AI Is Coming for Infrastructure Monitoring](https://sentratech.in/article/ai-infrastructure-monitoring.html): Article, AI & Monitoring, 15 Aug 2026
 - [What Is a Strain Gauge? Types, Working Principle & Applications](https://sentratech.in/blogs/what-is-a-strain-gauge-types-working-principle.html): Blog, Sensor Technology, 10 Aug 2026
 - [Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html): Article, Digital Twin, 7 Aug 2026
-- [What Is an Inclinometer? Digital Tiltmeters Explained](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html): Blog, Sensor Technology, 3 Aug 2026
-- [What Is a Data Logger? Types, How They Work & How to Choose One](https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html): Blog, IoT Sensors, 27 Jul 2026
-- [The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html): Blog, Digital Twin, 24 Jul 2026
-- [Celebrating One Year of Partnership: Clove Technologies & Worldsensing](https://sentratech.in/article/worldsensing-official-reseller-india.html): Article, Company News, 23 Jul 2026
-- [Clove Technologies Becomes Authorized XGRIDS Reseller in India](https://sentratech.in/article/xgrids-authorized-reseller-india.html): Article, Company News, 23 Jul 2026
 
 ## Optional
 
 Older published work, same index.
 
+- [What Is an Inclinometer? Digital Tiltmeters Explained](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html): Blog, Sensor Technology, 3 Aug 2026
+- [What Is a Data Logger? Types, How They Work & How to Choose One](https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html): Blog, IoT Sensors, 27 Jul 2026
+- [The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html): Blog, Digital Twin, 24 Jul 2026
+- [Celebrating One Year of Partnership: Clove Technologies & Worldsensing](https://sentratech.in/article/worldsensing-official-reseller-india.html): Article, Company News, 23 Jul 2026
+- [Clove Technologies Becomes Authorized XGRIDS Reseller in India](https://sentratech.in/article/xgrids-authorized-reseller-india.html): Article, Company News, 23 Jul 2026
 - [What Is an Accelerometer Sensor? Working Principle, Types & Applications](https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html): Blog, Sensor Technology, 20 Jul 2026
 - [Structural Health Monitoring of Highway Bridges](https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html): Case study, Infrastructure, 16 Jul 2026
 - [Track to the Future: How Remote Monitoring Helps Safeguard Rail and Civil Infrastructure](https://sentratech.in/article/track-to-the-future-remote-monitoring-rail-infrastructure.html): Article, Rail Infrastructure, 24 Jun 2026

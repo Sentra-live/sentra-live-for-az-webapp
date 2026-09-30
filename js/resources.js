@@ -251,6 +251,18 @@
 
         // ---------- Case Studies ----------
         {
+            id: 'cs-substation-digital-asset-management',
+            title: 'Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL',
+            excerpt: 'TGNPDCL\'s Bathupally substation as a digital twin: 360° imagery, a 3D asset model and point cloud in one viewer, with measurements, maintenance POIs and construction records.',
+            category: 'Smart Substation',
+            color: 'orange',
+            type: 'case-studies',
+            date: '30 Sep 2026',
+            image: './image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp',
+            link: './case-studies/substation-digital-asset-management-predictive-maintenance.html',
+            featured: true
+        },
+        {
             id: 'cs-handheld-slam-vs-tls-highway-bridge-surveys',
             title: 'Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study',
             excerpt: 'Comparison study: handheld SLAM scanning cut highway bridge survey field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup.',
@@ -323,6 +335,18 @@
 
         // ---------- Articles ----------
         {
+            id: 'art-shm-consulting-expert-advisory',
+            title: 'SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk',
+            excerpt: 'What SHM consulting covers, where monitoring programmes go wrong without it, and how advice on strategy, risk, technology selection and thresholds turns monitoring into risk reduction.',
+            category: 'Consulting',
+            color: 'orange',
+            type: 'articles',
+            date: '30 Sep 2026',
+            image: './image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp',
+            link: './article/shm-consulting-expert-advisory-infrastructure-risk.html',
+            featured: true
+        },
+        {
             id: 'art-port-marine-infrastructure-monitoring',
             title: 'Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures',
             excerpt: 'How port infrastructure monitoring protects jetties, quay walls and offshore structures: corrosion, tilt, settlement, berthing and mooring loads, sensors and implementation.',
@@ -355,6 +379,18 @@
             date: '21 Aug 2026',
             image: './image/articles/articles_10constructiontechnologiesredefiningtheindustry.webp',
             link: './article/10-construction-technologies-redefining-the-industry.html',
+            featured: true
+        },
+        {
+            id: 'art-madhya-pradesh-bridge-collapses-shm',
+            title: 'Madhya Pradesh Bridge Collapses & Structural Health Monitoring',
+            excerpt: 'A flood-swept bridge in Chitrakoot, a known defect that collapsed anyway in Raisen, and a brand-new overbridge that failed its first monsoon: why continuous monitoring closes the gap periodic inspection leaves open.',
+            category: 'Structural Health',
+            color: 'orange',
+            type: 'articles',
+            date: '28 Sep 2026',
+            image: './image/articles/article_madhya-pradesh-bridge-collapses-structural-health-monitoring.webp',
+            link: './article/madhya-pradesh-bridge-collapses-structural-health-monitoring.html',
             featured: true
         },
         {

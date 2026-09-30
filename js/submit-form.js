@@ -103,6 +103,7 @@ function initSubmitContact() {
             document.getElementById('solutionInterestGroup').style.display = 'none';
             goStep(1);
             showToast('Your message has been sent successfully!', 'success');
+            if (window.trackEvent) window.trackEvent('generate_lead', { form_name: 'contact', lead_type: leadType.join(', ') });
 
             setTimeout(function () { $successMessage.addClass('hidden'); }, 3000);
         } catch (error) {
@@ -190,6 +191,7 @@ function initSubmitNewsletter() {
             $submitBtn.html('<span>Thank you!</span><span class="btn-detail"><i class="fa-solid fa-check"></i></span>');
             $submitBtn.addClass('thankyou');
             showToast('Successfully subscribed to our newsletter!', 'success');
+            if (window.trackEvent) window.trackEvent('sign_up', { method: 'newsletter' });
 
             setTimeout(function () {
                 $submitBtn.html(originalHtml);

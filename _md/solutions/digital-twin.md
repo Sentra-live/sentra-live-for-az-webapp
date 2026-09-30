@@ -22,17 +22,51 @@ Sentra's Digital Twin solutions bridge the gap between design, construction, and
 
 ### Intelligent Virtual Replicas for Real-World Assets
 
-A Digital Twin is more than a 3D model; it is a continuously updated digital mirror of a physical asset, building, infrastructure system, or operational process. Unlike static documentation or conventional BIM, a Digital Twin integrates real-world data from IoT sensors, connected systems, and operational records to provide continuous, real-time visibility into asset performance and condition throughout its lifecycle. Sentra builds Digital Twins on a foundation of accurate BIM models, enriched with live sensor streams from structural monitoring, environmental sensors, and operational systems. Our platform enables asset owners to visualise real-time conditions, simulate future scenarios, detect anomalies before they become failures, and make evidence-based decisions that extend asset life and reduce operational costs. From single buildings to city-scale infrastructure networks, our Digital Twin solutions serve the full spectrum of infrastructure intelligence needs.
+A Digital Twin is more than a 3D model; it is a continuously updated digital mirror of a physical asset, building, infrastructure system, or operational process. Unlike static documentation or conventional BIM, a Digital Twin integrates real-world data from IoT sensors, connected systems, and operational records to provide continuous, real-time visibility into asset performance and condition throughout its lifecycle.
+
+Sentra builds Digital Twins on a foundation of accurate BIM models, enriched with live sensor streams from structural monitoring, environmental sensors, and operational systems. Our platform enables asset owners to visualise real-time conditions, simulate future scenarios, detect anomalies before they become failures, and make evidence-based decisions that extend asset life and reduce operational costs. From single buildings to city-scale infrastructure networks, our Digital Twin solutions serve the full spectrum of infrastructure intelligence needs.
+
+- Built on accurate BIM models
+
+- Live structural, environmental and operational data
+
+- Simulate scenarios and catch anomalies early
+
+- Single buildings to city-scale networks
+
+[Talk to an Expert ](https://sentratech.in/contact.html) [See how it works ](#sol-how)
+
+![Digital Twin Solutions](https://sentratech.in/image/solutions/Homepage/Facility-Management.webp)
+
+Live data sync
+
+Asset Intelligence IoT Monitoring Integration Predictive Analytics
+
+### What It Brings Together
+
+One environment for models, live sensor data and operational records.
+
+#### Asset Intelligence
 
 Centralise asset information from design through operations by bringing together BIM models, equipment specifications, maintenance records, and sensor data in a single, accessible environment.
 
+#### IoT Monitoring Integration
+
 Connect live sensor data from structural, environmental, and operational monitoring systems directly into the Digital Twin by enabling real-time condition visualisation within the 3D model.
+
+#### Predictive Analytics
 
 Machine learning models analyse sensor data streams to predict equipment failure, structural deterioration, and energy performance by enabling proactive intervention and reduced downtime.
 
+#### Facility Management
+
 Optimise building performance through centralised tracking of space utilisation, energy consumption, maintenance coordination, and operational workflows, all within the Digital Twin environment.
 
+#### BIM-to-Operations Bridge
+
 Information created during design and construction, including BIM models, specifications, and commissioning data, is preserved, enriched, and carried forward into operations, eliminating data loss at handover.
+
+#### City-Scale Digital Twins
 
 For smart city and large infrastructure programmes, we build Digital Twins that integrate multiple assets, utility networks, and public systems into a single geospatial intelligence platform.
 
@@ -42,41 +76,223 @@ Impact
 
 Digital Twins deliver quantifiable improvements in operational efficiency, asset reliability, and decision quality.
 
-#### Operational Efficiency
-
-Real-time visibility
+Operational Efficiency
 
 30%
 
 Avg. improvement in operational efficiency
 
-#### Downtime Reduction
+InfrastructureSmart CitiesBIMIoT
 
-Predictive maintenance
+![BIM Model](https://sentratech.in/image/solutions/showcase/digital%20twin/3D%20BIM%20Model%20Integration.webp)
+
+BIM Model
+
+Downtime Reduction
 
 45%
 
 Reduction in unplanned downtime
 
-Early anomaly detection
-
-Condition-based scheduling
-
-Asset health scoring
-
-#### Lifecycle Cost Savings
-
-Data-driven decisions
+Lifecycle Cost Savings
 
 25%
 
 Reduction in total lifecycle costs
 
-Optimised maintenance regimes
+![Digital Twin City Infrastructure](https://sentratech.in/image/solutions/showcase/digital%20twin/City-scale%20Digital%20Twin%20for%20smart%20infrastructure%20management.webp)
 
-Energy efficiency gains
+**City-scale Digital Twin** Multiple assets, utility networks and public systems in one geospatial platform.
 
-Extended asset service life
+Digital Twin Resources
+
+## Digital Twins in the Field
+
+Case studies, guides and articles on building digital twins from reality capture and keeping them alive with sensor data.
+
+[
+
+![Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation](https://sentratech.in/image/articles/article_digital-twin-predictive-maintenance-sentra.webp)
+
+Article
+
+Digital Twin
+
+#### Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation
+
+](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html) [
+
+![Railway Bridge Digital Twin Using Drone and LiDAR Inspection](https://sentratech.in/image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp)
+
+Case Study
+
+Railways
+
+#### Railway Bridge Digital Twin Using Drone and LiDAR Inspection
+
+](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html) [
+
+![3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp)
+
+Article
+
+Digital Twin
+
+#### 3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins
+
+](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html) [
+
+![The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/image/blogs/banners/blogs_future-digital-twins-mesh-point-cloud-gaussian-splatting.webp)
+
+Blog
+
+Digital Twin
+
+#### The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared
+
+](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html) [
+
+![Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp)
+
+Blog
+
+Bridge Safety
+
+#### Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss
+
+](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html) [
+
+![Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study](https://sentratech.in/image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp)
+
+Case Study
+
+Comparison Study
+
+#### Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
+
+](https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html) [
+
+![Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp)
+
+Blog
+
+Dams
+
+#### Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection
+
+](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html) [
+
+![Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures](https://sentratech.in/image/articles/article_port-marine-infrastructure-monitoring.webp)
+
+Article
+
+Ports
+
+#### Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures
+
+](https://sentratech.in/article/port-marine-infrastructure-monitoring.html) [
+
+![Building Resilient Smart Cities with Data-Driven Insights](https://sentratech.in/image/articles/article_Building%20Resilient%20Smart%20Cities%20with%20Data-Driven%20Insights.webp)
+
+Article
+
+Smart Cities
+
+#### Building Resilient Smart Cities with Data-Driven Insights
+
+](https://sentratech.in/article/building-resilient-smart-cities-with-data-driven-insights.html) [
+
+!
+
+Article
+
+Digital Twin
+
+#### Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation
+
+](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html) [
+
+!
+
+Case Study
+
+Railways
+
+#### Railway Bridge Digital Twin Using Drone and LiDAR Inspection
+
+](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html) [
+
+!
+
+Article
+
+Digital Twin
+
+#### 3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins
+
+](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html) [
+
+!
+
+Blog
+
+Digital Twin
+
+#### The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared
+
+](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html) [
+
+!
+
+Blog
+
+Bridge Safety
+
+#### Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss
+
+](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html) [
+
+!
+
+Case Study
+
+Comparison Study
+
+#### Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
+
+](https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html) [
+
+!
+
+Blog
+
+Dams
+
+#### Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection
+
+](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html) [
+
+!
+
+Article
+
+Ports
+
+#### Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures
+
+](https://sentratech.in/article/port-marine-infrastructure-monitoring.html) [
+
+!
+
+Article
+
+Smart Cities
+
+#### Building Resilient Smart Cities with Data-Driven Insights
+
+](https://sentratech.in/article/building-resilient-smart-cities-with-data-driven-insights.html)
+
+[View All Resources ](https://sentratech.in/resources.html)
 
 Process
 
@@ -166,33 +382,39 @@ Benefits
 
 Digital Twins create value at every stage of the asset lifecycle, from design coordination through 30-year operational management.
 
-Lifecycle Continuity
+### Lifecycle Continuity
 
 Bridge the gap between design, construction, and operations by reducing information loss at handover and ensuring that data created during delivery remains accessible and usable throughout the asset life.
 
-Proactive Control
+### Proactive Control
 
 Shift from reactive to proactive asset management through real-time anomaly detection, predictive analytics, and live condition monitoring within the context of a full 3D model.
 
-Operational Efficiency
+### Operational Efficiency
 
 Optimise resource utilisation, energy consumption, space allocation, and maintenance coordination by reducing operational costs while improving service levels.
 
-Evidence-Based Decisions
+### Evidence-Based Decisions
 
 Data-driven insights for maintenance planning, capital investment, and operational strategy by replacing intuition and anecdotal evidence with verifiable, real-time data.
 
-Improved Safety
+### Improved Safety
 
 Monitor environmental conditions, structural health, and safety systems in real time, with automated alerts that enable rapid response to emerging risks.
 
-Collaborative Working
+### Collaborative Working
 
 Enable design teams, contractors, facility managers, and asset owners to collaborate on the same current digital representation by reducing coordination errors, travel costs, and decision latency.
 
-ISO 19650 Compliance
+### ISO 19650 Compliance
 
 All Digital Twin information is structured and managed in accordance with ISO 19650 by ensuring that your asset information meets international standards for quality, accessibility, and long-term usability.
+
+[ Next step
+
+### See a Digital Twin built for your asset
+
+Request a Demo ](https://sentratech.in/contact.html)
 
 Featured Project
 
@@ -220,29 +442,65 @@ Industries
 
 Sentra's Digital Twin solutions serve the full range of sectors where real-time asset intelligence delivers measurable value.
 
-AEC
+[
+
+!
+
+### AEC
 
 Architecture, engineering, and construction firms delivering major projects
 
-Infrastructure
+Explore
+
+](https://sentratech.in/industries/construction-tunnelling-monitoring.html) [
+
+!
+
+### Infrastructure
 
 Bridges, highways, railways, and utilities operators
 
-Facilities Management
+Explore
+
+](https://sentratech.in/industries/bridges-highways-monitoring.html) [
+
+!
+
+### Facilities Management
 
 Commercial, residential, and institutional building operators
 
-Smart Cities
+Explore
+
+](https://sentratech.in/industries/buildings-highrise-monitoring.html)
+
+!
+
+### Smart Cities
 
 Municipal corporations and urban development authorities
 
-Industrial
+[
+
+!
+
+### Industrial
 
 Manufacturing plants, refineries, and process facilities
 
-Transportation
+Explore
+
+](https://sentratech.in/industries/industrial-facilities-monitoring.html) [
+
+!
+
+### Transportation
 
 Ports, airports, and logistics hubs
+
+Explore
+
+](https://sentratech.in/industries/railway-infrastructure-monitoring.html)
 
 Why Us
 
@@ -271,36 +529,6 @@ We stay engaged beyond deployment by updating the Digital Twin with inspection d
 Proven at City Scale
 
 Our flagship Amaravati project demonstrates our capability at the largest scale: proving that our Digital Twin approach works for multi-stakeholder, multi-system city programmes.
-
-Case Studies
-
-## Digital Twin in Action
-
-Real-world applications of our Digital Twin technology across infrastructure and smart city projects.
-
-[
-
-![BridgePulse](https://sentratech.in/image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp)
-
-AI & Drones Railways
-
-#### BridgePulse: AI and Drone Technology for Bridge Health Monitoring
-
-Read Case Study
-
-](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
-
-![IoT Bridge Monitoring](https://sentratech.in/image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp)
-
-IoT & Sensors Railways
-
-#### IoT Bridge Monitoring & Sensor Installation on Railway Bridges
-
-Read Case Study
-
-](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html)
-
-[View All Case Studies ](https://sentratech.in/resources.html#case-studies)
 
 FAQ
 
@@ -342,4 +570,10 @@ Free Consultation Available
 
 Tell us about your asset and digital objectives. We'll propose a Digital Twin approach, from data capture through IoT integration; that fits your project stage, budget, and information requirements.
 
-[Request a Demo ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)
+- No obligation
+
+- Tailored to your asset
+
+- Clear scope and timeline
+
+[Request a Demo ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

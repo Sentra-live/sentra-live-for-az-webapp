@@ -7438,7 +7438,7 @@ body.lightmode .blog-content::before {
 .glimpse-tag {
     position: absolute;
     top: 14px;
-    left: 14px;
+    right: 14px;
     z-index: 2;
     display: inline-block;
     font-size: 0.62rem;
@@ -7682,7 +7682,7 @@ body.lightmode .card-case-studies .insight-marquee::after {
 .marquee-card-type {
     position: absolute;
     top: 12px;
-    left: 12px;
+    right: 12px;
     z-index: 2;
     font-size: 0.6rem;
     font-weight: 700;

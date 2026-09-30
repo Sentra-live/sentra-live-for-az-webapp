@@ -8,7 +8,7 @@
       <!-- Homepage -->
       <url>
             <loc>https://sentratech.in/</loc>
-            <lastmod>2026-06-29</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>daily</changefreq>
             <priority>1.0</priority>
       </url>
@@ -98,7 +98,7 @@
       <!-- Resources Hub Page (unifies Blogs, Case Studies, Articles) -->
       <url>
             <loc>https://sentratech.in/resources.html</loc>
-            <lastmod>2026-06-16</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.7</priority>
       </url>
@@ -117,8 +117,20 @@
             <priority>0.6</priority>
       </url>
       <url>
+            <loc>https://sentratech.in/article/shm-consulting-expert-advisory-infrastructure-risk.html</loc>
+            <lastmod>2026-09-30</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
+      <url>
+            <loc>https://sentratech.in/article/madhya-pradesh-bridge-collapses-structural-health-monitoring.html</loc>
+            <lastmod>2026-09-28</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.7</priority>
+      </url>
+      <url>
             <loc>https://sentratech.in/article/flood-monitoring-early-warning-system.html</loc>
-            <lastmod>2026-08-27</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.7</priority>
       </url>
@@ -148,7 +160,7 @@
       </url>
       <url>
             <loc>https://sentratech.in/article/track-to-the-future-remote-monitoring-rail-infrastructure.html</loc>
-            <lastmod>2025-11-13</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
@@ -166,6 +178,12 @@
       </url>
 
       <!-- Case Studies -->
+      <url>
+            <loc>https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html</loc>
+            <lastmod>2026-09-30</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.6</priority>
+      </url>
       <url>
             <loc>https://sentratech.in/case-studies/railway-bridge-fatigue-life-assessment-load-testing.html</loc>
             <lastmod>2026-08-28</lastmod>
@@ -192,7 +210,7 @@
       </url>
       <url>
             <loc>https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html</loc>
-            <lastmod>2026-07-27</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
@@ -216,7 +234,7 @@
       <!-- FAQ Page -->
       <url>
             <loc>https://sentratech.in/faq.html</loc>
-            <lastmod>2025-11-13</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.8</priority>
       </url>
@@ -234,7 +252,7 @@
       <!-- Asset Monitoring and Management Solutions Page -->
       <url>
             <loc>https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html</loc>
-            <lastmod>2025-11-13</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>weekly</changefreq>
             <priority>0.9</priority>
       </url>
@@ -316,7 +334,7 @@
       </url>
       <url>
             <loc>https://sentratech.in/blogs/structural-health-monitoring.html</loc>
-            <lastmod>2025-11-13</lastmod>
+            <lastmod>2026-09-28</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
@@ -358,7 +376,7 @@
       </url>
       <url>
             <loc>https://sentratech.in/blogs/monitoring-construction-induced-vibrations.html</loc>
-            <lastmod>2026-06-24</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
@@ -389,13 +407,13 @@
       </url>
       <url>
             <loc>https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html</loc>
-            <lastmod>2026-08-03</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
       <url>
             <loc>https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html</loc>
-            <lastmod>2026-08-03</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
@@ -413,7 +431,7 @@
       </url>
       <url>
             <loc>https://sentratech.in/blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html</loc>
-            <lastmod>2026-09-08</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
@@ -431,7 +449,7 @@
       </url>
       <url>
             <loc>https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html</loc>
-            <lastmod>2026-08-25</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>
@@ -547,7 +565,7 @@
 
       <url>
             <loc>https://sentratech.in/products/tiltmeter.html</loc>
-            <lastmod>2025-11-13</lastmod>
+            <lastmod>2026-09-30</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.6</priority>
       </url>

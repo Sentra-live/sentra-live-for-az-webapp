@@ -22,17 +22,55 @@ Sentra's digital engineering services create accurate, structured digital repres
 
 ### BIM, Scanning, and Digital Twins: Delivered to International Standards
 
-Infrastructure and building assets generate information throughout their lifecycle, from design drawings and construction records to inspection reports and maintenance logs. Without a disciplined approach to digital engineering and information management, this data becomes fragmented, inconsistent, and ultimately unavailable when it is needed most: during operations, maintenance, and eventual renewal. Sentra's digital engineering service creates accurate, standards-aligned digital representations of new and existing assets. For existing assets, our scan-to-BIM workflow begins with 3D laser scanning or photogrammetric survey, producing a precise point cloud that is converted into an intelligent, parametric BIM model at the client's required level of development (LOD 200–400). For new projects, we support BIM coordination, clash detection, and information delivery throughout design and construction. Digital twin integration connects the BIM model to live sensor data from our monitoring platforms by creating a dynamic, data-enriched asset model that evolves with the physical structure in real time. All information is structured and delivered in accordance with ISO 19650, ensuring that project information remains accessible, searchable, and usable for the life of the asset.
+Infrastructure and building assets generate information throughout their lifecycle, from design drawings and construction records to inspection reports and maintenance logs. Without a disciplined approach to digital engineering and information management, this data becomes fragmented, inconsistent, and ultimately unavailable when it is needed most: during operations, maintenance, and eventual renewal. Sentra's digital engineering service creates accurate, standards-aligned digital representations of new and existing assets.
+
+For existing assets, our scan-to-BIM workflow begins with 3D laser scanning or photogrammetric survey, producing a precise point cloud that is converted into an intelligent, parametric BIM model at the client's required level of development (LOD 200–400). For new projects, we support BIM coordination, clash detection, and information delivery throughout design and construction. Digital twin integration connects the BIM model to live sensor data from our monitoring platforms by creating a dynamic, data-enriched asset model that evolves with the physical structure in real time. All information is structured and delivered in accordance with ISO 19650, ensuring that project information remains accessible, searchable, and usable for the life of the asset.
+
+- Scan-to-BIM from laser scanning or photogrammetry
+
+- Parametric models from LOD 200 to 400
+
+- BIM coordination and clash detection
+
+- Information delivered to ISO 19650
+
+[Talk to an Expert ](https://sentratech.in/contact.html) [See how it works ](#sol-how)
+
+![Digital Engineering & Documentation](https://sentratech.in/image/solutions/banners/BIM-management.webp)
+
+ISO 19650 aligned
+
+BIM Model Accuracy 3D Point Cloud Scanning Digital Twin Integration
+
+### What We Deliver
+
+Structured digital information for design, construction, handover and operations.
+
+#### BIM Model Accuracy
 
 Parametric BIM models built to the client's LOD requirements, from LOD 200 massing models for early design stages through LOD 400 fabrication-ready models for construction and facility management.
 
+[
+
+#### 3D Point Cloud Scanning
+
 High-density 3D laser scanning of existing structures, buildings, and infrastructure using terrestrial LiDAR and mobile mapping systems, capturing millimetre-accurate as-built geometry of complex environments.
+
+Laser Scanners ](https://sentratech.in/products/laser-scanners.html)
+
+#### Digital Twin Integration
 
 BIM models are connected to live sensor data streams from structural, environmental, and operational monitoring systems by creating a digital twin that reflects the current real-world state of the asset.
 
+#### Document Control
+
 Structured document management across design, construction, and operations phases, with version control, approval workflows, naming conventions, and audit trails aligned to ISO 19650 information requirements.
 
+#### Compliance Records
+
 Structured record packages for regulatory handover, building control sign-off, and statutory submissions, including O&M manuals, as-built documentation, commissioning records, and inspection certificates.
+
+#### Asset Information Management
 
 Asset register creation, classification to international standards (Uniclass, OmniClass), and integration with CAFM and CMMS platforms by ensuring asset information remains structured and accessible in operations.
 
@@ -42,9 +80,7 @@ Impact
 
 Quantifiable results delivered through our monitoring and engineering solutions across infrastructure projects.
 
-#### Track Record
-
-Proven delivery
+Track Record
 
 200+
 
@@ -52,9 +88,13 @@ Projects Delivered
 
 Across bridges, railways & infrastructure
 
-#### Efficiency
+Infrastructure OwnersEPC ContractorsGovernmentSmart Cities
 
-Optimised operations
+![LiDAR Point Cloud Capture](https://sentratech.in/image/solutions/showcase/digital%20engineering/LiDAR%20Point%20Cloud%20Capture.webp)
+
+LiDAR Point Cloud Capture
+
+Efficiency
 
 40%
 
@@ -62,15 +102,187 @@ Cost Reduction
 
 Avg. inspection and monitoring cost savings
 
-#### Reliability
-
-Always on
+Reliability
 
 99.5%
 
 System Availability
 
 24/7 continuous uptime
+
+![Solution in action](https://sentratech.in/image/solutions/showcase/digital%20engineering/3D%20BIM%20model%20with%20scan-to-BIM%20accuracy%20verification.webp)
+
+**Scan-to-BIM accuracy verification** Point clouds converted into parametric BIM models at the level of detail you need.
+
+Digital Engineering Resources
+
+## Reality Capture and Documentation in Practice
+
+Case studies, guides and articles on laser scanning, scan-to-BIM and building accurate digital records of existing assets.
+
+[
+
+![3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp)
+
+Article
+
+Digital Twin
+
+#### 3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins
+
+](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html) [
+
+![Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study](https://sentratech.in/image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp)
+
+Case Study
+
+Comparison Study
+
+#### Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
+
+](https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html) [
+
+![The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/image/blogs/banners/blogs_future-digital-twins-mesh-point-cloud-gaussian-splatting.webp)
+
+Blog
+
+Digital Twin
+
+#### The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared
+
+](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html) [
+
+![Railway Bridge Digital Twin Using Drone and LiDAR Inspection](https://sentratech.in/image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp)
+
+Case Study
+
+Railways
+
+#### Railway Bridge Digital Twin Using Drone and LiDAR Inspection
+
+](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html) [
+
+![Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp)
+
+Blog
+
+Dams
+
+#### Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection
+
+](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html) [
+
+![Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation](https://sentratech.in/image/articles/article_digital-twin-predictive-maintenance-sentra.webp)
+
+Article
+
+Digital Twin
+
+#### Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation
+
+](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html) [
+
+![10 Construction Technologies Redefining the Industry](https://sentratech.in/image/articles/articles_10constructiontechnologiesredefiningtheindustry.webp)
+
+Article
+
+Construction Tech
+
+#### 10 Construction Technologies Redefining the Industry
+
+](https://sentratech.in/article/10-construction-technologies-redefining-the-industry.html) [
+
+![Clove Technologies Becomes Authorized XGRIDS Reseller in India](https://sentratech.in/image/articles/xgrids-authorized-reseller-india.webp)
+
+Article
+
+Company News
+
+#### Clove Technologies Becomes Authorized XGRIDS Reseller in India
+
+](https://sentratech.in/article/xgrids-authorized-reseller-india.html) [
+
+!
+
+Article
+
+Digital Twin
+
+#### 3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins
+
+](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html) [
+
+!
+
+Case Study
+
+Comparison Study
+
+#### Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
+
+](https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html) [
+
+!
+
+Blog
+
+Digital Twin
+
+#### The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared
+
+](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html) [
+
+!
+
+Case Study
+
+Railways
+
+#### Railway Bridge Digital Twin Using Drone and LiDAR Inspection
+
+](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html) [
+
+!
+
+Blog
+
+Dams
+
+#### Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection
+
+](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html) [
+
+!
+
+Article
+
+Digital Twin
+
+#### Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation
+
+](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html) [
+
+!
+
+Article
+
+Construction Tech
+
+#### 10 Construction Technologies Redefining the Industry
+
+](https://sentratech.in/article/10-construction-technologies-redefining-the-industry.html) [
+
+!
+
+Article
+
+Company News
+
+#### Clove Technologies Becomes Authorized XGRIDS Reseller in India
+
+](https://sentratech.in/article/xgrids-authorized-reseller-india.html)
+
+[View All Resources ](https://sentratech.in/resources.html)
 
 Process
 
@@ -160,33 +372,39 @@ Benefits
 
 Digital engineering creates value at every stage of the asset lifecycle, from accelerating design coordination to supporting 30-year asset management decisions.
 
-Accurate As-Built Records
+### Accurate As-Built Records
 
 Scan-to-BIM creates an accurate, permanent digital record of the as-built condition by eliminating the discrepancies between design drawings and actual construction that cause costly problems during maintenance and modification works.
 
-Reduce RFI Cycles
+### Reduce RFI Cycles
 
 BIM coordination and clash detection during design resolve spatial conflicts between structural, mechanical, and electrical systems before construction begins by reducing costly design changes, delays, and RFIs on site.
 
-Facility Management from Day One
+### Facility Management from Day One
 
 A complete, structured asset information model delivered at handover enables facilities management teams to start operations with accurate asset data, rather than spending months reconstructing what was built.
 
-Lifecycle Data Continuity
+### Lifecycle Data Continuity
 
 Information created during design and construction is preserved and carried forward into operations by avoiding the data loss at project handover that forces asset owners to reinvest in data collection they already paid for.
 
-Remote Collaboration
+### Remote Collaboration
 
 Cloud-hosted BIM models and digital twins enable design teams, contractors, and asset managers in different locations to collaborate on the same current model by reducing travel, meetings, and communication errors.
 
-ISO 19650 Compliance
+### ISO 19650 Compliance
 
 Information management aligned to ISO 19650 satisfies BIM requirements increasingly mandated by government clients and major infrastructure commissioners: meeting procurement requirements without additional overhead.
 
-Data-Driven Lifecycle Decisions
+### Data-Driven Lifecycle Decisions
 
 Accurate asset information integrated with monitoring data and maintenance records provides the evidence base for lifecycle capital planning by determining when to repair, refurbish, or replace on an asset-by-asset basis.
+
+[ Next step
+
+### Scope your scan-to-BIM project
+
+Request a BIM Demo ](https://sentratech.in/contact.html)
 
 Risk Mitigation
 
@@ -194,23 +412,35 @@ Risk Mitigation
 
 Poor documentation and unstructured digital information are silent killers of asset management efficiency. Digital engineering eliminates these systemic problems before they become costly.
 
-Outdated Paper Documentation
+[Talk to us about your asset information ](https://sentratech.in/contact.html)
+
+1. 01
+
+### Outdated Paper Documentation
 
 Paper drawings that do not reflect what was actually built create errors in maintenance works, renovation projects, and emergency repairs, with the risk of damaging hidden services or structural elements.
 
-As-Built vs Design Discrepancies
+2. 02
+
+### As-Built vs Design Discrepancies
 
 Construction invariably deviates from design intent. Without accurate as-built records, these deviations are unknown to future engineers: causing incorrect structural assessments, planning errors, and safety incidents.
 
-Data Loss at Handover
+3. 03
+
+### Data Loss at Handover
 
 Project handover is the most common point of information loss in the asset lifecycle. Without structured information delivery, critical design rationale, commissioning data, and O&M documentation is lost or inaccessible.
 
-Digital Delivery Non-Compliance
+4. 04
+
+### Digital Delivery Non-Compliance
 
 Government and major infrastructure clients increasingly mandate ISO 19650-compliant BIM information delivery. Non-compliance risks contract penalties, withheld payments, and exclusion from future procurement.
 
-Inefficient Asset Management
+5. 05
+
+### Inefficient Asset Management
 
 Facilities management teams without accurate asset information spend significant time and money reconstructing basic data by locating services, verifying specifications, and recovering information that was never properly recorded.
 
@@ -220,25 +450,51 @@ Industries
 
 Sentra's digital engineering capability serves the full range of clients who own, develop, and manage major built assets across India and internationally.
 
-Infrastructure Owners
+[
+
+!
+
+### Infrastructure Owners
 
 Railways, highways, ports, and utility operators managing large asset portfolios
 
-EPC Contractors
+Explore
+
+](https://sentratech.in/industries/bridges-highways-monitoring.html) [
+
+!
+
+### EPC Contractors
 
 Engineering, procurement, and construction firms delivering major projects
 
-Municipal Corporations
+Explore
+
+](https://sentratech.in/industries/construction-tunnelling-monitoring.html)
+
+!
+
+### Municipal Corporations
 
 City authorities digitising existing infrastructure and planning future development
 
-Smart City Projects
+!
+
+### Smart City Projects
 
 Digital infrastructure programmes requiring integrated BIM, GIS, and sensor data
 
-Real Estate Developers
+[
+
+!
+
+### Real Estate Developers
 
 Commercial, residential, and mixed-use developers requiring BIM for major projects
+
+Explore
+
+](https://sentratech.in/industries/buildings-highrise-monitoring.html)
 
 Why Us
 
@@ -267,36 +523,6 @@ We bridge BIM and GIS, integrating parametric building and infrastructure models
 Full Lifecycle Support
 
 Unlike BIM service providers who exit at project handover, Sentra supports clients through operations by updating models with inspection data, modification records, and monitoring outputs to keep the digital twin current.
-
-Case Studies
-
-## Digital Engineering Projects
-
-How our BIM, scanning, and digital twin services have delivered value for infrastructure owners and contractors.
-
-[
-
-![BridgePulse](https://sentratech.in/image/case-studies/banners/case_studies_bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.webp)
-
-AI & Drones Railways
-
-#### BridgePulse: AI and Drone Technology for Bridge Health Monitoring
-
-Read Case Study
-
-](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html) [
-
-![IoT Bridge Monitoring](https://sentratech.in/image/case-studies/banners/case_studies_iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.webp)
-
-IoT & Sensors Railways
-
-#### IoT Bridge Monitoring & Sensor Installation on Railway Bridges
-
-Read Case Study
-
-](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html)
-
-[View All Case Studies ](https://sentratech.in/resources.html#case-studies)
 
 Explore More
 
@@ -370,4 +596,10 @@ Free Consultation Available
 
 Tell us about your asset and digital engineering objectives. We'll propose an approach, from scan-to-BIM through digital twin; that fits your project stage, budget, and information requirements.
 
-[Request a BIM Demo ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)
+- No obligation
+
+- Tailored to your asset
+
+- Clear scope and timeline
+
+[Request a BIM Demo ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

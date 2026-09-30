@@ -158,6 +158,7 @@
                 throw new Error(data.error || 'Submission failed');
             }
 
+            if (window.trackEvent) window.trackEvent('generate_lead', { form_name: 'brochure', brochure: pending.name });
             triggerFileDownload(pending.url);
             closeModal();
         } catch (err) {

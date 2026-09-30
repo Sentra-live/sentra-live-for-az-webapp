@@ -7,7 +7,7 @@ Source: https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html
 
 An accelerometer sensor measures how fast something's velocity is changing, and in infrastructure and machinery monitoring, that measurement is what turns an earthquake, a resonating bridge deck, or a failing bearing into a data point instead of a surprise.
 
-An accelerometer sensor measures **acceleration**, the rate of change of velocity, along one or more axes, usually expressed in units of g (where 1g equals Earth's gravitational acceleration, about 9.81 m/s²). In practice that makes it a vibration sensor: any shaking, impact, or dynamic movement shows up as a changing acceleration signal that can be captured, logged and analysed.
+An accelerometer sensor measures **acceleration**, the rate of change of velocity, along one or more axes, usually expressed in units of g (where 1g equals Earth's gravitational acceleration, about 9.81 m/s²). In practice that makes it a vibration sensor: any shaking, impact, or dynamic movement shows up as a changing acceleration signal that can be captured, logged and analysed. Accelerometer sensors are deployed singly on a piece of machinery or in arrays of dozens across a bridge deck or building frame, and the term covers everything from a smartphone's tiny MEMS chip to the ruggedised, wireless accelerometer sensors used on outdoor infrastructure.
 
 ## How Accelerometers Work
 
