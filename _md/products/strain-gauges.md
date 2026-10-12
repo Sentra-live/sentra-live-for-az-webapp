@@ -182,6 +182,14 @@ Complete specs, installation guides, and product data sheets
 
 Talk to our engineering team about the right strain gauge configuration for your project, including bridges, tunnels, pipelines or dams. Calibrated solutions, fast delivery.
 
+Used In
+
+## Where the Strain Gauge Is Used
+
+[ **Railway bridge stress & fatigue**Railway bridge monitoring ](https://sentratech.in/solutions/railway-bridge-monitoring.html) [ **Residual fatigue life**Fatigue & residual life assessment ](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html) [ **Girders, decks & joints**Bridge monitoring system ](https://sentratech.in/industries/bridges-highways-monitoring.html) [ **Case study: railway bridge**98 MPa peak stress range measured ](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-strain-gauges) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About Our Strain Gauges?

@@ -35,6 +35,9 @@ User-agent: Google-Extended
 User-agent: Applebot-Extended
 User-agent: meta-externalagent
 User-agent: Bytespider
+User-agent: anthropic-ai
+User-agent: DeepseekBot
+User-agent: xAI-Bot
 Disallow: /
 
 Sitemap: https://sentratech.in/sitemap.xml

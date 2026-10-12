@@ -1,6 +1,6 @@
 # Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines
 
-> How slope stability monitoring works in open-pit mines: how pit walls fail, the sensors that detect movement, how to design a monitoring network, and how alarm thresholds give early warning.
+> Slope stability monitoring for open-pit mines: how pit walls fail, sensors that detect movement, network design and early-warning alarm thresholds.
 
 Published: 2026-09-25  
 Section: Mining  
@@ -102,11 +102,21 @@ Open-pit slopes are designed on assumptions, and slope stability monitoring is h
 
 The instruments are well proven. What makes the difference is choosing them for the actual failure mechanisms, keeping the network current as the pit changes, and backing every threshold with a response plan.
 
+Related service [Geotechnical Monitoring Services ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
+
+- [GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html)
+
+- [Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html)
+
+- [What Is an Inclinometer? How Digital Tiltmeters Measure Tilt and Rotation](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=slope-stability-monitoring-mining)
+
 #### Planning slope monitoring for an open-pit mine?
 
 We design and deploy slope stability monitoring for pit walls and waste dumps, from GNSS, tilt and piezometer networks to data platforms with alarm thresholds.
 
-[Talk to our team ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=slope-stability-monitoring-mining)
 
 ## Frequently Asked Questions
 

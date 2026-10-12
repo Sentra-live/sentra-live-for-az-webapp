@@ -9,7 +9,7 @@ Source: https://sentratech.in/index.html
 ## Smart. Secure.
 Scalable.
 
-IoT-Powered Structural Health Monitoring, Asset Monitoring, Bridge Inspection & Digital Twin Solutions
+Structural health monitoring that shows how your assets are actually behaving. We turn sensor readings, engineering data and digital twins into early warnings and maintenance decisions.
 
 [ view_in_ar Digital Twin ](https://sentratech.in/solutions/digital-engineering-and-documentation.html) [ database Asset Monitoring ](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html) [ signpost Bridge Inspection ](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html) [ monitoring Structural Health Monitoring ](https://sentratech.in/solutions/structural-health-monitoring.html)
 
@@ -21,11 +21,11 @@ Explore Solutions
 
 ](https://sentratech.in/solutions.html) [
 
-About Sentra
+Request Assessment
 
-](https://sentratech.in/about.html)
+](https://sentratech.in/monitoring-assessment.html?source=home-hero)
 
-Watch how we transform ideas into reality that leave a lasting impact.
+Short films from our projects and the work behind them.
 
 ![Amaravathi](https://sentratech.in/image/about/partner_1.webp)
 
@@ -41,7 +41,7 @@ Watch how we transform ideas into reality that leave a lasting impact.
 
 #### Ready to See Intelligent Monitoring in Action?
 
-Experience how we adapt to your scalable project.
+See how monitoring would work at the scale of your project.
 
 [Schedule a Demo](https://sentratech.in/contact.html)
 
@@ -49,13 +49,13 @@ Experience how we adapt to your scalable project.
 
 ###### Years of Experience on Digital Twin and Sensor Monitoring
 
-Delivering reliable IoT-powered sensing and data-driven insights that ensure safety, precision, and efficiency across critical infrastructure projects.
+Reliable IoT sensing and clear data for safer, more precise and more efficient infrastructure projects.
 
 Our Expertise
 
-## Data like no other, Results we strive together
+## Measured data, shared results
 
-At Sentra, we monitor infrastructure to give industries the intelligence and precision to move forward securely.
+Sentra monitors infrastructure so the people responsible for it know what condition it is in and can act with confidence.
 
 ##### What We Do Best
 
@@ -63,11 +63,47 @@ At Sentra, we monitor infrastructure to give industries the intelligence and pre
 
 [ monitoring Structural Health Monitoring ](https://sentratech.in/solutions/structural-health-monitoring.html) [ signpost Bridge Inspection & Condition Assessment ](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html) [ speed Fatigue & Residual Life Assessment ](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html) [ database Asset Monitoring & Management Solutions ](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html) [ terrain Geotechnical & Foundation Monitoring ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) [ view_in_ar Digital Twin ](https://sentratech.in/solutions/digital-twin.html)
 
+Who We Help
+
+## Continuous data for the assets you are responsible for
+
+[
+
+#### Bridges
+
+Know how your bridge is behaving between inspections.
+
+](https://sentratech.in/industries/bridges-highways-monitoring.html) [
+
+#### Railways
+
+Monitor vibration, strain and fatigue under live railway loads.
+
+](https://sentratech.in/solutions/railway-bridge-monitoring.html) [
+
+#### Construction
+
+Know when ground and structures are moving before it becomes a problem.
+
+](https://sentratech.in/solutions/construction-vibration-monitoring.html) [
+
+#### Dams
+
+Monitor deformation, seepage and pore pressure continuously.
+
+](https://sentratech.in/industries/dams-reservoirs-monitoring.html) [
+
+#### Industrial Assets
+
+Detect equipment deterioration before failure disrupts operations.
+
+](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html)
+
 Applications
 
 ## Tailored for Every Sector
 
-Beyond structures, explore Sentra's IoT monitoring solutions across the industries that keep critical infrastructure safe.
+Sentra's IoT monitoring covers more than individual structures. See how it works in each of the industries that keep critical infrastructure running.
 
 [
 
@@ -79,7 +115,7 @@ Railways ](https://sentratech.in/industries/railway-infrastructure-monitoring.ht
 
 Industries
 
-Real-time vibration, tilt, and dynamic load monitoring for tracks, bridges, and rail structures under live traffic.
+Live vibration, tilt and dynamic load monitoring for track, bridges and rail structures under traffic.
 
 [
 
@@ -91,7 +127,7 @@ Bridges ](https://sentratech.in/industries/bridges-highways-monitoring.html)
 
 Industries
 
-Continuous displacement, strain, and inclination monitoring to detect structural degradation before it becomes critical.
+Continuous displacement, strain and inclination monitoring to catch structural deterioration before it becomes critical.
 
 [
 
@@ -103,7 +139,7 @@ Buildings ](https://sentratech.in/industries/buildings-highrise-monitoring.html)
 
 Industries
 
-Settlement monitoring, tilt tracking, and seismic response systems for residential, commercial, and heritage structures.
+Settlement, tilt and seismic response monitoring for residential, commercial and heritage buildings.
 
 [
 
@@ -115,7 +151,7 @@ Dams ](https://sentratech.in/industries/dams-reservoirs-monitoring.html)
 
 Industries
 
-GNSS-based displacement, pore pressure, and seepage monitoring for earthfill, concrete, and masonry dams.
+GNSS displacement, pore pressure and seepage monitoring for earthfill, concrete and masonry dams.
 
 [
 
@@ -127,7 +163,7 @@ Mining ](https://sentratech.in/industries/mining-geotechnical-monitoring.html)
 
 Industries
 
-Slope stability, subsidence, and ground deformation monitoring for open-pit mines, tunnels, and retaining structures.
+Slope stability, subsidence and ground deformation monitoring for open-pit mines, tunnels and retaining structures.
 
 [
 
@@ -139,7 +175,7 @@ Ports ](https://sentratech.in/industries/ports-marine-monitoring.html)
 
 Industries
 
-Corrosion tracking, jetty tilt, and structural load monitoring for quays, wharves, and offshore platforms in harsh marine environments.
+Corrosion, jetty tilt and structural load monitoring for quays, wharves and offshore platforms in harsh marine conditions.
 
 [
 
@@ -151,7 +187,7 @@ Construction ](https://sentratech.in/industries/construction-tunnelling-monitori
 
 Industries
 
-Real-time deformation, convergence, and vibration control during deep excavation, tunnelling, and high-rise construction phases.
+Live deformation, convergence and vibration monitoring during deep excavation, tunnelling and high-rise construction.
 
 [
 
@@ -163,13 +199,13 @@ Industrial ](https://sentratech.in/industries/industrial-facilities-monitoring.h
 
 Industries
 
-Asset health, predictive maintenance, and equipment vibration monitoring for power plants, refineries, and process industries.
+Asset health, predictive maintenance and equipment vibration monitoring for power plants, refineries and process plants.
 
 Looking for your industry? [ View All Industries ](https://sentratech.in/industries.html)
 
-### Powering Success with Our Top Partners
+### Our technology partners
 
-At Sentra, we work with industry leaders to deliver advanced IoT monitoring and digital solutions that improve accuracy, efficiency, and innovation, backed by hands-on engineering expertise.
+We work with leading manufacturers to supply IoT monitoring and digital tools, and our own engineers handle the design, installation and interpretation.
 
 [Join Us](https://sentratech.in/partnership.html)
 
@@ -253,13 +289,13 @@ Why Choose Us
 
 ## Your Success is Our Mission
 
-We always understand and adapt for business.
+We fit the solution to the client, not the other way round.
 
 monitoring
 
 #### Structural Health Monitoring
 
-Ensure your infrastructure stands the test of time. Our end-to-end SHM solutions combine intelligent sensors, predictive analytics, and edge-based insights to detect structural stress before it becomes a problem.
+Keep your structures sound for the long term. Our SHM systems combine sensors, predictive analytics and edge processing to pick up structural stress before it turns into a problem.
 
 [Explore Structural Health Monitoring](https://sentratech.in/solutions/structural-health-monitoring.html)
 
@@ -267,7 +303,7 @@ signpost
 
 #### Bridge Inspection & Condition Assessment
 
-Ensure complete visibility into your bridge assets. Our drone-based aerial surveys and underwater ROV inspections deliver fast, safe, accurate assessments that uncover hidden defects and support confident maintenance decisions.
+Know the condition of every bridge you manage. Drone surveys and underwater ROV inspections give fast, safe and accurate assessments, find hidden defects and back up your maintenance decisions.
 
 [Explore Bridge Inspection & Condition Assessment](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html)
 
@@ -275,7 +311,7 @@ speed
 
 #### Fatigue & Residual Life Assessment
 
-Know exactly how much life remains in your assets. Our advanced fatigue analysis, vibration monitoring, and predictive diagnostics help extend service life and prevent unplanned failures.
+Find out how much life your assets have left. Fatigue analysis, vibration monitoring and predictive diagnostics help extend service life and avoid unplanned failures.
 
 [Explore Fatigue & Residual Life Assessment](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html)
 
@@ -283,7 +319,7 @@ database
 
 #### Asset Monitoring & Management Solutions
 
-Gain complete visibility into your critical assets: bridges, tunnels, transformers, or industrial machinery. Our smart monitoring systems enable proactive maintenance and higher uptime.
+Keep track of your critical assets, whether bridges, tunnels, transformers or industrial machinery. Our monitoring systems support planned maintenance and higher uptime.
 
 [Explore Asset Monitoring & Management Solutions](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html)
 
@@ -291,7 +327,7 @@ terrain
 
 #### Geotechnical & Foundation Monitoring
 
-Detect ground movement before it impacts your structure. We monitor soil behavior, pore pressure, settlement, and seismic response to provide early warnings for engineers.
+Spot ground movement before it affects your structure. We monitor soil behaviour, pore pressure, settlement and seismic response and give engineers early warning.
 
 [Explore Geotechnical & Foundation Monitoring](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
@@ -299,7 +335,7 @@ view_in_ar
 
 #### Digital Twin
 
-See your assets as they really are, in real time. Our digital twins combine accurate 3D models, BIM and live IoT sensor data to give you one view for monitoring, simulation and smarter maintenance decisions.
+See your assets as they are, in real time. Our digital twins combine accurate 3D models, BIM and live IoT sensor data in one view for monitoring, simulation and maintenance planning.
 
 [Explore Digital Twin](https://sentratech.in/solutions/digital-twin.html)
 
@@ -313,7 +349,7 @@ Watch & Learn
 
 ## See Sentra in Action
 
-Short films on LiDAR scanning, structural health monitoring, railway safety and connected infrastructure, straight from the field and the Sentra team.
+Short films on LiDAR scanning, structural health monitoring, railway safety and connected infrastructure, filmed in the field with the Sentra team.
 
 [Visit Our YouTube Channel](https://www.youtube.com/@Sentra-tech/)
 
@@ -355,7 +391,7 @@ Our Products
 
 ## Hardware Built for Real-World Monitoring
 
-From laser scanners and wireless sensors to data loggers, wired sensors and communications hardware, explore the hardware powering our monitoring solutions.
+Laser scanners, wireless sensors, data loggers, wired sensors and communications hardware: the equipment behind our monitoring systems.
 
 ![Lixel L3](https://sentratech.in/image/products/scanners/lixel-l3-hero.webp)
 
@@ -401,7 +437,7 @@ Spatial camera with 856K pts/s LiDAR, onboard AI 3DGS, 870g handheld.
 
 Laser Scanners
 
-Precision redefined. Up to 640,000 pts/s and 300m range for large-scale survey.
+Up to 640,000 pts/s and 300 m range for large survey jobs.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/lixel-l2-pro.html)
 
@@ -413,7 +449,7 @@ LS-G6-TIL90
 
 Wireless Sensors
 
-Three-axis tilt sensor offering rugged stability, low noise, and long-range wireless telemetry for continuous monitoring.
+Three-axis tilt sensor that is rugged, stable and low-noise, with long-range wireless telemetry for continuous monitoring.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/tiltmeter.html)
 
@@ -425,7 +461,7 @@ LS-G6-TIL90-XE
 
 Wireless Sensors
 
-Event-detection tiltmeter that triggers immediate alerts on sudden movement for landslide and structural safety monitoring.
+Tiltmeter with event detection that sends an alert as soon as it senses sudden movement, for landslide and structural safety monitoring.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/tiltmeter-event-detection.html)
 
@@ -437,7 +473,7 @@ LSG7ACL-BILH-VIB
 
 Wireless Sensors
 
-Advanced three-axis vibration sensing with internal calculation of PPV and dominant frequency.
+Three-axis vibration sensor that calculates PPV and dominant frequency on the device.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/vibration-meter.html)
 
@@ -449,7 +485,7 @@ LS-G6-LAS-TIL90
 
 Wireless Sensors
 
-Ultra-precise laser tiltmeter delivering sub-microradian accuracy for highly sensitive structural and geodetic measurements.
+High-precision laser tiltmeter with sub-microradian accuracy for very sensitive structural and geodetic measurement.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/laser-tiltmeter.html)
 
@@ -461,7 +497,7 @@ LSG7GNS-SXLH
 
 Wireless Sensors
 
-Satellite-based displacement monitoring providing precise three-axis geospatial positioning data.
+Satellite-based displacement monitoring with precise three-axis positioning.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/gnss-meter.html)
 
@@ -473,7 +509,7 @@ LS-G6-DIG-2
 
 Data Loggers
 
-Scalable digital logging solution for RS485 and SDI-12 sensor networks.
+Scalable digital data logger for RS485 and SDI-12 sensor networks.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/digital-data-logger.html)
 
@@ -485,7 +521,7 @@ LS-G6-VW
 
 Data Loggers
 
-Robust logging for vibrating wire sensors, ensuring accurate frequency readings in geotechnical applications.
+Rugged data logger for vibrating wire sensors that gives accurate frequency readings in geotechnical work.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/vibrating-wire.html)
 
@@ -497,7 +533,7 @@ LS-G6-VW-RCR
 
 Data Loggers
 
-Ultra-robust 5-channel data logger designed to be embedded in precast concrete for real-time stress and strain monitoring.
+Very rugged 5-channel data logger made to be cast into precast concrete for live stress and strain monitoring.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/vibrating-wire-rcr.html)
 
@@ -509,7 +545,7 @@ LS-G6-ANALOG-4
 
 Data Loggers
 
-Multi-channel analog data logger supporting voltage, current, and bridge inputs for legacy and hybrid sensor systems.
+Multi-channel analog data logger that accepts voltage, current and bridge inputs, for older and mixed sensor systems.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/analog-data-logger.html)
 
@@ -521,7 +557,7 @@ LS-G6-PICO
 
 Data Loggers
 
-Compact wireless data logger for ultra-low-power analog sensor networks, ideal for distributed, long-deployment monitoring.
+Compact, very low-power wireless data logger for analog sensor networks spread over large areas for long periods.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/piconode-data-logger.html)
 
@@ -533,7 +569,7 @@ Triaxial MEMS
 
 Wired Sensors
 
-High-precision wired accelerometer capturing acceleration, vibration, and tilt for structural health and dynamic load monitoring.
+Precise wired accelerometer that measures acceleration, vibration and tilt for structural health and dynamic load monitoring.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/accelerometers.html)
 
@@ -545,7 +581,7 @@ High-precision wired accelerometer capturing acceleration, vibration, and tilt f
 
 Wired Sensors
 
-Precision wired strain gauges for long-term stress and deformation monitoring on steel, concrete, and rock structures.
+Precise wired strain gauges for long-term stress and deformation monitoring on steel, concrete and rock.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/strain-gauges.html)
 
@@ -557,7 +593,7 @@ LS-M6-KIO-GW
 
 Narrowband Communications
 
-Reliable 4G LTE gateway that securely forwards data from remote sensors, ensuring real-time monitoring even in harsh outdoor environments.
+4G LTE gateway that forwards data securely from remote sensors, so monitoring stays live even in harsh outdoor conditions.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/gateway.html)
 
@@ -569,7 +605,7 @@ RPK20E
 
 Narrowband Communications
 
-Wireless repeater to extend network coverage and improve connectivity stability across distributed sensor networks.
+Wireless repeater that extends network coverage and keeps connections stable across spread-out sensor networks.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/repeater.html)
 
@@ -581,7 +617,7 @@ ThreadX3
 
 Broadband Communications
 
-High-performance broadband node that delivers fast, reliable 4G/LTE data communication for multi-sensor networks, even in remote or harsh environments.
+Broadband node that gives fast, reliable 4G/LTE communication for multi-sensor networks, even at remote or harsh sites.
 
 [ Quote ](https://sentratech.in/contact.html) [ View ](https://sentratech.in/products/thread.html)
 
@@ -615,11 +651,41 @@ Resources
 
 ## Insights and Updates
 
-Explore our latest blogs, case studies, and company updates on IoT-powered monitoring, real-world deployments, and infrastructure innovation.
+Our latest blogs, case studies and company news on IoT monitoring, real projects and infrastructure technology.
 
 [View All Resources](https://sentratech.in/resources.html)
 
 [
+
+![Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time](https://sentratech.in/image/articles/article_metro-rail-monitoring-tunnels-viaducts-stations.webp)
+
+Article
+
+Rail Infrastructure
+
+#### Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time
+
+](https://sentratech.in/article/metro-rail-monitoring-tunnels-viaducts-stations.html) [
+
+![Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn](https://sentratech.in/image/articles/article_nepal-flash-floods-early-warning-himalayan-infrastructure.webp)
+
+Article
+
+Smart Cities
+
+#### Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn
+
+](https://sentratech.in/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html) [
+
+![How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist](https://sentratech.in/image/blogs/banners/blogs_early-warning-plan-critical-infrastructure-checklist.webp)
+
+Blog
+
+Infrastructure
+
+#### How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist
+
+](https://sentratech.in/blogs/early-warning-plan-critical-infrastructure-checklist.html) [
 
 ![SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk](https://sentratech.in/image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp)
 
@@ -631,13 +697,13 @@ Consulting
 
 ](https://sentratech.in/article/shm-consulting-expert-advisory-infrastructure-risk.html) [
 
-![Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL](https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp)
+![Digital Asset Management & Digital Twin for Substation - Bathupally TGNPDCL](https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp)
 
 Case Study
 
 Smart Substation
 
-#### Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL
+#### Digital Asset Management & Digital Twin for Substation - Bathupally TGNPDCL
 
 ](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html) [
 
@@ -751,6 +817,36 @@ Structural Health
 
 ](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html) [
 
+![Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time](https://sentratech.in/image/articles/article_metro-rail-monitoring-tunnels-viaducts-stations.webp)
+
+Article
+
+Rail Infrastructure
+
+#### Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time
+
+](https://sentratech.in/article/metro-rail-monitoring-tunnels-viaducts-stations.html) [
+
+![Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn](https://sentratech.in/image/articles/article_nepal-flash-floods-early-warning-himalayan-infrastructure.webp)
+
+Article
+
+Smart Cities
+
+#### Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn
+
+](https://sentratech.in/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html) [
+
+![How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist](https://sentratech.in/image/blogs/banners/blogs_early-warning-plan-critical-infrastructure-checklist.webp)
+
+Blog
+
+Infrastructure
+
+#### How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist
+
+](https://sentratech.in/blogs/early-warning-plan-critical-infrastructure-checklist.html) [
+
 ![SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk](https://sentratech.in/image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp)
 
 Article
@@ -761,13 +857,13 @@ Consulting
 
 ](https://sentratech.in/article/shm-consulting-expert-advisory-infrastructure-risk.html) [
 
-![Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL](https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp)
+![Digital Asset Management & Digital Twin for Substation - Bathupally TGNPDCL](https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp)
 
 Case Study
 
 Smart Substation
 
-#### Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL
+#### Digital Asset Management & Digital Twin for Substation - Bathupally TGNPDCL
 
 ](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html) [
 
@@ -1105,7 +1201,7 @@ Company News
 
 #### Stay Ahead in Smart Infrastructure
 
-Get exclusive insights, case studies, and IoT trends delivered straight to your inbox.
+Case studies, monitoring insights and IoT news, sent to your inbox.
 
 ![Client review avatar](https://sentratech.in/image/testimonials/reviews1.webp)
 
@@ -1131,9 +1227,9 @@ Scalability
 
 What Our Clients Say
 
-## Don’t Trust Us, Trust Their Voice
+## What our clients say
 
-Discover how your projects achieve maximum visual impact with Sentra's expert SHM solutions.
+Clients on what Sentra's SHM work has changed for their projects.
 
 [See All Testimonials](https://sentratech.in/testimonial.html)
 
@@ -1190,7 +1286,7 @@ Build a Family
 
 ### Reimagine What’s Possible
 
-We help businesses use IoT-driven insights and innovative solutions to build what's next.
+We help organisations use IoT data to plan and run their infrastructure.
 
 [ Got Questions? **Read FAQs** ](https://sentratech.in/faq.html)
 
@@ -1198,7 +1294,7 @@ How It Works
 
 ## Smart Steps in Monitoring Excellence
 
-From concept to continuous performance, we combine engineering expertise with intelligent automation to keep your monitoring journey seamless, scalable, and insight-driven.
+From the first conversation to long-term operation, our engineers and automated systems keep your monitoring running smoothly and growing with your needs.
 
 [Start Your Monitoring Journey](https://sentratech.in/contact.html)
 
@@ -1208,7 +1304,7 @@ search_insights
 
 ##### Discovery & Project Assessment
 
-We start by understanding your infrastructure goals and site challenges, identifying where smart monitoring and data integration can deliver the greatest impact.
+We start by understanding your infrastructure goals and site conditions, and work out where monitoring and data integration will help most.
 
 precision_manufacturing
 
@@ -1216,7 +1312,7 @@ precision_manufacturing
 
 ##### Strategy & System Design
 
-Our experts develop a tailored monitoring architecture, combining precision sensors, edge analytics, and network design, built to match your project requirements.
+Our engineers design a monitoring system for your project, choosing the sensors, edge analytics and network layout to fit your requirements.
 
 construction
 
@@ -1224,7 +1320,7 @@ construction
 
 ##### Implementation & Optimization
 
-From installation to calibration, we ensure smooth deployment and real-time data reliability. Continuous optimization keeps your monitoring ecosystem performing at its best.
+We install and calibrate the system and make sure the data is reliable from day one. After that we keep tuning it so it keeps performing well.
 
 analytics
 
@@ -1232,17 +1328,47 @@ analytics
 
 ##### Insights, Reporting & Growth
 
-We deliver clear, actionable analytics and transparent reporting that help you make data-driven decisions with measurable ROI and sustained structural confidence.
+We provide clear analytics and straightforward reports, so you can make decisions from the data and see the return on your investment.
 
 Insights & Trends
 
-## Latest Smart Infrastructure Strategies & Innovations
+## Latest articles on infrastructure monitoring
 
-Explore our latest articles covering IoT adoption, infrastructure monitoring, AI-driven automation, and actionable strategies for future-ready businesses.
+Articles on IoT adoption, infrastructure monitoring, AI and automation, with practical advice you can apply.
 
 [View All Articles](https://sentratech.in/resources.html#articles)
 
 [
+
+![Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time](https://sentratech.in/image/articles/article_metro-rail-monitoring-tunnels-viaducts-stations.webp)
+
+Rail Infrastructure
+
+#### Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time
+
+Rail Infrastructure · Oct 16, 2026
+
+](https://sentratech.in/article/metro-rail-monitoring-tunnels-viaducts-stations.html) [
+
+![Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn](https://sentratech.in/image/articles/article_nepal-flash-floods-early-warning-himalayan-infrastructure.webp)
+
+Smart Cities
+
+#### Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn
+
+Smart Cities · Oct 12, 2026
+
+](https://sentratech.in/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html) [
+
+![How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist](https://sentratech.in/image/blogs/banners/blogs_early-warning-plan-critical-infrastructure-checklist.webp)
+
+Infrastructure
+
+#### How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist
+
+Infrastructure · Oct 12, 2026
+
+](https://sentratech.in/blogs/early-warning-plan-critical-infrastructure-checklist.html) [
 
 ![SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk](https://sentratech.in/image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp)
 
@@ -1254,11 +1380,11 @@ Consulting · Sep 30, 2026
 
 ](https://sentratech.in/article/shm-consulting-expert-advisory-infrastructure-risk.html) [
 
-![Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL](https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp)
+![Digital Asset Management & Digital Twin for Substation - Bathupally TGNPDCL](https://sentratech.in/image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp)
 
 Smart Substation
 
-#### Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL
+#### Digital Asset Management & Digital Twin for Substation - Bathupally TGNPDCL
 
 Smart Substation · Sep 30, 2026
 

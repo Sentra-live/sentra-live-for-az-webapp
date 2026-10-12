@@ -12,6 +12,8 @@ All our blogs, case studies, and articles, organized in one place for easy acces
 
 **0**Blogs **0**Case Studies **0**Articles
 
+Buyer guides: [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html) · [What Drives SHM Cost](https://sentratech.in/blogs/structural-health-monitoring-cost-factors.html)
+
 0 RESULTS
 
 Recently Published

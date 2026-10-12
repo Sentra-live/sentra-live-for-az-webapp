@@ -387,8 +387,18 @@ Data quality, legacy-system interoperability, sensor and network reliability, cy
 
 Sentra combines digital engineering (scan-to-BIM, digital twin integration, ISO 19650 information management) with an IoT-native asset monitoring platform: edge-connected sensors, real-time dashboards, predictive alerts, and integration with CMMS/ERP/SCADA: following a Monitor → Understand → Predict → Act approach.
 
+Related service [Infrastructure Digital Twins ](https://sentratech.in/solutions/digital-twin.html)
+
+- [The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html)
+
+- [3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html)
+
+- [Building Resilient Smart Cities with Data-Driven Insights](https://sentratech.in/article/building-resilient-smart-cities-with-data-driven-insights.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=digital-twin-predictive-maintenance-sentra)
+
 ## Ready to See Predictive Monitoring on Your Assets?
 
 Whether you need IoT sensor deployment, real-time monitoring dashboards, or a full Digital Twin implementation, Sentra Technologies has the expertise and technology to help you protect your assets.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=digital-twin-predictive-maintenance-sentra)

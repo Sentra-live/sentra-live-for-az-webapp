@@ -61,8 +61,18 @@ Deploying IoT sensors at 12 fatigue-critical locations (weld toes at arch-rib co
 
 This early warning enables the bridge owner to implement targeted interventions: load restrictions for overweight vehicles, welding repairs at the most heavily damaged connections, and re-routing of heavy traffic to alternative routes, all planned years before any visible crack would appear during a standard visual inspection.
 
+Related service [Fatigue & Residual Life Assessment ](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html)
+
+- [10 Early Warning Signs Your Bridge Needs Continuous Monitoring](https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html)
+
+- [Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html)
+
+- [Top 5 Hidden Structural Damages That Manual Bridge Inspection Misses](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=fatigue-life-assessment)
+
 ## Conclusion: Looking Ahead
 
 None of this replaces engineering judgment; it just gives engineers better data to judge with. As sensor costs keep falling, instrumenting the fatigue-critical details on a structure is no longer reserved for landmark bridges; it's becoming a normal part of managing an aging asset.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=fatigue-life-assessment)

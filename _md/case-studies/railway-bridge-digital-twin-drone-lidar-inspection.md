@@ -309,8 +309,18 @@ Bridge No. 60 DN is a straightforward demonstration of what reality capture does
 
 The model on its own is documentation. Connected to [asset monitoring and management](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html) and to sensors on the structure, it becomes the place where a bridge's condition is actually tracked over its remaining life.
 
+Related service [Infrastructure Digital Twins ](https://sentratech.in/solutions/digital-twin.html)
+
+- [Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html)
+
+- [The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html)
+
+- [3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=railway-bridge-digital-twin-drone-lidar-inspection)
+
 ## Need a digital twin of your bridge?
 
 Tell us about the structure and we will scope the drone and LiDAR survey, the modelling, and what it would take to connect monitoring to it.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Similar Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=railway&amp;source=railway-bridge-digital-twin-drone-lidar-inspection)

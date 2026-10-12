@@ -49,8 +49,18 @@ Edge computing is increasingly critical: processing vibration data, computing FF
 
 - **Commercial Facilities:** Energy optimization through occupancy-based HVAC control, real-time fault detection in MEP systems, and predictive maintenance of elevators, chillers, and fire protection systems reduces operating costs by 15% to 30% while improving occupant satisfaction scores.
 
+Related service [Predictive Maintenance & Condition Monitoring ](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html)
+
+- [Predictive Maintenance for Industrial Facilities](https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html)
+
+- [Intelligent Pump House Monitoring & Control](https://sentratech.in/article/intelligent-pump-house-monitoring-and-control.html)
+
+- [Intelligent Pump House Monitoring & Control](https://sentratech.in/blogs/intelligent-pump-house-monitoring-and-control.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=advanced-iot-solutions)
+
 ## Conclusion
 
 None of these pieces (sensors, GIS, digital twins, edge compute) does much on its own. Stitched together, they're the difference between finding out about a problem from an inspection report and finding out about it before it becomes one.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=advanced-iot-solutions)

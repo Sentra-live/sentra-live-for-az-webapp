@@ -119,8 +119,7 @@
         <link rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=arrow_upward,attach_file,battery_charging_full,biotech,bolt,book,cable,chat,close,cloud_sync,dark_mode,database,document_scanner,engineering,expand_more,handshake,history,keyboard_arrow_down,language,light_mode,monitoring,precision_manufacturing,router,search,sensors,signpost,speed,terrain,view_in_ar&display=swap">
     </noscript>
-    <link rel="icon" href="/image/branding/favicon.webp" type="image/png" sizes="16x16">
-
+    <link rel="icon" href="/image/branding/favicon.webp" type="image/webp" sizes="16x16">
 
     <!-- Apple Touch Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/image/branding/favicon.webp">
@@ -837,6 +836,42 @@
         }
     }
 
+    /* ── Header "Request Assessment" pill (primary conversion CTA) ── */
+    .navbar-assess-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 42px;
+        padding: 0 18px;
+        border-radius: 100px;
+        border: 1.5px solid #f48120;
+        color: #f48120;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .navbar-assess-pill:hover {
+        background: #f48120;
+        color: #fff;
+    }
+
+    /* Keep the header from crowding: the phone pill gives way first. */
+    @media (max-width: 1500px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .navbar-assess-pill {
+            display: none;
+        }
+    }
+
     /* ── About Us: Industry Verticals Row ── */
     .mega-industries-row {
         border-top: 1px solid rgba(255, 255, 255, 0.07);
@@ -1037,7 +1072,18 @@
                             aria-haspopup="true" aria-expanded="false">
                             SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
-                        <div class="dropdown-menu mega-solutions">
+                        <div class="dropdown-menu mega-solutions" aria-label="Solutions navigation">
+                            <div class="solutions-menu-chrome">
+                                <div>
+                                    <span class="solutions-menu-eyebrow">Solutions navigator</span>
+                                    <strong>Find the right engineering pathway</strong>
+                                </div>
+                                <div class="solutions-menu-actions">
+                                    <a href="./technology/">Technology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="./solutions.html">All solutions <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="solutions-panel solutions-panel--v1" data-solutions-panel="v1" hidden aria-hidden="true">
                             <div class="solutions-bento">
 
                                 <!-- Row 1: SHM (wide) + Bridge (narrow) -->
@@ -1136,7 +1182,58 @@
                                         <span class="sol-fill-sub">Documentation & digital workflows</span>
                                     </a>
                                 </div>
+                                <!-- Row 4: buyer-intent application pages -->
+                                <div class="mega-quickbar" style="margin-top:10px;border-radius:12px;">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="./solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="./solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="./solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="./monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
 
+                            </div>
+                            </div>
+
+                            <div class="solutions-panel solutions-panel--v2" data-solutions-panel="v2" aria-hidden="false">
+                                <div class="solutions-v2-layout">
+                                    <div class="solutions-v2-nav">
+                                        <section class="solutions-v2-group">
+                                            <p>Monitor &amp; diagnose</p>
+                                            <a class="solutions-v2-link is-active" href="./solutions/structural-health-monitoring.html" data-img="./image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Structural Health Monitoring" data-sub="Continuous insight for bridges, buildings and critical infrastructure."><i class="fas fa-chart-line"></i><span><strong>Structural Health Monitoring</strong><small>Real-time sensing &amp; alerts</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="./solutions/asset-monitoring-and-management-solutions.html" data-img="./image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp" data-name="Asset Monitoring" data-sub="Bring condition, performance and lifecycle data into one operational view."><i class="fas fa-database"></i><span><strong>Asset Monitoring</strong><small>Lifecycle intelligence</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="./solutions/geotechnical-and-foundation-monitoring.html" data-img="./image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp" data-name="Geotechnical Monitoring" data-sub="Track ground, slope and foundation movement before risk escalates."><i class="fas fa-mountain"></i><span><strong>Geotechnical Monitoring</strong><small>Ground &amp; foundation movement</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Inspect &amp; assess</p>
+                                            <a class="solutions-v2-link" href="./solutions/bridge-inspection-and-condition-assessment.html" data-img="./image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" data-name="Bridge Inspection" data-sub="Evidence-led inspection and condition assessment for safer decisions."><i class="fas fa-bridge"></i><span><strong>Bridge Inspection</strong><small>Condition assessment</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="./solutions/advanced-non-destructive-testing-ndt.html" data-img="./image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp" data-name="Advanced NDT" data-sub="Reveal hidden defects with non-destructive testing and expert interpretation."><i class="fas fa-microscope"></i><span><strong>Advanced NDT</strong><small>Non-destructive evaluation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="./solutions/fatigue-and-residual-life-assessment.html" data-img="./image/solutions/Homepage/Fatigue%20%26%20Residual%20Life%20Assessment.webp" data-name="Fatigue &amp; Residual Life" data-sub="Quantify remaining service life and prioritize intervention with confidence."><i class="fas fa-tachometer-alt"></i><span><strong>Fatigue &amp; Residual Life</strong><small>Load cycles &amp; service life</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Model &amp; advise</p>
+                                            <a class="solutions-v2-link" href="./solutions/digital-twin.html" data-img="./image/solutions/Homepage/Facility-Management.webp" data-name="Digital Twin" data-sub="Connect live asset data to a decision-ready digital representation."><i class="fas fa-cubes"></i><span><strong>Digital Twin</strong><small>Live asset simulation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="./solutions/digital-engineering-and-documentation.html" data-img="./image/solutions/Homepage/Facility-Management.webp" data-name="Digital Engineering" data-sub="Turn engineering records and field data into dependable digital workflows."><i class="fas fa-file-contract"></i><span><strong>Digital Engineering</strong><small>Documentation &amp; workflows</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="./solutions/consulting-and-advisory-services.html" data-img="./image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Consulting &amp; Advisory" data-sub="Independent engineering expertise from assessment through implementation."><i class="fas fa-lightbulb"></i><span><strong>Consulting &amp; Advisory</strong><small>Expert engineering support</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="solutions-v2-preview" role="region" aria-label="Selected solution preview">
+                                        <img class="solutions-v2-preview-img" src="./image/solutions/Homepage/Structural%20Health%20Monitoring.webp" alt="Structural monitoring sensors installed on infrastructure">
+                                        <div class="solutions-v2-preview-shade"></div>
+                                        <div class="solutions-v2-preview-content">
+                                            <span>Featured solution</span>
+                                            <h3>Structural Health Monitoring</h3>
+                                            <p>Continuous insight for bridges, buildings and critical infrastructure.</p>
+                                            <a href="./solutions/structural-health-monitoring.html">Explore solution <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mega-quickbar solutions-v2-apps">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="./solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="./solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="./solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="./monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1697,6 +1794,10 @@
                         <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
                     </button>
                 </div>
+                <a href="./monitoring-assessment.html?source=header" class="navbar-assess-pill" data-cta="assessment-header">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>Request Assessment</span>
+                </a>
                 <a href="tel:+917893023322" class="navbar-call-pill">
                     <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
                     <span class="navbar-call-text">+91 78930 23322</span>
@@ -1788,29 +1889,108 @@
             }
 
             /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            /* Solutions navigator: V2 is the final menu design. */
+            var solutionsMenu = document.querySelector('.mega-solutions');
+            if (solutionsMenu) {
+                var solutionPanels = solutionsMenu.querySelectorAll('[data-solutions-panel]');
+                solutionPanels.forEach(function (panel) {
+                    var isCurrent = panel.getAttribute('data-solutions-panel') === 'v2';
+                    panel.hidden = !isCurrent;
+                    panel.setAttribute('aria-hidden', String(!isCurrent));
+                    if ('inert' in panel) panel.inert = !isCurrent;
+                });
+
+                var solutionLinks = solutionsMenu.querySelectorAll('.solutions-v2-link[data-img]');
+                var solutionPreviewImg = solutionsMenu.querySelector('.solutions-v2-preview-img');
+                var solutionPreviewTitle = solutionsMenu.querySelector('.solutions-v2-preview h3');
+                var solutionPreviewText = solutionsMenu.querySelector('.solutions-v2-preview p');
+                var solutionPreviewCta = solutionsMenu.querySelector('.solutions-v2-preview-content a');
+                function updateSolutionPreview(link) {
+                    solutionLinks.forEach(function (item) { item.classList.toggle('is-active', item === link); });
+                    solutionPreviewImg.src = link.getAttribute('data-img');
+                    solutionPreviewImg.alt = link.getAttribute('data-name') + ' solution preview';
+                    solutionPreviewTitle.textContent = link.getAttribute('data-name');
+                    solutionPreviewText.textContent = link.getAttribute('data-sub');
+                    solutionPreviewCta.href = link.href;
+                }
+                solutionLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { updateSolutionPreview(link); });
+                    link.addEventListener('focus', function () { updateSolutionPreview(link); });
+                });
+            }
+
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
                 );
                 if (!dropdown) return;
                 var closeTimer = null;
+                var trigger = item.querySelector('.dropdown-toggle');
 
-                function openMenu() {
-                    if (window.innerWidth < 1024) return;
+                function setExpanded(expanded) {
+                    if (trigger) trigger.setAttribute('aria-expanded', String(expanded));
+                }
+                function openMenu(force) {
+                    if (window.innerWidth <= 1024) return;
+                    if (item.classList.contains('mega-dismissed') && !force) return;
                     clearTimeout(closeTimer);
+                    item.classList.remove('mega-dismissed');
                     item.classList.add('mega-open');
+                    setExpanded(true);
+                }
+                function closeMenu(dismissHover) {
+                    clearTimeout(closeTimer);
+                    item.classList.remove('mega-open');
+                    item.classList.toggle('mega-dismissed', Boolean(dismissHover));
+                    setExpanded(false);
                 }
                 function scheduleClose(delay) {
                     clearTimeout(closeTimer);
                     closeTimer = setTimeout(function () {
-                        item.classList.remove('mega-open');
+                        closeMenu(false);
                     }, delay);
                 }
 
-                item.addEventListener('mouseenter', function () { openMenu(); });
-                item.addEventListener('mouseleave', function () { scheduleClose(280); });
-                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseenter', function () { openMenu(false); });
+                item.addEventListener('mouseleave', function () {
+                    item.classList.remove('mega-dismissed');
+                    scheduleClose(280);
+                });
+                dropdown.addEventListener('mouseenter', function () { openMenu(false); });
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+
+                if (trigger) {
+                    trigger.addEventListener('click', function (event) {
+                        if (window.innerWidth <= 1024) return;
+                        event.preventDefault();
+                        if (item.classList.contains('mega-open')) closeMenu(true);
+                        else openMenu(true);
+                    });
+                    trigger.addEventListener('keydown', function (event) {
+                        if (window.innerWidth <= 1024 || !['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
+                        event.preventDefault();
+                        openMenu(true);
+                        var firstControl = dropdown.querySelector('[data-solutions-view], a[href], button:not([disabled])');
+                        if (firstControl) firstControl.focus();
+                    });
+                }
+
+                document.addEventListener('click', function (event) {
+                    if (!item.contains(event.target)) closeMenu(false);
+                });
+
+                item._closeMegaMenu = closeMenu;
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key !== 'Escape') return;
+                var openItem = document.querySelector('.nav-item.dropdown.mega-open');
+                if (!openItem) return;
+                var trigger = openItem.querySelector('.dropdown-toggle');
+                if (openItem._closeMegaMenu) openItem._closeMegaMenu(true);
+                if (trigger) {
+                    trigger.focus();
+                }
             });
 
             /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
@@ -1826,7 +2006,8 @@
 
         })();
     </script>
-</div></div>
+</div>
+</div>
     </header>
 
     <!-- Section Content Edit -->
@@ -1861,9 +2042,8 @@
 
             <!-- Quick links -->
             <div class="mmenu-quicklinks">
-                <a href="/" class="mmenu-quicklink">Home</a>
                 <a href="./about.html" class="mmenu-quicklink">About Us</a>
-                <a href="./contact.html" class="mmenu-quicklink">Contact Us</a>
+                <a href="./monitoring-assessment.html?source=mobile-menu" class="mmenu-quicklink" data-cta="assessment-mobile-menu">Request Assessment</a>
             </div>
 
             <!-- Products -->
@@ -1956,6 +2136,14 @@
                             class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
                     <a class="mmenu-simple-link" href="./solutions/digital-engineering-and-documentation.html"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                    <a class="mmenu-simple-link" href="./solutions/railway-bridge-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Railway Bridge Monitoring</a>
+                    <a class="mmenu-simple-link" href="./solutions/construction-vibration-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Construction Vibration</a>
+                    <a class="mmenu-simple-link" href="./solutions/predictive-maintenance-condition-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Predictive Maintenance</a>
+                    <a class="mmenu-simple-link" href="./technology/"><i
+                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Technology</a>
                 </div>
             </div>
 
@@ -1999,8 +2187,11 @@
         <div class="mmenu-bottom">
             <div class="mmenu-follow-row">
                 <span class="mmenu-follow-label">Follow Us</span>
-                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
-                    target="_blank" rel="noopener">Book Demo</a>
+                <div class="mmenu-bottom-actions">
+                    <a class="mmenu-contact-btn" href="./contact.html">Contact Us</a>
+                    <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                        target="_blank" rel="noopener">Book Demo</a>
+                </div>
             </div>
             <div class="mmenu-social-row">
                 <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
@@ -2013,6 +2204,10 @@
                     rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
                     rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="mmenu-social" href="https://medium.com/@sentra_8835" target="_blank"
+                    rel="noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                <a class="mmenu-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                    rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="mmenu-contact-row">
                 <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
@@ -2020,7 +2215,8 @@
             </div>
         </div>
     </nav>
-</div></div>
+</div>
+</div>
     </aside>
 
     <!-- Section Main Content-->
@@ -2042,8 +2238,7 @@
                     <div class="hero-layout">
                         <div class="hero-main">
                             <h1 class="title-heading-banner">Smart. Secure.<br>Scalable.</h1>
-                            <p class="hero-subheading">IoT-Powered Structural Health Monitoring, Asset Monitoring,
-                                Bridge Inspection &amp; Digital Twin Solutions</p>
+                            <p class="hero-subheading">Structural health monitoring that shows how your assets are actually behaving. We turn sensor readings, engineering data and digital twins into early warnings and maintenance decisions.</p>
                             <div class="hero-solution-pills">
                                 <a href="./solutions/digital-engineering-and-documentation.html"
                                     class="hero-solution-pill">
@@ -2075,8 +2270,8 @@
                                     <div class="btn-title"><span>Explore Solutions</span></div>
                                     <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
                                 </a>
-                                <a href="./about.html" class="btn btn-outline">
-                                    <div class="btn-title"><span>About Sentra</span></div>
+                                <a href="./monitoring-assessment.html?source=home-hero" class="btn btn-outline" data-cta="assessment-home-hero">
+                                    <div class="btn-title"><span>Request Assessment</span></div>
                                     <div class="icon-circle"><i class="fa-solid fa-arrow-right"></i></div>
                                 </a>
                             </div>
@@ -2087,7 +2282,7 @@
                                     data-video="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7478429953664040960?compact=1">
                                     <i class="fa-solid fa-play"></i>
                                 </button>
-                                <p>Watch how we transform ideas into reality that leave a lasting impact.</p>
+                                <p>Short films from our projects and the work behind them.</p>
                             </div>
                             <div class="banner-reviewer">
                                 <div class="d-flex flex-row align-items-center">
@@ -2123,7 +2318,7 @@
                         <div class="card card-expertise  animate-box animated animate__animated"
                             data-animate="animate__fadeInDown">
                             <h4>Ready to See Intelligent Monitoring in Action?</h4>
-                            <p>Experience how we adapt to your scalable project.</p>
+                            <p>See how monitoring would work at the scale of your project.</p>
                             <div class="d-flex align-items-center flex-row gspace-2 expertise-link">
                                 <a href="./contact.html">Schedule a Demo</a>
                                 <i class="fa-solid fa-circle-arrow-right"></i>
@@ -2140,11 +2335,7 @@
                                     <h6 class="mb-0">Years of Experience on Digital Twin and Sensor Monitoring</h6>
                                 </div>
                             </div>
-                            <p class="expertise-quote">
-                                <i class="fa-solid fa-quote-left"></i>
-                                Delivering reliable IoT-powered sensing and data-driven insights that ensure safety,
-                                precision, and efficiency across critical infrastructure projects.
-                            </p>
+                            <p class="expertise-quote"><i class="fa-solid fa-quote-left"></i> Reliable IoT sensing and clear data for safer, more precise and more efficient infrastructure projects.</p>
                         </div>
                     </div>
                     <div class="expertise-title">
@@ -2154,9 +2345,8 @@
                             <span>Our Expertise</span>
                         </div>
                         <h2 class="title-heading intro-heading-compact animate-box animated animate__animated"
-                            data-animate="animate__fadeInRight">Data like no other, Results we strive together</h2>
-                        <p class="intro-text-compact">At Sentra, we monitor infrastructure to give industries the
-                            intelligence and precision to move forward securely.</p>
+                            data-animate="animate__fadeInRight">Measured data, shared results</h2>
+                        <p class="intro-text-compact">Sentra monitors infrastructure so the people responsible for it know what condition it is in and can act with confidence.</p>
                         <div class="expertise-list expertise-list-grid">
                             <h5>What We Do Best</h5>
                             <div class="link-wrapper" style="margin-bottom:0.5rem;">
@@ -2215,6 +2405,61 @@
             </div>
         </div>
 
+        <!-- Section Market Positioning: one line per buyer -->
+        <div class="section">
+            <div class="hero-container">
+                <div class="d-flex flex-column gspace-2" style="margin-bottom:24px;">
+                    <div class="sub-heading">
+                        <i class="fa-regular fa-circle-dot"></i>
+                        <span>Who We Help</span>
+                    </div>
+                    <h2 class="title-heading intro-heading-compact">Continuous data for the assets you are responsible for</h2>
+                </div>
+                <div class="sol-related-grid home-market-grid">
+                        <a href="./industries/bridges-highways-monitoring.html" class="sol-related-card">
+                            <div class="sol-related-icon"><i class="fa-solid fa-road-bridge" aria-hidden="true"></i></div>
+                            <div class="sol-related-content">
+                                <h4>Bridges</h4>
+                                <span>Know how your bridge is behaving between inspections.</span>
+                            </div>
+                            <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                        </a>
+                        <a href="./solutions/railway-bridge-monitoring.html" class="sol-related-card">
+                            <div class="sol-related-icon"><i class="fa-solid fa-train" aria-hidden="true"></i></div>
+                            <div class="sol-related-content">
+                                <h4>Railways</h4>
+                                <span>Monitor vibration, strain and fatigue under live railway loads.</span>
+                            </div>
+                            <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                        </a>
+                        <a href="./solutions/construction-vibration-monitoring.html" class="sol-related-card">
+                            <div class="sol-related-icon"><i class="fa-solid fa-helmet-safety" aria-hidden="true"></i></div>
+                            <div class="sol-related-content">
+                                <h4>Construction</h4>
+                                <span>Know when ground and structures are moving before it becomes a problem.</span>
+                            </div>
+                            <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                        </a>
+                        <a href="./industries/dams-reservoirs-monitoring.html" class="sol-related-card">
+                            <div class="sol-related-icon"><i class="fa-solid fa-water" aria-hidden="true"></i></div>
+                            <div class="sol-related-content">
+                                <h4>Dams</h4>
+                                <span>Monitor deformation, seepage and pore pressure continuously.</span>
+                            </div>
+                            <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                        </a>
+                        <a href="./solutions/predictive-maintenance-condition-monitoring.html" class="sol-related-card">
+                            <div class="sol-related-icon"><i class="fa-solid fa-industry" aria-hidden="true"></i></div>
+                            <div class="sol-related-content">
+                                <h4>Industrial Assets</h4>
+                                <span>Detect equipment deterioration before failure disrupts operations.</span>
+                            </div>
+                            <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+                        </a>
+                </div>
+            </div>
+        </div>
+
         <!-- Section Applications / Industries -->
         <div class="section">
             <div class="hero-container">
@@ -2228,8 +2473,7 @@
                         <h2 class="title-heading intro-heading-compact heading-container heading-container-medium animate-box animated animate__animated"
                             data-animate="animate__fadeInDown">Tailored for Every Sector</h2>
                         <p class="intro-text-compact heading-container heading-container-medium animate-box animated animate__animated"
-                            data-animate="animate__fadeInDown">Beyond structures, explore Sentra's IoT monitoring
-                            solutions across the industries that keep critical infrastructure safe.</p>
+                            data-animate="animate__fadeInDown">Sentra's IoT monitoring covers more than individual structures. See how it works in each of the industries that keep critical infrastructure running.</p>
                     </div>
                     <div class="swiperProducts-layout animate-box animated animate__animated"
                         data-animate="animate__fadeInUp">
@@ -2247,8 +2491,7 @@
                                             <h4><a href="./industries/railway-infrastructure-monitoring.html">Railway
                                                     Infrastructure</a></h4>
                                             <span class="product-category-label">Industries</span>
-                                            <p>Real-time vibration, tilt, and dynamic load monitoring for tracks,
-                                                bridges, and rail structures under live traffic.</p>
+                                            <p>Live vibration, tilt and dynamic load monitoring for track, bridges and rail structures under traffic.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2264,8 +2507,7 @@
                                             <h4><a href="./industries/bridges-highways-monitoring.html">Bridges &amp;
                                                     Highway Structures</a></h4>
                                             <span class="product-category-label">Industries</span>
-                                            <p>Continuous displacement, strain, and inclination monitoring to detect
-                                                structural degradation before it becomes critical.</p>
+                                            <p>Continuous displacement, strain and inclination monitoring to catch structural deterioration before it becomes critical.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2281,8 +2523,7 @@
                                             <h4><a href="./industries/buildings-highrise-monitoring.html">Buildings
                                                     &amp; High-Rise</a></h4>
                                             <span class="product-category-label">Industries</span>
-                                            <p>Settlement monitoring, tilt tracking, and seismic response systems for
-                                                residential, commercial, and heritage structures.</p>
+                                            <p>Settlement, tilt and seismic response monitoring for residential, commercial and heritage buildings.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2298,8 +2539,7 @@
                                             <h4><a href="./industries/dams-reservoirs-monitoring.html">Dams &amp;
                                                     Reservoirs</a></h4>
                                             <span class="product-category-label">Industries</span>
-                                            <p>GNSS-based displacement, pore pressure, and seepage monitoring for
-                                                earthfill, concrete, and masonry dams.</p>
+                                            <p>GNSS displacement, pore pressure and seepage monitoring for earthfill, concrete and masonry dams.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2315,8 +2555,7 @@
                                             <h4><a href="./industries/mining-geotechnical-monitoring.html">Mining
                                                     &amp; Geotechnical</a></h4>
                                             <span class="product-category-label">Industries</span>
-                                            <p>Slope stability, subsidence, and ground deformation monitoring for
-                                                open-pit mines, tunnels, and retaining structures.</p>
+                                            <p>Slope stability, subsidence and ground deformation monitoring for open-pit mines, tunnels and retaining structures.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2331,9 +2570,7 @@
                                             <h4><a href="./industries/ports-marine-monitoring.html">Ports &amp;
                                                     Marine</a></h4>
                                             <span class="product-category-label">Industries</span>
-                                            <p>Corrosion tracking, jetty tilt, and structural load monitoring for
-                                                quays, wharves, and offshore platforms in harsh marine environments.
-                                            </p>
+                                            <p>Corrosion, jetty tilt and structural load monitoring for quays, wharves and offshore platforms in harsh marine conditions.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2349,8 +2586,7 @@
                                             <h4><a href="./industries/construction-tunnelling-monitoring.html">Construction
                                                     &amp; Tunnelling</a></h4>
                                             <span class="product-category-label">Industries</span>
-                                            <p>Real-time deformation, convergence, and vibration control during deep
-                                                excavation, tunnelling, and high-rise construction phases.</p>
+                                            <p>Live deformation, convergence and vibration monitoring during deep excavation, tunnelling and high-rise construction.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2366,8 +2602,7 @@
                                             <h4><a href="./industries/industrial-facilities-monitoring.html">Industrial
                                                     Facilities</a></h4>
                                             <span class="product-category-label">Industries</span>
-                                            <p>Asset health, predictive maintenance, and equipment vibration
-                                                monitoring for power plants, refineries, and process industries.</p>
+                                            <p>Asset health, predictive maintenance and equipment vibration monitoring for power plants, refineries and process plants.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -2404,18 +2639,12 @@
                     <div class="row row-cols-xl-2 row-cols-1 align-items-center px-5 position-relative z-2">
                         <div class="col">
                             <div class="d-flex flex-column justify-content-start pe-xl-3 pe-0">
-                                <h3 class="title-heading">
-                                    Powering Success with Our Top Partners
-                                </h3>
+                                <h3 class="title-heading">Our technology partners</h3>
                             </div>
                         </div>
                         <div class="col">
                             <div class="d-flex flex-column ps-xl-3 ps-0 pt-3 pt-xl-0">
-                                <p>
-                                    At Sentra, we work with industry leaders to deliver advanced IoT monitoring
-                                    and digital solutions that improve accuracy, efficiency, and innovation, backed
-                                    by hands-on engineering expertise.
-                                </p>
+                                <p>We work with leading manufacturers to supply IoT monitoring and digital tools, and our own engineers handle the design, installation and interpretation.</p>
                                 <div class="link-wrapper">
                                     <a href="partnership.html" style="color: #f48120;">Join Us</a>
                                     <i class="fa-solid fa-arrow-circle-right accent-color"></i>
@@ -2586,8 +2815,7 @@
                     <h2 class="title-heading intro-heading-compact animate-box animated animate__animated"
                         data-animate="animate__fadeInDown">Your Success is Our Mission</h2>
                     <p class="mb-0 intro-text-compact animate-box animated animate__animated"
-                        data-animate="animate__fadeInDown">We always understand and adapt for business.
-                    </p>
+                        data-animate="animate__fadeInDown">We fit the solution to the client, not the other way round.</p>
                 </div>
                 <div class="d-flex flex-column flex-xl-row gspace-5">
                     <div class="chooseus-card-container">
@@ -2601,9 +2829,7 @@
                                     <i class="fa-solid fa-chevron-down showcase-chevron"></i>
                                 </div>
                                 <div class="solution-showcase-body">
-                                    <p>Ensure your infrastructure stands the test of time. Our end-to-end SHM solutions
-                                        combine intelligent sensors, predictive analytics, and edge-based insights to
-                                        detect structural stress before it becomes a problem.</p>
+                                    <p>Keep your structures sound for the long term. Our SHM systems combine sensors, predictive analytics and edge processing to pick up structural stress before it turns into a problem.</p>
                                     <div class="link-wrapper">
                                         <a href="./solutions/structural-health-monitoring.html"
                                             aria-label="Read More about Structural Health Monitoring">Explore Structural
@@ -2621,10 +2847,7 @@
                                     <i class="fa-solid fa-chevron-down showcase-chevron"></i>
                                 </div>
                                 <div class="solution-showcase-body">
-                                    <p>Ensure complete visibility into your bridge assets. Our drone-based aerial
-                                        surveys
-                                        and underwater ROV inspections deliver fast, safe, accurate assessments
-                                        that uncover hidden defects and support confident maintenance decisions.</p>
+                                    <p>Know the condition of every bridge you manage. Drone surveys and underwater ROV inspections give fast, safe and accurate assessments, find hidden defects and back up your maintenance decisions.</p>
                                     <div class="link-wrapper">
                                         <a href="./solutions/bridge-inspection-and-condition-assessment.html"
                                             aria-label="Read More about Bridge Inspection & Condition Assessment">Explore
@@ -2642,9 +2865,7 @@
                                     <i class="fa-solid fa-chevron-down showcase-chevron"></i>
                                 </div>
                                 <div class="solution-showcase-body">
-                                    <p>Know exactly how much life remains in your assets. Our advanced fatigue analysis,
-                                        vibration monitoring, and predictive diagnostics help extend service life and
-                                        prevent unplanned failures.</p>
+                                    <p>Find out how much life your assets have left. Fatigue analysis, vibration monitoring and predictive diagnostics help extend service life and avoid unplanned failures.</p>
                                     <div class="link-wrapper">
                                         <a href="./solutions/fatigue-and-residual-life-assessment.html"
                                             aria-label="Read More about Fatigue & Residual Life Assessment">Explore
@@ -2662,9 +2883,7 @@
                                     <i class="fa-solid fa-chevron-down showcase-chevron"></i>
                                 </div>
                                 <div class="solution-showcase-body">
-                                    <p>Gain complete visibility into your critical assets: bridges, tunnels,
-                                        transformers, or industrial machinery. Our smart monitoring systems enable
-                                        proactive maintenance and higher uptime.</p>
+                                    <p>Keep track of your critical assets, whether bridges, tunnels, transformers or industrial machinery. Our monitoring systems support planned maintenance and higher uptime.</p>
                                     <div class="link-wrapper">
                                         <a href="./solutions/asset-monitoring-and-management-solutions.html"
                                             aria-label="Read More about Asset Monitoring & Management Solutions">Explore
@@ -2682,9 +2901,7 @@
                                     <i class="fa-solid fa-chevron-down showcase-chevron"></i>
                                 </div>
                                 <div class="solution-showcase-body">
-                                    <p>Detect ground movement before it impacts your structure. We monitor soil
-                                        behavior, pore pressure, settlement, and seismic response to provide early
-                                        warnings for engineers.</p>
+                                    <p>Spot ground movement before it affects your structure. We monitor soil behaviour, pore pressure, settlement and seismic response and give engineers early warning.</p>
                                     <div class="link-wrapper">
                                         <a href="./solutions/geotechnical-and-foundation-monitoring.html"
                                             aria-label="Read More about Geotechnical & Foundation Monitoring">Explore
@@ -2694,17 +2911,14 @@
                                 </div>
                             </div>
                             <div class="solution-showcase-item"
-                                data-img="./image/solutions/Homepage/Facility-Management.webp"
-                                data-alt="Digital Twin">
+                                data-img="./image/solutions/Homepage/Facility-Management.webp" data-alt="Digital Twin">
                                 <div class="solution-showcase-header">
                                     <span class="material-symbols-outlined">view_in_ar</span>
                                     <h4>Digital Twin</h4>
                                     <i class="fa-solid fa-chevron-down showcase-chevron"></i>
                                 </div>
                                 <div class="solution-showcase-body">
-                                    <p>See your assets as they really are, in real time. Our digital twins combine
-                                        accurate 3D models, BIM and live IoT sensor data to give you one view for
-                                        monitoring, simulation and smarter maintenance decisions.</p>
+                                    <p>See your assets as they are, in real time. Our digital twins combine accurate 3D models, BIM and live IoT sensor data in one view for monitoring, simulation and maintenance planning.</p>
                                     <div class="link-wrapper">
                                         <a href="./solutions/digital-twin.html"
                                             aria-label="Read More about Digital Twin">Explore
@@ -2755,11 +2969,10 @@
                     <div class="col">
                         <div class="d-flex flex-column gspace-2 justify-content-end h-100 animate-box animated animate__animated"
                             data-animate="animate__fadeInRight">
-                            <p class="intro-text-compact">Short films on LiDAR scanning, structural health monitoring,
-                                railway safety and connected infrastructure, straight from the field and the Sentra
-                                team.</p>
+                            <p class="intro-text-compact">Short films on LiDAR scanning, structural health monitoring, railway safety and connected infrastructure, filmed in the field with the Sentra team.</p>
                             <div class="link-wrapper">
-                                <a href="https://www.youtube.com/@Sentra-tech/" target="_blank" rel="noopener">Visit Our YouTube Channel</a>
+                                <a href="https://www.youtube.com/@Sentra-tech/" target="_blank" rel="noopener">Visit Our
+                                    YouTube Channel</a>
                                 <i class="fa-solid fa-circle-arrow-right"></i>
                             </div>
                         </div>
@@ -2767,149 +2980,171 @@
                 </div>
                 <div class="hv-slider">
                     <div class="hv-track" tabindex="0" aria-label="Sentra videos">
-                            <article class="hv-card" data-video="90-Rqc9rHq8">
-                                <div class="hv-media">
-                                    <button type="button" class="hv-play" aria-label="Play video: From LiDAR Scan to Interactive 3D Experience">
-                                        <img src="https://i.ytimg.com/vi/90-Rqc9rHq8/maxresdefault.jpg" alt="" loading="lazy"
-                                            onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
-                                        <span class="hv-cat">LiDAR &amp; 3D Scanning</span>
-                                        <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
-                                        <span class="hv-dur">0:57</span>
-                                    </button>
+                        <article class="hv-card" data-video="90-Rqc9rHq8">
+                            <div class="hv-media">
+                                <button type="button" class="hv-play"
+                                    aria-label="Play video: From LiDAR Scan to Interactive 3D Experience">
+                                    <img src="https://i.ytimg.com/vi/90-Rqc9rHq8/maxresdefault.jpg" alt=""
+                                        loading="lazy"
+                                        onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
+                                    <span class="hv-cat">LiDAR &amp; 3D Scanning</span>
+                                    <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
+                                    <span class="hv-dur">0:57</span>
+                                </button>
+                            </div>
+                            <div class="hv-body">
+                                <h3>From LiDAR Scan to Interactive 3D Experience</h3>
+                                <div class="hv-meta">
+                                    <span>Sentra &middot; 0:57</span>
                                 </div>
-                                <div class="hv-body">
-                                    <h3>From LiDAR Scan to Interactive 3D Experience</h3>
-                                    <div class="hv-meta">
-                                        <span>Sentra &middot; 0:57</span>
-                                    </div>
+                            </div>
+                        </article>
+                        <article class="hv-card" data-video="EcCtWOFLGuI">
+                            <div class="hv-media">
+                                <button type="button" class="hv-play"
+                                    aria-label="Play video: Drone LiDAR vs Terrestrial LiDAR: Which Is Better for Infrastructure Monitoring?">
+                                    <img src="https://i.ytimg.com/vi/EcCtWOFLGuI/maxresdefault.jpg" alt=""
+                                        loading="lazy"
+                                        onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
+                                    <span class="hv-cat">LiDAR &amp; 3D Scanning</span>
+                                    <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
+                                    <span class="hv-dur">2:24</span>
+                                </button>
+                            </div>
+                            <div class="hv-body">
+                                <h3>Drone LiDAR vs Terrestrial LiDAR: Which Is Better for Infrastructure Monitoring?
+                                </h3>
+                                <div class="hv-meta">
+                                    <span>Sentra &middot; 2:24</span>
                                 </div>
-                            </article>
-                            <article class="hv-card" data-video="EcCtWOFLGuI">
-                                <div class="hv-media">
-                                    <button type="button" class="hv-play" aria-label="Play video: Drone LiDAR vs Terrestrial LiDAR: Which Is Better for Infrastructure Monitoring?">
-                                        <img src="https://i.ytimg.com/vi/EcCtWOFLGuI/maxresdefault.jpg" alt="" loading="lazy"
-                                            onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
-                                        <span class="hv-cat">LiDAR &amp; 3D Scanning</span>
-                                        <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
-                                        <span class="hv-dur">2:24</span>
-                                    </button>
+                            </div>
+                        </article>
+                        <article class="hv-card" data-video="xmviDUnrtNo">
+                            <div class="hv-media">
+                                <button type="button" class="hv-play"
+                                    aria-label="Play video: Connected Asset Intelligence for Water Infrastructure | SENTRA by Clove Technologies">
+                                    <img src="https://i.ytimg.com/vi/xmviDUnrtNo/maxresdefault.jpg" alt=""
+                                        loading="lazy"
+                                        onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
+                                    <span class="hv-cat">Water Infrastructure</span>
+                                    <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
+                                    <span class="hv-dur">1:15</span>
+                                </button>
+                            </div>
+                            <div class="hv-body">
+                                <h3>Connected Asset Intelligence for Water Infrastructure | SENTRA by Clove Technologies
+                                </h3>
+                                <div class="hv-meta">
+                                    <span>Sentra &middot; 1:15</span>
                                 </div>
-                                <div class="hv-body">
-                                    <h3>Drone LiDAR vs Terrestrial LiDAR: Which Is Better for Infrastructure Monitoring?</h3>
-                                    <div class="hv-meta">
-                                        <span>Sentra &middot; 2:24</span>
-                                    </div>
+                            </div>
+                        </article>
+                        <article class="hv-card" data-video="Fh1OWcl19U0">
+                            <div class="hv-media">
+                                <button type="button" class="hv-play"
+                                    aria-label="Play video: Nepal | A reminder that seeing change sooner matters.">
+                                    <img src="https://i.ytimg.com/vi/Fh1OWcl19U0/maxresdefault.jpg" alt=""
+                                        loading="lazy"
+                                        onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
+                                    <span class="hv-cat">Structural Health Monitoring</span>
+                                    <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
+                                    <span class="hv-dur">1:24</span>
+                                </button>
+                            </div>
+                            <div class="hv-body">
+                                <h3>Nepal | A reminder that seeing change sooner matters.</h3>
+                                <div class="hv-meta">
+                                    <span>Sentra &middot; 1:24</span>
                                 </div>
-                            </article>
-                            <article class="hv-card" data-video="xmviDUnrtNo">
-                                <div class="hv-media">
-                                    <button type="button" class="hv-play" aria-label="Play video: Connected Asset Intelligence for Water Infrastructure | SENTRA by Clove Technologies">
-                                        <img src="https://i.ytimg.com/vi/xmviDUnrtNo/maxresdefault.jpg" alt="" loading="lazy"
-                                            onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
-                                        <span class="hv-cat">Water Infrastructure</span>
-                                        <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
-                                        <span class="hv-dur">1:15</span>
-                                    </button>
+                            </div>
+                        </article>
+                        <article class="hv-card" data-video="mQALUyzqst4">
+                            <div class="hv-media">
+                                <button type="button" class="hv-play"
+                                    aria-label="Play video: The Silent Danger Hiding Beneath Every Railway Track | Meet Sentra - Railway Safety, Reimagined.">
+                                    <img src="https://i.ytimg.com/vi/mQALUyzqst4/maxresdefault.jpg" alt=""
+                                        loading="lazy"
+                                        onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
+                                    <span class="hv-cat">Railway Monitoring</span>
+                                    <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
+                                    <span class="hv-dur">0:47</span>
+                                </button>
+                            </div>
+                            <div class="hv-body">
+                                <h3>The Silent Danger Hiding Beneath Every Railway Track | Meet Sentra - Railway Safety,
+                                    Reimagined.</h3>
+                                <div class="hv-meta">
+                                    <span>Sentra &middot; 0:47</span>
                                 </div>
-                                <div class="hv-body">
-                                    <h3>Connected Asset Intelligence for Water Infrastructure | SENTRA by Clove Technologies</h3>
-                                    <div class="hv-meta">
-                                        <span>Sentra &middot; 1:15</span>
-                                    </div>
+                            </div>
+                        </article>
+                        <article class="hv-card" data-video="7_7M6Swf4p0">
+                            <div class="hv-media">
+                                <button type="button" class="hv-play"
+                                    aria-label="Play video: Still Moving Forward | Sentra Independence Day 2026">
+                                    <img src="https://i.ytimg.com/vi/7_7M6Swf4p0/maxresdefault.jpg" alt=""
+                                        loading="lazy"
+                                        onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
+                                    <span class="hv-cat">Company</span>
+                                    <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
+                                    <span class="hv-dur">1:16</span>
+                                </button>
+                            </div>
+                            <div class="hv-body">
+                                <h3>Still Moving Forward | Sentra Independence Day 2026</h3>
+                                <div class="hv-meta">
+                                    <span>Sentra &middot; 1:16</span>
                                 </div>
-                            </article>
-                            <article class="hv-card" data-video="Fh1OWcl19U0">
-                                <div class="hv-media">
-                                    <button type="button" class="hv-play" aria-label="Play video: Nepal | A reminder that seeing change sooner matters.">
-                                        <img src="https://i.ytimg.com/vi/Fh1OWcl19U0/maxresdefault.jpg" alt="" loading="lazy"
-                                            onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
-                                        <span class="hv-cat">Structural Health Monitoring</span>
-                                        <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
-                                        <span class="hv-dur">1:24</span>
-                                    </button>
+                            </div>
+                        </article>
+                        <article class="hv-card" data-video="aq0LzTTa-4A">
+                            <div class="hv-media">
+                                <button type="button" class="hv-play"
+                                    aria-label="Play video: Monitor Today. Protect Tomorrow. | Sentra&#39;s Structural Health Monitoring | Buildings">
+                                    <img src="https://i.ytimg.com/vi/aq0LzTTa-4A/maxresdefault.jpg" alt=""
+                                        loading="lazy"
+                                        onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
+                                    <span class="hv-cat">Structural Health Monitoring</span>
+                                    <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
+                                    <span class="hv-dur">0:41</span>
+                                </button>
+                            </div>
+                            <div class="hv-body">
+                                <h3>Monitor Today. Protect Tomorrow. | Sentra&#39;s Structural Health Monitoring |
+                                    Buildings</h3>
+                                <div class="hv-meta">
+                                    <span>Sentra &middot; 0:41</span>
                                 </div>
-                                <div class="hv-body">
-                                    <h3>Nepal | A reminder that seeing change sooner matters.</h3>
-                                    <div class="hv-meta">
-                                        <span>Sentra &middot; 1:24</span>
-                                    </div>
+                            </div>
+                        </article>
+                        <article class="hv-card" data-video="SdzX8MXYcis">
+                            <div class="hv-media">
+                                <button type="button" class="hv-play"
+                                    aria-label="Play video: Predict Failures Before They Happen | Structural Health Monitoring by Sentra">
+                                    <img src="https://i.ytimg.com/vi/SdzX8MXYcis/maxresdefault.jpg" alt=""
+                                        loading="lazy"
+                                        onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
+                                    <span class="hv-cat">Structural Health Monitoring</span>
+                                    <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
+                                    <span class="hv-dur">1:40</span>
+                                </button>
+                            </div>
+                            <div class="hv-body">
+                                <h3>Predict Failures Before They Happen | Structural Health Monitoring by Sentra</h3>
+                                <div class="hv-meta">
+                                    <span>Sentra &middot; 1:40</span>
                                 </div>
-                            </article>
-                            <article class="hv-card" data-video="mQALUyzqst4">
-                                <div class="hv-media">
-                                    <button type="button" class="hv-play" aria-label="Play video: The Silent Danger Hiding Beneath Every Railway Track | Meet Sentra - Railway Safety, Reimagined.">
-                                        <img src="https://i.ytimg.com/vi/mQALUyzqst4/maxresdefault.jpg" alt="" loading="lazy"
-                                            onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
-                                        <span class="hv-cat">Railway Monitoring</span>
-                                        <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
-                                        <span class="hv-dur">0:47</span>
-                                    </button>
-                                </div>
-                                <div class="hv-body">
-                                    <h3>The Silent Danger Hiding Beneath Every Railway Track | Meet Sentra - Railway Safety, Reimagined.</h3>
-                                    <div class="hv-meta">
-                                        <span>Sentra &middot; 0:47</span>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="hv-card" data-video="7_7M6Swf4p0">
-                                <div class="hv-media">
-                                    <button type="button" class="hv-play" aria-label="Play video: Still Moving Forward | Sentra Independence Day 2026">
-                                        <img src="https://i.ytimg.com/vi/7_7M6Swf4p0/maxresdefault.jpg" alt="" loading="lazy"
-                                            onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
-                                        <span class="hv-cat">Company</span>
-                                        <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
-                                        <span class="hv-dur">1:16</span>
-                                    </button>
-                                </div>
-                                <div class="hv-body">
-                                    <h3>Still Moving Forward | Sentra Independence Day 2026</h3>
-                                    <div class="hv-meta">
-                                        <span>Sentra &middot; 1:16</span>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="hv-card" data-video="aq0LzTTa-4A">
-                                <div class="hv-media">
-                                    <button type="button" class="hv-play" aria-label="Play video: Monitor Today. Protect Tomorrow. | Sentra&#39;s Structural Health Monitoring | Buildings">
-                                        <img src="https://i.ytimg.com/vi/aq0LzTTa-4A/maxresdefault.jpg" alt="" loading="lazy"
-                                            onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
-                                        <span class="hv-cat">Structural Health Monitoring</span>
-                                        <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
-                                        <span class="hv-dur">0:41</span>
-                                    </button>
-                                </div>
-                                <div class="hv-body">
-                                    <h3>Monitor Today. Protect Tomorrow. | Sentra&#39;s Structural Health Monitoring | Buildings</h3>
-                                    <div class="hv-meta">
-                                        <span>Sentra &middot; 0:41</span>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="hv-card" data-video="SdzX8MXYcis">
-                                <div class="hv-media">
-                                    <button type="button" class="hv-play" aria-label="Play video: Predict Failures Before They Happen | Structural Health Monitoring by Sentra">
-                                        <img src="https://i.ytimg.com/vi/SdzX8MXYcis/maxresdefault.jpg" alt="" loading="lazy"
-                                            onload="if(this.naturalWidth<=120&&this.src.indexOf('maxresdefault')>-1)this.src=this.src.replace('maxresdefault','hqdefault')">
-                                        <span class="hv-cat">Structural Health Monitoring</span>
-                                        <span class="hv-play-btn"><i class="fa-solid fa-play"></i></span>
-                                        <span class="hv-dur">1:40</span>
-                                    </button>
-                                </div>
-                                <div class="hv-body">
-                                    <h3>Predict Failures Before They Happen | Structural Health Monitoring by Sentra</h3>
-                                    <div class="hv-meta">
-                                        <span>Sentra &middot; 1:40</span>
-                                    </div>
-                                </div>
-                            </article>
+                            </div>
+                        </article>
                     </div>
                     <div class="hv-controls">
                         <div class="hv-progress" aria-hidden="true"><span></span></div>
                         <span class="hv-count"><b>01</b> / 08</span>
                         <div class="hv-arrows">
-                            <button type="button" class="hv-arrow hv-prev" aria-label="Previous videos"><i class="fa-solid fa-arrow-left"></i></button>
-                            <button type="button" class="hv-arrow hv-next" aria-label="Next videos"><i class="fa-solid fa-arrow-right"></i></button>
+                            <button type="button" class="hv-arrow hv-prev" aria-label="Previous videos"><i
+                                    class="fa-solid fa-arrow-left"></i></button>
+                            <button type="button" class="hv-arrow hv-next" aria-label="Next videos"><i
+                                    class="fa-solid fa-arrow-right"></i></button>
                         </div>
                     </div>
                 </div>
@@ -2929,9 +3164,7 @@
                         <h2 class="title-heading intro-heading-compact heading-container heading-container-medium animate-box animated animate__animated"
                             data-animate="animate__fadeInDown">Hardware Built for Real-World Monitoring</h2>
                         <p class="intro-text-compact heading-container heading-container-medium animate-box animated animate__animated"
-                            data-animate="animate__fadeInDown">From laser scanners and wireless sensors to data loggers,
-                            wired sensors and communications hardware, explore the hardware powering our monitoring
-                            solutions.</p>
+                            data-animate="animate__fadeInDown">Laser scanners, wireless sensors, data loggers, wired sensors and communications hardware: the equipment behind our monitoring systems.</p>
                     </div>
                     <div class="product-filter-bar animate-box animated animate__animated"
                         data-animate="animate__fadeInUp">
@@ -3030,8 +3263,7 @@
                                         <div class="product-card-body">
                                             <h4>Lixel L2 Pro</h4>
                                             <span class="product-category-label">Laser Scanners</span>
-                                            <p>Precision redefined. Up to 640,000 pts/s and 300m range for large-scale
-                                                survey.</p>
+                                            <p>Up to 640,000 pts/s and 300 m range for large survey jobs.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3055,8 +3287,7 @@
                                         <div class="product-card-body">
                                             <h4>Tilt90 Tiltmeter</h4>
                                             <span class="product-category-label">Wireless Sensors</span>
-                                            <p>Three-axis tilt sensor offering rugged stability, low noise, and
-                                                long-range wireless telemetry for continuous monitoring.</p>
+                                            <p>Three-axis tilt sensor that is rugged, stable and low-noise, with long-range wireless telemetry for continuous monitoring.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3080,8 +3311,7 @@
                                         <div class="product-card-body">
                                             <h4>Tiltmeter Event Detection</h4>
                                             <span class="product-category-label">Wireless Sensors</span>
-                                            <p>Event-detection tiltmeter that triggers immediate alerts on sudden
-                                                movement for landslide and structural safety monitoring.</p>
+                                            <p>Tiltmeter with event detection that sends an alert as soon as it senses sudden movement, for landslide and structural safety monitoring.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3106,8 +3336,7 @@
                                         <div class="product-card-body">
                                             <h4>Vibration Meter</h4>
                                             <span class="product-category-label">Wireless Sensors</span>
-                                            <p>Advanced three-axis vibration sensing with internal calculation of PPV
-                                                and dominant frequency.</p>
+                                            <p>Three-axis vibration sensor that calculates PPV and dominant frequency on the device.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3131,8 +3360,7 @@
                                         <div class="product-card-body">
                                             <h4>Laser Tiltmeter</h4>
                                             <span class="product-category-label">Wireless Sensors</span>
-                                            <p>Ultra-precise laser tiltmeter delivering sub-microradian accuracy for
-                                                highly sensitive structural and geodetic measurements.</p>
+                                            <p>High-precision laser tiltmeter with sub-microradian accuracy for very sensitive structural and geodetic measurement.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3156,8 +3384,7 @@
                                         <div class="product-card-body">
                                             <h4>GNSS Meter</h4>
                                             <span class="product-category-label">Wireless Sensors</span>
-                                            <p>Satellite-based displacement monitoring providing precise three-axis
-                                                geospatial positioning data.</p>
+                                            <p>Satellite-based displacement monitoring with precise three-axis positioning.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3181,8 +3408,7 @@
                                         <div class="product-card-body">
                                             <h4>Digital Data Logger</h4>
                                             <span class="product-category-label">Data Loggers</span>
-                                            <p>Scalable digital logging solution for RS485 and SDI-12 sensor networks.
-                                            </p>
+                                            <p>Scalable digital data logger for RS485 and SDI-12 sensor networks.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3207,8 +3433,7 @@
                                         <div class="product-card-body">
                                             <h4>Vibrating Wire Logger</h4>
                                             <span class="product-category-label">Data Loggers</span>
-                                            <p>Robust logging for vibrating wire sensors, ensuring accurate frequency
-                                                readings in geotechnical applications.</p>
+                                            <p>Rugged data logger for vibrating wire sensors that gives accurate frequency readings in geotechnical work.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3232,8 +3457,7 @@
                                         <div class="product-card-body">
                                             <h4>Vibrating Wire RCR</h4>
                                             <span class="product-category-label">Data Loggers</span>
-                                            <p>Ultra-robust 5-channel data logger designed to be embedded in precast
-                                                concrete for real-time stress and strain monitoring.</p>
+                                            <p>Very rugged 5-channel data logger made to be cast into precast concrete for live stress and strain monitoring.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3258,8 +3482,7 @@
                                         <div class="product-card-body">
                                             <h4>Analog Data Logger</h4>
                                             <span class="product-category-label">Data Loggers</span>
-                                            <p>Multi-channel analog data logger supporting voltage, current, and bridge
-                                                inputs for legacy and hybrid sensor systems.</p>
+                                            <p>Multi-channel analog data logger that accepts voltage, current and bridge inputs, for older and mixed sensor systems.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3284,8 +3507,7 @@
                                         <div class="product-card-body">
                                             <h4>Piconode Data Logger</h4>
                                             <span class="product-category-label">Data Loggers</span>
-                                            <p>Compact wireless data logger for ultra-low-power analog sensor networks,
-                                                ideal for distributed, long-deployment monitoring.</p>
+                                            <p>Compact, very low-power wireless data logger for analog sensor networks spread over large areas for long periods.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3310,9 +3532,7 @@
                                         <div class="product-card-body">
                                             <h4>Triaxial MEMS Accelerometer</h4>
                                             <span class="product-category-label">Wired Sensors</span>
-                                            <p>High-precision wired accelerometer capturing acceleration, vibration, and
-                                                tilt for
-                                                structural health and dynamic load monitoring.</p>
+                                            <p>Precise wired accelerometer that measures acceleration, vibration and tilt for structural health and dynamic load monitoring.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3336,8 +3556,7 @@
                                         <div class="product-card-body">
                                             <h4>Vibrating Wire Strain Gauges</h4>
                                             <span class="product-category-label">Wired Sensors</span>
-                                            <p>Precision wired strain gauges for long-term stress and deformation
-                                                monitoring on steel, concrete, and rock structures.</p>
+                                            <p>Precise wired strain gauges for long-term stress and deformation monitoring on steel, concrete and rock.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3361,8 +3580,7 @@
                                         <div class="product-card-body">
                                             <h4>Gateway</h4>
                                             <span class="product-category-label">Narrowband Communications</span>
-                                            <p>Reliable 4G LTE gateway that securely forwards data from remote sensors,
-                                                ensuring real-time monitoring even in harsh outdoor environments.</p>
+                                            <p>4G LTE gateway that forwards data securely from remote sensors, so monitoring stays live even in harsh outdoor conditions.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3386,8 +3604,7 @@
                                         <div class="product-card-body">
                                             <h4>Repeater</h4>
                                             <span class="product-category-label">Narrowband Communications</span>
-                                            <p>Wireless repeater to extend network coverage and improve connectivity
-                                                stability across distributed sensor networks.</p>
+                                            <p>Wireless repeater that extends network coverage and keeps connections stable across spread-out sensor networks.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3411,9 +3628,7 @@
                                         <div class="product-card-body">
                                             <h4>Thread</h4>
                                             <span class="product-category-label">Broadband Communications</span>
-                                            <p>High-performance broadband node that delivers fast, reliable 4G/LTE data
-                                                communication for multi-sensor networks, even in remote or harsh
-                                                environments.</p>
+                                            <p>Broadband node that gives fast, reliable 4G/LTE communication for multi-sensor networks, even at remote or harsh sites.</p>
                                             <div class="product-card-actions">
                                                 <a href="./contact.html" class="btn-product-primary">
                                                     <span>Quote</span>
@@ -3517,9 +3732,7 @@
                             </div>
                             <div class="col">
                                 <div class="d-flex flex-column h-100 justify-content-end gspace-2">
-                                    <p class="intro-text-compact">Explore our latest blogs, case studies, and company
-                                        updates on IoT-powered monitoring, real-world deployments, and
-                                        infrastructure innovation.</p>
+                                    <p class="intro-text-compact">Our latest blogs, case studies and company news on IoT monitoring, real projects and infrastructure technology.</p>
                                     <div class="link-wrapper">
                                         <a href="./resources.html">View All Resources</a>
                                         <i class="fa-solid fa-circle-arrow-right"></i>
@@ -3532,109 +3745,190 @@
                             <div class="marquee-row marquee-row--ltr">
                                 <div class="marquee-track">
                                     <!-- Set A -->
-                                    <a href="./article/shm-consulting-expert-advisory-infrastructure-risk.html" class="marquee-card">
+                                    <a href="./article/metro-rail-monitoring-tunnels-viaducts-stations.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp" alt="SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk" loading="lazy">
+                                            <img src="./image/articles/article_metro-rail-monitoring-tunnels-viaducts-stations.webp"
+                                                alt="Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time"
+                                                loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Rail Infrastructure</span>
+                                            <h4>Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/nepal-flash-floods-early-warning-himalayan-infrastructure.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/article_nepal-flash-floods-early-warning-himalayan-infrastructure.webp"
+                                                alt="Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn"
+                                                loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Smart Cities</span>
+                                            <h4>Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./blogs/early-warning-plan-critical-infrastructure-checklist.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/blogs/banners/blogs_early-warning-plan-critical-infrastructure-checklist.webp"
+                                                alt="How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist"
+                                                loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Infrastructure</span>
+                                            <h4>How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step
+                                                Checklist</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/shm-consulting-expert-advisory-infrastructure-risk.html"
+                                        class="marquee-card">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp"
+                                                alt="SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Consulting</span>
-                                            <h4>SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk</h4>
+                                            <h4>SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk
+                                            </h4>
                                         </div>
                                     </a>
-                                    <a href="./case-studies/substation-digital-asset-management-predictive-maintenance.html" class="marquee-card">
+                                    <a href="./case-studies/substation-digital-asset-management-predictive-maintenance.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp" alt="Digital Asset Management &amp; Predictive Maintenance for Substation - Bathupally TGNPDCL" loading="lazy">
+                                            <img src="./image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp"
+                                                alt="Digital Asset Management &amp; Digital Twin for Substation - Bathupally TGNPDCL"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-case-studies">Case Study</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Smart Substation</span>
-                                            <h4>Digital Asset Management &amp; Predictive Maintenance for Substation - Bathupally TGNPDCL</h4>
+                                            <h4>Digital Asset Management &amp; Digital Twin for Substation - Bathupally
+                                                TGNPDCL</h4>
                                         </div>
                                     </a>
                                     <a href="./article/port-marine-infrastructure-monitoring.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/article_port-marine-infrastructure-monitoring.webp" alt="Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp; Offshore Structures" loading="lazy">
+                                            <img src="./image/articles/article_port-marine-infrastructure-monitoring.webp"
+                                                alt="Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp; Offshore Structures"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Ports</span>
-                                            <h4>Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp; Offshore Structures</h4>
+                                            <h4>Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays
+                                                &amp; Offshore Structures</h4>
                                         </div>
                                     </a>
                                     <a href="./blogs/slope-stability-monitoring-mining.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_slope-stability-monitoring-mining.webp" alt="Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_slope-stability-monitoring-mining.webp"
+                                                alt="Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Mining</span>
-                                            <h4>Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines</h4>
+                                            <h4>Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for
+                                                Open-Pit Mines</h4>
                                         </div>
                                     </a>
-                                    <a href="./case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html" class="marquee-card">
+                                    <a href="./case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp" alt="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study" loading="lazy">
+                                            <img src="./image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp"
+                                                alt="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-case-studies">Case Study</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Comparison Study</span>
-                                            <h4>Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study</h4>
+                                            <h4>Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
+                                            </h4>
                                         </div>
                                     </a>
-                                    <a href="./article/3d-laser-scanning-lidar-infrastructure-digital-twins.html" class="marquee-card">
+                                    <a href="./article/3d-laser-scanning-lidar-infrastructure-digital-twins.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp" alt="3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture Powers Digital Twins" loading="lazy">
+                                            <img src="./image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp"
+                                                alt="3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture Powers Digital Twins"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Digital Twin</span>
-                                            <h4>3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture Powers Digital Twins</h4>
+                                            <h4>3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture
+                                                Powers Digital Twins</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/dam-safety-monitoring-lidar-drones-digital-twins.html" class="marquee-card">
+                                    <a href="./blogs/dam-safety-monitoring-lidar-drones-digital-twins.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp" alt="Dam Safety Monitoring: How LiDAR, Drones, Sensors &amp; Digital Twins Are Transforming Dam Inspection" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp"
+                                                alt="Dam Safety Monitoring: How LiDAR, Drones, Sensors &amp; Digital Twins Are Transforming Dam Inspection"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Dams</span>
-                                            <h4>Dam Safety Monitoring: How LiDAR, Drones, Sensors &amp; Digital Twins Are Transforming Dam Inspection</h4>
+                                            <h4>Dam Safety Monitoring: How LiDAR, Drones, Sensors &amp; Digital Twins
+                                                Are Transforming Dam Inspection</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/gnss-displacement-monitoring-satellite-sensors.html" class="marquee-card">
+                                    <a href="./blogs/gnss-displacement-monitoring-satellite-sensors.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_gnss-displacement-monitoring.webp" alt="GNSS Displacement Monitoring: How Satellite Sensors Detect Ground &amp; Structural Movement" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_gnss-displacement-monitoring.webp"
+                                                alt="GNSS Displacement Monitoring: How Satellite Sensors Detect Ground &amp; Structural Movement"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Geotechnical</span>
-                                            <h4>GNSS Displacement Monitoring: How Satellite Sensors Detect Ground &amp; Structural Movement</h4>
+                                            <h4>GNSS Displacement Monitoring: How Satellite Sensors Detect Ground &amp;
+                                                Structural Movement</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html" class="marquee-card">
+                                    <a href="./blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_what-is-ground-penetrating-radar.webp" alt="What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_what-is-ground-penetrating-radar.webp"
+                                                alt="What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Advanced NDT</span>
-                                            <h4>What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels</h4>
+                                            <h4>What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and
+                                                Tunnels</h4>
                                         </div>
                                     </a>
-                                    <a href="./article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html" class="marquee-card">
+                                    <a href="./article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/articles_predictive-maintenance-industrial-facilities.webp" alt="Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure" loading="lazy">
+                                            <img src="./image/articles/articles_predictive-maintenance-industrial-facilities.webp"
+                                                alt="Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Industrial</span>
-                                            <h4>Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure</h4>
+                                            <h4>Predictive Maintenance for Industrial Facilities: How IoT Vibration
+                                                Sensors Prevent Failure</h4>
                                         </div>
                                     </a>
-                                    <a href="./case-studies/railway-bridge-fatigue-life-assessment-load-testing.html" class="marquee-card">
+                                    <a href="./case-studies/railway-bridge-fatigue-life-assessment-load-testing.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp" alt="Railway Bridge Fatigue Life Assessment and Load Testing" loading="lazy">
+                                            <img src="./image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp"
+                                                alt="Railway Bridge Fatigue Life Assessment and Load Testing"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-case-studies">Case Study</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3644,7 +3938,8 @@
                                     </a>
                                     <a href="./article/flood-monitoring-early-warning-system.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/articles_floodmonitoringandearlywarningsystem.webp" alt="Flood Monitoring &amp; Early Warning System" loading="lazy">
+                                            <img src="./image/articles/articles_floodmonitoringandearlywarningsystem.webp"
+                                                alt="Flood Monitoring &amp; Early Warning System" loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3654,118 +3949,204 @@
                                     </a>
                                     <a href="./blogs/continuous-building-shm-iot-sensors.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp" alt="Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp"
+                                                alt="Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Structural Health</span>
-                                            <h4>Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured</h4>
+                                            <h4>Continuous Building Monitoring with IoT Sensors: What Actually Gets
+                                                Measured</h4>
                                         </div>
                                     </a>
                                     <!-- Set B (duplicate for seamless loop) -->
-                                    <a href="./article/shm-consulting-expert-advisory-infrastructure-risk.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./article/metro-rail-monitoring-tunnels-viaducts-stations.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp" alt="SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk" loading="lazy">
+                                            <img src="./image/articles/article_metro-rail-monitoring-tunnels-viaducts-stations.webp"
+                                                alt="Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time"
+                                                loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Rail Infrastructure</span>
+                                            <h4>Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/nepal-flash-floods-early-warning-himalayan-infrastructure.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/article_nepal-flash-floods-early-warning-himalayan-infrastructure.webp"
+                                                alt="Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn"
+                                                loading="lazy">
+                                            <span class="marquee-card-type type-articles">Article</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Smart Cities</span>
+                                            <h4>Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./blogs/early-warning-plan-critical-infrastructure-checklist.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/blogs/banners/blogs_early-warning-plan-critical-infrastructure-checklist.webp"
+                                                alt="How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist"
+                                                loading="lazy">
+                                            <span class="marquee-card-type type-blogs">Blog</span>
+                                        </div>
+                                        <div class="marquee-card-body">
+                                            <span class="marquee-card-cat">Infrastructure</span>
+                                            <h4>How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step
+                                                Checklist</h4>
+                                        </div>
+                                    </a>
+                                    <a href="./article/shm-consulting-expert-advisory-infrastructure-risk.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
+                                        <div class="marquee-card-img">
+                                            <img src="./image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp"
+                                                alt="SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Consulting</span>
-                                            <h4>SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk</h4>
+                                            <h4>SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk
+                                            </h4>
                                         </div>
                                     </a>
-                                    <a href="./case-studies/substation-digital-asset-management-predictive-maintenance.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./case-studies/substation-digital-asset-management-predictive-maintenance.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp" alt="Digital Asset Management &amp; Predictive Maintenance for Substation - Bathupally TGNPDCL" loading="lazy">
+                                            <img src="./image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp"
+                                                alt="Digital Asset Management &amp; Digital Twin for Substation - Bathupally TGNPDCL"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-case-studies">Case Study</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Smart Substation</span>
-                                            <h4>Digital Asset Management &amp; Predictive Maintenance for Substation - Bathupally TGNPDCL</h4>
+                                            <h4>Digital Asset Management &amp; Digital Twin for Substation - Bathupally
+                                                TGNPDCL</h4>
                                         </div>
                                     </a>
-                                    <a href="./article/port-marine-infrastructure-monitoring.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./article/port-marine-infrastructure-monitoring.html" class="marquee-card"
+                                        aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/article_port-marine-infrastructure-monitoring.webp" alt="Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp; Offshore Structures" loading="lazy">
+                                            <img src="./image/articles/article_port-marine-infrastructure-monitoring.webp"
+                                                alt="Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp; Offshore Structures"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Ports</span>
-                                            <h4>Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp; Offshore Structures</h4>
+                                            <h4>Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays
+                                                &amp; Offshore Structures</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/slope-stability-monitoring-mining.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./blogs/slope-stability-monitoring-mining.html" class="marquee-card"
+                                        aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_slope-stability-monitoring-mining.webp" alt="Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_slope-stability-monitoring-mining.webp"
+                                                alt="Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Mining</span>
-                                            <h4>Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines</h4>
+                                            <h4>Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for
+                                                Open-Pit Mines</h4>
                                         </div>
                                     </a>
-                                    <a href="./case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp" alt="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study" loading="lazy">
+                                            <img src="./image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp"
+                                                alt="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-case-studies">Case Study</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Comparison Study</span>
-                                            <h4>Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study</h4>
+                                            <h4>Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
+                                            </h4>
                                         </div>
                                     </a>
-                                    <a href="./article/3d-laser-scanning-lidar-infrastructure-digital-twins.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./article/3d-laser-scanning-lidar-infrastructure-digital-twins.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp" alt="3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture Powers Digital Twins" loading="lazy">
+                                            <img src="./image/articles/article_3d-laser-scanning-lidar-infrastructure-digital-twins.webp"
+                                                alt="3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture Powers Digital Twins"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Digital Twin</span>
-                                            <h4>3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture Powers Digital Twins</h4>
+                                            <h4>3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture
+                                                Powers Digital Twins</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/dam-safety-monitoring-lidar-drones-digital-twins.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./blogs/dam-safety-monitoring-lidar-drones-digital-twins.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp" alt="Dam Safety Monitoring: How LiDAR, Drones, Sensors &amp; Digital Twins Are Transforming Dam Inspection" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_dam-safety-monitoring-lidar-drones-digital-twins.webp"
+                                                alt="Dam Safety Monitoring: How LiDAR, Drones, Sensors &amp; Digital Twins Are Transforming Dam Inspection"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Dams</span>
-                                            <h4>Dam Safety Monitoring: How LiDAR, Drones, Sensors &amp; Digital Twins Are Transforming Dam Inspection</h4>
+                                            <h4>Dam Safety Monitoring: How LiDAR, Drones, Sensors &amp; Digital Twins
+                                                Are Transforming Dam Inspection</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/gnss-displacement-monitoring-satellite-sensors.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./blogs/gnss-displacement-monitoring-satellite-sensors.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_gnss-displacement-monitoring.webp" alt="GNSS Displacement Monitoring: How Satellite Sensors Detect Ground &amp; Structural Movement" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_gnss-displacement-monitoring.webp"
+                                                alt="GNSS Displacement Monitoring: How Satellite Sensors Detect Ground &amp; Structural Movement"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Geotechnical</span>
-                                            <h4>GNSS Displacement Monitoring: How Satellite Sensors Detect Ground &amp; Structural Movement</h4>
+                                            <h4>GNSS Displacement Monitoring: How Satellite Sensors Detect Ground &amp;
+                                                Structural Movement</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_what-is-ground-penetrating-radar.webp" alt="What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_what-is-ground-penetrating-radar.webp"
+                                                alt="What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Advanced NDT</span>
-                                            <h4>What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels</h4>
+                                            <h4>What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and
+                                                Tunnels</h4>
                                         </div>
                                     </a>
-                                    <a href="./article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/articles_predictive-maintenance-industrial-facilities.webp" alt="Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure" loading="lazy">
+                                            <img src="./image/articles/articles_predictive-maintenance-industrial-facilities.webp"
+                                                alt="Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Industrial</span>
-                                            <h4>Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure</h4>
+                                            <h4>Predictive Maintenance for Industrial Facilities: How IoT Vibration
+                                                Sensors Prevent Failure</h4>
                                         </div>
                                     </a>
-                                    <a href="./case-studies/railway-bridge-fatigue-life-assessment-load-testing.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./case-studies/railway-bridge-fatigue-life-assessment-load-testing.html"
+                                        class="marquee-card" aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp" alt="Railway Bridge Fatigue Life Assessment and Load Testing" loading="lazy">
+                                            <img src="./image/case-studies/banners/case_studies_railway-bridge-fatigue-life-assessment-load-testing.webp"
+                                                alt="Railway Bridge Fatigue Life Assessment and Load Testing"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-case-studies">Case Study</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3773,9 +4154,11 @@
                                             <h4>Railway Bridge Fatigue Life Assessment and Load Testing</h4>
                                         </div>
                                     </a>
-                                    <a href="./article/flood-monitoring-early-warning-system.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./article/flood-monitoring-early-warning-system.html" class="marquee-card"
+                                        aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/articles_floodmonitoringandearlywarningsystem.webp" alt="Flood Monitoring &amp; Early Warning System" loading="lazy">
+                                            <img src="./image/articles/articles_floodmonitoringandearlywarningsystem.webp"
+                                                alt="Flood Monitoring &amp; Early Warning System" loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3783,14 +4166,18 @@
                                             <h4>Flood Monitoring &amp; Early Warning System</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/continuous-building-shm-iot-sensors.html" class="marquee-card" aria-hidden="true" tabindex="-1">
+                                    <a href="./blogs/continuous-building-shm-iot-sensors.html" class="marquee-card"
+                                        aria-hidden="true" tabindex="-1">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp" alt="Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_continuous-building-monitoring-iot-sensors.webp"
+                                                alt="Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Structural Health</span>
-                                            <h4>Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured</h4>
+                                            <h4>Continuous Building Monitoring with IoT Sensors: What Actually Gets
+                                                Measured</h4>
                                         </div>
                                     </a>
                                 </div>
@@ -3798,9 +4185,12 @@
                             <div class="marquee-row marquee-row--rtl">
                                 <div class="marquee-track">
                                     <!-- Set A -->
-                                    <a href="./article/10-construction-technologies-redefining-the-industry.html" class="marquee-card">
+                                    <a href="./article/10-construction-technologies-redefining-the-industry.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/articles_10constructiontechnologiesredefiningtheindustry.webp" alt="10 Construction Technologies Redefining the Industry" loading="lazy">
+                                            <img src="./image/articles/articles_10constructiontechnologiesredefiningtheindustry.webp"
+                                                alt="10 Construction Technologies Redefining the Industry"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3808,19 +4198,26 @@
                                             <h4>10 Construction Technologies Redefining the Industry</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/bridge-scour-monitoring-iot-digital-twins.html" class="marquee-card">
+                                    <a href="./blogs/bridge-scour-monitoring-iot-digital-twins.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp" alt="Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp"
+                                                alt="Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Bridge Safety</span>
-                                            <h4>Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss</h4>
+                                            <h4>Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections
+                                                Miss</h4>
                                         </div>
                                     </a>
-                                    <a href="./case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html" class="marquee-card">
+                                    <a href="./case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp" alt="Railway Bridge Digital Twin Using Drone and LiDAR Inspection" loading="lazy">
+                                            <img src="./image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp"
+                                                alt="Railway Bridge Digital Twin Using Drone and LiDAR Inspection"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-case-studies">Case Study</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3830,7 +4227,8 @@
                                     </a>
                                     <a href="./article/ai-infrastructure-monitoring.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/articles_ai_for_bridge_monitoring.webp" alt="AI Is Coming for Infrastructure Monitoring" loading="lazy">
+                                            <img src="./image/articles/articles_ai_for_bridge_monitoring.webp"
+                                                alt="AI Is Coming for Infrastructure Monitoring" loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3838,9 +4236,12 @@
                                             <h4>AI Is Coming for Infrastructure Monitoring</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/what-is-a-strain-gauge-types-working-principle.html" class="marquee-card">
+                                    <a href="./blogs/what-is-a-strain-gauge-types-working-principle.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_what-is-a-strain-gauge-types-working-principle.webp" alt="What Is a Strain Gauge? Types, Working Principle &amp; Applications" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_what-is-a-strain-gauge-types-working-principle.webp"
+                                                alt="What Is a Strain Gauge? Types, Working Principle &amp; Applications"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3848,19 +4249,26 @@
                                             <h4>What Is a Strain Gauge? Types, Working Principle &amp; Applications</h4>
                                         </div>
                                     </a>
-                                    <a href="./article/digital-twin-predictive-maintenance-sentra.html" class="marquee-card">
+                                    <a href="./article/digital-twin-predictive-maintenance-sentra.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/article_digital-twin-predictive-maintenance-sentra.webp" alt="Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture &amp; Implementation" loading="lazy">
+                                            <img src="./image/articles/article_digital-twin-predictive-maintenance-sentra.webp"
+                                                alt="Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture &amp; Implementation"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Digital Twin</span>
-                                            <h4>Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture &amp; Implementation</h4>
+                                            <h4>Digital Twin for Predictive Maintenance: How It Works, Benefits,
+                                                Architecture &amp; Implementation</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html" class="marquee-card">
+                                    <a href="./blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_what-is-an-inclinometer-digital-tiltmeter-guide.webp" alt="What Is an Inclinometer? Digital Tiltmeters Explained" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_what-is-an-inclinometer-digital-tiltmeter-guide.webp"
+                                                alt="What Is an Inclinometer? Digital Tiltmeters Explained"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3870,7 +4278,9 @@
                                     </a>
                                     <a href="./blogs/what-is-a-data-logger-types-guide.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_what-is-a-data-logger-types-guide.webp" alt="What Is a Data Logger? Types, How They Work &amp; How to Choose One" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_what-is-a-data-logger-types-guide.webp"
+                                                alt="What Is a Data Logger? Types, How They Work &amp; How to Choose One"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3878,29 +4288,38 @@
                                             <h4>What Is a Data Logger? Types, How They Work &amp; How to Choose One</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html" class="marquee-card">
+                                    <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_future-digital-twins-mesh-point-cloud-gaussian-splatting.webp" alt="The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_future-digital-twins-mesh-point-cloud-gaussian-splatting.webp"
+                                                alt="The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Digital Twin</span>
-                                            <h4>The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared</h4>
+                                            <h4>The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting
+                                                Compared</h4>
                                         </div>
                                     </a>
                                     <a href="./article/worldsensing-official-reseller-india.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/worldsensing-official-reseller-india.png" alt="Celebrating One Year of Partnership: Clove Technologies &amp; Worldsensing" loading="lazy">
+                                            <img src="./image/articles/worldsensing-official-reseller-india.png"
+                                                alt="Celebrating One Year of Partnership: Clove Technologies &amp; Worldsensing"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Company News</span>
-                                            <h4>Celebrating One Year of Partnership: Clove Technologies &amp; Worldsensing</h4>
+                                            <h4>Celebrating One Year of Partnership: Clove Technologies &amp;
+                                                Worldsensing</h4>
                                         </div>
                                     </a>
                                     <a href="./article/xgrids-authorized-reseller-india.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/xgrids-authorized-reseller-india.webp" alt="Clove Technologies Becomes Authorized XGRIDS Reseller in India" loading="lazy">
+                                            <img src="./image/articles/xgrids-authorized-reseller-india.webp"
+                                                alt="Clove Technologies Becomes Authorized XGRIDS Reseller in India"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3909,9 +4328,12 @@
                                         </div>
                                     </a>
                                     <!-- Set B (duplicate for seamless loop) -->
-                                    <a href="./article/10-construction-technologies-redefining-the-industry.html" class="marquee-card">
+                                    <a href="./article/10-construction-technologies-redefining-the-industry.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/articles_10constructiontechnologiesredefiningtheindustry.webp" alt="10 Construction Technologies Redefining the Industry" loading="lazy">
+                                            <img src="./image/articles/articles_10constructiontechnologiesredefiningtheindustry.webp"
+                                                alt="10 Construction Technologies Redefining the Industry"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3919,19 +4341,26 @@
                                             <h4>10 Construction Technologies Redefining the Industry</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/bridge-scour-monitoring-iot-digital-twins.html" class="marquee-card">
+                                    <a href="./blogs/bridge-scour-monitoring-iot-digital-twins.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp" alt="Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_bridge-scour-iot-sensors-digital-twins.webp"
+                                                alt="Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Bridge Safety</span>
-                                            <h4>Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss</h4>
+                                            <h4>Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections
+                                                Miss</h4>
                                         </div>
                                     </a>
-                                    <a href="./case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html" class="marquee-card">
+                                    <a href="./case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp" alt="Railway Bridge Digital Twin Using Drone and LiDAR Inspection" loading="lazy">
+                                            <img src="./image/case-studies/banners/case_studies_railway-bridge-digital-twin-drone-lidar-inspection.webp"
+                                                alt="Railway Bridge Digital Twin Using Drone and LiDAR Inspection"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-case-studies">Case Study</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3941,7 +4370,8 @@
                                     </a>
                                     <a href="./article/ai-infrastructure-monitoring.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/articles_ai_for_bridge_monitoring.webp" alt="AI Is Coming for Infrastructure Monitoring" loading="lazy">
+                                            <img src="./image/articles/articles_ai_for_bridge_monitoring.webp"
+                                                alt="AI Is Coming for Infrastructure Monitoring" loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3949,9 +4379,12 @@
                                             <h4>AI Is Coming for Infrastructure Monitoring</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/what-is-a-strain-gauge-types-working-principle.html" class="marquee-card">
+                                    <a href="./blogs/what-is-a-strain-gauge-types-working-principle.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_what-is-a-strain-gauge-types-working-principle.webp" alt="What Is a Strain Gauge? Types, Working Principle &amp; Applications" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_what-is-a-strain-gauge-types-working-principle.webp"
+                                                alt="What Is a Strain Gauge? Types, Working Principle &amp; Applications"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3959,19 +4392,26 @@
                                             <h4>What Is a Strain Gauge? Types, Working Principle &amp; Applications</h4>
                                         </div>
                                     </a>
-                                    <a href="./article/digital-twin-predictive-maintenance-sentra.html" class="marquee-card">
+                                    <a href="./article/digital-twin-predictive-maintenance-sentra.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/article_digital-twin-predictive-maintenance-sentra.webp" alt="Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture &amp; Implementation" loading="lazy">
+                                            <img src="./image/articles/article_digital-twin-predictive-maintenance-sentra.webp"
+                                                alt="Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture &amp; Implementation"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Digital Twin</span>
-                                            <h4>Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture &amp; Implementation</h4>
+                                            <h4>Digital Twin for Predictive Maintenance: How It Works, Benefits,
+                                                Architecture &amp; Implementation</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html" class="marquee-card">
+                                    <a href="./blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_what-is-an-inclinometer-digital-tiltmeter-guide.webp" alt="What Is an Inclinometer? Digital Tiltmeters Explained" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_what-is-an-inclinometer-digital-tiltmeter-guide.webp"
+                                                alt="What Is an Inclinometer? Digital Tiltmeters Explained"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3981,7 +4421,9 @@
                                     </a>
                                     <a href="./blogs/what-is-a-data-logger-types-guide.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_what-is-a-data-logger-types-guide.webp" alt="What Is a Data Logger? Types, How They Work &amp; How to Choose One" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_what-is-a-data-logger-types-guide.webp"
+                                                alt="What Is a Data Logger? Types, How They Work &amp; How to Choose One"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -3989,29 +4431,38 @@
                                             <h4>What Is a Data Logger? Types, How They Work &amp; How to Choose One</h4>
                                         </div>
                                     </a>
-                                    <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html" class="marquee-card">
+                                    <a href="./blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html"
+                                        class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/blogs/banners/blogs_future-digital-twins-mesh-point-cloud-gaussian-splatting.webp" alt="The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared" loading="lazy">
+                                            <img src="./image/blogs/banners/blogs_future-digital-twins-mesh-point-cloud-gaussian-splatting.webp"
+                                                alt="The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-blogs">Blog</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Digital Twin</span>
-                                            <h4>The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared</h4>
+                                            <h4>The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting
+                                                Compared</h4>
                                         </div>
                                     </a>
                                     <a href="./article/worldsensing-official-reseller-india.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/worldsensing-official-reseller-india.png" alt="Celebrating One Year of Partnership: Clove Technologies &amp; Worldsensing" loading="lazy">
+                                            <img src="./image/articles/worldsensing-official-reseller-india.png"
+                                                alt="Celebrating One Year of Partnership: Clove Technologies &amp; Worldsensing"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
                                             <span class="marquee-card-cat">Company News</span>
-                                            <h4>Celebrating One Year of Partnership: Clove Technologies &amp; Worldsensing</h4>
+                                            <h4>Celebrating One Year of Partnership: Clove Technologies &amp;
+                                                Worldsensing</h4>
                                         </div>
                                     </a>
                                     <a href="./article/xgrids-authorized-reseller-india.html" class="marquee-card">
                                         <div class="marquee-card-img">
-                                            <img src="./image/articles/xgrids-authorized-reseller-india.webp" alt="Clove Technologies Becomes Authorized XGRIDS Reseller in India" loading="lazy">
+                                            <img src="./image/articles/xgrids-authorized-reseller-india.webp"
+                                                alt="Clove Technologies Becomes Authorized XGRIDS Reseller in India"
+                                                loading="lazy">
                                             <span class="marquee-card-type type-articles">Article</span>
                                         </div>
                                         <div class="marquee-card-body">
@@ -4038,8 +4489,7 @@
                             class="d-flex flex-column flex-xl-row align-items-xl-center justify-content-between gspace-3">
                             <div class="newsletter-text">
                                 <h4>Stay Ahead in Smart Infrastructure</h4>
-                                <p>Get exclusive insights, case studies, and IoT trends delivered straight to your
-                                    inbox.</p>
+                                <p>Case studies, monitoring insights and IoT news, sent to your inbox.</p>
                             </div>
                             <form action="./php/newsletter_process.php" method="POST" id="newsletterForm"
                                 class="needs-validation newsletter-form-inline">
@@ -4130,13 +4580,8 @@
                                         <i class="fa-regular fa-circle-dot"></i>
                                         <span>What Our Clients Say</span>
                                     </div>
-                                    <h2 class="title-heading intro-heading-compact">Don’t Trust Us, Trust Their Voice
-                                    </h2>
-                                    <p class="intro-text-compact">Discover how your projects achieve maximum visual
-                                        impact with Sentra's expert
-                                        SHM
-                                        solutions.
-                                    </p>
+                                    <h2 class="title-heading intro-heading-compact">What our clients say</h2>
+                                    <p class="intro-text-compact">Clients on what Sentra's SHM work has changed for their projects.</p>
                                     <div class="link-wrapper link-wrapper-btn" style="margin-bottom: 10px;">
                                         <a href="./testimonial.html">See All Testimonials</a>
                                         <i class="fa-solid fa-circle-arrow-right"></i>
@@ -4365,9 +4810,7 @@
                         </div>
                         <div class="d-flex flex-column gspace-2 guide-text">
                             <h3 class="title-heading guide-heading">Reimagine What’s Possible</h3>
-                            <p class="guide-subtext">We help businesses use IoT-driven insights and innovative
-                                solutions to build what's next.
-                            </p>
+                            <p class="guide-subtext">We help organisations use IoT data to plan and run their infrastructure.</p>
                             <a href="faq.html" class="guide-cta">
                                 <span>Got Questions? <strong>Read FAQs</strong></span>
                                 <i class="fa-solid fa-arrow-right"></i>
@@ -4398,13 +4841,7 @@
                             <div class="col">
                                 <div class="d-flex flex-column gspace-2 justify-content-end h-100  animate-box animated fast animate__animated"
                                     data-animate="animate__fadeInDown">
-                                    <p class="intro-text-compact">
-                                        From concept to continuous performance, we combine engineering expertise
-                                        with
-                                        intelligent automation to keep your monitoring journey seamless,
-                                        scalable,
-                                        and insight-driven.
-                                    </p>
+                                    <p class="intro-text-compact">From the first conversation to long-term operation, our engineers and automated systems keep your monitoring running smoothly and growing with your needs.</p>
                                     <div class="link-wrapper">
                                         <a href="./contact.html">Start Your Monitoring Journey</a>
                                         <i class="fa-solid fa-arrow-circle-right"></i>
@@ -4426,12 +4863,7 @@
                                         </div>
                                         <div class="d-flex flex-column gspace-2">
                                             <h5>Discovery & Project Assessment</h5>
-                                            <p>
-                                                We start by understanding your infrastructure goals and site
-                                                challenges, identifying where smart monitoring and data
-                                                integration
-                                                can deliver the greatest impact.
-                                            </p>
+                                            <p>We start by understanding your infrastructure goals and site conditions, and work out where monitoring and data integration will help most.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -4447,12 +4879,7 @@
                                         </div>
                                         <div class="d-flex flex-column gspace-2">
                                             <h5>Strategy & System Design</h5>
-                                            <p>
-                                                Our experts develop a tailored monitoring architecture,
-                                                combining precision sensors, edge analytics, and network
-                                                design,
-                                                built to match your project requirements.
-                                            </p>
+                                            <p>Our engineers design a monitoring system for your project, choosing the sensors, edge analytics and network layout to fit your requirements.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -4468,13 +4895,7 @@
                                         </div>
                                         <div class="d-flex flex-column gspace-2">
                                             <h5>Implementation & Optimization</h5>
-                                            <p>
-                                                From installation to calibration, we ensure smooth
-                                                deployment
-                                                and real-time data reliability. Continuous optimization
-                                                keeps
-                                                your monitoring ecosystem performing at its best.
-                                            </p>
+                                            <p>We install and calibrate the system and make sure the data is reliable from day one. After that we keep tuning it so it keeps performing well.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -4490,13 +4911,7 @@
                                         </div>
                                         <div class="d-flex flex-column gspace-2">
                                             <h5>Insights, Reporting & Growth</h5>
-                                            <p>
-                                                We deliver clear, actionable analytics and transparent
-                                                reporting
-                                                that help you make data-driven decisions with measurable ROI
-                                                and
-                                                sustained structural confidence.
-                                            </p>
+                                            <p>We provide clear analytics and straightforward reports, so you can make decisions from the data and see the return on your investment.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -4518,16 +4933,13 @@
                                     <i class="fa-regular fa-circle-dot"></i>
                                     <span>Insights &amp; Trends</span>
                                 </div>
-                                <h2 class="title-heading intro-heading-compact">Latest Smart Infrastructure Strategies
-                                    &amp; Innovations</h2>
+                                <h2 class="title-heading intro-heading-compact">Latest articles on infrastructure monitoring</h2>
                             </div>
                         </div>
                         <div class="col col-xl-4 ps-0 pe-0">
                             <div class="d-flex flex-column gspace-2 justify-content-end h-100 animate-box animated animate__animated"
                                 data-animate="animate__fadeInRight">
-                                <p class="intro-text-compact">Explore our latest articles covering IoT adoption,
-                                    infrastructure monitoring, AI-driven automation, and actionable strategies for
-                                    future-ready businesses.</p>
+                                <p class="intro-text-compact">Articles on IoT adoption, infrastructure monitoring, AI and automation, with practical advice you can apply.</p>
                                 <div class="link-wrapper">
                                     <a href="./resources.html#articles">View All Articles</a>
                                     <i class="fa-solid fa-circle-arrow-right"></i>
@@ -4544,45 +4956,89 @@
                             <i class="fa-solid fa-chevron-left"></i>
                         </button>
                         <div class="glimpse-track" id="glimpseTrack">
-                            <a href="./article/shm-consulting-expert-advisory-infrastructure-risk.html" class="glimpse-card">
+                            <a href="./article/metro-rail-monitoring-tunnels-viaducts-stations.html"
+                                class="glimpse-card">
+                                <img src="./image/articles/article_metro-rail-monitoring-tunnels-viaducts-stations.webp"
+                                    alt="Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time"
+                                    loading="lazy">
+                                <span class="glimpse-tag">Rail Infrastructure</span>
+                                <div class="glimpse-label">
+                                    <h4>Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time</h4>
+                                    <span>Rail Infrastructure &middot; Oct 16, 2026</span>
+                                </div>
+                            </a>
+                            <a href="./article/nepal-flash-floods-early-warning-himalayan-infrastructure.html"
+                                class="glimpse-card">
+                                <img src="./image/articles/article_nepal-flash-floods-early-warning-himalayan-infrastructure.webp"
+                                    alt="Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn"
+                                    loading="lazy">
+                                <span class="glimpse-tag">Smart Cities</span>
+                                <div class="glimpse-label">
+                                    <h4>Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn</h4>
+                                    <span>Smart Cities &middot; Oct 12, 2026</span>
+                                </div>
+                            </a>
+                            <a href="./blogs/early-warning-plan-critical-infrastructure-checklist.html"
+                                class="glimpse-card">
+                                <img src="./image/blogs/banners/blogs_early-warning-plan-critical-infrastructure-checklist.webp"
+                                    alt="How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist"
+                                    loading="lazy">
+                                <span class="glimpse-tag">Infrastructure</span>
+                                <div class="glimpse-label">
+                                    <h4>How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist</h4>
+                                    <span>Infrastructure &middot; Oct 12, 2026</span>
+                                </div>
+                            </a>
+                            <a href="./article/shm-consulting-expert-advisory-infrastructure-risk.html"
+                                class="glimpse-card">
                                 <img src="./image/articles/article_shm-consulting-expert-advisory-infrastructure-risk.webp"
-                                    alt="SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk" loading="lazy">
+                                    alt="SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk"
+                                    loading="lazy">
                                 <span class="glimpse-tag">Consulting</span>
                                 <div class="glimpse-label">
                                     <h4>SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk</h4>
                                     <span>Consulting &middot; Sep 30, 2026</span>
                                 </div>
                             </a>
-                            <a href="./case-studies/substation-digital-asset-management-predictive-maintenance.html" class="glimpse-card">
+                            <a href="./case-studies/substation-digital-asset-management-predictive-maintenance.html"
+                                class="glimpse-card">
                                 <img src="./image/case-studies/banners/case_studies_substation-digital-asset-management-predictive-maintenance.webp"
-                                    alt="Digital Asset Management &amp; Predictive Maintenance for Substation - Bathupally TGNPDCL" loading="lazy">
+                                    alt="Digital Asset Management &amp; Digital Twin for Substation - Bathupally TGNPDCL"
+                                    loading="lazy">
                                 <span class="glimpse-tag">Smart Substation</span>
                                 <div class="glimpse-label">
-                                    <h4>Digital Asset Management &amp; Predictive Maintenance for Substation - Bathupally TGNPDCL</h4>
+                                    <h4>Digital Asset Management &amp; Digital Twin for Substation - Bathupally TGNPDCL
+                                    </h4>
                                     <span>Smart Substation &middot; Sep 30, 2026</span>
                                 </div>
                             </a>
                             <a href="./article/port-marine-infrastructure-monitoring.html" class="glimpse-card">
                                 <img src="./image/articles/article_port-marine-infrastructure-monitoring.webp"
-                                    alt="Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp; Offshore Structures" loading="lazy">
+                                    alt="Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp; Offshore Structures"
+                                    loading="lazy">
                                 <span class="glimpse-tag">Ports</span>
                                 <div class="glimpse-label">
-                                    <h4>Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp; Offshore Structures</h4>
+                                    <h4>Port &amp; Marine Infrastructure Monitoring: Protecting Jetties, Quays &amp;
+                                        Offshore Structures</h4>
                                     <span>Ports &middot; Sep 25, 2026</span>
                                 </div>
                             </a>
                             <a href="./blogs/slope-stability-monitoring-mining.html" class="glimpse-card">
                                 <img src="./image/blogs/banners/blogs_slope-stability-monitoring-mining.webp"
-                                    alt="Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines" loading="lazy">
+                                    alt="Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines"
+                                    loading="lazy">
                                 <span class="glimpse-tag">Mining</span>
                                 <div class="glimpse-label">
-                                    <h4>Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines</h4>
+                                    <h4>Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit
+                                        Mines</h4>
                                     <span>Mining &middot; Sep 25, 2026</span>
                                 </div>
                             </a>
-                            <a href="./case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html" class="glimpse-card">
+                            <a href="./case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html"
+                                class="glimpse-card">
                                 <img src="./image/case-studies/banners/case_studies_handheld-slam-vs-tls-highway-bridge-surveys.webp"
-                                    alt="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study" loading="lazy">
+                                    alt="Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study"
+                                    loading="lazy">
                                 <span class="glimpse-tag">Comparison Study</span>
                                 <div class="glimpse-label">
                                     <h4>Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study</h4>
@@ -4595,7 +5051,8 @@
                                     alt="3D laser scanning and LiDAR for infrastructure digital twins" loading="lazy">
                                 <span class="glimpse-tag">Digital Twin</span>
                                 <div class="glimpse-label">
-                                    <h4>3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture Powers Digital Twins</h4>
+                                    <h4>3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture Powers
+                                        Digital Twins</h4>
                                     <span>Digital Twin &middot; Sep 10, 2026</span>
                                 </div>
                             </a>
@@ -4605,7 +5062,8 @@
                                     alt="Predictive maintenance for industrial facilities" loading="lazy">
                                 <span class="glimpse-tag">Industrial</span>
                                 <div class="glimpse-label">
-                                    <h4>Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure</h4>
+                                    <h4>Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors
+                                        Prevent Failure</h4>
                                     <span>Industrial &middot; Sep 7, 2026</span>
                                 </div>
                             </a>
@@ -4703,9 +5161,11 @@
                                     <span>Company News &middot; Jul 23, 2026</span>
                                 </div>
                             </a>
-                            <a href="./article/revolutionizing-infrastructure-monitoring-with-iot.html" class="glimpse-card">
+                            <a href="./article/revolutionizing-infrastructure-monitoring-with-iot.html"
+                                class="glimpse-card">
                                 <img src="./image/articles/article_revolutionizing-infrastructure-monitoring-with-iot.webp"
-                                    alt="IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins" loading="lazy">
+                                    alt="IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins"
+                                    loading="lazy">
                                 <span class="glimpse-tag">IoT Innovation</span>
                                 <div class="glimpse-label">
                                     <h4>IoT Infrastructure Monitoring: Sensors, Edge Gateways and Digital Twins</h4>
@@ -4786,6 +5246,7 @@
                                     <li><a href="./products.html">Products</a></li>
                                     <li><a href="./solutions.html">Solutions</a></li>
                                     <li><a href="./industries.html">Industries</a></li>
+                                    <li><a href="./technology/index.html">How It Works</a></li>
                                     <li><a href="./about.html">About</a></li>
                                     <li><a href="./faq.html">FAQ</a></li>
                                     <li><a href="./resources.html">Insights &amp; Updates</a></li>
@@ -4916,7 +5377,6 @@
                         <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
                         <a href="./glossary.html" class="legal-link">Glossary</a>
                         <a href="./sitemap.xml" class="legal-link">Sitemap</a>
-                        <a href="./404-page.html" class="legal-link">404</a>
                     </div>
                 </div>
                 <div class="footer-spacer"></div>

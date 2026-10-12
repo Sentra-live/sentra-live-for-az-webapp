@@ -203,8 +203,18 @@ Yes, and it is a common request. A review checks whether sensors are in the righ
 
 Sentra's advisory team covers SHM strategy and planning, risk assessment, regulatory compliance, vendor-independent technology selection, monitoring programme design and data interpretation standards, and can support implementation, training and ongoing data review for bridges, railways, buildings, dams and other infrastructure.
 
+Related service [Structural Health Monitoring Services ](https://sentratech.in/solutions/structural-health-monitoring.html)
+
+- [Structural Health Monitoring](https://sentratech.in/blogs/structural-health-monitoring.html)
+
+- [How Much Does Structural Health Monitoring Cost? What Drives the Price](https://sentratech.in/blogs/structural-health-monitoring-cost-factors.html)
+
+- [Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=shm-consulting-expert-advisory-infrastructure-risk)
+
 ## Planning a Monitoring Programme?
 
 Whether you need a monitoring strategy for a new structure, a review of a system already in place, or thresholds and response plans your team can rely on, Sentra's advisory team can help.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=shm-consulting-expert-advisory-infrastructure-risk)

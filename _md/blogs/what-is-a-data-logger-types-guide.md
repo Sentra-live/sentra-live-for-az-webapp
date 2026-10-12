@@ -43,6 +43,16 @@ The term "data logger" carries some historical baggage: it can still imply a sta
 
 - **Cloud & software integration:** whether the logger feeds directly into a dashboard and alerting platform, or requires a separate integration project.
 
+Related service [Structural Health Monitoring Services ](https://sentratech.in/solutions/structural-health-monitoring.html)
+
+- [Structural Health Monitoring](https://sentratech.in/blogs/structural-health-monitoring.html)
+
+- [How Much Does Structural Health Monitoring Cost? What Drives the Price](https://sentratech.in/blogs/structural-health-monitoring-cost-factors.html)
+
+- [Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=what-is-a-data-logger-types-guide)
+
 ## Takeaway
 
 A data logger's job hasn't changed, sample, timestamp, deliver, but the best modern loggers do it continuously and wirelessly, closing the gap between “logged data” and real-time telemetry.

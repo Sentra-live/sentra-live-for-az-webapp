@@ -426,6 +426,42 @@
         }
     }
 
+    /* ── Header "Request Assessment" pill (primary conversion CTA) ── */
+    .navbar-assess-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 42px;
+        padding: 0 18px;
+        border-radius: 100px;
+        border: 1.5px solid #f48120;
+        color: #f48120;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .navbar-assess-pill:hover {
+        background: #f48120;
+        color: #fff;
+    }
+
+    /* Keep the header from crowding: the phone pill gives way first. */
+    @media (max-width: 1500px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .navbar-assess-pill {
+            display: none;
+        }
+    }
+
     /* ── About Us: Industry Verticals Row ── */
     .mega-industries-row {
         border-top: 1px solid rgba(255, 255, 255, 0.07);
@@ -626,7 +662,18 @@
                             aria-haspopup="true" aria-expanded="false">
                             SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
-                        <div class="dropdown-menu mega-solutions">
+                        <div class="dropdown-menu mega-solutions" aria-label="Solutions navigation">
+                            <div class="solutions-menu-chrome">
+                                <div>
+                                    <span class="solutions-menu-eyebrow">Solutions navigator</span>
+                                    <strong>Find the right engineering pathway</strong>
+                                </div>
+                                <div class="solutions-menu-actions">
+                                    <a href="../technology/">Technology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="../solutions.html">All solutions <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="solutions-panel solutions-panel--v1" data-solutions-panel="v1" hidden aria-hidden="true">
                             <div class="solutions-bento">
 
                                 <!-- Row 1: SHM (wide) + Bridge (narrow) -->
@@ -725,7 +772,58 @@
                                         <span class="sol-fill-sub">Documentation & digital workflows</span>
                                     </a>
                                 </div>
+                                <!-- Row 4: buyer-intent application pages -->
+                                <div class="mega-quickbar" style="margin-top:10px;border-radius:12px;">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
 
+                            </div>
+                            </div>
+
+                            <div class="solutions-panel solutions-panel--v2" data-solutions-panel="v2" aria-hidden="false">
+                                <div class="solutions-v2-layout">
+                                    <div class="solutions-v2-nav">
+                                        <section class="solutions-v2-group">
+                                            <p>Monitor &amp; diagnose</p>
+                                            <a class="solutions-v2-link is-active" href="../solutions/structural-health-monitoring.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Structural Health Monitoring" data-sub="Continuous insight for bridges, buildings and critical infrastructure."><i class="fas fa-chart-line"></i><span><strong>Structural Health Monitoring</strong><small>Real-time sensing &amp; alerts</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/asset-monitoring-and-management-solutions.html" data-img="../image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp" data-name="Asset Monitoring" data-sub="Bring condition, performance and lifecycle data into one operational view."><i class="fas fa-database"></i><span><strong>Asset Monitoring</strong><small>Lifecycle intelligence</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/geotechnical-and-foundation-monitoring.html" data-img="../image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp" data-name="Geotechnical Monitoring" data-sub="Track ground, slope and foundation movement before risk escalates."><i class="fas fa-mountain"></i><span><strong>Geotechnical Monitoring</strong><small>Ground &amp; foundation movement</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Inspect &amp; assess</p>
+                                            <a class="solutions-v2-link" href="../solutions/bridge-inspection-and-condition-assessment.html" data-img="../image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" data-name="Bridge Inspection" data-sub="Evidence-led inspection and condition assessment for safer decisions."><i class="fas fa-bridge"></i><span><strong>Bridge Inspection</strong><small>Condition assessment</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/advanced-non-destructive-testing-ndt.html" data-img="../image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp" data-name="Advanced NDT" data-sub="Reveal hidden defects with non-destructive testing and expert interpretation."><i class="fas fa-microscope"></i><span><strong>Advanced NDT</strong><small>Non-destructive evaluation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/fatigue-and-residual-life-assessment.html" data-img="../image/solutions/Homepage/Fatigue%20%26%20Residual%20Life%20Assessment.webp" data-name="Fatigue &amp; Residual Life" data-sub="Quantify remaining service life and prioritize intervention with confidence."><i class="fas fa-tachometer-alt"></i><span><strong>Fatigue &amp; Residual Life</strong><small>Load cycles &amp; service life</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Model &amp; advise</p>
+                                            <a class="solutions-v2-link" href="../solutions/digital-twin.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Twin" data-sub="Connect live asset data to a decision-ready digital representation."><i class="fas fa-cubes"></i><span><strong>Digital Twin</strong><small>Live asset simulation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/digital-engineering-and-documentation.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Engineering" data-sub="Turn engineering records and field data into dependable digital workflows."><i class="fas fa-file-contract"></i><span><strong>Digital Engineering</strong><small>Documentation &amp; workflows</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/consulting-and-advisory-services.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Consulting &amp; Advisory" data-sub="Independent engineering expertise from assessment through implementation."><i class="fas fa-lightbulb"></i><span><strong>Consulting &amp; Advisory</strong><small>Expert engineering support</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="solutions-v2-preview" role="region" aria-label="Selected solution preview">
+                                        <img class="solutions-v2-preview-img" src="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" alt="Structural monitoring sensors installed on infrastructure">
+                                        <div class="solutions-v2-preview-shade"></div>
+                                        <div class="solutions-v2-preview-content">
+                                            <span>Featured solution</span>
+                                            <h3>Structural Health Monitoring</h3>
+                                            <p>Continuous insight for bridges, buildings and critical infrastructure.</p>
+                                            <a href="../solutions/structural-health-monitoring.html">Explore solution <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mega-quickbar solutions-v2-apps">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1286,6 +1384,10 @@
                         <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
                     </button>
                 </div>
+                <a href="../monitoring-assessment.html?source=header" class="navbar-assess-pill" data-cta="assessment-header">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>Request Assessment</span>
+                </a>
                 <a href="tel:+917893023322" class="navbar-call-pill">
                     <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
                     <span class="navbar-call-text">+91 78930 23322</span>
@@ -1377,29 +1479,108 @@
             }
 
             /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            /* Solutions navigator: V2 is the final menu design. */
+            var solutionsMenu = document.querySelector('.mega-solutions');
+            if (solutionsMenu) {
+                var solutionPanels = solutionsMenu.querySelectorAll('[data-solutions-panel]');
+                solutionPanels.forEach(function (panel) {
+                    var isCurrent = panel.getAttribute('data-solutions-panel') === 'v2';
+                    panel.hidden = !isCurrent;
+                    panel.setAttribute('aria-hidden', String(!isCurrent));
+                    if ('inert' in panel) panel.inert = !isCurrent;
+                });
+
+                var solutionLinks = solutionsMenu.querySelectorAll('.solutions-v2-link[data-img]');
+                var solutionPreviewImg = solutionsMenu.querySelector('.solutions-v2-preview-img');
+                var solutionPreviewTitle = solutionsMenu.querySelector('.solutions-v2-preview h3');
+                var solutionPreviewText = solutionsMenu.querySelector('.solutions-v2-preview p');
+                var solutionPreviewCta = solutionsMenu.querySelector('.solutions-v2-preview-content a');
+                function updateSolutionPreview(link) {
+                    solutionLinks.forEach(function (item) { item.classList.toggle('is-active', item === link); });
+                    solutionPreviewImg.src = link.getAttribute('data-img');
+                    solutionPreviewImg.alt = link.getAttribute('data-name') + ' solution preview';
+                    solutionPreviewTitle.textContent = link.getAttribute('data-name');
+                    solutionPreviewText.textContent = link.getAttribute('data-sub');
+                    solutionPreviewCta.href = link.href;
+                }
+                solutionLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { updateSolutionPreview(link); });
+                    link.addEventListener('focus', function () { updateSolutionPreview(link); });
+                });
+            }
+
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
                 );
                 if (!dropdown) return;
                 var closeTimer = null;
+                var trigger = item.querySelector('.dropdown-toggle');
 
-                function openMenu() {
-                    if (window.innerWidth < 1024) return;
+                function setExpanded(expanded) {
+                    if (trigger) trigger.setAttribute('aria-expanded', String(expanded));
+                }
+                function openMenu(force) {
+                    if (window.innerWidth <= 1024) return;
+                    if (item.classList.contains('mega-dismissed') && !force) return;
                     clearTimeout(closeTimer);
+                    item.classList.remove('mega-dismissed');
                     item.classList.add('mega-open');
+                    setExpanded(true);
+                }
+                function closeMenu(dismissHover) {
+                    clearTimeout(closeTimer);
+                    item.classList.remove('mega-open');
+                    item.classList.toggle('mega-dismissed', Boolean(dismissHover));
+                    setExpanded(false);
                 }
                 function scheduleClose(delay) {
                     clearTimeout(closeTimer);
                     closeTimer = setTimeout(function () {
-                        item.classList.remove('mega-open');
+                        closeMenu(false);
                     }, delay);
                 }
 
-                item.addEventListener('mouseenter', function () { openMenu(); });
-                item.addEventListener('mouseleave', function () { scheduleClose(280); });
-                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseenter', function () { openMenu(false); });
+                item.addEventListener('mouseleave', function () {
+                    item.classList.remove('mega-dismissed');
+                    scheduleClose(280);
+                });
+                dropdown.addEventListener('mouseenter', function () { openMenu(false); });
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+
+                if (trigger) {
+                    trigger.addEventListener('click', function (event) {
+                        if (window.innerWidth <= 1024) return;
+                        event.preventDefault();
+                        if (item.classList.contains('mega-open')) closeMenu(true);
+                        else openMenu(true);
+                    });
+                    trigger.addEventListener('keydown', function (event) {
+                        if (window.innerWidth <= 1024 || !['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
+                        event.preventDefault();
+                        openMenu(true);
+                        var firstControl = dropdown.querySelector('[data-solutions-view], a[href], button:not([disabled])');
+                        if (firstControl) firstControl.focus();
+                    });
+                }
+
+                document.addEventListener('click', function (event) {
+                    if (!item.contains(event.target)) closeMenu(false);
+                });
+
+                item._closeMegaMenu = closeMenu;
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key !== 'Escape') return;
+                var openItem = document.querySelector('.nav-item.dropdown.mega-open');
+                if (!openItem) return;
+                var trigger = openItem.querySelector('.dropdown-toggle');
+                if (openItem._closeMegaMenu) openItem._closeMegaMenu(true);
+                if (trigger) {
+                    trigger.focus();
+                }
             });
 
             /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
@@ -1415,7 +1596,8 @@
 
         })();
     </script>
-</div></div>
+</div>
+</div>
     </header>
     <aside>
         <div id="edit-sidebar"></div>
@@ -1444,9 +1626,8 @@
 
             <!-- Quick links -->
             <div class="mmenu-quicklinks">
-                <a href="/" class="mmenu-quicklink">Home</a>
                 <a href="../about.html" class="mmenu-quicklink">About Us</a>
-                <a href="../contact.html" class="mmenu-quicklink">Contact Us</a>
+                <a href="../monitoring-assessment.html?source=mobile-menu" class="mmenu-quicklink" data-cta="assessment-mobile-menu">Request Assessment</a>
             </div>
 
             <!-- Products -->
@@ -1539,6 +1720,14 @@
                             class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
                     <a class="mmenu-simple-link" href="../solutions/digital-engineering-and-documentation.html"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                    <a class="mmenu-simple-link" href="../solutions/railway-bridge-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Railway Bridge Monitoring</a>
+                    <a class="mmenu-simple-link" href="../solutions/construction-vibration-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Construction Vibration</a>
+                    <a class="mmenu-simple-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Predictive Maintenance</a>
+                    <a class="mmenu-simple-link" href="../technology/"><i
+                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Technology</a>
                 </div>
             </div>
 
@@ -1582,8 +1771,11 @@
         <div class="mmenu-bottom">
             <div class="mmenu-follow-row">
                 <span class="mmenu-follow-label">Follow Us</span>
-                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
-                    target="_blank" rel="noopener">Book Demo</a>
+                <div class="mmenu-bottom-actions">
+                    <a class="mmenu-contact-btn" href="../contact.html">Contact Us</a>
+                    <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                        target="_blank" rel="noopener">Book Demo</a>
+                </div>
             </div>
             <div class="mmenu-social-row">
                 <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
@@ -1596,6 +1788,10 @@
                     rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
                     rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="mmenu-social" href="https://medium.com/@sentra_8835" target="_blank"
+                    rel="noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                <a class="mmenu-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                    rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="mmenu-contact-row">
                 <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
@@ -1603,7 +1799,8 @@
             </div>
         </div>
     </nav>
-</div></div>
+</div>
+</div>
     </aside>
 
     <main>
@@ -1624,9 +1821,7 @@
                         <h1 class="hero-title">Celebrating One Year of Partnership: Clove Technologies &amp;
                             Worldsensing</h1>
                         <div class="hero-intro">
-                            <p>Clove Technologies Private Limited proudly celebrates one successful year of partnership
-                                with Worldsensing, a global leader in wireless IoT connectivity for geotechnical,
-                                structural, and infrastructure monitoring.</p>
+                            <p>Clove Technologies Private Limited has now worked with Worldsensing for a year. Worldsensing makes wireless IoT connectivity for geotechnical, structural and infrastructure monitoring.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
@@ -1660,9 +1855,7 @@
                     </div>
 
                     <div id="ttsContent">
-                        <p>Over the past year, this collaboration has strengthened our ability to deliver intelligent
-                            monitoring solutions that help organizations improve safety, optimize maintenance
-                            strategies, and make informed decisions through continuous, real-time data.</p>
+                        <p>Over that year the partnership has let us offer monitoring systems that give clients continuous, real-time data, which they use to manage safety, plan maintenance and make decisions.</p>
 
                         <div class="partner-logo-card">
                             <img src="https://indrones.com/images/landing/clientele/Clove-Technologies.png"
@@ -1672,17 +1865,10 @@
                                 alt="Worldsensing logo" class="plc-logo">
                         </div>
 
-                        <p>As India's infrastructure continues to expand, the demand for reliable Structural Health
-                            Monitoring, geotechnical monitoring, and remote asset management has never been greater.
-                            Together, Clove Technologies and Worldsensing are supporting this transformation by
-                            delivering scalable wireless monitoring solutions for critical infrastructure projects
-                            across the country.</p>
+                        <p>India is building a lot of infrastructure, and more of it now needs structural health monitoring, geotechnical monitoring and remote asset management. Together, Clove Technologies and Worldsensing supply wireless monitoring that scales to large projects across the country.</p>
 
-                        <h2 id="globalSection">Delivering Global Technology with Local Expertise</h2>
-                        <p>Worldsensing has established itself as a global pioneer in wireless monitoring connectivity,
-                            with more than 3,000 monitoring networks deployed across over 70 countries, connecting
-                            200,000+ sensors for mining, construction, transportation, and civil infrastructure
-                            projects.</p>
+                        <h2 id="globalSection">Global technology, local support</h2>
+                        <p>Worldsensing has deployed more than 3,000 monitoring networks in over 70 countries, connecting more than 200,000 sensors on mining, construction, transportation and civil infrastructure projects.</p>
 
                         <div class="stat-grid">
                             <div class="stat-card">
@@ -1699,15 +1885,10 @@
                             </div>
                         </div>
 
-                        <p>By combining Worldsensing's advanced IoT connectivity platform with Clove Technologies'
-                            engineering expertise, customers gain access to comprehensive monitoring solutions tailored
-                            for Indian infrastructure projects. Our collaboration enables organizations to implement
-                            modern monitoring systems with local consultation, deployment support, technical expertise,
-                            and long-term maintenance services.</p>
+                        <p>Worldsensing provides the IoT connectivity platform, and Clove Technologies adds the engineering. For Indian projects that means local consultation, deployment, technical help and long-term maintenance from one team.</p>
 
                         <h2 id="applicationsSection">Enabling Smarter Infrastructure Monitoring</h2>
-                        <p>Through this partnership, Clove Technologies provides solutions that support a wide range of
-                            monitoring applications, including:</p>
+                        <p>Through the partnership we support monitoring applications such as:</p>
                         <ul class="value-list">
                             <li><i class="fa-solid fa-circle-check"></i> <span>Structural Health Monitoring (SHM)</span></li>
                             <li><i class="fa-solid fa-circle-check"></i> <span>Geotechnical Monitoring</span></li>
@@ -1721,40 +1902,23 @@
                         </ul>
 
                         <h2 id="sensorsSection">Integrated Wireless Monitoring Solutions</h2>
-                        <p>Worldsensing's wireless connectivity platform supports a broad range of industry-standard
-                            instrumentation, including vibrating wire sensors, in-place inclinometers, piezometers,
-                            crack meters, extensometers, tiltmeters, load cells, GNSS systems, weather stations, water
-                            quality sensors, vibration instruments, and environmental sensors.</p>
+                        <p>The platform works with most standard instrumentation: vibrating wire sensors, in-place inclinometers, piezometers, crack meters, extensometers, tiltmeters, load cells, GNSS, weather stations, water quality sensors, vibration instruments and environmental sensors.</p>
 
                         <div class="insight-box">
                             <h5><i class="fa-solid fa-satellite-dish" style="margin-right:8px;"></i>Flexible for New and
                                 Existing Projects</h5>
-                            <p>Its long-range, low-power wireless architecture enables organizations to reduce
-                                installation complexity while simplifying the monitoring of distributed infrastructure
-                                assets.</p>
+                            <p>Because the wireless links are long range and low power, installation is simpler and widely spread assets are easier to monitor.</p>
                         </div>
 
                         <h2 id="futureSection">Strengthening India's Digital Infrastructure</h2>
-                        <p>Clove Technologies continues to expand its portfolio of Digital Twin, BIM, LiDAR, Surveying,
-                            IoT, and Structural Health Monitoring solutions. The partnership with Worldsensing
-                            complements these capabilities by enabling continuous, real-time monitoring throughout the
-                            lifecycle of infrastructure assets.</p>
+                        <p>Clove Technologies also works in digital twins, BIM, LiDAR, surveying, IoT and structural health monitoring. Worldsensing's platform adds continuous monitoring across the whole life of an asset.</p>
 
-                        <p>Together, the two organizations are helping engineering consultants, EPC contractors,
-                            infrastructure owners, government agencies, mining companies, and industrial organizations
-                            transition toward intelligent, data-driven asset management.</p>
+                        <p>Our clients include engineering consultants, EPC contractors, infrastructure owners, government agencies, mining companies and industrial firms, many of whom are moving from periodic manual readings to managing assets with live data.</p>
 
                         <h2 id="aboutSection">About Clove Technologies &amp; Worldsensing</h2>
-                        <p><strong>Clove Technologies Private Limited</strong> is an engineering technology company
-                            specializing in Digital Twins, Scan-to-BIM, LiDAR, GIS, Geospatial Intelligence, IoT,
-                            Structural Health Monitoring, Reality Capture, and smart infrastructure solutions. The
-                            company delivers end-to-end digital engineering services for infrastructure, industrial,
-                            transportation, utilities, energy, and smart city projects.</p>
+                        <p><strong>Clove Technologies Private Limited</strong> is an engineering technology company working in digital twins, Scan-to-BIM, LiDAR, GIS, geospatial intelligence, IoT, structural health monitoring, reality capture and smart infrastructure. It provides digital engineering services for infrastructure, industrial, transportation, utility, energy and smart city projects.</p>
 
-                        <p><strong>Worldsensing</strong> is a global technology company specializing in wireless IoT
-                            connectivity for remote infrastructure monitoring. Its solutions connect geotechnical,
-                            structural, geospatial, and environmental sensors to help organizations monitor critical
-                            assets, improve risk management, and support safer infrastructure operations.</p>
+                        <p><strong>Worldsensing</strong> is a technology company that makes wireless IoT connectivity for remote infrastructure monitoring. Its systems connect geotechnical, structural, geospatial and environmental sensors so owners can watch critical assets and manage risk.</p>
 
                         <p
                             style="font-size:0.85rem;opacity:0.6;margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.06);">
@@ -1767,9 +1931,8 @@
                     </div>
 
                     <div class="detail-cta">
-                        <h2>Ready to Advance Your Infrastructure Monitoring Strategy?</h2>
-                        <p>Discuss wireless monitoring, geotechnical instrumentation, and real-time asset intelligence
-                            solutions with Sentra's team.</p>
+                        <h2>Planning a monitoring program?</h2>
+                        <p>Talk to Sentra's team about wireless monitoring, geotechnical instrumentation and live asset data for your project.</p>
                         <a class="cta-btn" href="/contact.html?enquiry=1&product=IoT%20Monitoring%20Solutions">Get a
                             Quote <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
@@ -1897,6 +2060,7 @@
                                     <li><a href="../products.html">Products</a></li>
                                     <li><a href="../solutions.html">Solutions</a></li>
                                     <li><a href="../industries.html">Industries</a></li>
+                                    <li><a href="../technology/index.html">How It Works</a></li>
                                     <li><a href="../about.html">About</a></li>
                                     <li><a href="../faq.html">FAQ</a></li>
                                     <li><a href="../resources.html">Insights &amp; Updates</a></li>
@@ -2027,7 +2191,6 @@
                         <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
                         <a href="../glossary.html" class="legal-link">Glossary</a>
                         <a href="../sitemap.xml" class="legal-link">Sitemap</a>
-                        <a href="../404-page.html" class="legal-link">404</a>
                     </div>
                 </div>
                 <div class="footer-spacer"></div>

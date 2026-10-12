@@ -40,6 +40,16 @@ A single-axis accelerometer measures movement along one direction only. A **tri-
 
 When comparing accelerometer sensors for a monitoring deployment, four specifications matter most: the **measurement range** (in g, how large a vibration event it can capture without clipping), **sensitivity** (how much output changes per unit of acceleration, which drives resolution), **sampling rate** (how many readings per second, needed to resolve higher-frequency vibration), and **frequency response** (the band of vibration frequencies the sensor can accurately capture). Sentra's [accelerometer sensors](https://sentratech.in/products/accelerometers.html) are tri-axial by default, so a single unit captures the full vibration picture rather than requiring multiple single-axis sensors per monitoring point.
 
+Related service [Structural Health Monitoring Services ](https://sentratech.in/solutions/structural-health-monitoring.html)
+
+- [Structural Health Monitoring](https://sentratech.in/blogs/structural-health-monitoring.html)
+
+- [How Much Does Structural Health Monitoring Cost? What Drives the Price](https://sentratech.in/blogs/structural-health-monitoring-cost-factors.html)
+
+- [Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=what-is-an-accelerometer-sensor-guide)
+
 ## Takeaway
 
 An accelerometer sensor is what turns dynamic movement, an earthquake, a resonating deck, a failing bearing, into a measurable signal. Tri-axial MEMS accelerometers give the most complete picture for structural and machinery monitoring alike.

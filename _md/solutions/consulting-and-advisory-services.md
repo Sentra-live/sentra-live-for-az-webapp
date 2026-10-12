@@ -12,7 +12,7 @@ Government & Public Sector Infrastructure Developers Asset Owners EPC Contractor
 
 Expert guidance to make the right monitoring and engineering decisions: vendor-neutral, evidence-based, and aligned to international standards.
 
-[Book a Free Consultation ](https://sentratech.in/contact.html) [Explore Services](#sol-overview)
+[Book a Free Consultation ](https://sentratech.in/monitoring-assessment.html?source=consulting-and-advisory-services) [Explore Services](#sol-overview)
 
 What We Do
 
@@ -34,7 +34,7 @@ We work as your independent advisors, not tied to any hardware vendor or softwar
 
 - One-day review or long-term retainer
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [See how it works ](#sol-how)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=consulting-and-advisory-services) [See how it works ](#sol-how)
 
 ![Consulting & Advisory Services](https://sentratech.in/image/solutions/banners/Solutions-Consulting-Solutions-Consultant-750x500.webp)
 
@@ -436,7 +436,7 @@ Replace instinct and assumption with structured analysis. Our advisory deliverab
 
 ### Get an independent view on your programme
 
-Book a Free Consultation ](https://sentratech.in/contact.html)
+Book a Free Consultation ](https://sentratech.in/monitoring-assessment.html?source=consulting-and-advisory-services)
 
 Risk Mitigation
 
@@ -444,7 +444,7 @@ Risk Mitigation
 
 Costly decisions often go wrong because of information gaps, vendor pressure, or limited specialist expertise. Advisory services address these risks at source.
 
-[Book a free consultation ](https://sentratech.in/contact.html)
+[Book a free consultation ](https://sentratech.in/monitoring-assessment.html?source=consulting-and-advisory-services)
 
 1. 01
 
@@ -628,4 +628,4 @@ Speak with one of our independent advisors: no vendor pitch, no obligation. Just
 
 - Clear scope and timeline
 
-[Book a Free Consultation ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)
+[Book a Free Consultation ](https://sentratech.in/monitoring-assessment.html?source=consulting-and-advisory-services) [ Talk to an SHM Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

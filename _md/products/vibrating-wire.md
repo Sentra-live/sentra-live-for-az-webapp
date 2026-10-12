@@ -302,6 +302,14 @@ Using versatile plate **LS-ACC-IN15-HP** for horizontal and vertical surface dep
 
 Talk to our engineering team about the right G7 Vibrating Wire Data Logger configuration for your geotechnical or structural monitoring project. Custom solutions, fast delivery.
 
+Used In
+
+## Where the Vibrating Wire Logger Is Used
+
+[ **Piezometers & crackmeters**Geotechnical monitoring ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) [ **Seepage & pore pressure**Dams & reservoirs ](https://sentratech.in/industries/dams-reservoirs-monitoring.html) [ **VW strain on steel members**Fatigue & residual life assessment ](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-vibrating-wire) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About the G7 VW Data Logger?

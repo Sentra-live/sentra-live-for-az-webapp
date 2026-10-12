@@ -1,11 +1,11 @@
 # Handheld SLAM vs. TLS for Highway Bridge Surveys, A Comparison Study
 
-> Case study: mobile laser scanning cut bridge inspection field time by 16x and total project time by 29x compared to terrestrial laser scanning, with sub-1cm accuracy and 90% automated point cloud cleanup.
+> Case study: handheld SLAM cut bridge survey field time 16x and project time 29x versus terrestrial laser scanning, with sub-1cm accuracy.
 
 Published: 2026-09-17  
 Source: https://sentratech.in/case-studies/handheld-slam-vs-tls-highway-bridge-surveys.html
 
-A side-by-side bridge condition survey pitted a mobile SLAM-based scanner, the XGRIDS L2 Pro, against a conventional terrestrial laser scanning (TLS) workflow built around a static scanner such as the RTC360. The mobile workflow finished the entire project in about 6 hours against roughly 7.5 days for TLS: while holding accuracy to under 1cm against the TLS baseline.
+Manufacturer comparison study. The figures and point cloud images in this study come from XGRIDS, whose scanners Sentra resells in India. We reproduce them because they answer a question our bridge clients ask; they are not from a Sentra project. A side-by-side bridge condition survey pitted a mobile SLAM-based scanner, the XGRIDS L2 Pro, against a conventional terrestrial laser scanning (TLS) workflow built around a static scanner such as the RTC360. The mobile workflow finished the entire project in about 6 hours against roughly 7.5 days for TLS: while holding accuracy to under 1cm against the TLS baseline.
 
 Bridge condition surveys usually run into the same wall: terrestrial laser scanning (TLS) delivers excellent static accuracy, but it needs the scanner set up, levelled and registered again at every position along the structure. On a long bridge deck, that adds up to hundreds of individual setups, each one closing off part of the site while it runs.
 
@@ -112,6 +112,16 @@ Dynamic object removal is the process of stripping moving objects: vehicles, ped
 ###
 
 Not universally: TLS still delivers the highest static, survey-grade accuracy for critical structural detail. But for full-structure bridge condition surveys where field time, site access and turnaround matter, mobile SLAM-based scanning delivers comparable practical accuracy at a fraction of the time and site disruption.
+
+Related service [Infrastructure Digital Twins ](https://sentratech.in/solutions/digital-twin.html)
+
+- [Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html)
+
+- [The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html)
+
+- [3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=handheld-slam-vs-tls-highway-bridge-surveys)
 
 ## Ready to Bring Faster Reality Capture to Your Next Bridge Survey?
 

@@ -131,9 +131,31 @@ View Details
 
 ](https://sentratech.in/solutions/digital-engineering-and-documentation.html)
 
+Applications
+
+[
+
+#### Railway Bridge Monitoring
+
+Strain, vibration and fatigue under live rail loads
+
+](https://sentratech.in/solutions/railway-bridge-monitoring.html) [
+
+#### Construction Vibration Monitoring
+
+Protecting adjacent structures during works
+
+](https://sentratech.in/solutions/construction-vibration-monitoring.html) [
+
+#### Predictive Maintenance & Condition Monitoring
+
+Detect equipment deterioration before failure
+
+](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html)
+
 Your infrastructure deserves more than generic solutions. Partner with Sentra and discover data-driven reliability.
 
-[Speak with an Expert ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=solutions)
 
 Our Products
 
@@ -645,4 +667,4 @@ Talk to Our Team
 
 Describe your monitoring requirements and our solution engineers will recommend the ideal approach, with a detailed proposal within 24 hours.
 
-[Request a Consultation ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=solutions) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)

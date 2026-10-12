@@ -9,6 +9,30 @@
     var RESOURCES = [
         // ---------- Blogs ----------
         {
+            id: 'blog-early-warning-plan-critical-infrastructure',
+            title: 'How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist',
+            excerpt: 'Rank assets by consequence, name how each one fails, set tiered thresholds, keep data flowing through the storm and decide in advance who acts on an alert.',
+            category: 'Infrastructure',
+            color: 'teal',
+            type: 'blogs',
+            date: '12 Oct 2026',
+            image: './image/blogs/banners/blogs_early-warning-plan-critical-infrastructure-checklist.webp',
+            link: './blogs/early-warning-plan-critical-infrastructure-checklist.html',
+            featured: true
+        },
+        {
+            id: 'blog-shm-cost-factors',
+            title: 'How Much Does Structural Health Monitoring Cost? What Drives the Price',
+            excerpt: 'Measurement points, static or dynamic monitoring, connectivity, site access, duration and reporting: what sets the cost of an SHM programme, and how a pilot fixes the budget.',
+            category: 'Structural Health',
+            color: 'orange',
+            type: 'blogs',
+            date: '3 Oct 2026',
+            image: './image/blogs/banners/blogs_structural-health-monitoring.webp',
+            link: './blogs/structural-health-monitoring-cost-factors.html',
+            featured: true
+        },
+        {
             id: 'blog-slope-stability-monitoring-mining',
             title: 'Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines',
             excerpt: 'How open-pit slopes fail, the accelerating movement that warns of collapse, and how radar, prisms, GNSS, inclinometers and piezometers feed alarm thresholds and response plans.',
@@ -252,7 +276,7 @@
         // ---------- Case Studies ----------
         {
             id: 'cs-substation-digital-asset-management',
-            title: 'Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL',
+            title: 'Digital Asset Management & Digital Twin for Substation - Bathupally TGNPDCL',
             excerpt: 'TGNPDCL\'s Bathupally substation as a digital twin: 360° imagery, a 3D asset model and point cloud in one viewer, with measurements, maintenance POIs and construction records.',
             category: 'Smart Substation',
             color: 'orange',
@@ -334,6 +358,30 @@
         },
 
         // ---------- Articles ----------
+        {
+            id: 'art-metro-rail-monitoring',
+            title: 'Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time',
+            excerpt: 'Settlement and convergence in tunnels, pier tilt and dynamic response on viaducts, wall deflection and vibration at station excavations: what real-time monitoring tracks on a metro line, in construction and in service.',
+            category: 'Rail Infrastructure',
+            color: 'blue',
+            type: 'articles',
+            date: '16 Oct 2026',
+            image: './image/articles/article_metro-rail-monitoring-tunnels-viaducts-stations.webp',
+            link: './article/metro-rail-monitoring-tunnels-viaducts-stations.html',
+            featured: true
+        },
+        {
+            id: 'art-nepal-flash-floods-himalayan-infrastructure',
+            title: "Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn",
+            excerpt: "A debris flow down the Trishuli valley outran the warning system built to catch it. Why the warning came late, and five lessons for monitoring India's Himalayan roads, railways, bridges and dams.",
+            category: 'Smart Cities',
+            color: 'teal',
+            type: 'articles',
+            date: '12 Oct 2026',
+            image: './image/articles/article_nepal-flash-floods-early-warning-himalayan-infrastructure.webp',
+            link: './article/nepal-flash-floods-early-warning-himalayan-infrastructure.html',
+            featured: true
+        },
         {
             id: 'art-shm-consulting-expert-advisory',
             title: 'SHM Consulting: How Expert Advisory Services Reduce Infrastructure Risk',

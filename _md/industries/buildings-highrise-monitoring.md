@@ -11,7 +11,7 @@ Monitoring
 
 Settlement monitoring, tilt tracking and seismic response systems for residential, commercial, and heritage structures by ensuring safety and compliance throughout the building lifecycle.
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/structural-health-monitoring.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=building&amp;source=buildings-highrise-monitoring) [Explore Solution](https://sentratech.in/solutions/structural-health-monitoring.html)
 
 ## Why Building
 Monitoring Matters
@@ -69,4 +69,4 @@ Structures
 
 Contact us for a custom building monitoring solution.
 
-[Get in Touch ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=building&amp;source=buildings-highrise-monitoring)

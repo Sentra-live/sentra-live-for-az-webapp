@@ -252,6 +252,14 @@ Using versatile plate **LS-ACC-IN15-HP** for horizontal and vertical surface dep
 
 Talk to our engineering team about the right Tiltmeter configuration for your railway, mining, or geotechnical monitoring project. Custom solutions, fast delivery.
 
+Used In
+
+## Where the Event Detection Tiltmeter Is Used
+
+[ **Bridge pier & bearing rotation**Bridge monitoring system ](https://sentratech.in/industries/bridges-highways-monitoring.html) [ **Structures next to construction**Construction vibration monitoring ](https://sentratech.in/solutions/construction-vibration-monitoring.html) [ **Slopes & retaining structures**Geotechnical monitoring ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) [ **Structural health monitoring**Tilt & rotation, triggered readings ](https://sentratech.in/solutions/structural-health-monitoring.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-tiltmeter-event-detection) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About the Wireless Tiltmeter?

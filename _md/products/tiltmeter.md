@@ -288,6 +288,14 @@ L-shaped mount attached to a 50 mm pole with u-bolts for secure attachment to po
 
 Talk to our engineering team about the right tiltmeter configuration for your project, including slopes, tunnels, rail tracks or structures. Custom solutions, fast delivery.
 
+Used In
+
+## Where the Wireless Tiltmeter Is Used
+
+[ **Bridge pier & bearing rotation**Bridge monitoring system ](https://sentratech.in/industries/bridges-highways-monitoring.html) [ **Railway bridges & track**Railway bridge monitoring ](https://sentratech.in/solutions/railway-bridge-monitoring.html) [ **Slopes & retaining structures**Geotechnical monitoring ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) [ **Case study: highway bridges**Tilt sensors on piers and supports ](https://sentratech.in/case-studies/structural-health-monitoring-of-highway-bridges.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-tiltmeter) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About the Wireless Tiltmeter?

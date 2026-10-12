@@ -49,8 +49,18 @@ Structures expand and contract with temperature. When a bridge exhibits unexpect
 
 If your maintenance logs show escalating repair frequency or costs for a particular bridge, it is likely experiencing progressive deterioration. Continuous monitoring replaces reactive repairs with predictive maintenance, reducing lifecycle costs and extending service life.
 
+Related service [Bridge Monitoring System ](https://sentratech.in/industries/bridges-highways-monitoring.html)
+
+- [Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html)
+
+- [Top 5 Hidden Structural Damages That Manual Bridge Inspection Misses](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html)
+
+- [Madhya Pradesh Bridge Collapses & Structural Health Monitoring](https://sentratech.in/article/madhya-pradesh-bridge-collapses-structural-health-monitoring.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=10-early-warning-signs-bridge-continuous-monitoring)
+
 ## Protect Your Bridge Assets with Continuous Monitoring
 
 Don't wait for the next visual inspection to discover a problem. Continuous structural health monitoring provides real-time awareness, reduces lifecycle costs, and ensures public safety. Contact Sentra Technologies today for a free consultation.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=10-early-warning-signs-bridge-continuous-monitoring)

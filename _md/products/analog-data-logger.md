@@ -246,6 +246,14 @@ Using external mounting brackets **LS-ACC-MEC-MP** (set of 2) for secure wall in
 
 Talk to our engineering team about the right Analog Data Logger configuration for your geotechnical, structural or environmental monitoring project. Custom solutions, fast delivery.
 
+Used In
+
+## Where the Analog Data Logger Is Used
+
+[ **LVDT deflection in load tests**Railway bridge monitoring ](https://sentratech.in/solutions/railway-bridge-monitoring.html) [ **Load cells & legacy sensors**Structural health monitoring ](https://sentratech.in/solutions/structural-health-monitoring.html) [ **Case study: railway bridge**6.2 mm mid-span deflection from LVDTs ](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-analog-data-logger) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About the Analog Data Logger?

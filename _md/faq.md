@@ -50,7 +50,9 @@ Single 4G Gateway supports **1,000+ devices**. Cloud: 300 msg/min. Edge: 30 msg/
 
 Via **Mobile App** (Bluetooth), **USB-C**, or **over-the-air** via CMT. No laptop needed. Maintenance: inspections + battery swap every 5–10 yrs.
 
-Yes. Sentra sensors support open standards including **MQTT, HTTP/S, and ModBus RTU**, enabling integration with AWS IoT, Azure IoT Hub, ThingWorx, and custom platforms. Our REST API and webhook connectors allow real-time data forwarding to any third-party dashboard or analytics engine. For enterprise deployments, we provide integration documentation and technical support throughout the onboarding process.
+The wireless loggers and sensors we supply report over **LoRaWAN or 4G** to their gateway, and digital sensors connect over **RS485 Modbus RTU**. Monitoring data can be exported as CSV for use in other tools.
+
+If you need data delivered into a specific third-party platform, tell us which one at the scoping stage and we will confirm whether and how it can be done before it goes into a proposal.
 
 Sampling rates are configurable per sensor and application: **Vibration meters** up to 200 Hz, **Tiltmeters** from 30 seconds to 24 hours, **Strain gauges** from 1 second to 24 hours, **GNSS** from 1 second (RTK) to 24 hours. Data resolution is 16–24 bit depending on the sensor type. Edge gateways apply configurable averaging, filtering, and threshold-based event recording to balance data fidelity with bandwidth and power consumption.
 
@@ -100,17 +102,15 @@ Sentra's bridge inspection service combines traditional engineering assessment w
 
 Inspections can be delivered as one-off assessments or integrated into a continuous monitoring programme. All findings are documented with photographic evidence, defect mapping, and prioritised maintenance recommendations. [Learn more →](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html)
 
-Asset monitoring uses IoT sensors to continuously track the health and performance of industrial and infrastructure equipment: pumps, motors, conveyors, transformers, and rotating machinery. Sentra's asset monitoring solution:
+Asset monitoring uses IoT sensors to track the condition of equipment such as pumps, motors, transformers and rotating machinery, and of the structures that carry them. Sentra:
 
-- Deploys **vibration, temperature, pressure, flow, and power sensors** on critical assets
+- Deploys wireless **vibration, tilt and temperature sensors** on critical assets
 
-- Transmits data via **edge-processing gateways** to a real-time multi-asset dashboard
+- Sends readings through **LoRaWAN or 4G gateways** to a monitoring dashboard
 
-- Generates **composite health scores** for each asset, making condition data accessible to maintenance teams
+- Alerts your team when a reading crosses a **threshold set for that asset**
 
-- Provides **predictive failure alerts** 2–4 weeks before expected failure, enabling planned intervention rather than emergency repairs
-
-Typical outcomes include a **35% reduction in unplanned downtime**, a **20–40% reduction in maintenance costs**, and extended equipment lifecycle. The platform integrates with existing CMMS (Maximo, SAP PM) and SCADA systems. [Learn more →](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html)
+Downtime falls because problems such as rising vibration show up as a trend, so the repair can be planned into a shutdown instead of being forced by a failure. [Learn more →](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html)
 
 Geotechnical monitoring measures ground behaviour (settlement, lateral movement, pore water pressure, and vibration) using instruments installed in or on the ground. It is required in the following scenarios:
 
@@ -198,13 +198,13 @@ Depending on your sensor configuration and monitoring objectives, you receive:
 
 - **Monthly performance reports**: Reports covering executive summaries, sensor health status, trend plots, identified anomalies, and prioritised maintenance recommendations
 
-- **Data exports**: CSV, JSON, and API access to raw and processed data for integration with your existing asset management or SCADA systems
+- **Data exports**: CSV export of raw and processed data for use in your own analysis or asset management tools
 
 Our alerting system is designed to deliver actionable intelligence without overwhelming operators with false alarms:
 
 - **Three-tier alert levels**: Advisory (monitoring readings approach expected values, review recommended), Warning (readings approach design limit state, action required), Critical (readings at or exceeding design limits, immediate response required)
 
-- **Multiple delivery channels**: SMS, email, dashboard notifications, and API webhooks for integration with your internal alerting systems
+- **Multiple delivery channels**: SMS, email and dashboard notifications
 
 - **Configurable thresholds**: Alert thresholds are set based on structural design limits, geotechnical trigger levels, and operational parameters specific to your asset
 
@@ -212,15 +212,13 @@ Our alerting system is designed to deliver actionable intelligence without overw
 
 - **Audit trail**: All alerts are logged with timestamps, acknowledgment records, and response actions for compliance and post-event analysis
 
-Alert fatigue is actively managed through baseline tuning during the commissioning period and ongoing model refinement. Our engineers work with your team to calibrate thresholds that minimise false positives while ensuring no genuine events are missed.
+Alert fatigue is actively managed through baseline tuning during the commissioning period and ongoing threshold review. Our engineers work with your team to calibrate thresholds that minimise false positives while ensuring no genuine events are missed.
 
 Yes. All Sentra monitoring data is accessible from anywhere with an internet connection through:
 
 - **Web dashboards**: Fully responsive, accessible from desktop, tablet, and mobile browsers
 
 - **CMT Cloud platform**: Centralised multi-project management with role-based access controls, audit logging, and user permissions management
-
-- **API access**: RESTful API for programmatic data retrieval and integration with your internal systems
 
 - **Data export**: CSV and JSON export for offline analysis or integration with GIS, BIM, and CMMS platforms
 
@@ -254,11 +252,11 @@ We comply with international data protection standards and can provide detailed 
 
 All monitoring data is securely stored in the cloud with configurable retention policies:
 
-- **Unlimited retention**: Raw and processed data is retained for the full duration of your monitoring programme with no auto-deletion, enabling long-term trend analysis and lifecycle studies spanning years or decades
+- **Programme-length retention**: Raw and processed data is kept for the duration of your monitoring programme, with retention terms confirmed in the contract, enabling long-term trend analysis and lifecycle studies
 
 - **Tiered storage**: High-resolution recent data is kept in hot storage for rapid dashboard access; older data is automatically migrated to cost-optimised archive storage with the same query and export capabilities
 
-- **Data export & backup**: Full dataset exports in CSV, JSON, or API format are available on demand. Scheduled automated backups can be configured to your own storage (AWS S3, Azure Blob, on-premises NAS)
+- **Data export**: Full dataset exports in CSV are available on demand, so you always hold your own copy
 
 - **Historical replay**: The dashboard supports replaying historical data to visualise structural behaviour at any past point in time, which matters for forensic analysis, claims investigation, and compliance audits
 
@@ -270,25 +268,21 @@ A Digital Twin is a dynamic, real-time virtual replica of a physical asset (a br
 
 - **Combining with BIM and GIS data**: 3D BIM models provide the structural geometry and metadata, while GIS provides spatial context and geolocation
 
-- **Enabling predictive simulations**: Engineers can run "what-if" scenarios on the Digital Twin: simulate a 100-year flood on a dam, a seismic event on a bridge, or a loading change on a building, then see the predicted structural response before it happens in the real world
+- **Linking analysis to the model**: Where a structure has been analysed, for example a finite element model calibrated against load test data, the results can be referenced to the same components as the monitoring and inspection records
 
 - **Visualising real-time data in 3D**: Sensor readings are overlaid on the 3D model with colour-coded health indicators, making complex multi-sensor data instantly understandable
 
 The result is a living digital record that supports condition-based maintenance, rehabilitation planning, emergency response simulation, and lifecycle optimisation. [Learn more →](https://sentratech.in/solutions/digital-engineering-and-documentation.html)
 
-Yes. Sentra's platform is designed for integration with leading enterprise systems:
+Integration is scoped per project rather than offered as off-the-shelf connectors. What is in place today:
 
-- **CMMS (Computerised Maintenance Management Systems)**: Integration with Maximo, SAP PM, Infor EAM, and other CMMS platforms. Monitoring alerts can automatically create work orders, and maintenance records can be correlated with sensor data in the dashboard
+- **Data export**: monitoring data exports as CSV
 
-- **SCADA (Supervisory Control and Data Acquisition)**: Data exports via OPC-UA, ModBus TCP, and REST API for integration with existing SCADA and process control systems
+- **Field protocols**: digital sensors connect over RS485 Modbus RTU; wireless devices use LoRaWAN or 4G
 
-- **BIM (Building Information Modelling)**: IFC-compliant model integration, enabling sensor data visualisation within the 3D BIM context
+- **Digital twin**: georeferenced 3D models with maintenance points and records attached to individual components
 
-- **GIS (Geographic Information Systems)**: Geospatial data integration for mapping sensor networks across large asset portfolios
-
-- **ERP (Enterprise Resource Planning)**: Data feeds for capital planning, asset valuation, and lifecycle cost analysis
-
-Custom integration with non-standard platforms is available through our engineering team. We provide API documentation and technical support throughout the integration process.
+If you need data delivered into a specific CMMS, SCADA, BIM or GIS system, tell us which one and we will confirm feasibility before proposing it.
 
 Edge computing is a core component of Sentra's architecture, bringing intelligence and processing power directly to the deployment site:
 
@@ -344,7 +338,7 @@ No specialised software is required. The Digital Twin is accessible through stan
 
 - **BIM authoring tools**: For teams that need to modify the underlying BIM model, standard tools such as Autodesk Revit, Navisworks, or open-source IFC-compatible viewers can be used alongside our platform
 
-- **API & data feeds**: Raw monitoring data and model metadata are accessible via REST API for integration with your existing engineering software ecosystem
+- **Data export**: Raw monitoring data can be exported as CSV for use in your existing engineering software
 
 Implementation & Support 7 questions
 
@@ -360,7 +354,7 @@ We provide a detailed project schedule before commencing work, with defined mile
 
 Yes. Every monitoring deployment includes:
 
-- **Professional installation**: Our certified engineers handle all installation: sensor mounting, borehole instrumentation, gateway deployment, network configuration, and system calibration. We work to minimise disruption to operational structures and traffic, and adhere to all site safety requirements
+- **Professional installation**: Our field engineers handle all installation: sensor mounting, borehole instrumentation, gateway deployment, network configuration, and system calibration. We work to minimise disruption to operational structures and traffic, and adhere to all site safety requirements
 
 - **Commissioning and testing**: Full system testing, baseline data collection, and alert threshold configuration before handover
 
@@ -422,7 +416,7 @@ Sentra's monitoring systems are engineered for decades of reliable unattended op
 
 - **Annual system audits**: Under our maintenance agreements, we perform annual system health checks, sensor calibration verification, and firmware updates
 
-Our systems typically achieve >99.5% availability, and we provide SLAs for response times and system uptime as part of enterprise contracts. With user-replaceable batteries and modular component design, key maintenance actions can be performed without specialised tools or extended downtime.
+Response times and availability commitments are written into the maintenance agreement for each project. With user-replaceable batteries and modular component design, key maintenance actions can be performed without specialised tools or extended downtime.
 
 All Sentra hardware comes with a warranty and support package covering:
 
@@ -518,53 +512,39 @@ The result is a shift from reactive emergency repairs, which typically cost 3 to
 
 These three maintenance strategies represent an evolution from schedule-driven to data-driven asset management:
 
-- **Preventive maintenance**: Maintenance performed on a fixed calendar schedule (e.g., inspect every 6 months, replace bearings every 5 years) regardless of actual asset condition. While better than reactive maintenance, it often results in unnecessary interventions, wasted resources, and unexpected failures between scheduled intervals. Most transportation agencies still rely primarily on periodic preventive maintenance.
+- **Preventive maintenance**: Maintenance performed on a fixed calendar schedule (e.g., inspect every 6 months, replace bearings every 5 years) regardless of actual asset condition. It often results in unnecessary interventions and still misses failures that develop between scheduled intervals.
 
-- **Condition-based maintenance**: Maintenance triggered when measured parameters (vibration levels, crack widths, tilt angles) reach predefined thresholds. This approach uses sensor data to determine when maintenance is actually needed, which cuts unnecessary interventions and still catches issues earlier than a scheduled inspection would. Condition-based maintenance requires reliable sensor data and well-calibrated threshold levels.
+- **Condition-based maintenance**: Maintenance triggered when measured parameters (vibration levels, crack widths, tilt angles) reach predefined thresholds. It needs reliable sensor data and well-calibrated threshold levels.
 
-- **Predictive maintenance**: The most advanced approach, using AI and machine learning to predict when failure is likely to occur based on historical data, deterioration trends, and operational patterns. Predictive maintenance provides weeks or months of advance warning, enabling optimal planning of maintenance activities, parts procurement, and resource allocation, with less disruption to operations.
+- **Predictive maintenance**: Forecasting when a limit will be reached from deterioration trends, physics-based models or machine learning, so that work can be planned weeks or months ahead.
 
-Sentra's platform supports all three approaches, but the predictive analytics capability, which pairs continuous IoT data with machine learning deterioration models, delivers the highest ROI by preventing unplanned failures while optimising maintenance spend. Typical outcomes include a **35% reduction in unplanned downtime** and **20–40% reduction in maintenance costs**.
+Most of Sentra's monitoring work today is condition-based: thresholds set from design limits and a commissioning baseline, machine learning anomaly detection in our in-house monitoring application, and trends reviewed by our engineers. For steel bridges we also estimate [residual fatigue life](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html) from measured stress ranges, which is a physics-based prediction. Data-driven predictive models need a long, clean history on the structure concerned, and we scope them only where that data exists.
 
-Machine learning (ML) significantly enhances structural health monitoring by extracting insights from complex, multi-sensor data streams that would be impossible to analyse manually. Key improvements include:
+Machine learning helps where there is more data than engineers can review by eye. In SHM research and practice it is used to:
 
-- **Pattern recognition at scale**: ML models process data from hundreds of sensors simultaneously, identifying subtle patterns and correlations that indicate early-stage damage before any visible sign appears. This is particularly valuable for detecting fatigue crack initiation, which traditional inspection methods often miss until cracks are well advanced
+- Separate structural response from **temperature and traffic effects**
 
-- **Noise filtering and signal enhancement**: In real-world environments, sensor data is contaminated by environmental noise: wind, traffic, temperature fluctuations, and operational activities. ML algorithms learn to distinguish genuine structural responses from background noise, dramatically reducing false alarms while maintaining sensitivity to real anomalies
+- Learn a structure's **normal behaviour** so that departures from it stand out
 
-- **Adaptive baseline learning**: Unlike fixed threshold systems that require manual recalibration, ML models continuously adapt their baseline understanding as the structure ages, seasons change, and usage patterns evolve, which holds detection accuracy steady over years of operation without frequent manual adjustment
+- Combine several sensor types into **one condition indicator**
 
-- **Multi-modal data fusion**: ML can combine data from different sensor types (tilt, strain, vibration, temperature, crack gauges) to build a complete picture of structural health, identifying correlations across parameters that single-sensor analysis would miss
+- Find and measure **defects in inspection imagery**
 
-- **Damage localisation and severity estimation**: Advanced ML models can not only detect that something is wrong, but identify approximately where the issue is located and estimate its severity, which sends inspection teams straight to the affected area
+Where Sentra uses machine learning today is image-based inspection: [BridgePulse](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html), built by Clove Technologies for Indian Railways, uses convolutional neural networks to detect cracks and rust on drone photogrammetry models, estimate their size, and compare them between scans. On sensor data, our in-house monitoring application runs machine learning anomaly detection alongside engineering thresholds, baselines and analysis such as frequency tracking and fatigue assessment.
 
-Sentra's monitoring platform incorporates these ML capabilities as standard, with models trained on thousands of infrastructure monitoring deployments across bridges, dams, railways, and buildings worldwide.
+Sometimes, for some failure modes. Gradual deterioration such as fatigue, settlement or a slowly rising tilt produces a trend that can be extrapolated, and machine learning can help when the relationship between load, temperature and response is too complex to model by hand. Sudden failures are much harder to forecast, and any prediction is only as good as the history of data behind it.
 
-Yes. AI-powered prediction of infrastructure failure is already running across thousands of monitored assets worldwide. Here is how it works and what it can achieve:
+Sentra's own predictive work is physics-based: [residual fatigue life on steel railway bridges](https://sentratech.in/case-studies/railway-bridge-fatigue-life-assessment-load-testing.html) from measured stress ranges, Rainflow counting and Miner's rule. Our AI work is [BridgePulse](https://sentratech.in/case-studies/bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring.html), which detects and tracks cracks and rust in drone imagery so that a growing defect is visible between inspections. On sensor data, our in-house monitoring application uses machine learning to flag departures from a structure's learned behaviour; forecasting failure dates from sensor data alone is not something we claim.
 
-- **Progressive deterioration prediction**: For gradual failure modes such as corrosion, fatigue cracking, and settlement, AI models can predict the timeline to critical condition accurately enough to be useful, often 6 to 24 months of advance warning based on observed deterioration rates and historical data from similar assets. This allows asset owners to plan repairs during scheduled maintenance windows rather than emergency closures
+It depends heavily on the asset, its condition and what you spend on it now, so we would rather model it from your numbers than quote an industry percentage. The savings come from three places:
 
-- **Sudden failure precursor detection**: Even apparently sudden failures, such as slope collapses, bridge bearing failures, or dam instability, are usually preceded by subtle precursor signals that are invisible to human inspectors but detectable by ML algorithms. Changes in micro-vibration patterns, rate of tilt, or strain correlation shifts can indicate developing instability hours or days before catastrophic failure
+- **Fewer unnecessary interventions**: work that the data shows is not needed is dropped
 
-- **Probabilistic risk assessment**: Rather than binary 'safe or unsafe' outputs, AI systems provide probabilistic risk assessments: "there is a 78% probability that this slope will exceed its design threshold within the next 30 days". That supports risk-based decisions and a proportional response
+- **Planned instead of emergency repairs**: needed work is scheduled into a possession or shutdown
 
-- **Real-world results**: In bridge monitoring applications, AI systems have demonstrated the ability to detect critical structural changes 4–8 weeks before they would become visible during routine inspections. In slope stability monitoring, early detection rates exceed 90% for failures that would otherwise cause significant disruption
+- **Evidence to keep assets in service**: a measured residual fatigue life can justify keeping a structure open rather than replacing or restricting it early
 
-Sentra's AI analytics platform is continuously refined using data from our global monitoring network, with models specifically calibrated for different asset types, geographical regions, and failure modes. While no system can predict every failure with certainty, AI dramatically reduces the element of surprise in infrastructure management. [Explore Sentra's AI monitoring capabilities →](https://sentratech.in/solutions/structural-health-monitoring.html)
-
-The financial case for predictive maintenance has been measured across several infrastructure sectors. While savings vary by asset type and current maintenance practices, typical outcomes from implementing IoT-enabled predictive maintenance include:
-
-- **20–40% reduction in maintenance costs**: By eliminating unnecessary scheduled interventions and focusing resources on assets that actually need attention, agencies significantly reduce labour, materials, and equipment costs. A railway authority monitoring 500+ bridges reported annual maintenance savings of over $2 million after implementing predictive monitoring
-
-- **35–50% reduction in unplanned downtime**: Early detection of developing issues allows maintenance to be scheduled during planned closures rather than emergency shutdowns, which typically cost 3 to 5 times more once you add expedited mobilisation, overtime labour, and traffic disruption penalties
-
-- **Extended asset life by 15–25%**: Continuous monitoring and timely intervention slow the rate of deterioration, adding years to the operational life of bridges, tunnels, and buildings. For a major bridge structure, even a 5-year life extension can represent tens of millions of dollars in deferred replacement costs
-
-- **ROI of 5:1 to 10:1**: Industry studies consistently show that predictive maintenance programmes deliver $5–10 in savings for every $1 invested in monitoring technology and analytics, which puts it among the highest-return infrastructure investments available
-
-- **Insurance and liability benefits**: Demonstrated active monitoring programmes can reduce infrastructure insurance premiums and provide documented due diligence in the event of third-party claims, which improves the financial case further
-
-Sentra provides detailed ROI analysis as part of our initial consultation, modelling expected savings based on your specific asset portfolio, current maintenance spend, and risk profile. [Request an ROI assessment →](https://sentratech.in/contact.html)
+Against that sit the cost of the instrumentation, its maintenance and the engineering time to interpret the data. We can build that comparison for your asset as part of an initial consultation. [Request an assessment →](https://sentratech.in/contact.html)
 
 Industry-Specific Monitoring 5 questions
 

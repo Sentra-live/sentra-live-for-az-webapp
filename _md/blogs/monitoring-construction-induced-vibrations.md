@@ -1,6 +1,6 @@
 # Monitoring Construction-Induced Vibrations in Urban Environments
 
-> Learn how to monitor construction-induced vibrations in urban areas by protecting adjacent structures, ensuring compliance, and mitigating risk with IoT sensors.
+> How to monitor construction-induced vibrations in urban areas: protect adjacent structures, stay compliant and manage risk with IoT sensors.
 
 Published: 2026-06-24  
 Source: https://sentratech.in/blogs/monitoring-construction-induced-vibrations.html
@@ -95,8 +95,18 @@ During a recent tunnel boring project beneath a major metropolitan area, Sentra 
 
 Drone-based LiDAR surveys offer a fast, non-invasive way to verify structural condition around active construction sites, complementing continuous vibration monitoring with rapid visual assessment of adjacent buildings.
 
+Related service [Construction Vibration Monitoring ](https://sentratech.in/solutions/construction-vibration-monitoring.html)
+
+- [Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/blogs/slope-stability-monitoring-mining.html)
+
+- [GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html)
+
+- [Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=monitoring-construction-induced-vibrations)
+
 ## Protect Your Urban Construction Project
 
 Whether you are breaking ground on a new high-rise or tunnelling beneath a historic district, continuous vibration monitoring protects your project, your neighbours, and your reputation. Contact Sentra to design a monitoring plan tailored to your site.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=monitoring-construction-induced-vibrations)

@@ -1,6 +1,6 @@
 # What Is Ground Penetrating Radar (GPR)? How It Supports Road and Tunnel Monitoring
 
-> What ground penetrating radar (GPR) is, how electromagnetic pulses reveal buried conditions, and how engineers use it to assess roads, pavements, tunnels and underground infrastructure.
+> What ground penetrating radar (GPR) is, how it reveals buried conditions, and how engineers use it to assess roads, pavements and tunnels.
 
 Published: 2026-09-08  
 Source: https://sentratech.in/blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html

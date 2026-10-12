@@ -11,7 +11,7 @@ Monitoring
 
 Real-time deformation, convergence and vibration control during deep excavation, tunnelling and high-rise construction phases.
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=tunnel&amp;source=construction-tunnelling-monitoring) [Explore Solution](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
 ## Why Construction
 Monitoring Matters
@@ -69,4 +69,4 @@ Confidence
 
 Contact us for a construction monitoring plan tailored to your project.
 
-[Get in Touch ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=tunnel&amp;source=construction-tunnelling-monitoring)

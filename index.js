@@ -6,6 +6,7 @@
  * - POST /api/chat           Veronica chatbot
  * - POST /api/user-profile   User profile storage
  * - POST /api/contact        Contact form → Google Sheet
+ * - POST /api/assessment     Monitoring assessment form → Google Sheet
  * - POST /api/newsletter     Newsletter subscribe → Google Sheet
  *
  * Required Worker Secrets (set via `wrangler secret put`):
@@ -32,9 +33,11 @@ const SHEET_CHATBOT_LEADS = 'Chatbot Leads';
 const SHEET_CHAT_CONVERSATIONS = 'Chat Conversations'; // current - one row per session, messages as JSON
 const SHEET_LEAD_NOTES = 'Lead Notes';
 const SHEET_BROCHURE_DOWNLOADS = 'Brochure Downloads';
+const SHEET_ASSESSMENTS = 'Assessment Leads';
 const CONTACT_HEADERS = ['Timestamp', 'First Name', 'Last Name', 'Email', 'Subject', 'Lead Type', 'Product Interest', 'Solution Interest', 'Timeline', 'Message'];
 const NEWSLETTER_HEADERS = ['Timestamp', 'Email'];
 const BROCHURE_DOWNLOADS_HEADERS = ['Timestamp', 'Full Name', 'Email', 'Contact Phone', 'Company / Institute', 'Additional Information', 'Brochure', 'Source Page'];
+const ASSESSMENT_HEADERS = ['Timestamp', 'First Name', 'Last Name', 'Email', 'Phone', 'Company', 'Asset Type', 'Asset Age', 'Number of Assets', 'Location', 'Parameters', 'Inspection Method', 'Problem', 'Source Page'];
 const CHATBOT_LEADS_HEADERS = ['Timestamp', 'Name', 'Email'];
 const CHAT_CONVERSATIONS_HEADERS = ['Session ID', 'Lead Name', 'Lead Email', 'Status', 'Last Updated', 'Messages JSON'];
 const LEAD_NOTES_HEADERS = ['Timestamp', 'Lead Row', 'Lead Email', 'Type', 'Content'];
@@ -493,6 +496,89 @@ async function handleContact(request, env) {
     } catch (e) {
         console.error('Contact error:', e);
         return jsonRes({ error: e.message || 'Failed to submit contact form.' }, 500);
+    }
+}
+
+// Monitoring assessment (monitoring-assessment.html). Each answer gets its own
+// column in 'Assessment Leads'; a summary row also goes to 'Contact Leads' so
+// the lead shows up in the admin dashboard and its status workflow.
+async function handleAssessment(request, env) {
+    try {
+        const body = await request.json();
+        const f = k => String(body[k] || '').trim().slice(0, 2000);
+        const d = {
+            firstName: f('firstName'), lastName: f('lastName'), email: f('email'), phone: f('phone'),
+            company: f('company'), assetType: f('assetType'), assetAge: f('assetAge'), assetCount: f('assetCount'),
+            location: f('location'), parameters: f('parameters'), inspection: f('inspection'),
+            problem: f('problem'), source: f('source')
+        };
+
+        if (!d.email || !d.assetType) return jsonRes({ error: 'Email and asset type are required' }, 400);
+        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(d.email)) {
+            return jsonRes({ error: 'Invalid email format' }, 400);
+        }
+
+        const subject = `Monitoring Assessment – ${d.assetType}`;
+        const leadType = 'Monitoring Assessment';
+        const message = [
+            'MONITORING ASSESSMENT REQUEST',
+            `Asset type: ${d.assetType}`,
+            `Asset age: ${d.assetAge || '-'}`,
+            `Number of assets: ${d.assetCount || '-'}`,
+            `Location: ${d.location || '-'}`,
+            `Parameters to monitor: ${d.parameters || '-'}`,
+            `Current inspection method: ${d.inspection || '-'}`,
+            `Problem: ${d.problem || '-'}`,
+            `Company: ${d.company || '-'}`,
+            `Phone: ${d.phone || '-'}`,
+            `Source page: ${d.source || '-'}`
+        ].join('\n');
+
+        let saved = false;
+        if (env.GOOGLE_SERVICE_ACCOUNT_EMAIL && env.GOOGLE_PRIVATE_KEY) {
+            try {
+                const token = await getGoogleAccessToken(env);
+                await ensureSheetExists(token, SHEET_ASSESSMENTS, ASSESSMENT_HEADERS);
+
+                const rows = await sheetsGet(token, `${SHEET_ASSESSMENTS}!A:M`);
+                // Same email + asset + problem already on file = double submit
+                const isDuplicate = rows.slice(1).some(r =>
+                    (r[3] || '').toLowerCase() === d.email.toLowerCase() &&
+                    (r[6] || '') === d.assetType &&
+                    (r[12] || '').trim() === d.problem
+                );
+                if (isDuplicate) return jsonRes({ duplicate: true, message: 'This request was already submitted.' }, 409);
+
+                const now = new Date().toISOString();
+                await sheetsAppend(token, SHEET_ASSESSMENTS, [
+                    now, d.firstName, d.lastName, d.email, d.phone, d.company, d.assetType, d.assetAge,
+                    d.assetCount, d.location, d.parameters, d.inspection, d.problem, d.source
+                ]);
+                saved = true;
+
+                try {
+                    await ensureSheetExists(token, SHEET_CONTACTS, CONTACT_HEADERS);
+                    await sheetsAppend(token, SHEET_CONTACTS, [
+                        now, d.firstName, d.lastName, d.email, subject, leadType, '', d.parameters, '', message
+                    ]);
+                } catch (e) { console.error('Assessment → Contact Leads error:', e.message); }
+            } catch (sheetsErr) {
+                console.error('Sheets assessment error:', sheetsErr.message);
+            }
+        }
+
+        let emailed = false;
+        if (env.MAILGUN_API_KEY && env.MAILGUN_DOMAIN) {
+            emailed = await sendMailgunEmail(env, `${d.firstName} ${d.lastName}`.trim() || 'Guest', d.email, subject, leadType, '', d.parameters, '', message);
+        }
+
+        // Neither the sheet nor the inbox got it - tell the visitor so the lead isn't silently lost
+        if (!saved && !emailed) return jsonRes({ error: 'Could not record your request. Please try again or email contact@sentratech.in.' }, 502);
+
+        return jsonRes({ success: true, message: 'Thank you. A specialist will respond within 24 hours.' });
+    } catch (e) {
+        console.error('Assessment error:', e);
+        return jsonRes({ error: e.message || 'Failed to submit assessment request.' }, 500);
     }
 }
 
@@ -1212,6 +1298,7 @@ export default {
         else if (pathname === '/api/health' && request.method === 'GET') res = handleHealth();
         else if (pathname === '/api/user-profile' && request.method === 'POST') res = await handleUserProfile(request, env);
         else if (pathname === '/api/contact' && request.method === 'POST') res = await handleContact(request, env);
+        else if (pathname === '/api/assessment' && request.method === 'POST') res = await handleAssessment(request, env);
         else if (pathname === '/api/newsletter' && request.method === 'POST') res = await handleNewsletter(request, env);
         else if (pathname === '/api/brochure-download' && request.method === 'POST') res = await handleBrochureDownload(request, env);
         else if (pathname === '/api/chat-history' && request.method === 'POST') res = await handleChatHistory(request, env);

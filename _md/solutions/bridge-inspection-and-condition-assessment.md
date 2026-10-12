@@ -12,7 +12,7 @@ Railway Bridges Highway Bridges Flyovers Waterway Structures
 
 Know the true condition of your infrastructure before it fails: drone-assisted inspection, NDT, and AI-powered analysis in one integrated service.
 
-[Schedule an Inspection ](https://sentratech.in/contact.html) [Explore Solution](#sol-overview)
+[Schedule an Inspection ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=bridge-inspection-and-condition-assessment) [Explore Solution](#sol-overview)
 
 What We Do
 
@@ -34,7 +34,7 @@ The result is a complete condition dataset, not a set of inspector notes that va
 
 - Prioritised maintenance schedule in every report
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [See how it works ](#sol-how)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=bridge-inspection-and-condition-assessment) [See how it works ](#sol-how)
 
 ![Bridge Inspection & Condition Assessment](https://sentratech.in/image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp)
 
@@ -440,7 +440,7 @@ Move from calendar-based inspection cycles to risk-based programmes that allocat
 
 ### Plan your next bridge inspection
 
-Request an Inspection ](https://sentratech.in/contact.html)
+Request an Inspection ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=bridge-inspection-and-condition-assessment)
 
 Risk Mitigation
 
@@ -448,7 +448,7 @@ Risk Mitigation
 
 Poor condition knowledge is the root cause of most bridge maintenance failures. Our inspection service eliminates the data gaps that lead to costly and dangerous outcomes.
 
-[Schedule a bridge inspection ](https://sentratech.in/contact.html)
+[Schedule a bridge inspection ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=bridge-inspection-and-condition-assessment)
 
 1. 01
 
@@ -638,4 +638,4 @@ Tell us about your bridge and inspection requirements. We'll provide a scope and
 
 - Clear scope and timeline
 
-[Request an Inspection ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)
+[Request an Inspection ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=bridge-inspection-and-condition-assessment) [ Talk to an SHM Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

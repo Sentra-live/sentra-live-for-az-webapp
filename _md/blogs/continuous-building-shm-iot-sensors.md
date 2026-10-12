@@ -1,6 +1,6 @@
 # Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured
 
-> Buildings settle, sway and crack over time. Real-time building monitoring with IoT sensors gives owners continuous structural data to act early, not just an annual inspection.
+> Buildings settle, sway and crack. Real-time IoT building monitoring gives owners continuous structural data to act early, not once a year.
 
 Published: 2026-08-25  
 Source: https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html
@@ -87,8 +87,18 @@ Then the response has to be defined in advance. An alert that arrives with no ag
 
 For buildings where several of these measurements are combined, a [digital twin](https://sentratech.in/solutions/digital-twin.html) is a reasonable way to hold sensor data against the structural model so readings are assessed in context. Our overview of [structural health monitoring](https://sentratech.in/solutions/structural-health-monitoring.html) covers how these systems are specified, and [building and high-rise monitoring](https://sentratech.in/industries/buildings-highrise-monitoring.html) describes deployments on occupied towers. If earthquake loading is a concern for your site, [seismic monitoring for buildings](https://sentratech.in/blogs/seismic-monitoring-buildings-critical-infrastructure.html) deals with the post-event assessment side.
 
+Related service [Structural Health Monitoring Services ](https://sentratech.in/solutions/structural-health-monitoring.html)
+
+- [Structural Health Monitoring](https://sentratech.in/blogs/structural-health-monitoring.html)
+
+- [How Much Does Structural Health Monitoring Cost? What Drives the Price](https://sentratech.in/blogs/structural-health-monitoring-cost-factors.html)
+
+- [Seismic Monitoring for Buildings and Critical Infrastructure](https://sentratech.in/blogs/seismic-monitoring-buildings-critical-infrastructure.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=continuous-building-shm-iot-sensors)
+
 ## Work out what your building needs
 
 Not every building needs continuous monitoring, and the ones that do rarely need everything described here. Sentra helps owners and engineers decide which measurements are worth taking on a given structure, then designs, installs, and runs the system. Get in touch if you have a building you are unsure about.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=continuous-building-shm-iot-sensors)

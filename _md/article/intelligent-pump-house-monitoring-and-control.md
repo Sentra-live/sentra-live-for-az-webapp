@@ -53,8 +53,18 @@ Operators can start and stop pumps remotely, change pressure, and leave schedule
 
 Inside a live IoT pump house deployment: the sensors, the dashboard, and the remote controls in day to day use.
 
+Related service [Predictive Maintenance & Condition Monitoring ](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html)
+
+- [Predictive Maintenance for Industrial Facilities](https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html)
+
+- [Intelligent Pump House Monitoring & Control](https://sentratech.in/blogs/intelligent-pump-house-monitoring-and-control.html)
+
+- [Asset Monitoring & Facility Management](https://sentratech.in/blogs/asset-monitoring-facility-management.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=intelligent-pump-house-monitoring-and-control)
+
 ## Optimize Your Water Infrastructure
 
 Getting water where it needs to go is one problem. Doing it without burning extra power or losing pumps to preventable faults is another. If you want to see what continuous monitoring would look like across your pump houses, get in touch with us.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=intelligent-pump-house-monitoring-and-control)

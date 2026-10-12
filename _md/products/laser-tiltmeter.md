@@ -212,6 +212,14 @@ Using versatile plate **LS-ACC-IN15-HP** for horizontal and vertical surface dep
 
 Talk to our engineering team about the right Laser Tiltmeter configuration for your tunneling or structural monitoring project. Custom solutions, fast delivery.
 
+Used In
+
+## Where the Laser Tiltmeter Is Used
+
+[ **Tunnel convergence**Construction & tunnelling ](https://sentratech.in/industries/construction-tunnelling-monitoring.html) [ **Excavation & crown settlement**Geotechnical monitoring ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) [ **Works near existing structures**Construction vibration monitoring ](https://sentratech.in/solutions/construction-vibration-monitoring.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-laser-tiltmeter) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About the Laser Tiltmeter?

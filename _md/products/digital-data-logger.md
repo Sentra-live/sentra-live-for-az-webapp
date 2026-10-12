@@ -216,6 +216,14 @@ Using external mounting brackets **LS-ACC-MEC-MP** (set of 2) for secure wall in
 
 Talk to our engineering team about the right Digital Data Logger configuration for your geotechnical, structural or environmental monitoring project. Custom solutions, fast delivery.
 
+Used In
+
+## Where the Digital Data Logger Is Used
+
+[ **Modbus sensors on plant equipment**Predictive maintenance ](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html) [ **Existing instrumentation**Asset monitoring & management ](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html) [ **Industrial facilities**Condition monitoring ](https://sentratech.in/industries/industrial-facilities-monitoring.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-digital-data-logger) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About the Digital Data Logger?

@@ -1,6 +1,6 @@
 ﻿// Dynamically determine correct path prefix based on current location
 const _pathLower = window.location.pathname.toLowerCase();
-const pathPrefix = (_pathLower.includes('/solutions/') || _pathLower.includes('/products/') || _pathLower.includes('/case-studies/') || _pathLower.includes('/article/') || _pathLower.includes('/blogs/') || _pathLower.includes('/industries/')) ? '../' : './';
+const pathPrefix = (_pathLower.includes('/solutions/') || _pathLower.includes('/products/') || _pathLower.includes('/case-studies/') || _pathLower.includes('/article/') || _pathLower.includes('/blogs/') || _pathLower.includes('/industries/') || _pathLower.includes('/technology/')) ? '../' : './';
 
 // script.js is only one of several deferred scripts on the page, and the init
 // functions it calls live across submit-form.js, video_embedded.js and
@@ -133,7 +133,7 @@ if ($headerEl.length && $headerEl.children().length) {
 }
 
 function fixNavLinks() {
-    const isInSubfolder = window.location.pathname.includes('/solutions/') || window.location.pathname.includes('/products/') || window.location.pathname.includes('/case-studies/') || window.location.pathname.includes('/article/') || window.location.pathname.includes('/blogs/') || window.location.pathname.includes('/industries/');
+    const isInSubfolder = window.location.pathname.includes('/solutions/') || window.location.pathname.includes('/products/') || window.location.pathname.includes('/case-studies/') || window.location.pathname.includes('/article/') || window.location.pathname.includes('/blogs/') || window.location.pathname.includes('/industries/') || window.location.pathname.includes('/technology/');
 
     if (isInSubfolder) {
         $("#header a[href], #footer a[href], #sidebar a[href]").each(function () {
@@ -576,11 +576,6 @@ $(document).ready(function () {
             url: "faq.html"
         },
         {
-            title: "Error 404",
-            description: "404: Oops! Page Not Found. The page you’re looking for might have been moved or temporarily unavailable. Return to SENTRA Home to explore our Smart Monitoring Solutions for infrastructure and industrial applications.",
-            url: "404-page.html"
-        },
-        {
             title: "Blog",
             description: "Our Blogs | Explore insights on Structural Health Monitoring, IoT innovations, data analytics, and smart infrastructure development. Learn how SENTRA is driving digital transformation in the monitoring of critical assets across India.",
             url: "resources.html#blogs"
@@ -857,6 +852,9 @@ document.addEventListener('click', function (e) {
         : /wa\.me|whatsapp\.com/i.test(href) ? 'whatsapp'
         : null;
     if (method) trackEvent('contact_click', { method: method, link_url: href });
+    // Named funnel CTAs (Request a Monitoring Assessment, Talk to an SHM Engineer, ...)
+    var cta = link.getAttribute('data-cta');
+    if (cta) trackEvent('cta_click', { cta: cta, page: window.location.pathname });
 });
 
 // Calendly's embed posts calendly.event_scheduled to the parent window.

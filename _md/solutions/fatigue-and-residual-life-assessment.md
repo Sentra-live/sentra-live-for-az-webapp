@@ -12,7 +12,7 @@ Railway Bridges Steel Structures Offshore Wind Energy Industrial Machinery
 
 Quantify remaining life: extend service, reduce cost, manage risk. Engineering-grade fatigue analysis and residual useful life predictions backed by field measurement and international standards.
 
-[Get a Fatigue Assessment ](https://sentratech.in/contact.html) [Explore Solution](#sol-overview)
+[Get a Fatigue Assessment ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=fatigue-and-residual-life-assessment) [Explore Solution](#sol-overview)
 
 What We Do
 
@@ -34,7 +34,7 @@ Sentra's fatigue and residual life assessment service quantifies actual fatigue 
 
 - Quantified remaining useful life
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [See how it works ](#sol-how)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=fatigue-and-residual-life-assessment) [See how it works ](#sol-how)
 
 ![Fatigue & Residual Life Assessment](https://sentratech.in/image/solutions/Homepage/Fatigue%20%26%20Residual%20Life%20Assessment.webp)
 
@@ -78,41 +78,41 @@ Miner's Rule damage accumulation integrated with measured load spectra and weld 
 
 Historic traffic records, weigh-in-motion data, and measured strain histories are integrated to reconstruct the full load history experienced by the structure, essential for accurate accumulated damage assessment.
 
-Impact
+Field Evidence
 
-## Measurable Outcomes
+## Numbers We Can Back Up
 
-Quantifiable results delivered through our monitoring and engineering solutions across infrastructure projects.
+Figures from our railway bridge fatigue work for South Central Railway and an instrumented steel plate girder bridge.
 
-Track Record
+Bridges Assessed
 
-200+
+2
 
-Projects Delivered
+Steel railway bridges, South Central Railway
 
-Across bridges, railways & infrastructure
+Bridge No. 615 UP and Bridge No. 3 West, [case study](https://sentratech.in/case-studies/railway-bridge-fatigue-life-assessment-load-testing.html)
 
-Railway BridgesSteel StructuresOffshoreWind Energy
+Railway BridgesOpen Web GirdersPlate GirdersFE Calibration
 
 ![Strain Gauge Installation](https://sentratech.in/image/solutions/showcase/fatigue/Strain%20Gauge%20Installation.webp)
 
 Strain Gauge Installation
 
-Efficiency
+Axle Load
 
-40%
+25 t
 
-Cost Reduction
+Heavier axle load justified
 
-Avg. inspection and monitoring cost savings
+Assessed to BS 5400 Part 10 with Rainflow counting and Miner’s rule
 
-Reliability
+Residual Life
 
-99.5%
+12–15 yrs
 
-System Availability
+Residual fatigue life estimate
 
-24/7 continuous uptime
+From measured stress range spectra, damage index 0.63
 
 ![Solution in action](https://sentratech.in/image/solutions/showcase/fatigue/Fatigue%20analysis%20on%20steel%20bridge%20critical%20connections.webp)
 
@@ -428,7 +428,7 @@ Fatigue assessments produced to published international standards by qualified e
 
 ### Find out how much life is left
 
-Talk to Our Engineer ](https://sentratech.in/contact.html)
+Talk to Our Engineer ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=fatigue-and-residual-life-assessment)
 
 Risk Mitigation
 
@@ -436,7 +436,7 @@ Risk Mitigation
 
 Operating aging structures without a fatigue assessment is an engineering risk that no responsible asset owner should accept. These are the consequences that assessment prevents.
 
-[Get a fatigue life assessment ](https://sentratech.in/contact.html)
+[Get a fatigue life assessment ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=fatigue-and-residual-life-assessment)
 
 1. 01
 
@@ -626,4 +626,4 @@ Tell us about your structure, its loading history, and your service extension ob
 
 - Clear scope and timeline
 
-[Talk to Our Engineer ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=fatigue-and-residual-life-assessment) [ Talk to an SHM Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

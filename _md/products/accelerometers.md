@@ -198,6 +198,14 @@ Complete specs, diagrams, and product data sheet
 
 Talk to our engineering team about the right accelerometer configuration for your project, including bridges, tunnels, buildings or industrial machinery. Calibrated solutions, fast delivery.
 
+Used In
+
+## Where the Accelerometer Is Used
+
+[ **Railway bridge dynamic response**Railway bridge monitoring ](https://sentratech.in/solutions/railway-bridge-monitoring.html) [ **Bridge vibration & modal analysis**Bridge monitoring system ](https://sentratech.in/industries/bridges-highways-monitoring.html) [ **Machinery vibration**Predictive maintenance ](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html) [ **Case study: railway bridge**5.3 Hz natural frequency at 100 Hz sampling ](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-accelerometers) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About Our Accelerometer?

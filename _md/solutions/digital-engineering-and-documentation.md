@@ -74,19 +74,19 @@ Structured record packages for regulatory handover, building control sign-off, a
 
 Asset register creation, classification to international standards (Uniclass, OmniClass), and integration with CAFM and CMMS platforms by ensuring asset information remains structured and accessible in operations.
 
-Impact
+Field Evidence
 
-## Measurable Outcomes
+## Numbers We Can Back Up
 
-Quantifiable results delivered through our monitoring and engineering solutions across infrastructure projects.
+Figures from delivered reality capture and modelling work.
 
-Track Record
+Railway Bridge
 
-200+
+40.23 m
 
-Projects Delivered
+Open web girder span modelled
 
-Across bridges, railways & infrastructure
+Bridge No. 60 DN, drone + terrestrial LiDAR, [case study](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html)
 
 Infrastructure OwnersEPC ContractorsGovernmentSmart Cities
 
@@ -94,21 +94,21 @@ Infrastructure OwnersEPC ContractorsGovernmentSmart Cities
 
 LiDAR Point Cloud Capture
 
-Efficiency
+Turnaround
 
-40%
+60 days
 
-Cost Reduction
+First site visit to handover
 
-Avg. inspection and monitoring cost savings
+Capture, registration, modelling and delivery
 
-Reliability
+Substation Twin
 
-99.5%
+3 layers
 
-System Availability
+360° imagery, point cloud, 3D model
 
-24/7 continuous uptime
+One georeferenced viewer, TGNPDCL Bathupally
 
 ![Solution in action](https://sentratech.in/image/solutions/showcase/digital%20engineering/3D%20BIM%20model%20with%20scan-to-BIM%20accuracy%20verification.webp)
 

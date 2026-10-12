@@ -11,7 +11,7 @@ Monitoring
 
 Corrosion tracking, jetty tilt and structural load monitoring for quays, wharves and offshore platforms in harsh marine environments.
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=other&amp;source=ports-marine-monitoring) [Explore Solution](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html)
 
 ## Why Port
 Monitoring Matters
@@ -65,4 +65,4 @@ Infrastructure
 
 Talk to our team about monitoring solutions for your port facilities.
 
-[Get in Touch ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=other&amp;source=ports-marine-monitoring)

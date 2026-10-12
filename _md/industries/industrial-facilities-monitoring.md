@@ -1,6 +1,6 @@
-# Industrial Facility Monitoring: Asset Health | Sentra
+# Industrial Vibration & Condition Monitoring | Sentra
 
-> Asset health, predictive maintenance and equipment vibration monitoring for power plants, refineries and process industries using Sentra's IoT sensors.
+> Industrial condition monitoring: wireless vibration, temperature and current sensors for pumps, motors, compressors and transformers, with predictive maintenance alerts.
 
 Source: https://sentratech.in/industries/industrial-facilities-monitoring.html
 
@@ -9,9 +9,9 @@ Predictive Maintenance Vibration Monitoring Asset Health Process Industry Machin
 ## Industrial Facilities
 Monitoring
 
-Asset health, predictive maintenance and equipment vibration monitoring for power plants, refineries and process industries.
+Vibration and condition monitoring that detects equipment deterioration before failure disrupts operations in power plants, refineries and process industries.
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=industrial-facilities-monitoring) [Explore Solution](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html)
 
 ## Why Industrial
 Monitoring Matters
@@ -52,6 +52,102 @@ Sensors and edge hardware commonly deployed for this application.
 
 - [Intelligent Pump House Monitoring & Control ](https://sentratech.in/article/intelligent-pump-house-monitoring-and-control.html)
 
+Buyer Guide
+
+## Setting Up Industrial Condition Monitoring
+
+What plant and maintenance teams should expect from an IoT condition-monitoring deployment, from the first asset survey to predictive alerts.
+
+### What it monitors
+
+- Vibration signatures on rotating equipment ([accelerometers](https://sentratech.in/products/accelerometers.html), [vibration meters](https://sentratech.in/products/vibration-meter.html))
+
+- Bearing temperature, motor current and power
+
+- Pipe wall thickness and corrosion
+
+- Foundation settlement, and vessel and tank integrity
+
+Typical assets: pumps, motors, fans, compressors, gearboxes, transformers and switchgear.
+
+### How it is deployed
+
+We start with an asset inventory and criticality ranking, then install wireless instrumentation on the critical assets. After data integration we set baselines and thresholds, then run alert management and lifecycle reporting.
+
+### What drives the cost
+
+There is no fixed price; scope is set by the structure and the programme. The main drivers are:
+
+- Number of assets and sensors per asset
+
+- Sampling needs of each failure mode
+
+- Connectivity across the site and edge processing
+
+- Integration with existing CMMS, SCADA or BMS
+
+### How long it takes
+
+A deployment covering 20–50 critical assets typically takes 4–8 weeks from site survey to live dashboard. Alerts are threshold-based during the first 4–8 weeks of baseline. Predictive alerts follow as the models learn each asset's behaviour.
+
+### Resilience and integration
+
+Edge units buffer typically 30–90 days of data during connectivity outages, and can trigger local alarms without the cloud. Data exports as CSV. We confirm integration with a specific CMMS or ERP before it goes into a proposal.
+
+### Where we have done it
+
+We built digital asset management and predictive maintenance for TGNPDCL's Bathupally substation, and intelligent monitoring and control for pump houses. [Substation case study](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html) · [Pump house article](https://sentratech.in/article/intelligent-pump-house-monitoring-and-control.html)
+
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=industrial-facilities-monitoring) [Talk to an Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)
+
+Explore This Topic
+
+## Industrial Monitoring: Services, Case Studies and Guides
+
+[
+
+#### Predictive Maintenance & Condition Monitoring
+
+Detect deterioration before failure
+
+](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html) [
+
+#### Asset Monitoring & Management
+
+Lifecycle monitoring across your asset base
+
+](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html) [
+
+#### Case Study: Substation Predictive Maintenance
+
+Digital asset management for a substation
+
+](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html) [
+
+#### Predictive Maintenance with Vibration Sensors
+
+IoT vibration monitoring in industrial facilities
+
+](https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html) [
+
+#### Intelligent Pump House Monitoring
+
+Monitoring and control for pump stations
+
+](https://sentratech.in/article/intelligent-pump-house-monitoring-and-control.html) [
+
+#### Asset Monitoring for Facility Management
+
+End-to-end IoT implementation
+
+](https://sentratech.in/blogs/asset-monitoring-facility-management.html) [
+
+#### What Is an Accelerometer?
+
+The sensor behind vibration monitoring
+
+](https://sentratech.in/blogs/what-is-an-accelerometer-sensor-guide.html)
+
 ## Frequently Asked Questions
 
 ##
@@ -66,9 +162,13 @@ Edge devices process sensor data locally, on-site, rather than round-tripping ev
 
 Yes. Sensor data is available through open APIs and common protocols, so it can feed into an existing SCADA, BMS or asset-management platform alongside Sentra's own dashboard rather than requiring a rip-and-replace.
 
+##
+
+It scales with the number of assets and sensors per asset, the sampling each failure mode needs, connectivity and edge processing across the site, and any integration with an existing CMMS, SCADA or BMS. A deployment covering 20–50 critical assets typically takes 4–8 weeks from survey to live dashboard. Request an assessment and we will scope it for your facility.
+
 ## Optimise Your
 Industrial Operations
 
 Speak with our engineers about a predictive maintenance strategy for your facility.
 
-[Get in Touch ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=industrial-facilities-monitoring)

@@ -11,7 +11,7 @@ Monitoring
 
 Real-time vibration, tilt and dynamic load monitoring for railway tracks, bridges and rail structures under live traffic, powered by Sentra's IoT sensor networks and edge analytics.
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/structural-health-monitoring.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=railway&amp;source=railway-infrastructure-monitoring) [Explore Solution](https://sentratech.in/solutions/structural-health-monitoring.html)
 
 ## Why Railway
 Monitoring Matters
@@ -71,4 +71,4 @@ Rail Monitoring?
 
 Talk to our team about a custom deployment for your railway infrastructure.
 
-[Get in Touch ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=railway&amp;source=railway-infrastructure-monitoring)

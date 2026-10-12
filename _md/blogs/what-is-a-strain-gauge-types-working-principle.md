@@ -58,6 +58,16 @@ For short-duration lab testing, bonded foil or semiconductor gauges deliver exce
 
 Sentra's vibrating wire [strain gauges](https://sentratech.in/products/strain-gauges.html) pair with LoRaWAN, cellular or satellite [data loggers](https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html) to stream calibrated, temperature-compensated strain data directly into the [GeoNet structural health monitoring platform](https://sentratech.in/solutions/structural-health-monitoring.html), so the sensor, the connectivity and the analytics are one integrated system rather than three separate purchasing decisions.
 
+Related service [Structural Health Monitoring Services ](https://sentratech.in/solutions/structural-health-monitoring.html)
+
+- [Structural Health Monitoring](https://sentratech.in/blogs/structural-health-monitoring.html)
+
+- [How Much Does Structural Health Monitoring Cost? What Drives the Price](https://sentratech.in/blogs/structural-health-monitoring-cost-factors.html)
+
+- [Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=what-is-a-strain-gauge-types-working-principle)
+
 ## Takeaway
 
 A strain gauge turns invisible material deformation into a precise, actionable number. For permanent infrastructure monitoring, vibrating wire strain gauges give you the durability and noise immunity that bonded foil gauges can't match in the field.

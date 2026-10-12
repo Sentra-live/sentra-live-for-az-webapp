@@ -188,6 +188,14 @@ Complete specs, diagrams, and datasheets
 
 Talk to our IoT connectivity specialists about the right gateway configuration for your project, including mining, bridges, dams, tunnels or slopes. Robust coverage, fast deployment.
 
+Used In
+
+## Where the 4G Gateway Is Used
+
+[ **Large industrial sites**Industrial facilities monitoring ](https://sentratech.in/industries/industrial-facilities-monitoring.html) [ **Remote rail corridors**Railway bridge monitoring ](https://sentratech.in/solutions/railway-bridge-monitoring.html) [ **Construction sites**Construction vibration monitoring ](https://sentratech.in/solutions/construction-vibration-monitoring.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-gateway) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About the 4G Rugged Gateway?
