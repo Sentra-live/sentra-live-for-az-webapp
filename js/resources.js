@@ -365,7 +365,7 @@
             category: 'Rail Infrastructure',
             color: 'blue',
             type: 'articles',
-            date: '16 Oct 2026',
+            date: '5 Oct 2026',
             image: './image/articles/article_metro-rail-monitoring-tunnels-viaducts-stations.webp',
             link: './article/metro-rail-monitoring-tunnels-viaducts-stations.html',
             featured: true

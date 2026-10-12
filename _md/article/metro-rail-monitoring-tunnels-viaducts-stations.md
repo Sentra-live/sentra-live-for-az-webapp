@@ -2,7 +2,7 @@
 
 > What to monitor on a metro line: tunnel settlement and convergence, viaduct piers and bearings, station excavations and vibration, in build and service.
 
-Published: 2026-10-16  
+Published: 2026-10-05  
 Source: https://sentratech.in/article/metro-rail-monitoring-tunnels-viaducts-stations.html
 
 Bored tunnels, deep station boxes and kilometres of elevated viaduct each move, wear and fail differently, and none of them is easy to reach once trains are running. Here is what real-time monitoring tracks on each, during construction and in service.
