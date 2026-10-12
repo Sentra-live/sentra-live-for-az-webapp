@@ -1,6 +1,6 @@
 # Edge Devices: Rugged IoT Sensors & Data Loggers | Sentra
 
-> Explore Sentra's edge devices portfolio, including rugged sensors, low-power data loggers and gateways for long-term infrastructure monitoring and remote deployments.
+> Sentra edge devices: rugged sensors, low-power data loggers and gateways for long-term, remote infrastructure monitoring deployments.
 
 Source: https://sentratech.in/products/edge-devices.html
 

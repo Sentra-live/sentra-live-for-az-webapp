@@ -271,6 +271,42 @@
         }
     }
 
+    /* ── Header "Request Assessment" pill (primary conversion CTA) ── */
+    .navbar-assess-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 42px;
+        padding: 0 18px;
+        border-radius: 100px;
+        border: 1.5px solid #f48120;
+        color: #f48120;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .navbar-assess-pill:hover {
+        background: #f48120;
+        color: #fff;
+    }
+
+    /* Keep the header from crowding: the phone pill gives way first. */
+    @media (max-width: 1500px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .navbar-assess-pill {
+            display: none;
+        }
+    }
+
     /* ── About Us: Industry Verticals Row ── */
     .mega-industries-row {
         border-top: 1px solid rgba(255, 255, 255, 0.07);
@@ -471,7 +507,18 @@
                             aria-haspopup="true" aria-expanded="false">
                             SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
-                        <div class="dropdown-menu mega-solutions">
+                        <div class="dropdown-menu mega-solutions" aria-label="Solutions navigation">
+                            <div class="solutions-menu-chrome">
+                                <div>
+                                    <span class="solutions-menu-eyebrow">Solutions navigator</span>
+                                    <strong>Find the right engineering pathway</strong>
+                                </div>
+                                <div class="solutions-menu-actions">
+                                    <a href="../technology/">Technology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="../solutions.html">All solutions <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="solutions-panel solutions-panel--v1" data-solutions-panel="v1" hidden aria-hidden="true">
                             <div class="solutions-bento">
 
                                 <!-- Row 1: SHM (wide) + Bridge (narrow) -->
@@ -570,7 +617,58 @@
                                         <span class="sol-fill-sub">Documentation & digital workflows</span>
                                     </a>
                                 </div>
+                                <!-- Row 4: buyer-intent application pages -->
+                                <div class="mega-quickbar" style="margin-top:10px;border-radius:12px;">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
 
+                            </div>
+                            </div>
+
+                            <div class="solutions-panel solutions-panel--v2" data-solutions-panel="v2" aria-hidden="false">
+                                <div class="solutions-v2-layout">
+                                    <div class="solutions-v2-nav">
+                                        <section class="solutions-v2-group">
+                                            <p>Monitor &amp; diagnose</p>
+                                            <a class="solutions-v2-link is-active" href="../solutions/structural-health-monitoring.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Structural Health Monitoring" data-sub="Continuous insight for bridges, buildings and critical infrastructure."><i class="fas fa-chart-line"></i><span><strong>Structural Health Monitoring</strong><small>Real-time sensing &amp; alerts</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/asset-monitoring-and-management-solutions.html" data-img="../image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp" data-name="Asset Monitoring" data-sub="Bring condition, performance and lifecycle data into one operational view."><i class="fas fa-database"></i><span><strong>Asset Monitoring</strong><small>Lifecycle intelligence</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/geotechnical-and-foundation-monitoring.html" data-img="../image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp" data-name="Geotechnical Monitoring" data-sub="Track ground, slope and foundation movement before risk escalates."><i class="fas fa-mountain"></i><span><strong>Geotechnical Monitoring</strong><small>Ground &amp; foundation movement</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Inspect &amp; assess</p>
+                                            <a class="solutions-v2-link" href="../solutions/bridge-inspection-and-condition-assessment.html" data-img="../image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" data-name="Bridge Inspection" data-sub="Evidence-led inspection and condition assessment for safer decisions."><i class="fas fa-bridge"></i><span><strong>Bridge Inspection</strong><small>Condition assessment</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/advanced-non-destructive-testing-ndt.html" data-img="../image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp" data-name="Advanced NDT" data-sub="Reveal hidden defects with non-destructive testing and expert interpretation."><i class="fas fa-microscope"></i><span><strong>Advanced NDT</strong><small>Non-destructive evaluation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/fatigue-and-residual-life-assessment.html" data-img="../image/solutions/Homepage/Fatigue%20%26%20Residual%20Life%20Assessment.webp" data-name="Fatigue &amp; Residual Life" data-sub="Quantify remaining service life and prioritize intervention with confidence."><i class="fas fa-tachometer-alt"></i><span><strong>Fatigue &amp; Residual Life</strong><small>Load cycles &amp; service life</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Model &amp; advise</p>
+                                            <a class="solutions-v2-link" href="../solutions/digital-twin.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Twin" data-sub="Connect live asset data to a decision-ready digital representation."><i class="fas fa-cubes"></i><span><strong>Digital Twin</strong><small>Live asset simulation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/digital-engineering-and-documentation.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Engineering" data-sub="Turn engineering records and field data into dependable digital workflows."><i class="fas fa-file-contract"></i><span><strong>Digital Engineering</strong><small>Documentation &amp; workflows</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/consulting-and-advisory-services.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Consulting &amp; Advisory" data-sub="Independent engineering expertise from assessment through implementation."><i class="fas fa-lightbulb"></i><span><strong>Consulting &amp; Advisory</strong><small>Expert engineering support</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="solutions-v2-preview" role="region" aria-label="Selected solution preview">
+                                        <img class="solutions-v2-preview-img" src="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" alt="Structural monitoring sensors installed on infrastructure">
+                                        <div class="solutions-v2-preview-shade"></div>
+                                        <div class="solutions-v2-preview-content">
+                                            <span>Featured solution</span>
+                                            <h3>Structural Health Monitoring</h3>
+                                            <p>Continuous insight for bridges, buildings and critical infrastructure.</p>
+                                            <a href="../solutions/structural-health-monitoring.html">Explore solution <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mega-quickbar solutions-v2-apps">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1131,6 +1229,10 @@
                         <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
                     </button>
                 </div>
+                <a href="../monitoring-assessment.html?source=header" class="navbar-assess-pill" data-cta="assessment-header">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>Request Assessment</span>
+                </a>
                 <a href="tel:+917893023322" class="navbar-call-pill">
                     <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
                     <span class="navbar-call-text">+91 78930 23322</span>
@@ -1222,29 +1324,108 @@
             }
 
             /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            /* Solutions navigator: V2 is the final menu design. */
+            var solutionsMenu = document.querySelector('.mega-solutions');
+            if (solutionsMenu) {
+                var solutionPanels = solutionsMenu.querySelectorAll('[data-solutions-panel]');
+                solutionPanels.forEach(function (panel) {
+                    var isCurrent = panel.getAttribute('data-solutions-panel') === 'v2';
+                    panel.hidden = !isCurrent;
+                    panel.setAttribute('aria-hidden', String(!isCurrent));
+                    if ('inert' in panel) panel.inert = !isCurrent;
+                });
+
+                var solutionLinks = solutionsMenu.querySelectorAll('.solutions-v2-link[data-img]');
+                var solutionPreviewImg = solutionsMenu.querySelector('.solutions-v2-preview-img');
+                var solutionPreviewTitle = solutionsMenu.querySelector('.solutions-v2-preview h3');
+                var solutionPreviewText = solutionsMenu.querySelector('.solutions-v2-preview p');
+                var solutionPreviewCta = solutionsMenu.querySelector('.solutions-v2-preview-content a');
+                function updateSolutionPreview(link) {
+                    solutionLinks.forEach(function (item) { item.classList.toggle('is-active', item === link); });
+                    solutionPreviewImg.src = link.getAttribute('data-img');
+                    solutionPreviewImg.alt = link.getAttribute('data-name') + ' solution preview';
+                    solutionPreviewTitle.textContent = link.getAttribute('data-name');
+                    solutionPreviewText.textContent = link.getAttribute('data-sub');
+                    solutionPreviewCta.href = link.href;
+                }
+                solutionLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { updateSolutionPreview(link); });
+                    link.addEventListener('focus', function () { updateSolutionPreview(link); });
+                });
+            }
+
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
                 );
                 if (!dropdown) return;
                 var closeTimer = null;
+                var trigger = item.querySelector('.dropdown-toggle');
 
-                function openMenu() {
-                    if (window.innerWidth < 1024) return;
+                function setExpanded(expanded) {
+                    if (trigger) trigger.setAttribute('aria-expanded', String(expanded));
+                }
+                function openMenu(force) {
+                    if (window.innerWidth <= 1024) return;
+                    if (item.classList.contains('mega-dismissed') && !force) return;
                     clearTimeout(closeTimer);
+                    item.classList.remove('mega-dismissed');
                     item.classList.add('mega-open');
+                    setExpanded(true);
+                }
+                function closeMenu(dismissHover) {
+                    clearTimeout(closeTimer);
+                    item.classList.remove('mega-open');
+                    item.classList.toggle('mega-dismissed', Boolean(dismissHover));
+                    setExpanded(false);
                 }
                 function scheduleClose(delay) {
                     clearTimeout(closeTimer);
                     closeTimer = setTimeout(function () {
-                        item.classList.remove('mega-open');
+                        closeMenu(false);
                     }, delay);
                 }
 
-                item.addEventListener('mouseenter', function () { openMenu(); });
-                item.addEventListener('mouseleave', function () { scheduleClose(280); });
-                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseenter', function () { openMenu(false); });
+                item.addEventListener('mouseleave', function () {
+                    item.classList.remove('mega-dismissed');
+                    scheduleClose(280);
+                });
+                dropdown.addEventListener('mouseenter', function () { openMenu(false); });
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+
+                if (trigger) {
+                    trigger.addEventListener('click', function (event) {
+                        if (window.innerWidth <= 1024) return;
+                        event.preventDefault();
+                        if (item.classList.contains('mega-open')) closeMenu(true);
+                        else openMenu(true);
+                    });
+                    trigger.addEventListener('keydown', function (event) {
+                        if (window.innerWidth <= 1024 || !['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
+                        event.preventDefault();
+                        openMenu(true);
+                        var firstControl = dropdown.querySelector('[data-solutions-view], a[href], button:not([disabled])');
+                        if (firstControl) firstControl.focus();
+                    });
+                }
+
+                document.addEventListener('click', function (event) {
+                    if (!item.contains(event.target)) closeMenu(false);
+                });
+
+                item._closeMegaMenu = closeMenu;
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key !== 'Escape') return;
+                var openItem = document.querySelector('.nav-item.dropdown.mega-open');
+                if (!openItem) return;
+                var trigger = openItem.querySelector('.dropdown-toggle');
+                if (openItem._closeMegaMenu) openItem._closeMegaMenu(true);
+                if (trigger) {
+                    trigger.focus();
+                }
             });
 
             /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
@@ -1260,7 +1441,8 @@
 
         })();
     </script>
-</div></div></header>
+</div>
+</div></header>
     <aside><div id="edit-sidebar"></div></aside>
     <aside><div id="sidebar"><div>
     <div class="content-overlay">
@@ -1285,9 +1467,8 @@
 
             <!-- Quick links -->
             <div class="mmenu-quicklinks">
-                <a href="/" class="mmenu-quicklink">Home</a>
                 <a href="../about.html" class="mmenu-quicklink">About Us</a>
-                <a href="../contact.html" class="mmenu-quicklink">Contact Us</a>
+                <a href="../monitoring-assessment.html?source=mobile-menu" class="mmenu-quicklink" data-cta="assessment-mobile-menu">Request Assessment</a>
             </div>
 
             <!-- Products -->
@@ -1380,6 +1561,14 @@
                             class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
                     <a class="mmenu-simple-link" href="../solutions/digital-engineering-and-documentation.html"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                    <a class="mmenu-simple-link" href="../solutions/railway-bridge-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Railway Bridge Monitoring</a>
+                    <a class="mmenu-simple-link" href="../solutions/construction-vibration-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Construction Vibration</a>
+                    <a class="mmenu-simple-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Predictive Maintenance</a>
+                    <a class="mmenu-simple-link" href="../technology/"><i
+                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Technology</a>
                 </div>
             </div>
 
@@ -1423,8 +1612,11 @@
         <div class="mmenu-bottom">
             <div class="mmenu-follow-row">
                 <span class="mmenu-follow-label">Follow Us</span>
-                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
-                    target="_blank" rel="noopener">Book Demo</a>
+                <div class="mmenu-bottom-actions">
+                    <a class="mmenu-contact-btn" href="../contact.html">Contact Us</a>
+                    <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                        target="_blank" rel="noopener">Book Demo</a>
+                </div>
             </div>
             <div class="mmenu-social-row">
                 <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
@@ -1437,6 +1629,10 @@
                     rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
                     rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="mmenu-social" href="https://medium.com/@sentra_8835" target="_blank"
+                    rel="noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                <a class="mmenu-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                    rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="mmenu-contact-row">
                 <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
@@ -1444,7 +1640,8 @@
             </div>
         </div>
     </nav>
-</div></div></aside>
+</div>
+</div></aside>
 
     <main>
         <!-- Hero -->
@@ -1463,7 +1660,7 @@
                         </div>
                         <h1 class="hero-title">Clove Technologies Becomes Authorized XGRIDS Reseller in India</h1>
                         <div class="hero-intro">
-                            <p>Clove Technologies Private Limited (the company behind Sentra) is now an authorized reseller of XGRIDS' AI-powered 3D reality capture and spatial computing hardware across India, bringing the Lixel K2, PortalCam and Lixel L2 Pro scanners to Indian AEC, infrastructure and industrial teams.</p>
+                            <p>Clove Technologies Private Limited, the company behind Sentra, is now an authorized reseller of XGRIDS 3D reality capture hardware in India. That means AEC, infrastructure and industrial teams here can buy the Lixel K2, PortalCam and Lixel L2 Pro through us.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
@@ -1497,7 +1694,7 @@
                     </div>
 
                     <div id="ttsContent">
-                        <p>Clove Technologies Private Limited is pleased to announce its official reseller partnership with <a href="https://www.xgrids.com/" target="_blank" rel="noopener noreferrer" style="color:var(--accent-color);">XGRIDS Limited</a>, a global innovator in AI-powered 3D reality capture and spatial computing technologies. Through this strategic collaboration, Clove Technologies (operating in India as Sentra) will serve as an <strong>authorized reseller</strong> of XGRIDS' cutting-edge hardware solutions across India, enabling organizations to accelerate digital transformation with industry-leading mobile mapping and reality capture technologies.</p>
+                        <p>Clove Technologies Private Limited has signed a reseller agreement with <a href="https://www.xgrids.com/" target="_blank" rel="noopener noreferrer" style="color:var(--accent-color);">XGRIDS Limited</a>, which builds AI-based 3D reality capture and spatial computing products. Clove Technologies, trading in India as Sentra, is now an <strong>authorized reseller</strong> of XGRIDS hardware across the country, covering its mobile mapping and reality capture scanners.</p>
 
                         <div class="partner-logo-card">
                             <a href="https://www.xgrids.com/" target="_blank" rel="noopener noreferrer" aria-label="XGRIDS">
@@ -1507,62 +1704,62 @@
                             <img src="../image/branding/sentra_black_1.svg" alt="Sentra logo" style="height:30px;">
                         </div>
 
-                        <p>This partnership reinforces Sentra's commitment to delivering world-class geospatial, BIM, Digital Twin, LiDAR, and reality capture solutions for industries including Architecture, Engineering &amp; Construction (AEC), Infrastructure, Manufacturing, Smart Cities, Oil &amp; Gas, Utilities, Heritage Documentation, Mining, and Industrial Facilities.</p>
+                        <p>The scanners fit alongside the geospatial, BIM, digital twin, LiDAR and reality capture work we already do for AEC firms, infrastructure owners, manufacturers, smart city projects, oil and gas, utilities, heritage documentation, mining and industrial facilities.</p>
 
-                        <h2 id="expandingSection">Expanding Advanced Reality Capture Solutions Across India</h2>
-                        <p>As organizations increasingly adopt digital workflows, there is growing demand for fast, accurate, and intelligent reality capture technologies. By introducing XGRIDS' innovative product portfolio to the Indian market, Sentra aims to empower businesses with solutions that simplify data acquisition while delivering exceptional precision and operational efficiency.</p>
+                        <h2 id="expandingSection">Reality capture for Indian projects</h2>
+                        <p>More Indian teams are moving to digital workflows, and they want scanning that is quick to do in the field and accurate enough to build models from. Our aim in bringing XGRIDS products to India is to make data capture simpler without giving up precision.</p>
 
-                        <p>The collaboration combines XGRIDS' advanced hardware innovation with Sentra's expertise in Scan-to-BIM, Digital Twin development, LiDAR processing, geospatial intelligence, engineering services, and enterprise digital transformation.</p>
+                        <p>XGRIDS supplies the hardware. We bring the work that happens after the scan: Scan-to-BIM, digital twin development, LiDAR processing, geospatial analysis and engineering services.</p>
 
                         <div class="insight-box">
                             <h5><i class="fa-solid fa-certificate" style="margin-right:8px;"></i>Official India Reseller</h5>
-                            <p>Sentra is the authorized XGRIDS reseller for India: see the complete line-up, specifications and pricing on our <a href="../products/laser-scanners.html" style="color:var(--accent-color);">Laser Scanners &amp; Spatial Cameras</a> page.</p>
+                            <p>For the full line-up, specifications and pricing, see our <a href="../products/laser-scanners.html" style="color:var(--accent-color);">Laser Scanners &amp; Spatial Cameras</a> page.</p>
                         </div>
 
-                        <h2 id="portfolioSection">XGRIDS Product Portfolio Available Through Sentra</h2>
-                        <p>All three XGRIDS handheld and wearable devices are now available in India through Sentra's <a href="../products/laser-scanners.html" style="color:var(--accent-color);">laser scanner range</a>, each built around the same LixelStudio / LixelGo processing pipeline, from ultra-compact wearable capture to long-range survey-grade mapping.</p>
+                        <h2 id="portfolioSection">XGRIDS products available through Sentra</h2>
+                        <p>All three XGRIDS handheld and wearable devices are in our <a href="../products/laser-scanners.html" style="color:var(--accent-color);">laser scanner range</a>. They range from compact wearable capture to long-range survey-grade mapping, and all use the same LixelStudio / LixelGo processing pipeline.</p>
 
                         <div class="xgrids-product-grid">
                             <a class="xgrids-product-card" href="../products/lixel-k2.html">
                                 <span class="xpc-tag">Lixel K2</span>
                                 <h5>The Gold Standard in Lightweight Scanning</h5>
-                                <p>Designed for professionals requiring exceptional mobility without compromising accuracy: rapid acquisition of detailed spatial data for infrastructure, construction, facility management, and surveying.</p>
+                                <p>For people who need to move quickly through a site and still get accurate data. Typical uses are infrastructure, construction, facility management and surveying.</p>
                             </a>
                             <a class="xgrids-product-card" href="../products/portalcam.html">
                                 <span class="xpc-tag">PortalCam</span>
                                 <h5>The First True Spatial Camera</h5>
-                                <p>Captures immersive three-dimensional environments with remarkable speed and precision, for inspection, visualization, asset management, and Digital Twin workflows.</p>
+                                <p>Captures 3D environments quickly and accurately. Used for inspection, visualization, asset management and digital twin work.</p>
                             </a>
                             <a class="xgrids-product-card" href="../products/lixel-l2-pro.html">
                                 <span class="xpc-tag">Lixel L2 Pro</span>
                                 <h5>Precision Redefined</h5>
-                                <p>Engineered for demanding professional applications requiring superior accuracy, reliability, and comprehensive spatial data capture across complex surveying and infrastructure projects.</p>
+                                <p>Built for survey and infrastructure projects where accuracy and reliability matter most and the site is large or complicated.</p>
                             </a>
                         </div>
 
-                        <h2 id="valueSection">Delivering Greater Value to Indian Enterprises</h2>
-                        <p>Through this reseller partnership, customers across India will benefit from:</p>
+                        <h2 id="valueSection">What customers get</h2>
+                        <p>Buying through Sentra gives you:</p>
                         <ul class="value-list">
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Access to the latest XGRIDS reality capture hardware</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Professional product consultation and solution recommendations</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span>The current XGRIDS reality capture hardware</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span>Advice on which device suits the job</span></li>
                             <li><i class="fa-solid fa-circle-check"></i> <span>Local sales and technical support</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>Integration with Scan-to-BIM and Digital Twin workflows</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span>A route into Scan-to-BIM and digital twin workflows</span></li>
                             <li><i class="fa-solid fa-circle-check"></i> <span>LiDAR data processing and point cloud services</span></li>
                             <li><i class="fa-solid fa-circle-check"></i> <span>Training and implementation assistance</span></li>
-                            <li><i class="fa-solid fa-circle-check"></i> <span>End-to-end project support from acquisition to digital asset delivery</span></li>
+                            <li><i class="fa-solid fa-circle-check"></i> <span>Project support from data capture through to the delivered digital asset</span></li>
                         </ul>
 
-                        <h2 id="futureSection">Supporting the Future of Digital Infrastructure</h2>
-                        <p>As India's infrastructure and industrial sectors continue embracing digitalization, advanced reality capture technologies are becoming essential for improving project accuracy, reducing field time, and enabling data-driven decision making.</p>
+                        <h2 id="futureSection">Why it matters</h2>
+                        <p>Infrastructure and industrial projects in India are going digital, and reality capture is one of the most practical places to start. Scanning cuts time in the field and gives engineers better data to work from.</p>
 
-                        <p>The partnership between Sentra and XGRIDS represents a significant step toward making world-class spatial computing technologies more accessible to organizations throughout India.</p>
+                        <p>The partnership makes XGRIDS spatial computing products easier for organizations across India to get hold of.</p>
 
-                        <p>By combining XGRIDS' innovative hardware with Sentra's extensive expertise in engineering, geospatial technologies, BIM, Digital Twins, and reality capture services, customers can confidently adopt modern digital workflows that improve efficiency, accuracy, and long-term asset management.</p>
+                        <p>Customers get XGRIDS hardware together with our engineering, geospatial, BIM, digital twin and reality capture services, which makes it easier to adopt the new workflow and keep using the data for asset management afterwards.</p>
 
                         <h2 id="aboutSection">About Clove Technologies &amp; XGRIDS</h2>
-                        <p><strong>Clove Technologies Private Limited</strong> (operating in India as Sentra) is a technology-driven engineering and digital transformation company specializing in Scan-to-BIM, Digital Twins, LiDAR, GIS, Geospatial Intelligence, BIM, Engineering Documentation, Reality Capture, IoT, Structural Health Monitoring, and AI-enabled infrastructure solutions. The company serves clients across the Architecture, Engineering, Construction, Industrial, Energy, Utilities, Transportation, and Smart City sectors.</p>
+                        <p><strong>Clove Technologies Private Limited</strong> (Sentra in India) is an engineering and digital technology company. Its work covers Scan-to-BIM, digital twins, LiDAR, GIS, geospatial intelligence, BIM, engineering documentation, reality capture, IoT, structural health monitoring and AI tools for infrastructure. Clients are in architecture, engineering, construction, industry, energy, utilities, transportation and smart cities.</p>
 
-                        <p><strong><a href="https://www.xgrids.com/" target="_blank" rel="noopener noreferrer" style="color:var(--accent-color);">XGRIDS Limited</a></strong> develops advanced AI-powered spatial computing and reality capture technologies that enable rapid, accurate creation of digital representations of real-world environments. Its innovative hardware solutions are designed to simplify 3D data acquisition while supporting modern workflows in surveying, engineering, construction, infrastructure, and industrial applications.</p>
+                        <p><strong><a href="https://www.xgrids.com/" target="_blank" rel="noopener noreferrer" style="color:var(--accent-color);">XGRIDS Limited</a></strong> develops AI-based spatial computing and reality capture technology that turns real-world spaces into accurate digital models quickly. Its hardware is built to make 3D data capture simpler for surveying, engineering, construction, infrastructure and industrial work.</p>
 
                         <p style="font-size:0.85rem;opacity:0.6;margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,0.06);">
                             <i class="fa-regular fa-rectangle-ad"></i> Learn more about XGRIDS at
@@ -1573,8 +1770,8 @@
                     </div>
 
                     <div class="detail-cta">
-                        <h2>Ready to Bring XGRIDS Reality Capture to Your Next Project?</h2>
-                        <p>Talk to Sentra's reality capture team about pricing, demos and training for the Lixel K2, PortalCam and Lixel L2 Pro, official XGRIDS reseller in India.</p>
+                        <h2>Planning a project that needs reality capture?</h2>
+                        <p>Talk to our reality capture team about pricing, demos and training for the Lixel K2, PortalCam and Lixel L2 Pro. Sentra is the official XGRIDS reseller in India.</p>
                         <a class="cta-btn" href="/contact.html?enquiry=1&amp;product=Laser%20Scanners">Get a Quote <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
@@ -1681,6 +1878,7 @@
                                     <li><a href="../products.html">Products</a></li>
                                     <li><a href="../solutions.html">Solutions</a></li>
                                     <li><a href="../industries.html">Industries</a></li>
+                                    <li><a href="../technology/index.html">How It Works</a></li>
                                     <li><a href="../about.html">About</a></li>
                                     <li><a href="../faq.html">FAQ</a></li>
                                     <li><a href="../resources.html">Insights &amp; Updates</a></li>
@@ -1811,7 +2009,6 @@
                         <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
                         <a href="../glossary.html" class="legal-link">Glossary</a>
                         <a href="../sitemap.xml" class="legal-link">Sitemap</a>
-                        <a href="../404-page.html" class="legal-link">404</a>
                     </div>
                 </div>
                 <div class="footer-spacer"></div>

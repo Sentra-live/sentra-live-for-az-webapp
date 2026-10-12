@@ -297,6 +297,42 @@
         }
     }
 
+    /* ── Header "Request Assessment" pill (primary conversion CTA) ── */
+    .navbar-assess-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 42px;
+        padding: 0 18px;
+        border-radius: 100px;
+        border: 1.5px solid #f48120;
+        color: #f48120;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .navbar-assess-pill:hover {
+        background: #f48120;
+        color: #fff;
+    }
+
+    /* Keep the header from crowding: the phone pill gives way first. */
+    @media (max-width: 1500px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .navbar-assess-pill {
+            display: none;
+        }
+    }
+
     /* ── About Us: Industry Verticals Row ── */
     .mega-industries-row {
         border-top: 1px solid rgba(255, 255, 255, 0.07);
@@ -497,7 +533,18 @@
                             aria-haspopup="true" aria-expanded="false">
                             SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
-                        <div class="dropdown-menu mega-solutions">
+                        <div class="dropdown-menu mega-solutions" aria-label="Solutions navigation">
+                            <div class="solutions-menu-chrome">
+                                <div>
+                                    <span class="solutions-menu-eyebrow">Solutions navigator</span>
+                                    <strong>Find the right engineering pathway</strong>
+                                </div>
+                                <div class="solutions-menu-actions">
+                                    <a href="../technology/">Technology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="../solutions.html">All solutions <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="solutions-panel solutions-panel--v1" data-solutions-panel="v1" hidden aria-hidden="true">
                             <div class="solutions-bento">
 
                                 <!-- Row 1: SHM (wide) + Bridge (narrow) -->
@@ -596,7 +643,58 @@
                                         <span class="sol-fill-sub">Documentation & digital workflows</span>
                                     </a>
                                 </div>
+                                <!-- Row 4: buyer-intent application pages -->
+                                <div class="mega-quickbar" style="margin-top:10px;border-radius:12px;">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
 
+                            </div>
+                            </div>
+
+                            <div class="solutions-panel solutions-panel--v2" data-solutions-panel="v2" aria-hidden="false">
+                                <div class="solutions-v2-layout">
+                                    <div class="solutions-v2-nav">
+                                        <section class="solutions-v2-group">
+                                            <p>Monitor &amp; diagnose</p>
+                                            <a class="solutions-v2-link is-active" href="../solutions/structural-health-monitoring.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Structural Health Monitoring" data-sub="Continuous insight for bridges, buildings and critical infrastructure."><i class="fas fa-chart-line"></i><span><strong>Structural Health Monitoring</strong><small>Real-time sensing &amp; alerts</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/asset-monitoring-and-management-solutions.html" data-img="../image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp" data-name="Asset Monitoring" data-sub="Bring condition, performance and lifecycle data into one operational view."><i class="fas fa-database"></i><span><strong>Asset Monitoring</strong><small>Lifecycle intelligence</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/geotechnical-and-foundation-monitoring.html" data-img="../image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp" data-name="Geotechnical Monitoring" data-sub="Track ground, slope and foundation movement before risk escalates."><i class="fas fa-mountain"></i><span><strong>Geotechnical Monitoring</strong><small>Ground &amp; foundation movement</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Inspect &amp; assess</p>
+                                            <a class="solutions-v2-link" href="../solutions/bridge-inspection-and-condition-assessment.html" data-img="../image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" data-name="Bridge Inspection" data-sub="Evidence-led inspection and condition assessment for safer decisions."><i class="fas fa-bridge"></i><span><strong>Bridge Inspection</strong><small>Condition assessment</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/advanced-non-destructive-testing-ndt.html" data-img="../image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp" data-name="Advanced NDT" data-sub="Reveal hidden defects with non-destructive testing and expert interpretation."><i class="fas fa-microscope"></i><span><strong>Advanced NDT</strong><small>Non-destructive evaluation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/fatigue-and-residual-life-assessment.html" data-img="../image/solutions/Homepage/Fatigue%20%26%20Residual%20Life%20Assessment.webp" data-name="Fatigue &amp; Residual Life" data-sub="Quantify remaining service life and prioritize intervention with confidence."><i class="fas fa-tachometer-alt"></i><span><strong>Fatigue &amp; Residual Life</strong><small>Load cycles &amp; service life</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Model &amp; advise</p>
+                                            <a class="solutions-v2-link" href="../solutions/digital-twin.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Twin" data-sub="Connect live asset data to a decision-ready digital representation."><i class="fas fa-cubes"></i><span><strong>Digital Twin</strong><small>Live asset simulation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/digital-engineering-and-documentation.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Engineering" data-sub="Turn engineering records and field data into dependable digital workflows."><i class="fas fa-file-contract"></i><span><strong>Digital Engineering</strong><small>Documentation &amp; workflows</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/consulting-and-advisory-services.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Consulting &amp; Advisory" data-sub="Independent engineering expertise from assessment through implementation."><i class="fas fa-lightbulb"></i><span><strong>Consulting &amp; Advisory</strong><small>Expert engineering support</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="solutions-v2-preview" role="region" aria-label="Selected solution preview">
+                                        <img class="solutions-v2-preview-img" src="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" alt="Structural monitoring sensors installed on infrastructure">
+                                        <div class="solutions-v2-preview-shade"></div>
+                                        <div class="solutions-v2-preview-content">
+                                            <span>Featured solution</span>
+                                            <h3>Structural Health Monitoring</h3>
+                                            <p>Continuous insight for bridges, buildings and critical infrastructure.</p>
+                                            <a href="../solutions/structural-health-monitoring.html">Explore solution <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mega-quickbar solutions-v2-apps">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1157,6 +1255,10 @@
                         <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
                     </button>
                 </div>
+                <a href="../monitoring-assessment.html?source=header" class="navbar-assess-pill" data-cta="assessment-header">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>Request Assessment</span>
+                </a>
                 <a href="tel:+917893023322" class="navbar-call-pill">
                     <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
                     <span class="navbar-call-text">+91 78930 23322</span>
@@ -1248,29 +1350,108 @@
             }
 
             /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            /* Solutions navigator: V2 is the final menu design. */
+            var solutionsMenu = document.querySelector('.mega-solutions');
+            if (solutionsMenu) {
+                var solutionPanels = solutionsMenu.querySelectorAll('[data-solutions-panel]');
+                solutionPanels.forEach(function (panel) {
+                    var isCurrent = panel.getAttribute('data-solutions-panel') === 'v2';
+                    panel.hidden = !isCurrent;
+                    panel.setAttribute('aria-hidden', String(!isCurrent));
+                    if ('inert' in panel) panel.inert = !isCurrent;
+                });
+
+                var solutionLinks = solutionsMenu.querySelectorAll('.solutions-v2-link[data-img]');
+                var solutionPreviewImg = solutionsMenu.querySelector('.solutions-v2-preview-img');
+                var solutionPreviewTitle = solutionsMenu.querySelector('.solutions-v2-preview h3');
+                var solutionPreviewText = solutionsMenu.querySelector('.solutions-v2-preview p');
+                var solutionPreviewCta = solutionsMenu.querySelector('.solutions-v2-preview-content a');
+                function updateSolutionPreview(link) {
+                    solutionLinks.forEach(function (item) { item.classList.toggle('is-active', item === link); });
+                    solutionPreviewImg.src = link.getAttribute('data-img');
+                    solutionPreviewImg.alt = link.getAttribute('data-name') + ' solution preview';
+                    solutionPreviewTitle.textContent = link.getAttribute('data-name');
+                    solutionPreviewText.textContent = link.getAttribute('data-sub');
+                    solutionPreviewCta.href = link.href;
+                }
+                solutionLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { updateSolutionPreview(link); });
+                    link.addEventListener('focus', function () { updateSolutionPreview(link); });
+                });
+            }
+
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
                 );
                 if (!dropdown) return;
                 var closeTimer = null;
+                var trigger = item.querySelector('.dropdown-toggle');
 
-                function openMenu() {
-                    if (window.innerWidth < 1024) return;
+                function setExpanded(expanded) {
+                    if (trigger) trigger.setAttribute('aria-expanded', String(expanded));
+                }
+                function openMenu(force) {
+                    if (window.innerWidth <= 1024) return;
+                    if (item.classList.contains('mega-dismissed') && !force) return;
                     clearTimeout(closeTimer);
+                    item.classList.remove('mega-dismissed');
                     item.classList.add('mega-open');
+                    setExpanded(true);
+                }
+                function closeMenu(dismissHover) {
+                    clearTimeout(closeTimer);
+                    item.classList.remove('mega-open');
+                    item.classList.toggle('mega-dismissed', Boolean(dismissHover));
+                    setExpanded(false);
                 }
                 function scheduleClose(delay) {
                     clearTimeout(closeTimer);
                     closeTimer = setTimeout(function () {
-                        item.classList.remove('mega-open');
+                        closeMenu(false);
                     }, delay);
                 }
 
-                item.addEventListener('mouseenter', function () { openMenu(); });
-                item.addEventListener('mouseleave', function () { scheduleClose(280); });
-                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseenter', function () { openMenu(false); });
+                item.addEventListener('mouseleave', function () {
+                    item.classList.remove('mega-dismissed');
+                    scheduleClose(280);
+                });
+                dropdown.addEventListener('mouseenter', function () { openMenu(false); });
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+
+                if (trigger) {
+                    trigger.addEventListener('click', function (event) {
+                        if (window.innerWidth <= 1024) return;
+                        event.preventDefault();
+                        if (item.classList.contains('mega-open')) closeMenu(true);
+                        else openMenu(true);
+                    });
+                    trigger.addEventListener('keydown', function (event) {
+                        if (window.innerWidth <= 1024 || !['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
+                        event.preventDefault();
+                        openMenu(true);
+                        var firstControl = dropdown.querySelector('[data-solutions-view], a[href], button:not([disabled])');
+                        if (firstControl) firstControl.focus();
+                    });
+                }
+
+                document.addEventListener('click', function (event) {
+                    if (!item.contains(event.target)) closeMenu(false);
+                });
+
+                item._closeMegaMenu = closeMenu;
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key !== 'Escape') return;
+                var openItem = document.querySelector('.nav-item.dropdown.mega-open');
+                if (!openItem) return;
+                var trigger = openItem.querySelector('.dropdown-toggle');
+                if (openItem._closeMegaMenu) openItem._closeMegaMenu(true);
+                if (trigger) {
+                    trigger.focus();
+                }
             });
 
             /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
@@ -1286,7 +1467,8 @@
 
         })();
     </script>
-</div></div>
+</div>
+</div>
     </header>
 
     <aside>
@@ -1317,9 +1499,8 @@
 
             <!-- Quick links -->
             <div class="mmenu-quicklinks">
-                <a href="/" class="mmenu-quicklink">Home</a>
                 <a href="../about.html" class="mmenu-quicklink">About Us</a>
-                <a href="../contact.html" class="mmenu-quicklink">Contact Us</a>
+                <a href="../monitoring-assessment.html?source=mobile-menu" class="mmenu-quicklink" data-cta="assessment-mobile-menu">Request Assessment</a>
             </div>
 
             <!-- Products -->
@@ -1412,6 +1593,14 @@
                             class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
                     <a class="mmenu-simple-link" href="../solutions/digital-engineering-and-documentation.html"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                    <a class="mmenu-simple-link" href="../solutions/railway-bridge-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Railway Bridge Monitoring</a>
+                    <a class="mmenu-simple-link" href="../solutions/construction-vibration-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Construction Vibration</a>
+                    <a class="mmenu-simple-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Predictive Maintenance</a>
+                    <a class="mmenu-simple-link" href="../technology/"><i
+                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Technology</a>
                 </div>
             </div>
 
@@ -1455,8 +1644,11 @@
         <div class="mmenu-bottom">
             <div class="mmenu-follow-row">
                 <span class="mmenu-follow-label">Follow Us</span>
-                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
-                    target="_blank" rel="noopener">Book Demo</a>
+                <div class="mmenu-bottom-actions">
+                    <a class="mmenu-contact-btn" href="../contact.html">Contact Us</a>
+                    <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                        target="_blank" rel="noopener">Book Demo</a>
+                </div>
             </div>
             <div class="mmenu-social-row">
                 <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
@@ -1469,6 +1661,10 @@
                     rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
                     rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="mmenu-social" href="https://medium.com/@sentra_8835" target="_blank"
+                    rel="noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                <a class="mmenu-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                    rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="mmenu-contact-row">
                 <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
@@ -1476,7 +1672,8 @@
             </div>
         </div>
     </nav>
-</div></div>
+</div>
+</div>
     </aside>
 
     <main>
@@ -1496,7 +1693,7 @@
                         </div>
                         <h1 class="hero-title">Flood Monitoring &amp; Early Warning System</h1>
                         <div class="hero-intro">
-                            <p>Turning real-time data into life-saving action. When a river can rise in minutes, continuous monitoring and automated alerts give downstream communities the one thing that matters most during a flood: time.</p>
+                            <p>When a river can rise in minutes, continuous monitoring and automatic alerts give the people downstream extra time to get out of the way.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
@@ -1530,18 +1727,18 @@
                     </div>
 
                     <div id="ttsContent">
-                        <p>Floods rarely give communities enough time to react. In mountainous and flood-prone regions, a sudden rise in river levels, intense rainfall, landslides, glacial activity, or upstream blockages can transform a normal waterway into a life-threatening torrent within minutes.</p>
+                        <p>Floods rarely leave people enough time to react. In mountain and flood-prone areas, a sudden rise in river level, intense rain, a landslide, glacial activity or a blockage upstream can turn an ordinary river into a dangerous torrent within minutes.</p>
 
                         <h2 id="minutesSection">When Every Minute Matters</h2>
-                        <p>The devastating floods that struck the Nepal&ndash;Tibet border on <strong>August 26, 2026</strong>, are a stark reminder of this vulnerability. A catastrophic flash flood and debris flow swept through communities along the Lhende Khola, Bhote Koshi and Trishuli river systems, destroying homes, roads and bridges and leaving hundreds dead and more than a thousand people missing as rescue operations continued.</p>
-                        <p>Reports indicate that the event was associated with a collapse of ice and rock in the Himalayan region, demonstrating that dangerous flooding can develop extremely rapidly and may not always be preceded by conventional heavy rainfall.</p>
-                        <p class="flood-question">What if communities downstream could receive a warning before the flood wave reaches them?</p>
-                        <p>That is where a real-time flood monitoring and early warning system can make a critical difference.</p>
+                        <p>The floods on the Nepal&ndash;Tibet border on <strong>August 26, 2026</strong> showed how exposed these communities are. A flash flood and debris flow tore through settlements along the Lhende Khola, Bhote Koshi and Trishuli rivers, destroying homes, roads and bridges. Hundreds died, and more than a thousand people were still missing as rescue work went on.</p>
+                        <p>Reports link the event to a collapse of ice and rock in the Himalaya. In other words, a dangerous flood can build very quickly, and there may be no heavy rain beforehand to warn anyone.</p>
+                        <p class="flood-question">Suppose the people downstream had been warned before the flood wave reached them.</p>
+                        <p>Getting that warning out is the job of a real-time flood monitoring and early warning system.</p>
 
-                        <h2 id="monitoringSection">From Monitoring Water Levels to Protecting Lives</h2>
-                        <p>Sentra by Clove Technologies' Flood Monitoring &amp; Early Warning Solution is designed to continuously observe critical waterways and environmental conditions, transform sensor data into actionable information, and rapidly communicate warnings when predefined risk thresholds are exceeded.</p>
-                        <p>The approach is based on a simple principle: <strong>detect earlier, decide faster, warn sooner.</strong></p>
-                        <p>Water-level sensors, rainfall and weather instrumentation, environmental sensors and optional field cameras can be deployed at strategically selected locations such as:</p>
+                        <h2 id="monitoringSection">From measuring water levels to protecting people</h2>
+                        <p>The Flood Monitoring &amp; Early Warning Solution from Sentra by Clove Technologies watches critical waterways and environmental conditions continuously, turns the sensor data into information operators can use, and sends warnings quickly when set risk thresholds are crossed.</p>
+                        <p>The aim is to <strong>detect the problem earlier, decide faster and warn people sooner.</strong></p>
+                        <p>Water-level sensors, rain gauges and weather instruments, environmental sensors and optional field cameras can be installed at carefully chosen points such as:</p>
                         <ul class="blog-bullets">
                             <li>Rivers and streams</li>
                             <li>Mountain valleys</li>
@@ -1554,16 +1751,16 @@
                             <li>Roads and railway corridors</li>
                             <li>Critical infrastructure near waterways</li>
                         </ul>
-                        <p>Continuous measurements are transmitted to a centralized monitoring platform where operators can observe changing conditions in near real time. Similar flood-monitoring architectures combine water-level measurements, weather information, field cameras, wireless connectivity and centralized data management to support threshold-based alerts and rapid decision-making.</p>
+                        <p>Measurements go continuously to a central monitoring platform, where operators can follow conditions as they change in near real time. Flood monitoring setups of this kind typically combine water-level readings, weather data, field cameras, wireless links and central data management to drive threshold alerts and quick decisions.</p>
 
-                        <h2 id="howItWorksSection">How the Flood Early Warning System Works</h2>
+                        <h2 id="howItWorksSection">How the system works</h2>
 
                         <h4>1. Continuous Environmental Monitoring</h4>
-                        <p>Sensors installed at critical locations continuously measure parameters such as water level, rainfall, temperature, humidity, flow conditions and other environmental variables.</p>
-                        <p>Instead of relying entirely on periodic manual inspections, authorities can maintain continuous visibility of changing conditions. A sudden increase in river level can therefore be detected while the water is still upstream: potentially before the flood reaches downstream communities.</p>
+                        <p>Sensors at critical points measure water level, rainfall, temperature, humidity, flow and other environmental values without a break.</p>
+                        <p>Authorities no longer depend only on periodic manual checks; they can see conditions changing as it happens. A sudden rise in river level can be picked up while the water is still upstream, possibly before the flood reaches the towns below.</p>
 
                         <h4>2. Intelligent Threshold Detection</h4>
-                        <p>Not every increase in water level represents an emergency. The system can establish different warning thresholds based on local hydrology, terrain, historical observations and the characteristics of the monitored location.</p>
+                        <p>Not every rise in water level is an emergency. The system can use several warning thresholds, set according to local hydrology, terrain, past records and the characteristics of each site.</p>
                         <div class="flood-ladder">
                             <div class="fl-step fl-normal">
                                 <span class="fl-tag">Normal</span>
@@ -1582,10 +1779,10 @@
                                 <p>Conditions indicate an immediate downstream risk.</p>
                             </div>
                         </div>
-                        <p>This converts raw sensor readings into information that emergency-response teams can act upon.</p>
+                        <p>That way, raw sensor readings become information emergency teams can act on.</p>
 
                         <h2 id="alertsSection">Alerts Delivered Directly to People</h2>
-                        <p>An early-warning system is only valuable if the warning reaches people quickly. When a critical threshold is reached, the solution can be configured to trigger multiple communication channels.</p>
+                        <p>A warning only helps if it reaches people quickly. When a critical threshold is crossed, the system can be set to send alerts through several channels at once.</p>
 
                         <h4><i class="fa-solid fa-mobile-screen-button" style="color:var(--accent-color);margin-right:8px;"></i>Mobile Alerts</h4>
                         <p>Warnings can be distributed through:</p>
@@ -1596,15 +1793,15 @@
                             <li>Web dashboards</li>
                             <li>Notifications to designated response teams</li>
                         </ul>
-                        <p>This allows authorities, disaster-management teams, police, infrastructure operators and designated personnel to receive alerts without being physically present at the monitoring site.</p>
+                        <p>Authorities, disaster-management teams, police, infrastructure operators and named staff all receive alerts without having to be at the monitoring site.</p>
 
                         <h4><i class="fa-solid fa-tower-broadcast" style="color:var(--accent-color);margin-right:8px;"></i>Downstream Sirens</h4>
-                        <p>For communities where internet or smartphone access may be limited, physical warning infrastructure becomes especially important. The system can be integrated with downstream sirens and local alarm systems. When upstream sensors detect dangerous conditions, an automated command can activate sirens in predefined downstream zones.</p>
+                        <p>Where internet or smartphone access is patchy, physical warnings matter most. The system can connect to sirens and local alarms downstream. When the upstream sensors detect dangerous conditions, an automatic command sounds the sirens in the zones that have been set in advance.</p>
                         <p class="flood-chain">Upstream Detection &rarr; Risk Assessment &rarr; Automated Alert &rarr; Downstream Siren &rarr; Community Evacuation</p>
-                        <p>The goal is not simply to monitor a flood. <strong>The goal is to create time for people to move.</strong></p>
+                        <p>Monitoring the flood is only the means. <strong>The point is to give people time to move.</strong></p>
 
-                        <h4><i class="fa-solid fa-helmet-safety" style="color:var(--accent-color);margin-right:8px;"></i>Alerts for Rescue &amp; Emergency Teams</h4>
-                        <p>The same warning can reach emergency-response organizations. A centralized dashboard can provide responders with:</p>
+                        <h4><i class="fa-solid fa-helmet-safety" style="color:var(--accent-color);margin-right:8px;"></i>Alerts for rescue and emergency teams</h4>
+                        <p>The same warning can go to emergency services. A central dashboard can show responders:</p>
                         <ul class="blog-bullets">
                             <li>Location of the detected event</li>
                             <li>Current water level and rate of increase</li>
@@ -1615,19 +1812,19 @@
                             <li>Camera feeds, where deployed</li>
                             <li>Critical infrastructure locations and affected zones</li>
                         </ul>
-                        <p>This information can help authorities prioritize evacuation, deploy rescue teams and identify vulnerable downstream areas.</p>
+                        <p>With this, authorities can decide where to evacuate first, where to send rescue teams and which downstream areas are most at risk.</p>
 
                         <div class="blog-video-embed">
                             <h5><i class="fa-solid fa-circle-play" style="color:var(--accent-color);margin-right:6px;"></i>Flood Monitoring &amp; Early Warning in Action</h5>
-                            <p class="bve-sub">How continuous water-level sensing, threshold-based alerting and downstream sirens work together to turn upstream detection into evacuation time for communities.</p>
+                            <p class="bve-sub">Continuous water-level sensing, threshold alerts and downstream sirens together turn an upstream reading into time for people to evacuate.</p>
                             <div class="bve-frame">
                                 <iframe src="https://www.youtube.com/embed/Fh1OWcl19U0" title="Flood Monitoring &amp; Early Warning System" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                             </div>
                         </div>
 
-                        <h2 id="nepalSection">What Could This Mean for a Disaster Like Nepal?</h2>
-                        <p>The 2026 Nepal disaster demonstrates why minutes can matter. The flash floods affected mountainous communities and critical transportation infrastructure, while damaged roads, bridges and communication infrastructure made rescue operations considerably more difficult. Reports also indicated continuing concerns about additional flooding from water blocked upstream.</p>
-                        <p>A distributed monitoring network could provide an additional layer of situational awareness. Imagine sensors positioned upstream along vulnerable Himalayan waterways. As an abnormal rise is detected:</p>
+                        <h2 id="nepalSection">What could this have meant in Nepal?</h2>
+                        <p>The 2026 Nepal disaster shows how much a few minutes can matter. The floods hit mountain communities and key transport links, and the damage to roads, bridges and communications made rescue work much harder. There were also continuing worries about more flooding from water held back upstream.</p>
+                        <p>A network of monitoring stations would have given authorities another source of information. Picture sensors placed upstream along the most vulnerable Himalayan rivers. Once an abnormal rise is detected:</p>
                         <ol class="flood-steps">
                             <li><span class="fs-num">01</span>
                                 <div><h5>Sensor detects change</h5><p>Water level begins rising rapidly.</p></div>
@@ -1651,62 +1848,62 @@
                                 <div><h5>Rescue teams respond</h5><p>Emergency teams can begin mobilizing while access routes remain available.</p></div>
                             </li>
                         </ol>
-                        <p>This does not eliminate the danger. <strong>It creates something extremely valuable during a disaster: time.</strong></p>
+                        <p>The danger is still there. <strong>What the system adds, in the middle of a disaster, is time.</strong></p>
 
-                        <h2 id="multiHazardSection">Beyond Rivers: A Multi-Hazard Monitoring Network</h2>
-                        <p>Flood monitoring should not be limited to measuring water height. In mountainous regions, a more comprehensive system can combine multiple sources of information.</p>
+                        <h2 id="multiHazardSection">More than rivers: monitoring several hazards at once</h2>
+                        <p>Flood monitoring shouldn't stop at measuring water height. In mountain regions a fuller system combines several sources of information.</p>
                         <ul class="blog-bullets">
-                            <li><strong>Water-level sensors</strong>, including detect abnormal rises in rivers, streams, reservoirs and channels.</li>
-                            <li><strong>Rainfall and weather sensors</strong>, including provide additional environmental context for rapidly changing conditions.</li>
-                            <li><strong>Field cameras</strong>: provide visual confirmation of conditions when sensor thresholds are exceeded.</li>
-                            <li><strong>Geotechnical sensors</strong>, including where appropriate, <a href="/products/tiltmeter.html">inclinometers, extensometers and tilt sensors</a> can monitor slope and ground instability that may contribute to waterway blockages or infrastructure risks.</li>
-                            <li><strong>IoT connectivity</strong>: wireless communication transmits field data to centralized systems without continuous manual data collection.</li>
-                            <li><strong>Centralized dashboard</strong>: operators can view multiple monitoring locations from a single interface.</li>
+                            <li><strong>Water-level sensors</strong> detect abnormal rises in rivers, streams, reservoirs and channels.</li>
+                            <li><strong>Rainfall and weather sensors</strong> add context when conditions are changing fast.</li>
+                            <li><strong>Field cameras</strong> let operators see conditions for themselves when a sensor threshold is crossed.</li>
+                            <li><strong>Geotechnical sensors</strong>, where they make sense: <a href="/products/tiltmeter.html">inclinometers, extensometers and tilt sensors</a> track unstable slopes and ground that could block a river or threaten infrastructure.</li>
+                            <li><strong>IoT connectivity</strong> sends field data wirelessly to the central system, so nobody has to go out and collect it.</li>
+                            <li><strong>Central dashboard</strong>: operators see every monitoring site on one screen.</li>
                         </ul>
-                        <p>Modern flood-monitoring architectures can integrate water-level sensors, weather stations, cameras and wireless connectivity into a centralized platform, with threshold-based alerting and automated responses. For related approaches, see our work on <a href="/solutions/geotechnical-and-foundation-monitoring.html">geotechnical and foundation monitoring</a>.</p>
+                        <p>Current flood monitoring systems can put water-level sensors, weather stations, cameras and wireless links on one central platform, with threshold alerts and automatic responses. For related work, see our <a href="/solutions/geotechnical-and-foundation-monitoring.html">geotechnical and foundation monitoring</a>.</p>
 
                         <h2 id="infrastructureSection">Protecting More Than People</h2>
-                        <p>A flood early-warning system can also help protect critical infrastructure.</p>
+                        <p>A flood warning system also helps protect infrastructure.</p>
                         <ul class="blog-bullets">
-                            <li><strong>Bridges</strong>: monitor waterways around <a href="/industries/bridges-highways-monitoring.html">bridges</a> and provide early warnings when flood conditions threaten access or structural assets.</li>
-                            <li><strong>Roads</strong>: warn authorities before floodwater reaches critical road sections, allowing traffic restrictions and diversion planning.</li>
-                            <li><strong>Railways and metro infrastructure</strong>: monitor waterways, drainage systems and <a href="/industries/railway-infrastructure-monitoring.html">vulnerable rail corridors</a> to support operational safety.</li>
-                            <li><strong>Dams and reservoirs</strong>: continuously observe water levels and environmental conditions to support <a href="/industries/dams-reservoirs-monitoring.html">flood-risk management</a>.</li>
-                            <li><strong>Hydropower projects</strong>: monitor upstream and downstream conditions around critical generation infrastructure.</li>
-                            <li><strong>Communities</strong>: provide warnings to people living near rivers, streams and flood-prone valleys.</li>
+                            <li><strong>Bridges</strong>: watch the water around <a href="/industries/bridges-highways-monitoring.html">bridges</a> and warn early when a flood threatens access or the structure.</li>
+                            <li><strong>Roads</strong>: warn authorities before floodwater reaches key stretches of road, so they can close lanes and plan diversions.</li>
+                            <li><strong>Railways and metro systems</strong>: monitor rivers, drains and <a href="/industries/railway-infrastructure-monitoring.html">vulnerable rail corridors</a> to keep operations safe.</li>
+                            <li><strong>Dams and reservoirs</strong>: track water levels and conditions continuously to support <a href="/industries/dams-reservoirs-monitoring.html">flood-risk management</a>.</li>
+                            <li><strong>Hydropower projects</strong>: watch conditions upstream and downstream of generating plants.</li>
+                            <li><strong>Communities</strong>: warn people living near rivers, streams and flood-prone valleys.</li>
                         </ul>
 
-                        <h2 id="proactiveSection">From Reactive Rescue to Proactive Disaster Management</h2>
-                        <p>Traditional flood response often begins after water has already reached the affected area. By then roads may already be underwater, bridges may be inaccessible, communication networks may be disrupted, rescue teams may struggle to reach affected communities, and evacuation routes may no longer be safe.</p>
-                        <p>Continuous monitoring changes the sequence. Instead of <strong>flood &rarr; damage &rarr; rescue</strong>, the objective becomes <strong>detect &rarr; assess &rarr; alert &rarr; evacuate &rarr; respond</strong>. That transition from reactive response to proactive preparedness can fundamentally improve disaster management.</p>
+                        <h2 id="proactiveSection">From rescue after the fact to preparing in advance</h2>
+                        <p>Flood response usually starts once the water has already arrived. By then roads may be under water, bridges cut off and communications down. Rescue teams may struggle to get through, and evacuation routes may no longer be safe.</p>
+                        <p>Continuous monitoring changes the order of events. Instead of <strong>flood &rarr; damage &rarr; rescue</strong>, it becomes <strong>detect &rarr; assess &rarr; alert &rarr; evacuate &rarr; respond</strong>, which gives disaster managers a chance to act before the damage instead of after it.</p>
 
-                        <h4>Building a Layered Early Warning Network</h4>
-                        <p>For regions such as the Himalayas, one sensor is not enough. A distributed monitoring architecture positions multiple monitoring stations along critical river corridors, so that upstream stations feed a central platform which in turn drives mobile alerts, siren activation, an emergency dashboard and rescue-team notification for downstream communities.</p>
-                        <p>Multiple monitoring points can provide authorities with a broader understanding of how conditions are changing as water moves through a river system.</p>
+                        <h4>A layered warning network</h4>
+                        <p>In a region like the Himalaya one sensor isn't enough. Several monitoring stations are placed along critical river corridors. The upstream stations feed a central platform, which sends mobile alerts, sounds sirens, updates the emergency dashboard and notifies rescue teams for the communities downstream.</p>
+                        <p>With several monitoring points, authorities can follow how conditions change as water moves down a river system.</p>
 
-                        <h4>The Technology Is Not the Final Solution: The Warning Is</h4>
-                        <p>Sensors, IoT gateways, dashboards and analytics are only components of the system. The real objective is human safety. A warning received five minutes earlier can provide additional time to move people. A warning received fifteen minutes earlier can provide additional time to mobilize rescue teams. A warning received before critical infrastructure is cut off can help authorities position emergency resources where they are most needed.</p>
-                        <p>However, no monitoring technology can guarantee prevention of casualties in an extreme event. The effectiveness of an early-warning system depends on sensor placement, communications availability, threshold design, local hydrological conditions, emergency protocols, evacuation planning and whether communities can act on the warning.</p>
+                        <h4>What matters is the warning, not the hardware</h4>
+                        <p>Sensors, IoT gateways, dashboards and analytics are parts of the system, but the purpose is keeping people safe. A warning five minutes earlier gives more time to move people. Fifteen minutes earlier gives time to mobilise rescue teams. A warning that arrives before roads and bridges are cut off lets authorities put emergency resources where they will be needed.</p>
+                        <p>No monitoring technology can guarantee that nobody is hurt in an extreme event, though. How well an early-warning system works depends on where the sensors are, whether communications stay up, how the thresholds are set, local hydrology, emergency procedures, evacuation plans and whether people are able to act on the warning.</p>
 
-                        <h4>From the Tragedy in Nepal to a Global Lesson</h4>
-                        <p>The devastating events of August 2026 should not only be remembered as a tragedy. They should also strengthen the conversation around early detection, resilient infrastructure and disaster preparedness. Mountainous countries and flood-prone communities face increasingly complex environmental risks, and the Nepal disaster showed how rapidly a flood and debris flow can overwhelm communities and infrastructure.</p>
-                        <p>Technology cannot stop a glacier collapse, landslide or flash flood. <strong>But technology can help us see the warning signs sooner.</strong> And when a warning reaches the right people, through the right channel, at the right time, it can help transform precious minutes into evacuation time and response time.</p>
+                        <h4>What Nepal teaches other flood-prone regions</h4>
+                        <p>The August 2026 floods were a tragedy, and they should also push forward the discussion about early detection, resilient infrastructure and disaster preparedness. Mountain countries and flood-prone communities face increasingly complicated environmental risks, and Nepal showed how fast a flood and debris flow can overwhelm both people and infrastructure.</p>
+                        <p>Technology can't stop a glacier collapse, a landslide or a flash flood. <strong>It can help people see the warning signs sooner.</strong> When a warning reaches the right people through the right channel in time, those minutes become time to evacuate and respond.</p>
 
-                        <h2 id="marketSection">Flood Monitoring and Early Warning: Market Context</h2>
-                        <p>Demand for a real-time flood monitoring and warning system is no longer limited to national disaster-management agencies. Municipal bodies responsible for urban drainage, dam operators, highway authorities and industrial sites near rivers are all evaluating a flood monitoring and alerting system as a standard part of infrastructure risk management, not a specialist add-on. The flood warning system market is being pushed forward by three trends: cheaper wireless water-level and rainfall sensors, cloud dashboards that no longer require a dedicated control room, and a growing regulatory expectation - after events like the August 2026 Nepal&ndash;Tibet border flood - that critical infrastructure near waterways should be instrumented rather than inspected on a fixed schedule.</p>
-                        <p>A flood monitoring system built around wireless IoT sensors is also considerably cheaper to deploy at scale than legacy telemetry networks, because nodes can be solar-powered and installed without trenching cable to remote river corridors. That cost curve is what is turning flood early warning from a handful of flagship installations into something operators can justify on secondary waterways, drainage channels and smaller reservoirs as well as major rivers.</p>
+                        <h2 id="marketSection">Flood monitoring and early warning: market context</h2>
+                        <p>National disaster agencies are no longer the only ones asking for real-time flood monitoring and warning systems. Municipal drainage departments, dam operators, highway authorities and industrial sites near rivers are now treating flood monitoring and alerting as a normal part of infrastructure risk management. Three things are driving the market: wireless water-level and rain sensors have become cheaper, cloud dashboards have removed the need for a dedicated control room, and after events like the August 2026 Nepal&ndash;Tibet border flood, regulators increasingly expect critical infrastructure near waterways to be instrumented, not just inspected on a fixed schedule.</p>
+                        <p>A flood monitoring system built on wireless IoT sensors is also much cheaper to roll out widely than older telemetry networks. The nodes can run on solar power and go in without trenching cable along remote rivers. Because of that, operators can now justify flood warning on smaller waterways, drainage channels and minor reservoirs as well as major rivers, not just at a few flagship sites.</p>
 
                         <h4>Flood Monitoring: Frequently Asked Questions</h4>
-                        <p><strong>What is a flood monitoring and warning system?</strong> It is a network of water-level, rainfall and environmental sensors that continuously measure conditions along a waterway and automatically trigger alerts - SMS, sirens, dashboards - when readings cross a defined risk threshold, giving downstream communities and infrastructure operators time to respond before the flood arrives.</p>
-                        <p><strong>How is a flood monitoring and alerting system different from a flood forecast?</strong> A forecast predicts conditions from weather models before rain falls; a monitoring and alerting system measures what is actually happening upstream in real time and reacts to it, which makes it effective even when the triggering event - a glacial collapse or landslide dam-break, for example - is not itself predictable from weather data.</p>
-                        <p><strong>Who needs a real-time flood monitoring and warning system?</strong> Disaster-management authorities, dam and reservoir operators, highway and railway agencies with waterway crossings, hydropower operators, and industrial facilities sited near rivers or in flood-prone valleys.</p>
+                        <p><strong>What is a flood monitoring and warning system?</strong> It is a network of water-level, rainfall and environmental sensors that measure conditions along a waterway all the time and send alerts automatically (SMS, sirens, dashboards) when readings cross a set risk threshold. That gives downstream communities and infrastructure operators time to respond before the flood arrives.</p>
+                        <p><strong>How is a flood monitoring and alerting system different from a flood forecast?</strong> A forecast uses weather models to predict conditions before the rain falls. A monitoring and alerting system measures what is happening upstream right now and reacts to it. That makes it useful even when the trigger, such as a glacial collapse or a landslide dam bursting, can't be predicted from weather data.</p>
+                        <p><strong>Who needs a real-time flood monitoring and warning system?</strong> Disaster-management authorities, dam and reservoir operators, highway and railway agencies with river crossings, hydropower operators, and industrial sites near rivers or in flood-prone valleys.</p>
 
                         <p class="flood-sources"><strong>Sources:</strong> Reporting on the Nepal incident from Reuters, the Associated Press, Al Jazeera and the Kathmandu Post, together with the Worldsensing Flood Monitoring System reference architecture. The situation was still developing at the time of writing; casualty and missing-person figures reflect reports available on 27 August 2026 and may have since changed.</p>
                     </div>
 
                     <div class="detail-cta">
-                        <h2 id="ConclusionSection">Turning Environmental Data Into Early Warnings</h2>
-                        <p>Sentra brings together IoT sensing, environmental monitoring, wireless connectivity and centralized dashboards to help organizations build more resilient monitoring systems, including designed around the specific characteristics of each location, from Himalayan river corridors and reservoirs to urban drainage networks, bridges, roads and railways. Because when the flood is already at the doorstep, it may be too late.</p>
+                        <h2 id="ConclusionSection">Turning environmental data into early warnings</h2>
+                        <p>Sentra combines IoT sensing, environmental monitoring, wireless connectivity and central dashboards into monitoring systems designed around each site, whether that is a Himalayan river corridor, a reservoir, an urban drainage network, a bridge, a road or a railway. Once the flood has reached the door, a warning is too late to help.</p>
                         <a class="cta-btn" href="/contact.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
@@ -1843,6 +2040,7 @@
                                     <li><a href="../products.html">Products</a></li>
                                     <li><a href="../solutions.html">Solutions</a></li>
                                     <li><a href="../industries.html">Industries</a></li>
+                                    <li><a href="../technology/index.html">How It Works</a></li>
                                     <li><a href="../about.html">About</a></li>
                                     <li><a href="../faq.html">FAQ</a></li>
                                     <li><a href="../resources.html">Insights &amp; Updates</a></li>
@@ -1973,7 +2171,6 @@
                         <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
                         <a href="../glossary.html" class="legal-link">Glossary</a>
                         <a href="../sitemap.xml" class="legal-link">Sitemap</a>
-                        <a href="../404-page.html" class="legal-link">404</a>
                     </div>
                 </div>
                 <div class="footer-spacer"></div>

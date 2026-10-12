@@ -238,6 +238,14 @@ Using versatile plate **LS-ACC-IN15-HP** for horizontal and vertical surface dep
 
 Talk to our engineering team about the right Vibration Meter configuration for your structural or geotechnical monitoring project. Custom solutions, fast delivery.
 
+Used In
+
+## Where the Wireless Vibration Meter Is Used
+
+[ **Construction & blast vibration**Construction vibration monitoring ](https://sentratech.in/solutions/construction-vibration-monitoring.html) [ **Railway bridges & viaducts**Railway bridge monitoring ](https://sentratech.in/solutions/railway-bridge-monitoring.html) [ **Mining & blasting**Mining & slope stability ](https://sentratech.in/industries/mining-geotechnical-monitoring.html) [ **Guide: construction vibrations**PPV limits and sensor placement ](https://sentratech.in/blogs/monitoring-construction-induced-vibrations.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-vibration-meter) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About the Vibration Meter?

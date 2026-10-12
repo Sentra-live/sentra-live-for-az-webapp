@@ -256,6 +256,42 @@
         }
     }
 
+    /* ── Header "Request Assessment" pill (primary conversion CTA) ── */
+    .navbar-assess-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 42px;
+        padding: 0 18px;
+        border-radius: 100px;
+        border: 1.5px solid #f48120;
+        color: #f48120;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .navbar-assess-pill:hover {
+        background: #f48120;
+        color: #fff;
+    }
+
+    /* Keep the header from crowding: the phone pill gives way first. */
+    @media (max-width: 1500px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .navbar-assess-pill {
+            display: none;
+        }
+    }
+
     /* ── About Us: Industry Verticals Row ── */
     .mega-industries-row {
         border-top: 1px solid rgba(255, 255, 255, 0.07);
@@ -456,7 +492,18 @@
                             aria-haspopup="true" aria-expanded="false">
                             SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
-                        <div class="dropdown-menu mega-solutions">
+                        <div class="dropdown-menu mega-solutions" aria-label="Solutions navigation">
+                            <div class="solutions-menu-chrome">
+                                <div>
+                                    <span class="solutions-menu-eyebrow">Solutions navigator</span>
+                                    <strong>Find the right engineering pathway</strong>
+                                </div>
+                                <div class="solutions-menu-actions">
+                                    <a href="../technology/">Technology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="../solutions.html">All solutions <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="solutions-panel solutions-panel--v1" data-solutions-panel="v1" hidden aria-hidden="true">
                             <div class="solutions-bento">
 
                                 <!-- Row 1: SHM (wide) + Bridge (narrow) -->
@@ -555,7 +602,58 @@
                                         <span class="sol-fill-sub">Documentation & digital workflows</span>
                                     </a>
                                 </div>
+                                <!-- Row 4: buyer-intent application pages -->
+                                <div class="mega-quickbar" style="margin-top:10px;border-radius:12px;">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
 
+                            </div>
+                            </div>
+
+                            <div class="solutions-panel solutions-panel--v2" data-solutions-panel="v2" aria-hidden="false">
+                                <div class="solutions-v2-layout">
+                                    <div class="solutions-v2-nav">
+                                        <section class="solutions-v2-group">
+                                            <p>Monitor &amp; diagnose</p>
+                                            <a class="solutions-v2-link is-active" href="../solutions/structural-health-monitoring.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Structural Health Monitoring" data-sub="Continuous insight for bridges, buildings and critical infrastructure."><i class="fas fa-chart-line"></i><span><strong>Structural Health Monitoring</strong><small>Real-time sensing &amp; alerts</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/asset-monitoring-and-management-solutions.html" data-img="../image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp" data-name="Asset Monitoring" data-sub="Bring condition, performance and lifecycle data into one operational view."><i class="fas fa-database"></i><span><strong>Asset Monitoring</strong><small>Lifecycle intelligence</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/geotechnical-and-foundation-monitoring.html" data-img="../image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp" data-name="Geotechnical Monitoring" data-sub="Track ground, slope and foundation movement before risk escalates."><i class="fas fa-mountain"></i><span><strong>Geotechnical Monitoring</strong><small>Ground &amp; foundation movement</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Inspect &amp; assess</p>
+                                            <a class="solutions-v2-link" href="../solutions/bridge-inspection-and-condition-assessment.html" data-img="../image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" data-name="Bridge Inspection" data-sub="Evidence-led inspection and condition assessment for safer decisions."><i class="fas fa-bridge"></i><span><strong>Bridge Inspection</strong><small>Condition assessment</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/advanced-non-destructive-testing-ndt.html" data-img="../image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp" data-name="Advanced NDT" data-sub="Reveal hidden defects with non-destructive testing and expert interpretation."><i class="fas fa-microscope"></i><span><strong>Advanced NDT</strong><small>Non-destructive evaluation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/fatigue-and-residual-life-assessment.html" data-img="../image/solutions/Homepage/Fatigue%20%26%20Residual%20Life%20Assessment.webp" data-name="Fatigue &amp; Residual Life" data-sub="Quantify remaining service life and prioritize intervention with confidence."><i class="fas fa-tachometer-alt"></i><span><strong>Fatigue &amp; Residual Life</strong><small>Load cycles &amp; service life</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Model &amp; advise</p>
+                                            <a class="solutions-v2-link" href="../solutions/digital-twin.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Twin" data-sub="Connect live asset data to a decision-ready digital representation."><i class="fas fa-cubes"></i><span><strong>Digital Twin</strong><small>Live asset simulation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/digital-engineering-and-documentation.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Engineering" data-sub="Turn engineering records and field data into dependable digital workflows."><i class="fas fa-file-contract"></i><span><strong>Digital Engineering</strong><small>Documentation &amp; workflows</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/consulting-and-advisory-services.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Consulting &amp; Advisory" data-sub="Independent engineering expertise from assessment through implementation."><i class="fas fa-lightbulb"></i><span><strong>Consulting &amp; Advisory</strong><small>Expert engineering support</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="solutions-v2-preview" role="region" aria-label="Selected solution preview">
+                                        <img class="solutions-v2-preview-img" src="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" alt="Structural monitoring sensors installed on infrastructure">
+                                        <div class="solutions-v2-preview-shade"></div>
+                                        <div class="solutions-v2-preview-content">
+                                            <span>Featured solution</span>
+                                            <h3>Structural Health Monitoring</h3>
+                                            <p>Continuous insight for bridges, buildings and critical infrastructure.</p>
+                                            <a href="../solutions/structural-health-monitoring.html">Explore solution <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mega-quickbar solutions-v2-apps">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1116,6 +1214,10 @@
                         <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
                     </button>
                 </div>
+                <a href="../monitoring-assessment.html?source=header" class="navbar-assess-pill" data-cta="assessment-header">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>Request Assessment</span>
+                </a>
                 <a href="tel:+917893023322" class="navbar-call-pill">
                     <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
                     <span class="navbar-call-text">+91 78930 23322</span>
@@ -1207,29 +1309,108 @@
             }
 
             /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            /* Solutions navigator: V2 is the final menu design. */
+            var solutionsMenu = document.querySelector('.mega-solutions');
+            if (solutionsMenu) {
+                var solutionPanels = solutionsMenu.querySelectorAll('[data-solutions-panel]');
+                solutionPanels.forEach(function (panel) {
+                    var isCurrent = panel.getAttribute('data-solutions-panel') === 'v2';
+                    panel.hidden = !isCurrent;
+                    panel.setAttribute('aria-hidden', String(!isCurrent));
+                    if ('inert' in panel) panel.inert = !isCurrent;
+                });
+
+                var solutionLinks = solutionsMenu.querySelectorAll('.solutions-v2-link[data-img]');
+                var solutionPreviewImg = solutionsMenu.querySelector('.solutions-v2-preview-img');
+                var solutionPreviewTitle = solutionsMenu.querySelector('.solutions-v2-preview h3');
+                var solutionPreviewText = solutionsMenu.querySelector('.solutions-v2-preview p');
+                var solutionPreviewCta = solutionsMenu.querySelector('.solutions-v2-preview-content a');
+                function updateSolutionPreview(link) {
+                    solutionLinks.forEach(function (item) { item.classList.toggle('is-active', item === link); });
+                    solutionPreviewImg.src = link.getAttribute('data-img');
+                    solutionPreviewImg.alt = link.getAttribute('data-name') + ' solution preview';
+                    solutionPreviewTitle.textContent = link.getAttribute('data-name');
+                    solutionPreviewText.textContent = link.getAttribute('data-sub');
+                    solutionPreviewCta.href = link.href;
+                }
+                solutionLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { updateSolutionPreview(link); });
+                    link.addEventListener('focus', function () { updateSolutionPreview(link); });
+                });
+            }
+
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
                 );
                 if (!dropdown) return;
                 var closeTimer = null;
+                var trigger = item.querySelector('.dropdown-toggle');
 
-                function openMenu() {
-                    if (window.innerWidth < 1024) return;
+                function setExpanded(expanded) {
+                    if (trigger) trigger.setAttribute('aria-expanded', String(expanded));
+                }
+                function openMenu(force) {
+                    if (window.innerWidth <= 1024) return;
+                    if (item.classList.contains('mega-dismissed') && !force) return;
                     clearTimeout(closeTimer);
+                    item.classList.remove('mega-dismissed');
                     item.classList.add('mega-open');
+                    setExpanded(true);
+                }
+                function closeMenu(dismissHover) {
+                    clearTimeout(closeTimer);
+                    item.classList.remove('mega-open');
+                    item.classList.toggle('mega-dismissed', Boolean(dismissHover));
+                    setExpanded(false);
                 }
                 function scheduleClose(delay) {
                     clearTimeout(closeTimer);
                     closeTimer = setTimeout(function () {
-                        item.classList.remove('mega-open');
+                        closeMenu(false);
                     }, delay);
                 }
 
-                item.addEventListener('mouseenter', function () { openMenu(); });
-                item.addEventListener('mouseleave', function () { scheduleClose(280); });
-                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseenter', function () { openMenu(false); });
+                item.addEventListener('mouseleave', function () {
+                    item.classList.remove('mega-dismissed');
+                    scheduleClose(280);
+                });
+                dropdown.addEventListener('mouseenter', function () { openMenu(false); });
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+
+                if (trigger) {
+                    trigger.addEventListener('click', function (event) {
+                        if (window.innerWidth <= 1024) return;
+                        event.preventDefault();
+                        if (item.classList.contains('mega-open')) closeMenu(true);
+                        else openMenu(true);
+                    });
+                    trigger.addEventListener('keydown', function (event) {
+                        if (window.innerWidth <= 1024 || !['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
+                        event.preventDefault();
+                        openMenu(true);
+                        var firstControl = dropdown.querySelector('[data-solutions-view], a[href], button:not([disabled])');
+                        if (firstControl) firstControl.focus();
+                    });
+                }
+
+                document.addEventListener('click', function (event) {
+                    if (!item.contains(event.target)) closeMenu(false);
+                });
+
+                item._closeMegaMenu = closeMenu;
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key !== 'Escape') return;
+                var openItem = document.querySelector('.nav-item.dropdown.mega-open');
+                if (!openItem) return;
+                var trigger = openItem.querySelector('.dropdown-toggle');
+                if (openItem._closeMegaMenu) openItem._closeMegaMenu(true);
+                if (trigger) {
+                    trigger.focus();
+                }
             });
 
             /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
@@ -1245,7 +1426,8 @@
 
         })();
     </script>
-</div></div>
+</div>
+</div>
     </header>
 
     <aside>
@@ -1276,9 +1458,8 @@
 
             <!-- Quick links -->
             <div class="mmenu-quicklinks">
-                <a href="/" class="mmenu-quicklink">Home</a>
                 <a href="../about.html" class="mmenu-quicklink">About Us</a>
-                <a href="../contact.html" class="mmenu-quicklink">Contact Us</a>
+                <a href="../monitoring-assessment.html?source=mobile-menu" class="mmenu-quicklink" data-cta="assessment-mobile-menu">Request Assessment</a>
             </div>
 
             <!-- Products -->
@@ -1371,6 +1552,14 @@
                             class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
                     <a class="mmenu-simple-link" href="../solutions/digital-engineering-and-documentation.html"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                    <a class="mmenu-simple-link" href="../solutions/railway-bridge-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Railway Bridge Monitoring</a>
+                    <a class="mmenu-simple-link" href="../solutions/construction-vibration-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Construction Vibration</a>
+                    <a class="mmenu-simple-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Predictive Maintenance</a>
+                    <a class="mmenu-simple-link" href="../technology/"><i
+                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Technology</a>
                 </div>
             </div>
 
@@ -1414,8 +1603,11 @@
         <div class="mmenu-bottom">
             <div class="mmenu-follow-row">
                 <span class="mmenu-follow-label">Follow Us</span>
-                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
-                    target="_blank" rel="noopener">Book Demo</a>
+                <div class="mmenu-bottom-actions">
+                    <a class="mmenu-contact-btn" href="../contact.html">Contact Us</a>
+                    <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                        target="_blank" rel="noopener">Book Demo</a>
+                </div>
             </div>
             <div class="mmenu-social-row">
                 <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
@@ -1428,6 +1620,10 @@
                     rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
                     rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="mmenu-social" href="https://medium.com/@sentra_8835" target="_blank"
+                    rel="noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                <a class="mmenu-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                    rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="mmenu-contact-row">
                 <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
@@ -1435,7 +1631,8 @@
             </div>
         </div>
     </nav>
-</div></div>
+</div>
+</div>
     </aside>
 
     <main>
@@ -1455,7 +1652,7 @@
                         </div>
                         <h1 class="hero-title">Building Resilient Smart Cities with Data-Driven Insights</h1>
                         <div class="hero-intro">
-                            <p>Smart cities don't run on intention. They run on real-time intelligence, connected infrastructure, and the ability to act before problems escalate: exactly what Clove Technologies delivered at Amaravati's Integrated Command Control Centre.</p>
+                            <p>A smart city needs live data from its infrastructure and a way to act on it before small problems grow. At Amaravati, Clove Technologies built that into the Integrated Command Control Centre.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
@@ -1489,51 +1686,63 @@
                     </div>
 
                     <div id="ttsContent">
-                        <p>Across government bodies and enterprise operations alike, the demand for integrated command and control platforms is accelerating. Digital Twin technology, IoT-driven monitoring, and BIM-enabled asset visibility are no longer future-state concepts; they are operational imperatives. Clove Technologies is delivering them today.</p>
+                        <p>Government bodies and large enterprises are both asking for integrated command and control platforms. Digital twins, IoT monitoring and BIM-based asset records are already in day-to-day use, and Clove Technologies is building them into live projects now.</p>
 
-                        <h2 id="specsSection">Integrated Command Intelligence for Smarter Cities &amp; Enterprises</h2>
-                        <p>Smart cities don't run on intention. They run on real-time intelligence, connected infrastructure, and the ability to act before problems escalate. That principle sits behind every command center Clove Technologies builds, whether for a government-scale smart city or a distributed enterprise campus.</p>
+                        <h2 id="specsSection">Command centers for cities and enterprises</h2>
+                        <p>Every command center we build, whether for a city government or a company with sites spread across a region, starts from the same idea: operators should see what is happening across their infrastructure as it happens, and be able to respond early.</p>
 
-                        <h2 id="Para1Section">Project Spotlight: Amaravati Integrated Command Control Centre (AICCC)</h2>
+                        <h2 id="Para1Section">Project: Amaravati Integrated Command Control Centre (AICCC)</h2>
                         <p style="font-size:0.8rem;font-weight:700;letter-spacing:0.02em;color:var(--accent-color);text-transform:uppercase;margin-bottom:0.5rem;">Smart City &middot; Digital Twin &middot; IoT / Real-Time Monitoring &middot; BIM</p>
-                        <p>Clove Technologies designed and delivered the AICCC: a fully operational Smart City command center for Amaravati, the capital city greenfield project of Andhra Pradesh. At its core is a Digital Twin framework that synchronises physical infrastructure with live data streams, enabling Asset Intelligence at a city scale. From IoT-powered real-time monitoring to BIM-integrated lifecycle management, the AICCC represents the most complete implementation of integrated command infrastructure we have delivered to date.</p>
+                        <p>Clove Technologies designed and delivered the AICCC, the working smart city command center for Amaravati, the new capital being built from scratch in Andhra Pradesh. Its core is a digital twin that keeps a model of the city's physical infrastructure in sync with live data streams. It covers IoT monitoring through to BIM-based lifecycle management, and it is the most complete command center we have delivered so far.</p>
 
-                        <h2 id="DescSection">Key Functionalities Enabled by Clove Technologies</h2>
+                        <h2 id="DescSection">What the AICCC does</h2>
 
                         <h4>IoT / Real-Time Monitoring</h4>
                         <ul class="blog-bullets">
-                            <li><strong>24×7 Multi-Domain Monitoring:</strong> IoT sensors feeding live operational data across utilities, infrastructure, and city services.</li>
-                            <li><strong>Drone &amp; CCTV Field Visibility:</strong> Integrated aerial and ground-level IoT feeds delivering field intelligence to command operators.</li>
+                            <li><strong>Round-the-clock monitoring:</strong> IoT sensors send live data from utilities, infrastructure and city services.</li>
+                            <li><strong>Drone and CCTV feeds:</strong> Aerial and ground-level video gives command operators a view of the field.</li>
                         </ul>
 
                         <h4>Smart City / Command Center</h4>
                         <ul class="blog-bullets">
-                            <li><strong>Real-Time Construction &amp; Approval Tracking:</strong> Live progress dashboards and digital approval workflows managed through the command center.</li>
-                            <li><strong>Multi-Channel Grievance Platform:</strong> Citizen feedback routed, tracked, and resolved through the Smart City command layer.</li>
-                            <li><strong>Outreach Campaign Analytics:</strong> Measurable public engagement data surfaced through the command center's analytics dashboard.</li>
+                            <li><strong>Construction and approval tracking:</strong> Progress dashboards and digital approval workflows run through the command center.</li>
+                            <li><strong>Grievance handling:</strong> Citizen complaints from several channels are routed, tracked and closed in one system.</li>
+                            <li><strong>Outreach analytics:</strong> Public engagement figures from outreach campaigns appear on the analytics dashboard.</li>
                         </ul>
 
                         <h4>BIM / Scan to CAD</h4>
                         <ul class="blog-bullets">
-                            <li><strong>BIM-Enabled Lifecycle Readiness:</strong> BIM models, including Scan to CAD conversions of existing structures, linked to Digital Twin asset lifecycle workflows.</li>
+                            <li><strong>BIM for the asset lifecycle:</strong> BIM models, including Scan to CAD conversions of existing buildings, are linked to the digital twin's lifecycle workflows.</li>
                         </ul>
 
                         <h4>Asset Intelligence</h4>
                         <ul class="blog-bullets">
-                            <li><strong>Land Pooling Transparency:</strong> Asset Intelligence layer tracking land pooling records, ownership data, and status in real time.</li>
-                            <li><strong>DLI/DLR Funding Readiness:</strong> Asset-linked compliance reporting structured for disbursement and milestone accountability.</li>
+                            <li><strong>Land pooling records:</strong> Land pooling records, ownership data and status are tracked in real time.</li>
+                            <li><strong>DLI/DLR funding reports:</strong> Compliance reports tied to specific assets support fund disbursement and milestone reviews.</li>
                         </ul>
 
-                        <h2 id="Para2Section">Why This Matters for Cities and Enterprises</h2>
-                        <p>The AICCC proves that Digital Twin technology is no longer confined to single-asset deployments. When scaled to a Smart City environment, Digital Twin infrastructure creates a living, continuously updated model of an entire city, enabling predictive maintenance, funding accountability, and citizen-responsive governance from one command center.</p>
-                        <p>For enterprise leaders managing distributed infrastructure campuses, industrial facilities, and logistics networks, the same Asset Intelligence principles apply. BIM-enabled Digital Twins, IoT real-time monitoring, and Scan to CAD data capture give operations teams the visibility to move from reactive management to proactive control.</p>
-                        <p>Clove Technologies delivers this convergence not as a product, but as an engineered implementation tailored to your environment.</p>
+                        <h2 id="Para2Section">What this means for cities and enterprises</h2>
+                        <p>The AICCC shows that digital twins work beyond a single asset. At city scale the twin becomes a model of the whole city that updates continuously. From one command center, staff can plan maintenance ahead, account for how funds are spent and respond to citizens.</p>
+                        <p>The same approach applies to companies running spread-out campuses, industrial plants or logistics networks. BIM-based digital twins, live IoT monitoring and Scan to CAD data give operations teams enough visibility to deal with problems before they turn into breakdowns.</p>
+                        <p>We don't sell this as a boxed product. Each system is engineered around the site it serves.</p>
                     </div>
 
+<!-- build-sections:post-cluster:start -->
+                    <div class="post-cluster">
+          <span class="post-cluster-label">Related service</span>
+          <a class="post-cluster-pillar" href="/solutions/digital-twin.html">Infrastructure Digital Twins <i class="fa-solid fa-arrow-right"></i></a>
+          <ul class="post-cluster-list">
+            <li><a href="/article/digital-twin-predictive-maintenance-sentra.html">Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture &amp; Implementation</a></li>
+            <li><a href="/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html">The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared</a></li>
+            <li><a href="/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html">3D Laser Scanning &amp; LiDAR for Infrastructure: How Reality Capture Powers Digital Twins</a></li>
+          </ul>
+          <a class="post-cluster-assess" href="/monitoring-assessment.html?source=building-resilient-smart-cities-with-data-driven-insights" data-cta="assessment-post-cluster">Request a monitoring assessment for your asset</a>
+        </div>
+<!-- build-sections:post-cluster:end -->
                     <div class="detail-cta">
-                        <h2 id="ConclusionSection">Build Your Digital Twin Command Center</h2>
-                        <p>Whether you are planning a Smart City command center, an enterprise Asset Intelligence platform, or an IoT-integrated operations hub, Clove Technologies has the implementation expertise to make it real. Let's start with your specific challenge.</p>
-                        <a class="cta-btn" href="/contact.html">Schedule a strategic discussion <i class="fa-solid fa-arrow-right"></i></a>
+                        <h2 id="ConclusionSection">Planning a command center?</h2>
+                        <p>If you are planning a smart city command center, an asset intelligence platform or an IoT operations hub, tell us what you need to solve and we'll start from there.</p>
+                        <a class="cta-btn" href="/monitoring-assessment.html?source=building-resilient-smart-cities-with-data-driven-insights" data-cta="assessment-post">Request a Monitoring Assessment <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </article>
 
@@ -1663,6 +1872,7 @@
                                     <li><a href="../products.html">Products</a></li>
                                     <li><a href="../solutions.html">Solutions</a></li>
                                     <li><a href="../industries.html">Industries</a></li>
+                                    <li><a href="../technology/index.html">How It Works</a></li>
                                     <li><a href="../about.html">About</a></li>
                                     <li><a href="../faq.html">FAQ</a></li>
                                     <li><a href="../resources.html">Insights &amp; Updates</a></li>
@@ -1793,7 +2003,6 @@
                         <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
                         <a href="../glossary.html" class="legal-link">Glossary</a>
                         <a href="../sitemap.xml" class="legal-link">Sitemap</a>
-                        <a href="../404-page.html" class="legal-link">404</a>
                     </div>
                 </div>
                 <div class="footer-spacer"></div>

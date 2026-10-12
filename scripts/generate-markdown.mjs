@@ -25,13 +25,13 @@ const OUT = path.join(ROOT, '_md');
 const ORIGIN = 'https://sentratech.in';
 
 // Directories holding pages worth serving as Markdown.
-const CONTENT_DIRS = ['blogs', 'article', 'case-studies', 'solutions', 'industries', 'products'];
+const CONTENT_DIRS = ['blogs', 'article', 'case-studies', 'solutions', 'industries', 'products', 'technology'];
 
 // Root-level pages worth serving. Partials (header/footer/sidebar) and
 // utility pages are deliberately absent - they are not documents.
 const ROOT_PAGES = [
     'index.html', 'about.html', 'solutions.html', 'products.html', 'industries.html',
-    'resources.html', 'partnership.html', 'contact.html', 'glossary.html', 'faq.html',
+    'resources.html', 'partnership.html', 'contact.html', 'monitoring-assessment.html', 'glossary.html', 'faq.html',
     'document-center.html', 'testimonial.html', 'videos.html'
 ];
 

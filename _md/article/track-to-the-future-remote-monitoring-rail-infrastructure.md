@@ -1,6 +1,6 @@
 # Track to the Future: How Remote Monitoring Helps Safeguard Rail and Civil Infrastructure
 
-> Remote railway track monitoring: wireless sensors and digital twins let rail engineers monitor track and slope conditions in hard-to-reach areas without regular site visits.
+> Remote railway track monitoring: wireless sensors and digital twins track rail and slope conditions in hard-to-reach areas without site visits.
 
 Published: 2026-06-24  
 Source: https://sentratech.in/article/track-to-the-future-remote-monitoring-rail-infrastructure.html
@@ -89,8 +89,18 @@ The work ahead is less about building more and more about **getting safe, well u
 
 **Reference:** This article was inspired by and references [ "Track to the Future: How remote monitoring helps safeguard rail and civil infrastructure" ](https://www.worldsensing.com/knowledge-center/track-to-the-future-how-remote-monitoring-helps-safeguard-rail-and-civil-infrastructure/) by Worldsensing. We thank Worldsensing and DYWIDAG for their contributions to advancing infrastructure monitoring through the Track to the Future event and Smart Guard system demonstration.
 
+Related service [Railway Bridge Monitoring ](https://sentratech.in/solutions/railway-bridge-monitoring.html)
+
+- [10 Early Warning Signs Your Bridge Needs Continuous Monitoring](https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html)
+
+- [Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html)
+
+- [Top 5 Hidden Structural Damages That Manual Bridge Inspection Misses](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=track-to-the-future-remote-monitoring-rail-infrastructure)
+
 ## Talk to Us About Your Assets
 
 Sentra Technologies handles IoT sensor deployment, monitoring dashboards, and full Digital Twin implementations. Tell us what you are trying to protect and we will tell you what it takes.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=track-to-the-future-remote-monitoring-rail-infrastructure)

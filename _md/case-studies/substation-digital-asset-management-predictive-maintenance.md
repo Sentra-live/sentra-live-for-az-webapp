@@ -1,4 +1,4 @@
-# Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL
+# Digital Asset Management & Digital Twin for Substation - Bathupally TGNPDCL
 
 > How TGNPDCL's Bathupally substation became a navigable digital twin with 360° imagery, a 3D model, geo-tagged maintenance points and construction records.
 
@@ -11,7 +11,7 @@ Clove Technologies turned the Bathupally substation of TGNPDCL into a browser-ba
 
 Smart Substation Sep 30, 2026
 
-## Digital Asset Management & Predictive Maintenance for Substation - Bathupally TGNPDCL
+## Digital Asset Management & Digital Twin for Substation - Bathupally TGNPDCL
 
 Clove Technologies turned the Bathupally substation of TGNPDCL into a browser-based digital twin: 360° site imagery, a 3D asset model and a point cloud in one georeferenced viewer, with maintenance points, measurements and construction records attached to the equipment they describe.
 
@@ -251,8 +251,18 @@ The Bathupally project shows what a substation looks like when its records are o
 
 For a distribution utility with hundreds of substations, that is the starting point for managing them as a portfolio. Add [asset monitoring](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html) and the same twin moves from recording condition to predicting it.
 
+Related service [Infrastructure Digital Twins ](https://sentratech.in/solutions/digital-twin.html)
+
+- [Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html)
+
+- [The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html)
+
+- [3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=substation-digital-asset-management-predictive-maintenance)
+
 ## Planning a digital twin for your substations?
 
 Tell us about your sites and we will scope the capture, the asset model and how maintenance and sensor data would connect to it.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Similar Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=substation-digital-asset-management-predictive-maintenance)

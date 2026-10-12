@@ -222,6 +222,14 @@ Using versatile plate **LS-ACC-IN15-HP** for horizontal and vertical surface dep
 
 Talk to our engineering team about the right GNSS Meter configuration for your structural or geotechnical monitoring project. Custom solutions, fast delivery.
 
+Used In
+
+## Where the GNSS Meter Is Used
+
+[ **Dam deformation**Dams & reservoirs ](https://sentratech.in/industries/dams-reservoirs-monitoring.html) [ **Settlement & slope movement**Geotechnical monitoring ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html) [ **Long-term structural displacement**Structural health monitoring ](https://sentratech.in/solutions/structural-health-monitoring.html) [ **Guide: GNSS displacement monitoring**Millimetre movement from satellites ](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html)
+
+[Get a sensor recommendation for your structure ](https://sentratech.in/monitoring-assessment.html?source=product-gnss-meter) [Sensor Selection Guide](https://sentratech.in/technology/sensor-selection-guide.html)
+
 Frequently Asked Questions
 
 ## Got Questions About the GNSS Meter?

@@ -20,21 +20,21 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-  <title>Digital Twin Solutions | Sentra</title>
+  <title>Infrastructure Digital Twin for Monitoring | Sentra</title>
   <meta name="description"
-    content="Sentra's Digital Twin solutions integrate BIM, IoT sensors and real-time analytics to create virtual replicas of physical assets for infrastructure management." />
+    content="Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data bound to each component, for bridges, railways, substations and buildings." />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Digital Twin Solutions | Sentra" />
+  <meta property="og:title" content="Infrastructure Digital Twin for Monitoring | Sentra" />
   <meta property="og:description"
-    content="Dynamic virtual replicas of physical infrastructure integrating BIM, IoT, and real-time analytics for smarter asset management." />
+    content="Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data bound to each component, for bridges, railways, substations and buildings." />
   <meta property="og:url" content="https://sentratech.in/solutions/digital-twin.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Digital Twin Solutions | Sentra" />
-  <meta name="twitter:description" content="Dynamic virtual replicas integrating BIM, IoT, and real-time analytics." />
+  <meta name="twitter:title" content="Infrastructure Digital Twin for Monitoring | Sentra" />
+  <meta name="twitter:description" content="Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data bound to each component, for bridges, railways, substations and buildings." />
   <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
@@ -129,7 +129,15 @@
       "name": "What software platforms do you use for Digital Twins?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "We are platform-agnostic and work with leading Digital Twin platforms including Autodesk Tandem, Bentley iTwin, Azure Digital Twins, and open-source visualisation frameworks. Our IoT integration layer supports standard protocols (MQTT, OPC-UA, Modbus, BACnet) and can connect to any major BMS, SCADA, or CMMS system. We recommend the platform that best suits your specific requirements, existing technology stack, and budget."
+        "text": "Our delivered twins run in a browser-based viewer that combines 360° imagery, point cloud and a 3D asset model with measurement, clipping, points of interest and construction records. Reality capture is processed in LixelStudio and standard point cloud tools, and the monitoring hardware reports over LoRaWAN, 4G and Modbus RTU. If you already run a twin or asset platform, tell us which one and we will confirm what we can deliver into it before quoting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does an infrastructure digital twin cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It depends on the asset and the scope: the size of the asset and the scanning effort, the level of model detail, how many live sensor channels are bound to the model, which existing systems need integrating, and how many users need training. A single asset typically takes 8–16 weeks to deliver. Request an assessment and we will scope it for your asset."
       }
     }
   ]
@@ -273,6 +281,42 @@
     @media (max-width: 1282px) {
         .navbar-call-pill {
             display: none !important;
+        }
+    }
+
+    /* ── Header "Request Assessment" pill (primary conversion CTA) ── */
+    .navbar-assess-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 42px;
+        padding: 0 18px;
+        border-radius: 100px;
+        border: 1.5px solid #f48120;
+        color: #f48120;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .navbar-assess-pill:hover {
+        background: #f48120;
+        color: #fff;
+    }
+
+    /* Keep the header from crowding: the phone pill gives way first. */
+    @media (max-width: 1500px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .navbar-assess-pill {
+            display: none;
         }
     }
 
@@ -476,7 +520,18 @@
                             aria-haspopup="true" aria-expanded="false">
                             SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
-                        <div class="dropdown-menu mega-solutions">
+                        <div class="dropdown-menu mega-solutions" aria-label="Solutions navigation">
+                            <div class="solutions-menu-chrome">
+                                <div>
+                                    <span class="solutions-menu-eyebrow">Solutions navigator</span>
+                                    <strong>Find the right engineering pathway</strong>
+                                </div>
+                                <div class="solutions-menu-actions">
+                                    <a href="../technology/">Technology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="../solutions.html">All solutions <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="solutions-panel solutions-panel--v1" data-solutions-panel="v1" hidden aria-hidden="true">
                             <div class="solutions-bento">
 
                                 <!-- Row 1: SHM (wide) + Bridge (narrow) -->
@@ -575,7 +630,58 @@
                                         <span class="sol-fill-sub">Documentation & digital workflows</span>
                                     </a>
                                 </div>
+                                <!-- Row 4: buyer-intent application pages -->
+                                <div class="mega-quickbar" style="margin-top:10px;border-radius:12px;">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
 
+                            </div>
+                            </div>
+
+                            <div class="solutions-panel solutions-panel--v2" data-solutions-panel="v2" aria-hidden="false">
+                                <div class="solutions-v2-layout">
+                                    <div class="solutions-v2-nav">
+                                        <section class="solutions-v2-group">
+                                            <p>Monitor &amp; diagnose</p>
+                                            <a class="solutions-v2-link is-active" href="../solutions/structural-health-monitoring.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Structural Health Monitoring" data-sub="Continuous insight for bridges, buildings and critical infrastructure."><i class="fas fa-chart-line"></i><span><strong>Structural Health Monitoring</strong><small>Real-time sensing &amp; alerts</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/asset-monitoring-and-management-solutions.html" data-img="../image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp" data-name="Asset Monitoring" data-sub="Bring condition, performance and lifecycle data into one operational view."><i class="fas fa-database"></i><span><strong>Asset Monitoring</strong><small>Lifecycle intelligence</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/geotechnical-and-foundation-monitoring.html" data-img="../image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp" data-name="Geotechnical Monitoring" data-sub="Track ground, slope and foundation movement before risk escalates."><i class="fas fa-mountain"></i><span><strong>Geotechnical Monitoring</strong><small>Ground &amp; foundation movement</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Inspect &amp; assess</p>
+                                            <a class="solutions-v2-link" href="../solutions/bridge-inspection-and-condition-assessment.html" data-img="../image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" data-name="Bridge Inspection" data-sub="Evidence-led inspection and condition assessment for safer decisions."><i class="fas fa-bridge"></i><span><strong>Bridge Inspection</strong><small>Condition assessment</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/advanced-non-destructive-testing-ndt.html" data-img="../image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp" data-name="Advanced NDT" data-sub="Reveal hidden defects with non-destructive testing and expert interpretation."><i class="fas fa-microscope"></i><span><strong>Advanced NDT</strong><small>Non-destructive evaluation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/fatigue-and-residual-life-assessment.html" data-img="../image/solutions/Homepage/Fatigue%20%26%20Residual%20Life%20Assessment.webp" data-name="Fatigue &amp; Residual Life" data-sub="Quantify remaining service life and prioritize intervention with confidence."><i class="fas fa-tachometer-alt"></i><span><strong>Fatigue &amp; Residual Life</strong><small>Load cycles &amp; service life</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Model &amp; advise</p>
+                                            <a class="solutions-v2-link" href="../solutions/digital-twin.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Twin" data-sub="Connect live asset data to a decision-ready digital representation."><i class="fas fa-cubes"></i><span><strong>Digital Twin</strong><small>Live asset simulation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/digital-engineering-and-documentation.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Engineering" data-sub="Turn engineering records and field data into dependable digital workflows."><i class="fas fa-file-contract"></i><span><strong>Digital Engineering</strong><small>Documentation &amp; workflows</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/consulting-and-advisory-services.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Consulting &amp; Advisory" data-sub="Independent engineering expertise from assessment through implementation."><i class="fas fa-lightbulb"></i><span><strong>Consulting &amp; Advisory</strong><small>Expert engineering support</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="solutions-v2-preview" role="region" aria-label="Selected solution preview">
+                                        <img class="solutions-v2-preview-img" src="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" alt="Structural monitoring sensors installed on infrastructure">
+                                        <div class="solutions-v2-preview-shade"></div>
+                                        <div class="solutions-v2-preview-content">
+                                            <span>Featured solution</span>
+                                            <h3>Structural Health Monitoring</h3>
+                                            <p>Continuous insight for bridges, buildings and critical infrastructure.</p>
+                                            <a href="../solutions/structural-health-monitoring.html">Explore solution <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mega-quickbar solutions-v2-apps">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1136,6 +1242,10 @@
                         <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
                     </button>
                 </div>
+                <a href="../monitoring-assessment.html?source=header" class="navbar-assess-pill" data-cta="assessment-header">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>Request Assessment</span>
+                </a>
                 <a href="tel:+917893023322" class="navbar-call-pill">
                     <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
                     <span class="navbar-call-text">+91 78930 23322</span>
@@ -1227,29 +1337,108 @@
             }
 
             /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            /* Solutions navigator: V2 is the final menu design. */
+            var solutionsMenu = document.querySelector('.mega-solutions');
+            if (solutionsMenu) {
+                var solutionPanels = solutionsMenu.querySelectorAll('[data-solutions-panel]');
+                solutionPanels.forEach(function (panel) {
+                    var isCurrent = panel.getAttribute('data-solutions-panel') === 'v2';
+                    panel.hidden = !isCurrent;
+                    panel.setAttribute('aria-hidden', String(!isCurrent));
+                    if ('inert' in panel) panel.inert = !isCurrent;
+                });
+
+                var solutionLinks = solutionsMenu.querySelectorAll('.solutions-v2-link[data-img]');
+                var solutionPreviewImg = solutionsMenu.querySelector('.solutions-v2-preview-img');
+                var solutionPreviewTitle = solutionsMenu.querySelector('.solutions-v2-preview h3');
+                var solutionPreviewText = solutionsMenu.querySelector('.solutions-v2-preview p');
+                var solutionPreviewCta = solutionsMenu.querySelector('.solutions-v2-preview-content a');
+                function updateSolutionPreview(link) {
+                    solutionLinks.forEach(function (item) { item.classList.toggle('is-active', item === link); });
+                    solutionPreviewImg.src = link.getAttribute('data-img');
+                    solutionPreviewImg.alt = link.getAttribute('data-name') + ' solution preview';
+                    solutionPreviewTitle.textContent = link.getAttribute('data-name');
+                    solutionPreviewText.textContent = link.getAttribute('data-sub');
+                    solutionPreviewCta.href = link.href;
+                }
+                solutionLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { updateSolutionPreview(link); });
+                    link.addEventListener('focus', function () { updateSolutionPreview(link); });
+                });
+            }
+
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
                 );
                 if (!dropdown) return;
                 var closeTimer = null;
+                var trigger = item.querySelector('.dropdown-toggle');
 
-                function openMenu() {
-                    if (window.innerWidth < 1024) return;
+                function setExpanded(expanded) {
+                    if (trigger) trigger.setAttribute('aria-expanded', String(expanded));
+                }
+                function openMenu(force) {
+                    if (window.innerWidth <= 1024) return;
+                    if (item.classList.contains('mega-dismissed') && !force) return;
                     clearTimeout(closeTimer);
+                    item.classList.remove('mega-dismissed');
                     item.classList.add('mega-open');
+                    setExpanded(true);
+                }
+                function closeMenu(dismissHover) {
+                    clearTimeout(closeTimer);
+                    item.classList.remove('mega-open');
+                    item.classList.toggle('mega-dismissed', Boolean(dismissHover));
+                    setExpanded(false);
                 }
                 function scheduleClose(delay) {
                     clearTimeout(closeTimer);
                     closeTimer = setTimeout(function () {
-                        item.classList.remove('mega-open');
+                        closeMenu(false);
                     }, delay);
                 }
 
-                item.addEventListener('mouseenter', function () { openMenu(); });
-                item.addEventListener('mouseleave', function () { scheduleClose(280); });
-                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseenter', function () { openMenu(false); });
+                item.addEventListener('mouseleave', function () {
+                    item.classList.remove('mega-dismissed');
+                    scheduleClose(280);
+                });
+                dropdown.addEventListener('mouseenter', function () { openMenu(false); });
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+
+                if (trigger) {
+                    trigger.addEventListener('click', function (event) {
+                        if (window.innerWidth <= 1024) return;
+                        event.preventDefault();
+                        if (item.classList.contains('mega-open')) closeMenu(true);
+                        else openMenu(true);
+                    });
+                    trigger.addEventListener('keydown', function (event) {
+                        if (window.innerWidth <= 1024 || !['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
+                        event.preventDefault();
+                        openMenu(true);
+                        var firstControl = dropdown.querySelector('[data-solutions-view], a[href], button:not([disabled])');
+                        if (firstControl) firstControl.focus();
+                    });
+                }
+
+                document.addEventListener('click', function (event) {
+                    if (!item.contains(event.target)) closeMenu(false);
+                });
+
+                item._closeMegaMenu = closeMenu;
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key !== 'Escape') return;
+                var openItem = document.querySelector('.nav-item.dropdown.mega-open');
+                if (!openItem) return;
+                var trigger = openItem.querySelector('.dropdown-toggle');
+                if (openItem._closeMegaMenu) openItem._closeMegaMenu(true);
+                if (trigger) {
+                    trigger.focus();
+                }
             });
 
             /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
@@ -1265,7 +1454,8 @@
 
         })();
     </script>
-</div></div>
+</div>
+</div>
   </header>
   <aside>
     <div id="edit-sidebar"></div>
@@ -1294,9 +1484,8 @@
 
             <!-- Quick links -->
             <div class="mmenu-quicklinks">
-                <a href="/" class="mmenu-quicklink">Home</a>
                 <a href="../about.html" class="mmenu-quicklink">About Us</a>
-                <a href="../contact.html" class="mmenu-quicklink">Contact Us</a>
+                <a href="../monitoring-assessment.html?source=mobile-menu" class="mmenu-quicklink" data-cta="assessment-mobile-menu">Request Assessment</a>
             </div>
 
             <!-- Products -->
@@ -1389,6 +1578,14 @@
                             class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
                     <a class="mmenu-simple-link" href="../solutions/digital-engineering-and-documentation.html"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                    <a class="mmenu-simple-link" href="../solutions/railway-bridge-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Railway Bridge Monitoring</a>
+                    <a class="mmenu-simple-link" href="../solutions/construction-vibration-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Construction Vibration</a>
+                    <a class="mmenu-simple-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Predictive Maintenance</a>
+                    <a class="mmenu-simple-link" href="../technology/"><i
+                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Technology</a>
                 </div>
             </div>
 
@@ -1432,8 +1629,11 @@
         <div class="mmenu-bottom">
             <div class="mmenu-follow-row">
                 <span class="mmenu-follow-label">Follow Us</span>
-                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
-                    target="_blank" rel="noopener">Book Demo</a>
+                <div class="mmenu-bottom-actions">
+                    <a class="mmenu-contact-btn" href="../contact.html">Contact Us</a>
+                    <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                        target="_blank" rel="noopener">Book Demo</a>
+                </div>
             </div>
             <div class="mmenu-social-row">
                 <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
@@ -1446,6 +1646,10 @@
                     rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
                     rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="mmenu-social" href="https://medium.com/@sentra_8835" target="_blank"
+                    rel="noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                <a class="mmenu-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                    rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="mmenu-contact-row">
                 <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
@@ -1453,7 +1657,8 @@
             </div>
         </div>
     </nav>
-</div></div>
+</div>
+</div>
   </aside>
 
   <main>
@@ -1480,10 +1685,9 @@
             <span class="sol-tag">AEC</span>
           </div>
           <h1 class="sol-hero-title">Digital Twin Solutions</h1>
-          <p class="sol-hero-subtitle">A living digital replica of your physical assets, integrating BIM, IoT sensor
-            data, and predictive analytics to enable real-time visibility, simulation, and smarter decisions.</p>
+          <p class="sol-hero-subtitle">Digital twins for infrastructure monitoring and asset management: measured reality capture, BIM and live IoT sensor data in one model of your asset.</p>
           <div class="sol-hero-actions">
-            <a href="/contact.html" class="sol-btn-primary">Start Your Digital Journey <i
+            <a href="/monitoring-assessment.html?source=digital-twin" class="sol-btn-primary" data-cta="assessment-section">Start Your Digital Journey <i
                 class="fa-solid fa-arrow-right"></i></a>
             <a href="#sol-overview" class="sol-btn-secondary">Explore Solution</a>
           </div>
@@ -1507,16 +1711,16 @@
           <article class="solx-wwd-story solx-anim">
             <h3>Intelligent Virtual Replicas for Real-World Assets</h3>
             <p>A Digital Twin is more than a 3D model; it is a continuously updated digital mirror of a physical asset, building, infrastructure system, or operational process. Unlike static documentation or conventional BIM, a Digital Twin integrates real-world data from IoT sensors, connected systems, and operational records to provide continuous, real-time visibility into asset performance and condition throughout its lifecycle.</p>
-            <p>Sentra builds Digital Twins on a foundation of accurate BIM models, enriched with live sensor streams from structural monitoring, environmental sensors, and operational systems. Our platform enables asset owners to visualise real-time conditions, simulate future scenarios, detect anomalies before they become failures, and make evidence-based decisions that extend asset life and reduce operational costs. From single buildings to city-scale infrastructure networks, our Digital Twin solutions serve the full spectrum of infrastructure intelligence needs.</p>
+            <p>Sentra builds the twin from what is actually on site. Drone survey, terrestrial LiDAR, handheld SLAM and 360&deg; imagery capture the asset as it stands; the point cloud is modelled into named components; and inspection records, maintenance points and construction history are attached to the components they describe. We have delivered this for a 40.23 m open web girder railway bridge for South Central Railway and for TGNPDCL's Bathupally substation. Because we also install structural monitoring, live sensor channels are bound to the same components in our in-house monitoring application, so readings and alerts appear on the part of the structure they come from.</p>
             <ul class="solx-checks">
-              <li><i class="fa-solid fa-check"></i> Built on accurate BIM models</li>
-              <li><i class="fa-solid fa-check"></i> Live structural, environmental and operational data</li>
-              <li><i class="fa-solid fa-check"></i> Simulate scenarios and catch anomalies early</li>
-              <li><i class="fa-solid fa-check"></i> Single buildings to city-scale networks</li>
+              <li><i class="fa-solid fa-check"></i> Built from measured reality capture, not old drawings</li>
+              <li><i class="fa-solid fa-check"></i> Component-level model with records attached</li>
+              <li><i class="fa-solid fa-check"></i> Georeferenced measurement without a site visit</li>
+              <li><i class="fa-solid fa-check"></i> Live monitoring data bound to components</li>
             </ul>
             <div class="solx-actions">
-              <a href="/contact.html" class="sol-btn-primary">Talk to an Expert <i class="fa-solid fa-arrow-right"></i></a>
-              <a href="#sol-how" class="solx-link">See how it works <i class="fa-solid fa-arrow-down"></i></a>
+              <a href="/monitoring-assessment.html?source=digital-twin" class="sol-btn-primary" data-cta="assessment-hero">Request a Monitoring Assessment <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="../technology/structural-health-monitoring-digital-twin.html" class="solx-link">3D model vs BIM vs digital twin <i class="fa-solid fa-arrow-right"></i></a>
             </div>
           </article>
           <figure class="solx-wwd-media solx-anim">
@@ -1575,40 +1779,40 @@
     <section class="sol-section sol-bg-darker solx-outcomes">
       <div class="sol-section-inner">
         <div class="solx-head">
-          <span class="sol-eyebrow solx-anim">Impact</span>
-          <h2 class="sol-section-title solx-anim">Measurable Outcomes</h2>
-          <p class="sol-section-subtitle solx-anim">Digital Twins deliver quantifiable improvements in operational efficiency, asset reliability, and decision quality.</p>
+          <span class="sol-eyebrow solx-anim">Delivered Work</span>
+          <h2 class="sol-section-title solx-anim">What We Have Actually Built</h2>
+          <p class="sol-section-subtitle solx-anim">Figures from delivered projects, not industry averages. Each one links back to its case study.</p>
         </div>
         <div class="solx-bento solx-bento--compact">
           <div class="solx-tile solx-tile--big">
-            <span class="solx-tile-label"><i class="fa-solid fa-chart-simple"></i> Operational Efficiency</span>
-            <div class="solx-tile-num"><span class="solx-count" data-to="30">30</span>%</div>
+            <span class="solx-tile-label"><i class="fa-solid fa-road-bridge"></i> Railway Bridge Twin</span>
+            <div class="solx-tile-num"><span class="solx-count" data-to="40.23" data-decimals="2">40.23</span> m</div>
             <div>
-              <p class="solx-tile-caption">Avg. improvement in operational efficiency</p>
+              <p class="solx-tile-caption">Open web girder span, Bridge No. 60 DN, South Central Railway, captured by drone and terrestrial LiDAR. <a href="../case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html">Case study</a></p>
             </div>
             <div class="solx-tile-pills">
-              <span>Infrastructure</span><span>Smart Cities</span><span>BIM</span><span>IoT</span>
+              <span>Drone</span><span>TLS</span><span>Point cloud</span><span>Component model</span>
             </div>
           </div>
           <figure class="solx-tile solx-tile--photo">
-            <img src="../image/solutions/showcase/digital%20twin/3D%20BIM%20Model%20Integration.webp" alt="BIM Model" loading="lazy">
-            <figcaption>BIM Model</figcaption>
+            <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/3d-model-view.webp" alt="3D asset model of the Bathupally substation" loading="lazy">
+            <figcaption>Substation asset model</figcaption>
           </figure>
           <div class="solx-tile solx-tile--dark">
-            <span class="solx-tile-label"><i class="fa-solid fa-clock"></i> Downtime Reduction</span>
-            <div class="solx-tile-num"><span class="solx-count" data-to="45">45</span>%</div>
-            <p class="solx-tile-caption">Reduction in unplanned downtime</p>
+            <span class="solx-tile-label"><i class="fa-solid fa-clock"></i> Survey to Handover</span>
+            <div class="solx-tile-num"><span class="solx-count" data-to="60">60</span> days</div>
+            <p class="solx-tile-caption">From first site visit to digital twin delivery on Bridge No. 60 DN</p>
           </div>
           <div class="solx-tile solx-tile--accent">
-            <span class="solx-tile-label"><i class="fa-solid fa-coins"></i> Lifecycle Cost Savings</span>
-            <div class="solx-tile-num"><span class="solx-count" data-to="25">25</span>%</div>
-            <p class="solx-tile-caption">Reduction in total lifecycle costs</p>
+            <span class="solx-tile-label"><i class="fa-solid fa-location-dot"></i> Georeferenced POIs</span>
+            <div class="solx-tile-num">X&middot;Y&middot;Z</div>
+            <p class="solx-tile-caption">Every maintenance point in the TGNPDCL substation twin is pinned to real coordinates on the asset it describes</p>
           </div>
           <figure class="solx-tile solx-tile--wide">
-            <img src="../image/solutions/showcase/digital%20twin/City-scale%20Digital%20Twin%20for%20smart%20infrastructure%20management.webp" alt="Digital Twin City Infrastructure" loading="lazy">
+            <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/point-of-interest.webp" alt="Maintenance Required point of interest placed on a transformer in the substation digital twin" loading="lazy">
             <figcaption>
-              <strong>City-scale Digital Twin</strong>
-              <span>Multiple assets, utility networks and public systems in one geospatial platform.</span>
+              <strong>Maintenance points on the model</strong>
+              <span>TGNPDCL Bathupally: a Maintenance Required flag logged on the transformer itself.</span>
             </figcaption>
           </figure>
         </div>
@@ -1984,35 +2188,35 @@
         <div class="sol-reveal" style="max-width:700px;margin-bottom:60px;">
           <span class="sol-eyebrow">Showcase</span>
           <h2 class="sol-section-title">Digital Twin in Action</h2>
-          <p class="sol-section-subtitle">From smart cities to critical infrastructure; see how Digital Twins transform
-            asset management.</p>
+          <p class="sol-section-subtitle">Screens from the Bathupally substation twin delivered to TGNPDCL: imagery,
+            model, measurement and construction records in one browser viewer.</p>
         </div>
         <div class="sol-image-showcase">
           <div class="sol-image-showcase-main sol-reveal">
             <img
-              src="../image/solutions/showcase/digital%20twin/City-scale%20Digital%20Twin%20for%20smart%20infrastructure%20management.webp"
-              alt="Digital Twin City Infrastructure" loading="lazy">
-            <div class="sol-image-showcase-caption">City-scale Digital Twin for smart infrastructure management</div>
+              src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/360-panorama-view.webp"
+              alt="360 degree panoramic layer of the Bathupally substation digital twin with point cloud minimap" loading="lazy">
+            <div class="sol-image-showcase-caption">360&deg; imagery layer with point cloud minimap, TGNPDCL Bathupally</div>
           </div>
           <div class="sol-image-showcase-thumb sol-reveal">
-            <img src="../image/solutions/showcase/digital%20twin/3D%20BIM%20Model%20Integration.webp" alt="BIM Model"
+            <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/3d-model-view.webp" alt="3D asset model layer of the substation"
               loading="lazy">
-            <div class="sol-image-showcase-label">3D BIM Model Integration</div>
+            <div class="sol-image-showcase-label">3D Asset Model</div>
           </div>
           <div class="sol-image-showcase-thumb sol-reveal">
-            <img src="../image/solutions/showcase/digital%20twin/IoT%20Sensor%20Network.webp" alt="Sensor Network"
+            <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/measurement-tool.webp" alt="Measuring a 7.86 m gantry column in the digital twin"
               loading="lazy">
-            <div class="sol-image-showcase-label">IoT Sensor Network</div>
+            <div class="sol-image-showcase-label">Measurement Without a Site Visit</div>
           </div>
           <div class="sol-image-showcase-thumb sol-reveal">
-            <img src="../image/solutions/showcase/digital%20twin/Real-time%20Analytics%20Dashboards.webp"
-              alt="Data Analytics" loading="lazy">
-            <div class="sol-image-showcase-label">Real-time Analytics Dashboards</div>
+            <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/point-of-interest.webp"
+              alt="Maintenance point of interest on a transformer" loading="lazy">
+            <div class="sol-image-showcase-label">Maintenance Points of Interest</div>
           </div>
           <div class="sol-image-showcase-thumb sol-reveal">
-            <img src="../image/solutions/showcase/digital%20twin/Amaravati%20Smart%20City%20Twin.webp"
-              alt="Amaravati Project" loading="lazy">
-            <div class="sol-image-showcase-label">Amaravati Smart City Twin</div>
+            <img src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/construction-video.webp"
+              alt="Construction footage of the substation gantries playing inside the twin" loading="lazy">
+            <div class="sol-image-showcase-label">Construction Records Mode</div>
           </div>
         </div>
     </section>
@@ -2034,7 +2238,7 @@
           <div class="solx-benefit">
             <span class="solx-benefit-icon"><i class="fa-solid fa-eye"></i></span>
             <h3>Proactive Control</h3>
-            <p>Shift from reactive to proactive asset management through real-time anomaly detection, predictive analytics, and live condition monitoring within the context of a full 3D model.</p>
+            <p>Maintenance findings are logged against the component they refer to, so open issues, repeat problems and inspection coverage can be read off the model instead of reconstructed from registers.</p>
           </div>
           <div class="solx-benefit">
             <span class="solx-benefit-icon"><i class="fa-solid fa-bolt"></i></span>
@@ -2058,10 +2262,10 @@
           </div>
           <div class="solx-benefit">
             <span class="solx-benefit-icon"><i class="fa-solid fa-certificate"></i></span>
-            <h3>ISO 19650 Compliance</h3>
-            <p>All Digital Twin information is structured and managed in accordance with ISO 19650 by ensuring that your asset information meets international standards for quality, accessibility, and long-term usability.</p>
+            <h3>Structured Asset Information</h3>
+            <p>Each structure, piece of equipment and civil element is a separate, identifiable object, which is what lets inspection records, measurements and later sensor data attach to the right asset.</p>
           </div>
-          <a class="solx-benefit solx-benefit--cta" href="/contact.html">
+          <a class="solx-benefit solx-benefit--cta" href="/monitoring-assessment.html?source=digital-twin" data-cta="assessment-tile">
             <span class="solx-benefit-kicker">Next step</span>
             <h3>See a Digital Twin built for your asset</h3>
             <span class="solx-link">Request a Demo <i class="fa-solid fa-arrow-right"></i></span>
@@ -2075,29 +2279,31 @@
       <div class="sol-section-inner">
         <div class="sol-reveal" style="max-width:700px;margin-bottom:60px;">
           <span class="sol-eyebrow">Featured Project</span>
-          <h2 class="sol-section-title">Amaravati Integrated Command Control Centre</h2>
-          <p class="sol-section-subtitle">Sentra implemented a city-scale Digital Twin framework for the capital city
-            development of Andhra Pradesh by synchronising physical infrastructure with live data for city-wide asset
-            intelligence.</p>
+          <h2 class="sol-section-title">Bathupally Substation, TGNPDCL</h2>
+          <p class="sol-section-subtitle">A browser-based asset twin of an outdoor distribution substation: 360&deg;
+            imagery, point cloud and a component-level 3D model in one georeferenced viewer.</p>
         </div>
         <div class="solx-featured">
           <div class="sol-reveal">
-            <img class="solx-featured-img" src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&q=80"
-              alt="Amaravati Command Center">
+            <img class="solx-featured-img" src="../image/case-studies/substation-digital-asset-management-predictive-maintenance/3d-model-view.webp"
+              alt="3D asset model of the Bathupally substation showing transformer, gantries and plinths" loading="lazy">
           </div>
           <div class="solx-featured-body sol-reveal">
-            <div class="sol-bento-icon"><i class="fa-solid fa-city"></i></div>
-            <p>The Amaravati Integrated Command Control Centre (AICCC) is a flagship Digital Twin implementation that
-              syncs physical infrastructure across the entire capital city with live IoT data streams. The platform
-              enables 24/7 multi-domain monitoring of utilities, services, drone feeds, and CCTV networks, all
-              visualised within a unified geospatial Digital Twin environment.</p>
-            <strong class="solx-featured-label">Key capabilities:</strong>
+            <div class="sol-bento-icon"><i class="fa-solid fa-bolt"></i></div>
+            <p>Telangana Northern Power Distribution Company Limited wanted the Bathupally substation documented in a
+              form its engineers could use from a desk. The yard was captured as it stands and modelled asset by asset,
+              so every transformer, gantry, isolator, kiosk and cable trench exists as a separate object with real
+              coordinates.</p>
+            <strong class="solx-featured-label">What the twin does today:</strong>
             <ul class="solx-featured-list">
-              <li><i class="fa-solid fa-check-circle"></i> Digital approval workflows and governance</li>
-              <li><i class="fa-solid fa-check-circle"></i> Land pooling records transparency</li>
-              <li><i class="fa-solid fa-check-circle"></i> Citizen grievance management platform</li>
-              <li><i class="fa-solid fa-check-circle"></i> Real-time utility and service dashboards</li>
+              <li><i class="fa-solid fa-check-circle"></i> Remote walk-through of every bay in 360&deg; imagery</li>
+              <li><i class="fa-solid fa-check-circle"></i> Point, distance and height measurement in real units</li>
+              <li><i class="fa-solid fa-check-circle"></i> Maintenance points of interest pinned to equipment</li>
+              <li><i class="fa-solid fa-check-circle"></i> Construction footage linked to the assets it shows</li>
             </ul>
+            <p>Condition sensors are not yet connected; the model gives each future sensor an asset to report against.
+              <a href="../case-studies/substation-digital-asset-management-predictive-maintenance.html">Read the case study</a>.
+              For city-scale work, see Clove Technologies' <a href="../article/building-resilient-smart-cities-with-data-driven-insights.html">Amaravati command and control centre</a>.</p>
           </div>
         </div>
       </div>
@@ -2142,7 +2348,7 @@
             </div>
           </a>
           <div class="solx-ind" tabindex="0">
-            <img src="../image/solutions/showcase/digital%20twin/Amaravati%20Smart%20City%20Twin.webp" alt="" loading="lazy">
+            <img src="../image/solutions/showcase/digital%20twin/City-scale%20Digital%20Twin%20for%20smart%20infrastructure%20management.webp" alt="" loading="lazy">
             <div class="solx-ind-content">
               <span class="solx-ind-icon"><i class="fa-solid fa-city"></i></span>
               <h3>Smart Cities</h3>
@@ -2182,15 +2388,14 @@
           <div class="sol-why-card sol-reveal">
             <div class="sol-why-num">01</div>
             <div class="sol-why-title">BIM-to-Digital Twin Pipeline</div>
-            <div class="sol-why-body">We manage the complete pipeline from scan-to-BIM through live Digital Twin by ensuring geometric accuracy, data structure, and ISO 19650 compliance at every stage, with no handover
-              gaps.</div>
+            <div class="sol-why-body">One team runs reality capture, point cloud registration and component modelling, so the geometry and the asset structure are checked against each other before handover.</div>
           </div>
           <div class="sol-why-card sol-reveal">
             <div class="sol-why-num">02</div>
-            <div class="sol-why-title">IoT-Native Integration</div>
-            <div class="sol-why-body">Unlike pure software providers, we have deep in-house IoT capability by designing,
-              installing, and connecting sensor networks that feed live data directly into the Digital Twin from day
-              one.</div>
+            <div class="sol-why-title">Monitoring In-House</div>
+            <div class="sol-why-body">Unlike pure software providers, we design and install structural monitoring
+              ourselves: strain, tilt, vibration and displacement on railway bridges. The twin and the sensor layout
+              can be scoped together.</div>
           </div>
           <div class="sol-why-card sol-reveal">
             <div class="sol-why-num">03</div>
@@ -2201,14 +2406,131 @@
           </div>
           <div class="sol-why-card sol-reveal">
             <div class="sol-why-num">04</div>
-            <div class="sol-why-title">Proven at City Scale</div>
-            <div class="sol-why-body">Our flagship Amaravati project demonstrates our capability at the largest scale: proving that our Digital Twin approach works for multi-stakeholder, multi-system city programmes.</div>
+            <div class="sol-why-title">Delivered on Live Assets</div>
+            <div class="sol-why-body">A railway bridge beside a running line and an energised substation yard: both captured without closures, both handed over as twins the owner still uses.</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- 11. FAQ -->
+<!-- build-sections:pillar:start -->
+    <section class="sol-section sol-bg-darker" id="buyer-guide">
+    <div class="sol-section-inner">
+      <div class="buyer-guide-head">
+        <span class="sol-eyebrow">Buyer Guide</span>
+        <h2 class="sol-section-title">Planning an Infrastructure Digital Twin</h2>
+        <p class="sol-section-subtitle">What goes into a monitoring-grade digital twin, how long it takes, and what to check before you commission one.</p>
+      </div>
+      <div class="buyer-guide-grid">
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-cube" aria-hidden="true"></i> What goes into it</h3>
+        <ul><li>Reality capture: drone survey, terrestrial LiDAR, handheld SLAM and 360° imagery</li><li>A model of named components built from the point cloud</li><li>Inspection, maintenance and construction records attached to those components</li><li>Live sensor channels bound to the part of the structure they measure</li></ul>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> How it is delivered</h3>
+        <p>Data capture and scanning come first, followed by platform setup with data classified to ISO 19650. Then we integrate the IoT sensors, configure analytics and dashboards, validate the twin and train your team. After that, the twin keeps evolving with the asset.</p>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i> What drives the cost</h3>
+        <p>There is no fixed price; scope is set by the structure and the programme. The main drivers are:</p><ul><li>Size of the asset and the scanning effort</li><li>Level of model detail and number of components</li><li>Number of live sensor channels to bind</li><li>Existing systems to integrate (BMS, SCADA, CMMS)</li><li>Number of users and training required</li></ul>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-clock" aria-hidden="true"></i> How long it takes</h3>
+        <p>A single building or infrastructure asset typically takes 8–16 weeks from survey to live platform. That breaks down as: scanning 1–2 days, BIM model 2–4 weeks, sensor installation 1–2 weeks, configuration and integration 2–4 weeks, and acceptance testing and training 1 week.</p>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-plug" aria-hidden="true"></i> Platforms and protocols</h3>
+        <p>Delivered twins run in a browser-based viewer that combines 360° imagery, point cloud and the 3D model with measurement and records. Monitoring hardware reports over LoRaWAN, 4G and Modbus RTU. If you already run a twin or asset platform, we confirm what we can deliver into it before quoting.</p>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-train" aria-hidden="true"></i> Twins we have delivered</h3>
+        <p>We built a twin of a 40.23 m open web girder railway bridge for South Central Railway, and a digital asset model of TGNPDCL's Bathupally substation. <a href="/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html">Railway bridge twin</a> · <a href="/case-studies/substation-digital-asset-management-predictive-maintenance.html">Substation case study</a></p>
+      </div>
+      </div>
+      <div class="buyer-guide-actions">
+        <a href="/monitoring-assessment.html?source=digital-twin" class="sol-btn-primary" data-cta="assessment-buyer-guide">Request a Monitoring Assessment <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://calendly.com/sentra-clovetech/30min?primary_color=f48120" class="sol-btn-secondary" data-cta="talk-to-engineer">Talk to an Engineer</a>
+      </div>
+    </div>
+    </section>
+
+    <section class="sol-section sol-bg-dark" id="topic-cluster">
+    <div class="sol-section-inner">
+      <div class="buyer-guide-head">
+        <span class="sol-eyebrow">Explore This Topic</span>
+        <h2 class="sol-section-title">Digital Twins: Case Studies, Technology and Guides</h2>
+      </div>
+      <div class="sol-related-grid">
+        <a href="/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-train" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Case Study: Railway Bridge Digital Twin</h4>
+            <span>Drone and LiDAR inspection to a live twin</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/case-studies/substation-digital-asset-management-predictive-maintenance.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Case Study: Substation Digital Asset Management</h4>
+            <span>Predictive maintenance for a substation</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/technology/structural-health-monitoring-digital-twin.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-layer-group" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>SHM Digital Twin Technology</h4>
+            <span>How monitoring data binds to the model</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/article/digital-twin-predictive-maintenance-sentra.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-gears" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Digital Twin for Predictive Maintenance</h4>
+            <span>How it works in practice</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-cubes" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Mesh, Point Cloud or Gaussian Splatting?</h4>
+            <span>Choosing a twin representation</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-satellite-dish" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>3D Laser Scanning for Digital Twins</h4>
+            <span>LiDAR capture for infrastructure</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/solutions/digital-engineering-and-documentation.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Digital Engineering &amp; Documentation</h4>
+            <span>BIM, scan-to-BIM and ISO 19650</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/solutions/structural-health-monitoring.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Structural Health Monitoring</h4>
+            <span>The live data behind the twin</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+      </div>
+    </div>
+    </section>
+
+<!-- build-sections:pillar:end -->
     <section class="sol-section sol-bg-darker">
       <div class="hero-container">
         <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
@@ -2317,14 +2639,20 @@
                   <div id="dt-faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordionDT">
                     <div class="accordion-body">
                       <div class="accordion-spacer"></div>
-                      <p>We are platform-agnostic and work with leading Digital Twin platforms including Autodesk
-                        Tandem, Bentley iTwin, Azure Digital Twins, and open-source visualisation frameworks. Our IoT
-                        integration layer supports standard protocols (MQTT, OPC-UA, Modbus, BACnet) and can connect to
-                        any major BMS, SCADA, or CMMS system. We recommend the platform that best suits your specific
-                        requirements, existing technology stack, and budget.</p>
+                      <p>Our delivered twins run in a browser-based viewer that combines 360&deg; imagery, point cloud and
+                        a 3D asset model with measurement, clipping, points of interest and construction records.
+                        Reality capture is processed in LixelStudio and standard point cloud tools, and the monitoring
+                        hardware reports over LoRaWAN, 4G and Modbus RTU. If you already run a twin or asset platform,
+                        tell us which one and we will confirm what we can deliver into it before quoting.</p>
                     </div>
                   </div>
                 </div>
+<!-- build-sections:faq:start -->
+<div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccordionDT-buyer1" aria-expanded="false" aria-controls="faqAccordionDT-buyer1">How much does an infrastructure digital twin cost?</button></h2>
+              <div id="faqAccordionDT-buyer1" class="accordion-collapse collapse" data-bs-parent="#faqAccordionDT"><div class="accordion-body"><div class="accordion-spacer"></div><p>It depends on the asset and the scope: the size of the asset and the scanning effort, the level of model detail, how many live sensor channels are bound to the model, which existing systems need integrating, and how many users need training. A single asset typically takes 8–16 weeks to deliver. Request an assessment and we will scope it for your asset.</p></div></div>
+            </div>
+<!-- build-sections:faq:end -->
     </section>
 
     <!-- 11. NEWSLETTER -->
@@ -2371,9 +2699,8 @@
           </ul>
         </div>
         <div class="solx-cta-actions">
-          <a href="/contact.html" class="solx-cta-btn solx-magnetic">Request a Demo <i
-              class="fa-solid fa-arrow-right"></i></a>
-          <a href="https://calendly.com/sentra-clovetech/30min?primary_color=f48120" class="solx-cta-ghost"><i class="fa-solid fa-calendar"></i> Schedule a Call</a>
+          <a href="/monitoring-assessment.html?source=digital-twin" class="solx-cta-btn solx-magnetic" data-cta="assessment-final">Request a Monitoring Assessment <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="https://calendly.com/sentra-clovetech/30min?primary_color=f48120" class="solx-cta-ghost" data-cta="talk-to-engineer"><i class="fa-solid fa-calendar"></i> Talk to an Engineer</a>
           <a href="tel:+917893023322" class="solx-cta-phone"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
         </div>
       </div>
@@ -2444,6 +2771,7 @@
                                     <li><a href="../products.html">Products</a></li>
                                     <li><a href="../solutions.html">Solutions</a></li>
                                     <li><a href="../industries.html">Industries</a></li>
+                                    <li><a href="../technology/index.html">How It Works</a></li>
                                     <li><a href="../about.html">About</a></li>
                                     <li><a href="../faq.html">FAQ</a></li>
                                     <li><a href="../resources.html">Insights &amp; Updates</a></li>
@@ -2574,7 +2902,6 @@
                         <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
                         <a href="../glossary.html" class="legal-link">Glossary</a>
                         <a href="../sitemap.xml" class="legal-link">Sitemap</a>
-                        <a href="../404-page.html" class="legal-link">404</a>
                     </div>
                 </div>
                 <div class="footer-spacer"></div>

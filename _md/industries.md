@@ -13,7 +13,7 @@ From railway networks to deep-sea ports, Sentra's IoT solutions keep critical as
 
 Railways Bridges & Highways Buildings Dams & Reservoirs Mining Ports & Marine Construction Industrial
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [Explore Industries ](#ind-industries)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=industries) [Explore Industries ](#ind-industries)
 
 8+
 

@@ -11,7 +11,7 @@ Monitoring
 
 GNSS-based displacement, pore pressure and seepage monitoring for earthfill, concrete and masonry dams, providing early warning and continuous safety assurance.
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=dam&amp;source=dams-reservoirs-monitoring) [Explore Solution](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
 ## Why Dam
 Monitoring Matters
@@ -65,4 +65,4 @@ Safety
 
 Talk to our team about a comprehensive monitoring plan for your dam or reservoir.
 
-[Get in Touch ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=dam&amp;source=dams-reservoirs-monitoring)

@@ -1,6 +1,6 @@
 # 3D Laser Scanning & LiDAR for Infrastructure: How Reality Capture Powers Digital Twins
 
-> How 3D laser scanning and LiDAR reality capture build the accurate spatial foundation for infrastructure digital twins: methods, workflow, point clouds, scan-to-BIM and real projects.
+> How 3D laser scanning and LiDAR build the spatial base for infrastructure digital twins: methods, workflow, point clouds and scan-to-BIM.
 
 Published: 2026-09-16  
 Source: https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html
@@ -243,8 +243,18 @@ Common challenges include reflective or transparent surfaces that scatter laser 
 
 Sentra combines LiDAR and photogrammetric reality capture with scan-to-BIM modelling and digital twin integration, then connects the resulting model to an IoT-native asset monitoring platform, so the accurate spatial foundation stays alive with real-time sensor data rather than going stale after handover.
 
+Related service [Infrastructure Digital Twins ](https://sentratech.in/solutions/digital-twin.html)
+
+- [Digital Twin for Predictive Maintenance: How It Works, Benefits, Architecture & Implementation](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html)
+
+- [The Future of Digital Twins: Mesh, Point Clouds, and Gaussian Splatting Compared](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html)
+
+- [Building Resilient Smart Cities with Data-Driven Insights](https://sentratech.in/article/building-resilient-smart-cities-with-data-driven-insights.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=3d-laser-scanning-lidar-infrastructure-digital-twins)
+
 ## Ready to Build an Accurate Digital Twin Foundation?
 
 Whether you need 3D laser scanning, scan-to-BIM modelling, or a full digital twin connected to live IoT data, Sentra Technologies has the expertise and technology to capture reality accurately and keep it current.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=3d-laser-scanning-lidar-infrastructure-digital-twins)

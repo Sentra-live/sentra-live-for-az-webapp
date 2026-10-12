@@ -93,8 +93,18 @@ The most advanced seismic monitoring installations connect to regional early war
 
 - Data centre server protection
 
+Related service [Structural Health Monitoring Services ](https://sentratech.in/solutions/structural-health-monitoring.html)
+
+- [Structural Health Monitoring](https://sentratech.in/blogs/structural-health-monitoring.html)
+
+- [How Much Does Structural Health Monitoring Cost? What Drives the Price](https://sentratech.in/blogs/structural-health-monitoring-cost-factors.html)
+
+- [Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=seismic-monitoring-buildings-critical-infrastructure)
+
 ## Strengthen Your Seismic Resilience
 
 Whether you are responsible for a single high-rise building or a portfolio of critical infrastructure assets, Sentra's seismic monitoring solutions provide the data you need to make informed decisions before, during, and after an earthquake. Contact us for a consultation.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=seismic-monitoring-buildings-critical-infrastructure)

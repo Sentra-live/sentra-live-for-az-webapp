@@ -115,8 +115,18 @@ One thing worth planning for: a baseline. Scour monitoring compares against a kn
 
 Scour monitoring also fits naturally alongside broader [structural health monitoring](https://sentratech.in/solutions/structural-health-monitoring.html) on the same crossing, since the accelerometers and tiltmeters serve both purposes. If you are weighing up which of your structures need continuous monitoring at all, our note on [early warning signs for bridge monitoring](https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html) covers the wider set of indicators, and the guide to [hidden structural damage](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html) looks at the defects that visual inspection tends to miss above the waterline.
 
+Related service [Bridge Monitoring System ](https://sentratech.in/industries/bridges-highways-monitoring.html)
+
+- [10 Early Warning Signs Your Bridge Needs Continuous Monitoring](https://sentratech.in/blogs/10-early-warning-signs-bridge-continuous-monitoring.html)
+
+- [Top 5 Hidden Structural Damages That Manual Bridge Inspection Misses](https://sentratech.in/blogs/top-5-hidden-structural-damages-bridge-inspection.html)
+
+- [Madhya Pradesh Bridge Collapses & Structural Health Monitoring](https://sentratech.in/article/madhya-pradesh-bridge-collapses-structural-health-monitoring.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=bridge-scour-monitoring-iot-digital-twins)
+
 ## Know what your riverbed is doing
 
 Sentra installs and operates scour and structural monitoring on river crossings, including remote sites without power or reliable coverage. If you are responsible for bridges over water and want to know how they behave during a flood rather than weeks afterwards, we can help you work out what to measure and where to start.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=bridge&amp;source=bridge-scour-monitoring-iot-digital-twins)

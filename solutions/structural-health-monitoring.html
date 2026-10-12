@@ -20,22 +20,22 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-  <title>Structural Health Monitoring Services | IoT & AI | Sentra</title>
+  <title>Structural Health Monitoring Services in India | Sentra</title>
   <meta name="description"
-    content="Real-time structural health monitoring using IoT sensors, edge analytics and predictive ML to detect anomalies, reduce downtime and extend asset life." />
+    content="Structural health monitoring services in India: site survey, sensor design, installation, 24/7 analytics and alerts for bridges, railways, buildings and dams." />
   <meta name="robots" content="index, follow" />
-  <meta property="og:title" content="Structural Health Monitoring Services | IoT & AI | Sentra" />
+  <meta property="og:title" content="Structural Health Monitoring Services in India | Sentra" />
   <meta property="og:description"
-    content="Real-time structural health monitoring using IoT sensors, edge analytics and predictive ML to detect anomalies and reduce downtime." />
+    content="Structural health monitoring services in India: site survey, sensor design, installation, 24/7 analytics and alerts for bridges, railways, buildings and dams." />
   <meta property="og:url" content="https://sentratech.in/solutions/structural-health-monitoring.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Structural Health Monitoring Services | IoT & AI | Sentra" />
+  <meta name="twitter:title" content="Structural Health Monitoring Services in India | Sentra" />
   <meta name="twitter:description"
-    content="Real-time structural health monitoring using IoT sensors, edge analytics and predictive ML." />
+    content="Structural health monitoring services in India: site survey, sensor design, installation, 24/7 analytics and alerts for bridges, railways, buildings and dams." />
   <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
@@ -159,6 +159,14 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Standard monthly reports include an executive summary, sensor health and system uptime, trend plots for all monitored parameters (strain, displacement, vibration, temperature), identified anomalies with engineering interpretation, recommended maintenance actions and prioritisation, and a downloadable CSV of key metrics. Custom reporting frequencies, such as weekly or quarterly, and formats are available on request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does structural health monitoring cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "There is no fixed price. Cost depends on the number of measurement points and sensor types, whether high-rate dynamic monitoring is needed, wireless or wired installation and connectivity at site, access constraints such as live traffic, the monitoring duration, and how much engineering analysis and reporting you need. A site survey and a 4–8 week pilot are the usual way to fix scope and budget. Request a monitoring assessment and we will scope it for your structure."
       }
     }
   ]
@@ -302,6 +310,42 @@
     @media (max-width: 1282px) {
         .navbar-call-pill {
             display: none !important;
+        }
+    }
+
+    /* ── Header "Request Assessment" pill (primary conversion CTA) ── */
+    .navbar-assess-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 42px;
+        padding: 0 18px;
+        border-radius: 100px;
+        border: 1.5px solid #f48120;
+        color: #f48120;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .navbar-assess-pill:hover {
+        background: #f48120;
+        color: #fff;
+    }
+
+    /* Keep the header from crowding: the phone pill gives way first. */
+    @media (max-width: 1500px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .navbar-assess-pill {
+            display: none;
         }
     }
 
@@ -505,7 +549,18 @@
                             aria-haspopup="true" aria-expanded="false">
                             SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
-                        <div class="dropdown-menu mega-solutions">
+                        <div class="dropdown-menu mega-solutions" aria-label="Solutions navigation">
+                            <div class="solutions-menu-chrome">
+                                <div>
+                                    <span class="solutions-menu-eyebrow">Solutions navigator</span>
+                                    <strong>Find the right engineering pathway</strong>
+                                </div>
+                                <div class="solutions-menu-actions">
+                                    <a href="../technology/">Technology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="../solutions.html">All solutions <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="solutions-panel solutions-panel--v1" data-solutions-panel="v1" hidden aria-hidden="true">
                             <div class="solutions-bento">
 
                                 <!-- Row 1: SHM (wide) + Bridge (narrow) -->
@@ -604,7 +659,58 @@
                                         <span class="sol-fill-sub">Documentation & digital workflows</span>
                                     </a>
                                 </div>
+                                <!-- Row 4: buyer-intent application pages -->
+                                <div class="mega-quickbar" style="margin-top:10px;border-radius:12px;">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
 
+                            </div>
+                            </div>
+
+                            <div class="solutions-panel solutions-panel--v2" data-solutions-panel="v2" aria-hidden="false">
+                                <div class="solutions-v2-layout">
+                                    <div class="solutions-v2-nav">
+                                        <section class="solutions-v2-group">
+                                            <p>Monitor &amp; diagnose</p>
+                                            <a class="solutions-v2-link is-active" href="../solutions/structural-health-monitoring.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Structural Health Monitoring" data-sub="Continuous insight for bridges, buildings and critical infrastructure."><i class="fas fa-chart-line"></i><span><strong>Structural Health Monitoring</strong><small>Real-time sensing &amp; alerts</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/asset-monitoring-and-management-solutions.html" data-img="../image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp" data-name="Asset Monitoring" data-sub="Bring condition, performance and lifecycle data into one operational view."><i class="fas fa-database"></i><span><strong>Asset Monitoring</strong><small>Lifecycle intelligence</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/geotechnical-and-foundation-monitoring.html" data-img="../image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp" data-name="Geotechnical Monitoring" data-sub="Track ground, slope and foundation movement before risk escalates."><i class="fas fa-mountain"></i><span><strong>Geotechnical Monitoring</strong><small>Ground &amp; foundation movement</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Inspect &amp; assess</p>
+                                            <a class="solutions-v2-link" href="../solutions/bridge-inspection-and-condition-assessment.html" data-img="../image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" data-name="Bridge Inspection" data-sub="Evidence-led inspection and condition assessment for safer decisions."><i class="fas fa-bridge"></i><span><strong>Bridge Inspection</strong><small>Condition assessment</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/advanced-non-destructive-testing-ndt.html" data-img="../image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp" data-name="Advanced NDT" data-sub="Reveal hidden defects with non-destructive testing and expert interpretation."><i class="fas fa-microscope"></i><span><strong>Advanced NDT</strong><small>Non-destructive evaluation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/fatigue-and-residual-life-assessment.html" data-img="../image/solutions/Homepage/Fatigue%20%26%20Residual%20Life%20Assessment.webp" data-name="Fatigue &amp; Residual Life" data-sub="Quantify remaining service life and prioritize intervention with confidence."><i class="fas fa-tachometer-alt"></i><span><strong>Fatigue &amp; Residual Life</strong><small>Load cycles &amp; service life</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Model &amp; advise</p>
+                                            <a class="solutions-v2-link" href="../solutions/digital-twin.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Twin" data-sub="Connect live asset data to a decision-ready digital representation."><i class="fas fa-cubes"></i><span><strong>Digital Twin</strong><small>Live asset simulation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/digital-engineering-and-documentation.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Engineering" data-sub="Turn engineering records and field data into dependable digital workflows."><i class="fas fa-file-contract"></i><span><strong>Digital Engineering</strong><small>Documentation &amp; workflows</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/consulting-and-advisory-services.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Consulting &amp; Advisory" data-sub="Independent engineering expertise from assessment through implementation."><i class="fas fa-lightbulb"></i><span><strong>Consulting &amp; Advisory</strong><small>Expert engineering support</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="solutions-v2-preview" role="region" aria-label="Selected solution preview">
+                                        <img class="solutions-v2-preview-img" src="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" alt="Structural monitoring sensors installed on infrastructure">
+                                        <div class="solutions-v2-preview-shade"></div>
+                                        <div class="solutions-v2-preview-content">
+                                            <span>Featured solution</span>
+                                            <h3>Structural Health Monitoring</h3>
+                                            <p>Continuous insight for bridges, buildings and critical infrastructure.</p>
+                                            <a href="../solutions/structural-health-monitoring.html">Explore solution <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mega-quickbar solutions-v2-apps">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1165,6 +1271,10 @@
                         <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
                     </button>
                 </div>
+                <a href="../monitoring-assessment.html?source=header" class="navbar-assess-pill" data-cta="assessment-header">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>Request Assessment</span>
+                </a>
                 <a href="tel:+917893023322" class="navbar-call-pill">
                     <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
                     <span class="navbar-call-text">+91 78930 23322</span>
@@ -1256,29 +1366,108 @@
             }
 
             /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            /* Solutions navigator: V2 is the final menu design. */
+            var solutionsMenu = document.querySelector('.mega-solutions');
+            if (solutionsMenu) {
+                var solutionPanels = solutionsMenu.querySelectorAll('[data-solutions-panel]');
+                solutionPanels.forEach(function (panel) {
+                    var isCurrent = panel.getAttribute('data-solutions-panel') === 'v2';
+                    panel.hidden = !isCurrent;
+                    panel.setAttribute('aria-hidden', String(!isCurrent));
+                    if ('inert' in panel) panel.inert = !isCurrent;
+                });
+
+                var solutionLinks = solutionsMenu.querySelectorAll('.solutions-v2-link[data-img]');
+                var solutionPreviewImg = solutionsMenu.querySelector('.solutions-v2-preview-img');
+                var solutionPreviewTitle = solutionsMenu.querySelector('.solutions-v2-preview h3');
+                var solutionPreviewText = solutionsMenu.querySelector('.solutions-v2-preview p');
+                var solutionPreviewCta = solutionsMenu.querySelector('.solutions-v2-preview-content a');
+                function updateSolutionPreview(link) {
+                    solutionLinks.forEach(function (item) { item.classList.toggle('is-active', item === link); });
+                    solutionPreviewImg.src = link.getAttribute('data-img');
+                    solutionPreviewImg.alt = link.getAttribute('data-name') + ' solution preview';
+                    solutionPreviewTitle.textContent = link.getAttribute('data-name');
+                    solutionPreviewText.textContent = link.getAttribute('data-sub');
+                    solutionPreviewCta.href = link.href;
+                }
+                solutionLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { updateSolutionPreview(link); });
+                    link.addEventListener('focus', function () { updateSolutionPreview(link); });
+                });
+            }
+
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
                 );
                 if (!dropdown) return;
                 var closeTimer = null;
+                var trigger = item.querySelector('.dropdown-toggle');
 
-                function openMenu() {
-                    if (window.innerWidth < 1024) return;
+                function setExpanded(expanded) {
+                    if (trigger) trigger.setAttribute('aria-expanded', String(expanded));
+                }
+                function openMenu(force) {
+                    if (window.innerWidth <= 1024) return;
+                    if (item.classList.contains('mega-dismissed') && !force) return;
                     clearTimeout(closeTimer);
+                    item.classList.remove('mega-dismissed');
                     item.classList.add('mega-open');
+                    setExpanded(true);
+                }
+                function closeMenu(dismissHover) {
+                    clearTimeout(closeTimer);
+                    item.classList.remove('mega-open');
+                    item.classList.toggle('mega-dismissed', Boolean(dismissHover));
+                    setExpanded(false);
                 }
                 function scheduleClose(delay) {
                     clearTimeout(closeTimer);
                     closeTimer = setTimeout(function () {
-                        item.classList.remove('mega-open');
+                        closeMenu(false);
                     }, delay);
                 }
 
-                item.addEventListener('mouseenter', function () { openMenu(); });
-                item.addEventListener('mouseleave', function () { scheduleClose(280); });
-                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseenter', function () { openMenu(false); });
+                item.addEventListener('mouseleave', function () {
+                    item.classList.remove('mega-dismissed');
+                    scheduleClose(280);
+                });
+                dropdown.addEventListener('mouseenter', function () { openMenu(false); });
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+
+                if (trigger) {
+                    trigger.addEventListener('click', function (event) {
+                        if (window.innerWidth <= 1024) return;
+                        event.preventDefault();
+                        if (item.classList.contains('mega-open')) closeMenu(true);
+                        else openMenu(true);
+                    });
+                    trigger.addEventListener('keydown', function (event) {
+                        if (window.innerWidth <= 1024 || !['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
+                        event.preventDefault();
+                        openMenu(true);
+                        var firstControl = dropdown.querySelector('[data-solutions-view], a[href], button:not([disabled])');
+                        if (firstControl) firstControl.focus();
+                    });
+                }
+
+                document.addEventListener('click', function (event) {
+                    if (!item.contains(event.target)) closeMenu(false);
+                });
+
+                item._closeMegaMenu = closeMenu;
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key !== 'Escape') return;
+                var openItem = document.querySelector('.nav-item.dropdown.mega-open');
+                if (!openItem) return;
+                var trigger = openItem.querySelector('.dropdown-toggle');
+                if (openItem._closeMegaMenu) openItem._closeMegaMenu(true);
+                if (trigger) {
+                    trigger.focus();
+                }
             });
 
             /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
@@ -1294,7 +1483,8 @@
 
         })();
     </script>
-</div></div>
+</div>
+</div>
   </header>
   <aside>
     <div id="edit-sidebar"></div>
@@ -1323,9 +1513,8 @@
 
             <!-- Quick links -->
             <div class="mmenu-quicklinks">
-                <a href="/" class="mmenu-quicklink">Home</a>
                 <a href="../about.html" class="mmenu-quicklink">About Us</a>
-                <a href="../contact.html" class="mmenu-quicklink">Contact Us</a>
+                <a href="../monitoring-assessment.html?source=mobile-menu" class="mmenu-quicklink" data-cta="assessment-mobile-menu">Request Assessment</a>
             </div>
 
             <!-- Products -->
@@ -1418,6 +1607,14 @@
                             class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
                     <a class="mmenu-simple-link" href="../solutions/digital-engineering-and-documentation.html"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                    <a class="mmenu-simple-link" href="../solutions/railway-bridge-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Railway Bridge Monitoring</a>
+                    <a class="mmenu-simple-link" href="../solutions/construction-vibration-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Construction Vibration</a>
+                    <a class="mmenu-simple-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Predictive Maintenance</a>
+                    <a class="mmenu-simple-link" href="../technology/"><i
+                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Technology</a>
                 </div>
             </div>
 
@@ -1461,8 +1658,11 @@
         <div class="mmenu-bottom">
             <div class="mmenu-follow-row">
                 <span class="mmenu-follow-label">Follow Us</span>
-                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
-                    target="_blank" rel="noopener">Book Demo</a>
+                <div class="mmenu-bottom-actions">
+                    <a class="mmenu-contact-btn" href="../contact.html">Contact Us</a>
+                    <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                        target="_blank" rel="noopener">Book Demo</a>
+                </div>
             </div>
             <div class="mmenu-social-row">
                 <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
@@ -1475,6 +1675,10 @@
                     rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
                     rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="mmenu-social" href="https://medium.com/@sentra_8835" target="_blank"
+                    rel="noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                <a class="mmenu-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                    rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="mmenu-contact-row">
                 <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
@@ -1482,7 +1686,8 @@
             </div>
         </div>
     </nav>
-</div></div>
+</div>
+</div>
   </aside>
 
   <main>
@@ -1509,11 +1714,9 @@
             <span class="sol-tag">Dams</span>
           </div>
           <h1 class="sol-hero-title">Structural Health Monitoring</h1>
-          <p class="sol-hero-subtitle">Real-time intelligence for structures that cannot afford to fail: continuous
-            sensing, instant alerts, and predictive analytics in one integrated platform.</p>
+          <p class="sol-hero-subtitle">Structural health monitoring services for bridges, railways, buildings and dams in India: continuous sensing, instant alerts and engineering analysis from one team.</p>
           <div class="sol-hero-actions">
-            <a href="/contact.html" class="sol-btn-primary">Talk to an Expert <i
-                class="fa-solid fa-arrow-right"></i></a>
+            <a href="/monitoring-assessment.html?source=structural-health-monitoring" class="sol-btn-primary" data-cta="assessment-hero">Request a Monitoring Assessment <i class="fa-solid fa-arrow-right"></i></a>
             <a href="#sol-overview" class="sol-btn-secondary">Explore Solution</a>
           </div>
         </div>
@@ -1552,7 +1755,7 @@
               <li><i class="fa-solid fa-check"></i> From one sensor node to multi-site networks</li>
             </ul>
             <div class="solx-actions">
-              <a href="/contact.html" class="sol-btn-primary">Talk to an Expert <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="/monitoring-assessment.html?source=structural-health-monitoring" class="sol-btn-primary" data-cta="assessment-hero">Request a Monitoring Assessment <i class="fa-solid fa-arrow-right"></i></a>
               <a href="#sol-system" class="solx-link">How the system works <i class="fa-solid fa-arrow-down"></i></a>
             </div>
           </article>
@@ -1631,18 +1834,20 @@
     <section class="sol-section sol-bg-darker solx-outcomes">
       <div class="sol-section-inner">
         <div class="solx-head">
-          <span class="sol-eyebrow solx-anim">Impact</span>
-          <h2 class="sol-section-title solx-anim">Measurable Outcomes</h2>
-          <p class="sol-section-subtitle solx-anim">Quantifiable results delivered through our monitoring and engineering
-            solutions across infrastructure projects.</p>
+          <span class="sol-eyebrow solx-anim">Field Evidence</span>
+          <h2 class="sol-section-title solx-anim">Measured on Our Own Projects</h2>
+          <p class="sol-section-subtitle solx-anim">Values recorded by Sentra instrumentation on an in-service steel
+            railway bridge, not industry averages.</p>
         </div>
         <div class="solx-bento">
           <div class="solx-tile solx-tile--big">
-            <span class="solx-tile-label"><i class="fa-solid fa-chart-simple"></i> Track record</span>
-            <div class="solx-tile-num"><span class="solx-count" data-to="200">200</span>+</div>
-            <p class="solx-tile-caption">Structures monitored across bridges, buildings and railways</p>
+            <span class="solx-tile-label"><i class="fa-solid fa-wave-square"></i> Natural frequency</span>
+            <div class="solx-tile-num"><span class="solx-count" data-to="5.3" data-decimals="1">5.3</span> Hz</div>
+            <p class="solx-tile-caption">First natural frequency of a 1960s three-span steel plate girder railway bridge,
+              from accelerometers sampled at 100 Hz, against a 4.5 Hz limit.
+              <a href="../case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html">Case study</a></p>
             <div class="solx-tile-pills">
-              <span>Bridges</span><span>Railways</span><span>Buildings</span><span>Dams</span>
+              <span>Accelerometers</span><span>Strain</span><span>LVDT</span><span>Tilt</span>
             </div>
           </div>
           <figure class="solx-tile solx-tile--photo">
@@ -1651,14 +1856,14 @@
             <figcaption>Railway bridge monitoring system</figcaption>
           </figure>
           <div class="solx-tile solx-tile--dark">
-            <span class="solx-tile-label"><i class="fa-solid fa-coins"></i> Efficiency</span>
-            <div class="solx-tile-num"><span class="solx-count" data-to="40">40</span>%</div>
-            <p class="solx-tile-caption">Average reduction in inspection costs</p>
+            <span class="solx-tile-label"><i class="fa-solid fa-ruler-vertical"></i> Stress range</span>
+            <div class="solx-tile-num"><span class="solx-count" data-to="98">98</span> MPa</div>
+            <p class="solx-tile-caption">Peak mid-span stress range under a 25 t axle train, against a 120 MPa limit</p>
           </div>
           <div class="solx-tile solx-tile--accent">
-            <span class="solx-tile-label"><i class="fa-solid fa-shield-halved"></i> Reliability</span>
-            <div class="solx-tile-num"><span class="solx-count" data-to="99.5" data-decimals="1">99.5</span>%</div>
-            <p class="solx-tile-caption">System availability, 24/7</p>
+            <span class="solx-tile-label"><i class="fa-solid fa-hourglass-half"></i> Residual fatigue life</span>
+            <div class="solx-tile-num">12&ndash;15 yrs</div>
+            <p class="solx-tile-caption">Estimated from measured stress range spectra; fatigue damage index 0.63</p>
           </div>
           <figure class="solx-tile solx-tile--wide">
             <img src="../image/solutions/showcase/shm/Real-time%20SHM%20dashboard%20with%20multi-sensor%20data%20visualization.webp"
@@ -1669,9 +1874,9 @@
             </figcaption>
           </figure>
           <div class="solx-tile solx-tile--outline">
-            <span class="solx-tile-label"><i class="fa-solid fa-triangle-exclamation"></i> Cost of waiting</span>
-            <div class="solx-tile-num">3&ndash;5&times;</div>
-            <p class="solx-tile-caption">What emergency repairs typically cost compared with planned interventions</p>
+            <span class="solx-tile-label"><i class="fa-solid fa-arrows-up-down"></i> Deflection</span>
+            <div class="solx-tile-num"><span class="solx-count" data-to="6.2" data-decimals="1">6.2</span> mm</div>
+            <p class="solx-tile-caption">Maximum mid-span deflection from LVDTs, within the 7.5 mm serviceability limit</p>
           </div>
         </div>
       </div>
@@ -2030,7 +2235,9 @@
           <span class="sol-eyebrow solx-anim">The System</span>
           <h2 class="sol-section-title solx-anim">From Sensor to Decision</h2>
           <p class="sol-section-subtitle solx-anim">Every Sentra programme runs on the same four-layer architecture, so data
-            moves from the structure to your team without gaps.</p>
+            moves from the structure to your team without gaps. The full sixteen-layer breakdown, with who implements
+            each layer, is in <a href="../technology/shm-architecture.html">SHM system architecture</a>; sensor
+            details are in <a href="../technology/shm-sensors.html">SHM sensors</a>.</p>
         </div>
         <div class="solx-flow">
           <div class="solx-flow-track" aria-hidden="true"><span class="solx-flow-fill"></span></div>
@@ -2050,13 +2257,13 @@
             <span class="solx-flow-node"><i class="fa-solid fa-chart-line"></i></span>
             <span class="solx-flow-idx">03 &middot; Analyse</span>
             <h3>Cloud analytics</h3>
-            <p>The platform trends structural behaviour, correlates loads with responses and uses machine learning to flag anomalies.</p>
+            <p>Our in-house monitoring application trends structural behaviour against its baseline and flags threshold exceedances and machine learning anomalies; our engineers add modal, fatigue and load-response analysis.</p>
           </div>
           <div class="solx-flow-step">
             <span class="solx-flow-node"><i class="fa-solid fa-bell"></i></span>
             <span class="solx-flow-idx">04 &middot; Act</span>
-            <h3>Alerts, reports &amp; API</h3>
-            <p>Multi-tier alerts reach your team by SMS, email and dashboard, backed by scheduled reports and API integrations.</p>
+            <h3>Alerts &amp; reports</h3>
+            <p>Multi-tier alerts reach your team by SMS, email and dashboard, backed by scheduled engineering reports and CSV data export.</p>
           </div>
         </div>
         <div class="solx-tiers solx-anim">
@@ -2158,7 +2365,7 @@
                     </div>
                     <h3 class="sol-sticky-slide-title">Professional Installation</h3>
                     <p class="sol-sticky-slide-desc">Sensors, edge gateways, and communication equipment are installed
-                      by certified engineers, minimising disruption to operational structures and traffic.</p>
+                      by our own field engineers, minimising disruption to operational structures and traffic.</p>
                   </div>
                 </div>
               </div>
@@ -2195,9 +2402,10 @@
                       <span class="sol-sticky-slide-badge">05</span>
                       <span class="sol-sticky-slide-label">Step Five</span>
                     </div>
-                    <h3 class="sol-sticky-slide-title">AI-Powered Analytics</h3>
-                    <p class="sol-sticky-slide-desc">Cloud analytics apply machine learning models to detect anomalies,
-                      trend structural behaviour, correlate loads with responses, and flag conditions requiring
+                    <h3 class="sol-sticky-slide-title">Engineering Analytics</h3>
+                    <p class="sol-sticky-slide-desc">Data is trended against the commissioning baseline and design
+                      thresholds, machine learning flags anomalous behaviour, temperature effects are separated out,
+                      and engineers run frequency, fatigue and load-response analysis to flag conditions requiring
                       intervention.</p>
                   </div>
                 </div>
@@ -2312,7 +2520,7 @@
           </div>
           <div class="solx-benefit">
             <span class="solx-benefit-icon"><i class="fa-solid fa-coins"></i></span>
-            <h3>Cut Inspection Costs <span class="solx-nowrap">40&ndash;60%</span></h3>
+            <h3>Targeted Inspection</h3>
             <p>Condition-based monitoring replaces blanket inspection regimes and sends crews only where the data says they are needed.</p>
           </div>
           <div class="solx-benefit">
@@ -2323,12 +2531,12 @@
           <div class="solx-benefit">
             <span class="solx-benefit-icon"><i class="fa-solid fa-file-shield"></i></span>
             <h3>Regulatory Compliance</h3>
-            <p>Audit trails, certified reports and documented alert responses support railway authorities, bridge codes and international standards.</p>
+            <p>Timestamped records and documented alert responses give railway authorities and bridge owners measured evidence to set against the relevant codes.</p>
           </div>
           <div class="solx-benefit">
             <span class="solx-benefit-icon"><i class="fa-solid fa-gears"></i></span>
-            <h3>Predictive Maintenance</h3>
-            <p>Models trained on your structure&rsquo;s own behaviour forecast when work will be needed, so it can be planned instead of reactive.</p>
+            <h3>Condition-Based Maintenance</h3>
+            <p>Measured stress ranges feed residual fatigue life estimates, and trends against the baseline show which components need work first, so it can be planned instead of reactive.</p>
           </div>
           <div class="solx-benefit">
             <span class="solx-benefit-icon"><i class="fa-solid fa-chart-line"></i></span>
@@ -2340,7 +2548,7 @@
             <h3>Instant Alerting</h3>
             <p>Warning, alert and critical notifications by SMS, email and dashboard let your operations team respond immediately.</p>
           </div>
-          <a class="solx-benefit solx-benefit--cta" href="/contact.html">
+          <a class="solx-benefit solx-benefit--cta" href="/monitoring-assessment.html?source=structural-health-monitoring" data-cta="assessment-tile">
             <span class="solx-benefit-kicker">Build the business case</span>
             <h3>See what monitoring could save on your asset</h3>
             <span class="solx-link">Get a free assessment <i class="fa-solid fa-arrow-right"></i></span>
@@ -2358,7 +2566,7 @@
             <h2 class="sol-section-title solx-anim">What It Prevents</h2>
             <p class="sol-section-subtitle solx-anim">The real cost of not monitoring is measured in emergency closures,
               catastrophic repairs, and legal liability. SHM removes these risks before they materialise.</p>
-            <a href="/contact.html" class="solx-link solx-anim">Assess the risk on your structure <i
+            <a href="/monitoring-assessment.html?source=structural-health-monitoring" class="solx-link solx-anim" data-cta="assessment-inline">Assess the risk on your structure <i
                 class="fa-solid fa-arrow-right"></i></a>
           </div>
           <ol class="solx-risk-list">
@@ -2485,17 +2693,16 @@
           </div>
           <div class="sol-why-card sol-reveal">
             <div class="sol-why-num">02</div>
-            <div class="sol-why-title">200+ Deployed Structures</div>
-            <div class="sol-why-body">Our field experience across hundreds of railway bridges, highway structures, and
-              civil assets means we anticipate installation challenges, choose the right sensor for each environment,
-              and deliver programmes that work reliably.</div>
+            <div class="sol-why-title">Instrumented Under Live Traffic</div>
+            <div class="sol-why-body">Our railway bridge work for South Central Railway was instrumented and load
+              tested around running trains, to RDSO and BS-106R guidance. We know how to place sensors and plan
+              access on structures that cannot close.</div>
           </div>
           <div class="sol-why-card sol-reveal">
             <div class="sol-why-num">03</div>
-            <div class="sol-why-title">Certified Engineering Team</div>
-            <div class="sol-why-body">Our structural and instrumentation engineers hold relevant professional
-              certifications and bring deep domain knowledge across bridge engineering, geotechnics, and IoT systems
-              integration.</div>
+            <div class="sol-why-title">Engineering, Not Just Hardware</div>
+            <div class="sol-why-body">The same team that installs the sensors calibrates finite element models,
+              runs Rainflow counting and Miner's rule fatigue checks, and writes the assessment the owner acts on.</div>
           </div>
           <div class="sol-why-card sol-reveal">
             <div class="sol-why-num">04</div>
@@ -2529,7 +2736,7 @@
             <div class="sol-related-icon"><i class="fa-solid fa-chart-line"></i></div>
             <div class="sol-related-content">
               <h4>Fatigue &amp; Residual Life Assessment</h4>
-              <span>Stress cycle analysis, RUL prediction, BS7608 compliant</span>
+              <span>Stress cycle analysis, residual life, BS 5400 Part 10</span>
             </div>
             <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
           </a>
@@ -2554,6 +2761,131 @@
     </section>
 
     <!-- 10. FAQ -->
+<!-- build-sections:pillar:start -->
+    <section class="sol-section sol-bg-darker" id="buyer-guide">
+    <div class="sol-section-inner">
+      <div class="buyer-guide-head">
+        <span class="sol-eyebrow">Buyer Guide</span>
+        <h2 class="sol-section-title">Buying a Structural Health Monitoring System</h2>
+        <p class="sol-section-subtitle">What an asset owner needs to know before asking for a proposal: what gets measured, how it is installed, what drives the cost and how quickly you get usable data.</p>
+      </div>
+      <div class="buyer-guide-grid">
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-wave-square" aria-hidden="true"></i> What it measures</h3>
+        <ul><li>Displacement and settlement (<a href="/products/gnss-meter.html">GNSS</a>)</li><li>Vibration and modal response (<a href="/products/accelerometers.html">accelerometers</a>)</li><li>Strain, stress and fatigue (<a href="/products/strain-gauges.html">strain gauges</a>)</li><li>Tilt and rotation (<a href="/products/tiltmeter.html">tiltmeters</a>)</li><li>Crack and joint movement, pore pressure and temperature</li></ul>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> How it is deployed</h3>
+        <p>Site survey and risk assessment, then instrumentation design, then installation by our own field engineers. Edge loggers and gateways send the data to cloud analytics, and you get alerts and monthly reports. <a href="#sol-how">See the six steps</a>.</p>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i> What drives the cost</h3>
+        <p>There is no fixed price; scope is set by the structure and the programme. The main drivers are:</p><ul><li>Number of measurement points and sensor types</li><li>Static trend monitoring or high-rate dynamic monitoring</li><li>Wireless or wired installation, and connectivity at site</li><li>Access constraints such as live traffic, height or water</li><li>Monitoring duration and depth of engineering reporting</li></ul><p><a href="/blogs/structural-health-monitoring-cost-factors.html">How SHM cost is built up</a></p>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-clock" aria-hidden="true"></i> How long until you have data</h3>
+        <p>Readings and basic alerts arrive within hours to days of installation. A reliable structural baseline typically takes 2–6 weeks, and predictive models 2–6 months. We recommend a 4–8 week pilot to validate the measurements and tune alert thresholds.</p>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-plug" aria-hidden="true"></i> Alerts, reports and integration</h3>
+        <p>Multi-tier alerts (warning, alert, critical) reach your team by SMS, email and dashboard. You also get monthly engineering reports and CSV export. If you need to integrate with an asset-management or SCADA platform, we scope that per project and confirm the route before it goes into a proposal.</p>
+      </div>
+      <div class="buyer-guide-card">
+        <h3><i class="fa-solid fa-train" aria-hidden="true"></i> Have we done this before?</h3>
+        <p>Our railway bridge work for South Central Railway was instrumented and load-tested around running trains, following RDSO and BS-106R guidance. On an in-service 1960s steel railway bridge, our instrumentation measured a 5.3 Hz first natural frequency and a 98 MPa peak stress range, and gave an estimated 12–15 years of residual fatigue life. <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html">Read the case study</a>.</p>
+      </div>
+      </div>
+      <div class="buyer-guide-actions">
+        <a href="/monitoring-assessment.html?source=structural-health-monitoring" class="sol-btn-primary" data-cta="assessment-buyer-guide">Request a Monitoring Assessment <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="https://calendly.com/sentra-clovetech/30min?primary_color=f48120" class="sol-btn-secondary" data-cta="talk-to-engineer">Talk to an SHM Engineer</a>
+      </div>
+    </div>
+    </section>
+
+    <section class="sol-section sol-bg-dark" id="topic-cluster">
+    <div class="sol-section-inner">
+      <div class="buyer-guide-head">
+        <span class="sol-eyebrow">Explore This Topic</span>
+        <h2 class="sol-section-title">Structural Health Monitoring: Services, Case Studies and Guides</h2>
+      </div>
+      <div class="sol-related-grid">
+        <a href="/solutions/railway-bridge-monitoring.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-train" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Railway Bridge Monitoring</h4>
+            <span>Strain, vibration and fatigue under live rail loads</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/industries/bridges-highways-monitoring.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-road-bridge" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Bridge Monitoring System</h4>
+            <span>Bridges and highway structures</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/solutions/construction-vibration-monitoring.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-helmet-safety" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Construction Vibration Monitoring</h4>
+            <span>Protecting adjacent structures during works</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/solutions/fatigue-and-residual-life-assessment.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-chart-line" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Fatigue &amp; Residual Life Assessment</h4>
+            <span>Remaining life from measured stress ranges</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/blogs/structural-health-monitoring-cost-factors.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-indian-rupee-sign" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>What Drives SHM Cost</h4>
+            <span>Scoping a monitoring programme and budget</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/technology/shm-architecture.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-sitemap" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>SHM System Architecture</h4>
+            <span>From sensor to decision, layer by layer</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/technology/shm-sensors.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-microchip" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>SHM Sensors</h4>
+            <span>Which sensor measures what</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/technology/sensor-selection-guide.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Sensor Selection Guide (PDF)</h4>
+            <span>Which sensor for which failure mode</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+        <a href="/case-studies/structural-health-monitoring-of-highway-bridges.html" class="sol-related-card">
+          <div class="sol-related-icon"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></div>
+          <div class="sol-related-content">
+            <h4>Case Study: Highway Bridges</h4>
+            <span>A year of continuous data on a 30-year-old bridge</span>
+          </div>
+          <div class="sol-related-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+        </a>
+      </div>
+    </div>
+    </section>
+
+<!-- build-sections:pillar:end -->
     <section class="sol-section sol-bg-darker">
       <div class="hero-container">
         <div class="row row-cols-xl-2 row-cols-1 grid-spacer-5">
@@ -2674,6 +3006,12 @@
                     </div>
                   </div>
                 </div>
+<!-- build-sections:faq:start -->
+<div class="accordion-item">
+              <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccordion1-buyer1" aria-expanded="false" aria-controls="faqAccordion1-buyer1">How much does structural health monitoring cost?</button></h2>
+              <div id="faqAccordion1-buyer1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1"><div class="accordion-body"><div class="accordion-spacer"></div><p>There is no fixed price. Cost depends on the number of measurement points and sensor types, whether high-rate dynamic monitoring is needed, wireless or wired installation and connectivity at site, access constraints such as live traffic, the monitoring duration, and how much engineering analysis and reporting you need. A site survey and a 4–8 week pilot are the usual way to fix scope and budget. Request a monitoring assessment and we will scope it for your structure.</p></div></div>
+            </div>
+<!-- build-sections:faq:end -->
               </div>
             </div>
           </div>
@@ -2726,8 +3064,7 @@
           </ul>
         </div>
         <div class="solx-cta-actions">
-          <a href="/contact.html" class="solx-cta-btn solx-magnetic">Get a Free Assessment <i
-              class="fa-solid fa-arrow-right"></i></a>
+          <a href="/monitoring-assessment.html?source=structural-health-monitoring" class="solx-cta-btn solx-magnetic" data-cta="assessment-final">Request a Monitoring Assessment <i class="fa-solid fa-arrow-right"></i></a>
           <a href="https://calendly.com/sentra-clovetech/30min?primary_color=f48120" class="solx-cta-ghost"><i
               class="fa-solid fa-calendar"></i> Schedule a Call</a>
           <a href="tel:+917893023322" class="solx-cta-phone"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
@@ -2800,6 +3137,7 @@
                                     <li><a href="../products.html">Products</a></li>
                                     <li><a href="../solutions.html">Solutions</a></li>
                                     <li><a href="../industries.html">Industries</a></li>
+                                    <li><a href="../technology/index.html">How It Works</a></li>
                                     <li><a href="../about.html">About</a></li>
                                     <li><a href="../faq.html">FAQ</a></li>
                                     <li><a href="../resources.html">Insights &amp; Updates</a></li>
@@ -2930,7 +3268,6 @@
                         <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
                         <a href="../glossary.html" class="legal-link">Glossary</a>
                         <a href="../sitemap.xml" class="legal-link">Sitemap</a>
-                        <a href="../404-page.html" class="legal-link">404</a>
                     </div>
                 </div>
                 <div class="footer-spacer"></div>

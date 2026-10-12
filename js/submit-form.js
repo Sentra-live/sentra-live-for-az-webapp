@@ -1,3 +1,12 @@
+// Lead API base URL, shared with assessment-form.js.
+function sentraApiUrl() {
+    return window.__API_URL__ || (
+        window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+            ? 'http://localhost:8787'
+            : 'https://veronica-sentra-prod.subharam-v.workers.dev'
+    );
+}
+
 function showToast(message, type) {
     var $existing = $('#sentra-toast');
     if ($existing.length) $existing.remove();
@@ -18,6 +27,12 @@ function showToast(message, type) {
 }
 
 function initSubmitContact() {
+    // GA4's automatic form_start never fires here: the form is hidden behind
+    // the Book a Call / Raise Enquiry choice and uses custom steps.
+    $('#contactForm').one('focusin', function () {
+        if (window.trackEvent) window.trackEvent('form_start', { form_name: 'contact' });
+    });
+
     $('#contactForm').on('submit', async function (event) {
         event.preventDefault();
 
@@ -52,11 +67,7 @@ function initSubmitContact() {
         $submitButton.prop('disabled', true).text('Sending...');
 
         try {
-            const apiUrl = window.__API_URL__ || (
-                window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-                    ? 'http://localhost:8787'
-                    : 'https://veronica-sentra-prod.subharam-v.workers.dev'
-            );
+            const apiUrl = sentraApiUrl();
 
             var leadType = [];
             $('input[name="lead-type"]:checked').each(function() { leadType.push($(this).val()); });
@@ -156,11 +167,7 @@ function initSubmitNewsletter() {
         $submitBtn.prop('disabled', true).html('<span>Subscribing...</span>');
 
         try {
-            const apiUrl = window.__API_URL__ || (
-                window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
-                    ? 'http://localhost:8787'
-                    : 'https://veronica-sentra-prod.subharam-v.workers.dev'
-            );
+            const apiUrl = sentraApiUrl();
 
             var response = await fetch(apiUrl + '/api/newsletter', {
                 method: 'POST',

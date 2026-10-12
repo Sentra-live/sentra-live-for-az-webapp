@@ -52,8 +52,18 @@ Most infrastructure is designed for 30 to 60 years but operated inefficiently. A
 
 The next evolution is **self-diagnosing infrastructure**. AI-driven anomaly detection, autonomous maintenance scheduling, and edge-based decision-making will allow infrastructure to not just be built, but to think, adapt, and optimize itself.
 
+Related service [Predictive Maintenance & Condition Monitoring ](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html)
+
+- [Predictive Maintenance for Industrial Facilities](https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html)
+
+- [Intelligent Pump House Monitoring & Control](https://sentratech.in/article/intelligent-pump-house-monitoring-and-control.html)
+
+- [Intelligent Pump House Monitoring & Control](https://sentratech.in/blogs/intelligent-pump-house-monitoring-and-control.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=asset-monitoring-facility-management)
+
 ## Conclusion: Strategic Takeaway
 
 Asset Monitoring & Facility Management powered by IoT, BIM, and Digital Twins is no longer a technology upgrade; it is a business transformation strategy.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=asset-monitoring-facility-management)

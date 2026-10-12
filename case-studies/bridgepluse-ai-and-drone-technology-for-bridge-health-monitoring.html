@@ -254,6 +254,42 @@
         }
     }
 
+    /* ── Header "Request Assessment" pill (primary conversion CTA) ── */
+    .navbar-assess-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        height: 42px;
+        padding: 0 18px;
+        border-radius: 100px;
+        border: 1.5px solid #f48120;
+        color: #f48120;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.2px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background 0.25s ease, color 0.25s ease;
+    }
+
+    .navbar-assess-pill:hover {
+        background: #f48120;
+        color: #fff;
+    }
+
+    /* Keep the header from crowding: the phone pill gives way first. */
+    @media (max-width: 1500px) {
+        .navbar-call-pill {
+            display: none !important;
+        }
+    }
+
+    @media (max-width: 1199px) {
+        .navbar-assess-pill {
+            display: none;
+        }
+    }
+
     /* ── About Us: Industry Verticals Row ── */
     .mega-industries-row {
         border-top: 1px solid rgba(255, 255, 255, 0.07);
@@ -454,7 +490,18 @@
                             aria-haspopup="true" aria-expanded="false">
                             SOLUTIONS <i class="fa-solid fa-angle-down accent-color"></i>
                         </a>
-                        <div class="dropdown-menu mega-solutions">
+                        <div class="dropdown-menu mega-solutions" aria-label="Solutions navigation">
+                            <div class="solutions-menu-chrome">
+                                <div>
+                                    <span class="solutions-menu-eyebrow">Solutions navigator</span>
+                                    <strong>Find the right engineering pathway</strong>
+                                </div>
+                                <div class="solutions-menu-actions">
+                                    <a href="../technology/">Technology <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                                    <a href="../solutions.html">All solutions <i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                            <div class="solutions-panel solutions-panel--v1" data-solutions-panel="v1" hidden aria-hidden="true">
                             <div class="solutions-bento">
 
                                 <!-- Row 1: SHM (wide) + Bridge (narrow) -->
@@ -553,7 +600,58 @@
                                         <span class="sol-fill-sub">Documentation & digital workflows</span>
                                     </a>
                                 </div>
+                                <!-- Row 4: buyer-intent application pages -->
+                                <div class="mega-quickbar" style="margin-top:10px;border-radius:12px;">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
 
+                            </div>
+                            </div>
+
+                            <div class="solutions-panel solutions-panel--v2" data-solutions-panel="v2" aria-hidden="false">
+                                <div class="solutions-v2-layout">
+                                    <div class="solutions-v2-nav">
+                                        <section class="solutions-v2-group">
+                                            <p>Monitor &amp; diagnose</p>
+                                            <a class="solutions-v2-link is-active" href="../solutions/structural-health-monitoring.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Structural Health Monitoring" data-sub="Continuous insight for bridges, buildings and critical infrastructure."><i class="fas fa-chart-line"></i><span><strong>Structural Health Monitoring</strong><small>Real-time sensing &amp; alerts</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/asset-monitoring-and-management-solutions.html" data-img="../image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp" data-name="Asset Monitoring" data-sub="Bring condition, performance and lifecycle data into one operational view."><i class="fas fa-database"></i><span><strong>Asset Monitoring</strong><small>Lifecycle intelligence</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/geotechnical-and-foundation-monitoring.html" data-img="../image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp" data-name="Geotechnical Monitoring" data-sub="Track ground, slope and foundation movement before risk escalates."><i class="fas fa-mountain"></i><span><strong>Geotechnical Monitoring</strong><small>Ground &amp; foundation movement</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Inspect &amp; assess</p>
+                                            <a class="solutions-v2-link" href="../solutions/bridge-inspection-and-condition-assessment.html" data-img="../image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" data-name="Bridge Inspection" data-sub="Evidence-led inspection and condition assessment for safer decisions."><i class="fas fa-bridge"></i><span><strong>Bridge Inspection</strong><small>Condition assessment</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/advanced-non-destructive-testing-ndt.html" data-img="../image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp" data-name="Advanced NDT" data-sub="Reveal hidden defects with non-destructive testing and expert interpretation."><i class="fas fa-microscope"></i><span><strong>Advanced NDT</strong><small>Non-destructive evaluation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/fatigue-and-residual-life-assessment.html" data-img="../image/solutions/Homepage/Fatigue%20%26%20Residual%20Life%20Assessment.webp" data-name="Fatigue &amp; Residual Life" data-sub="Quantify remaining service life and prioritize intervention with confidence."><i class="fas fa-tachometer-alt"></i><span><strong>Fatigue &amp; Residual Life</strong><small>Load cycles &amp; service life</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                        <section class="solutions-v2-group">
+                                            <p>Model &amp; advise</p>
+                                            <a class="solutions-v2-link" href="../solutions/digital-twin.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Twin" data-sub="Connect live asset data to a decision-ready digital representation."><i class="fas fa-cubes"></i><span><strong>Digital Twin</strong><small>Live asset simulation</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/digital-engineering-and-documentation.html" data-img="../image/solutions/Homepage/Facility-Management.webp" data-name="Digital Engineering" data-sub="Turn engineering records and field data into dependable digital workflows."><i class="fas fa-file-contract"></i><span><strong>Digital Engineering</strong><small>Documentation &amp; workflows</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                            <a class="solutions-v2-link" href="../solutions/consulting-and-advisory-services.html" data-img="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" data-name="Consulting &amp; Advisory" data-sub="Independent engineering expertise from assessment through implementation."><i class="fas fa-lightbulb"></i><span><strong>Consulting &amp; Advisory</strong><small>Expert engineering support</small></span><i class="fa-solid fa-arrow-right"></i></a>
+                                        </section>
+                                    </div>
+                                    <div class="solutions-v2-preview" role="region" aria-label="Selected solution preview">
+                                        <img class="solutions-v2-preview-img" src="../image/solutions/Homepage/Structural%20Health%20Monitoring.webp" alt="Structural monitoring sensors installed on infrastructure">
+                                        <div class="solutions-v2-preview-shade"></div>
+                                        <div class="solutions-v2-preview-content">
+                                            <span>Featured solution</span>
+                                            <h3>Structural Health Monitoring</h3>
+                                            <p>Continuous insight for bridges, buildings and critical infrastructure.</p>
+                                            <a href="../solutions/structural-health-monitoring.html">Explore solution <i class="fa-solid fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mega-quickbar solutions-v2-apps">
+                                    <span class="mega-quickbar-label">Applications</span>
+                                    <a class="mega-qb-link" href="../solutions/railway-bridge-monitoring.html"><i class="fa-solid fa-train"></i> Railway Bridge Monitoring</a>
+                                    <a class="mega-qb-link" href="../solutions/construction-vibration-monitoring.html"><i class="fa-solid fa-helmet-safety"></i> Construction Vibration</a>
+                                    <a class="mega-qb-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i class="fa-solid fa-gauge-high"></i> Predictive Maintenance</a>
+                                    <a class="mega-qb-link" href="../monitoring-assessment.html?source=mega-menu" data-cta="assessment-mega-menu"><i class="fa-solid fa-clipboard-check"></i> Request Assessment</a>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -1114,6 +1212,10 @@
                         <span id="themeIcon" class="theme-toggle-icon">light_mode</span>
                     </button>
                 </div>
+                <a href="../monitoring-assessment.html?source=header" class="navbar-assess-pill" data-cta="assessment-header">
+                    <i class="fa-solid fa-clipboard-check"></i>
+                    <span>Request Assessment</span>
+                </a>
                 <a href="tel:+917893023322" class="navbar-call-pill">
                     <span class="navbar-call-icon"><i class="fa-solid fa-phone"></i></span>
                     <span class="navbar-call-text">+91 78930 23322</span>
@@ -1205,29 +1307,108 @@
             }
 
             /* ── Hover-hold: keep dropdown open when cursor travels to fixed card ── */
+            /* Solutions navigator: V2 is the final menu design. */
+            var solutionsMenu = document.querySelector('.mega-solutions');
+            if (solutionsMenu) {
+                var solutionPanels = solutionsMenu.querySelectorAll('[data-solutions-panel]');
+                solutionPanels.forEach(function (panel) {
+                    var isCurrent = panel.getAttribute('data-solutions-panel') === 'v2';
+                    panel.hidden = !isCurrent;
+                    panel.setAttribute('aria-hidden', String(!isCurrent));
+                    if ('inert' in panel) panel.inert = !isCurrent;
+                });
+
+                var solutionLinks = solutionsMenu.querySelectorAll('.solutions-v2-link[data-img]');
+                var solutionPreviewImg = solutionsMenu.querySelector('.solutions-v2-preview-img');
+                var solutionPreviewTitle = solutionsMenu.querySelector('.solutions-v2-preview h3');
+                var solutionPreviewText = solutionsMenu.querySelector('.solutions-v2-preview p');
+                var solutionPreviewCta = solutionsMenu.querySelector('.solutions-v2-preview-content a');
+                function updateSolutionPreview(link) {
+                    solutionLinks.forEach(function (item) { item.classList.toggle('is-active', item === link); });
+                    solutionPreviewImg.src = link.getAttribute('data-img');
+                    solutionPreviewImg.alt = link.getAttribute('data-name') + ' solution preview';
+                    solutionPreviewTitle.textContent = link.getAttribute('data-name');
+                    solutionPreviewText.textContent = link.getAttribute('data-sub');
+                    solutionPreviewCta.href = link.href;
+                }
+                solutionLinks.forEach(function (link) {
+                    link.addEventListener('mouseenter', function () { updateSolutionPreview(link); });
+                    link.addEventListener('focus', function () { updateSolutionPreview(link); });
+                });
+            }
+
             document.querySelectorAll('.nav-item.dropdown').forEach(function (item) {
                 var dropdown = item.querySelector(
                     '.dropdown-menu-products, .mega-solutions, .mega-bento'
                 );
                 if (!dropdown) return;
                 var closeTimer = null;
+                var trigger = item.querySelector('.dropdown-toggle');
 
-                function openMenu() {
-                    if (window.innerWidth < 1024) return;
+                function setExpanded(expanded) {
+                    if (trigger) trigger.setAttribute('aria-expanded', String(expanded));
+                }
+                function openMenu(force) {
+                    if (window.innerWidth <= 1024) return;
+                    if (item.classList.contains('mega-dismissed') && !force) return;
                     clearTimeout(closeTimer);
+                    item.classList.remove('mega-dismissed');
                     item.classList.add('mega-open');
+                    setExpanded(true);
+                }
+                function closeMenu(dismissHover) {
+                    clearTimeout(closeTimer);
+                    item.classList.remove('mega-open');
+                    item.classList.toggle('mega-dismissed', Boolean(dismissHover));
+                    setExpanded(false);
                 }
                 function scheduleClose(delay) {
                     clearTimeout(closeTimer);
                     closeTimer = setTimeout(function () {
-                        item.classList.remove('mega-open');
+                        closeMenu(false);
                     }, delay);
                 }
 
-                item.addEventListener('mouseenter', function () { openMenu(); });
-                item.addEventListener('mouseleave', function () { scheduleClose(280); });
-                dropdown.addEventListener('mouseenter', function () { openMenu(); });
+                item.addEventListener('mouseenter', function () { openMenu(false); });
+                item.addEventListener('mouseleave', function () {
+                    item.classList.remove('mega-dismissed');
+                    scheduleClose(280);
+                });
+                dropdown.addEventListener('mouseenter', function () { openMenu(false); });
                 dropdown.addEventListener('mouseleave', function () { scheduleClose(150); });
+
+                if (trigger) {
+                    trigger.addEventListener('click', function (event) {
+                        if (window.innerWidth <= 1024) return;
+                        event.preventDefault();
+                        if (item.classList.contains('mega-open')) closeMenu(true);
+                        else openMenu(true);
+                    });
+                    trigger.addEventListener('keydown', function (event) {
+                        if (window.innerWidth <= 1024 || !['Enter', ' ', 'ArrowDown'].includes(event.key)) return;
+                        event.preventDefault();
+                        openMenu(true);
+                        var firstControl = dropdown.querySelector('[data-solutions-view], a[href], button:not([disabled])');
+                        if (firstControl) firstControl.focus();
+                    });
+                }
+
+                document.addEventListener('click', function (event) {
+                    if (!item.contains(event.target)) closeMenu(false);
+                });
+
+                item._closeMegaMenu = closeMenu;
+            });
+
+            document.addEventListener('keydown', function (event) {
+                if (event.key !== 'Escape') return;
+                var openItem = document.querySelector('.nav-item.dropdown.mega-open');
+                if (!openItem) return;
+                var trigger = openItem.querySelector('.dropdown-toggle');
+                if (openItem._closeMegaMenu) openItem._closeMegaMenu(true);
+                if (trigger) {
+                    trigger.focus();
+                }
             });
 
             /* ── Set --mega-menu-top so fixed dropdown sits just below navbar ── */
@@ -1243,7 +1424,8 @@
 
         })();
     </script>
-</div></div></header>
+</div>
+</div></header>
     <aside><div id="edit-sidebar"></div></aside>
     <aside><div id="sidebar"><div>
     <div class="content-overlay">
@@ -1268,9 +1450,8 @@
 
             <!-- Quick links -->
             <div class="mmenu-quicklinks">
-                <a href="/" class="mmenu-quicklink">Home</a>
                 <a href="../about.html" class="mmenu-quicklink">About Us</a>
-                <a href="../contact.html" class="mmenu-quicklink">Contact Us</a>
+                <a href="../monitoring-assessment.html?source=mobile-menu" class="mmenu-quicklink" data-cta="assessment-mobile-menu">Request Assessment</a>
             </div>
 
             <!-- Products -->
@@ -1363,6 +1544,14 @@
                             class="fa-solid fa-arrow-up-right-from-square"></i> Consulting &amp; Advisory</a>
                     <a class="mmenu-simple-link" href="../solutions/digital-engineering-and-documentation.html"><i
                             class="fa-solid fa-arrow-up-right-from-square"></i> Digital Engineering</a>
+                    <a class="mmenu-simple-link" href="../solutions/railway-bridge-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Railway Bridge Monitoring</a>
+                    <a class="mmenu-simple-link" href="../solutions/construction-vibration-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Construction Vibration</a>
+                    <a class="mmenu-simple-link" href="../solutions/predictive-maintenance-condition-monitoring.html"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i> Predictive Maintenance</a>
+                    <a class="mmenu-simple-link" href="../technology/"><i
+                            class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Technology</a>
                 </div>
             </div>
 
@@ -1406,8 +1595,11 @@
         <div class="mmenu-bottom">
             <div class="mmenu-follow-row">
                 <span class="mmenu-follow-label">Follow Us</span>
-                <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
-                    target="_blank" rel="noopener">Book Demo</a>
+                <div class="mmenu-bottom-actions">
+                    <a class="mmenu-contact-btn" href="../contact.html">Contact Us</a>
+                    <a class="mmenu-demo-btn" href="https://calendly.com/sentra-clovetech/30min?primary_color=f47b0a"
+                        target="_blank" rel="noopener">Book Demo</a>
+                </div>
             </div>
             <div class="mmenu-social-row">
                 <a class="mmenu-social" href="https://www.linkedin.com/company/sentrabyclove/" target="_blank"
@@ -1420,6 +1612,10 @@
                     rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
                 <a class="mmenu-social" href="https://www.youtube.com/@Sentra-tech/" target="_blank"
                     rel="noopener" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a class="mmenu-social" href="https://medium.com/@sentra_8835" target="_blank"
+                    rel="noopener" aria-label="Medium"><i class="fab fa-medium" aria-hidden="true"></i></a>
+                <a class="mmenu-social" href="https://in.pinterest.com/sentra0070/" target="_blank"
+                    rel="noopener" aria-label="Pinterest"><i class="fab fa-pinterest" aria-hidden="true"></i></a>
             </div>
             <div class="mmenu-contact-row">
                 <a href="tel:+917893023322"><i class="fa-solid fa-phone"></i> +91 78930 23322</a>
@@ -1427,7 +1623,8 @@
             </div>
         </div>
     </nav>
-</div></div></aside>
+</div>
+</div></aside>
 
     <main>
         <section class="detail-hero">
@@ -1445,7 +1642,7 @@
                         </div>
                         <h1 class="hero-title">BridgePulse: AI and Drone Technology for Bridge Health Monitoring</h1>
                         <div class="hero-intro">
-                            <p>An AI and drone application built for Indian Railways that scans bridges across Andhra Pradesh and tracks how their defects change between inspections.</p>
+                            <p>BridgePulse is an AI and drone application we built for Indian Railways. It scans bridges across Andhra Pradesh and records how each defect changes from one inspection to the next.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
@@ -1471,17 +1668,49 @@
                         <span class="detail-meta-item"><i class="fa-regular fa-user"></i> Yuva Subharam <a href="https://www.linkedin.com/in/yuva-subharam-vasamsetti-75a39117a/" target="_blank" rel="noopener" aria-label="Yuva Subharam on LinkedIn"><i class="fa-brands fa-linkedin"></i></a> | Sentra Technologies</span>
                     </div>
 
+<!-- build-sections:case-snapshot:start -->
+                    <div class="snapshot-wrapper">
+                        <div class="snapshot-card">
+                            <div class="snapshot-grid">
+                                <div>
+                                    <div class="snapshot-icon-row"><i class="fa-solid fa-road-bridge"></i> <strong>Project snapshot</strong></div>
+                                    <div class="snapshot-label">Client</div>
+                                    <div class="snapshot-value">Indian Railways</div>
+                                    <div class="snapshot-label">Asset</div>
+                                    <div class="snapshot-value">Rural and semi-urban bridge stock across Andhra Pradesh</div>
+                                    <div class="snapshot-label">Problem</div>
+                                    <div class="snapshot-value">Walk-through inspections miss micro-cracks and rust hidden behind cladding</div>
+                                    <div class="snapshot-label">Deliverable</div>
+                                    <div class="snapshot-value">BridgePulse: an AI and drone application that measures crack depth, width and GPS location, and compares each scan with the last</div>
+                                </div>
+                                <div>
+                                    <div class="snapshot-label">Technologies on site</div>
+                                    <div class="snapshot-tech-grid">
+                                        <span class="snapshot-tech-item"><i class="fa-solid fa-helicopter"></i> Drone scanning</span>
+                                        <span class="snapshot-tech-item"><i class="fa-solid fa-cubes"></i> Photogrammetry &amp; mesh</span>
+                                        <span class="snapshot-tech-item"><i class="fa-solid fa-brain"></i> CNN defect detection</span>
+                                        <span class="snapshot-tech-item"><i class="fa-solid fa-clock-rotate-left"></i> Scan-to-scan comparison</span>
+                                    </div>
+                                    <div style="margin-top:1rem">
+                                    <div class="snapshot-label">Result</div>
+                                    <div class="snapshot-value">Every defect graded Low, Moderate or Critical. Engineers see a defect forming between visits and plan the repair instead of reacting to it.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- build-sections:case-snapshot:end -->
                     <h2 id="overview">Overview</h2>
-                    <p>A crew inspecting a rural bridge in Andhra Pradesh can walk the span, photograph what looks suspicious, and still miss a hairline crack forming under a support column. That's the gap <strong>BridgePulse</strong> was built to close: an AI and drone-powered application that scans, analyzes, and monitors bridges across the state for Indian Railways, catching the damage a walkthrough inspection tends to miss.</p>
+                    <p>On a walkthrough inspection of a rural bridge, the crew photographs whatever looks wrong. A hairline crack forming under a support column is easy to walk past. <strong>BridgePulse</strong> uses drones and AI models to scan and monitor bridges across the state for Indian Railways, so cracks like that get recorded on the first pass.</p>
 
                     <img src="https://clovetech.com/wp-content/uploads/2025/09/bridge-pulse.jpg"
                          alt="BridgePulse drone and AI technology for monitoring bridge health"
                          style="width:100%;height:auto;border-radius:8px;margin:1.5rem 0;" loading="lazy">
 
-                    <p>Beyond flagging that a crack or patch of rust exists, BridgePulse measures it: depth, width, and GPS location, pulled from photogrammetry and mesh data. Because each scan is stored and compared against the last one, maintenance teams can see whether a defect is stable or actively getting worse, which is the detail that actually drives a repair decision.</p>
+                    <p>For each crack or patch of rust, BridgePulse records depth, width and GPS location, taken from the photogrammetry and mesh data. Every scan is stored and compared with the previous one. Maintenance teams can then tell whether a defect is stable or growing, and that is usually what decides whether it gets repaired now or later.</p>
 
                     <h2 id="challenges">Infrastructure Monitoring Challenges</h2>
-                    <p>Rural and semi-urban bridge stock in India is aging and under constant environmental stress, and the standard response (a person walking the structure with a checklist) simply wasn't built to catch micro-cracks or rust hidden behind cladding. When that kind of damage goes unnoticed, the cost shows up later as an emergency repair, a service disruption, or worse. Indian Railways needed something more precise and more repeatable than what a manual inspection could offer.</p>
+                    <p>Much of India's rural and semi-urban bridge stock is old and exposed to heavy weather. A manual inspection with a checklist rarely picks up micro-cracks, and it can't see rust behind cladding. Damage that goes unnoticed tends to come back as an emergency repair or a service disruption. Indian Railways wanted inspections that were more precise and could be repeated the same way every time.</p>
 
                     <img src="https://clovetech.com/wp-content/uploads/2025/09/bridge-cracks.jpg"
                          alt="Bridge structural cracks requiring monitoring"
@@ -1489,14 +1718,14 @@
 
                     <h2 id="objectives">Objectives</h2>
                     <ul class="blog-bullets">
-                        <li>Cover bridge inspection at state scale rather than one structure at a time</li>
-                        <li>Detect early signs of structural deterioration with high precision</li>
+                        <li>Inspect bridges across the whole state, not one structure at a time</li>
+                        <li>Pick up early deterioration with accurate measurements</li>
                         <li>Give maintenance planners measurements they can act on</li>
                         <li>Keep scans comparable so degradation shows up between visits</li>
                     </ul>
 
                     <h2 id="methodology">Methodology and System Design</h2>
-                    <p>The approach pairs drone-based scanning with AI and ML models trained specifically to read bridge conditions. A drone flies the structure capturing high-resolution 2D and 3D data, which gets reconstructed into mesh and photogrammetry models. From there, the system picks out:</p>
+                    <p>Drones capture high-resolution 2D and 3D data of each structure, and the data is rebuilt into mesh and photogrammetry models. AI and ML models trained on bridge defects then look for:</p>
                     <ul class="blog-bullets">
                         <li>Cracks, with depth and width estimated from photogrammetry</li>
                         <li>Rust and corrosion on metal components</li>
@@ -1511,43 +1740,55 @@
 
                     <h2 id="architecture">System Architecture</h2>
                     <h4>Data Acquisition Layer</h4>
-                    <p>High-resolution drone scans capture 2D and 3D data of bridge surfaces. Mesh and photogrammetry models are generated from aerial data using specialized reconstruction algorithms.</p>
+                    <p>The drones capture 2D and 3D data of the bridge surfaces. Reconstruction algorithms turn the aerial data into mesh and photogrammetry models.</p>
 
                     <h4>Processing Layer</h4>
-                    <p>AI/ML models trained on structural defect datasets perform image segmentation and object detection using Convolutional Neural Networks (CNNs) for crack and rust identification. Depth estimation algorithms classify structural severity, while measurement tools calculate distances, crack dimensions, and elevation data.</p>
+                    <p>Convolutional neural networks (CNNs) trained on structural defect datasets segment the images and detect cracks and rust. Depth estimation assigns a severity class, and measurement tools calculate distances, crack dimensions and elevations.</p>
 
                     <h4>Analytics and Reporting</h4>
-                    <p>Every defect gets a health risk category of Low, Moderate, or Critical, and inspection reports export from there. The working feature set is drone scanning with photogrammetry, crack and rust detection with severity metrics attached, deviation detection between the historical and the current scan, and side by side comparison views for tracking change over time.</p>
+                    <p>Each defect is rated Low, Moderate or Critical, and inspection reports export directly from the app. In practice the features in use are drone scanning with photogrammetry, crack and rust detection with severity figures, deviation checks between the current and previous scans, and side-by-side views for tracking change over time.</p>
 
                     <img src="https://clovetech.com/wp-content/uploads/2025/09/cracks-rust.jpg"
                          alt="Combined cracks and rust detection overlay on bridge structure"
                          style="width:100%;height:auto;border-radius:8px;margin:1.5rem 0;" loading="lazy">
 
                     <h2 id="use-case">Use Case Scenario</h2>
-                    <p>A maintenance engineer opens the BridgePulse dashboard and clicks a bridge in East Godavari district on the map. The latest photogrammetry model loads with the crack and rust overlays on it. Checking rust severity, they notice the crack on the left support column is 2 mm deeper than it was in the scan six months earlier. They export the PDF report with the measurements and send it to the Public Works Department, and preventive maintenance gets scheduled before the crack becomes a safety problem.</p>
+                    <p>Here is a typical session. A maintenance engineer opens the dashboard and clicks a bridge in East Godavari district. The latest photogrammetry model loads with crack and rust overlays. While checking the rust, the engineer sees that the crack on the left support column is 2 mm deeper than in the scan six months earlier. They export the PDF report with the measurements and send it to the Public Works Department, which schedules preventive maintenance before the crack becomes a safety issue.</p>
 
                     <h2 id="implementation">Implementation Challenges</h2>
-                    <p>A few things caused trouble during development and deployment:</p>
+                    <p>We ran into a few problems during development and deployment:</p>
                     <ul class="blog-bullets">
-                        <li>The model occasionally read fungus, stains, or shadows as cracks. Shadow filtering algorithms and better training data brought that down.</li>
-                        <li>Training needed large labelled datasets of bridge defects, gathered across the range of environmental conditions found in Andhra Pradesh.</li>
-                        <li>Poor light and unstable drone flight in high wind both degrade scan quality. A stronger image processing pipeline handles most of that.</li>
+                        <li>Early versions sometimes mistook fungus, stains or shadows for cracks. Shadow filtering and better training data reduced those false positives.</li>
+                        <li>Training required large labelled datasets of bridge defects, collected under the range of weather and site conditions found in Andhra Pradesh.</li>
+                        <li>Poor light and drones drifting in high wind both lower scan quality. An improved image processing pipeline now copes with most of it.</li>
                     </ul>
 
                     <h2 id="future-scope">Future Scope and Enhancements</h2>
                     <ul class="blog-bullets">
-                        <li>Machine learning regression over the historical scan data, to forecast how a given defect will progress</li>
-                        <li>Fully automated drone missions for routine inspections, with minimal human oversight</li>
+                        <li>Regression models on the historical scan data to forecast how individual defects will progress</li>
+                        <li>Automated drone missions for routine inspections that need little human supervision</li>
                         <li>Direct reporting into government dashboards and smart city frameworks</li>
                         <li>Extending scanning and monitoring to bridges in other Indian states</li>
                     </ul>
 
-                    <p>What BridgePulse really changes is timing. Instead of learning about a crack when it's already a safety concern, engineers see it forming and can plan a repair on their own schedule. As Andhra Pradesh's bridge stock keeps aging, that head start is what keeps a maintenance backlog from turning into a closure notice.</p>
+                    <p>The main difference is when engineers find out about a crack. With BridgePulse they see it while it is still small and can schedule the repair themselves, instead of reacting once it is already a safety concern. Andhra Pradesh's bridges are getting older, and that lead time helps stop the maintenance backlog from ending in closures.</p>
 
+<!-- build-sections:post-cluster:start -->
+                    <div class="post-cluster">
+          <span class="post-cluster-label">Related service</span>
+          <a class="post-cluster-pillar" href="/industries/bridges-highways-monitoring.html">Bridge Monitoring System <i class="fa-solid fa-arrow-right"></i></a>
+          <ul class="post-cluster-list">
+            <li><a href="/blogs/10-early-warning-signs-bridge-continuous-monitoring.html">10 Early Warning Signs Your Bridge Needs Continuous Monitoring</a></li>
+            <li><a href="/blogs/bridge-scour-monitoring-iot-digital-twins.html">Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss</a></li>
+            <li><a href="/blogs/top-5-hidden-structural-damages-bridge-inspection.html">Top 5 Hidden Structural Damages That Manual Bridge Inspection Misses</a></li>
+          </ul>
+          <a class="post-cluster-assess" href="/monitoring-assessment.html?asset=bridge&amp;source=bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring" data-cta="assessment-post-cluster">Request a monitoring assessment for your asset</a>
+        </div>
+<!-- build-sections:post-cluster:end -->
                     <div class="detail-cta">
                         <h2>See BridgePulse on Your Bridges</h2>
-                        <p>If you maintain bridge stock and want to know what a scan would actually show, get in touch and we will walk you through it.</p>
-                        <a class="cta-btn" href="/contact.html">Contact us <i class="fa-solid fa-arrow-right"></i></a>
+                        <p>If you look after a bridge network and want to see what a scan would show on your structures, contact us and we'll take you through one.</p>
+                        <a class="cta-btn" href="/monitoring-assessment.html?asset=bridge&amp;source=bridgepluse-ai-and-drone-technology-for-bridge-health-monitoring" data-cta="assessment-case-study">Request a Similar Monitoring Assessment <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
 
                     <p style="margin-top:2rem;padding-top:1rem;border-top:1px solid rgba(128,128,128,0.3);font-size:0.85rem;color:rgba(128,128,128,0.7);"><em>Project developed by <a href="https://clovetech.com" target="_blank" rel="noopener noreferrer" style="color:#f48120;text-decoration:none;">Clove Technologies</a> for Indian Railways. Content and images sourced from CloveTech for reference purposes.</em></p>
@@ -1718,6 +1959,7 @@
                                     <li><a href="../products.html">Products</a></li>
                                     <li><a href="../solutions.html">Solutions</a></li>
                                     <li><a href="../industries.html">Industries</a></li>
+                                    <li><a href="../technology/index.html">How It Works</a></li>
                                     <li><a href="../about.html">About</a></li>
                                     <li><a href="../faq.html">FAQ</a></li>
                                     <li><a href="../resources.html">Insights &amp; Updates</a></li>
@@ -1848,7 +2090,6 @@
                         <a href="https://clovetech.com/privacy-policy/" class="legal-link">Privacy Policy</a>
                         <a href="../glossary.html" class="legal-link">Glossary</a>
                         <a href="../sitemap.xml" class="legal-link">Sitemap</a>
-                        <a href="../404-page.html" class="legal-link">404</a>
                     </div>
                 </div>
                 <div class="footer-spacer"></div>

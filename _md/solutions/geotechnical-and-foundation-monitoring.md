@@ -1,6 +1,6 @@
-# Geotechnical & Foundation Monitoring | Sentra
+# Geotechnical Monitoring Services India | Sentra
 
-> Real-time geotechnical and foundation monitoring for construction sites, tunnels and slopes: sub-millimetre precision, 24/7 ground intelligence.
+> Geotechnical monitoring services in India: inclinometers, piezometers, settlement and vibration monitoring with Amber/Red alerts for excavations, tunnels, slopes and dams.
 
 Source: https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html
 
@@ -10,9 +10,9 @@ Construction Metro & Tunnels Mining Coastal Slopes & Embankments
 
 ## Geotechnical & Foundation Monitoring
 
-Ground-level intelligence that keeps projects safe and on schedule: real-time settlement, slope stability, and piezometric data from sub-millimetre precision instruments.
+Geotechnical monitoring services that keep projects safe and on schedule: real-time settlement, slope stability and piezometric data from sub-millimetre precision instruments.
 
-[Talk to a Geotechnical Expert ](https://sentratech.in/contact.html) [Explore Solution](#sol-overview)
+[Talk to a Geotechnical Expert ](https://sentratech.in/monitoring-assessment.html?source=geotechnical-and-foundation-monitoring) [Explore Solution](#sol-overview)
 
 What We Do
 
@@ -34,7 +34,7 @@ We install instruments into boreholes, embankments, retaining walls, and foundat
 
 - Engineers on call around the clock
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [How the system works ](#sol-system)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=geotechnical-and-foundation-monitoring) [How the system works ](#sol-system)
 
 ![Geotechnical & Foundation Monitoring](https://sentratech.in/image/solutions/Homepage/Geotechnical%20%26%20Foundation%20Monitoring.webp)
 
@@ -84,19 +84,19 @@ Seismographs and vibration monitors record blast vibrations, traffic-induced gro
 
 Vibration Meter ](https://sentratech.in/products/vibration-meter.html)
 
-Impact
+Field Evidence
 
-## Measurable Outcomes
+## Numbers We Can Back Up
 
-Quantifiable results delivered through our monitoring and engineering solutions across infrastructure projects.
+Manufacturer specifications of the wireless hardware we install; see the datasheets in the document center.
 
-Track Record
+Tilt Accuracy
 
-200+
+±0.005°
 
-Projects Delivered
+Wireless tiltmeter accuracy
 
-Across bridges, railways & infrastructure
+Resolution ±0.0001°, [tiltmeter specifications](https://sentratech.in/products/tiltmeter.html)
 
 ConstructionMetro & TunnelsMiningCoastal
 
@@ -104,21 +104,21 @@ ConstructionMetro & TunnelsMiningCoastal
 
 Inclinometer Installation
 
-Efficiency
+Gateway Range
 
-40%
+15 km
 
-Cost Reduction
+LoRaWAN range in open terrain
 
-Avg. inspection and monitoring cost savings
+4G gateway, IP68, [specifications](https://sentratech.in/products/gateway.html)
 
-Reliability
+Network Size
 
-99.5%
+1000+
 
-System Availability
+Devices per gateway network
 
-24/7 continuous uptime
+Repeaters extend coverage underground
 
 ![Solution in action](https://sentratech.in/image/solutions/showcase/geotechnical/Geotechnical%20instrumentation%20at%20deep%20excavation%20site.webp)
 
@@ -496,7 +496,7 @@ Early detection of adverse ground behaviour enables rapid response by preventing
 
 ### Scope monitoring for your project
 
-Schedule a Site Visit ](https://sentratech.in/contact.html)
+Schedule a Site Visit ](https://sentratech.in/monitoring-assessment.html?source=geotechnical-and-foundation-monitoring)
 
 Risk Mitigation
 
@@ -504,7 +504,7 @@ Risk Mitigation
 
 Unmonitored ground is the source of the most serious and costly construction failures. Geotechnical monitoring eliminates these risks, providing real-time visibility of ground behaviour.
 
-[Schedule a site visit ](https://sentratech.in/contact.html)
+[Schedule a site visit ](https://sentratech.in/monitoring-assessment.html?source=geotechnical-and-foundation-monitoring)
 
 1. 01
 
@@ -650,6 +650,116 @@ Independent advisory for geotechnical monitoring strategy
 
 ](https://sentratech.in/solutions/consulting-and-advisory-services.html)
 
+Buyer Guide
+
+## Commissioning a Geotechnical Monitoring Programme
+
+What contractors, designers and asset owners should expect, from instrument selection to the reports that go into regulatory submissions.
+
+### What it measures
+
+- Lateral ground deformation ([inclinometers](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html))
+
+- Pore water pressure (piezometers)
+
+- Settlement (settlement sensors, extensometers)
+
+- Strain in piles and retaining walls ([vibrating wire](https://sentratech.in/products/vibrating-wire.html))
+
+- Surface movement ([GNSS](https://sentratech.in/products/gnss-meter.html)), rotation (tiltmeters) and vibration (seismographs)
+
+### How it is delivered
+
+We start with a review of the site investigation, then design the monitoring network. Instruments go into boreholes, trenches and structural elements, with baseline readings taken before construction starts. Logging is automated: 15-minute cycles for routine monitoring, and 1-minute or continuous logging at critical stages.
+
+### What drives the cost
+
+There is no fixed price; scope is set by the structure and the programme. The main drivers are:
+
+- Number, type and depth of instruments and boreholes
+
+- Reading frequency during critical construction stages
+
+- Construction-phase only, or long-term surveillance after
+
+- Alert response arrangements and reporting cadence
+
+Programmes step down from intensive construction-phase monitoring to lower-frequency surveillance as the ground stabilises. That reduces cost without losing safety intelligence.
+
+### Alert levels and response
+
+Three tiers are set against design trigger levels: Amber, Amber+ and Red. An alert goes immediately by SMS and email to the site engineer, the geotechnical designer and the project manager. It names the instrument, the reading and the trigger level exceeded, and our engineers are available 24/7 to interpret it.
+
+### Reports for submissions
+
+Reports are typically weekly during active construction and monthly for long-term surveillance. They cover every reading, trend analysis, trigger-level status and any exceedance, with engineering commentary, and are structured for regulatory and contractual use.
+
+### Where it is used
+
+Deep excavations, tunnelling, piling and embankment construction; slopes, dams and mine tailings in operation; and anywhere ground movement could affect public safety or adjacent structures. [Construction](https://sentratech.in/industries/construction-tunnelling-monitoring.html) · [Mining](https://sentratech.in/industries/mining-geotechnical-monitoring.html) · [Dams](https://sentratech.in/industries/dams-reservoirs-monitoring.html)
+
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=geotechnical-and-foundation-monitoring) [Talk to a Geotechnical Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)
+
+Explore This Topic
+
+## Geotechnical Monitoring: Services, Industries and Guides
+
+[
+
+#### Construction Vibration Monitoring
+
+Vibration limits for adjacent structures
+
+](https://sentratech.in/solutions/construction-vibration-monitoring.html) [
+
+#### Construction & Tunnelling
+
+Excavation, tunnel and settlement monitoring
+
+](https://sentratech.in/industries/construction-tunnelling-monitoring.html) [
+
+#### Mining & Slope Stability
+
+Slope and ground movement monitoring
+
+](https://sentratech.in/industries/mining-geotechnical-monitoring.html) [
+
+#### Dams & Reservoirs
+
+Deformation, seepage and pore pressure
+
+](https://sentratech.in/industries/dams-reservoirs-monitoring.html) [
+
+#### Slope Stability Monitoring in Mining
+
+Instruments and alert strategy
+
+](https://sentratech.in/blogs/slope-stability-monitoring-mining.html) [
+
+#### What Is an Inclinometer?
+
+Measuring lateral ground deformation
+
+](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html) [
+
+#### GNSS Displacement Monitoring
+
+Millimetre surface movement from satellites
+
+](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html) [
+
+#### Dam Safety Monitoring
+
+LiDAR, drones and digital twins for dams
+
+](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html) [
+
+#### Sensor Selection Guide (PDF)
+
+Which sensor for which failure mode
+
+](https://sentratech.in/technology/sensor-selection-guide.html)
+
 FAQ
 
 ## Frequently Asked Questions
@@ -680,6 +790,10 @@ When a monitoring alert is triggered, the system sends immediate notifications v
 
 Yes. We provide regular monitoring reports, typically weekly during active construction and monthly for long-term surveillance; that document all readings, trend analysis, trigger level status, and any exceedances with engineering commentary. These reports are structured for submission to regulatory authorities, building control bodies, and planning departments. We also provide final monitoring reports at the end of construction phases with a complete dataset and interpretation for the permanent project record.
 
+##
+
+It is set by the programme rather than a fixed price: the number, type and depth of instruments and boreholes, how often readings are needed during critical construction stages, whether monitoring continues long term after construction, and the alert-response and reporting arrangements. Programmes usually step down to lower-frequency surveillance as the ground stabilises, which reduces cost. Request a monitoring assessment and we will scope it for your project.
+
 #### Stay Ahead in Smart Monitoring
 
 Get exclusive insights, innovations, and industry trends delivered to your inbox.
@@ -696,4 +810,4 @@ Share your project details and ground conditions. We'll propose a monitoring pro
 
 - Clear scope and timeline
 
-[Schedule a Site Visit ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=geotechnical-and-foundation-monitoring) [ Talk to a Geotechnical Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

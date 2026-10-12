@@ -1119,6 +1119,10 @@ body.lightmode .sol-risk-arrow:hover {
     padding-top: 0
 }
 
+.sol-faq-section .accordion .accordion-body {
+    padding: 24px 32px 28px
+}
+
 body.lightmode .sol-hero {
     background: #ebebeb
 }
@@ -3219,4 +3223,244 @@ body.lightmode .sol-bg-darker .sol-resources-marquee::before {
 
 body.lightmode .sol-bg-darker .sol-resources-marquee::after {
     background: linear-gradient(270deg, #eaeaea 0%, transparent 100%)
+}
+
+/* ── Buyer guide (pillar pages): what an owner needs before asking for a proposal ──
+   Inserted by scripts/build-sections.mjs on solution and industry pages. */
+.buyer-guide-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px
+}
+
+.buyer-guide-card {
+    padding: 24px;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, .025);
+    border: 1px solid rgba(255, 255, 255, .06)
+}
+
+.buyer-guide-card h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 10px;
+    line-height: 1.3
+}
+
+.buyer-guide-card h3 i {
+    color: #f48120;
+    font-size: 15px
+}
+
+.buyer-guide-card p,
+.buyer-guide-card li {
+    font-size: 14px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, .6)
+}
+
+.buyer-guide-card p {
+    margin: 0
+}
+
+.buyer-guide-card ul {
+    margin: 0;
+    padding-left: 18px;
+    list-style: disc
+}
+
+.buyer-guide-card li {
+    list-style: disc;
+    margin-bottom: 2px
+}
+
+.buyer-guide-card li::marker {
+    color: #f48120
+}
+
+.buyer-guide-card a {
+    color: #f48120;
+    font-size: inherit;
+    font-weight: 600;
+    text-decoration: none
+}
+
+.buyer-guide-card a:hover {
+    text-decoration: underline
+}
+
+.buyer-guide-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 32px
+}
+
+.buyer-guide-head {
+    max-width: 680px;
+    margin-bottom: 48px
+}
+
+.buyer-guide-head .sol-section-subtitle {
+    margin-bottom: 0
+}
+
+
+body.lightmode .buyer-guide-card {
+    background: #fff;
+    border-color: rgba(0, 0, 0, .07)
+}
+
+body.lightmode .buyer-guide-card h3 {
+    color: #1a1a1a
+}
+
+body.lightmode .buyer-guide-card p,
+body.lightmode .buyer-guide-card li {
+    color: #555
+}
+
+/* ── Landing-page stat strip (scripts/build-landing-pages.mjs) ── */
+.lp-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 16px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left
+}
+
+.lp-stat {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 20px;
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, .06);
+    background: rgba(255, 255, 255, .02)
+}
+
+.lp-stat-value {
+    font-size: 22px;
+    font-weight: 800;
+    color: #f48120;
+    line-height: 1.1
+}
+
+.lp-stat-label {
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, .55)
+}
+.lp-stats-6 { grid-template-columns:repeat(3,minmax(0,1fr)) }
+@media(max-width:720px){.lp-stats-6{grid-template-columns:1fr 1fr}}
+@media(max-width:440px){.lp-stats-6{grid-template-columns:1fr}}
+
+.lp-text-link {
+    color: #f48120;
+    font-weight: 600;
+    text-decoration: none
+}
+
+.lp-text-link:hover {
+    text-decoration: underline
+}
+
+body.lightmode .lp-stat {
+    border-color: rgba(0, 0, 0, .08);
+    background: #fff
+}
+
+body.lightmode .lp-stat-label {
+    color: #555
+}
+
+/* Buyer-intent landing pages: field documentation meets control room. */
+.lp-control-room { background:#080a0d; color:#f5f2ed; overflow:hidden }
+.lp-hero { min-height:760px; padding:150px max(24px,calc((100vw - 1280px)/2)) 64px; position:relative; display:grid; grid-template-columns:minmax(0,.9fr) minmax(460px,1.1fr); gap:clamp(40px,7vw,108px); align-items:center; background:linear-gradient(120deg,#080a0d 0%,#0d1218 68%,#121820 100%) }
+.lp-hero::before,.lp-control-room .ind-content-block::before { content:""; position:absolute; inset:0; pointer-events:none; opacity:.13; background-image:linear-gradient(rgba(121,145,163,.28) 1px,transparent 1px),linear-gradient(90deg,rgba(121,145,163,.28) 1px,transparent 1px); background-size:72px 72px }
+.lp-hero-copy,.lp-hero-visual,.lp-hero-readout { position:relative; z-index:1 }
+.lp-kicker,.lp-section-index { display:flex; align-items:center; gap:10px; color:#96a5b0; letter-spacing:.16em; font-size:11px; font-weight:700; text-transform:uppercase; margin-bottom:30px }
+.lp-kicker i { width:8px; height:8px; border-radius:50%; background:#4ade80; box-shadow:0 0 0 5px rgba(74,222,128,.12) }
+.lp-hero .ind-hero-sm-tags { justify-content:flex-start; margin-bottom:22px }
+.lp-hero h1 { color:#fff; font-size:clamp(44px,5.4vw,78px); line-height:.98; letter-spacing:-.05em; text-transform:uppercase; margin:0 0 28px; max-width:780px }
+.lp-hero h1 .accent { color:#f48120 }
+.lp-hero-copy>p { color:rgba(255,255,255,.68); font-size:clamp(17px,1.45vw,21px); line-height:1.65; max-width:650px; margin:0 0 34px }
+.lp-hero-actions { display:flex; gap:12px; flex-wrap:wrap }
+.lp-hero-visual { margin:0; aspect-ratio:4/5; max-height:620px; overflow:hidden; border:1px solid rgba(255,255,255,.12); background:#111820; box-shadow:24px 28px 0 rgba(244,129,32,.07) }
+.lp-hero-visual::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 45%,rgba(3,6,9,.88) 100%) }
+.lp-hero-visual img { width:100%; height:100%; object-fit:cover; filter:saturate(.72) contrast(1.08) }
+.lp-hero-visual figcaption { position:absolute; z-index:2; left:28px; bottom:78px; display:flex; flex-direction:column; gap:4px; color:#fff }
+.lp-hero-visual figcaption span { color:#f48120; font:700 10px/1 'Plus Jakarta Sans',sans-serif; letter-spacing:.18em }
+.lp-hero-visual figcaption strong { font-size:14px; letter-spacing:.08em }
+.lp-signal { position:absolute; z-index:2; left:0; right:0; bottom:0; height:70px; background:rgba(5,9,13,.72); border-top:1px solid rgba(244,129,32,.25) }
+.lp-signal svg { width:100%; height:100% }.lp-signal path { fill:none; stroke:#f48120; stroke-width:2; vector-effect:non-scaling-stroke; stroke-dasharray:900; animation:lpTrace 3.2s ease both }
+@keyframes lpTrace { from { stroke-dashoffset:900 } to { stroke-dashoffset:0 } }
+.lp-hero-readout { position:absolute; left:max(24px,calc((100vw - 1280px)/2)); right:max(24px,calc((100vw - 1280px)/2)); bottom:25px; display:flex; gap:25px; color:#85929c; font-size:10px; letter-spacing:.12em; text-transform:uppercase }
+.lp-hero-readout b { color:#65d18b; margin-left:auto }
+.lp-control-room .ind-content-block { position:relative }
+.lp-measure-grid { display:grid; grid-template-columns:1fr .9fr; gap:44px 70px; align-items:start }
+.lp-measure-copy { padding-top:20px }.lp-measure-copy h2 { font-size:clamp(36px,4vw,58px); letter-spacing:-.045em; line-height:1.03; text-transform:uppercase }
+.lp-measure-copy p { max-width:660px }
+.lp-measure-list { margin-top:70px; padding:28px; border-left:2px solid #f48120; background:linear-gradient(90deg,rgba(244,129,32,.07),transparent) }
+.lp-measure-list li { padding-left:8px }
+.lp-field-image { grid-column:1/-1; position:relative; margin:8px 0 0; height:clamp(280px,38vw,510px); overflow:hidden; border:1px solid rgba(255,255,255,.1) }
+.lp-field-image img { width:100%; height:100%; object-fit:cover; filter:saturate(.72) contrast(1.08) }
+.lp-field-image figcaption { position:absolute; left:0; bottom:0; padding:14px 20px; background:#0b0e12; color:#a7b0b7; font-size:11px; letter-spacing:.12em; text-transform:uppercase; border-top:2px solid #f48120 }
+.lp-workflow-section { border-top:1px solid rgba(255,255,255,.07) }
+.lp-workflow-head { display:flex; justify-content:space-between; align-items:end; gap:40px; margin-bottom:42px }
+.lp-workflow-head .lp-section-index { margin:0 0 8px }
+.lp-workflow-head h2 { margin:0; font-size:clamp(34px,4vw,58px); line-height:1.03; letter-spacing:-.045em; text-transform:uppercase; text-align:right }
+.lp-workflow-grid { display:grid; grid-template-columns:minmax(0,1.15fr) minmax(340px,.85fr); gap:clamp(36px,6vw,84px); align-items:stretch }
+.lp-workflow-image { min-height:520px; margin:0; position:relative; overflow:hidden; border:1px solid rgba(255,255,255,.1) }
+.lp-workflow-image img { width:100%; height:100%; object-fit:cover; filter:saturate(.72) contrast(1.08) }
+.lp-workflow-image::after { content:""; position:absolute; inset:0; background:linear-gradient(135deg,transparent 50%,rgba(5,8,11,.55)) }
+.lp-workflow-image figcaption { position:absolute; z-index:1; left:20px; bottom:18px; color:#fff; font-size:10px; letter-spacing:.15em; text-transform:uppercase }
+.lp-workflow-steps { margin:0; padding:0; list-style:none; display:grid }
+.lp-workflow-steps li { display:grid; grid-template-columns:46px 1fr; gap:18px; padding:22px 0; border-top:1px solid rgba(255,255,255,.11); text-align:left }
+.lp-workflow-steps li:last-child { border-bottom:1px solid rgba(255,255,255,.11) }
+.lp-workflow-steps>li>span { color:#f48120; font-size:12px; font-weight:800; letter-spacing:.12em }
+.lp-workflow-steps strong { display:block; color:#fff; text-transform:uppercase; font-size:16px; letter-spacing:.06em; margin-bottom:6px }
+.lp-workflow-steps p { color:rgba(255,255,255,.58); font-size:13px; line-height:1.6; margin:0 }
+.lp-proof-list { max-width:980px; margin:34px auto 0; border-top:1px solid rgba(255,255,255,.1); text-align:left }
+.lp-proof-list .sol-card { border:0; border-bottom:1px solid rgba(255,255,255,.1); border-radius:0; padding:22px 12px; display:grid; grid-template-columns:minmax(200px,.7fr) 1fr; gap:40px; background:transparent }
+.lp-proof-list .sol-card:hover { background:rgba(244,129,32,.04); padding-left:20px }
+.lp-hardware-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; max-width:1100px; margin:32px auto 0; text-align:left }
+.lp-hardware-card { display:flex; flex-direction:column; color:inherit; text-decoration:none; border:1px solid rgba(255,255,255,.09); background:#0d1116; min-height:100%; position:relative; overflow:hidden; transition:border-color .25s ease,transform .25s ease }
+.lp-hardware-card:hover { border-color:rgba(244,129,32,.5); transform:translateY(-4px) }
+.lp-hardware-index { position:absolute; z-index:2; top:12px; left:12px; color:#f48120; background:#090c10; padding:5px 7px; font-size:10px; font-weight:800; letter-spacing:.12em }
+.lp-hardware-image { display:block; height:190px; background:#f0f1f2; overflow:hidden }
+.lp-hardware-image img { width:100%; height:100%; object-fit:contain; padding:20px; transition:transform .35s ease }
+.lp-hardware-card:hover img { transform:scale(1.04) }
+.lp-hardware-copy { padding:20px; display:flex; flex-direction:column; flex:1 }
+.lp-hardware-copy strong { color:#fff; font-size:15px; margin-bottom:9px }.lp-hardware-copy small { color:rgba(255,255,255,.56); line-height:1.55; font-size:12px }.lp-hardware-copy em { color:#f48120; font-style:normal; font-size:11px; font-weight:700; margin-top:auto; padding-top:18px; text-transform:uppercase; letter-spacing:.08em }
+@media(max-width:900px){.lp-hero{min-height:auto;padding-top:125px;grid-template-columns:1fr}.lp-hero-visual{aspect-ratio:16/10;max-height:none}.lp-measure-grid{grid-template-columns:1fr}.lp-measure-list{margin-top:0}.lp-hero-readout{display:none}.lp-workflow-head{display:block}.lp-workflow-head h2{text-align:left;margin-top:16px}.lp-workflow-grid{grid-template-columns:1fr}.lp-workflow-image{min-height:390px}}
+@media(max-width:520px){.lp-hero{padding:112px 18px 50px;gap:34px}.lp-hero h1{font-size:40px}.lp-hero-visual{aspect-ratio:4/5}.lp-hero-actions>*{width:100%;justify-content:center}.lp-measure-copy h2{font-size:34px}.lp-measure-list{padding:22px 18px}.lp-field-image{height:300px}.lp-workflow-image{min-height:300px}.lp-workflow-head h2{font-size:34px}.lp-proof-list .sol-card{grid-template-columns:1fr;gap:8px}.lp-hardware-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.lp-signal path{animation:none}}
+body.lightmode .lp-control-room{background:#f3f1ed;color:#17191c} body.lightmode .lp-hero{background:linear-gradient(120deg,#f7f6f3,#e9edf0)} body.lightmode .lp-hero h1{color:#131619} body.lightmode .lp-hero-copy>p{color:#4e5961} body.lightmode .lp-measure-list{background:linear-gradient(90deg,rgba(244,129,32,.09),transparent)}
+body.lightmode .lp-hero .ind-hero-sm-tags span { color:#26333c; background:rgba(255,255,255,.72); border-color:rgba(38,51,60,.28) }
+body.lightmode .lp-kicker,body.lightmode .lp-hero-readout { color:#45545e } body.lightmode .lp-hero-readout b { color:#13733b }
+body.lightmode .lp-workflow-steps li,body.lightmode .lp-proof-list,body.lightmode .lp-proof-list .sol-card { border-color:rgba(0,0,0,.12) } body.lightmode .lp-workflow-steps strong,body.lightmode .lp-hardware-copy strong { color:#181c20 } body.lightmode .lp-workflow-steps p,body.lightmode .lp-hardware-copy small { color:#56616a } body.lightmode .lp-hardware-card { background:#fff;border-color:rgba(0,0,0,.1) }
+
+/* ── Homepage "Who We Help" market strip: five equal stacked cards ── */
+.home-market-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))
+}
+
+.home-market-grid .sol-related-card {
+    flex-direction: column;
+    align-items: flex-start
+}
+
+.home-market-grid .sol-related-content span {
+    font-size: 13px;
+    line-height: 1.5
+}
+
+.home-market-grid .sol-related-arrow {
+    display: none
 }

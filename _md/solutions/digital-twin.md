@@ -1,6 +1,6 @@
-# Digital Twin Solutions | Sentra
+# Infrastructure Digital Twin for Monitoring | Sentra
 
-> Sentra's Digital Twin solutions integrate BIM, IoT sensors and real-time analytics to create virtual replicas of physical assets for infrastructure management.
+> Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data bound to each component, for bridges, railways, substations and buildings.
 
 Source: https://sentratech.in/solutions/digital-twin.html
 
@@ -10,9 +10,9 @@ Infrastructure Smart Cities BIM IoT AEC
 
 ## Digital Twin Solutions
 
-A living digital replica of your physical assets, integrating BIM, IoT sensor data, and predictive analytics to enable real-time visibility, simulation, and smarter decisions.
+Digital twins for infrastructure monitoring and asset management: measured reality capture, BIM and live IoT sensor data in one model of your asset.
 
-[Start Your Digital Journey ](https://sentratech.in/contact.html) [Explore Solution](#sol-overview)
+[Start Your Digital Journey ](https://sentratech.in/monitoring-assessment.html?source=digital-twin) [Explore Solution](#sol-overview)
 
 What We Do
 
@@ -24,17 +24,17 @@ Sentra's Digital Twin solutions bridge the gap between design, construction, and
 
 A Digital Twin is more than a 3D model; it is a continuously updated digital mirror of a physical asset, building, infrastructure system, or operational process. Unlike static documentation or conventional BIM, a Digital Twin integrates real-world data from IoT sensors, connected systems, and operational records to provide continuous, real-time visibility into asset performance and condition throughout its lifecycle.
 
-Sentra builds Digital Twins on a foundation of accurate BIM models, enriched with live sensor streams from structural monitoring, environmental sensors, and operational systems. Our platform enables asset owners to visualise real-time conditions, simulate future scenarios, detect anomalies before they become failures, and make evidence-based decisions that extend asset life and reduce operational costs. From single buildings to city-scale infrastructure networks, our Digital Twin solutions serve the full spectrum of infrastructure intelligence needs.
+Sentra builds the twin from what is actually on site. Drone survey, terrestrial LiDAR, handheld SLAM and 360° imagery capture the asset as it stands; the point cloud is modelled into named components; and inspection records, maintenance points and construction history are attached to the components they describe. We have delivered this for a 40.23 m open web girder railway bridge for South Central Railway and for TGNPDCL's Bathupally substation. Because we also install structural monitoring, live sensor channels are bound to the same components in our in-house monitoring application, so readings and alerts appear on the part of the structure they come from.
 
-- Built on accurate BIM models
+- Built from measured reality capture, not old drawings
 
-- Live structural, environmental and operational data
+- Component-level model with records attached
 
-- Simulate scenarios and catch anomalies early
+- Georeferenced measurement without a site visit
 
-- Single buildings to city-scale networks
+- Live monitoring data bound to components
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [See how it works ](#sol-how)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=digital-twin) [3D model vs BIM vs digital twin ](https://sentratech.in/technology/structural-health-monitoring-digital-twin.html)
 
 ![Digital Twin Solutions](https://sentratech.in/image/solutions/Homepage/Facility-Management.webp)
 
@@ -70,39 +70,39 @@ Information created during design and construction, including BIM models, specif
 
 For smart city and large infrastructure programmes, we build Digital Twins that integrate multiple assets, utility networks, and public systems into a single geospatial intelligence platform.
 
-Impact
+Delivered Work
 
-## Measurable Outcomes
+## What We Have Actually Built
 
-Digital Twins deliver quantifiable improvements in operational efficiency, asset reliability, and decision quality.
+Figures from delivered projects, not industry averages. Each one links back to its case study.
 
-Operational Efficiency
+Railway Bridge Twin
 
-30%
+40.23 m
 
-Avg. improvement in operational efficiency
+Open web girder span, Bridge No. 60 DN, South Central Railway, captured by drone and terrestrial LiDAR. [Case study](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html)
 
-InfrastructureSmart CitiesBIMIoT
+DroneTLSPoint cloudComponent model
 
-![BIM Model](https://sentratech.in/image/solutions/showcase/digital%20twin/3D%20BIM%20Model%20Integration.webp)
+![3D asset model of the Bathupally substation](https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/3d-model-view.webp)
 
-BIM Model
+Substation asset model
 
-Downtime Reduction
+Survey to Handover
 
-45%
+60 days
 
-Reduction in unplanned downtime
+From first site visit to digital twin delivery on Bridge No. 60 DN
 
-Lifecycle Cost Savings
+Georeferenced POIs
 
-25%
+X·Y·Z
 
-Reduction in total lifecycle costs
+Every maintenance point in the TGNPDCL substation twin is pinned to real coordinates on the asset it describes
 
-![Digital Twin City Infrastructure](https://sentratech.in/image/solutions/showcase/digital%20twin/City-scale%20Digital%20Twin%20for%20smart%20infrastructure%20management.webp)
+![Maintenance Required point of interest placed on a transformer in the substation digital twin](https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/point-of-interest.webp)
 
-**City-scale Digital Twin** Multiple assets, utility networks and public systems in one geospatial platform.
+**Maintenance points on the model** TGNPDCL Bathupally: a Maintenance Required flag logged on the transformer itself.
 
 Digital Twin Resources
 
@@ -354,27 +354,27 @@ Showcase
 
 ## Digital Twin in Action
 
-From smart cities to critical infrastructure; see how Digital Twins transform asset management.
+Screens from the Bathupally substation twin delivered to TGNPDCL: imagery, model, measurement and construction records in one browser viewer.
 
-![Digital Twin City Infrastructure](https://sentratech.in/image/solutions/showcase/digital%20twin/City-scale%20Digital%20Twin%20for%20smart%20infrastructure%20management.webp)
+![360 degree panoramic layer of the Bathupally substation digital twin with point cloud minimap](https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/360-panorama-view.webp)
 
-City-scale Digital Twin for smart infrastructure management
+360° imagery layer with point cloud minimap, TGNPDCL Bathupally
 
-![BIM Model](https://sentratech.in/image/solutions/showcase/digital%20twin/3D%20BIM%20Model%20Integration.webp)
+![3D asset model layer of the substation](https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/3d-model-view.webp)
 
-3D BIM Model Integration
+3D Asset Model
 
-![Sensor Network](https://sentratech.in/image/solutions/showcase/digital%20twin/IoT%20Sensor%20Network.webp)
+![Measuring a 7.86 m gantry column in the digital twin](https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/measurement-tool.webp)
 
-IoT Sensor Network
+Measurement Without a Site Visit
 
-![Data Analytics](https://sentratech.in/image/solutions/showcase/digital%20twin/Real-time%20Analytics%20Dashboards.webp)
+![Maintenance point of interest on a transformer](https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/point-of-interest.webp)
 
-Real-time Analytics Dashboards
+Maintenance Points of Interest
 
-![Amaravati Project](https://sentratech.in/image/solutions/showcase/digital%20twin/Amaravati%20Smart%20City%20Twin.webp)
+![Construction footage of the substation gantries playing inside the twin](https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/construction-video.webp)
 
-Amaravati Smart City Twin
+Construction Records Mode
 
 Benefits
 
@@ -388,7 +388,7 @@ Bridge the gap between design, construction, and operations by reducing informat
 
 ### Proactive Control
 
-Shift from reactive to proactive asset management through real-time anomaly detection, predictive analytics, and live condition monitoring within the context of a full 3D model.
+Maintenance findings are logged against the component they refer to, so open issues, repeat problems and inspection coverage can be read off the model instead of reconstructed from registers.
 
 ### Operational Efficiency
 
@@ -406,35 +406,37 @@ Monitor environmental conditions, structural health, and safety systems in real 
 
 Enable design teams, contractors, facility managers, and asset owners to collaborate on the same current digital representation by reducing coordination errors, travel costs, and decision latency.
 
-### ISO 19650 Compliance
+### Structured Asset Information
 
-All Digital Twin information is structured and managed in accordance with ISO 19650 by ensuring that your asset information meets international standards for quality, accessibility, and long-term usability.
+Each structure, piece of equipment and civil element is a separate, identifiable object, which is what lets inspection records, measurements and later sensor data attach to the right asset.
 
 [ Next step
 
 ### See a Digital Twin built for your asset
 
-Request a Demo ](https://sentratech.in/contact.html)
+Request a Demo ](https://sentratech.in/monitoring-assessment.html?source=digital-twin)
 
 Featured Project
 
-## Amaravati Integrated Command Control Centre
+## Bathupally Substation, TGNPDCL
 
-Sentra implemented a city-scale Digital Twin framework for the capital city development of Andhra Pradesh by synchronising physical infrastructure with live data for city-wide asset intelligence.
+A browser-based asset twin of an outdoor distribution substation: 360° imagery, point cloud and a component-level 3D model in one georeferenced viewer.
 
-![Amaravati Command Center](https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=600&q=80)
+![3D asset model of the Bathupally substation showing transformer, gantries and plinths](https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/3d-model-view.webp)
 
-The Amaravati Integrated Command Control Centre (AICCC) is a flagship Digital Twin implementation that syncs physical infrastructure across the entire capital city with live IoT data streams. The platform enables 24/7 multi-domain monitoring of utilities, services, drone feeds, and CCTV networks, all visualised within a unified geospatial Digital Twin environment.
+Telangana Northern Power Distribution Company Limited wanted the Bathupally substation documented in a form its engineers could use from a desk. The yard was captured as it stands and modelled asset by asset, so every transformer, gantry, isolator, kiosk and cable trench exists as a separate object with real coordinates.
 
-**Key capabilities:**
+**What the twin does today:**
 
-- Digital approval workflows and governance
+- Remote walk-through of every bay in 360° imagery
 
-- Land pooling records transparency
+- Point, distance and height measurement in real units
 
-- Citizen grievance management platform
+- Maintenance points of interest pinned to equipment
 
-- Real-time utility and service dashboards
+- Construction footage linked to the assets it shows
+
+Condition sensors are not yet connected; the model gives each future sensor an asset to report against. [Read the case study](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html). For city-scale work, see Clove Technologies' [Amaravati command and control centre](https://sentratech.in/article/building-resilient-smart-cities-with-data-driven-insights.html).
 
 Industries
 
@@ -510,13 +512,13 @@ Why Us
 
 BIM-to-Digital Twin Pipeline
 
-We manage the complete pipeline from scan-to-BIM through live Digital Twin by ensuring geometric accuracy, data structure, and ISO 19650 compliance at every stage, with no handover gaps.
+One team runs reality capture, point cloud registration and component modelling, so the geometry and the asset structure are checked against each other before handover.
 
 02
 
-IoT-Native Integration
+Monitoring In-House
 
-Unlike pure software providers, we have deep in-house IoT capability by designing, installing, and connecting sensor networks that feed live data directly into the Digital Twin from day one.
+Unlike pure software providers, we design and install structural monitoring ourselves: strain, tilt, vibration and displacement on railway bridges. The twin and the sensor layout can be scoped together.
 
 03
 
@@ -526,9 +528,111 @@ We stay engaged beyond deployment by updating the Digital Twin with inspection d
 
 04
 
-Proven at City Scale
+Delivered on Live Assets
 
-Our flagship Amaravati project demonstrates our capability at the largest scale: proving that our Digital Twin approach works for multi-stakeholder, multi-system city programmes.
+A railway bridge beside a running line and an energised substation yard: both captured without closures, both handed over as twins the owner still uses.
+
+Buyer Guide
+
+## Planning an Infrastructure Digital Twin
+
+What goes into a monitoring-grade digital twin, how long it takes, and what to check before you commission one.
+
+### What goes into it
+
+- Reality capture: drone survey, terrestrial LiDAR, handheld SLAM and 360° imagery
+
+- A model of named components built from the point cloud
+
+- Inspection, maintenance and construction records attached to those components
+
+- Live sensor channels bound to the part of the structure they measure
+
+### How it is delivered
+
+Data capture and scanning come first, followed by platform setup with data classified to ISO 19650. Then we integrate the IoT sensors, configure analytics and dashboards, validate the twin and train your team. After that, the twin keeps evolving with the asset.
+
+### What drives the cost
+
+There is no fixed price; scope is set by the structure and the programme. The main drivers are:
+
+- Size of the asset and the scanning effort
+
+- Level of model detail and number of components
+
+- Number of live sensor channels to bind
+
+- Existing systems to integrate (BMS, SCADA, CMMS)
+
+- Number of users and training required
+
+### How long it takes
+
+A single building or infrastructure asset typically takes 8–16 weeks from survey to live platform. That breaks down as: scanning 1–2 days, BIM model 2–4 weeks, sensor installation 1–2 weeks, configuration and integration 2–4 weeks, and acceptance testing and training 1 week.
+
+### Platforms and protocols
+
+Delivered twins run in a browser-based viewer that combines 360° imagery, point cloud and the 3D model with measurement and records. Monitoring hardware reports over LoRaWAN, 4G and Modbus RTU. If you already run a twin or asset platform, we confirm what we can deliver into it before quoting.
+
+### Twins we have delivered
+
+We built a twin of a 40.23 m open web girder railway bridge for South Central Railway, and a digital asset model of TGNPDCL's Bathupally substation. [Railway bridge twin](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html) · [Substation case study](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html)
+
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=digital-twin) [Talk to an Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120)
+
+Explore This Topic
+
+## Digital Twins: Case Studies, Technology and Guides
+
+[
+
+#### Case Study: Railway Bridge Digital Twin
+
+Drone and LiDAR inspection to a live twin
+
+](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html) [
+
+#### Case Study: Substation Digital Asset Management
+
+Predictive maintenance for a substation
+
+](https://sentratech.in/case-studies/substation-digital-asset-management-predictive-maintenance.html) [
+
+#### SHM Digital Twin Technology
+
+How monitoring data binds to the model
+
+](https://sentratech.in/technology/structural-health-monitoring-digital-twin.html) [
+
+#### Digital Twin for Predictive Maintenance
+
+How it works in practice
+
+](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html) [
+
+#### Mesh, Point Cloud or Gaussian Splatting?
+
+Choosing a twin representation
+
+](https://sentratech.in/blogs/future-digital-twins-mesh-point-cloud-gaussian-splatting.html) [
+
+#### 3D Laser Scanning for Digital Twins
+
+LiDAR capture for infrastructure
+
+](https://sentratech.in/article/3d-laser-scanning-lidar-infrastructure-digital-twins.html) [
+
+#### Digital Engineering & Documentation
+
+BIM, scan-to-BIM and ISO 19650
+
+](https://sentratech.in/solutions/digital-engineering-and-documentation.html) [
+
+#### Structural Health Monitoring
+
+The live data behind the twin
+
+](https://sentratech.in/solutions/structural-health-monitoring.html)
 
 FAQ
 
@@ -558,7 +662,11 @@ A standard Digital Twin deployment for a single building or infrastructure asset
 
 ##
 
-We are platform-agnostic and work with leading Digital Twin platforms including Autodesk Tandem, Bentley iTwin, Azure Digital Twins, and open-source visualisation frameworks. Our IoT integration layer supports standard protocols (MQTT, OPC-UA, Modbus, BACnet) and can connect to any major BMS, SCADA, or CMMS system. We recommend the platform that best suits your specific requirements, existing technology stack, and budget.
+Our delivered twins run in a browser-based viewer that combines 360° imagery, point cloud and a 3D asset model with measurement, clipping, points of interest and construction records. Reality capture is processed in LixelStudio and standard point cloud tools, and the monitoring hardware reports over LoRaWAN, 4G and Modbus RTU. If you already run a twin or asset platform, tell us which one and we will confirm what we can deliver into it before quoting.
+
+##
+
+It depends on the asset and the scope: the size of the asset and the scanning effort, the level of model detail, how many live sensor channels are bound to the model, which existing systems need integrating, and how many users need training. A single asset typically takes 8–16 weeks to deliver. Request an assessment and we will scope it for your asset.
 
 #### Stay Ahead in Digital Innovation
 
@@ -576,4 +684,4 @@ Tell us about your asset and digital objectives. We'll propose a Digital Twin ap
 
 - Clear scope and timeline
 
-[Request a Demo ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=digital-twin) [ Talk to an Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

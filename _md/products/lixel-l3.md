@@ -1,6 +1,6 @@
 # Lixel L3: High-Accuracy Spatial Scanner (5mm) | Sentra × XGRIDS
 
-> Lixel L3 by XGRIDS: flagship high-accuracy spatial scanner with 5mm relative accuracy, triple 50MP camera array and built-in RTK. Official reseller in India via Sentra.
+> XGRIDS Lixel L3: high-accuracy spatial scanner with 5mm relative accuracy, triple 50MP cameras and built-in RTK. Official India reseller: Sentra.
 
 Source: https://sentratech.in/products/lixel-l3.html
 

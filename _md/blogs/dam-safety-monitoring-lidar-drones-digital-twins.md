@@ -1,6 +1,6 @@
 # Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection
 
-> How LiDAR, drone survey, IoT sensors and digital twins are transforming dam safety monitoring and inspection, from spillways and embankments to seepage and deformation.
+> How LiDAR, drones, IoT sensors and digital twins improve dam safety monitoring, from spillways and embankments to seepage and deformation.
 
 Published: 2026-09-16  
 Source: https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html
@@ -111,8 +111,18 @@ The practical sequence is straightforward: start with an aerial LiDAR and drone 
 
 Dam safety monitoring also connects naturally to broader [structural health monitoring](https://sentratech.in/solutions/structural-health-monitoring.html) where a dam has concrete elements such as spillway gates or an intake structure, since the same sensor types and platform serve both. For a wider look at how digital twins turn continuous sensor data into predictive maintenance decisions rather than just dashboards, see our guide on [digital twins for predictive maintenance](https://sentratech.in/article/digital-twin-predictive-maintenance-sentra.html).
 
+Related service [Geotechnical Monitoring Services ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
+
+- [Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/blogs/slope-stability-monitoring-mining.html)
+
+- [GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html)
+
+- [What Is an Inclinometer? How Digital Tiltmeters Measure Tilt and Rotation](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=dam-safety-monitoring-lidar-drones-digital-twins)
+
 ## Know how your dam is actually behaving
 
 Sentra combines LiDAR and drone survey, geotechnical instrumentation and digital twin integration to give dam owners a continuous, defensible picture of structural behaviour, including remote reservoir sites without power or reliable connectivity. If you are responsible for dam safety and want to move beyond periodic visual inspection, we can help you work out what to measure and where to start.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=dam-safety-monitoring-lidar-drones-digital-twins)

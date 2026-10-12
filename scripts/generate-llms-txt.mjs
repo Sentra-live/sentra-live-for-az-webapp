@@ -132,6 +132,7 @@ push('backend for the site\'s own chatbot and is disallowed in robots.txt.');
 push('');
 
 const groups = [
+    ['Technology', 'How the system works: architecture, sensors, digital twin and AI, each layer marked delivered, partner-supplied or not yet in place.', sectionPages('technology')],
     ['Solutions', 'What Sentra delivers, by discipline.', sectionPages('solutions')],
     ['Industries', 'The same capabilities framed by sector.', sectionPages('industries')],
     ['Products', 'Hardware: laser scanners, wireless and wired sensors, data loggers, communications.', sectionPages('products')],
@@ -156,7 +157,8 @@ push('');
     'industries.html',
     'resources.html',
     'partnership.html',
-    'contact.html'
+    'contact.html',
+    'monitoring-assessment.html'
 ].map(f => entry(readPage(f))).filter(Boolean).forEach(l => push(l));
 push('');
 

@@ -35,8 +35,18 @@ IoT-enabled pump houses support remote start/stop, pressure adjustment, and auto
 
 A look inside a live IoT-enabled pump house deployment: sensors, real-time dashboards, and remote control working together to keep water infrastructure running reliably.
 
+Related service [Predictive Maintenance & Condition Monitoring ](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html)
+
+- [Predictive Maintenance for Industrial Facilities](https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html)
+
+- [Intelligent Pump House Monitoring & Control](https://sentratech.in/article/intelligent-pump-house-monitoring-and-control.html)
+
+- [Asset Monitoring & Facility Management](https://sentratech.in/blogs/asset-monitoring-facility-management.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=intelligent-pump-house-monitoring-and-control)
+
 ## Conclusion
 
 Water management is no longer just about supply; it is about efficiency, resilience, and intelligence. An IoT-powered Pump House Monitoring System enables significant energy savings while improving reliability and extending asset life.
 
-[Contact us ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=intelligent-pump-house-monitoring-and-control)

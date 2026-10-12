@@ -5,9 +5,9 @@
 Published: 2026-07-23  
 Source: https://sentratech.in/article/xgrids-authorized-reseller-india.html
 
-Clove Technologies Private Limited (the company behind Sentra) is now an authorized reseller of XGRIDS' AI-powered 3D reality capture and spatial computing hardware across India, bringing the Lixel K2, PortalCam and Lixel L2 Pro scanners to Indian AEC, infrastructure and industrial teams.
+Clove Technologies Private Limited, the company behind Sentra, is now an authorized reseller of XGRIDS 3D reality capture hardware in India. That means AEC, infrastructure and industrial teams here can buy the Lixel K2, PortalCam and Lixel L2 Pro through us.
 
-Clove Technologies Private Limited is pleased to announce its official reseller partnership with [XGRIDS Limited](https://www.xgrids.com/), a global innovator in AI-powered 3D reality capture and spatial computing technologies. Through this strategic collaboration, Clove Technologies (operating in India as Sentra) will serve as an **authorized reseller** of XGRIDS' cutting-edge hardware solutions across India, enabling organizations to accelerate digital transformation with industry-leading mobile mapping and reality capture technologies.
+Clove Technologies Private Limited has signed a reseller agreement with [XGRIDS Limited](https://www.xgrids.com/), which builds AI-based 3D reality capture and spatial computing products. Clove Technologies, trading in India as Sentra, is now an **authorized reseller** of XGRIDS hardware across the country, covering its mobile mapping and reality capture scanners.
 
 [
 
@@ -17,78 +17,78 @@ Clove Technologies Private Limited is pleased to announce its official reseller 
 
 ![Sentra logo](https://sentratech.in/image/branding/sentra_black_1.svg)
 
-This partnership reinforces Sentra's commitment to delivering world-class geospatial, BIM, Digital Twin, LiDAR, and reality capture solutions for industries including Architecture, Engineering & Construction (AEC), Infrastructure, Manufacturing, Smart Cities, Oil & Gas, Utilities, Heritage Documentation, Mining, and Industrial Facilities.
+The scanners fit alongside the geospatial, BIM, digital twin, LiDAR and reality capture work we already do for AEC firms, infrastructure owners, manufacturers, smart city projects, oil and gas, utilities, heritage documentation, mining and industrial facilities.
 
-## Expanding Advanced Reality Capture Solutions Across India
+## Reality capture for Indian projects
 
-As organizations increasingly adopt digital workflows, there is growing demand for fast, accurate, and intelligent reality capture technologies. By introducing XGRIDS' innovative product portfolio to the Indian market, Sentra aims to empower businesses with solutions that simplify data acquisition while delivering exceptional precision and operational efficiency.
+More Indian teams are moving to digital workflows, and they want scanning that is quick to do in the field and accurate enough to build models from. Our aim in bringing XGRIDS products to India is to make data capture simpler without giving up precision.
 
-The collaboration combines XGRIDS' advanced hardware innovation with Sentra's expertise in Scan-to-BIM, Digital Twin development, LiDAR processing, geospatial intelligence, engineering services, and enterprise digital transformation.
+XGRIDS supplies the hardware. We bring the work that happens after the scan: Scan-to-BIM, digital twin development, LiDAR processing, geospatial analysis and engineering services.
 
 ##### Official India Reseller
 
-Sentra is the authorized XGRIDS reseller for India: see the complete line-up, specifications and pricing on our [Laser Scanners & Spatial Cameras](https://sentratech.in/products/laser-scanners.html) page.
+For the full line-up, specifications and pricing, see our [Laser Scanners & Spatial Cameras](https://sentratech.in/products/laser-scanners.html) page.
 
-## XGRIDS Product Portfolio Available Through Sentra
+## XGRIDS products available through Sentra
 
-All three XGRIDS handheld and wearable devices are now available in India through Sentra's [laser scanner range](https://sentratech.in/products/laser-scanners.html), each built around the same LixelStudio / LixelGo processing pipeline, from ultra-compact wearable capture to long-range survey-grade mapping.
+All three XGRIDS handheld and wearable devices are in our [laser scanner range](https://sentratech.in/products/laser-scanners.html). They range from compact wearable capture to long-range survey-grade mapping, and all use the same LixelStudio / LixelGo processing pipeline.
 
 [ Lixel K2
 
 ##### The Gold Standard in Lightweight Scanning
 
-Designed for professionals requiring exceptional mobility without compromising accuracy: rapid acquisition of detailed spatial data for infrastructure, construction, facility management, and surveying.
+For people who need to move quickly through a site and still get accurate data. Typical uses are infrastructure, construction, facility management and surveying.
 
 ](https://sentratech.in/products/lixel-k2.html) [ PortalCam
 
 ##### The First True Spatial Camera
 
-Captures immersive three-dimensional environments with remarkable speed and precision, for inspection, visualization, asset management, and Digital Twin workflows.
+Captures 3D environments quickly and accurately. Used for inspection, visualization, asset management and digital twin work.
 
 ](https://sentratech.in/products/portalcam.html) [ Lixel L2 Pro
 
 ##### Precision Redefined
 
-Engineered for demanding professional applications requiring superior accuracy, reliability, and comprehensive spatial data capture across complex surveying and infrastructure projects.
+Built for survey and infrastructure projects where accuracy and reliability matter most and the site is large or complicated.
 
 ](https://sentratech.in/products/lixel-l2-pro.html)
 
-## Delivering Greater Value to Indian Enterprises
+## What customers get
 
-Through this reseller partnership, customers across India will benefit from:
+Buying through Sentra gives you:
 
-- Access to the latest XGRIDS reality capture hardware
+- The current XGRIDS reality capture hardware
 
-- Professional product consultation and solution recommendations
+- Advice on which device suits the job
 
 - Local sales and technical support
 
-- Integration with Scan-to-BIM and Digital Twin workflows
+- A route into Scan-to-BIM and digital twin workflows
 
 - LiDAR data processing and point cloud services
 
 - Training and implementation assistance
 
-- End-to-end project support from acquisition to digital asset delivery
+- Project support from data capture through to the delivered digital asset
 
-## Supporting the Future of Digital Infrastructure
+## Why it matters
 
-As India's infrastructure and industrial sectors continue embracing digitalization, advanced reality capture technologies are becoming essential for improving project accuracy, reducing field time, and enabling data-driven decision making.
+Infrastructure and industrial projects in India are going digital, and reality capture is one of the most practical places to start. Scanning cuts time in the field and gives engineers better data to work from.
 
-The partnership between Sentra and XGRIDS represents a significant step toward making world-class spatial computing technologies more accessible to organizations throughout India.
+The partnership makes XGRIDS spatial computing products easier for organizations across India to get hold of.
 
-By combining XGRIDS' innovative hardware with Sentra's extensive expertise in engineering, geospatial technologies, BIM, Digital Twins, and reality capture services, customers can confidently adopt modern digital workflows that improve efficiency, accuracy, and long-term asset management.
+Customers get XGRIDS hardware together with our engineering, geospatial, BIM, digital twin and reality capture services, which makes it easier to adopt the new workflow and keep using the data for asset management afterwards.
 
 ## About Clove Technologies & XGRIDS
 
-**Clove Technologies Private Limited** (operating in India as Sentra) is a technology-driven engineering and digital transformation company specializing in Scan-to-BIM, Digital Twins, LiDAR, GIS, Geospatial Intelligence, BIM, Engineering Documentation, Reality Capture, IoT, Structural Health Monitoring, and AI-enabled infrastructure solutions. The company serves clients across the Architecture, Engineering, Construction, Industrial, Energy, Utilities, Transportation, and Smart City sectors.
+**Clove Technologies Private Limited** (Sentra in India) is an engineering and digital technology company. Its work covers Scan-to-BIM, digital twins, LiDAR, GIS, geospatial intelligence, BIM, engineering documentation, reality capture, IoT, structural health monitoring and AI tools for infrastructure. Clients are in architecture, engineering, construction, industry, energy, utilities, transportation and smart cities.
 
-**[XGRIDS Limited](https://www.xgrids.com/)** develops advanced AI-powered spatial computing and reality capture technologies that enable rapid, accurate creation of digital representations of real-world environments. Its innovative hardware solutions are designed to simplify 3D data acquisition while supporting modern workflows in surveying, engineering, construction, infrastructure, and industrial applications.
+**[XGRIDS Limited](https://www.xgrids.com/)** develops AI-based spatial computing and reality capture technology that turns real-world spaces into accurate digital models quickly. Its hardware is built to make 3D data capture simpler for surveying, engineering, construction, infrastructure and industrial work.
 
 Learn more about XGRIDS at [ xgrids.com ](https://www.xgrids.com/)
 
-## Ready to Bring XGRIDS Reality Capture to Your Next Project?
+## Planning a project that needs reality capture?
 
-Talk to Sentra's reality capture team about pricing, demos and training for the Lixel K2, PortalCam and Lixel L2 Pro, official XGRIDS reseller in India.
+Talk to our reality capture team about pricing, demos and training for the Lixel K2, PortalCam and Lixel L2 Pro. Sentra is the official XGRIDS reseller in India.
 
 [Get a Quote ](https://sentratech.in/contact.html?enquiry=1&amp;product=Laser%20Scanners)

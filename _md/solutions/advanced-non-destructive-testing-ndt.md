@@ -12,7 +12,7 @@ Oil & Gas Power & Utilities Industrial Civil Infrastructure
 
 Inspect deeper, know more, without stopping operations. Sub-millimetre flaw detection across 12+ NDT techniques, executed by ISO-certified technicians.
 
-[Request an NDT Assessment ](https://sentratech.in/contact.html) [Explore Solution](#sol-overview)
+[Request an NDT Assessment ](https://sentratech.in/monitoring-assessment.html?source=advanced-non-destructive-testing-ndt) [Explore Solution](#sol-overview)
 
 What We Do
 
@@ -34,7 +34,7 @@ Every NDT engagement begins with method selection: choosing the right technique 
 
 - Reports signed by Level II or III technicians
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [See how it works ](#sol-how)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?source=advanced-non-destructive-testing-ndt) [See how it works ](#sol-how)
 
 ![Advanced Non-Destructive Testing](https://sentratech.in/image/solutions/Homepage/Advanced%20Non-Destructive%20Testing%20(NDT).webp)
 
@@ -420,7 +420,7 @@ Our in-house team mobilises quickly and completes most field NDT programmes with
 
 ### Find the right test method for your asset
 
-Talk to Our NDT Engineer ](https://sentratech.in/contact.html)
+Talk to Our NDT Engineer ](https://sentratech.in/monitoring-assessment.html?source=advanced-non-destructive-testing-ndt)
 
 Risk Mitigation
 
@@ -428,7 +428,7 @@ Risk Mitigation
 
 Undetected defects are the leading cause of industrial asset failures. NDT is the only engineering tool that can confirm internal integrity without destructive investigation.
 
-[Request an NDT assessment ](https://sentratech.in/contact.html)
+[Request an NDT assessment ](https://sentratech.in/monitoring-assessment.html?source=advanced-non-destructive-testing-ndt)
 
 1. 01
 
@@ -614,4 +614,4 @@ Describe your asset, material, and inspection objectives. Our NDT engineers will
 
 - Clear scope and timeline
 
-[Talk to Our NDT Engineer ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)
+[Talk to Our NDT Engineer ](https://sentratech.in/monitoring-assessment.html?source=advanced-non-destructive-testing-ndt) [ Talk to an NDT Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

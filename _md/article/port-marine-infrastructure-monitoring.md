@@ -1,6 +1,6 @@
 # Port & Marine Infrastructure Monitoring: Protecting Jetties, Quays & Offshore Structures
 
-> How port infrastructure monitoring protects jetties, quay walls and offshore structures: corrosion, tilt, settlement, berthing and mooring loads, sensors, architecture and implementation.
+> Port infrastructure monitoring for jetties, quay walls and offshore structures: corrosion, tilt, settlement and mooring loads, sensors and setup.
 
 Published: 2026-09-25  
 Source: https://sentratech.in/article/port-marine-infrastructure-monitoring.html

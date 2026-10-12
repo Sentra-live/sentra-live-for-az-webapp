@@ -11,7 +11,7 @@ Monitoring
 
 Slope stability, subsidence and ground deformation monitoring for open-pit mines, tunnels and retaining structures by enabling safer mining operations.
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [Explore Solution](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=mine&amp;source=mining-geotechnical-monitoring) [Explore Solution](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
 ## Why Mining
 Monitoring Matters
@@ -65,4 +65,4 @@ Safer
 
 Contact us for a tailored geotechnical monitoring solution.
 
-[Get in Touch ](https://sentratech.in/contact.html)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=mine&amp;source=mining-geotechnical-monitoring)

@@ -35,6 +35,16 @@ In practice the terms are used almost interchangeably, and most manufacturers, S
 
 A handheld inclinometer is fine for a one-off survey reading. Continuous infrastructure monitoring needs more: wireless reporting so data doesn't rely on someone visiting site, an IP68-rated enclosure that survives years outdoors, and battery life measured in years rather than days. Sentra's tiltmeters run on LoRaWAN with up to 10 years of unattended operation, and support triggered event detection, so a sudden movement generates an immediate alert instead of waiting for the next scheduled reading interval. To learn more about the logging hardware that captures and transmits tilt data, see our [data logger guide](https://sentratech.in/blogs/what-is-a-data-logger-types-guide.html).
 
+Related service [Geotechnical Monitoring Services ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
+
+- [Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/blogs/slope-stability-monitoring-mining.html)
+
+- [GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html)
+
+- [Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html)
+
+[Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=what-is-an-inclinometer-digital-tiltmeter-guide)
+
 ## Takeaway
 
 Inclinometer and tiltmeter describe the same core technology: MEMS-based angle sensing referenced to gravity. The difference that actually matters for infrastructure owners is deployment, wireless, IP68-rated and built for years of unattended reporting, not the terminology.

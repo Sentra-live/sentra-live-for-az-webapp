@@ -10,3 +10,79 @@
     margin-top: 0;
     margin-bottom: 0;
 }
+
+/* ── "Related service" cluster box above the article CTA (scripts/build-sections.mjs) ── */
+.post-cluster {
+    margin: 40px 0 0;
+    padding: 22px 24px;
+    border-radius: 14px;
+    border: 1px solid rgba(244, 129, 32, 0.25);
+    background: rgba(244, 129, 32, 0.04);
+}
+
+.post-cluster-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: #f48120;
+    margin-bottom: 6px;
+}
+
+.post-cluster-pillar {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: inherit;
+    text-decoration: none;
+}
+
+.post-cluster-pillar:hover {
+    color: #f48120;
+}
+
+.post-cluster-pillar i {
+    font-size: 0.8em;
+    color: #f48120;
+}
+
+.post-cluster-list {
+    list-style: disc;
+    margin: 12px 0 12px;
+    padding-left: 18px;
+}
+
+.post-cluster-list li {
+    list-style: disc;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.post-cluster-list li::marker {
+    color: #f48120;
+}
+
+.post-cluster-list a {
+    color: inherit;
+    opacity: 0.75;
+    text-decoration: none;
+}
+
+.post-cluster-list a:hover {
+    opacity: 1;
+    color: #f48120;
+}
+
+.post-cluster-assess {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #f48120;
+    text-decoration: none;
+}
+
+.post-cluster-assess:hover {
+    text-decoration: underline;
+}

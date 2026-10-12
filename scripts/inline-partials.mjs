@@ -22,7 +22,7 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 // Directories one level below the site root whose pages need '../'-relative
 // partials instead of './'-relative ones. Must mirror the subfolder list in
 // js/script.js (pathPrefix / fixNavLinks).
-const SUBFOLDERS = new Set(['solutions', 'products', 'case-studies', 'article', 'blogs', 'industries']);
+const SUBFOLDERS = new Set(['solutions', 'products', 'case-studies', 'article', 'blogs', 'industries', 'technology']);
 
 const SKIP_DIRS = new Set(['node_modules', '.git', '.netlify', '.vercel', '.wrangler', '.github', 'archive']);
 
@@ -178,7 +178,12 @@ for (const file of findHtmlFiles(ROOT)) {
         // The baked region is nav boilerplate only. If the span we are about to
         // overwrite reaches past it into the page shell, the depth count was
         // wrong - bail out instead of deleting the page's own markup.
-        const strayTag = /<\/header>|<aside[\s>]|<main[\s>]|<\/main>|<footer[\s>]/i.exec(maskInert(oldContent));
+        // A previous Solutions-menu revision used a semantic preview <aside>
+        // inside the header. Allow that known nav-owned element for one clean
+        // migration while retaining the guard against page-level asides.
+        const guardedContent = maskInert(oldContent)
+            .replace(/<aside\s+class="solutions-v2-preview"[^>]*>/i, '<div>');
+        const strayTag = /<\/header>|<aside[\s>]|<main[\s>]|<\/main>|<footer[\s>]/i.exec(guardedContent);
         if (strayTag) {
             console.error(
                 `inline-partials: SKIP ${path.relative(ROOT, file)} - the <div id="${tag}"> span reaches past the ` +

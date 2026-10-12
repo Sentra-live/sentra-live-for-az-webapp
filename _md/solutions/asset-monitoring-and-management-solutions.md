@@ -1,6 +1,6 @@
 # Asset Monitoring & Management Solutions | Sentra
 
-> Industrial asset monitoring built on IoT sensors and dashboards: a real-time infrastructure monitoring system for manufacturing, utility and mining assets, with predictive maintenance alerts.
+> Industrial asset monitoring with IoT sensors and live dashboards for manufacturing, utility and mining assets, with predictive maintenance alerts.
 
 Source: https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html
 
@@ -12,7 +12,7 @@ Manufacturing Water Treatment Energy & Utilities Mining Ports
 
 Transform reactive maintenance into predictive intelligence: real-time asset health visibility, predictive failure alerts, and lifecycle dashboards across every site you operate.
 
-[Connect with Our Expert ](https://sentratech.in/contact.html) [Explore Solution](#sol-overview)
+[Connect with Our Expert ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=asset-monitoring-and-management-solutions) [Explore Solution](#sol-overview)
 
 What We Do
 
@@ -36,7 +36,7 @@ This is what separates an IoT solution built for infrastructure from a generic i
 
 - Maintenance driven by actual condition
 
-[Talk to an Expert ](https://sentratech.in/contact.html) [How the system works ](#sol-system)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=asset-monitoring-and-management-solutions) [How the system works ](#sol-system)
 
 ![Asset Monitoring & Management](https://sentratech.in/image/solutions/Homepage/Asset%20Monitoring%20%26%20Management%20Solutions.webp)
 
@@ -468,7 +468,7 @@ Early detection of bearing wear, alignment issues, and thermal anomalies enables
 
 ### Reduce Unplanned Costs
 
-Unplanned failures cost 3–5× more than planned maintenance due to emergency labour, expedited parts, secondary damage, and production losses. Predictive monitoring eliminates most unplanned events.
+Unplanned failures cost more than planned maintenance once emergency labour, expedited parts, secondary damage and lost production are counted. Monitoring turns many of them into planned work.
 
 ### Optimise Maintenance Schedules
 
@@ -486,7 +486,7 @@ Accurate remaining useful life estimates and asset health trends provide the eng
 
 ### See predictive monitoring on your equipment
 
-Request a Demo ](https://sentratech.in/contact.html)
+Request a Demo ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=asset-monitoring-and-management-solutions)
 
 Risk Mitigation
 
@@ -494,7 +494,7 @@ Risk Mitigation
 
 The hidden costs of reactive and over-scheduled maintenance add up fast. Asset monitoring eliminates the waste and risk that come with flying blind.
 
-[Talk to us about your equipment ](https://sentratech.in/contact.html)
+[Talk to us about your equipment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=asset-monitoring-and-management-solutions)
 
 1. 01
 
@@ -654,7 +654,7 @@ A standard deployment covering 20–50 critical assets typically takes 4–8 wee
 
 ##
 
-Yes. The Sentra monitoring platform is designed for integration with leading CMMS platforms (Maximo, SAP PM, Infor EAM) and ERP systems via standard APIs and data connectors. Monitoring alerts can automatically create work orders in your CMMS, and maintenance records from your CMMS can be correlated with sensor data in the Sentra dashboard. Custom integration with non-standard systems is available through our engineering team.
+Integration is scoped per project. Monitoring data exports as CSV, and alerts go out by SMS, email and dashboard. If you need alerts or readings to reach a specific CMMS or ERP system, tell us which one and we will confirm the integration route and whether it is supported before it goes into a proposal.
 
 ##
 
@@ -688,4 +688,4 @@ Share your asset management challenges and we'll show you exactly how predictive
 
 - Clear scope and timeline
 
-[Request a Demo ](https://sentratech.in/contact.html) [ Schedule a Call](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)
+[Request a Monitoring Assessment ](https://sentratech.in/monitoring-assessment.html?asset=industrial&amp;source=asset-monitoring-and-management-solutions) [ Talk to an Engineer](https://calendly.com/sentra-clovetech/30min?primary_color=f48120) [ +91 78930 23322](tel:+917893023322)

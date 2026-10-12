@@ -24,6 +24,10 @@ Ready to Download
 
 Datasheets marked **Available** open or download after you share a few quick details; this helps our team follow up with the right specs for your project.
 
+**Not sure which sensor you need?** The Sensor Selection Guide matches each failure mode (fatigue, settlement, deflection, vibration and more) to the sensor, sampling rate and logger that capture it.
+
+[ Download the Guide](#) [Read Online ](https://sentratech.in/technology/sensor-selection-guide.html)
+
 ## Sensors & Data Loggers
 
 15
