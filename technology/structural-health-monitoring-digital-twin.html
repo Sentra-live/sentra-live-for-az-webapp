@@ -18,16 +18,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <title>Structural Health Monitoring Digital Twin | Sentra</title>
-  <meta name="description" content="What a structural health monitoring digital twin is, how it differs from a 3D model and from BIM, how sensor data binds to structural components, and where Sentra's delivered twins sit on the maturity ladder." />
+  <meta name="description" content="What a structural health monitoring digital twin is, how it differs from a 3D model or BIM, and how sensor data binds to structural components." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Structural Health Monitoring Digital Twin" />
-  <meta property="og:description" content="What a structural health monitoring digital twin is, how it differs from a 3D model and from BIM, how sensor data binds to structural components, and where Sentra's delivered twins sit on the maturity ladder." />
+  <meta property="og:description" content="What a structural health monitoring digital twin is, how it differs from a 3D model or BIM, and how sensor data binds to structural components." />
   <meta property="og:url" content="https://sentratech.in/technology/structural-health-monitoring-digital-twin.html" />
   <meta property="og:type" content="article" />
   <meta property="og:image" content="https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/3d-model-view.webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Structural Health Monitoring Digital Twin" />
-  <meta name="twitter:description" content="What a structural health monitoring digital twin is, how it differs from a 3D model and from BIM, how sensor data binds to structural components, and where Sentra's delivered twins sit on the maturity ladder." />
+  <meta name="twitter:description" content="What a structural health monitoring digital twin is, how it differs from a 3D model or BIM, and how sensor data binds to structural components." />
   <meta name="twitter:image" content="https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/3d-model-view.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
@@ -58,7 +58,7 @@
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": "Structural Health Monitoring Digital Twin",
-  "description": "What a structural health monitoring digital twin is, how it differs from a 3D model and from BIM, how sensor data binds to structural components, and where Sentra's delivered twins sit on the maturity ladder.",
+  "description": "What a structural health monitoring digital twin is, how it differs from a 3D model or BIM, and how sensor data binds to structural components.",
   "datePublished": "2026-09-30",
   "dateModified": "2026-09-30",
   "inLanguage": "en",
@@ -1402,6 +1402,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1658,7 +1662,7 @@
         <div class="sol-hero-overlay"></div>
       </div>
       <div class="sol-hero-image-card tx-hero-diagram">
-        <img class="tx-hero-art" src="../image/technology/shm-digital-twin.png" alt="Layered digital twin visualization of a steel railway bridge with live sensor points" loading="eager">
+        <img class="tx-hero-art" src="../image/technology/shm-digital-twin.webp" alt="Layered digital twin visualization of a steel railway bridge with live sensor points" loading="eager">
       </div>
       <div class="sol-hero-container">
         <div class="sol-hero-content">

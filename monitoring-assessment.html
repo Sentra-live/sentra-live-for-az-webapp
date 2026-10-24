@@ -2444,6 +2444,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);

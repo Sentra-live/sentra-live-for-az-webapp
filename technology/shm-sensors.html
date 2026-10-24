@@ -18,16 +18,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <title>SHM Sensors: Strain, Vibration, Tilt &amp; GNSS | Sentra</title>
-  <meta name="description" content="Engineering reference for the structural monitoring sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, vibration meters, tiltmeters, laser tiltmeters and RTK GNSS, with measurement principle, installation, data output and what each detects." />
+  <meta name="description" content="The SHM sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, tiltmeters and RTK GNSS, how each works and what it detects." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Structural Monitoring Sensors" />
-  <meta property="og:description" content="Engineering reference for the structural monitoring sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, vibration meters, tiltmeters, laser tiltmeters and RTK GNSS, with measurement principle, installation, data output and what each detects." />
+  <meta property="og:description" content="The SHM sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, tiltmeters and RTK GNSS, how each works and what it detects." />
   <meta property="og:url" content="https://sentratech.in/technology/shm-sensors.html" />
   <meta property="og:type" content="article" />
   <meta property="og:image" content="https://sentratech.in/image/solutions/showcase/shm/Vibration%20Sensor%20Deployment.webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Structural Monitoring Sensors" />
-  <meta name="twitter:description" content="Engineering reference for the structural monitoring sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, vibration meters, tiltmeters, laser tiltmeters and RTK GNSS, with measurement principle, installation, data output and what each detects." />
+  <meta name="twitter:description" content="The SHM sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, tiltmeters and RTK GNSS, how each works and what it detects." />
   <meta name="twitter:image" content="https://sentratech.in/image/solutions/showcase/shm/Vibration%20Sensor%20Deployment.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
@@ -58,7 +58,7 @@
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": "Structural Monitoring Sensors",
-  "description": "Engineering reference for the structural monitoring sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, vibration meters, tiltmeters, laser tiltmeters and RTK GNSS, with measurement principle, installation, data output and what each detects.",
+  "description": "The SHM sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, tiltmeters and RTK GNSS, how each works and what it detects.",
   "datePublished": "2026-09-30",
   "dateModified": "2026-09-30",
   "inLanguage": "en",
@@ -1406,6 +1406,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1662,7 +1666,7 @@
         <div class="sol-hero-overlay"></div>
       </div>
       <div class="sol-hero-image-card tx-hero-diagram">
-        <img class="tx-hero-art" src="../image/technology/shm-sensors.png" alt="Close technical installation of strain, vibration and tilt sensors on a steel railway bridge" loading="eager">
+        <img class="tx-hero-art" src="../image/technology/shm-sensors.webp" alt="Close technical installation of strain, vibration and tilt sensors on a steel railway bridge" loading="eager">
       </div>
       <div class="sol-hero-container">
         <div class="sol-hero-content">

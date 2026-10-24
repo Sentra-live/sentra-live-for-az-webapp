@@ -19,10 +19,10 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <title>Sensor Selection Guide for Structural Monitoring | Sentra</title>
-  <meta name="description" content="Which sensor to use for strain, vibration, tilt, displacement, settlement and fatigue monitoring: failure mode to measurement, datasheet figures, sampling rates and loggers." />
+  <meta name="description" content="Which sensor to use for strain, vibration, tilt, displacement, settlement and fatigue monitoring, with datasheet figures, sampling rates and loggers." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Sensor Selection Guide for Structural Monitoring | Sentra" />
-  <meta property="og:description" content="Which sensor to use for strain, vibration, tilt, displacement, settlement and fatigue monitoring: failure mode to measurement, datasheet figures, sampling rates and loggers." />
+  <meta property="og:description" content="Which sensor to use for strain, vibration, tilt, displacement, settlement and fatigue monitoring, with datasheet figures, sampling rates and loggers." />
   <meta property="og:url" content="https://sentratech.in/technology/sensor-selection-guide.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://sentratech.in/image/branding/sentra.webp" />
@@ -30,7 +30,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Sensor Selection Guide for Structural Monitoring | Sentra" />
-  <meta name="twitter:description" content="Which sensor to use for strain, vibration, tilt, displacement, settlement and fatigue monitoring: failure mode to measurement, datasheet figures, sampling rates and loggers." />
+  <meta name="twitter:description" content="Which sensor to use for strain, vibration, tilt, displacement, settlement and fatigue monitoring, with datasheet figures, sampling rates and loggers." />
   <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
@@ -1472,6 +1472,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);

@@ -18,16 +18,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <title>AI in Structural Health Monitoring: What We Use | Sentra</title>
-  <meta name="description" content="Where Sentra uses AI and machine learning in structural health monitoring: CNN crack and rust detection on drone imagery and anomaly detection on sensor data streams, and why fatigue and residual life assessment stays physics-based." />
+  <meta name="description" content="Where Sentra uses AI in structural health monitoring: crack and rust detection on drone imagery, anomaly detection on sensor data, and its limits." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="AI in Structural Health Monitoring" />
-  <meta property="og:description" content="Where Sentra uses AI and machine learning in structural health monitoring: CNN crack and rust detection on drone imagery and anomaly detection on sensor data streams, and why fatigue and residual life assessment stays physics-based." />
+  <meta property="og:description" content="Where Sentra uses AI in structural health monitoring: crack and rust detection on drone imagery, anomaly detection on sensor data, and its limits." />
   <meta property="og:url" content="https://sentratech.in/technology/ai-in-shm.html" />
   <meta property="og:type" content="article" />
   <meta property="og:image" content="https://sentratech.in/image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="AI in Structural Health Monitoring" />
-  <meta name="twitter:description" content="Where Sentra uses AI and machine learning in structural health monitoring: CNN crack and rust detection on drone imagery and anomaly detection on sensor data streams, and why fatigue and residual life assessment stays physics-based." />
+  <meta name="twitter:description" content="Where Sentra uses AI in structural health monitoring: crack and rust detection on drone imagery, anomaly detection on sensor data, and its limits." />
   <meta name="twitter:image" content="https://sentratech.in/image/solutions/Homepage/Bridge%20Inspection%20%26%20Condition%20Assessment.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
@@ -58,7 +58,7 @@
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": "AI in Structural Health Monitoring",
-  "description": "Where Sentra uses AI and machine learning in structural health monitoring: CNN crack and rust detection on drone imagery and anomaly detection on sensor data streams, and why fatigue and residual life assessment stays physics-based.",
+  "description": "Where Sentra uses AI in structural health monitoring: crack and rust detection on drone imagery, anomaly detection on sensor data, and its limits.",
   "datePublished": "2026-09-30",
   "dateModified": "2026-09-30",
   "inLanguage": "en",
@@ -1398,6 +1398,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1654,7 +1658,7 @@
         <div class="sol-hero-overlay"></div>
       </div>
       <div class="sol-hero-image-card tx-hero-diagram">
-        <img class="tx-hero-art" src="../image/technology/shm-ai-inspection.png" alt="AI-assisted condition inspection highlighting structural anomalies on a steel railway bridge" loading="eager">
+        <img class="tx-hero-art" src="../image/technology/shm-ai-inspection.webp" alt="AI-assisted condition inspection highlighting structural anomalies on a steel railway bridge" loading="eager">
       </div>
       <div class="sol-hero-container">
         <div class="sol-hero-content">

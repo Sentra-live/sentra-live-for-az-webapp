@@ -1429,6 +1429,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1904,7 +1908,7 @@
 
                         <h2 id="conclusion">Conclusion</h2>
                         <p>Periodic inspection alone isn't enough to manage a bridge. Traffic, weather and ageing materials all act on the structure between inspections and change how it performs.</p>
-                        <p>Continuous monitoring covers that gap. Sensors and analytics help owners catch deterioration sooner, plan maintenance better and keep lifecycle costs in check. Our <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" target="_blank" style="color:#f48120;text-decoration:none;" rel="noopener">IoT Bridge Monitoring on Railway Bridges</a> case study applies the same approach.</p>
+                        <p>Continuous monitoring covers that gap. Sensors and analytics help owners catch deterioration sooner, plan maintenance better and keep lifecycle costs in check. Our <a href="/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html" target="_blank" style="color:#f48120;text-decoration:none;" rel="noopener">IoT Bridge Monitoring on Railway Bridges</a> case study applies the same approach, and our guide to <a href="/article/structural-health-monitoring-of-bridges.html" style="color:#f48120;text-decoration:none;">structural health monitoring of bridges</a> explains the sensors and how the system works.</p>
                         <p>Transport infrastructure keeps getting older while the loads on it keep rising, so continuous monitoring is becoming standard practice.</p>
 
                         <h2 id="related-resources">Related Resources</h2>

@@ -21,10 +21,10 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <title>Predictive Maintenance &amp; Condition Monitoring | Sentra</title>
-  <meta name="description" content="IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors, edge analytics and alerts before failure." />
+  <meta name="description" content="IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors with alerts before failure." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Predictive Maintenance &amp; Condition Monitoring | Sentra" />
-  <meta property="og:description" content="IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors, edge analytics and alerts before failure." />
+  <meta property="og:description" content="IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors with alerts before failure." />
   <meta property="og:url" content="https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://sentratech.in/image/solutions/landing-pages/predictive/mechanical-room.webp" />
@@ -32,7 +32,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Predictive Maintenance &amp; Condition Monitoring | Sentra" />
-  <meta name="twitter:description" content="IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors, edge analytics and alerts before failure." />
+  <meta name="twitter:description" content="IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors with alerts before failure." />
   <meta name="twitter:image" content="https://sentratech.in/image/solutions/landing-pages/predictive/mechanical-room.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
@@ -40,7 +40,7 @@
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Predictive Maintenance and Condition Monitoring",
-  "description": "IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors, edge analytics and alerts before failure.",
+  "description": "IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors with alerts before failure.",
   "provider": {
     "@type": "Organization",
     "name": "Sentra",
@@ -1420,6 +1420,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1709,7 +1713,7 @@
             <span class="sol-eyebrow solx-anim">What We Do</span>
             <h2 class="sol-section-title solx-anim">Maintain on Condition, Not the Calendar</h2>
           </div>
-          <p class="sol-section-subtitle solx-anim">IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors, edge analytics and alerts before failure.</p>
+          <p class="sol-section-subtitle solx-anim">IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors with alerts before failure.</p>
         </div>
 
         <div class="solx-wwd-grid">
@@ -2161,10 +2165,10 @@
                       <p>It scales with the number of assets and sensors per asset, the sampling each failure mode needs, connectivity and edge processing across the site, and integration with existing CMMS, SCADA or BMS. Request an assessment and we will scope it for your facility.</p>
                     </div>
                   </div>
-                </div>
-<!-- build-sections:faq:start -->
+                </div><!-- build-sections:faq:start -->
 
 <!-- build-sections:faq:end -->
+
               </div>
             </div>
           </div>

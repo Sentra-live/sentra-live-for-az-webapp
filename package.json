@@ -9,7 +9,9 @@
         "build": "echo 'Static site - no build needed'",
         "dev": "node server.js",
         "start": "node server.js",
-        "dev:simple": "python -m http.server 8000"
+        "dev:simple": "python -m http.server 8000",
+        "build:cf": "node scripts/build-dist.mjs",
+        "deploy:cf": "node scripts/build-dist.mjs && npx wrangler deploy -c cloudflare/wrangler.jsonc"
     },
     "type": "module",
     "dependencies": {

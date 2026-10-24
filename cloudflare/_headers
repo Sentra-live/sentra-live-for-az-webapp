@@ -1,0 +1,22 @@
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  X-XSS-Protection: 1; mode=block
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Link: </llms.txt>; rel="llms-txt"
+  Vary: Accept
+
+/image/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/css/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/js/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Keep the workers.dev test copy out of search results so it doesn't compete
+# with sentratech.in. Doesn't apply once a custom domain is attached.
+https://sentra-tech.subharam-v.workers.dev/*
+  X-Robots-Tag: noindex

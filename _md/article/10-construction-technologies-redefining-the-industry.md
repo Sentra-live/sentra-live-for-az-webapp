@@ -223,11 +223,11 @@ No single breakthrough technology will define the next generation of constructio
 
 Related service [Construction Vibration Monitoring ](https://sentratech.in/solutions/construction-vibration-monitoring.html)
 
+- [How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist](https://sentratech.in/blogs/early-warning-plan-critical-infrastructure-checklist.html)
+
+- [Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn](https://sentratech.in/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html)
+
 - [Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/blogs/slope-stability-monitoring-mining.html)
-
-- [GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html)
-
-- [Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html)
 
 [Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=10-construction-technologies-redefining-the-industry)
 

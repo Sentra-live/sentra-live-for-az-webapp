@@ -9,6 +9,18 @@
     var RESOURCES = [
         // ---------- Blogs ----------
         {
+            id: 'blog-railway-track-monitoring-system',
+            title: 'Railway Track Monitoring Systems: What to Measure and Why',
+            excerpt: 'Track geometry, rail temperature and stress, formation settlement, dynamic response, transition zones and slopes: what to measure on Indian rail lines, and why.',
+            category: 'Rail Infrastructure',
+            color: 'blue',
+            type: 'blogs',
+            date: '23 Oct 2026',
+            image: './image/blogs/banners/blogs_railway-track-monitoring-system.webp',
+            link: './blogs/railway-track-monitoring-system.html',
+            featured: true
+        },
+        {
             id: 'blog-early-warning-plan-critical-infrastructure',
             title: 'How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist',
             excerpt: 'Rank assets by consequence, name how each one fails, set tiered thresholds, keep data flowing through the storm and decide in advance who acts on an alert.',
@@ -358,6 +370,18 @@
         },
 
         // ---------- Articles ----------
+        {
+            id: 'art-structural-health-monitoring-of-bridges',
+            title: 'Structural Health Monitoring of Bridges: Sensors, Data and How It Works',
+            excerpt: 'What a bridge SHM system measures, which sensors go where, how readings become alerts, and what the data showed on an in-service railway bridge and a 30-year-old highway bridge.',
+            category: 'Bridge Safety',
+            color: 'rose',
+            type: 'articles',
+            date: '23 Oct 2026',
+            image: './image/articles/article_structural-health-monitoring-of-bridges.webp',
+            link: './article/structural-health-monitoring-of-bridges.html',
+            featured: true
+        },
         {
             id: 'art-metro-rail-monitoring',
             title: 'Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time',

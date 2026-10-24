@@ -21,10 +21,10 @@
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <title>Railway Bridge Monitoring System | Strain &amp; Fatigue | Sentra</title>
-  <meta name="description" content="Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and residual fatigue life assessment to RDSO and BS-106R guidance." />
+  <meta name="description" content="Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and fatigue life assessment to RDSO norms." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Railway Bridge Monitoring System | Strain &amp; Fatigue | Sentra" />
-  <meta property="og:description" content="Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and residual fatigue life assessment to RDSO and BS-106R guidance." />
+  <meta property="og:description" content="Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and fatigue life assessment to RDSO norms." />
   <meta property="og:url" content="https://sentratech.in/solutions/railway-bridge-monitoring.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://sentratech.in/image/solutions/landing-pages/railway/railway-bridge-field.webp" />
@@ -32,7 +32,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Railway Bridge Monitoring System | Strain &amp; Fatigue | Sentra" />
-  <meta name="twitter:description" content="Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and residual fatigue life assessment to RDSO and BS-106R guidance." />
+  <meta name="twitter:description" content="Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and fatigue life assessment to RDSO norms." />
   <meta name="twitter:image" content="https://sentratech.in/image/solutions/landing-pages/railway/railway-bridge-field.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
@@ -40,7 +40,7 @@
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Railway Bridge Monitoring",
-  "description": "Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and residual fatigue life assessment to RDSO and BS-106R guidance.",
+  "description": "Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and fatigue life assessment to RDSO norms.",
   "provider": {
     "@type": "Organization",
     "name": "Sentra",
@@ -1420,6 +1420,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1709,7 +1713,7 @@
             <span class="sol-eyebrow solx-anim">What We Do</span>
             <h2 class="sol-section-title solx-anim">Why Railway Bridges Need Measured Data</h2>
           </div>
-          <p class="sol-section-subtitle solx-anim">Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and residual fatigue life assessment to RDSO and BS-106R guidance.</p>
+          <p class="sol-section-subtitle solx-anim">Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and fatigue life assessment to RDSO norms.</p>
         </div>
 
         <div class="solx-wwd-grid">
@@ -2167,10 +2171,10 @@
                       <p>There is no fixed price. Scope depends on the number of spans and members instrumented, whether controlled load testing and a fatigue assessment are included, track access and block arrangements, sampling rate and monitoring duration, and the reporting required. Request a monitoring assessment and we will scope it for your bridge.</p>
                     </div>
                   </div>
-                </div>
-<!-- build-sections:faq:start -->
+                </div><!-- build-sections:faq:start -->
 
 <!-- build-sections:faq:end -->
+
               </div>
             </div>
           </div>

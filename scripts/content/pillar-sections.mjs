@@ -426,6 +426,7 @@ export const POST_CLUSTERS = [
             'blogs/bridge-scour-monitoring-iot-digital-twins.html',
             'blogs/top-5-hidden-structural-damages-bridge-inspection.html',
             'article/madhya-pradesh-bridge-collapses-structural-health-monitoring.html',
+            'article/structural-health-monitoring-of-bridges.html',
             ['blogs/fatigue-life-assessment.html', ['Fatigue & Residual Life Assessment', '/solutions/fatigue-and-residual-life-assessment.html']],
             ['article/track-to-the-future-remote-monitoring-rail-infrastructure.html', ['Railway Bridge Monitoring', '/solutions/railway-bridge-monitoring.html']],
             'case-studies/structural-health-monitoring-of-highway-bridges.html',
@@ -433,6 +434,7 @@ export const POST_CLUSTERS = [
             ['case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html', ['Railway Bridge Monitoring', '/solutions/railway-bridge-monitoring.html']],
             ['case-studies/railway-bridge-fatigue-life-assessment-load-testing.html', ['Railway Bridge Monitoring', '/solutions/railway-bridge-monitoring.html']],
             ['article/metro-rail-monitoring-tunnels-viaducts-stations.html', ['Railway Infrastructure Monitoring', '/industries/railway-infrastructure-monitoring.html']],
+            ['blogs/railway-track-monitoring-system.html', ['Railway Infrastructure Monitoring', '/industries/railway-infrastructure-monitoring.html'], 'railway'],
         ],
     },
     {

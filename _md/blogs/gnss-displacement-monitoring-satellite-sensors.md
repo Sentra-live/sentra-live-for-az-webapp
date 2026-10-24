@@ -106,11 +106,11 @@ Used on its own, GNSS gives a small number of very trustworthy points. Used as t
 
 Related service [Geotechnical Monitoring Services ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
+- [How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist](https://sentratech.in/blogs/early-warning-plan-critical-infrastructure-checklist.html)
+
+- [Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn](https://sentratech.in/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html)
+
 - [Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/blogs/slope-stability-monitoring-mining.html)
-
-- [Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html)
-
-- [What Is an Inclinometer? How Digital Tiltmeters Measure Tilt and Rotation](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html)
 
 [Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=gnss-displacement-monitoring-satellite-sensors)
 

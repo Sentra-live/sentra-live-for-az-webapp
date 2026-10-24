@@ -1439,6 +1439,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -3005,13 +3009,13 @@
                         formats are available on request.</p>
                     </div>
                   </div>
-                </div>
-<!-- build-sections:faq:start -->
+                </div><!-- build-sections:faq:start -->
 <div class="accordion-item">
               <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccordion1-buyer1" aria-expanded="false" aria-controls="faqAccordion1-buyer1">How much does structural health monitoring cost?</button></h2>
               <div id="faqAccordion1-buyer1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion1"><div class="accordion-body"><div class="accordion-spacer"></div><p>There is no fixed price. Cost depends on the number of measurement points and sensor types, whether high-rate dynamic monitoring is needed, wireless or wired installation and connectivity at site, access constraints such as live traffic, the monitoring duration, and how much engineering analysis and reporting you need. A site survey and a 4–8 week pilot are the usual way to fix scope and budget. Request a monitoring assessment and we will scope it for your structure.</p></div></div>
             </div>
 <!-- build-sections:faq:end -->
+
               </div>
             </div>
           </div>

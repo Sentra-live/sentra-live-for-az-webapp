@@ -1460,6 +1460,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1730,7 +1734,7 @@
                         </div>
                         <h1 class="hero-title">Predictive Maintenance for Industrial Facilities</h1>
                         <div class="hero-intro">
-                            <p>How IoT vibration sensors help prevent failures. A bearing that fails on a Tuesday afternoon usually started showing it weeks earlier, in a frequency band nobody was measuring. Continuous vibration monitoring lets a plant pick that up in time.</p>
+                            <p>How IoT vibration sensors help prevent failures. A bearing that fails without warning has usually been showing the damage for weeks, in a frequency band nobody was measuring. Continuous vibration monitoring picks it up early enough to plan the repair.</p>
                         </div>
                     </div>
                     <div class="hero-image-col">
@@ -1769,7 +1773,7 @@
 
                         <h2 id="whyVibration">Why vibration is the signal to watch</h2>
                         <p>A shaft, bearing and coupling in good condition vibrate in a stable, recognisable pattern. When something changes, the pattern changes too, and early. A spalled bearing race, a coupling drifting out of alignment and a fan blade building up deposits all show up this way.</p>
-                        <p>Timing is the reason vibration matters. Temperature only rises once a fault is already causing serious friction. Motor current only changes once the machine is already working harder. Noise comes later still, and by the time an operator hears it the chance to plan the repair has usually gone. Vibration changes first, often weeks earlier, because it responds to the fault's geometry rather than its effects.</p>
+                        <p>Vibration matters because it changes first. Temperature rises only once a fault is causing serious friction, and motor current shifts only when the machine is already working harder. Noise comes later still; by the time an operator hears it, there is usually no time left to plan the repair. Vibration often moves weeks earlier, because it responds to the geometry of the fault rather than its effects.</p>
                         <p>Vibration also tells you what the fault is, not just that there is one. A rise in overall level says something is wrong. A frequency spectrum says <em>what</em> is wrong, because different faults show up at different frequencies linked to shaft speed and bearing geometry.</p>
 
                         <h2 id="whatSensorsMeasure">What an IoT vibration sensor measures</h2>
@@ -1796,13 +1800,13 @@
                         <p>Once you can name the fault, you can plan around it. "Motor 4 is running rough" leads to an exploratory shutdown. "Motor 4 shows an outer-race defect frequency with rising sidebands" leads to ordering a bearing and raising a job card for the next planned outage.</p>
 
                         <h2 id="uptime">The effect on uptime</h2>
-                        <p>Predictive maintenance doesn't mainly save you repairs. You still do them, but at a time you choose instead of the worst possible moment.</p>
+                        <p>You still carry out the repairs with predictive maintenance. What changes is that you decide when they happen, instead of the machine choosing the worst possible moment for you.</p>
                         <p>An unplanned failure costs things a planned one doesn't: lost production while you wait for a part that isn't in stock, overtime, damage to couplings and shafts when a bearing finally seizes, and the safety risk of emergency work. A planned replacement in a scheduled window costs the part and a few hours of labour that were already budgeted.</p>
                         <p>Calendar-based servicing has a hidden cost of its own. Parts that still had life in them get thrown away on schedule, and every intervention risks creating a new defect, such as a misaligned coupling, a contaminated bearing or an over-tightened foot. Working from condition data means fewer interventions and fewer surprises.</p>
                         <p>Most facilities already track motor current, temperature, pressure and flow as well as vibration. Looking at them together on one platform separates a machine fault from a process problem. For example, a pump drawing more current with no change in vibration is usually being asked to do more work, not failing. This is the broader scope of <a href="../industries/industrial-facilities-monitoring.html">industrial facility monitoring</a> and <a href="../solutions/asset-monitoring-and-management-solutions.html">asset monitoring and management</a>.</p>
 
                         <h2 id="deployment">Adding IoT monitoring to a working plant</h2>
-                        <p>The technology is rarely the difficult part. Installing it in a plant that can't stop for the work is.</p>
+                        <p>Getting the sensors to work is usually straightforward. Fitting them into a plant that can't stop for the installation takes more planning.</p>
                         <p><strong>Start with criticality, not the sensor catalogue.</strong> Rank equipment by what a failure would cost in production, safety and repair. A few sensors on the machines that really matter are worth more than covering everything that turns.</p>
                         <p><strong>Mount sensors for the frequencies you need.</strong> Stud mounting keeps the high-frequency response. Adhesive is acceptable. Magnets are convenient but lose response in exactly the range where early bearing defects show up. Position matters as much as mounting: on the bearing housing, in the load zone, and in the same orientation every time so later readings can be compared.</p>
                         <p><strong>Plan the network around the building.</strong> Steel frames, concrete and rotating machinery are hard on radio signals. LoRaWAN gateways have good range and penetration for periodic spectra, and repeaters cover the awkward corners. Sentra's <a href="../products/gateway.html">rugged gateways</a> and <a href="../products/repeater.html">repeaters</a> are made for this.</p>
@@ -1812,10 +1816,10 @@
                         <h2 id="analytics">Where analytics helps and where it doesn't</h2>
                         <p>Claims about machine learning on vibration data vary a lot in how honest they are. Three uses are well proven: anomaly detection against a learned baseline, trending toward a threshold with a forecast date for crossing it, and automatic classification of known fault signatures. All three are useful, and none needs a machine to fail before it can be trained.</p>
                         <p>Precise remaining-useful-life prediction for general-purpose equipment is oversold. A credible RUL model needs many recorded run-to-failure examples for that machine type under those conditions. Most plants don't have them, because they replace parts before they fail, which is the whole point of the program.</p>
-                        <p>What you can realistically get, and it is still valuable, is a ranked list of which machines are deteriorating, how fast, and in what way. That is enough to plan a shutdown.</p>
+                        <p>What you can realistically get is a ranked list of which machines are deteriorating, how quickly and in what way. That is still valuable, and it is enough to plan a shutdown.</p>
 
                         <h2 id="ConclusionSection">Where to Begin</h2>
-                        <p>You don't need a plant-wide program to begin. Start with a shortlist of machines whose failure really hurts, sensors mounted properly on them, a few weeks of baseline data, and one person responsible for what happens when an alert fires. Expand from there, paid for by the outages you avoid.</p>
+                        <p>A plant-wide program isn't needed on day one. Pick a shortlist of machines whose failure would really hurt, mount sensors on them properly, collect a few weeks of baseline data and make one person responsible for acting on alerts. The outages you avoid then pay for adding the next group of machines.</p>
 <!-- build-sections:post-cluster:start -->
                     <div class="post-cluster">
           <span class="post-cluster-label">Related service</span>

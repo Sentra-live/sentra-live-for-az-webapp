@@ -450,6 +450,12 @@
             <priority>0.6</priority>
       </url>
       <url>
+            <loc>https://sentratech.in/article/structural-health-monitoring-of-bridges.html</loc>
+            <lastmod>2026-10-23</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.7</priority>
+      </url>
+      <url>
             <loc>https://sentratech.in/article/metro-rail-monitoring-tunnels-viaducts-stations.html</loc>
             <lastmod>2026-10-05</lastmod>
             <changefreq>monthly</changefreq>
@@ -458,6 +464,12 @@
       <url>
             <loc>https://sentratech.in/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html</loc>
             <lastmod>2026-10-12</lastmod>
+            <changefreq>monthly</changefreq>
+            <priority>0.7</priority>
+      </url>
+      <url>
+            <loc>https://sentratech.in/blogs/railway-track-monitoring-system.html</loc>
+            <lastmod>2026-10-23</lastmod>
             <changefreq>monthly</changefreq>
             <priority>0.7</priority>
       </url>

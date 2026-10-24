@@ -1384,6 +1384,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1803,9 +1807,9 @@
           <span class="post-cluster-label">Related service</span>
           <a class="post-cluster-pillar" href="/solutions/geotechnical-and-foundation-monitoring.html">Geotechnical Monitoring Services <i class="fa-solid fa-arrow-right"></i></a>
           <ul class="post-cluster-list">
+            <li><a href="/blogs/early-warning-plan-critical-infrastructure-checklist.html">How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist</a></li>
+            <li><a href="/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html">Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn</a></li>
             <li><a href="/blogs/slope-stability-monitoring-mining.html">Slope Stability Monitoring in Mining: Sensors &amp; Early Warning for Open-Pit Mines</a></li>
-            <li><a href="/blogs/gnss-displacement-monitoring-satellite-sensors.html">GNSS Displacement Monitoring: How Satellite Sensors Detect Ground &amp; Structural Movement</a></li>
-            <li><a href="/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html">What Is an Inclinometer? How Digital Tiltmeters Measure Tilt and Rotation</a></li>
           </ul>
           <a class="post-cluster-assess" href="/monitoring-assessment.html?source=dam-safety-monitoring-lidar-drones-digital-twins" data-cta="assessment-post-cluster">Request a monitoring assessment for your asset</a>
         </div>

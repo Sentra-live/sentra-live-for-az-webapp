@@ -19,10 +19,10 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <title>Bridge Health Monitoring System India | Sentra</title>
-  <meta name="description" content="Bridge monitoring system for highway and railway bridges in India: strain, tilt, displacement and vibration sensors with real-time alerts and engineering reports." />
+  <meta name="description" content="Bridge monitoring for highway and railway bridges in India: strain, tilt, displacement and vibration sensors with real-time alerts and engineering reports." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Bridge Health Monitoring System India | Sentra" />
-  <meta property="og:description" content="Bridge monitoring system for highway and railway bridges in India: strain, tilt, displacement and vibration sensors with real-time alerts and engineering reports." />
+  <meta property="og:description" content="Bridge monitoring for highway and railway bridges in India: strain, tilt, displacement and vibration sensors with real-time alerts and engineering reports." />
   <meta property="og:url" content="https://sentratech.in/industries/bridges-highways-monitoring.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://sentratech.in/image/branding/sentra.webp" />
@@ -30,7 +30,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Bridge Health Monitoring System India | Sentra" />
-  <meta name="twitter:description" content="Bridge monitoring system for highway and railway bridges in India: strain, tilt, displacement and vibration sensors with real-time alerts and engineering reports." />
+  <meta name="twitter:description" content="Bridge monitoring for highway and railway bridges in India: strain, tilt, displacement and vibration sensors with real-time alerts and engineering reports." />
   <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
@@ -1429,6 +1429,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1699,8 +1703,8 @@
         <div class="ind-grid-2">
           <div>
             <h2>Why Bridge<br><span class="accent">Monitoring</span> Matters</h2>
-            <p>Bridges and highway structures face continuous stress from traffic loads, environmental exposure, and aging materials. Cracks, corrosion, and fatigue develop over time, often invisible until they become critical.</p>
-            <p>Sentra's wireless IoT sensors provide 24/7 vigilance, measuring strain, displacement, tilt, and vibration. Real-time alerts enable proactive maintenance, extending asset life and preventing catastrophic failures.</p>
+            <p>Traffic, weather and age load a bridge every day. Cracks, corrosion and fatigue build up slowly, and periodic visual inspections often miss them until they are serious.</p>
+            <p>Our wireless sensors measure strain, displacement, tilt and vibration around the clock. When a reading crosses a threshold your engineers get an alert, so repairs are planned early, the bridge lasts longer and a serious failure becomes far less likely.</p>
           </div>
           <div>
             <h2 style="font-size:1rem;font-weight:700;margin-bottom:16px;">Key Monitoring Parameters</h2>
@@ -1719,7 +1723,7 @@
     <section class="ind-content-block sol-bg-darker">
       <div class="ind-section-inner" style="text-align:center;">
         <h2 style="font-size:clamp(22px,2.5vw,32px);font-weight:700;text-transform:uppercase;margin:0 0 12px;">Relevant <span class="accent">Solutions</span></h2>
-        <p class="sol-section-sub">Sentra's solutions purpose-built for bridge and highway structure monitoring.</p>
+        <p class="sol-section-sub">What we deliver for bridges and highway structures.</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;max-width:900px;margin:0 auto;">
           <a href="/solutions/bridge-inspection-and-condition-assessment.html" class="sol-card">
             <span class="sol-card-title">Bridge Inspection & Condition Assessment</span>
@@ -1933,13 +1937,13 @@
             <div class="accordion-item">
               <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indbhm-faq3" aria-expanded="false">How often does bridge monitoring data update?</button></h2>
               <div id="indbhm-faq3" class="accordion-collapse collapse" data-bs-parent="#indbhm-accordion"><div class="accordion-body"><p>Sentra's sensors support both periodic reporting, commonly every few minutes to hours for long-term trend tracking, and triggered event detection that reports immediately when movement, strain or vibration crosses a defined threshold.</p></div></div>
-            </div>
-<!-- build-sections:faq:start -->
+            </div><!-- build-sections:faq:start -->
 <div class="accordion-item">
               <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indbhm-accordion-buyer1" aria-expanded="false" aria-controls="indbhm-accordion-buyer1">How much does a bridge monitoring system cost?</button></h2>
               <div id="indbhm-accordion-buyer1" class="accordion-collapse collapse" data-bs-parent="#indbhm-accordion"><div class="accordion-body"><p>It depends on the bridge and the programme: how many spans, piers and bearings are instrumented, whether dynamic response is measured as well as long-term trends, access conditions such as traffic, height or water, whether load testing or fatigue assessment is included, and how long monitoring runs. A site survey and a short pilot are the usual way to fix scope and budget. Request a monitoring assessment and we will scope it for your bridge.</p></div></div>
             </div>
 <!-- build-sections:faq:end -->
+
         </div>
       </div>
     </section>

@@ -92,7 +92,7 @@ Process
 
 From field deployment to an engineering decision.
 
-![Deploy](https://sentratech.in/image/solutions/landing-pages/railway/bridge-inspection.webp)
+![Deploy structural monitoring sensors at critical railway bridge members](https://sentratech.in/image/solutions/landing-pages/railway/step1.webp)
 
 01 Step One
 
@@ -100,7 +100,7 @@ From field deployment to an engineering decision.
 
 Install strain, deflection, tilt and vibration sensors at critical members.
 
-![Acquire](https://sentratech.in/image/solutions/showcase/shm/Vibration Sensor Deployment.webp)
+![Acquire engineering-grade train passage measurements](https://sentratech.in/image/solutions/landing-pages/railway/step2.webp)
 
 02 Step Two
 
@@ -116,7 +116,7 @@ Capture each train passage at engineering-grade sampling rates.
 
 Separate thermal effects, count stress cycles and compare modal behaviour.
 
-![Decide](https://sentratech.in/image/solutions/landing-pages/railway/bridge-inspection.webp)
+![Decide inspection and maintenance actions from measured evidence](https://sentratech.in/image/solutions/landing-pages/railway/step4.webp)
 
 04 Step Four
 

@@ -6,7 +6,7 @@ Source: https://sentratech.in/solutions/predictive-maintenance-condition-monitor
 
 !
 
-![Industrial electric motor used in rotating equipment applications](https://sentratech.in/image/solutions/landing-pages/predictive/industrial-motor.webp)
+![Critical rotating equipment prioritised for condition monitoring](https://sentratech.in/image/solutions/landing-pages/predictive/step1.webp)
 
 Vibration Analysis Rotating Equipment Edge Analytics ISO 10816 / 20816 CMMS
 
@@ -84,7 +84,7 @@ Process
 
 From field deployment to an engineering decision.
 
-![Prioritise](https://sentratech.in/image/solutions/landing-pages/predictive/industrial-motor.webp)
+![Prioritise critical rotating equipment for condition monitoring](https://sentratech.in/image/solutions/landing-pages/predictive/step1.webp)
 
 01 Step One
 
@@ -92,7 +92,7 @@ From field deployment to an engineering decision.
 
 Rank motors, pumps, fans, compressors and gearboxes by operational criticality.
 
-![Instrument](https://sentratech.in/image/case-studies/substation-digital-asset-management-predictive-maintenance/construction-video.webp)
+![Instrument equipment with vibration and temperature sensors](https://sentratech.in/image/solutions/landing-pages/predictive/step2.webp)
 
 02 Step Two
 
@@ -100,7 +100,7 @@ Rank motors, pumps, fans, compressors and gearboxes by operational criticality.
 
 Mount vibration and temperature sensors at diagnostic measurement points.
 
-![Diagnose](https://sentratech.in/image/solutions/landing-pages/predictive/mechanical-room.webp)
+![Diagnose machine condition from vibration spectra and trends](https://sentratech.in/image/solutions/landing-pages/predictive/step3.webp)
 
 03 Step Three
 
@@ -108,7 +108,7 @@ Mount vibration and temperature sensors at diagnostic measurement points.
 
 Trend spectra and signatures against a stable operating baseline.
 
-![Maintain](https://sentratech.in/image/solutions/landing-pages/predictive/industrial-motor.webp)
+![Plan maintenance from condition monitoring findings](https://sentratech.in/image/solutions/landing-pages/predictive/step4.webp)
 
 04 Step Four
 

@@ -113,11 +113,11 @@ Dam safety monitoring also connects naturally to broader [structural health moni
 
 Related service [Geotechnical Monitoring Services ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
+- [How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist](https://sentratech.in/blogs/early-warning-plan-critical-infrastructure-checklist.html)
+
+- [Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn](https://sentratech.in/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html)
+
 - [Slope Stability Monitoring in Mining: Sensors & Early Warning for Open-Pit Mines](https://sentratech.in/blogs/slope-stability-monitoring-mining.html)
-
-- [GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html)
-
-- [What Is an Inclinometer? How Digital Tiltmeters Measure Tilt and Rotation](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html)
 
 [Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=dam-safety-monitoring-lidar-drones-digital-twins)
 

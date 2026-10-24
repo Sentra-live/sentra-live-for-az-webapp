@@ -22,11 +22,11 @@
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <title>Infrastructure Digital Twin for Monitoring | Sentra</title>
   <meta name="description"
-    content="Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data bound to each component, for bridges, railways, substations and buildings." />
+    content="Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data on each component, for bridges, railways and buildings." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Infrastructure Digital Twin for Monitoring | Sentra" />
   <meta property="og:description"
-    content="Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data bound to each component, for bridges, railways, substations and buildings." />
+    content="Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data on each component, for bridges, railways and buildings." />
   <meta property="og:url" content="https://sentratech.in/solutions/digital-twin.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://sentratech.in/image/branding/sentra.webp" />
@@ -34,7 +34,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Infrastructure Digital Twin for Monitoring | Sentra" />
-  <meta name="twitter:description" content="Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data bound to each component, for bridges, railways, substations and buildings." />
+  <meta name="twitter:description" content="Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data on each component, for bridges, railways and buildings." />
   <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
@@ -1410,6 +1410,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -2646,13 +2650,13 @@
                         tell us which one and we will confirm what we can deliver into it before quoting.</p>
                     </div>
                   </div>
-                </div>
-<!-- build-sections:faq:start -->
+                </div><!-- build-sections:faq:start -->
 <div class="accordion-item">
               <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccordionDT-buyer1" aria-expanded="false" aria-controls="faqAccordionDT-buyer1">How much does an infrastructure digital twin cost?</button></h2>
               <div id="faqAccordionDT-buyer1" class="accordion-collapse collapse" data-bs-parent="#faqAccordionDT"><div class="accordion-body"><div class="accordion-spacer"></div><p>It depends on the asset and the scope: the size of the asset and the scanning effort, the level of model detail, how many live sensor channels are bound to the model, which existing systems need integrating, and how many users need training. A single asset typically takes 8–16 weeks to deliver. Request an assessment and we will scope it for your asset.</p></div></div>
             </div>
 <!-- build-sections:faq:end -->
+
     </section>
 
     <!-- 11. NEWSLETTER -->

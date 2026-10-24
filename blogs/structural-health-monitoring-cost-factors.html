@@ -20,10 +20,10 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
-    <meta name="description" content="What decides the cost of a structural health monitoring system: measurement points, static or dynamic monitoring, connectivity, site access, duration and reporting, and how a pilot fixes the budget." />
+    <meta name="description" content="What drives structural health monitoring cost: measurement points, static vs dynamic monitoring, connectivity, site access, duration and reporting." />
     <meta name="robots" content="index, follow" />
     <meta property="og:title" content="How Much Does Structural Health Monitoring Cost? What Drives the Price" />
-    <meta property="og:description" content="What decides the cost of a structural health monitoring system: measurement points, static or dynamic monitoring, connectivity, site access, duration and reporting, and how a pilot fixes the budget." />
+    <meta property="og:description" content="What drives structural health monitoring cost: measurement points, static vs dynamic monitoring, connectivity, site access, duration and reporting." />
     <meta property="og:url" content="https://sentratech.in/blogs/structural-health-monitoring-cost-factors.html" />
     <meta property="og:type" content="article" />
     <meta property="og:image" content="https://sentratech.in/image/branding/sentra.webp" />
@@ -31,7 +31,7 @@
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="How Much Does Structural Health Monitoring Cost? What Drives the Price" />
-    <meta name="twitter:description" content="What decides the cost of a structural health monitoring system: measurement points, static or dynamic monitoring, connectivity, site access, duration and reporting, and how a pilot fixes the budget." />
+    <meta name="twitter:description" content="What drives structural health monitoring cost: measurement points, static vs dynamic monitoring, connectivity, site access, duration and reporting." />
     <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
     <meta name="twitter:site" content="@sentratech" />
     <meta name="twitter:image:width" content="1200" />
@@ -72,7 +72,7 @@
       "@context": "https://schema.org",
       "@type": "BlogPosting",
       "headline": "How Much Does Structural Health Monitoring Cost? What Drives the Price",
-      "description": "What decides the cost of a structural health monitoring system: measurement points, static or dynamic monitoring, connectivity, site access, duration and reporting, and how a pilot fixes the budget.",
+      "description": "What drives structural health monitoring cost: measurement points, static vs dynamic monitoring, connectivity, site access, duration and reporting.",
       "datePublished": "2026-10-03",
       "dateModified": "2026-10-03",
       "author": {
@@ -1412,6 +1412,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);

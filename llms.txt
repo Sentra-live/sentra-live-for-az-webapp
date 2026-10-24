@@ -116,6 +116,8 @@ Definitional and technical material, useful for resolving terminology.
 
 Newest first. The full, filterable index lives at https://sentratech.in/resources.html
 
+- [Railway Track Monitoring Systems: What to Measure and Why](https://sentratech.in/blogs/railway-track-monitoring-system.html): Blog, Rail Infrastructure, 23 Oct 2026
+- [Structural Health Monitoring of Bridges: Sensors, Data and How It Works](https://sentratech.in/article/structural-health-monitoring-of-bridges.html): Article, Bridge Safety, 23 Oct 2026
 - [How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist](https://sentratech.in/blogs/early-warning-plan-critical-infrastructure-checklist.html): Blog, Infrastructure, 12 Oct 2026
 - [Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn](https://sentratech.in/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html): Article, Smart Cities, 12 Oct 2026
 - [Metro Rail Monitoring: Tunnels, Viaducts and Stations in Real Time](https://sentratech.in/article/metro-rail-monitoring-tunnels-viaducts-stations.html): Article, Rail Infrastructure, 5 Oct 2026
@@ -134,13 +136,13 @@ Newest first. The full, filterable index lives at https://sentratech.in/resource
 - [Railway Bridge Fatigue Life Assessment and Load Testing](https://sentratech.in/case-studies/railway-bridge-fatigue-life-assessment-load-testing.html): Case study, Railways, 28 Aug 2026
 - [Flood Monitoring & Early Warning System](https://sentratech.in/article/flood-monitoring-early-warning-system.html): Article, Flood Early Warning, 27 Aug 2026
 - [Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html): Blog, Structural Health, 25 Aug 2026
-- [10 Construction Technologies Redefining the Industry](https://sentratech.in/article/10-construction-technologies-redefining-the-industry.html): Article, Construction Tech, 21 Aug 2026
-- [Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html): Blog, Bridge Safety, 15 Aug 2026
 
 ## Optional
 
 Older published work, same index.
 
+- [10 Construction Technologies Redefining the Industry](https://sentratech.in/article/10-construction-technologies-redefining-the-industry.html): Article, Construction Tech, 21 Aug 2026
+- [Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html): Blog, Bridge Safety, 15 Aug 2026
 - [Railway Bridge Digital Twin Using Drone and LiDAR Inspection](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html): Case study, Railways, 15 Aug 2026
 - [AI Is Coming for Infrastructure Monitoring](https://sentratech.in/article/ai-infrastructure-monitoring.html): Article, AI & Monitoring, 15 Aug 2026
 - [What Is a Strain Gauge? Types, Working Principle & Applications](https://sentratech.in/blogs/what-is-a-strain-gauge-types-working-principle.html): Blog, Sensor Technology, 10 Aug 2026

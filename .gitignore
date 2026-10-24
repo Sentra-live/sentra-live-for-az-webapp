@@ -22,3 +22,6 @@ archive/
 sentra-cpanel-deploy.zip
 
 .vercel
+
+# Cloudflare Pages build output (scripts/build-dist.mjs)
+dist/

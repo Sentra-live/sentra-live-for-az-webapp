@@ -104,11 +104,11 @@ The instruments are well proven. What makes the difference is choosing them for 
 
 Related service [Geotechnical Monitoring Services ](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html)
 
+- [How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist](https://sentratech.in/blogs/early-warning-plan-critical-infrastructure-checklist.html)
+
+- [Nepal's Flash Floods: What India's Himalayan Roads, Rail and Dams Should Learn](https://sentratech.in/article/nepal-flash-floods-early-warning-himalayan-infrastructure.html)
+
 - [GNSS Displacement Monitoring: How Satellite Sensors Detect Ground & Structural Movement](https://sentratech.in/blogs/gnss-displacement-monitoring-satellite-sensors.html)
-
-- [Dam Safety Monitoring: How LiDAR, Drones, Sensors & Digital Twins Are Transforming Dam Inspection](https://sentratech.in/blogs/dam-safety-monitoring-lidar-drones-digital-twins.html)
-
-- [What Is an Inclinometer? How Digital Tiltmeters Measure Tilt and Rotation](https://sentratech.in/blogs/what-is-an-inclinometer-digital-tiltmeter-guide.html)
 
 [Request a monitoring assessment for your asset](https://sentratech.in/monitoring-assessment.html?source=slope-stability-monitoring-mining)
 

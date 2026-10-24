@@ -27,6 +27,11 @@
 /Products/*  /products/:splat  301
 /Solutions/* /solutions/:splat  301
 /Industries/* /industries/:splat  301
+/Article/*    /article/:splat     301
+/Blogs/*      /blogs/:splat       301
+
+# Old mixed-case slug still crawled by Google (Search Console: 404)
+/article/revolutionizing-infrastructure-monitoring-with-IoT.html /article/revolutionizing-infrastructure-monitoring-with-iot.html 301
 
 # 301 Redirects for old product URLs that no longer exist
 /products/gateway-cloud.html     /products/gateway.html     301

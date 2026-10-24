@@ -1,0 +1,11 @@
+// www.sentratech.in -> sentratech.in redirect (see www-redirect.js).
+{
+    "$schema": "https://unpkg.com/wrangler@4.149.0/config-schema.json",
+    "name": "sentratech-www-redirect",
+    "main": "www-redirect.js",
+    "compatibility_date": "2026-10-01",
+    "workers_dev": false,
+    "routes": [
+        { "pattern": "www.sentratech.in/*", "zone_name": "sentratech.in" }
+    ]
+}

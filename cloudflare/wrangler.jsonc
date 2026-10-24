@@ -1,0 +1,32 @@
+// Website on Cloudflare Workers static assets (the backend API Worker is
+// configured separately in the root wrangler.toml).
+//
+//   npm run deploy:cf   (builds dist/ then runs: wrangler deploy -c cloudflare/wrangler.jsonc)
+{
+    "$schema": "https://unpkg.com/wrangler@4.149.0/config-schema.json",
+    "name": "sentra-tech",
+    "main": "site-worker.js",
+    "compatibility_date": "2026-10-01",
+    "workers_dev": true,
+    // A route rather than a custom domain: it sits in front of the zone's
+    // existing proxied records, so attaching it needed no DNS changes.
+    // www is 301'd to the apex by cloudflare/www-redirect.js.
+    "routes": [
+        { "pattern": "sentratech.in/*", "zone_name": "sentratech.in" }
+    ],
+    "assets": {
+        "directory": "../dist",
+        "binding": "ASSETS",
+        // Serve /about.html as-is, never rewritten to /about - canonicals,
+        // og:url and sitemap.xml all use the .html form (same as Netlify's
+        // pretty_urls = false). Extensionless URLs are handled in site-worker.js.
+        "html_handling": "none",
+        "not_found_handling": "none",
+        "run_worker_first": ["/api/*", "/index.html"]
+    },
+    // Same-origin /api/* goes straight to the backend Worker, replacing
+    // Netlify's /api/* proxy.
+    "services": [
+        { "binding": "API", "service": "veronica-sentra-prod" }
+    ]
+}

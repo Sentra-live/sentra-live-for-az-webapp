@@ -19,10 +19,10 @@
     <link rel="dns-prefetch" href="https://www.google-analytics.com">
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <title>Industrial Vibration &amp; Condition Monitoring | Sentra</title>
-  <meta name="description" content="Industrial condition monitoring: wireless vibration, temperature and current sensors for pumps, motors, compressors and transformers, with predictive maintenance alerts." />
+  <meta name="description" content="Industrial condition monitoring: wireless vibration, temperature and current sensors for pumps, motors, compressors and transformers, with early alerts." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Industrial Vibration &amp; Condition Monitoring | Sentra" />
-  <meta property="og:description" content="Industrial condition monitoring: wireless vibration, temperature and current sensors for pumps, motors, compressors and transformers, with predictive maintenance alerts." />
+  <meta property="og:description" content="Industrial condition monitoring: wireless vibration, temperature and current sensors for pumps, motors, compressors and transformers, with early alerts." />
   <meta property="og:url" content="https://sentratech.in/industries/industrial-facilities-monitoring.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://sentratech.in/image/branding/sentra.webp" />
@@ -30,7 +30,7 @@
   <meta property="og:image:height" content="630" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Industrial Vibration &amp; Condition Monitoring | Sentra" />
-  <meta name="twitter:description" content="Industrial condition monitoring: wireless vibration, temperature and current sensors for pumps, motors, compressors and transformers, with predictive maintenance alerts." />
+  <meta name="twitter:description" content="Industrial condition monitoring: wireless vibration, temperature and current sensors for pumps, motors, compressors and transformers, with early alerts." />
   <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
@@ -123,7 +123,7 @@
       "name": "What is asset condition monitoring for industrial facilities?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Asset condition monitoring uses sensors, vibration, temperature, tilt and load, attached to critical equipment and structures to continuously assess health, so maintenance teams act on real degradation trends instead of a fixed inspection calendar."
+        "text": "Sensors on critical equipment and structures measure vibration, temperature, tilt and load all the time. Maintenance teams then work from how each asset is actually wearing, not from a fixed inspection calendar."
       }
     },
     {
@@ -1407,6 +1407,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1677,8 +1681,8 @@
         <div class="ind-grid-2">
           <div>
             <h2>Why Industrial<br><span class="accent">Monitoring</span> Matters</h2>
-            <p>Industrial facilities operate expensive, high-risk equipment that must run reliably 24/7. Unplanned downtime from equipment failure can cost millions in lost production and repair. Traditional time-based maintenance misses early signs of degradation.</p>
-            <p>Sentra's IoT condition monitoring solutions track vibration, temperature, and operational parameters in real time by enabling predictive maintenance that catches developing faults before they cause failures.</p>
+            <p>Pumps, motors, compressors and transformers are expensive to repair, and in most plants they run around the clock. When one fails without warning, the lost production usually costs more than the repair itself, and on a large site that can run into millions. Servicing on a fixed calendar doesn't help much, because nobody is looking at the early signs of wear between visits.</p>
+            <p>Sentra fits that equipment with IoT sensors that measure vibration, temperature and operating data continuously. Your maintenance team sees a fault developing and can fix it at a planned stop instead of after a breakdown.</p>
           </div>
           <div>
             <h2 style="font-size:1rem;font-weight:700;margin-bottom:16px;">Key Monitoring Parameters</h2>
@@ -1697,7 +1701,7 @@
     <section class="ind-content-block sol-bg-darker">
       <div class="ind-section-inner" style="text-align:center;">
         <h2 style="font-size:clamp(22px,2.5vw,32px);font-weight:700;text-transform:uppercase;margin:0 0 12px;">Relevant <span class="accent">Solutions</span></h2>
-        <p class="sol-section-sub">Sentra's solutions for industrial facility monitoring.</p>
+        <p class="sol-section-sub">What we deliver for plants and industrial sites.</p>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;max-width:900px;margin:0 auto;">
           <a href="/solutions/asset-monitoring-and-management-solutions.html" class="sol-card">
             <span class="sol-card-title">Asset Monitoring & Management</span>
@@ -1858,7 +1862,7 @@
         <div class="accordion" id="indifm-accordion">
             <div class="accordion-item">
               <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#indifm-faq1" aria-expanded="true">What is asset condition monitoring for industrial facilities?</button></h2>
-              <div id="indifm-faq1" class="accordion-collapse collapse show" data-bs-parent="#indifm-accordion"><div class="accordion-body"><p>Asset condition monitoring uses sensors, vibration, temperature, tilt and load, attached to critical equipment and structures to continuously assess health, so maintenance teams act on real degradation trends instead of a fixed inspection calendar.</p></div></div>
+              <div id="indifm-faq1" class="accordion-collapse collapse show" data-bs-parent="#indifm-accordion"><div class="accordion-body"><p>Sensors on critical equipment and structures measure vibration, temperature, tilt and load all the time. Maintenance teams then work from how each asset is actually wearing, not from a fixed inspection calendar.</p></div></div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indifm-faq2" aria-expanded="false">How does edge computing improve industrial monitoring response times?</button></h2>
@@ -1867,13 +1871,13 @@
             <div class="accordion-item">
               <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indifm-faq3" aria-expanded="false">Can Sentra's system integrate with our existing SCADA or BMS?</button></h2>
               <div id="indifm-faq3" class="accordion-collapse collapse" data-bs-parent="#indifm-accordion"><div class="accordion-body"><p>Yes. Sensor data is available through open APIs and common protocols, so it can feed into an existing SCADA, BMS or asset-management platform alongside Sentra's own dashboard rather than requiring a rip-and-replace.</p></div></div>
-            </div>
-<!-- build-sections:faq:start -->
+            </div><!-- build-sections:faq:start -->
 <div class="accordion-item">
               <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#indifm-accordion-buyer1" aria-expanded="false" aria-controls="indifm-accordion-buyer1">How much does industrial condition monitoring cost?</button></h2>
               <div id="indifm-accordion-buyer1" class="accordion-collapse collapse" data-bs-parent="#indifm-accordion"><div class="accordion-body"><p>It scales with the number of assets and sensors per asset, the sampling each failure mode needs, connectivity and edge processing across the site, and any integration with an existing CMMS, SCADA or BMS. A deployment covering 20–50 critical assets typically takes 4–8 weeks from survey to live dashboard. Request an assessment and we will scope it for your facility.</p></div></div>
             </div>
 <!-- build-sections:faq:end -->
+
         </div>
       </div>
     </section>

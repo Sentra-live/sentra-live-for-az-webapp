@@ -201,14 +201,16 @@ function postTitle(rel) {
 
 let postCount = 0;
 for (const group of POST_CLUSTERS) {
-    const posts = group.posts.map(p => (Array.isArray(p) ? { rel: p[0], pillar: p[1] } : { rel: p, pillar: group.pillar }));
+    // A post entry is a path, or [path, pillarOverride, assetOverride?].
+    const posts = group.posts.map(p => (Array.isArray(p) ? { rel: p[0], pillar: p[1], asset: p[2] } : { rel: p, pillar: group.pillar }));
     const titles = Object.fromEntries(posts.map(p => [p.rel, postTitle(p.rel)]));
 
     for (const post of posts) {
         const file = path.join(ROOT, post.rel);
         let html = fs.readFileSync(file, 'utf8');
         const slug = path.basename(post.rel, '.html');
-        const assess = `/monitoring-assessment.html?${group.asset ? `asset=${group.asset}&amp;` : ''}source=${slug}`;
+        const asset = post.asset ?? group.asset;
+        const assess = `/monitoring-assessment.html?${asset ? `asset=${asset}&amp;` : ''}source=${slug}`;
 
         const siblings = posts.filter(p => p.rel !== post.rel).slice(0, 3)
             .map(p => `            <li><a href="/${p.rel}">${titles[p.rel]}</a></li>`).join('\n');

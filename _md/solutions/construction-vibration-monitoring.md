@@ -84,7 +84,7 @@ Process
 
 From field deployment to an engineering decision.
 
-![Baseline](https://sentratech.in/image/solutions/landing-pages/construction/vibration-monitor.webp)
+![Establish construction vibration baselines at sensitive assets](https://sentratech.in/image/solutions/landing-pages/construction/step1.webp)
 
 01 Step One
 
@@ -92,7 +92,7 @@ From field deployment to an engineering decision.
 
 Record ambient vibration before piling, demolition, tunnelling or blasting begins.
 
-![Deploy](https://sentratech.in/image/solutions/landing-pages/construction/piling-site.webp)
+![Deploy vibration monitoring equipment near construction activity](https://sentratech.in/image/solutions/landing-pages/construction/step2.webp)
 
 02 Step Two
 
@@ -100,7 +100,7 @@ Record ambient vibration before piling, demolition, tunnelling or blasting begin
 
 Place monitors at the nearest and most sensitive surrounding assets.
 
-![Alert](https://sentratech.in/image/solutions/landing-pages/construction/piling-site.webp)
+![Alert project teams when vibration thresholds are exceeded](https://sentratech.in/image/solutions/landing-pages/construction/step3.webp)
 
 03 Step Three
 
@@ -108,7 +108,7 @@ Place monitors at the nearest and most sensitive surrounding assets.
 
 Compare PPV and frequency with project thresholds in real time.
 
-![Document](https://sentratech.in/image/solutions/landing-pages/construction/vibration-monitor.webp)
+![Document construction vibration results for project reporting](https://sentratech.in/image/solutions/landing-pages/construction/step4.webp)
 
 04 Step Four
 

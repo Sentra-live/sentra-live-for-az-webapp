@@ -22,11 +22,11 @@
     <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
   <title>Geotechnical Monitoring Services India | Sentra</title>
   <meta name="description"
-    content="Geotechnical monitoring services in India: inclinometers, piezometers, settlement and vibration monitoring with Amber/Red alerts for excavations, tunnels, slopes and dams." />
+    content="Geotechnical monitoring in India: inclinometers, piezometers, settlement and vibration sensors with Amber/Red alerts for excavations, tunnels and slopes." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Geotechnical Monitoring Services India | Sentra" />
   <meta property="og:description"
-    content="Geotechnical monitoring services in India: inclinometers, piezometers, settlement and vibration monitoring with Amber/Red alerts for excavations, tunnels, slopes and dams." />
+    content="Geotechnical monitoring in India: inclinometers, piezometers, settlement and vibration sensors with Amber/Red alerts for excavations, tunnels and slopes." />
   <meta property="og:url" content="https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://sentratech.in/image/branding/sentra.webp" />
@@ -35,7 +35,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Geotechnical Monitoring Services India | Sentra" />
   <meta name="twitter:description"
-    content="Geotechnical monitoring services in India: inclinometers, piezometers, settlement and vibration monitoring with Amber/Red alerts for excavations, tunnels, slopes and dams." />
+    content="Geotechnical monitoring in India: inclinometers, piezometers, settlement and vibration sensors with Amber/Red alerts for excavations, tunnels and slopes." />
   <meta name="twitter:image" content="https://sentratech.in/image/branding/sentra.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <script type="application/ld+json">
@@ -1439,6 +1439,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -2854,13 +2858,13 @@
                         interpretation for the permanent project record.</p>
                     </div>
                   </div>
-                </div>
-<!-- build-sections:faq:start -->
+                </div><!-- build-sections:faq:start -->
 <div class="accordion-item">
               <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccordionGeo-buyer1" aria-expanded="false" aria-controls="faqAccordionGeo-buyer1">How much does geotechnical monitoring cost?</button></h2>
               <div id="faqAccordionGeo-buyer1" class="accordion-collapse collapse" data-bs-parent="#faqAccordionGeo"><div class="accordion-body"><div class="accordion-spacer"></div><p>It is set by the programme rather than a fixed price: the number, type and depth of instruments and boreholes, how often readings are needed during critical construction stages, whether monitoring continues long term after construction, and the alert-response and reporting arrangements. Programmes usually step down to lower-frequency surveillance as the ground stabilises, which reduces cost. Request a monitoring assessment and we will scope it for your project.</p></div></div>
             </div>
 <!-- build-sections:faq:end -->
+
               </div>
             </div>
           </div>

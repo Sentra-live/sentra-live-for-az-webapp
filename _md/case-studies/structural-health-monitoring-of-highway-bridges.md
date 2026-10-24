@@ -213,7 +213,7 @@ The system changed how the owner manages the bridge in several practical ways.
 
 Periodic inspection alone isn't enough to manage a bridge. Traffic, weather and ageing materials all act on the structure between inspections and change how it performs.
 
-Continuous monitoring covers that gap. Sensors and analytics help owners catch deterioration sooner, plan maintenance better and keep lifecycle costs in check. Our [IoT Bridge Monitoring on Railway Bridges](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html) case study applies the same approach.
+Continuous monitoring covers that gap. Sensors and analytics help owners catch deterioration sooner, plan maintenance better and keep lifecycle costs in check. Our [IoT Bridge Monitoring on Railway Bridges](https://sentratech.in/case-studies/iot-bridge-monitoring-and-sensor-installation-on-railway-bridges.html) case study applies the same approach, and our guide to [structural health monitoring of bridges](https://sentratech.in/article/structural-health-monitoring-of-bridges.html) explains the sensors and how the system works.
 
 Transport infrastructure keeps getting older while the loads on it keep rising, so continuous monitoring is becoming standard practice.
 

@@ -18,16 +18,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
   <title>SHM Technology &amp; Methods | Sentra</title>
-  <meta name="description" content="The structural health monitoring technology behind Sentra: system architecture, sensors, digital twins and AI, with each layer marked as delivered, partner-supplied or not yet in place." />
+  <meta name="description" content="Sentra's structural health monitoring technology: architecture, sensors, digital twins and AI, each marked as delivered, partner-supplied or not yet built." />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="How Sentra Works" />
-  <meta property="og:description" content="The structural health monitoring technology behind Sentra: system architecture, sensors, digital twins and AI, with each layer marked as delivered, partner-supplied or not yet in place." />
+  <meta property="og:description" content="Sentra's structural health monitoring technology: architecture, sensors, digital twins and AI, each marked as delivered, partner-supplied or not yet built." />
   <meta property="og:url" content="https://sentratech.in/technology/index.html" />
   <meta property="og:type" content="article" />
   <meta property="og:image" content="https://sentratech.in/image/solutions/Homepage/Structural%20Health%20Monitoring.webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="How Sentra Works" />
-  <meta name="twitter:description" content="The structural health monitoring technology behind Sentra: system architecture, sensors, digital twins and AI, with each layer marked as delivered, partner-supplied or not yet in place." />
+  <meta name="twitter:description" content="Sentra's structural health monitoring technology: architecture, sensors, digital twins and AI, each marked as delivered, partner-supplied or not yet built." />
   <meta name="twitter:image" content="https://sentratech.in/image/solutions/Homepage/Structural%20Health%20Monitoring.webp" />
   <meta name="twitter:site" content="@sentratech" />
   <link rel="stylesheet" href="../css/vendor/font-family-plus-jakarta-sans.css">
@@ -58,7 +58,7 @@
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": "How Sentra Works",
-  "description": "The structural health monitoring technology behind Sentra: system architecture, sensors, digital twins and AI, with each layer marked as delivered, partner-supplied or not yet in place.",
+  "description": "Sentra's structural health monitoring technology: architecture, sensors, digital twins and AI, each marked as delivered, partner-supplied or not yet built.",
   "datePublished": "2026-09-30",
   "dateModified": "2026-09-30",
   "inLanguage": "en",
@@ -1388,6 +1388,10 @@
                 if (trigger) {
                     trigger.addEventListener('click', function (event) {
                         if (window.innerWidth <= 1024) return;
+                        /* Mouse users already get the menu on hover, so a click
+                           follows the link to the section's landing page. Only
+                           hover-less touch screens use the first tap to open. */
+                        if (window.matchMedia('(hover: hover)').matches) return;
                         event.preventDefault();
                         if (item.classList.contains('mega-open')) closeMenu(true);
                         else openMenu(true);
@@ -1644,7 +1648,7 @@
         <div class="sol-hero-overlay"></div>
       </div>
       <div class="sol-hero-image-card tx-hero-diagram">
-        <img class="tx-hero-art" src="../image/technology/shm-overview.png" alt="Railway bridge with structural health monitoring sensors and connected engineering intelligence" loading="eager">
+        <img class="tx-hero-art" src="../image/technology/shm-overview.webp" alt="Railway bridge with structural health monitoring sensors and connected engineering intelligence" loading="eager">
       </div>
       <div class="sol-hero-container">
         <div class="sol-hero-content">
@@ -1684,10 +1688,10 @@
           <p class="sol-section-subtitle solx-anim">Start with the system as a whole, or go straight to the part you need to evaluate.</p>
         </div>
         <div class="tx-grid tx-grid--2">
-          <a class="tx-card solx-anim" href="./shm-architecture.html"><div class="tx-card-art"><img src="../image/technology/shm-architecture.png" alt="" loading="lazy"></div><h3>SHM System Architecture</h3><p>Sixteen layers from sensor to decision: what happens at each, who implements it, and one railway bridge traced end to end.</p><span class="tx-card-link">Explore the stack <i class="fa-solid fa-arrow-right"></i></span></a>
-          <a class="tx-card solx-anim" href="./shm-sensors.html"><div class="tx-card-art"><img src="../image/technology/shm-sensors.png" alt="" loading="lazy"></div><h3>Sensors &amp; Data Acquisition</h3><p>Strain, vibration, tilt, convergence and GNSS: principle, installation, data output and what each one tells an engineer.</p><span class="tx-card-link">Open the sensor explorer <i class="fa-solid fa-arrow-right"></i></span></a>
-          <a class="tx-card solx-anim" href="./structural-health-monitoring-digital-twin.html"><div class="tx-card-art"><img src="../image/technology/shm-digital-twin.png" alt="" loading="lazy"></div><h3>Structural Health Monitoring Digital Twin</h3><p>3D model vs BIM vs digital twin, our maturity levels, and how sensor channels bind to bridge components.</p><span class="tx-card-link">See the twin <i class="fa-solid fa-arrow-right"></i></span></a>
-          <a class="tx-card solx-anim" href="./ai-in-shm.html"><div class="tx-card-art"><img src="../image/technology/shm-ai-inspection.png" alt="" loading="lazy"></div><h3>AI in Structural Health Monitoring</h3><p>CNN defect detection on drone imagery, ML anomaly detection on sensor data, and why fatigue life stays physics-based.</p><span class="tx-card-link">What the AI does <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="tx-card solx-anim" href="./shm-architecture.html"><div class="tx-card-art"><img src="../image/technology/shm-architecture.webp" alt="" loading="lazy"></div><h3>SHM System Architecture</h3><p>Sixteen layers from sensor to decision: what happens at each, who implements it, and one railway bridge traced end to end.</p><span class="tx-card-link">Explore the stack <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="tx-card solx-anim" href="./shm-sensors.html"><div class="tx-card-art"><img src="../image/technology/shm-sensors.webp" alt="" loading="lazy"></div><h3>Sensors &amp; Data Acquisition</h3><p>Strain, vibration, tilt, convergence and GNSS: principle, installation, data output and what each one tells an engineer.</p><span class="tx-card-link">Open the sensor explorer <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="tx-card solx-anim" href="./structural-health-monitoring-digital-twin.html"><div class="tx-card-art"><img src="../image/technology/shm-digital-twin.webp" alt="" loading="lazy"></div><h3>Structural Health Monitoring Digital Twin</h3><p>3D model vs BIM vs digital twin, our maturity levels, and how sensor channels bind to bridge components.</p><span class="tx-card-link">See the twin <i class="fa-solid fa-arrow-right"></i></span></a>
+          <a class="tx-card solx-anim" href="./ai-in-shm.html"><div class="tx-card-art"><img src="../image/technology/shm-ai-inspection.webp" alt="" loading="lazy"></div><h3>AI in Structural Health Monitoring</h3><p>CNN defect detection on drone imagery, ML anomaly detection on sensor data, and why fatigue life stays physics-based.</p><span class="tx-card-link">What the AI does <i class="fa-solid fa-arrow-right"></i></span></a>
         </div>
       </div>
     </section>
