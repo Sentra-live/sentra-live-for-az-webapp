@@ -23,12 +23,12 @@ backend for the site's own chatbot and is disallowed in robots.txt.
 
 How the system works: architecture, sensors, digital twin and AI, each layer marked delivered, partner-supplied or not yet in place.
 
-- [AI in Structural Health Monitoring: What We Use](https://sentratech.in/technology/ai-in-shm.html): Where Sentra uses AI and machine learning in structural health monitoring: CNN crack and rust detection on drone imagery and anomaly detection on..
-- [SHM Technology & Methods](https://sentratech.in/technology/index.html): The structural health monitoring technology behind Sentra: system architecture, sensors, digital twins and AI, with each layer marked as delivered,..
-- [Sensor Selection Guide for Structural Monitoring](https://sentratech.in/technology/sensor-selection-guide.html): Which sensor to use for strain, vibration, tilt, displacement, settlement and fatigue monitoring: failure mode to measurement, datasheet figures,..
-- [Structural Health Monitoring System Architecture](https://sentratech.in/technology/shm-architecture.html): How an SHM system moves data from sensors through data acquisition, IoT gateways, cloud storage and structural analytics to an engineering decision,..
-- [SHM Sensors: Strain, Vibration, Tilt & GNSS](https://sentratech.in/technology/shm-sensors.html): Engineering reference for the structural monitoring sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, vibration meters,..
-- [Structural Health Monitoring Digital Twin](https://sentratech.in/technology/structural-health-monitoring-digital-twin.html): What a structural health monitoring digital twin is, how it differs from a 3D model and from BIM, how sensor data binds to structural components, and..
+- [AI in Structural Health Monitoring: What We Use](https://sentratech.in/technology/ai-in-shm.html): Where Sentra uses AI in structural health monitoring: crack and rust detection on drone imagery, anomaly detection on sensor data, and its limits
+- [SHM Technology & Methods](https://sentratech.in/technology/index.html): Sentra's structural health monitoring technology: architecture, sensors, digital twins and AI, each marked as delivered, partner-supplied or not yet..
+- [Sensor Selection Guide for Structural Monitoring](https://sentratech.in/technology/sensor-selection-guide.html): Which sensor to use for strain, vibration, tilt, displacement, settlement and fatigue monitoring, with datasheet figures, sampling rates and loggers
+- [Structural Health Monitoring System Architecture](https://sentratech.in/technology/shm-architecture.html): How an SHM system moves data from sensors through data loggers, IoT gateways and cloud analytics to an engineering decision, layer by layer
+- [SHM Sensors: Strain, Vibration, Tilt & GNSS](https://sentratech.in/technology/shm-sensors.html): The SHM sensors Sentra installs: vibrating wire strain gauges, MEMS accelerometers, tiltmeters and RTK GNSS, how each works and what it detects
+- [Structural Health Monitoring Digital Twin](https://sentratech.in/technology/structural-health-monitoring-digital-twin.html): What a structural health monitoring digital twin is, how it differs from a 3D model or BIM, and how sensor data binds to structural components
 
 ## Solutions
 
@@ -37,14 +37,14 @@ What Sentra delivers, by discipline.
 - [Advanced Non-Destructive Testing (NDT)](https://sentratech.in/solutions/advanced-non-destructive-testing-ndt.html): Ultrasonic, radiographic, magnetic particle and other NDT methods to find subsurface defects without shutting down operations
 - [Asset Monitoring & Management Solutions](https://sentratech.in/solutions/asset-monitoring-and-management-solutions.html): Industrial asset monitoring with IoT sensors and live dashboards for manufacturing, utility and mining assets, with predictive maintenance alerts
 - [Bridge Inspection & Condition Assessment](https://sentratech.in/solutions/bridge-inspection-and-condition-assessment.html): Drone surveys, NDT and AI analysis for bridge inspection
-- [Construction Vibration Monitoring Services](https://sentratech.in/solutions/construction-vibration-monitoring.html): Construction vibration monitoring for piling, demolition, tunnelling and blasting: wireless sensors on adjacent buildings, PPV alerts and automated..
+- [Construction Vibration Monitoring Services](https://sentratech.in/solutions/construction-vibration-monitoring.html): Construction vibration monitoring for piling, demolition, tunnelling and blasting: wireless sensors on nearby buildings, PPV alerts and compliance..
 - [Consulting & Advisory Services](https://sentratech.in/solutions/consulting-and-advisory-services.html): Vendor-neutral consulting for structural monitoring, asset management and digital engineering
 - [Digital Engineering & Documentation](https://sentratech.in/solutions/digital-engineering-and-documentation.html): ISO 19650-aligned BIM, scan-to-BIM, digital twin, and asset information management services that build a lasting digital foundation for your..
 - [Infrastructure Digital Twin for Monitoring](https://sentratech.in/solutions/digital-twin.html): Infrastructure digital twins built from LiDAR and drone capture, with live IoT sensor data bound to each component, for bridges, railways,..
 - [Fatigue & Residual Life Assessment](https://sentratech.in/solutions/fatigue-and-residual-life-assessment.html): Engineering-grade fatigue and residual life assessment for bridges, steel structures and offshore platforms: quantify remaining life and extend..
 - [Geotechnical Monitoring Services India](https://sentratech.in/solutions/geotechnical-and-foundation-monitoring.html): Geotechnical monitoring services in India: inclinometers, piezometers, settlement and vibration monitoring with Amber/Red alerts for excavations,..
-- [Predictive Maintenance & Condition Monitoring](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html): IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors, edge analytics and alerts..
-- [Railway Bridge Monitoring System](https://sentratech.in/solutions/railway-bridge-monitoring.html): Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and residual fatigue life assessment..
+- [Predictive Maintenance & Condition Monitoring](https://sentratech.in/solutions/predictive-maintenance-condition-monitoring.html): IoT predictive maintenance for pumps, motors, fans, compressors and gearboxes: wireless vibration and temperature sensors with alerts before failure
+- [Railway Bridge Monitoring System](https://sentratech.in/solutions/railway-bridge-monitoring.html): Railway bridge monitoring under live train loads: strain, deflection, vibration and tilt sensors, load testing and fatigue life assessment to RDSO..
 - [Structural Health Monitoring Services in India](https://sentratech.in/solutions/structural-health-monitoring.html): Structural health monitoring services in India: site survey, sensor design, installation, 24/7 analytics and alerts for bridges, railways, buildings..
 
 ## Industries
@@ -116,6 +116,8 @@ Definitional and technical material, useful for resolving terminology.
 
 Newest first. The full, filterable index lives at https://sentratech.in/resources.html
 
+- [Is Your Building Ready for Continuous Monitoring? A Pre-Installation Checklist](https://sentratech.in/blogs/building-continuous-monitoring-readiness-checklist.html): Blog, Structural Health, 27 Oct 2026
+- [Preserving India's Heritage: Why Historic Structures Need Continuous Monitoring](https://sentratech.in/article/heritage-structure-monitoring-india.html): Article, Structural Health, 27 Oct 2026
 - [Railway Track Monitoring Systems: What to Measure and Why](https://sentratech.in/blogs/railway-track-monitoring-system.html): Blog, Rail Infrastructure, 23 Oct 2026
 - [Structural Health Monitoring of Bridges: Sensors, Data and How It Works](https://sentratech.in/article/structural-health-monitoring-of-bridges.html): Article, Bridge Safety, 23 Oct 2026
 - [How to Build an Early-Warning Plan for Critical Infrastructure: A 6-Step Checklist](https://sentratech.in/blogs/early-warning-plan-critical-infrastructure-checklist.html): Blog, Infrastructure, 12 Oct 2026
@@ -134,13 +136,13 @@ Newest first. The full, filterable index lives at https://sentratech.in/resource
 - [What Is Ground Penetrating Radar (GPR)? A Technical Guide for Roads and Tunnels](https://sentratech.in/blogs/what-is-ground-penetrating-radar-gpr-infrastructure-monitoring.html): Blog, Advanced NDT, 8 Sep 2026
 - [Predictive Maintenance for Industrial Facilities: How IoT Vibration Sensors Prevent Failure](https://sentratech.in/article/predictive-maintenance-industrial-facilities-iot-vibration-sensors.html): Article, Industrial, 7 Sep 2026
 - [Railway Bridge Fatigue Life Assessment and Load Testing](https://sentratech.in/case-studies/railway-bridge-fatigue-life-assessment-load-testing.html): Case study, Railways, 28 Aug 2026
-- [Flood Monitoring & Early Warning System](https://sentratech.in/article/flood-monitoring-early-warning-system.html): Article, Flood Early Warning, 27 Aug 2026
-- [Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html): Blog, Structural Health, 25 Aug 2026
 
 ## Optional
 
 Older published work, same index.
 
+- [Flood Monitoring & Early Warning System](https://sentratech.in/article/flood-monitoring-early-warning-system.html): Article, Flood Early Warning, 27 Aug 2026
+- [Continuous Building Monitoring with IoT Sensors: What Actually Gets Measured](https://sentratech.in/blogs/continuous-building-shm-iot-sensors.html): Blog, Structural Health, 25 Aug 2026
 - [10 Construction Technologies Redefining the Industry](https://sentratech.in/article/10-construction-technologies-redefining-the-industry.html): Article, Construction Tech, 21 Aug 2026
 - [Bridge Scour: How IoT Sensors and Digital Twins Catch What Inspections Miss](https://sentratech.in/blogs/bridge-scour-monitoring-iot-digital-twins.html): Blog, Bridge Safety, 15 Aug 2026
 - [Railway Bridge Digital Twin Using Drone and LiDAR Inspection](https://sentratech.in/case-studies/railway-bridge-digital-twin-drone-lidar-inspection.html): Case study, Railways, 15 Aug 2026

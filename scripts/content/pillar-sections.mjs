@@ -451,6 +451,8 @@ export const POST_CLUSTERS = [
             'blogs/what-is-a-strain-gauge-types-working-principle.html',
             'blogs/what-is-an-accelerometer-sensor-guide.html',
             'blogs/what-is-a-data-logger-types-guide.html',
+            ['blogs/building-continuous-monitoring-readiness-checklist.html', ['Buildings & High-Rise Monitoring', '/industries/buildings-highrise-monitoring.html'], 'building'],
+            'article/heritage-structure-monitoring-india.html',
         ],
     },
     {

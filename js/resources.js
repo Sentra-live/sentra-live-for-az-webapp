@@ -9,6 +9,18 @@
     var RESOURCES = [
         // ---------- Blogs ----------
         {
+            id: 'blog-building-monitoring-readiness-checklist',
+            title: 'Is Your Building Ready for Continuous Monitoring? A Pre-Installation Checklist',
+            excerpt: 'Purpose, drawings, a condition survey, sensor locations, access, signal, alert thresholds, data access and a baseline: what to have ready before a building monitoring installation.',
+            category: 'Structural Health',
+            color: 'orange',
+            type: 'blogs',
+            date: '27 Oct 2026',
+            image: './image/blogs/banners/blogs_building-continuous-monitoring-readiness-checklist.webp',
+            link: './blogs/building-continuous-monitoring-readiness-checklist.html',
+            featured: true
+        },
+        {
             id: 'blog-railway-track-monitoring-system',
             title: 'Railway Track Monitoring Systems: What to Measure and Why',
             excerpt: 'Track geometry, rail temperature and stress, formation settlement, dynamic response, transition zones and slopes: what to measure on Indian rail lines, and why.',
@@ -370,6 +382,18 @@
         },
 
         // ---------- Articles ----------
+        {
+            id: 'art-heritage-structure-monitoring-india',
+            title: "Preserving India's Heritage: Why Historic Structures Need Continuous Monitoring",
+            excerpt: "Construction, traffic and heavier monsoons are changing the conditions around India's monuments. What to monitor on a historic structure, how to do it without harming the fabric, and why a full year of data matters.",
+            category: 'Structural Health',
+            color: 'orange',
+            type: 'articles',
+            date: '27 Oct 2026',
+            image: './image/articles/article_heritage-structure-monitoring-india.webp',
+            link: './article/heritage-structure-monitoring-india.html',
+            featured: true
+        },
         {
             id: 'art-structural-health-monitoring-of-bridges',
             title: 'Structural Health Monitoring of Bridges: Sensors, Data and How It Works',
